@@ -9,28 +9,60 @@ import re
 from pathlib import Path
 
 
-def generate_species_code(species_name):
+def generate_species_code(species_name, existing_codes=None):
     """
-    Generate a 6-letter eBird-style species code.
+    Generate a unique 6-letter eBird-style species code.
     Takes first 3 letters of first word + first 3 letters of last word.
+    If collision occurs, uses 4th letter of last word, then 2nd word if multi-word.
     """
+    if existing_codes is None:
+        existing_codes = set()
+
     # Remove parentheses and their contents
     clean_name = re.sub(r'\([^)]*\)', '', species_name).strip()
 
     # Split into words
     words = clean_name.split()
 
+    # Generate base code
     if len(words) == 1:
         # Single word: take first 6 letters
-        code = words[0][:6].lower()
+        base_code = words[0][:6].lower()
     elif len(words) == 2:
         # Two words: 3 letters from each
-        code = (words[0][:3] + words[1][:3]).lower()
+        base_code = (words[0][:3] + words[1][:3]).lower()
     else:
         # Multiple words: first 3 of first word + first 3 of last word
-        code = (words[0][:3] + words[-1][:3]).lower()
+        base_code = (words[0][:3] + words[-1][:3]).lower()
 
-    return code
+    # Check for collision
+    if base_code not in existing_codes:
+        return base_code
+
+    # Collision detected - try alternatives
+    # Strategy 1: Use more letters from last word (up to 4)
+    if len(words) >= 2 and len(words[-1]) >= 4:
+        alt_code = (words[0][:2] + words[-1][:4]).lower()
+        if alt_code not in existing_codes:
+            return alt_code
+
+    # Strategy 2: For 3+ word names, use middle word
+    if len(words) >= 3:
+        alt_code = (words[0][:3] + words[1][:3]).lower()
+        if alt_code not in existing_codes:
+            return alt_code
+
+    # Strategy 3: Use first 4 letters of first word + first 2 of last
+    if len(words) >= 2:
+        alt_code = (words[0][:4] + words[-1][:2]).lower()
+        if alt_code not in existing_codes:
+            return alt_code
+
+    # Fallback: append number
+    i = 2
+    while f"{base_code[:5]}{i}" in existing_codes:
+        i += 1
+    return f"{base_code[:5]}{i}"
 
 
 def normalize_category(category):
@@ -158,6 +190,7 @@ def main():
     # Merge all data
     print("\nMerging data...")
     species_list = []
+    existing_codes = set()
 
     for species_name in sorted(frequency_data.keys()):
         # Skip if missing classification or timing data
@@ -168,9 +201,13 @@ def main():
         classification = classification_data[species_name]
         timing_info = timing_data[species_name]
 
+        # Generate unique code
+        code = generate_species_code(species_name, existing_codes)
+        existing_codes.add(code)
+
         species_obj = {
             'name': species_name,
-            'code': generate_species_code(species_name),
+            'code': code,
             'category': classification['category'],
             'flags': classification['flags'],
             'timing': build_timing(

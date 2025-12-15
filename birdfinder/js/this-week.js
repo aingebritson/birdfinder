@@ -125,7 +125,7 @@ function createSpeciesCard(species, frequency) {
     const barWidth = Math.min(frequency * 100, 100);
 
     return `
-        <a href="species/${species.code}.html" class="species-card block bg-white rounded-lg shadow-sm hover:shadow-md p-4 border border-gray-200">
+        <a href="species.html?code=${species.code}" class="species-card block bg-white rounded-lg shadow-sm hover:shadow-md p-4 border border-gray-200">
             <div class="flex items-start justify-between mb-2">
                 <div class="flex-1">
                     <h4 class="font-semibold text-gray-900 text-lg">${species.name}</h4>
