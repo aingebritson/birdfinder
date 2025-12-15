@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirdFinder - Washtenaw County Bird Phenology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold text-gray-900">BirdFinder</h1>
+            <p class="text-gray-600 mt-1">Washtenaw County, Michigan</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Week Selector -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-900" id="week-title">This Week</h2>
+                    <p class="text-sm text-gray-600 mt-1" id="week-dates">Loading...</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button id="prev-week" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-gray-700 font-medium transition">
+                        ← Previous
+                    </button>
+                    <button id="current-week" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition">
+                        This Week
+                    </button>
+                    <button id="next-week" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-gray-700 font-medium transition">
+                        Next →
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="flex gap-4 mb-6">
+            <a href="#" id="home-link" class="text-blue-600 font-medium border-b-2 border-blue-600 pb-1">
+                This Week
+            </a>
+            <a href="browse.html" class="text-gray-600 hover:text-gray-900 font-medium pb-1">
+                Browse All Species
+            </a>
+        </div>
+
+        <!-- Arriving Section -->
+        <section class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <span class="text-green-600">↓</span>
+                Arriving
+            </h3>
+            <div id="arriving-list" class="space-y-2">
+                <div class="text-gray-500 text-center py-8">Loading...</div>
+            </div>
+        </section>
+
+        <!-- At Peak Section -->
+        <section class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <span class="text-blue-600">●</span>
+                At Peak
+            </h3>
+            <div id="peak-list" class="space-y-2">
+                <div class="text-gray-500 text-center py-8">Loading...</div>
+            </div>
+        </section>
+
+        <!-- Departing Section -->
+        <section class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <span class="text-orange-600">↑</span>
+                Departing
+            </h3>
+            <div id="departing-list" class="space-y-2">
+                <div class="text-gray-500 text-center py-8">Loading...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 mt-12">
+        <div class="max-w-4xl mx-auto px-4 py-6 text-center text-sm text-gray-600">
+            <p>Bird phenology data from eBird</p>
+            <p class="mt-1">Washtenaw County, Michigan • 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/week-calculator.js"></script>
+    <script src="js/this-week.js"></script>
+</body>
+</html>
