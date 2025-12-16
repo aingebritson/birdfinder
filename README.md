@@ -44,11 +44,12 @@ The pipeline runs four scripts in sequence:
 
 ### 2. `classify_migration_patterns.py`
 - Classifies each species into migration categories:
-  - **Resident**: Year-round presence (min/max ratio ≥ 0.15)
+  - **Resident**: Year-round presence (min/max ratio ≥ 0.15 OR present all 48 weeks with min/max ≥ 0.08)
   - **Single-season**: One arrival and departure
-  - **Two-passage migrant**: Distinct spring and fall passages
+  - **Two-passage migrant**: Distinct spring and fall passages (bimodal with valley < 0.15)
   - **Vagrant**: Rare visitors (<10 weeks presence)
 - Detects winter residents (bimodal pattern with summer low point)
+- Flags residents with seasonal variation
 - Outputs: Classification CSV with metrics and edge case flags
 
 ### 3. `calculate_arrival_departure.py`
@@ -59,7 +60,7 @@ The pipeline runs four scripts in sequence:
 
 ### 4. `merge_to_json.py`
 - Merges all data into a single JSON file
-- Generates 6-letter species codes
+- Generates unique 6-letter species codes (with collision detection)
 - Structures timing data by category
 - Outputs: Final species data JSON for web use
 
@@ -142,14 +143,15 @@ python3 scripts/merge_to_json.py [region_name]
 ### Adjust Classification Thresholds
 
 Edit `classify_migration_patterns.py`:
-- Line 99: Vagrant threshold (weeks with presence < 10)
-- Line 102: Resident threshold (min/max ratio > 0.15)
-- Line 110: Seasonal threshold (weeks above 10% > 16)
+- Line 167: Vagrant threshold (weeks with presence < 10)
+- Line 171: Resident threshold (min/max ratio >= 0.15)
+- Line 179: Seasonal variation threshold (48 weeks and min/max >= 0.08)
+- Line 184: Two-passage valley threshold (< 0.15)
 
 ### Adjust Timing Thresholds
 
 Edit `calculate_arrival_departure.py`:
-- Line 48-50: Arrival/departure threshold logic
+- Arrival/departure threshold logic (25% of peak OR 0.1% absolute)
 
 ## Requirements
 
@@ -162,9 +164,9 @@ The included example processes data for Washtenaw County (US-MI-161):
 - **Input**: `regions/washtenaw/ebird_US-MI-161__1900_2025_1_12_barchart.txt`
 - **Output**: `regions/washtenaw/washtenaw_species_data.json`
 - **340 species** after filtering
-  - 29 Residents
-  - 142 Single-season
-  - 85 Two-passage migrants
+  - 37 Residents
+  - 135 Single-season
+  - 84 Two-passage migrants
   - 84 Vagrants
 
 To run:

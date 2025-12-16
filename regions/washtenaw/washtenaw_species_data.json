@@ -622,7 +622,7 @@
   },
   {
     "name": "American Goldfinch",
-    "code": "amegol",
+    "code": "amgold",
     "category": "resident",
     "flags": [
       "many_peaks",
@@ -806,7 +806,7 @@
   },
   {
     "name": "American Herring x Glaucous Gull (hybrid)",
-    "code": "amegul",
+    "code": "amgull",
     "category": "vagrant",
     "flags": [],
     "timing": {
@@ -865,7 +865,7 @@
   },
   {
     "name": "American Herring x Great Black-backed Gull (hybrid)",
-    "code": "amegul",
+    "code": "ameher",
     "category": "vagrant",
     "flags": [],
     "timing": {
@@ -924,7 +924,7 @@
   },
   {
     "name": "American Herring x Lesser Black-backed Gull (hybrid)",
-    "code": "amegul",
+    "code": "amergu",
     "category": "vagrant",
     "flags": [],
     "timing": {
@@ -1609,9 +1609,11 @@
   {
     "name": "Bald Eagle",
     "code": "baleag",
-    "category": "two-passage-migrant",
+    "category": "resident",
     "flags": [
-      "many_peaks"
+      "seasonal_variation",
+      "many_peaks",
+      "resident_bimodal"
     ],
     "timing": {
       "spring_arrival": "early January",
@@ -2801,7 +2803,7 @@
   },
   {
     "name": "Black-throated Blue Warbler",
-    "code": "blawar",
+    "code": "blwarb",
     "category": "two-passage-migrant",
     "flags": [
       "classic_bimodal"
@@ -2867,7 +2869,7 @@
   },
   {
     "name": "Black-throated Gray Warbler",
-    "code": "blawar",
+    "code": "blagra",
     "category": "vagrant",
     "flags": [],
     "timing": {
@@ -2926,7 +2928,7 @@
   },
   {
     "name": "Black-throated Green Warbler",
-    "code": "blawar",
+    "code": "blagre",
     "category": "two-passage-migrant",
     "flags": [
       "classic_bimodal"
@@ -2992,7 +2994,7 @@
   },
   {
     "name": "Blackburnian Warbler",
-    "code": "blawar",
+    "code": "blacwa",
     "category": "two-passage-migrant",
     "flags": [
       "classic_bimodal"
@@ -3058,7 +3060,7 @@
   },
   {
     "name": "Blackpoll Warbler",
-    "code": "blawar",
+    "code": "blawa2",
     "category": "two-passage-migrant",
     "flags": [
       "classic_bimodal"
@@ -7908,7 +7910,7 @@
   },
   {
     "name": "Golden-winged x Blue-winged Warbler (hybrid)",
-    "code": "golwar",
+    "code": "gowarb",
     "category": "vagrant",
     "flags": [],
     "timing": {
@@ -8221,7 +8223,7 @@
   },
   {
     "name": "Graylag x Canada Goose (hybrid)",
-    "code": "gragoo",
+    "code": "grgoos",
     "category": "single-season",
     "flags": [
       "winter_resident",
@@ -8349,10 +8351,11 @@
   {
     "name": "Great Blue Heron",
     "code": "greher",
-    "category": "single-season",
+    "category": "resident",
     "flags": [
-      "bimodal_high_valley",
-      "many_peaks"
+      "seasonal_variation",
+      "many_peaks",
+      "resident_bimodal"
     ],
     "timing": {
       "arrival": "late March",
@@ -8793,7 +8796,7 @@
   },
   {
     "name": "Green Heron",
-    "code": "greher",
+    "code": "grhero",
     "category": "single-season",
     "flags": [
       "bimodal_high_valley"
@@ -12751,10 +12754,11 @@
   {
     "name": "Northern Mockingbird",
     "code": "normoc",
-    "category": "single-season",
+    "category": "resident",
     "flags": [
-      "bimodal_high_valley",
-      "many_peaks"
+      "seasonal_variation",
+      "many_peaks",
+      "resident_bimodal"
     ],
     "timing": {
       "arrival": "mid March",
@@ -14950,11 +14954,12 @@
   },
   {
     "name": "Red-headed Woodpecker",
-    "code": "redwoo",
-    "category": "single-season",
+    "code": "rewood",
+    "category": "resident",
     "flags": [
-      "bimodal_high_valley",
-      "many_peaks"
+      "seasonal_variation",
+      "many_peaks",
+      "resident_bimodal"
     ],
     "timing": {
       "arrival": "early April",
@@ -15078,7 +15083,7 @@
   },
   {
     "name": "Red-necked Phalarope",
-    "code": "redpha",
+    "code": "rephal",
     "category": "vagrant",
     "flags": [],
     "timing": {
@@ -15201,7 +15206,7 @@
   },
   {
     "name": "Red-tailed Hawk",
-    "code": "redhaw",
+    "code": "rehawk",
     "category": "resident",
     "flags": [
       "many_peaks",
@@ -15510,10 +15515,11 @@
   {
     "name": "Ring-billed Gull",
     "code": "ringul",
-    "category": "single-season",
+    "category": "resident",
     "flags": [
-      "bimodal_high_valley",
-      "many_peaks"
+      "seasonal_variation",
+      "many_peaks",
+      "resident_bimodal"
     ],
     "timing": {
       "arrival": "late July",
@@ -16687,10 +16693,11 @@
   {
     "name": "Sandhill Crane",
     "code": "sancra",
-    "category": "single-season",
+    "category": "resident",
     "flags": [
-      "bimodal_high_valley",
-      "many_peaks"
+      "seasonal_variation",
+      "many_peaks",
+      "resident_bimodal"
     ],
     "timing": {
       "arrival": "late February",
@@ -17443,7 +17450,7 @@
   },
   {
     "name": "Snow x Ross's Goose (hybrid)",
-    "code": "snogoo",
+    "code": "sngoos",
     "category": "vagrant",
     "flags": [],
     "timing": {
@@ -17693,9 +17700,10 @@
   {
     "name": "Song Sparrow",
     "code": "sonspa",
-    "category": "single-season",
+    "category": "resident",
     "flags": [
-      "bimodal_high_valley"
+      "seasonal_variation",
+      "resident_bimodal"
     ],
     "timing": {
       "arrival": "early March",
@@ -18568,9 +18576,10 @@
   {
     "name": "Trumpeter Swan",
     "code": "truswa",
-    "category": "single-season",
+    "category": "resident",
     "flags": [
-      "bimodal_high_valley"
+      "seasonal_variation",
+      "resident_bimodal"
     ],
     "timing": {
       "arrival": "mid August",
@@ -19764,7 +19773,7 @@
   },
   {
     "name": "White-throated Sparrow",
-    "code": "whispa",
+    "code": "whspar",
     "category": "single-season",
     "flags": [
       "winter_resident"
@@ -21225,7 +21234,7 @@
   },
   {
     "name": "Yellow-throated Warbler",
-    "code": "yelwar",
+    "code": "yewarb",
     "category": "single-season",
     "flags": [
       "bimodal_high_valley",

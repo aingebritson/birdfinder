@@ -167,13 +167,18 @@ def classify_species(metrics):
     if metrics['weeks_with_presence'] < 10:
         category = 'Vagrant'
 
-    # 2. Resident: Min/max ratio >= 0.15
+    # 2. Resident: Min/max ratio >= 0.15 OR present all 48 weeks with min/max >= 0.08
     elif metrics['min_max_ratio'] >= 0.15:
         category = 'Resident'
 
         # Flag edge cases near boundary
         if 0.10 <= metrics['min_max_ratio'] < 0.20:
             flags.append('min_max_near_boundary')
+
+    # 2b. Year-round with seasonal variation: Present all 48 weeks but min/max < 0.15
+    elif metrics['weeks_with_presence'] == 48 and metrics['min_max_ratio'] >= 0.08:
+        category = 'Resident'
+        flags.append('seasonal_variation')
 
     # 3. Two-passage migrant: Bimodal AND valley < 0.15 AND NOT winter resident
     elif metrics['is_bimodal'] and metrics['valley_ratio'] < 0.15:

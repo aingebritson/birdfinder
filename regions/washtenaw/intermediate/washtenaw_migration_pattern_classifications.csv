@@ -10,7 +10,7 @@ Canada Goose,Resident,0.658002,0.124078,0.1886,48,Yes,0.5045,5,min_max_near_boun
 Graylag x Canada Goose (hybrid),Single-season,0.0015,0.0,0.0,17,Yes,0.0,5,winter_resident|many_peaks
 Mute Swan,Resident,0.255651,0.048882,0.1912,48,Yes,0.1912,5,min_max_near_boundary|many_peaks|resident_bimodal
 Black Swan,Vagrant,0.0015,0.0,0.0,3,Yes,0.0,3,
-Trumpeter Swan,Single-season,0.13322,0.011625,0.0873,48,Yes,0.6241,3,bimodal_high_valley
+Trumpeter Swan,Resident,0.13322,0.011625,0.0873,48,Yes,0.6241,3,seasonal_variation|resident_bimodal
 Tundra Swan,Single-season,0.021259,0.0,0.0,32,Yes,0.0,2,winter_resident
 Egyptian Goose,Vagrant,0.000499,0.0,0.0,2,Yes,0.0,2,
 Muscovy Duck,Vagrant,0.0015,0.0,0.0,6,Yes,0.0,2,
@@ -70,7 +70,7 @@ Common Gallinule,Two-passage migrant,0.008035,0.0,0.0,27,Yes,0.0843,6,many_peaks
 American Coot,Single-season,0.084179,0.000338,0.004,48,Yes,0.004,2,winter_resident
 Yellow Rail,Vagrant,0.005124,0.0,0.0,3,No,,1,
 Limpkin,Vagrant,0.00723,0.0,0.0,1,No,,1,
-Sandhill Crane,Single-season,0.183634,0.016223,0.0883,48,Yes,0.3738,5,bimodal_high_valley|many_peaks
+Sandhill Crane,Resident,0.183634,0.016223,0.0883,48,Yes,0.3738,5,seasonal_variation|many_peaks|resident_bimodal
 Whooping Crane,Two-passage migrant,0.011111,0.0,0.0,15,Yes,0.0,2,classic_bimodal
 Black-necked Stilt,Vagrant,0.002749,0.0,0.0,4,No,,1,
 American Avocet,Vagrant,0.005078,0.0,0.0,6,Yes,0.0,2,
@@ -111,7 +111,7 @@ Sabine's Gull,Vagrant,0.000302,0.0,0.0,1,No,,1,
 Bonaparte's Gull,Two-passage migrant,0.043754,0.0,0.0,39,Yes,0.0,2,classic_bimodal
 Laughing Gull,Vagrant,0.0015,0.0,0.0,1,No,,1,
 Franklin's Gull,Vagrant,0.0015,0.0,0.0,3,No,,1,
-Ring-billed Gull,Single-season,0.227218,0.02258,0.0994,48,Yes,0.902,5,bimodal_high_valley|many_peaks
+Ring-billed Gull,Resident,0.227218,0.02258,0.0994,48,Yes,0.902,5,seasonal_variation|many_peaks|resident_bimodal
 American Herring Gull,Single-season,0.116603,0.003193,0.0274,48,Yes,0.0274,3,winter_resident
 Great Black-backed Gull,Single-season,0.018234,0.0,0.0,19,Yes,0.0,2,winter_resident
 American Herring x Great Black-backed Gull (hybrid),Vagrant,0.0015,0.0,0.0,1,No,,1,
@@ -145,7 +145,7 @@ Snowy Egret,Single-season,0.015866,0.0,0.0,14,No,,1,low_presence
 Green Heron,Single-season,0.175916,0.0,0.0,29,Yes,0.3555,2,bimodal_high_valley
 Western Cattle-Egret,Two-passage migrant,0.003989,0.0,0.0,14,Yes,0.0,4,low_presence|many_peaks
 Great Egret,Two-passage migrant,0.267223,0.0,0.0,38,Yes,0.1347,2,valley_near_boundary|classic_bimodal
-Great Blue Heron,Single-season,0.298956,0.030536,0.1021,48,Yes,0.8319,4,bimodal_high_valley|many_peaks
+Great Blue Heron,Resident,0.298956,0.030536,0.1021,48,Yes,0.8319,4,seasonal_variation|many_peaks|resident_bimodal
 American White Pelican,Two-passage migrant,0.00786,0.0,0.0,16,Yes,0.0,3,
 Black Vulture,Single-season,0.010828,0.0,0.0,15,No,,1,
 Turkey Vulture,Single-season,0.393301,0.006718,0.0171,48,Yes,0.5184,4,bimodal_high_valley|many_peaks
@@ -156,7 +156,7 @@ Sharp-shinned Hawk,Single-season,0.033014,0.0,0.0,41,Yes,0.8382,5,bimodal_high_v
 Cooper's Hawk,Resident,0.086497,0.021933,0.2536,48,Yes,0.7535,4,many_peaks|resident_bimodal
 American Goshawk,Vagrant,0.0015,0.0,0.0,9,Yes,0.0,2,
 Northern Harrier,Single-season,0.052649,0.000285,0.0054,48,Yes,0.0054,3,winter_resident
-Bald Eagle,Two-passage migrant,0.086372,0.008252,0.0955,48,Yes,0.0955,4,many_peaks
+Bald Eagle,Resident,0.086372,0.008252,0.0955,48,Yes,0.0955,4,seasonal_variation|many_peaks|resident_bimodal
 Mississippi Kite,Vagrant,0.042741,0.0,0.0,4,No,,1,
 Broad-winged Hawk,Two-passage migrant,0.056446,0.0,0.0,29,Yes,0.1331,4,valley_near_boundary|many_peaks
 Red-shouldered Hawk,Single-season,0.01523,0.000789,0.0518,48,Yes,0.0518,8,winter_resident|many_peaks
@@ -173,7 +173,7 @@ Short-eared Owl,Single-season,0.024816,0.0,0.0,28,Yes,0.0,3,winter_resident
 Northern Saw-whet Owl,Single-season,0.003241,0.0,0.0,29,Yes,0.0,5,winter_resident|many_peaks
 Belted Kingfisher,Resident,0.206384,0.037431,0.1814,48,Yes,0.6152,7,min_max_near_boundary|many_peaks|resident_bimodal
 Yellow-bellied Sapsucker,Two-passage migrant,0.101292,0.0,0.0,41,Yes,0.0,2,classic_bimodal
-Red-headed Woodpecker,Single-season,0.034856,0.003743,0.1074,48,Yes,0.4462,4,bimodal_high_valley|many_peaks
+Red-headed Woodpecker,Resident,0.034856,0.003743,0.1074,48,Yes,0.4462,4,seasonal_variation|many_peaks|resident_bimodal
 Red-bellied Woodpecker,Resident,0.506257,0.198747,0.3926,48,Yes,0.3926,4,many_peaks|resident_bimodal
 Downy Woodpecker,Resident,0.498363,0.247557,0.4967,48,Yes,0.4967,6,many_peaks|resident_bimodal
 Hairy Woodpecker,Resident,0.194558,0.067876,0.3489,48,Yes,0.3489,3,resident_bimodal
@@ -231,7 +231,7 @@ European Starling,Resident,0.346962,0.183074,0.5276,48,Yes,0.8852,6,many_peaks|r
 Gray Catbird,Single-season,0.507937,0.0,0.0,44,Yes,0.5286,3,bimodal_high_valley
 Brown Thrasher,Single-season,0.057807,0.0,0.0,40,Yes,0.5604,3,bimodal_high_valley
 Sage Thrasher,Vagrant,0.0015,0.0,0.0,1,No,,1,
-Northern Mockingbird,Single-season,0.015635,0.001607,0.1028,48,Yes,0.707,5,bimodal_high_valley|many_peaks
+Northern Mockingbird,Resident,0.015635,0.001607,0.1028,48,Yes,0.707,5,seasonal_variation|many_peaks|resident_bimodal
 Eastern Bluebird,Resident,0.205294,0.098956,0.482,48,Yes,0.9545,6,many_peaks|resident_bimodal
 Townsend's Solitaire,Vagrant,0.009823,0.0,0.0,3,No,,0,
 Varied Thrush,Vagrant,0.0015,0.0,0.0,6,No,,1,
@@ -274,7 +274,7 @@ LeConte's Sparrow,Vagrant,0.00349,0.0,0.0,1,No,,1,
 Nelson's Sparrow,Vagrant,0.005193,0.0,0.0,5,No,,1,
 Savannah Sparrow,Single-season,0.076873,0.0,0.0,43,Yes,0.7042,2,bimodal_high_valley
 Henslow's Sparrow,Single-season,0.024374,0.0,0.0,19,Yes,0.6879,2,bimodal_high_valley
-Song Sparrow,Single-season,0.570377,0.056541,0.0991,48,Yes,0.8392,3,bimodal_high_valley
+Song Sparrow,Resident,0.570377,0.056541,0.0991,48,Yes,0.8392,3,seasonal_variation|resident_bimodal
 Lincoln's Sparrow,Two-passage migrant,0.048201,0.0,0.0,17,Yes,0.0,2,classic_bimodal
 Swamp Sparrow,Two-passage migrant,0.105828,0.000341,0.0032,48,Yes,0.0919,3,
 Eastern Towhee,Single-season,0.119734,0.0,0.0,47,Yes,0.6962,4,bimodal_high_valley|many_peaks
