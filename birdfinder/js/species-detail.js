@@ -111,17 +111,17 @@ function renderTimingInfo() {
 
         container.innerHTML = `
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="text-center p-4 bg-green-50 rounded-lg">
-                    <div class="text-green-600 text-sm font-medium mb-1">Arrival</div>
-                    <div class="text-xl font-bold text-gray-900">${arrival}</div>
+                <div class="text-center p-4 rounded-lg" style="background-color: #D4EDE9;">
+                    <div class="text-sm font-medium mb-1" style="color: #1A5D54;">Arrival</div>
+                    <div class="text-xl font-bold">${arrival}</div>
                 </div>
-                <div class="text-center p-4 bg-blue-50 rounded-lg">
-                    <div class="text-blue-600 text-sm font-medium mb-1">Peak</div>
-                    <div class="text-xl font-bold text-gray-900">${peak}</div>
+                <div class="text-center p-4 rounded-lg" style="background-color: #FDF3D7;">
+                    <div class="text-sm font-medium mb-1" style="color: #8B6F1B;">Peak</div>
+                    <div class="text-xl font-bold">${peak}</div>
                 </div>
-                <div class="text-center p-4 bg-orange-50 rounded-lg">
-                    <div class="text-orange-600 text-sm font-medium mb-1">Departure</div>
-                    <div class="text-xl font-bold text-gray-900">${departure}</div>
+                <div class="text-center p-4 rounded-lg" style="background-color: #F2E5DD;">
+                    <div class="text-sm font-medium mb-1" style="color: #7A4F36;">Departure</div>
+                    <div class="text-xl font-bold">${departure}</div>
                 </div>
             </div>
         `;
@@ -134,44 +134,44 @@ function renderTimingInfo() {
             <div class="space-y-6">
                 <!-- Spring -->
                 <div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
-                        <span class="text-green-600">🌱</span>
+                    <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
+                        <span>🌱</span>
                         Spring Migration
                     </h3>
                     <div class="grid grid-cols-3 gap-3">
-                        <div class="text-center p-3 bg-green-50 rounded-lg">
-                            <div class="text-green-600 text-xs font-medium mb-1">Arrival</div>
-                            <div class="text-base font-bold text-gray-900">${timing.spring_arrival}</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #D4EDE9;">
+                            <div class="text-xs font-medium mb-1" style="color: #1A5D54;">Arrival</div>
+                            <div class="text-base font-bold">${timing.spring_arrival}</div>
                         </div>
-                        <div class="text-center p-3 bg-blue-50 rounded-lg">
-                            <div class="text-blue-600 text-xs font-medium mb-1">Peak</div>
-                            <div class="text-base font-bold text-gray-900">${timing.spring_peak}</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #FDF3D7;">
+                            <div class="text-xs font-medium mb-1" style="color: #8B6F1B;">Peak</div>
+                            <div class="text-base font-bold">${timing.spring_peak}</div>
                         </div>
-                        <div class="text-center p-3 bg-orange-50 rounded-lg">
-                            <div class="text-orange-600 text-xs font-medium mb-1">Departure</div>
-                            <div class="text-base font-bold text-gray-900">${timing.spring_departure}</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #F2E5DD;">
+                            <div class="text-xs font-medium mb-1" style="color: #7A4F36;">Departure</div>
+                            <div class="text-base font-bold">${timing.spring_departure}</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Fall -->
                 <div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
-                        <span class="text-orange-600">🍂</span>
+                    <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
+                        <span>🍂</span>
                         Fall Migration
                     </h3>
                     <div class="grid grid-cols-3 gap-3">
-                        <div class="text-center p-3 bg-green-50 rounded-lg">
-                            <div class="text-green-600 text-xs font-medium mb-1">Arrival</div>
-                            <div class="text-base font-bold text-gray-900">${timing.fall_arrival}</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #D4EDE9;">
+                            <div class="text-xs font-medium mb-1" style="color: #1A5D54;">Arrival</div>
+                            <div class="text-base font-bold">${timing.fall_arrival}</div>
                         </div>
-                        <div class="text-center p-3 bg-blue-50 rounded-lg">
-                            <div class="text-blue-600 text-xs font-medium mb-1">Peak</div>
-                            <div class="text-base font-bold text-gray-900">${timing.fall_peak}</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #FDF3D7;">
+                            <div class="text-xs font-medium mb-1" style="color: #8B6F1B;">Peak</div>
+                            <div class="text-base font-bold">${timing.fall_peak}</div>
                         </div>
-                        <div class="text-center p-3 bg-orange-50 rounded-lg">
-                            <div class="text-orange-600 text-xs font-medium mb-1">Departure</div>
-                            <div class="text-base font-bold text-gray-900">${timing.fall_departure}</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #F2E5DD;">
+                            <div class="text-xs font-medium mb-1" style="color: #7A4F36;">Departure</div>
+                            <div class="text-base font-bold">${timing.fall_departure}</div>
                         </div>
                     </div>
                 </div>
@@ -229,7 +229,7 @@ function renderFrequencyChart() {
         pathData += ` L ${x} ${y}`;
     }
     pathData += ` L ${padding.left + chartWidth} ${padding.top + chartHeight} Z`;
-    svg += `<path d="${pathData}" fill="#3b82f6" fill-opacity="0.1" stroke="none"/>`;
+    svg += `<path d="${pathData}" fill="#4A6670" fill-opacity="0.1" stroke="none"/>`;
 
     // Draw line
     let lineData = '';
@@ -238,7 +238,7 @@ function renderFrequencyChart() {
         const y = padding.top + chartHeight - (frequencies[i] * yScale);
         lineData += (i === 0 ? 'M' : ' L') + ` ${x} ${y}`;
     }
-    svg += `<path d="${lineData}" fill="none" stroke="#3b82f6" stroke-width="2"/>`;
+    svg += `<path d="${lineData}" fill="none" stroke="#4A6670" stroke-width="2"/>`;
 
     svg += '</svg>';
 

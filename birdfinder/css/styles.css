@@ -29,6 +29,20 @@ main {
     flex: 1;
 }
 
+/* Header */
+header {
+    background-color: var(--color-blue-gray);
+    color: white;
+}
+
+header a {
+    color: white;
+}
+
+header a:hover {
+    color: var(--color-yellow);
+}
+
 /* Links */
 a {
     color: var(--color-blue-gray);
