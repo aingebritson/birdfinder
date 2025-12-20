@@ -33,12 +33,22 @@ const WeekCalculator = {
         const monthIndex = Math.floor(weekIndex / 4);
         const weekOfMonth = weekIndex % 4;
 
+        // Days in each month (non-leap year)
+        const daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
         const dayStarts = [1, 8, 15, 22];
-        const dayEnds = [7, 14, 21, 28];
 
         const month = this.monthNames[monthIndex];
         const startDay = dayStarts[weekOfMonth];
-        const endDay = dayEnds[weekOfMonth];
+
+        // End day: weeks 1-3 end on day 7, 14, 21
+        // Week 4 ends on the last day of the month
+        let endDay;
+        if (weekOfMonth === 3) {
+            endDay = daysInMonth[monthIndex];
+        } else {
+            endDay = dayStarts[weekOfMonth] + 6;
+        }
 
         return `${month} ${startDay}-${endDay}`;
     },

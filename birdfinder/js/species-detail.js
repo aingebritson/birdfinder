@@ -5,6 +5,50 @@
 let currentSpecies = null;
 
 /**
+ * Convert timing string (e.g., "early May") to date range (e.g., "May 1-7")
+ */
+function timingToDateRange(timingStr) {
+    if (!timingStr) return '';
+
+    // Parse "early May" format to week index
+    const parts = timingStr.toLowerCase().split(' ');
+    if (parts.length < 2) return timingStr;
+
+    const modifier = parts[0]; // early, mid, late
+    const monthName = parts[1].charAt(0).toUpperCase() + parts[1].slice(1);
+
+    const monthNames = [
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+
+    const monthIndex = monthNames.indexOf(monthName);
+    if (monthIndex === -1) return timingStr;
+
+    // Map modifier to week of month
+    let weekOfMonth;
+    if (modifier === 'early') weekOfMonth = 0;
+    else if (modifier === 'mid') weekOfMonth = 1;
+    else weekOfMonth = 2; // 'late' maps to week 3 (index 2)
+
+    const weekIndex = (monthIndex * 4) + weekOfMonth;
+
+    // Convert week index to date range
+    const daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    const dayStarts = [1, 8, 15, 22];
+
+    const startDay = dayStarts[weekOfMonth];
+    let endDay;
+    if (weekOfMonth === 3) {
+        endDay = daysInMonth[monthIndex];
+    } else {
+        endDay = dayStarts[weekOfMonth] + 6;
+    }
+
+    return `${monthName} ${startDay}-${endDay}`;
+}
+
+/**
  * Get species code from URL
  */
 function getSpeciesCodeFromURL() {
@@ -104,9 +148,9 @@ function renderTimingInfo() {
 
     // Single-season (including winter residents)
     if (timing.arrival || timing.winter_arrival) {
-        const arrival = timing.arrival || timing.winter_arrival;
-        const peak = timing.peak || timing.winter_peak;
-        const departure = timing.departure || timing.winter_departure;
+        const arrival = timingToDateRange(timing.arrival || timing.winter_arrival);
+        const peak = timingToDateRange(timing.peak || timing.winter_peak);
+        const departure = timingToDateRange(timing.departure || timing.winter_departure);
         const label = isWinterResident ? 'Winter' : 'Season';
 
         container.innerHTML = `
@@ -141,15 +185,15 @@ function renderTimingInfo() {
                     <div class="grid grid-cols-3 gap-3">
                         <div class="text-center p-3 rounded-lg" style="background-color: #D4EDE9;">
                             <div class="text-xs font-medium mb-1" style="color: #1A5D54;">Arrival</div>
-                            <div class="text-base font-bold">${timing.spring_arrival}</div>
+                            <div class="text-base font-bold">${timingToDateRange(timing.spring_arrival)}</div>
                         </div>
                         <div class="text-center p-3 rounded-lg" style="background-color: #FDF3D7;">
                             <div class="text-xs font-medium mb-1" style="color: #8B6F1B;">Peak</div>
-                            <div class="text-base font-bold">${timing.spring_peak}</div>
+                            <div class="text-base font-bold">${timingToDateRange(timing.spring_peak)}</div>
                         </div>
                         <div class="text-center p-3 rounded-lg" style="background-color: #F2E5DD;">
                             <div class="text-xs font-medium mb-1" style="color: #7A4F36;">Departure</div>
-                            <div class="text-base font-bold">${timing.spring_departure}</div>
+                            <div class="text-base font-bold">${timingToDateRange(timing.spring_departure)}</div>
                         </div>
                     </div>
                 </div>
@@ -163,15 +207,15 @@ function renderTimingInfo() {
                     <div class="grid grid-cols-3 gap-3">
                         <div class="text-center p-3 rounded-lg" style="background-color: #D4EDE9;">
                             <div class="text-xs font-medium mb-1" style="color: #1A5D54;">Arrival</div>
-                            <div class="text-base font-bold">${timing.fall_arrival}</div>
+                            <div class="text-base font-bold">${timingToDateRange(timing.fall_arrival)}</div>
                         </div>
                         <div class="text-center p-3 rounded-lg" style="background-color: #FDF3D7;">
                             <div class="text-xs font-medium mb-1" style="color: #8B6F1B;">Peak</div>
-                            <div class="text-base font-bold">${timing.fall_peak}</div>
+                            <div class="text-base font-bold">${timingToDateRange(timing.fall_peak)}</div>
                         </div>
                         <div class="text-center p-3 rounded-lg" style="background-color: #F2E5DD;">
                             <div class="text-xs font-medium mb-1" style="color: #7A4F36;">Departure</div>
-                            <div class="text-base font-bold">${timing.fall_departure}</div>
+                            <div class="text-base font-bold">${timingToDateRange(timing.fall_departure)}</div>
                         </div>
                     </div>
                 </div>
