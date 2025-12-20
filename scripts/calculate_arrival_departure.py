@@ -9,11 +9,14 @@ from pathlib import Path
 
 
 def week_to_date_range(week_num):
-    """Convert week number (0-47) to readable date range like 'May 1-7' or 'early May'"""
+    """Convert week number (0-47) to readable date range like 'May 1-7'"""
     months = [
         'January', 'February', 'March', 'April', 'May', 'June',
         'July', 'August', 'September', 'October', 'November', 'December'
     ]
+
+    # Days in each month (non-leap year)
+    days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
     month_idx = week_num // 4
     week_in_month = week_num % 4
@@ -22,16 +25,16 @@ def week_to_date_range(week_num):
 
     # Calculate day ranges for each week
     day_starts = [1, 8, 15, 22]
-    day_ends = [7, 14, 21, 28]  # Approximate, good enough
 
     start_day = day_starts[week_in_month]
-    end_day = day_ends[week_in_month]
 
-    # Also provide a shorthand version
-    week_labels = ['early', 'mid', 'late', 'late']
-    shorthand = f"{week_labels[week_in_month]} {month}"
+    # Week 4 ends on the last day of the month, other weeks end on start_day + 6
+    if week_in_month == 3:
+        end_day = days_in_month[month_idx]
+    else:
+        end_day = start_day + 6
 
-    return f"{month} {start_day}-{end_day}", shorthand
+    return f"{month} {start_day}-{end_day}"
 
 
 def find_arrival_departure(frequencies, peak_frequency, is_winter_resident=False):
@@ -166,9 +169,9 @@ def calculate_migration_timing(species_name, frequencies, category, flags, peak_
             frequencies, peak_frequency, is_winter_resident
         )
 
-        arrival_long, arrival_short = week_to_date_range(arrival_week) if arrival_week is not None else ('', '')
-        departure_long, departure_short = week_to_date_range(departure_week) if departure_week is not None else ('', '')
-        peak_long, peak_short = week_to_date_range(peak_week)
+        arrival_date_range = week_to_date_range(arrival_week) if arrival_week is not None else ''
+        departure_date_range = week_to_date_range(departure_week) if departure_week is not None else ''
+        peak_date_range = week_to_date_range(peak_week)
 
         pattern_type = 'Winter resident' if is_winter_resident else 'Single passage'
 
@@ -176,18 +179,9 @@ def calculate_migration_timing(species_name, frequencies, category, flags, peak_
             'species': species_name,
             'category': category,
             'pattern': pattern_type,
-            'spring_arrival': arrival_long,
-            'spring_arrival_short': arrival_short,
-            'spring_peak': peak_long,
-            'spring_peak_short': peak_short,
-            'spring_departure': departure_long,
-            'spring_departure_short': departure_short,
-            'fall_arrival': '',
-            'fall_arrival_short': '',
-            'fall_peak': '',
-            'fall_peak_short': '',
-            'fall_departure': '',
-            'fall_departure_short': ''
+            'arrival': arrival_date_range,
+            'peak': peak_date_range,
+            'departure': departure_date_range
         }
 
     # Two-passage migrant: spring and fall passages
@@ -244,30 +238,24 @@ def calculate_migration_timing(species_name, frequencies, category, flags, peak_
             fall_departure_week = 47
 
         # Convert to date ranges
-        spring_arr_long, spring_arr_short = week_to_date_range(spring_arrival_week) if spring_arrival_week is not None else ('', '')
-        spring_peak_long, spring_peak_short = week_to_date_range(spring_peak_week)
-        spring_dep_long, spring_dep_short = week_to_date_range(spring_departure_week)
+        spring_arrival_date = week_to_date_range(spring_arrival_week) if spring_arrival_week is not None else ''
+        spring_peak_date = week_to_date_range(spring_peak_week)
+        spring_departure_date = week_to_date_range(spring_departure_week)
 
-        fall_arr_long, fall_arr_short = week_to_date_range(fall_arrival_week)
-        fall_peak_long, fall_peak_short = week_to_date_range(fall_peak_week)
-        fall_dep_long, fall_dep_short = week_to_date_range(fall_departure_week)
+        fall_arrival_date = week_to_date_range(fall_arrival_week)
+        fall_peak_date = week_to_date_range(fall_peak_week)
+        fall_departure_date = week_to_date_range(fall_departure_week)
 
         return {
             'species': species_name,
             'category': category,
             'pattern': 'Two passages',
-            'spring_arrival': spring_arr_long,
-            'spring_arrival_short': spring_arr_short,
-            'spring_peak': spring_peak_long,
-            'spring_peak_short': spring_peak_short,
-            'spring_departure': spring_dep_long,
-            'spring_departure_short': spring_dep_short,
-            'fall_arrival': fall_arr_long,
-            'fall_arrival_short': fall_arr_short,
-            'fall_peak': fall_peak_long,
-            'fall_peak_short': fall_peak_short,
-            'fall_departure': fall_dep_long,
-            'fall_departure_short': fall_dep_short
+            'spring_arrival': spring_arrival_date,
+            'spring_peak': spring_peak_date,
+            'spring_departure': spring_departure_date,
+            'fall_arrival': fall_arrival_date,
+            'fall_peak': fall_peak_date,
+            'fall_departure': fall_departure_date
         }
 
 
@@ -340,14 +328,11 @@ def main():
     with open(output_file, 'w', newline='', encoding='utf-8') as f:
         fieldnames = [
             'species', 'category', 'pattern',
-            'spring_arrival', 'spring_arrival_short',
-            'spring_peak', 'spring_peak_short',
-            'spring_departure', 'spring_departure_short',
-            'fall_arrival', 'fall_arrival_short',
-            'fall_peak', 'fall_peak_short',
-            'fall_departure', 'fall_departure_short'
+            'arrival', 'peak', 'departure',
+            'spring_arrival', 'spring_peak', 'spring_departure',
+            'fall_arrival', 'fall_peak', 'fall_departure'
         ]
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
 
         writer.writeheader()
         writer.writerows(results)
@@ -364,10 +349,12 @@ def main():
             print(f"\n{pattern}:")
             for ex in examples:
                 print(f"  {ex['species']}:")
-                if ex['spring_arrival']:
-                    print(f"    Spring: {ex['spring_arrival_short']} → {ex['spring_peak_short']} → {ex['spring_departure_short']}")
-                if ex['fall_arrival']:
-                    print(f"    Fall: {ex['fall_arrival_short']} → {ex['fall_peak_short']} → {ex['fall_departure_short']}")
+                if ex.get('arrival'):
+                    print(f"    {ex['arrival']} → {ex['peak']} → {ex['departure']}")
+                if ex.get('spring_arrival'):
+                    print(f"    Spring: {ex['spring_arrival']} → {ex['spring_peak']} → {ex['spring_departure']}")
+                if ex.get('fall_arrival'):
+                    print(f"    Fall: {ex['fall_arrival']} → {ex['fall_peak']} → {ex['fall_departure']}")
 
 
 if __name__ == "__main__":

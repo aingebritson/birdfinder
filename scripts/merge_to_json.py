@@ -94,12 +94,12 @@ def build_timing(pattern, timing_row, flags):
         prefix = 'winter_' if is_winter else ''
 
         timing = {}
-        if timing_row['spring_arrival_short']:
-            timing[f'{prefix}arrival'] = timing_row['spring_arrival_short']
-        if timing_row['spring_peak_short']:
-            timing[f'{prefix}peak'] = timing_row['spring_peak_short']
-        if timing_row['spring_departure_short']:
-            timing[f'{prefix}departure'] = timing_row['spring_departure_short']
+        if timing_row.get('arrival'):
+            timing[f'{prefix}arrival'] = timing_row['arrival']
+        if timing_row.get('peak'):
+            timing[f'{prefix}peak'] = timing_row['peak']
+        if timing_row.get('departure'):
+            timing[f'{prefix}departure'] = timing_row['departure']
 
         return timing
 
@@ -108,20 +108,20 @@ def build_timing(pattern, timing_row, flags):
         timing = {}
 
         # Spring timing
-        if timing_row['spring_arrival_short']:
-            timing['spring_arrival'] = timing_row['spring_arrival_short']
-        if timing_row['spring_peak_short']:
-            timing['spring_peak'] = timing_row['spring_peak_short']
-        if timing_row['spring_departure_short']:
-            timing['spring_departure'] = timing_row['spring_departure_short']
+        if timing_row.get('spring_arrival'):
+            timing['spring_arrival'] = timing_row['spring_arrival']
+        if timing_row.get('spring_peak'):
+            timing['spring_peak'] = timing_row['spring_peak']
+        if timing_row.get('spring_departure'):
+            timing['spring_departure'] = timing_row['spring_departure']
 
         # Fall timing
-        if timing_row['fall_arrival_short']:
-            timing['fall_arrival'] = timing_row['fall_arrival_short']
-        if timing_row['fall_peak_short']:
-            timing['fall_peak'] = timing_row['fall_peak_short']
-        if timing_row['fall_departure_short']:
-            timing['fall_departure'] = timing_row['fall_departure_short']
+        if timing_row.get('fall_arrival'):
+            timing['fall_arrival'] = timing_row['fall_arrival']
+        if timing_row.get('fall_peak'):
+            timing['fall_peak'] = timing_row['fall_peak']
+        if timing_row.get('fall_departure'):
+            timing['fall_departure'] = timing_row['fall_departure']
 
         return timing
 
