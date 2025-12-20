@@ -198,7 +198,7 @@ function renderFrequencyChart() {
     // Find max frequency for scaling
     const maxFreq = Math.max(...frequencies);
     const yScale = chartHeight / maxFreq;
-    const xScale = chartWidth / 48;
+    const xScale = chartWidth / (frequencies.length - 1); // Divide by 47 so last point lands at chartWidth
 
     // Month labels
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -217,7 +217,8 @@ function renderFrequencyChart() {
 
     // Month labels (x-axis)
     for (let i = 0; i < 12; i++) {
-        const x = padding.left + (i * 4 * xScale) + (2 * xScale);
+        const weekIndex = i * 4 + 2; // Middle of each month (week 2, 6, 10, etc.)
+        const x = padding.left + (weekIndex * xScale);
         svg += `<text x="${x}" y="${height - 10}" text-anchor="middle" font-size="12" fill="#6b7280">${months[i]}</text>`;
     }
 
