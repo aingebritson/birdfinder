@@ -126,19 +126,17 @@ function createSpeciesCard(species, frequency) {
 
     return `
         <a href="species.html?code=${species.code}" class="species-card block bg-white rounded-lg shadow-sm hover:shadow-md p-4 border border-gray-200">
-            <div class="flex items-start justify-between mb-2">
+            <div class="flex items-start justify-between mb-3">
                 <div class="flex-1">
-                    <h4 class="font-semibold text-gray-900 text-lg">${species.name}</h4>
+                    <h4 class="font-semibold text-lg">${species.name}</h4>
                     <span class="badge ${categoryBadge} mt-1">${categoryName}</span>
                 </div>
                 <div class="text-right ml-4">
-                    <div class="text-2xl font-bold text-gray-900">${freqPercent}%</div>
-                    <div class="text-xs text-gray-500">frequency</div>
+                    <div class="frequency-percent text-2xl">${freqPercent}%</div>
+                    <div class="text-xs" style="color: #6B7280;">frequency</div>
                 </div>
             </div>
-            <div class="w-full bg-gray-200 rounded-full h-1 mt-3">
-                <div class="bg-blue-600 h-1 rounded-full transition-all" style="width: ${barWidth}%"></div>
-            </div>
+            <div class="frequency-bar" style="width: ${barWidth}%;"></div>
         </a>
     `;
 }

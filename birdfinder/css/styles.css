@@ -1,13 +1,42 @@
-/* Custom styles for BirdFinder */
+/* Custom styles for BirdFinder - Kirtland's Warbler color palette */
+
+/* Color palette:
+ * Primary (yellow): #E8B831
+ * Secondary (blue-gray): #4A6670
+ * Text: #2D3436
+ * Background: #F8F7F4
+ * Cards: #FFFFFF
+ */
+
+:root {
+    --color-yellow: #E8B831;
+    --color-blue-gray: #4A6670;
+    --color-teal: #2A9D8F;
+    --color-rust: #C17F59;
+    --color-text: #2D3436;
+    --color-bg: #F8F7F4;
+}
 
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
 main {
     flex: 1;
+}
+
+/* Links */
+a {
+    color: var(--color-blue-gray);
+    transition: color 0.15s ease;
+}
+
+a:hover {
+    color: var(--color-yellow);
 }
 
 /* Species card styles */
@@ -21,14 +50,14 @@ main {
 
 /* Frequency bar */
 .frequency-bar {
-    height: 4px;
-    background: linear-gradient(90deg, #e5e7eb 0%, #3b82f6 100%);
-    border-radius: 2px;
+    height: 8px;
+    background: linear-gradient(90deg, #e5e7eb 0%, var(--color-blue-gray) 100%);
+    border-radius: 4px;
     transition: all 0.2s ease;
 }
 
 .species-card:hover .frequency-bar {
-    height: 6px;
+    height: 10px;
 }
 
 /* Badge styles */
@@ -36,28 +65,28 @@ main {
     display: inline-block;
     padding: 0.125rem 0.5rem;
     font-size: 0.75rem;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 9999px;
 }
 
 .badge-resident {
-    background-color: #dbeafe;
-    color: #1e40af;
+    background-color: #D4E3E8;
+    color: #2C4650;
 }
 
 .badge-single-season {
-    background-color: #fef3c7;
-    color: #92400e;
+    background-color: #FDF3D7;
+    color: #8B6F1B;
 }
 
 .badge-two-passage {
-    background-color: #e0e7ff;
-    color: #3730a3;
+    background-color: #D4EDE9;
+    color: #1A5D54;
 }
 
 .badge-vagrant {
-    background-color: #f3f4f6;
-    color: #4b5563;
+    background-color: #F2E5DD;
+    color: #7A4F36;
 }
 
 /* Chart container */
@@ -91,4 +120,59 @@ main {
 .empty-state-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+
+/* Section headers (Arriving, At Peak, Departing) */
+.section-header {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* "This Week" button styles */
+.btn-this-week {
+    background-color: var(--color-yellow);
+    color: var(--color-text);
+    font-weight: 600;
+    transition: all 0.15s ease;
+}
+
+.btn-this-week:hover {
+    background-color: #D4A820;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Previous/Next navigation buttons */
+.btn-nav {
+    background-color: #F8F7F4;
+    color: var(--color-blue-gray);
+    border: 1px solid var(--color-blue-gray);
+    transition: all 0.15s ease;
+}
+
+.btn-nav:hover {
+    background-color: var(--color-blue-gray);
+    color: white;
+}
+
+/* Active navigation tab underline */
+.nav-active {
+    border-bottom: 2px solid var(--color-yellow);
+}
+
+/* Section icons (arrows, dots) */
+.section-icon {
+    color: var(--color-blue-gray);
+}
+
+/* Frequency percentage - make bolder */
+.frequency-percent {
+    font-weight: 700;
+}
+
+/* Form inputs - yellow focus ring */
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--color-yellow);
+    box-shadow: 0 0 0 3px rgba(232, 184, 49, 0.1);
 }
