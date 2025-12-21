@@ -289,15 +289,19 @@ function renderFrequencyChart() {
         const rect = svg.getBoundingClientRect();
         const mouseX = e.clientX - rect.left;
 
+        // Convert mouse position to SVG coordinates (accounting for viewBox scaling)
+        const scaleX = width / rect.width;
+        const svgMouseX = mouseX * scaleX;
+
         // Only show tooltip if mouse is within chart area
-        if (mouseX < padding.left || mouseX > width - padding.right) {
+        if (svgMouseX < padding.left || svgMouseX > width - padding.right) {
             tooltip.style.opacity = '0';
             indicator.style.opacity = '0';
             return;
         }
 
-        // Find closest week
-        const relativeX = mouseX - padding.left;
+        // Find closest week using SVG coordinates
+        const relativeX = svgMouseX - padding.left;
         const weekIndex = Math.round(relativeX / xScale);
 
         if (weekIndex >= 0 && weekIndex < frequencies.length) {
