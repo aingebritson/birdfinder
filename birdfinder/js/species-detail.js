@@ -203,23 +203,59 @@ function renderFrequencyChart() {
     // Month labels
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-    // Create SVG
-    let svg = `<svg width="${width}" height="${height}" class="w-full">`;
+    // Get current week for indicator
+    const currentWeek = WeekCalculator.getCurrentWeek();
+
+    // Create container with SVG and tooltip
+    container.innerHTML = `
+        <div style="position: relative;">
+            <svg id="freq-svg" width="${width}" height="${height}" class="w-full" style="cursor: crosshair;"></svg>
+            <div id="freq-tooltip" style="
+                position: absolute;
+                background: rgba(0, 0, 0, 0.8);
+                color: white;
+                padding: 6px 10px;
+                border-radius: 4px;
+                font-size: 12px;
+                pointer-events: none;
+                opacity: 0;
+                transition: opacity 0.15s;
+                white-space: nowrap;
+            "></div>
+            <div id="freq-indicator" style="
+                position: absolute;
+                top: ${padding.top}px;
+                width: 1px;
+                height: ${chartHeight}px;
+                background: #E8B831;
+                pointer-events: none;
+                opacity: 0;
+                transition: opacity 0.15s;
+            "></div>
+        </div>
+    `;
+
+    const svg = document.getElementById('freq-svg');
+    const tooltip = document.getElementById('freq-tooltip');
+    const indicator = document.getElementById('freq-indicator');
+
+    // Build SVG content
+    let svgContent = '';
 
     // Grid lines (horizontal)
     const numYTicks = 5;
     for (let i = 0; i <= numYTicks; i++) {
         const y = padding.top + (chartHeight * i / numYTicks);
         const value = maxFreq * (1 - i / numYTicks);
-        svg += `<line x1="${padding.left}" y1="${y}" x2="${width - padding.right}" y2="${y}" stroke="#e5e7eb" stroke-width="1"/>`;
-        svg += `<text x="${padding.left - 10}" y="${y + 4}" text-anchor="end" font-size="12" fill="#6b7280">${(value * 100).toFixed(0)}%</text>`;
+        svgContent += `<line x1="${padding.left}" y1="${y}" x2="${width - padding.right}" y2="${y}" stroke="#e5e7eb" stroke-width="1"/>`;
+        svgContent += `<text x="${padding.left - 10}" y="${y + 4}" text-anchor="end" font-size="12" fill="#6b7280">${(value * 100).toFixed(0)}%</text>`;
     }
 
     // Month labels (x-axis)
     for (let i = 0; i < 12; i++) {
         const weekIndex = i * 4 + 2; // Middle of each month (week 2, 6, 10, etc.)
         const x = padding.left + (weekIndex * xScale);
-        svg += `<text x="${x}" y="${height - 10}" text-anchor="middle" font-size="12" fill="#6b7280">${months[i]}</text>`;
+        svgContent += `<text x="${x}" y="${height - 10}" text-anchor="middle" font-size="12" fill="#6b7280">${months[i]}</text>`;
     }
 
     // Draw area under curve
@@ -230,7 +266,7 @@ function renderFrequencyChart() {
         pathData += ` L ${x} ${y}`;
     }
     pathData += ` L ${padding.left + chartWidth} ${padding.top + chartHeight} Z`;
-    svg += `<path d="${pathData}" fill="#4A6670" fill-opacity="0.1" stroke="none"/>`;
+    svgContent += `<path d="${pathData}" fill="#4A6670" fill-opacity="0.1" stroke="none"/>`;
 
     // Draw line
     let lineData = '';
@@ -239,11 +275,59 @@ function renderFrequencyChart() {
         const y = padding.top + chartHeight - (frequencies[i] * yScale);
         lineData += (i === 0 ? 'M' : ' L') + ` ${x} ${y}`;
     }
-    svg += `<path d="${lineData}" fill="none" stroke="#4A6670" stroke-width="2"/>`;
+    svgContent += `<path d="${lineData}" fill="none" stroke="#4A6670" stroke-width="2"/>`;
 
-    svg += '</svg>';
+    // Draw current week indicator line
+    const currentWeekX = padding.left + (currentWeek * xScale);
+    svgContent += `<line x1="${currentWeekX}" y1="${padding.top}" x2="${currentWeekX}" y2="${padding.top + chartHeight}" stroke="#E8B831" stroke-width="2" stroke-dasharray="4,3" opacity="0.7"/>`;
+    svgContent += `<text x="${currentWeekX}" y="${padding.top - 5}" text-anchor="middle" font-size="11" fill="#E8B831" font-weight="600">Now</text>`;
 
-    container.innerHTML = svg;
+    svg.innerHTML = svgContent;
+
+    // Add interactivity
+    svg.addEventListener('mousemove', (e) => {
+        const rect = svg.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+
+        // Only show tooltip if mouse is within chart area
+        if (mouseX < padding.left || mouseX > width - padding.right) {
+            tooltip.style.opacity = '0';
+            indicator.style.opacity = '0';
+            return;
+        }
+
+        // Find closest week
+        const relativeX = mouseX - padding.left;
+        const weekIndex = Math.round(relativeX / xScale);
+
+        if (weekIndex >= 0 && weekIndex < frequencies.length) {
+            const freq = frequencies[weekIndex];
+            const weekInfo = WeekCalculator.getWeekInfo(weekIndex);
+
+            // Position indicator
+            const indicatorX = padding.left + (weekIndex * xScale);
+            indicator.style.left = `${indicatorX}px`;
+            indicator.style.opacity = '0.5';
+
+            // Update and position tooltip
+            tooltip.innerHTML = `
+                <div style="font-weight: 600; margin-bottom: 2px;">${weekInfo.dateRange}</div>
+                <div>${(freq * 100).toFixed(1)}% frequency</div>
+            `;
+            tooltip.style.opacity = '1';
+
+            // Position tooltip above mouse, centered
+            const tooltipX = mouseX - (tooltip.offsetWidth / 2);
+            const tooltipY = e.clientY - rect.top - tooltip.offsetHeight - 10;
+            tooltip.style.left = `${Math.max(0, Math.min(tooltipX, width - tooltip.offsetWidth))}px`;
+            tooltip.style.top = `${tooltipY}px`;
+        }
+    });
+
+    svg.addEventListener('mouseleave', () => {
+        tooltip.style.opacity = '0';
+        indicator.style.opacity = '0';
+    });
 }
 
 // Initialize when DOM is ready

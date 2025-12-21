@@ -87,22 +87,39 @@ const WeekCalculator = {
 
     /**
      * Parse timing string to week index
-     * e.g., "early May" -> week index
+     * e.g., "May 15-21" -> week index
      */
     parseTimingToWeek(timingStr) {
         if (!timingStr) return null;
 
-        const parts = timingStr.toLowerCase().split(' ');
+        // Expected format: "May 15-21" or "January 1-7"
+        const parts = timingStr.split(' ');
         if (parts.length < 2) return null;
 
-        const modifier = parts[0]; // early, mid, late
-        const monthName = parts[1].charAt(0).toUpperCase() + parts[1].slice(1);
+        const monthName = parts[0]; // e.g., "May"
+        const dateRange = parts[1]; // e.g., "15-21"
 
         const monthIndex = this.monthNames.indexOf(monthName);
         if (monthIndex === -1) return null;
 
-        const weekOfMonth = modifier === 'early' ? 0 :
-                           modifier === 'mid' ? 1 : 2;
+        // Parse the start day from the date range
+        const startDay = parseInt(dateRange.split('-')[0]);
+        if (isNaN(startDay)) return null;
+
+        // Determine which week of the month based on start day
+        // Week 1: 1-7, Week 2: 8-14, Week 3: 15-21, Week 4: 22-end
+        let weekOfMonth;
+        if (startDay >= 1 && startDay <= 7) {
+            weekOfMonth = 0;
+        } else if (startDay >= 8 && startDay <= 14) {
+            weekOfMonth = 1;
+        } else if (startDay >= 15 && startDay <= 21) {
+            weekOfMonth = 2;
+        } else if (startDay >= 22) {
+            weekOfMonth = 3;
+        } else {
+            return null;
+        }
 
         return (monthIndex * 4) + weekOfMonth;
     },

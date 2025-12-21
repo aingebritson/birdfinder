@@ -55,8 +55,12 @@ The pipeline runs four scripts in sequence:
 ### 3. `calculate_arrival_departure.py`
 - Calculates arrival, peak, and departure weeks for each species
 - Uses threshold logic: 25% of peak OR 0.1% absolute (whichever higher)
-- Converts week numbers to readable date ranges
-- Outputs: Migration timing CSV
+- Converts week numbers (0-47) to exact date ranges using eBird's week structure:
+  - Week 1: Days 1-7
+  - Week 2: Days 8-14
+  - Week 3: Days 15-21
+  - Week 4: Days 22-end of month (28, 30, or 31)
+- Outputs: Migration timing CSV with date ranges (e.g., "May 15-21")
 
 ### 4. `merge_to_json.py`
 - Merges all data into a single JSON file
@@ -127,16 +131,23 @@ python3 scripts/merge_to_json.py [region_name]
   "category": "two-passage-migrant",
   "flags": ["classic_bimodal"],
   "timing": {
-    "spring_arrival": "late May",
-    "spring_peak": "late May",
-    "spring_departure": "early June",
-    "fall_arrival": "late August",
-    "fall_peak": "early September",
-    "fall_departure": "late September"
+    "spring_arrival": "May 15-21",
+    "spring_peak": "May 22-31",
+    "spring_departure": "June 1-7",
+    "fall_arrival": "August 22-31",
+    "fall_peak": "September 1-7",
+    "fall_departure": "September 22-30"
   },
   "weekly_frequency": [0, 0, 0.001, ...]
 }
 ```
+
+**Timing format notes:**
+- All timing values are exact date ranges (e.g., "May 15-21", "June 1-7")
+- Date ranges follow eBird's 48-week system (4 weeks per month, indexed 0-47)
+- Each week has specific date boundaries that align with eBird data
+- For year-round residents: `"status": "year-round"`
+- For irregular visitors: `"status": "irregular"`
 
 ## Customization
 
