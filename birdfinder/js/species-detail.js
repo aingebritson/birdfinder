@@ -308,9 +308,10 @@ function renderFrequencyChart() {
             const freq = frequencies[weekIndex];
             const weekInfo = WeekCalculator.getWeekInfo(weekIndex);
 
-            // Position indicator
-            const indicatorX = padding.left + (weekIndex * xScale);
-            indicator.style.left = `${indicatorX}px`;
+            // Position indicator - convert SVG coordinates back to screen coordinates
+            const indicatorSvgX = padding.left + (weekIndex * xScale);
+            const indicatorScreenX = indicatorSvgX / scaleX;
+            indicator.style.left = `${indicatorScreenX}px`;
             indicator.style.opacity = '0.5';
 
             // Update and position tooltip
