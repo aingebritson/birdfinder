@@ -188,8 +188,8 @@ function renderFrequencyChart() {
     const container = document.getElementById('frequency-chart');
     const frequencies = currentSpecies.weekly_frequency;
 
-    // Calculate dimensions
-    const width = container.clientWidth;
+    // Calculate dimensions - use offsetWidth for more accurate width
+    const width = container.offsetWidth || container.clientWidth;
     const height = 200;
     const padding = { top: 20, right: 20, bottom: 40, left: 50 };
     const chartWidth = width - padding.left - padding.right;
@@ -208,8 +208,8 @@ function renderFrequencyChart() {
 
     // Create container with SVG and tooltip
     container.innerHTML = `
-        <div style="position: relative;">
-            <svg id="freq-svg" width="${width}" height="${height}" class="w-full" style="cursor: crosshair;"></svg>
+        <div style="position: relative; width: 100%;">
+            <svg id="freq-svg" width="100%" height="${height}" viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" style="cursor: crosshair; display: block;"></svg>
             <div id="freq-tooltip" style="
                 position: absolute;
                 background: rgba(0, 0, 0, 0.8);
