@@ -264,6 +264,16 @@ input:focus, select:focus {
     background-color: var(--color-container-bg);
 }
 
+/* Fixed width container for consistent button positions on desktop */
+@media (min-width: 1280px) {
+    main.max-w-7xl,
+    header .max-w-7xl,
+    footer .max-w-7xl {
+        width: 1280px;
+        max-width: 1280px;
+    }
+}
+
 /* Responsive Species Grid */
 .species-grid {
     display: grid;
