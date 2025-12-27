@@ -249,7 +249,7 @@ function renderFrequencyChart() {
     // Create container with SVG and tooltip
     container.innerHTML = `
         <div style="position: relative; width: 100%;">
-            <svg id="freq-svg" width="100%" height="${height}" viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" style="cursor: crosshair; display: block;"></svg>
+            <svg id="freq-svg" width="100%" height="${height}" viewBox="0 0 ${width} ${height}" preserveAspectRatio="xMidYMid meet" style="cursor: crosshair; display: block;"></svg>
             <div id="freq-tooltip" style="
                 position: absolute;
                 background: rgba(0, 0, 0, 0.8);
@@ -284,11 +284,25 @@ function renderFrequencyChart() {
 
     // Grid lines (horizontal)
     const numYTicks = 5;
+
+    // First, calculate all tick values to determine if we need decimal places
+    const tickValues = [];
+    for (let i = 0; i <= numYTicks; i++) {
+        const value = maxFreq * (1 - i / numYTicks);
+        tickValues.push(value * 100);
+    }
+
+    // Check if any values round to the same integer
+    const roundedValues = tickValues.map(v => Math.round(v));
+    const hasDuplicates = roundedValues.length !== new Set(roundedValues).size;
+    const decimalPlaces = hasDuplicates ? 1 : 0;
+
+    // Draw grid lines and labels
     for (let i = 0; i <= numYTicks; i++) {
         const y = padding.top + (chartHeight * i / numYTicks);
-        const value = maxFreq * (1 - i / numYTicks);
+        const value = tickValues[i];
         svgContent += `<line x1="${padding.left}" y1="${y}" x2="${width - padding.right}" y2="${y}" stroke="#e5e7eb" stroke-width="1"/>`;
-        svgContent += `<text x="${padding.left - 10}" y="${y + 4}" text-anchor="end" font-size="12" fill="#6b7280">${(value * 100).toFixed(0)}%</text>`;
+        svgContent += `<text x="${padding.left - 10}" y="${y + 4}" text-anchor="end" font-size="12" fill="#6b7280">${value.toFixed(decimalPlaces)}%</text>`;
     }
 
     // Month labels (x-axis)
