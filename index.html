@@ -9,13 +9,13 @@
 </head>
 <body>
     <header class="shadow-sm">
-        <div class="max-w-4xl mx-auto px-4 py-6">
+        <div class="max-w-7xl mx-auto px-4 py-6">
             <h1 class="text-3xl font-bold">BirdFinder</h1>
             <p class="mt-1" style="opacity: 0.9;">Washtenaw County, Michigan</p>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-4 py-8">
+    <main class="max-w-7xl mx-auto px-4 py-8">
         <!-- Week Selector -->
         <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
@@ -53,7 +53,7 @@
                 <span class="section-icon">↓</span>
                 Arriving
             </h3>
-            <div id="arriving-list" class="space-y-2">
+            <div id="arriving-list" class="species-grid">
                 <div class="text-center py-8" style="color: #9CA3AF;">Loading...</div>
             </div>
         </section>
@@ -64,7 +64,7 @@
                 <span class="section-icon">●</span>
                 At Peak
             </h3>
-            <div id="peak-list" class="space-y-2">
+            <div id="peak-list" class="species-grid">
                 <div class="text-center py-8" style="color: #9CA3AF;">Loading...</div>
             </div>
         </section>
@@ -75,14 +75,14 @@
                 <span class="section-icon">↑</span>
                 Departing
             </h3>
-            <div id="departing-list" class="space-y-2">
+            <div id="departing-list" class="species-grid">
                 <div class="text-center py-8" style="color: #9CA3AF;">Loading...</div>
             </div>
         </section>
     </main>
 
     <footer class="mt-12">
-        <div class="max-w-4xl mx-auto px-4 py-6 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4 py-6 text-center text-sm">
             <p>Bird phenology data from eBird</p>
             <p class="mt-1">Washtenaw County, Michigan • 2025</p>
         </div>
