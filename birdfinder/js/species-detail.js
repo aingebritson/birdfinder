@@ -101,15 +101,15 @@ function renderTimingInfo() {
                 ${firstAppears ? `
                     <div class="mt-4 grid grid-cols-3 gap-3 max-w-xl mx-auto">
                         <div class="text-center">
-                            <div class="text-xs" style="color: #6B7280;">First appears</div>
+                            <div class="text-xs" style="color: #475569;">First appears</div>
                             <div class="text-sm font-medium mt-1">${firstAppears}</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-xs" style="color: #6B7280;">Peak</div>
+                            <div class="text-xs" style="color: #475569;">Peak</div>
                             <div class="text-sm font-medium mt-1">${peak}</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-xs" style="color: #6B7280;">Last appears</div>
+                            <div class="text-xs" style="color: #475569;">Last appears</div>
                             <div class="text-sm font-medium mt-1">${lastAppears}</div>
                         </div>
                     </div>
@@ -130,16 +130,16 @@ function renderTimingInfo() {
                         Spring Migration
                     </h3>
                     <div class="grid grid-cols-3 gap-3">
-                        <div class="text-center p-3 rounded-lg" style="background-color: #D4EDE9;">
-                            <div class="text-xs font-medium mb-1" style="color: #1A5D54;">Arrival</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #D1FAE5;">
+                            <div class="text-xs font-medium mb-1" style="color: #059669;">Arrival</div>
                             <div class="text-base font-bold">${timing.spring_arrival}</div>
                         </div>
-                        <div class="text-center p-3 rounded-lg" style="background-color: #FDF3D7;">
-                            <div class="text-xs font-medium mb-1" style="color: #8B6F1B;">Peak</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #FEF3C7;">
+                            <div class="text-xs font-medium mb-1" style="color: #CA8A04;">Peak</div>
                             <div class="text-base font-bold">${timing.spring_peak}</div>
                         </div>
-                        <div class="text-center p-3 rounded-lg" style="background-color: #F2E5DD;">
-                            <div class="text-xs font-medium mb-1" style="color: #7A4F36;">Departure</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #FEE2E2;">
+                            <div class="text-xs font-medium mb-1" style="color: #DC2626;">Departure</div>
                             <div class="text-base font-bold">${timing.spring_departure}</div>
                         </div>
                     </div>
@@ -152,16 +152,16 @@ function renderTimingInfo() {
                         Fall Migration
                     </h3>
                     <div class="grid grid-cols-3 gap-3">
-                        <div class="text-center p-3 rounded-lg" style="background-color: #D4EDE9;">
-                            <div class="text-xs font-medium mb-1" style="color: #1A5D54;">Arrival</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #D1FAE5;">
+                            <div class="text-xs font-medium mb-1" style="color: #059669;">Arrival</div>
                             <div class="text-base font-bold">${timing.fall_arrival}</div>
                         </div>
-                        <div class="text-center p-3 rounded-lg" style="background-color: #FDF3D7;">
-                            <div class="text-xs font-medium mb-1" style="color: #8B6F1B;">Peak</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #FEF3C7;">
+                            <div class="text-xs font-medium mb-1" style="color: #CA8A04;">Peak</div>
                             <div class="text-base font-bold">${timing.fall_peak}</div>
                         </div>
-                        <div class="text-center p-3 rounded-lg" style="background-color: #F2E5DD;">
-                            <div class="text-xs font-medium mb-1" style="color: #7A4F36;">Departure</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #FEE2E2;">
+                            <div class="text-xs font-medium mb-1" style="color: #DC2626;">Departure</div>
                             <div class="text-base font-bold">${timing.fall_departure}</div>
                         </div>
                     </div>
@@ -181,16 +181,16 @@ function renderTimingInfo() {
                     <p class="text-gray-600 text-sm mt-1">Present during winter months</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="text-center p-4 rounded-lg" style="background-color: #D4EDE9;">
-                        <div class="text-sm font-medium mb-1" style="color: #1A5D54;">Arrival</div>
+                    <div class="text-center p-4 rounded-lg" style="background-color: #D1FAE5;">
+                        <div class="text-sm font-medium mb-1" style="color: #059669;">Arrival</div>
                         <div class="text-xl font-bold">${timing.winter_arrival}</div>
                     </div>
-                    <div class="text-center p-4 rounded-lg" style="background-color: #FDF3D7;">
-                        <div class="text-sm font-medium mb-1" style="color: #8B6F1B;">Peak</div>
+                    <div class="text-center p-4 rounded-lg" style="background-color: #FEF3C7;">
+                        <div class="text-sm font-medium mb-1" style="color: #CA8A04;">Peak</div>
                         <div class="text-xl font-bold">${timing.winter_peak}</div>
                     </div>
-                    <div class="text-center p-4 rounded-lg" style="background-color: #F2E5DD;">
-                        <div class="text-sm font-medium mb-1" style="color: #7A4F36;">Departure</div>
+                    <div class="text-center p-4 rounded-lg" style="background-color: #FEE2E2;">
+                        <div class="text-sm font-medium mb-1" style="color: #DC2626;">Departure</div>
                         <div class="text-xl font-bold">${timing.winter_departure}</div>
                     </div>
                 </div>
@@ -203,16 +203,16 @@ function renderTimingInfo() {
     if (timing.arrival) {
         container.innerHTML = `
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="text-center p-4 rounded-lg" style="background-color: #D4EDE9;">
-                    <div class="text-sm font-medium mb-1" style="color: #1A5D54;">Arrival</div>
+                <div class="text-center p-4 rounded-lg" style="background-color: #D1FAE5;">
+                    <div class="text-sm font-medium mb-1" style="color: #059669;">Arrival</div>
                     <div class="text-xl font-bold">${timing.arrival}</div>
                 </div>
-                <div class="text-center p-4 rounded-lg" style="background-color: #FDF3D7;">
-                    <div class="text-sm font-medium mb-1" style="color: #8B6F1B;">Peak</div>
+                <div class="text-center p-4 rounded-lg" style="background-color: #FEF3C7;">
+                    <div class="text-sm font-medium mb-1" style="color: #CA8A04;">Peak</div>
                     <div class="text-xl font-bold">${timing.peak}</div>
                 </div>
-                <div class="text-center p-4 rounded-lg" style="background-color: #F2E5DD;">
-                    <div class="text-sm font-medium mb-1" style="color: #7A4F36;">Departure</div>
+                <div class="text-center p-4 rounded-lg" style="background-color: #FEE2E2;">
+                    <div class="text-sm font-medium mb-1" style="color: #DC2626;">Departure</div>
                     <div class="text-xl font-bold">${timing.departure}</div>
                 </div>
             </div>
@@ -267,7 +267,7 @@ function renderFrequencyChart() {
                 top: ${padding.top}px;
                 width: 1px;
                 height: ${chartHeight}px;
-                background: #E8B831;
+                background: #CA8A04;
                 pointer-events: none;
                 opacity: 0;
                 transition: opacity 0.15s;
@@ -301,15 +301,15 @@ function renderFrequencyChart() {
     for (let i = 0; i <= numYTicks; i++) {
         const y = padding.top + (chartHeight * i / numYTicks);
         const value = tickValues[i];
-        svgContent += `<line x1="${padding.left}" y1="${y}" x2="${width - padding.right}" y2="${y}" stroke="#e5e7eb" stroke-width="1"/>`;
-        svgContent += `<text x="${padding.left - 10}" y="${y + 4}" text-anchor="end" font-size="12" fill="#6b7280">${value.toFixed(decimalPlaces)}%</text>`;
+        svgContent += `<line x1="${padding.left}" y1="${y}" x2="${width - padding.right}" y2="${y}" stroke="#E5E7EB" stroke-width="1"/>`;
+        svgContent += `<text x="${padding.left - 10}" y="${y + 4}" text-anchor="end" font-size="12" fill="#475569">${value.toFixed(decimalPlaces)}%</text>`;
     }
 
     // Month labels (x-axis)
     for (let i = 0; i < 12; i++) {
         const weekIndex = i * 4 + 2; // Middle of each month (week 2, 6, 10, etc.)
         const x = padding.left + (weekIndex * xScale);
-        svgContent += `<text x="${x}" y="${height - 10}" text-anchor="middle" font-size="12" fill="#6b7280">${months[i]}</text>`;
+        svgContent += `<text x="${x}" y="${height - 10}" text-anchor="middle" font-size="12" fill="#475569">${months[i]}</text>`;
     }
 
     // Draw area under curve
@@ -320,7 +320,7 @@ function renderFrequencyChart() {
         pathData += ` L ${x} ${y}`;
     }
     pathData += ` L ${padding.left + chartWidth} ${padding.top + chartHeight} Z`;
-    svgContent += `<path d="${pathData}" fill="#4A6670" fill-opacity="0.1" stroke="none"/>`;
+    svgContent += `<path d="${pathData}" fill="#BFDBFE" fill-opacity="0.6" stroke="none"/>`;
 
     // Draw line
     let lineData = '';
@@ -329,12 +329,12 @@ function renderFrequencyChart() {
         const y = padding.top + chartHeight - (frequencies[i] * yScale);
         lineData += (i === 0 ? 'M' : ' L') + ` ${x} ${y}`;
     }
-    svgContent += `<path d="${lineData}" fill="none" stroke="#4A6670" stroke-width="2"/>`;
+    svgContent += `<path d="${lineData}" fill="none" stroke="#334155" stroke-width="2"/>`;
 
     // Draw current week indicator line
     const currentWeekX = padding.left + (currentWeek * xScale);
-    svgContent += `<line x1="${currentWeekX}" y1="${padding.top}" x2="${currentWeekX}" y2="${padding.top + chartHeight}" stroke="#E8B831" stroke-width="2" stroke-dasharray="4,3" opacity="0.7"/>`;
-    svgContent += `<text x="${currentWeekX}" y="${padding.top - 5}" text-anchor="middle" font-size="11" fill="#E8B831" font-weight="600">Now</text>`;
+    svgContent += `<line x1="${currentWeekX}" y1="${padding.top}" x2="${currentWeekX}" y2="${padding.top + chartHeight}" stroke="#CA8A04" stroke-width="2" stroke-dasharray="4,3" opacity="0.7"/>`;
+    svgContent += `<text x="${currentWeekX}" y="${padding.top - 5}" text-anchor="middle" font-size="11" fill="#CA8A04" font-weight="600">Now</text>`;
 
     svg.innerHTML = svgContent;
 

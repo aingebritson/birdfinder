@@ -133,7 +133,7 @@ function createSpeciesCard(species, frequency) {
                 </div>
                 <div class="text-right ml-4">
                     <div class="frequency-percent text-2xl">${freqPercent}%</div>
-                    <div class="text-xs" style="color: #6B7280;">frequency</div>
+                    <div class="text-xs" style="color: #475569;">frequency</div>
                 </div>
             </div>
             <div class="frequency-bar" style="width: ${barWidth}%;"></div>

@@ -1,28 +1,60 @@
 /* Custom styles for BirdFinder - Kirtland's Warbler color palette */
 
 /* Color palette:
- * Primary (yellow): #E8B831
- * Secondary (blue-gray): #4A6670
- * Text: #2D3436
- * Background: #F8F7F4
- * Cards: #FFFFFF
+ * Header/footer background: #334155 (dark slate blue)
+ * Container/card background: #BFDBFE (light blue)
+ * Header/footer text & main content background: #FEF9C3 (pale cream yellow)
+ * Primary text: #1E293B (dark slate)
+ * Secondary text: #475569 (medium slate)
+ * Primary accent: #CA8A04 (warm gold)
+ * Hover state: #A16207 (darker gold)
  */
 
 :root {
-    --color-yellow: #E8B831;
-    --color-blue-gray: #4A6670;
-    --color-teal: #2A9D8F;
-    --color-rust: #C17F59;
-    --color-text: #2D3436;
-    --color-bg: #F8F7F4;
+    /* Core colors */
+    --color-header-bg: #334155;
+    --color-container-bg: #BFDBFE;
+    --color-main-bg: #FEF9C3;
+    --color-card-bg: #FFFFFF;
+    --color-text-primary: #1E293B;
+    --color-text-secondary: #475569;
+
+    /* Accent colors */
+    --color-accent: #CA8A04;
+    --color-accent-hover: #A16207;
+
+    /* Category badge colors */
+    --badge-resident-bg: #334155;
+    --badge-resident-text: #E2E8F0;
+    --badge-single-bg: #CA8A04;
+    --badge-single-text: #1E293B;
+    --badge-two-passage-bg: #0D9488;
+    --badge-two-passage-text: #F0FDFA;
+    --badge-vagrant-bg: #C17F59;
+    --badge-vagrant-text: #FEF9C3;
+
+    /* Functional colors */
+    --color-arriving: #059669;
+    --color-peak: #CA8A04;
+    --color-departing: #DC2626;
+
+    /* Chart colors */
+    --color-chart-line: #334155;
+    --color-chart-fill: #BFDBFE;
+    --color-chart-grid: #E5E7EB;
+    --color-chart-now: #CA8A04;
+
+    /* Border colors */
+    --color-border: #E5E7EB;
+    --color-border-button: #93C5FD;
 }
 
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--color-bg);
-    color: var(--color-text);
+    background-color: var(--color-main-bg);
+    color: var(--color-text-primary);
 }
 
 main {
@@ -31,37 +63,38 @@ main {
 
 /* Header */
 header {
-    background-color: var(--color-blue-gray);
-    color: white;
+    background-color: var(--color-header-bg);
+    color: var(--color-main-bg);
 }
 
 header a {
-    color: white;
+    color: var(--color-main-bg);
 }
 
 header a:hover {
-    color: var(--color-yellow);
+    color: var(--color-accent);
 }
 
 /* Footer */
 footer {
-    background-color: var(--color-blue-gray);
-    color: white;
+    background-color: var(--color-header-bg);
+    color: var(--color-main-bg);
     border-top: none;
 }
 
 footer p {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--color-main-bg);
+    opacity: 0.9;
 }
 
 /* Links */
 a {
-    color: var(--color-blue-gray);
+    color: var(--color-accent);
     transition: color 0.15s ease;
 }
 
 a:hover {
-    color: var(--color-yellow);
+    color: var(--color-accent-hover);
 }
 
 /* Species card styles */
@@ -76,7 +109,7 @@ a:hover {
 /* Frequency bar */
 .frequency-bar {
     height: 8px;
-    background: linear-gradient(90deg, #e5e7eb 0%, var(--color-blue-gray) 100%);
+    background: linear-gradient(90deg, var(--color-chart-grid) 0%, var(--color-chart-line) 100%);
     border-radius: 4px;
     transition: all 0.2s ease;
 }
@@ -95,23 +128,23 @@ a:hover {
 }
 
 .badge-resident {
-    background-color: #D4E3E8;
-    color: #2C4650;
+    background-color: var(--badge-resident-bg);
+    color: var(--badge-resident-text);
 }
 
 .badge-single-season {
-    background-color: #FDF3D7;
-    color: #8B6F1B;
+    background-color: var(--badge-single-bg);
+    color: var(--badge-single-text);
 }
 
 .badge-two-passage {
-    background-color: #D4EDE9;
-    color: #1A5D54;
+    background-color: var(--badge-two-passage-bg);
+    color: var(--badge-two-passage-text);
 }
 
 .badge-vagrant {
-    background-color: #F2E5DD;
-    color: #7A4F36;
+    background-color: var(--badge-vagrant-bg);
+    color: var(--badge-vagrant-text);
 }
 
 /* Chart container */
@@ -139,7 +172,7 @@ a:hover {
 .empty-state {
     text-align: center;
     padding: 3rem 1rem;
-    color: #9ca3af;
+    color: var(--color-text-secondary);
 }
 
 .empty-state-icon {
@@ -155,39 +188,51 @@ a:hover {
 
 /* "This Week" button styles */
 .btn-this-week {
-    background-color: var(--color-yellow);
-    color: var(--color-text);
+    background-color: var(--color-accent);
+    color: var(--color-text-primary);
     font-weight: 600;
     transition: all 0.15s ease;
 }
 
 .btn-this-week:hover {
-    background-color: #D4A820;
+    background-color: var(--color-accent-hover);
     transform: translateY(-1px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Previous/Next navigation buttons */
 .btn-nav {
-    background-color: #F8F7F4;
-    color: var(--color-blue-gray);
-    border: 1px solid var(--color-blue-gray);
+    background-color: var(--color-container-bg);
+    color: var(--color-header-bg);
+    border: 1px solid var(--color-border-button);
     transition: all 0.15s ease;
 }
 
 .btn-nav:hover {
-    background-color: var(--color-blue-gray);
-    color: white;
+    background-color: var(--color-header-bg);
+    color: var(--color-main-bg);
 }
 
 /* Active navigation tab underline */
 .nav-active {
-    border-bottom: 2px solid var(--color-yellow);
+    border-bottom: 2px solid var(--color-accent);
 }
 
 /* Section icons (arrows, dots) */
 .section-icon {
-    color: var(--color-blue-gray);
+    color: var(--color-text-secondary);
+}
+
+.section-icon.arriving {
+    color: var(--color-arriving);
+}
+
+.section-icon.peak {
+    color: var(--color-peak);
+}
+
+.section-icon.departing {
+    color: var(--color-departing);
 }
 
 /* Frequency percentage - make bolder */
@@ -195,9 +240,25 @@ a:hover {
     font-weight: 700;
 }
 
-/* Form inputs - yellow focus ring */
+/* Form inputs - gold focus ring */
 input:focus, select:focus {
     outline: none;
-    border-color: var(--color-yellow);
-    box-shadow: 0 0 0 3px rgba(232, 184, 49, 0.1);
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(202, 138, 4, 0.1);
+}
+
+/* Card styles */
+.card {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+}
+
+.card-highlighted {
+    background-color: var(--color-container-bg);
+    border: 1px solid var(--color-border);
+}
+
+/* Container backgrounds */
+.container-bg {
+    background-color: var(--color-container-bg);
 }
