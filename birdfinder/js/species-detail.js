@@ -56,8 +56,6 @@ function showError() {
  */
 function renderSpeciesDetails() {
     document.getElementById('species-name').textContent = currentSpecies.name;
-    document.getElementById('species-code').textContent = currentSpecies.code;
-    document.getElementById('species-category').textContent = getCategoryDisplay(currentSpecies.category);
 
     // Category badge
     const badge = document.getElementById('category-badge');
