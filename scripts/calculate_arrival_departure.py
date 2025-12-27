@@ -364,18 +364,25 @@ def calculate_timing_single_season_summer(species_name, frequencies, category, p
 
 def calculate_timing_single_season_winter(species_name, frequencies, category, pattern_type, valleys):
     """
-    Single-season winter migrant/resident (1 valley in summer, overwinters)
+    Single-season winter migrant/resident (1 or 2 valleys in summer, overwinters)
     Display: Arrival/peak/departure (wraps around the year)
 
     For overwintering species:
     - Valley is in summer (weeks 18-32)
+    - Or 2 close summer valleys (merged conceptually)
     - Presence wraps around: fall → winter → spring
     """
-    if len(valleys) != 1:
-        # Fallback to irregular
+    if len(valleys) == 1:
+        # Normal case: 1 valley in summer
+        valley_start, valley_end = valleys[0]
+    elif len(valleys) == 2:
+        # Special case: 2 summer valleys merged (e.g., Hooded Merganser, American Herring Gull)
+        # Treat the span from first valley start to second valley end as the absence period
+        valley_start = valleys[0][0]
+        valley_end = valleys[1][1]
+    else:
+        # Fallback to irregular if not 1 or 2 valleys
         return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
-
-    valley_start, valley_end = valleys[0]
 
     peak_freq = max(frequencies)
     threshold = max(peak_freq * 0.25, 0.001)
@@ -545,6 +552,21 @@ def main():
             valley_length = len(frequencies) - valley_start
             if valley_length >= 4:
                 valleys.append((valley_start, len(frequencies) - 1))
+
+        # Merge valleys that wrap around the year
+        # If we have a valley at the end (touching week 47) and a valley at the start (touching week 0)
+        # they should be merged into a single valley that wraps around
+        if len(valleys) >= 2:
+            first_valley = valleys[0]
+            last_valley = valleys[-1]
+
+            # Check if first valley starts at 0 and last valley ends at 47
+            if first_valley[0] == 0 and last_valley[1] == 47:
+                # Merge them: new valley goes from last_valley start to first_valley end
+                merged_valley = (last_valley[0], first_valley[1])
+                # Remove both valleys and add the merged one
+                valleys = valleys[1:-1]  # Remove first and last
+                valleys.append(merged_valley)
 
         return valleys
 

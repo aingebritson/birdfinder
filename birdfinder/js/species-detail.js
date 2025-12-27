@@ -76,7 +76,7 @@ function renderTimingInfo() {
     const container = document.getElementById('timing-info');
 
     // Year-round resident
-    if (timing.status === 'year-round') {
+    if (currentSpecies.category === 'resident') {
         container.innerHTML = `
             <div class="text-center py-8">
                 <div class="text-4xl mb-2">🏠</div>
@@ -88,7 +88,7 @@ function renderTimingInfo() {
     }
 
     // Irregular visitor (vagrant or irregular presence)
-    if (timing.status === 'irregular' || timing.first_appears) {
+    if (currentSpecies.category === 'vagrant' || timing.first_appears) {
         const firstAppears = timing.first_appears || '';
         const peak = timing.peak || '';
         const lastAppears = timing.last_appears || '';

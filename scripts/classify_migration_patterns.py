@@ -257,9 +257,18 @@ def classify_species(metrics):
                     flags.append('two_valleys_same_season')
             else:
                 # Valleys too close together
-                category = 'irregular'
-                pattern_type = 'irregular'
-                flags.append('two_valleys_close')
+                # Special case: if both valleys are in summer, this is likely an overwintering species
+                # with a brief dip in mid-summer - treat as single-season winter
+                if valley_types == ['summer', 'summer']:
+                    # Merge the two summer valleys into one conceptual valley
+                    # and treat as winter resident
+                    category = 'single-season'
+                    pattern_type = 'winter'
+                    flags.append('overwintering|two_summer_valleys_merged')
+                else:
+                    category = 'irregular'
+                    pattern_type = 'irregular'
+                    flags.append('two_valleys_close')
 
     # 4. Single-season: 1 valley
     elif metrics['num_valleys'] == 1:

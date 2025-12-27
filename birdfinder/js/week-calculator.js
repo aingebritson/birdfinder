@@ -129,7 +129,7 @@ const WeekCalculator = {
      * Exact match only
      */
     isArriving(species, weekIndex) {
-        if (species.timing.status === 'year-round' || species.timing.status === 'irregular') {
+        if (species.category === 'resident' || species.category === 'vagrant') {
             return false;
         }
 
@@ -163,7 +163,7 @@ const WeekCalculator = {
      * Exact match only
      */
     isAtPeak(species, weekIndex) {
-        if (species.timing.status === 'year-round' || species.timing.status === 'irregular') {
+        if (species.category === 'resident' || species.category === 'vagrant') {
             return false;
         }
 
@@ -199,7 +199,7 @@ const WeekCalculator = {
      * Exact match only
      */
     isDeparting(species, weekIndex) {
-        if (species.timing.status === 'year-round' || species.timing.status === 'irregular') {
+        if (species.category === 'resident' || species.category === 'vagrant') {
             return false;
         }
 
