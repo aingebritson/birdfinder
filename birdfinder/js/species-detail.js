@@ -342,30 +342,36 @@ function renderFrequencyChart() {
     svg.addEventListener('mousemove', (e) => {
         const rect = svg.getBoundingClientRect();
         const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
 
-        // Convert mouse position to SVG coordinates (accounting for viewBox scaling)
-        const scaleX = width / rect.width;
-        const svgMouseX = mouseX * scaleX;
+        // Get SVG point from screen coordinates
+        const pt = svg.createSVGPoint();
+        pt.x = e.clientX;
+        pt.y = e.clientY;
+        const svgP = pt.matrixTransform(svg.getScreenCTM().inverse());
 
         // Only show tooltip if mouse is within chart area
-        if (svgMouseX < padding.left || svgMouseX > width - padding.right) {
+        if (svgP.x < padding.left || svgP.x > width - padding.right) {
             tooltip.style.opacity = '0';
             indicator.style.opacity = '0';
             return;
         }
 
         // Find closest week using SVG coordinates
-        const relativeX = svgMouseX - padding.left;
+        const relativeX = svgP.x - padding.left;
         const weekIndex = Math.round(relativeX / xScale);
 
         if (weekIndex >= 0 && weekIndex < frequencies.length) {
             const freq = frequencies[weekIndex];
             const weekInfo = WeekCalculator.getWeekInfo(weekIndex);
 
-            // Position indicator - convert SVG coordinates back to screen coordinates
+            // Position indicator in screen coordinates
             const indicatorSvgX = padding.left + (weekIndex * xScale);
-            const indicatorScreenX = indicatorSvgX / scaleX;
-            indicator.style.left = `${indicatorScreenX}px`;
+            const indicatorPt = svg.createSVGPoint();
+            indicatorPt.x = indicatorSvgX;
+            indicatorPt.y = 0;
+            const indicatorScreen = indicatorPt.matrixTransform(svg.getScreenCTM());
+            indicator.style.left = `${indicatorScreen.x - rect.left}px`;
             indicator.style.opacity = '0.5';
 
             // Update and position tooltip
@@ -377,8 +383,8 @@ function renderFrequencyChart() {
 
             // Position tooltip above mouse, centered
             const tooltipX = mouseX - (tooltip.offsetWidth / 2);
-            const tooltipY = e.clientY - rect.top - tooltip.offsetHeight - 10;
-            tooltip.style.left = `${Math.max(0, Math.min(tooltipX, width - tooltip.offsetWidth))}px`;
+            const tooltipY = mouseY - tooltip.offsetHeight - 10;
+            tooltip.style.left = `${Math.max(0, Math.min(tooltipX, rect.width - tooltip.offsetWidth))}px`;
             tooltip.style.top = `${tooltipY}px`;
         }
     });
