@@ -1443,10 +1443,8 @@
   {
     "name": "American Woodcock",
     "code": "amewoo",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
       "spring_arrival": "March 1-7",
       "spring_peak": "March 15-21",
@@ -1877,11 +1875,8 @@
   {
     "name": "Barred Owl",
     "code": "barowl",
-    "category": "resident",
-    "flags": [
-      "seasonal_variation",
-      "min_max_near_boundary"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -2322,10 +2317,8 @@
   {
     "name": "Black Vulture",
     "code": "blavul",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {},
     "weekly_frequency": [
       0.0034542,
@@ -2692,10 +2685,8 @@
   {
     "name": "Black-crowned Night Heron",
     "code": "blaher",
-    "category": "irregular",
-    "flags": [
-      "three_valleys_irregular"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
       "status": "irregular",
       "first_appears": "January 15-21",
@@ -4349,9 +4340,9 @@
   {
     "name": "Cackling Goose",
     "code": "cacgoo",
-    "category": "single-season",
+    "category": "two-passage-migrant",
     "flags": [
-      "overwintering"
+      "classic_bimodal"
     ],
     "timing": {
       "winter_arrival": "October 15-21",
@@ -5290,8 +5281,10 @@
   {
     "name": "Common Gallinule",
     "code": "comgal",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
       "arrival": "April 22-30",
       "peak": "June 1-7",
@@ -5794,9 +5787,8 @@
   {
     "name": "Connecticut Warbler",
     "code": "conwar",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal",
       "low_presence"
     ],
     "timing": {
@@ -6789,10 +6781,8 @@
   {
     "name": "Eastern Whip-poor-will",
     "code": "easwhi",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
       "spring_arrival": "April 22-30",
       "spring_peak": "May 15-21",
@@ -7352,8 +7342,10 @@
   {
     "name": "Forster's Tern",
     "code": "forter",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
       "arrival": "April 8-14",
       "peak": "August 1-7",
@@ -8303,9 +8295,9 @@
   {
     "name": "Great Black-backed Gull",
     "code": "gregul",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal"
+      "overwintering"
     ],
     "timing": {
       "spring_peak": "March 1-7",
@@ -9920,9 +9912,9 @@
   {
     "name": "Iceland Gull",
     "code": "icegul",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal"
+      "overwintering"
     ],
     "timing": {
       "spring_peak": "March 22-31",
@@ -11512,10 +11504,8 @@
   {
     "name": "Louisiana Waterthrush",
     "code": "louwat",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
       "spring_arrival": "April 1-7",
       "spring_peak": "April 1-7",
@@ -11954,8 +11944,10 @@
   {
     "name": "Marsh Wren",
     "code": "marwre",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
       "arrival": "May 1-7",
       "peak": "June 15-21",
@@ -12830,10 +12822,9 @@
   {
     "name": "Northern Mockingbird",
     "code": "normoc",
-    "category": "resident",
+    "category": "irregular",
     "flags": [
-      "seasonal_variation",
-      "min_max_near_boundary"
+      "many_valleys"
     ],
     "timing": {
       "status": "year-round"
@@ -13972,10 +13963,9 @@
   {
     "name": "Peregrine Falcon",
     "code": "perfal",
-    "category": "resident",
+    "category": "two-passage-migrant",
     "flags": [
-      "seasonal_variation",
-      "min_max_near_boundary"
+      "classic_bimodal"
     ],
     "timing": {
       "status": "year-round"
@@ -14484,10 +14474,8 @@
   {
     "name": "Prothonotary Warbler",
     "code": "prowar",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
       "spring_arrival": "May 1-7",
       "spring_peak": "May 8-14",
@@ -15238,7 +15226,8 @@
     "code": "redhaw",
     "category": "single-season",
     "flags": [
-      "overwintering"
+      "overwintering",
+      "two_summer_valleys_merged"
     ],
     "timing": {
       "winter_arrival": "August 22-31",
@@ -16999,10 +16988,8 @@
   {
     "name": "Sedge Wren",
     "code": "sedwre",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
       "spring_arrival": "May 8-14",
       "spring_peak": "May 22-31",
@@ -17259,10 +17246,8 @@
   {
     "name": "Short-billed Dowitcher",
     "code": "shodow",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
       "spring_peak": "May 15-21",
       "spring_departure": "May 8-14",
@@ -18199,9 +18184,9 @@
   {
     "name": "Surf Scoter",
     "code": "sursco",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal"
+      "overwintering"
     ],
     "timing": {},
     "weekly_frequency": [
@@ -19142,10 +19127,8 @@
   {
     "name": "Vesper Sparrow",
     "code": "vesspa",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
       "spring_arrival": "April 8-14",
       "spring_peak": "July 8-14",
@@ -19711,8 +19694,10 @@
   {
     "name": "White-eyed Vireo",
     "code": "whivir",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
       "arrival": "April 22-30",
       "peak": "May 1-7",
@@ -19964,10 +19949,8 @@
   {
     "name": "White-winged Crossbill",
     "code": "whicro",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {},
     "weekly_frequency": [
       0.0012953,
@@ -20082,10 +20065,8 @@
   {
     "name": "Whooping Crane",
     "code": "whocra",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
       "spring_arrival": "July 1-7",
       "spring_peak": "July 1-7",
