@@ -100,11 +100,35 @@ cp regions/[region_name]/[region_name]_species_data.json birdfinder/data/species
 
 **Color Palette**
 
-The app uses a Kirtland's Warbler-inspired color scheme defined in [birdfinder/css/styles.css](birdfinder/css/styles.css):
-- Primary (yellow): `#E8B831`
-- Secondary (blue-gray): `#4A6670`
-- Teal accent: `#2A9D8F`
-- Rust accent: `#C17F59`
+The app uses a sophisticated Kirtland's Warbler-inspired color scheme defined in [birdfinder/css/styles.css](birdfinder/css/styles.css):
+
+**Core Colors:**
+- Header/footer background: `#334155` (dark slate blue)
+- Header/footer text: `#FEF9C3` (pale cream yellow)
+- Main content background: `#FEFCE8` (pale yellow)
+- Container/card background: `#BFDBFE` (light blue)
+- Primary text: `#1E293B` (dark slate)
+- Secondary text: `#475569` (medium slate)
+
+**Accent Colors:**
+- Primary accent (links, buttons): `#CA8A04` (warm gold)
+- Hover state: `#A16207` (darker gold)
+
+**Category Badges:**
+- Resident: `#334155` background with `#E2E8F0` text
+- Single-season: `#CA8A04` background with `#1E293B` text
+- Two-passage migrant: `#0D9488` background with `#F0FDFA` text
+- Vagrant: `#C17F59` background with `#FEF9C3` text
+
+**Functional Colors (arrival/departure indicators):**
+- Arriving: `#059669` (muted green)
+- At peak: `#CA8A04` (gold accent)
+- Departing: `#DC2626` (muted red)
+
+**Chart Colors:**
+- Line/fill: `#334155` (slate) with `#BFDBFE` fill beneath
+- Grid lines: `#E5E7EB` (light gray)
+- "Now" indicator: `#CA8A04` (gold accent)
 
 **Region Name**
 
