@@ -130,8 +130,12 @@ def calculate_timing_two_passage(species_name, frequencies, category, pattern_ty
     spring_start_search = winter_valley_end + 1
     spring_end_search = summer_valley_start
 
+    # Handle wraparound case: if spring search wraps around year boundary
+    if spring_start_search >= 48:
+        spring_start_search = 0
+
     # Validate search range
-    if spring_start_search >= spring_end_search or spring_start_search >= 48:
+    if spring_start_search >= spring_end_search:
         # Invalid range, fallback to irregular
         return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
 
