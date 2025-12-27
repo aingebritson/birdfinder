@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 Calculate arrival and departure weeks for bird species based on migration patterns.
+Handles different pattern types: year-round, irregular, two-passage, summer, winter.
 """
 
 import csv
@@ -37,226 +38,429 @@ def week_to_date_range(week_num):
     return f"{month} {start_day}-{end_day}"
 
 
-def find_arrival_departure(frequencies, peak_frequency, is_winter_resident=False):
+def calculate_timing_year_round(species_name, frequencies, category, pattern_type):
     """
-    Find arrival and departure weeks for a single migration passage.
-
-    Arrival = first week exceeding 25% of peak OR 0.1% absolute (whichever higher)
-    Departure = last week exceeding 25% of peak OR 0.1% absolute (whichever higher)
-
-    For winter residents, we need to handle year-wrap (arrival in fall, departure in spring)
-
-    Returns: (arrival_week, departure_week, peak_week)
+    Year-round resident: no timing data needed
+    Display: "Year-round Resident"
     """
-    threshold_relative = peak_frequency * 0.25
-    threshold_absolute = 0.001  # 0.1%
-    threshold = max(threshold_relative, threshold_absolute)
+    return {
+        'species': species_name,
+        'category': category,
+        'pattern_type': pattern_type,
+        'status': 'year-round'
+    }
 
-    # Find peak week (handle floating point comparison)
+
+def calculate_timing_irregular(species_name, frequencies, category, pattern_type):
+    """
+    Irregular presence (vagrant or 3+ peaks or 2 peaks <12 weeks apart)
+    Display: Simplified timing
+    - First appears: First week > 0.1%
+    - Peak: Week with highest frequency
+    - Last appears: Last week > 0.1%
+    """
+    threshold = 0.001  # 0.1%
+
+    # Find first appearance
+    first_week = None
+    for i, freq in enumerate(frequencies):
+        if freq > threshold:
+            first_week = i
+            break
+
+    # Find last appearance
+    last_week = None
+    for i in range(len(frequencies) - 1, -1, -1):
+        if frequencies[i] > threshold:
+            last_week = i
+            break
+
+    # Find peak
     max_freq = max(frequencies)
     peak_week = frequencies.index(max_freq)
 
-    if is_winter_resident:
-        # For winter residents, the low point is in summer (weeks 21-31)
-        # Arrival happens in fall (after summer), departure in spring (before summer)
+    return {
+        'species': species_name,
+        'category': category,
+        'pattern_type': pattern_type,
+        'status': 'irregular',
+        'first_appears': week_to_date_range(first_week) if first_week is not None else '',
+        'peak': week_to_date_range(peak_week),
+        'last_appears': week_to_date_range(last_week) if last_week is not None else ''
+    }
 
-        # Find arrival: scan forward from end of summer (week 31) wrapping around
-        arrival_week = None
-        for offset in range(48):
-            week_idx = (31 + offset) % 48
-            if frequencies[week_idx] >= threshold:
-                arrival_week = week_idx
-                break
 
-        # Find departure: scan backward from beginning of summer (week 21)
-        departure_week = None
-        for offset in range(48):
-            week_idx = (21 - offset) % 48
-            if frequencies[week_idx] >= threshold:
-                departure_week = week_idx
-                break
+def calculate_timing_two_passage(species_name, frequencies, category, pattern_type, valleys):
+    """
+    Two-passage migrant (2 valleys: one summer, one winter)
+    Display: Spring arrival/peak/departure + Fall arrival/peak/departure
+    """
+    if len(valleys) != 2:
+        # Fallback to irregular if we don't have exactly 2 valleys
+        return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
 
+    # Determine which valley is summer and which is winter
+    valley1_start, valley1_end = valleys[0]
+    valley2_start, valley2_end = valleys[1]
+
+    winter_weeks = set(range(44, 48)) | set(range(0, 8))
+    summer_weeks = set(range(18, 33))
+
+    valley1_weeks = set(range(valley1_start, valley1_end + 1))
+    valley2_weeks = set(range(valley2_start, valley2_end + 1))
+
+    valley1_winter_count = len(valley1_weeks & winter_weeks)
+    valley2_winter_count = len(valley2_weeks & winter_weeks)
+
+    # Identify summer and winter valleys
+    if valley1_winter_count > len(valley1_weeks) / 2:
+        winter_valley = valleys[0]
+        summer_valley = valleys[1]
     else:
-        # Standard migration: find low point (usually winter or between passages)
-        min_freq = min(frequencies)
-        low_point = frequencies.index(min_freq)
+        summer_valley = valleys[0]
+        winter_valley = valleys[1]
 
-        # Find arrival: scan forward from low point
-        arrival_week = None
-        for offset in range(48):
-            week_idx = (low_point + offset) % 48
-            if frequencies[week_idx] >= threshold:
-                arrival_week = week_idx
+    peak_freq = max(frequencies)
+    threshold = max(peak_freq * 0.25, 0.001)
+
+    # Spring passage: after winter valley ends, before summer valley begins
+    winter_valley_end = winter_valley[1]
+    summer_valley_start = summer_valley[0]
+
+    spring_start_search = winter_valley_end + 1
+    spring_end_search = summer_valley_start
+
+    # Validate search range
+    if spring_start_search >= spring_end_search or spring_start_search >= 48:
+        # Invalid range, fallback to irregular
+        return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
+
+    # Find spring arrival
+    spring_arrival_week = None
+    for week in range(spring_start_search, min(spring_end_search, 48)):
+        if frequencies[week] >= threshold:
+            spring_arrival_week = week
+            break
+
+    # Find spring peak
+    spring_peak_week = spring_start_search
+    spring_peak_freq = 0
+    for week in range(spring_start_search, min(spring_end_search, 48)):
+        if frequencies[week] > spring_peak_freq:
+            spring_peak_freq = frequencies[week]
+            spring_peak_week = week
+
+    # Find spring departure
+    spring_departure_week = None
+    for week in range(spring_peak_week, min(summer_valley_start, 48)):
+        if frequencies[week] < threshold:
+            spring_departure_week = week - 1
+            break
+    if spring_departure_week is None:
+        spring_departure_week = min(summer_valley_start, 48) - 1
+
+    # Fall passage: after summer valley ends, before winter valley begins
+    summer_valley_end = summer_valley[1]
+    winter_valley_start = winter_valley[0]
+
+    fall_start_search = summer_valley_end + 1
+    fall_end_search = winter_valley_start if winter_valley_start > summer_valley_end else 48
+
+    # Validate search range
+    if fall_start_search >= fall_end_search or fall_start_search >= 48:
+        # Invalid range, fallback to irregular
+        return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
+
+    # Find fall arrival
+    fall_arrival_week = None
+    for week in range(fall_start_search, min(fall_end_search, 48)):
+        if frequencies[week] >= threshold:
+            fall_arrival_week = week
+            break
+
+    # Find fall peak
+    fall_peak_week = fall_start_search
+    fall_peak_freq = 0
+    for week in range(fall_start_search, min(fall_end_search, 48)):
+        if frequencies[week] > fall_peak_freq:
+            fall_peak_freq = frequencies[week]
+            fall_peak_week = week
+
+    # Find fall departure
+    fall_departure_week = None
+    for week in range(fall_peak_week, min(fall_end_search, 48)):
+        if frequencies[week] < threshold:
+            fall_departure_week = week - 1
+            break
+    if fall_departure_week is None:
+        fall_departure_week = min(fall_end_search, 48) - 1
+
+    return {
+        'species': species_name,
+        'category': category,
+        'pattern_type': pattern_type,
+        'spring_arrival': week_to_date_range(spring_arrival_week) if spring_arrival_week is not None else '',
+        'spring_peak': week_to_date_range(spring_peak_week),
+        'spring_departure': week_to_date_range(spring_departure_week) if spring_departure_week is not None else '',
+        'fall_arrival': week_to_date_range(fall_arrival_week) if fall_arrival_week is not None else '',
+        'fall_peak': week_to_date_range(fall_peak_week),
+        'fall_departure': week_to_date_range(fall_departure_week) if fall_departure_week is not None else ''
+    }
+
+
+def calculate_timing_three_valley_migrant(species_name, frequencies, category, pattern_type, valleys):
+    """
+    Three-valley migrant (winter-summer-winter pattern)
+    Common for species that pass through briefly in spring and fall
+    Valleys: [winter, summer, winter]
+    Presence: Spring passage (between valley 0 and 1) + Fall passage (between valley 1 and 2)
+    """
+    if len(valleys) != 3:
+        return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
+
+    winter_valley_1 = valleys[0]  # First winter valley
+    summer_valley = valleys[1]     # Summer valley
+    winter_valley_2 = valleys[2]   # Second winter valley (wraps to beginning)
+
+    peak_freq = max(frequencies)
+    threshold = max(peak_freq * 0.25, 0.001)
+
+    # Spring passage: between first winter valley end and summer valley start
+    spring_start_search = winter_valley_1[1] + 1
+    spring_end_search = summer_valley[0]
+
+    # Validate spring range
+    if spring_start_search >= spring_end_search or spring_start_search >= 48:
+        return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
+
+    # Find spring timing
+    spring_arrival_week = None
+    for week in range(spring_start_search, min(spring_end_search, 48)):
+        if frequencies[week] >= threshold:
+            spring_arrival_week = week
+            break
+
+    spring_peak_week = spring_start_search
+    spring_peak_freq = 0
+    for week in range(spring_start_search, min(spring_end_search, 48)):
+        if frequencies[week] > spring_peak_freq:
+            spring_peak_freq = frequencies[week]
+            spring_peak_week = week
+
+    spring_departure_week = None
+    for week in range(spring_peak_week, min(summer_valley[0], 48)):
+        if frequencies[week] < threshold:
+            spring_departure_week = week - 1
+            break
+    if spring_departure_week is None:
+        spring_departure_week = min(summer_valley[0], 48) - 1
+
+    # Fall passage: between summer valley end and second winter valley start
+    fall_start_search = summer_valley[1] + 1
+    fall_end_search = winter_valley_2[0] if winter_valley_2[0] > summer_valley[1] else 48
+
+    # Validate fall range
+    if fall_start_search >= fall_end_search:
+        return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
+
+    # Find fall timing
+    fall_arrival_week = None
+    for week in range(fall_start_search, min(fall_end_search, 48)):
+        if frequencies[week] >= threshold:
+            fall_arrival_week = week
+            break
+
+    fall_peak_week = fall_start_search
+    fall_peak_freq = 0
+    for week in range(fall_start_search, min(fall_end_search, 48)):
+        if frequencies[week] > fall_peak_freq:
+            fall_peak_freq = frequencies[week]
+            fall_peak_week = week
+
+    fall_departure_week = None
+    for week in range(fall_peak_week, min(fall_end_search, 48)):
+        if frequencies[week] < threshold:
+            fall_departure_week = week - 1
+            break
+    if fall_departure_week is None:
+        fall_departure_week = min(fall_end_search, 48) - 1
+
+    return {
+        'species': species_name,
+        'category': category,
+        'pattern_type': pattern_type,
+        'spring_arrival': week_to_date_range(spring_arrival_week) if spring_arrival_week is not None else '',
+        'spring_peak': week_to_date_range(spring_peak_week),
+        'spring_departure': week_to_date_range(spring_departure_week) if spring_departure_week is not None else '',
+        'fall_arrival': week_to_date_range(fall_arrival_week) if fall_arrival_week is not None else '',
+        'fall_peak': week_to_date_range(fall_peak_week),
+        'fall_departure': week_to_date_range(fall_departure_week) if fall_departure_week is not None else ''
+    }
+
+
+def calculate_timing_single_season_summer(species_name, frequencies, category, pattern_type, valleys):
+    """
+    Single-season summer migrant (1 valley in winter)
+    Display: Arrival/peak/departure
+
+    Valley is in winter (weeks 44-48, 0-7), presence is in spring/summer/fall
+    """
+    if len(valleys) != 1:
+        # Fallback to irregular
+        return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
+
+    valley_start, valley_end = valleys[0]
+
+    peak_freq = max(frequencies)
+    threshold = max(peak_freq * 0.25, 0.001)
+
+    # Presence period: after winter valley ends (spring) until it begins again (fall)
+    # Winter valley typically wraps around year (e.g., week 44-7)
+    # Presence is from valley_end+1 through valley_start-1
+
+    # Build list of weeks in presence period
+    if valley_end < valley_start:
+        # Valley wraps around year end (e.g., weeks 44-7)
+        # Presence is from valley_end+1 to valley_start-1
+        presence_weeks = list(range(valley_end + 1, valley_start))
+    else:
+        # Valley doesn't wrap (unusual for winter valley but handle it)
+        presence_weeks = list(range(valley_end + 1, 48)) + list(range(0, valley_start))
+
+    if not presence_weeks:
+        return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
+
+    # Find arrival: first week in presence period exceeding threshold
+    arrival_week = None
+    for week in presence_weeks:
+        if frequencies[week] >= threshold:
+            arrival_week = week
+            break
+
+    # Find peak: highest frequency week in presence period
+    peak_week = presence_weeks[0]
+    max_freq = 0
+    for week in presence_weeks:
+        if frequencies[week] > max_freq:
+            max_freq = frequencies[week]
+            peak_week = week
+
+    # Find departure: last week in presence period exceeding threshold
+    departure_week = None
+    for week in reversed(presence_weeks):
+        if frequencies[week] >= threshold:
+            departure_week = week
+            break
+
+    return {
+        'species': species_name,
+        'category': category,
+        'pattern_type': pattern_type,
+        'arrival': week_to_date_range(arrival_week) if arrival_week is not None else '',
+        'peak': week_to_date_range(peak_week),
+        'departure': week_to_date_range(departure_week) if departure_week is not None else ''
+    }
+
+
+def calculate_timing_single_season_winter(species_name, frequencies, category, pattern_type, valleys):
+    """
+    Single-season winter migrant/resident (1 valley in summer, overwinters)
+    Display: Arrival/peak/departure (wraps around the year)
+
+    For overwintering species:
+    - Valley is in summer (weeks 18-32)
+    - Presence wraps around: fall → winter → spring
+    """
+    if len(valleys) != 1:
+        # Fallback to irregular
+        return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
+
+    valley_start, valley_end = valleys[0]
+
+    peak_freq = max(frequencies)
+    threshold = max(peak_freq * 0.25, 0.001)
+
+    # Presence period wraps around the year: after summer valley ends (fall) → winter → before valley begins (spring)
+    # Search from valley_end+1 to end of year, then from 0 to valley_start-1
+
+    # Find arrival: first week in fall after valley ends where frequency > threshold
+    arrival_week = None
+    for week in range(valley_end + 1, 48):
+        if frequencies[week] >= threshold:
+            arrival_week = week
+            break
+    # If not found in fall, check early winter
+    if arrival_week is None:
+        for week in range(0, min(5, valley_start)):
+            if frequencies[week] >= threshold:
+                arrival_week = week
                 break
 
-        # Find departure: scan forward from peak
-        departure_week = None
-        for offset in range(48):
-            week_idx = (peak_week + offset) % 48
-            if frequencies[week_idx] < threshold:
-                # Found first week below threshold after peak
-                # Departure is the previous week
-                departure_week = (week_idx - 1) % 48
-                break
+    # Find peak: highest frequency week in presence period (fall → winter → spring)
+    peak_week = 0
+    max_freq = 0
+    # Check fall/winter (valley_end+1 to 48)
+    for week in range(valley_end + 1, 48):
+        if frequencies[week] > max_freq:
+            max_freq = frequencies[week]
+            peak_week = week
+    # Check winter/spring (0 to valley_start)
+    for week in range(0, valley_start):
+        if frequencies[week] > max_freq:
+            max_freq = frequencies[week]
+            peak_week = week
 
-        # If we never drop below threshold, departure is end of year
-        if departure_week is None:
-            departure_week = 47
+    # Find departure: last week in spring before valley begins where frequency > threshold
+    departure_week = None
+    for week in range(valley_start - 1, -1, -1):
+        if frequencies[week] >= threshold:
+            departure_week = week
+            break
 
-    return arrival_week, departure_week, peak_week
-
-
-def find_valley_between_peaks(frequencies, peak1_idx, peak2_idx):
-    """Find the minimum frequency between two peaks"""
-    start_idx = min(peak1_idx, peak2_idx)
-    end_idx = max(peak1_idx, peak2_idx)
-
-    valley_section = frequencies[start_idx:end_idx+1]
-    valley_min = min(valley_section)
-    valley_idx = start_idx + valley_section.index(valley_min)
-
-    return valley_idx, valley_min
+    return {
+        'species': species_name,
+        'category': category,
+        'pattern_type': pattern_type,
+        'winter_arrival': week_to_date_range(arrival_week) if arrival_week is not None else '',
+        'winter_peak': week_to_date_range(peak_week),
+        'winter_departure': week_to_date_range(departure_week) if departure_week is not None else ''
+    }
 
 
-def calculate_migration_timing(species_name, frequencies, category, flags, peak_frequency):
-    """Calculate arrival/departure timing based on species category"""
+def calculate_migration_timing(species_name, frequencies, category, pattern_type, flags, valleys):
+    """Calculate arrival/departure timing based on species pattern type using valley detection"""
 
-    is_winter_resident = 'winter_resident' in flags
+    # Year-round residents
+    if pattern_type == 'year-round':
+        return calculate_timing_year_round(species_name, frequencies, category, pattern_type)
 
-    # Resident: year-round
-    if category == 'Resident':
-        return {
-            'species': species_name,
-            'category': category,
-            'pattern': 'Year-round',
-            'spring_arrival': '',
-            'spring_arrival_short': '',
-            'spring_peak': '',
-            'spring_peak_short': '',
-            'spring_departure': '',
-            'spring_departure_short': '',
-            'fall_arrival': '',
-            'fall_arrival_short': '',
-            'fall_peak': '',
-            'fall_peak_short': '',
-            'fall_departure': '',
-            'fall_departure_short': ''
-        }
+    # Irregular visitors (vagrants or irregular presence)
+    if pattern_type == 'irregular':
+        return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
 
-    # Vagrant: irregular
-    if category == 'Vagrant':
-        return {
-            'species': species_name,
-            'category': category,
-            'pattern': 'Irregular',
-            'spring_arrival': '',
-            'spring_arrival_short': '',
-            'spring_peak': '',
-            'spring_peak_short': '',
-            'spring_departure': '',
-            'spring_departure_short': '',
-            'fall_arrival': '',
-            'fall_arrival_short': '',
-            'fall_peak': '',
-            'fall_peak_short': '',
-            'fall_departure': '',
-            'fall_departure_short': ''
-        }
+    # Two-passage migrants
+    if pattern_type == 'two-passage':
+        # Check if this is a three-valley migrant (winter-summer-winter pattern)
+        if len(valleys) == 3:
+            return calculate_timing_three_valley_migrant(species_name, frequencies, category, pattern_type, valleys)
+        else:
+            return calculate_timing_two_passage(species_name, frequencies, category, pattern_type, valleys)
 
-    # Single-season: one arrival, one departure
-    if category == 'Single-season':
-        arrival_week, departure_week, peak_week = find_arrival_departure(
-            frequencies, peak_frequency, is_winter_resident
-        )
+    # Single-season summer migrants
+    if pattern_type == 'summer':
+        return calculate_timing_single_season_summer(species_name, frequencies, category, pattern_type, valleys)
 
-        arrival_date_range = week_to_date_range(arrival_week) if arrival_week is not None else ''
-        departure_date_range = week_to_date_range(departure_week) if departure_week is not None else ''
-        peak_date_range = week_to_date_range(peak_week)
+    # Single-season winter migrants/residents
+    if pattern_type == 'winter':
+        return calculate_timing_single_season_winter(species_name, frequencies, category, pattern_type, valleys)
 
-        pattern_type = 'Winter resident' if is_winter_resident else 'Single passage'
-
-        return {
-            'species': species_name,
-            'category': category,
-            'pattern': pattern_type,
-            'arrival': arrival_date_range,
-            'peak': peak_date_range,
-            'departure': departure_date_range
-        }
-
-    # Two-passage migrant: spring and fall passages
-    if category == 'Two-passage migrant':
-        # Split the year into spring (weeks 0-23, Jan-Jun) and fall (weeks 24-47, Jul-Dec)
-        spring_freqs = frequencies[0:24]
-        fall_freqs = frequencies[24:48]
-
-        # Find peak in each half
-        spring_max = max(spring_freqs)
-        spring_peak_week = spring_freqs.index(spring_max)
-
-        fall_max = max(fall_freqs)
-        fall_peak_week = 24 + fall_freqs.index(fall_max)
-
-        # Find valley between peaks (dividing point between passages)
-        valley_week, valley_freq = find_valley_between_peaks(frequencies, spring_peak_week, fall_peak_week)
-
-        # Calculate spring passage
-        # Arrival: first week exceeding threshold, scanning forward from year start
-        spring_arrival_week = None
-        spring_threshold = max(spring_max * 0.25, 0.001)
-        for week in range(spring_peak_week + 1):
-            if frequencies[week] >= spring_threshold:
-                spring_arrival_week = week
-                break
-
-        # Departure: last week exceeding threshold, scanning forward from spring peak
-        spring_departure_week = None
-        for week in range(spring_peak_week, valley_week + 1):
-            if frequencies[week] < spring_threshold:
-                spring_departure_week = week - 1
-                break
-        # If we never dropped below threshold before valley, use the week before valley
-        if spring_departure_week is None:
-            spring_departure_week = valley_week
-
-        # Calculate fall passage
-        # Arrival: first week exceeding threshold, scanning forward from valley
-        fall_arrival_week = None
-        fall_threshold = max(fall_max * 0.25, 0.001)
-        for week in range(valley_week, fall_peak_week + 1):
-            if frequencies[week] >= fall_threshold:
-                fall_arrival_week = week
-                break
-
-        # Departure: last week exceeding threshold, scanning forward from fall peak
-        fall_departure_week = None
-        for week in range(fall_peak_week, 48):
-            if frequencies[week] < fall_threshold:
-                fall_departure_week = week - 1
-                break
-        if fall_departure_week is None:
-            fall_departure_week = 47
-
-        # Convert to date ranges
-        spring_arrival_date = week_to_date_range(spring_arrival_week) if spring_arrival_week is not None else ''
-        spring_peak_date = week_to_date_range(spring_peak_week)
-        spring_departure_date = week_to_date_range(spring_departure_week)
-
-        fall_arrival_date = week_to_date_range(fall_arrival_week)
-        fall_peak_date = week_to_date_range(fall_peak_week)
-        fall_departure_date = week_to_date_range(fall_departure_week)
-
-        return {
-            'species': species_name,
-            'category': category,
-            'pattern': 'Two passages',
-            'spring_arrival': spring_arrival_date,
-            'spring_peak': spring_peak_date,
-            'spring_departure': spring_departure_date,
-            'fall_arrival': fall_arrival_date,
-            'fall_peak': fall_peak_date,
-            'fall_departure': fall_departure_date
-        }
+    # Default fallback
+    return {
+        'species': species_name,
+        'category': category,
+        'pattern_type': pattern_type,
+        'status': 'unknown'
+    }
 
 
 def main():
@@ -288,6 +492,7 @@ def main():
         for row in reader:
             classifications[row['species']] = {
                 'category': row['category'],
+                'pattern_type': row['pattern_type'],
                 'flags': row['edge_case_flags'],
                 'peak_frequency': float(row['peak_frequency'])
             }
@@ -299,6 +504,49 @@ def main():
 
     with open(json_file, 'r') as f:
         data = json.load(f)
+
+    # Valley detection function (must match classify script exactly)
+    def detect_valleys(frequencies):
+        """
+        Detect valleys (absence periods) in frequency data.
+        A valley is 4+ consecutive weeks below 15% of species' peak frequency.
+        Returns: list of (start_week, end_week) tuples for each valley
+        """
+        if not frequencies or len(frequencies) < 5:
+            return []
+
+        peak_freq = max(frequencies)
+        if peak_freq == 0:
+            return []
+
+        threshold = peak_freq * 0.15
+
+        valleys = []
+        in_valley = False
+        valley_start = None
+
+        for i, freq in enumerate(frequencies):
+            if freq < threshold:
+                if not in_valley:
+                    # Start of a new valley
+                    in_valley = True
+                    valley_start = i
+            else:
+                if in_valley:
+                    # End of valley
+                    valley_length = i - valley_start
+                    if valley_length >= 4:
+                        valleys.append((valley_start, i - 1))
+                    in_valley = False
+                    valley_start = None
+
+        # Check if we ended in a valley
+        if in_valley:
+            valley_length = len(frequencies) - valley_start
+            if valley_length >= 4:
+                valleys.append((valley_start, len(frequencies) - 1))
+
+        return valleys
 
     # Calculate timing for each species
     results = []
@@ -312,12 +560,16 @@ def main():
 
         classification = classifications[species_name]
 
+        # Detect valleys for this species
+        valleys = detect_valleys(frequencies)
+
         timing = calculate_migration_timing(
             species_name,
             frequencies,
             classification['category'],
+            classification['pattern_type'],
             classification['flags'],
-            classification['peak_frequency']
+            valleys
         )
 
         results.append(timing)
@@ -326,12 +578,22 @@ def main():
     output_file = intermediate_path / f"{region_name}_migration_timing.csv"
 
     with open(output_file, 'w', newline='', encoding='utf-8') as f:
-        fieldnames = [
-            'species', 'category', 'pattern',
-            'arrival', 'peak', 'departure',
-            'spring_arrival', 'spring_peak', 'spring_departure',
-            'fall_arrival', 'fall_peak', 'fall_departure'
-        ]
+        # Determine all possible fieldnames from all results
+        all_fieldnames = set()
+        for result in results:
+            all_fieldnames.update(result.keys())
+
+        # Order fieldnames logically
+        ordered_fieldnames = ['species', 'category', 'pattern_type', 'status']
+        ordered_fieldnames += ['arrival', 'peak', 'departure']
+        ordered_fieldnames += ['spring_arrival', 'spring_peak', 'spring_departure']
+        ordered_fieldnames += ['fall_arrival', 'fall_peak', 'fall_departure']
+        ordered_fieldnames += ['winter_arrival', 'winter_peak', 'winter_departure']
+        ordered_fieldnames += ['first_appears', 'last_appears']
+
+        # Keep only fieldnames that actually exist
+        fieldnames = [f for f in ordered_fieldnames if f in all_fieldnames]
+
         writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
 
         writer.writeheader()
@@ -343,18 +605,23 @@ def main():
     # Print some examples
     print("\n=== Examples ===")
 
-    for pattern in ['Year-round', 'Irregular', 'Single passage', 'Winter resident', 'Two passages']:
-        examples = [r for r in results if r['pattern'] == pattern][:2]
+    for pattern_type in ['year-round', 'irregular', 'two-passage', 'summer', 'winter']:
+        examples = [r for r in results if r.get('pattern_type') == pattern_type][:2]
         if examples:
-            print(f"\n{pattern}:")
+            print(f"\n{pattern_type}:")
             for ex in examples:
                 print(f"  {ex['species']}:")
-                if ex.get('arrival'):
-                    print(f"    {ex['arrival']} → {ex['peak']} → {ex['departure']}")
-                if ex.get('spring_arrival'):
+                if ex.get('status') == 'year-round':
+                    print(f"    Status: Year-round")
+                elif ex.get('status') == 'irregular':
+                    print(f"    {ex.get('first_appears', '')} → {ex.get('peak', '')} → {ex.get('last_appears', '')}")
+                elif ex.get('spring_arrival'):
                     print(f"    Spring: {ex['spring_arrival']} → {ex['spring_peak']} → {ex['spring_departure']}")
-                if ex.get('fall_arrival'):
                     print(f"    Fall: {ex['fall_arrival']} → {ex['fall_peak']} → {ex['fall_departure']}")
+                elif ex.get('winter_arrival'):
+                    print(f"    {ex['winter_arrival']} → {ex['winter_peak']} → {ex['winter_departure']}")
+                elif ex.get('arrival'):
+                    print(f"    {ex['arrival']} → {ex['peak']} → {ex['departure']}")
 
 
 if __name__ == "__main__":

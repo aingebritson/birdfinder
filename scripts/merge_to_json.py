@@ -77,34 +77,37 @@ def parse_flags(flag_string):
     return [f.strip() for f in flag_string.split('|')]
 
 
-def build_timing(pattern, timing_row, flags):
-    """Build the timing object based on pattern type"""
+def build_timing(pattern_type, timing_row, flags):
+    """
+    Build the timing object based on pattern type.
 
-    # Resident: year-round
-    if pattern == 'Year-round':
+    Pattern types:
+    - year-round: Just status
+    - irregular: Simplified timing (first_appears, peak, last_appears)
+    - two-passage: Spring + Fall timing
+    - summer: Arrival/peak/departure
+    - winter: Winter arrival/peak/departure (wraps around year)
+    """
+
+    # Year-round resident
+    if pattern_type == 'year-round':
         return {"status": "year-round"}
 
-    # Vagrant: irregular
-    if pattern == 'Irregular':
-        return {"status": "irregular"}
-
-    # Single-season
-    if pattern in ['Single passage', 'Winter resident']:
-        is_winter = 'winter_resident' in flags
-        prefix = 'winter_' if is_winter else ''
-
+    # Irregular presence (vagrant or 3+ peaks or 2 peaks <12 weeks)
+    if pattern_type == 'irregular':
         timing = {}
-        if timing_row.get('arrival'):
-            timing[f'{prefix}arrival'] = timing_row['arrival']
+        if timing_row.get('status') == 'irregular':
+            timing['status'] = 'irregular'
+        if timing_row.get('first_appears'):
+            timing['first_appears'] = timing_row['first_appears']
         if timing_row.get('peak'):
-            timing[f'{prefix}peak'] = timing_row['peak']
-        if timing_row.get('departure'):
-            timing[f'{prefix}departure'] = timing_row['departure']
-
+            timing['peak'] = timing_row['peak']
+        if timing_row.get('last_appears'):
+            timing['last_appears'] = timing_row['last_appears']
         return timing
 
-    # Two passages
-    if pattern == 'Two passages':
+    # Two-passage migrant
+    if pattern_type == 'two-passage':
         timing = {}
 
         # Spring timing
@@ -125,6 +128,29 @@ def build_timing(pattern, timing_row, flags):
 
         return timing
 
+    # Single-season summer migrant
+    if pattern_type == 'summer':
+        timing = {}
+        if timing_row.get('arrival'):
+            timing['arrival'] = timing_row['arrival']
+        if timing_row.get('peak'):
+            timing['peak'] = timing_row['peak']
+        if timing_row.get('departure'):
+            timing['departure'] = timing_row['departure']
+        return timing
+
+    # Single-season winter migrant/resident (overwintering)
+    if pattern_type == 'winter':
+        timing = {}
+        if timing_row.get('winter_arrival'):
+            timing['winter_arrival'] = timing_row['winter_arrival']
+        if timing_row.get('winter_peak'):
+            timing['winter_peak'] = timing_row['winter_peak']
+        if timing_row.get('winter_departure'):
+            timing['winter_departure'] = timing_row['winter_departure']
+        return timing
+
+    # Fallback
     return {}
 
 
@@ -169,6 +195,7 @@ def main():
             species_name = row['species']
             classification_data[species_name] = {
                 'category': normalize_category(row['category']),
+                'pattern_type': row['pattern_type'],
                 'flags': parse_flags(row['edge_case_flags'])
             }
 
@@ -181,7 +208,7 @@ def main():
         for row in reader:
             species_name = row['species']
             timing_data[species_name] = {
-                'pattern': row['pattern'],
+                'pattern_type': row['pattern_type'],
                 'row': row
             }
 
@@ -211,7 +238,7 @@ def main():
             'category': classification['category'],
             'flags': classification['flags'],
             'timing': build_timing(
-                timing_info['pattern'],
+                timing_info['pattern_type'],
                 timing_info['row'],
                 classification['flags']
             ),
@@ -233,17 +260,37 @@ def main():
 
     # Print summary by category
     category_counts = {}
+    pattern_counts = {}
     for species in species_list:
         cat = species['category']
         category_counts[cat] = category_counts.get(cat, 0) + 1
+
+        # Get pattern type from timing
+        if 'status' in species['timing']:
+            pattern = species['timing']['status']
+        elif 'spring_arrival' in species['timing']:
+            pattern = 'two-passage'
+        elif 'winter_arrival' in species['timing']:
+            pattern = 'winter'
+        elif 'arrival' in species['timing']:
+            pattern = 'summer'
+        elif 'first_appears' in species['timing']:
+            pattern = 'irregular'
+        else:
+            pattern = 'unknown'
+        pattern_counts[pattern] = pattern_counts.get(pattern, 0) + 1
 
     print("\n=== Species by Category ===")
     for category in sorted(category_counts.keys()):
         print(f"  {category}: {category_counts[category]}")
 
+    print("\n=== Species by Pattern Type ===")
+    for pattern in sorted(pattern_counts.keys()):
+        print(f"  {pattern}: {pattern_counts[pattern]}")
+
     # Show a few examples
     print("\n=== Example Species ===")
-    for category in ['resident', 'single-season', 'two-passage-migrant', 'vagrant']:
+    for category in ['resident', 'vagrant', 'two-passage-migrant', 'single-season', 'irregular']:
         examples = [s for s in species_list if s['category'] == category][:1]
         if examples:
             ex = examples[0]

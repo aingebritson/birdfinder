@@ -2,10 +2,13 @@
   {
     "name": "Acadian Flycatcher",
     "code": "acafly",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "June 1-7"
+      "status": "irregular",
+      "first_appears": "May 1-7",
+      "peak": "June 1-7",
+      "last_appears": "September 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -128,7 +131,9 @@
       "low_presence"
     ],
     "timing": {
-      "peak": "May 22-31"
+      "arrival": "May 15-21",
+      "peak": "May 22-31",
+      "departure": "June 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -308,17 +313,13 @@
   {
     "name": "American Bittern",
     "code": "amebit",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "spring_arrival": "April 22-30",
-      "spring_peak": "April 22-30",
-      "spring_departure": "May 15-21",
-      "fall_arrival": "September 8-14",
-      "fall_peak": "September 8-14",
-      "fall_departure": "September 8-14"
+      "status": "irregular",
+      "first_appears": "April 22-30",
+      "peak": "April 22-30",
+      "last_appears": "October 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -374,14 +375,13 @@
   {
     "name": "American Black Duck",
     "code": "ameduc",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "October 22-31",
-      "winter_peak": "January 15-21",
-      "winter_departure": "April 1-7"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "January 15-21",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0505181,
@@ -437,14 +437,13 @@
   {
     "name": "American Coot",
     "code": "amecoo",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "October 1-7",
-      "winter_peak": "March 22-31",
-      "winter_departure": "April 22-30"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "March 22-31",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0114421,
@@ -564,7 +563,9 @@
       "low_presence"
     ],
     "timing": {
-      "peak": "September 8-14"
+      "arrival": "August 15-21",
+      "peak": "September 1-7",
+      "departure": "September 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -621,9 +622,7 @@
     "name": "American Goldfinch",
     "code": "amgold",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -744,9 +743,7 @@
     "name": "American Herring Gull",
     "code": "amegul",
     "category": "irregular",
-    "flags": [
-      "two_valleys_close"
-    ],
+    "flags": [],
     "timing": {
       "status": "irregular",
       "first_appears": "January 1-7",
@@ -990,10 +987,7 @@
     "name": "American Kestrel",
     "code": "amekes",
     "category": "resident",
-    "flags": [
-      "seasonal_variation",
-      "min_max_near_boundary"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -1059,7 +1053,7 @@
       "spring_arrival": "April 22-30",
       "spring_peak": "May 1-7",
       "spring_departure": "May 8-14",
-      "fall_arrival": "October 1-7",
+      "fall_arrival": "September 22-30",
       "fall_peak": "October 8-14",
       "fall_departure": "November 15-21"
     },
@@ -1126,7 +1120,7 @@
       "spring_peak": "May 15-21",
       "spring_departure": "May 22-31",
       "fall_arrival": "August 22-31",
-      "fall_peak": "September 1-7",
+      "fall_peak": "September 8-14",
       "fall_departure": "September 22-30"
     },
     "weekly_frequency": [
@@ -1184,9 +1178,7 @@
     "name": "American Robin",
     "code": "amerob",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -1244,14 +1236,13 @@
   {
     "name": "American Tree Sparrow",
     "code": "amespa",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "November 1-7",
-      "winter_peak": "January 15-21",
-      "winter_departure": "April 8-14"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "January 15-21",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.2448187,
@@ -1307,10 +1298,15 @@
   {
     "name": "American White Pelican",
     "code": "amepel",
-    "category": "single-season",
-    "flags": [],
+    "category": "irregular",
+    "flags": [
+      "two_peaks_close"
+    ],
     "timing": {
-      "peak": "June 15-21"
+      "status": "irregular",
+      "first_appears": "April 1-7",
+      "peak": "June 15-21",
+      "last_appears": "August 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -1366,11 +1362,14 @@
   {
     "name": "American Wigeon",
     "code": "amewig",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
-    "timing": {},
+    "category": "irregular",
+    "flags": [],
+    "timing": {
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "March 15-21",
+      "last_appears": "December 22-31"
+    },
     "weekly_frequency": [
       0.0023748,
       0.0019374,
@@ -1425,16 +1424,13 @@
   {
     "name": "American Woodcock",
     "code": "amewoo",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "spring_arrival": "March 1-7",
-      "spring_peak": "March 15-21",
-      "spring_departure": "April 22-30",
-      "fall_peak": "October 8-14",
-      "fall_departure": "October 1-7"
+      "status": "irregular",
+      "first_appears": "February 22-28",
+      "peak": "March 15-21",
+      "last_appears": "November 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -1614,7 +1610,6 @@
     "code": "baleag",
     "category": "resident",
     "flags": [
-      "seasonal_variation",
       "min_max_near_boundary"
     ],
     "timing": {
@@ -1674,10 +1669,17 @@
   {
     "name": "Baltimore Oriole",
     "code": "balori",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
-      "peak": "May 15-21"
+      "spring_arrival": "May 1-7",
+      "spring_peak": "May 8-14",
+      "spring_departure": "July 1-7",
+      "fall_arrival": "July 15-21",
+      "fall_peak": "August 15-21",
+      "fall_departure": "September 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -1733,10 +1735,13 @@
   {
     "name": "Bank Swallow",
     "code": "banswa",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "May 15-21"
+      "status": "irregular",
+      "first_appears": "April 8-14",
+      "peak": "May 15-21",
+      "last_appears": "September 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -1792,10 +1797,13 @@
   {
     "name": "Barn Swallow",
     "code": "barswa",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "August 1-7"
+      "status": "irregular",
+      "first_appears": "March 8-14",
+      "peak": "August 1-7",
+      "last_appears": "October 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -1851,13 +1859,13 @@
   {
     "name": "Barred Owl",
     "code": "barowl",
-    "category": "resident",
-    "flags": [
-      "seasonal_variation",
-      "min_max_near_boundary"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "status": "year-round"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "June 1-7",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0010794,
@@ -1918,11 +1926,11 @@
       "classic_bimodal"
     ],
     "timing": {
-      "spring_arrival": "May 15-21",
+      "spring_arrival": "May 8-14",
       "spring_peak": "May 15-21",
       "spring_departure": "May 15-21",
       "fall_arrival": "August 22-31",
-      "fall_peak": "September 1-7",
+      "fall_peak": "September 8-14",
       "fall_departure": "September 22-30"
     },
     "weekly_frequency": [
@@ -1980,10 +1988,7 @@
     "name": "Belted Kingfisher",
     "code": "belkin",
     "category": "resident",
-    "flags": [
-      "seasonal_variation",
-      "min_max_near_boundary"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -2234,10 +2239,10 @@
     ],
     "timing": {
       "spring_arrival": "April 22-30",
-      "spring_peak": "May 15-21",
+      "spring_peak": "May 22-31",
       "spring_departure": "May 15-21",
       "fall_arrival": "August 15-21",
-      "fall_peak": "August 15-21",
+      "fall_peak": "August 22-31",
       "fall_departure": "August 15-21"
     },
     "weekly_frequency": [
@@ -2294,11 +2299,15 @@
   {
     "name": "Black Vulture",
     "code": "blavul",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal"
+      "overwintering"
     ],
-    "timing": {},
+    "timing": {
+      "winter_arrival": "September 15-21",
+      "winter_peak": "October 1-7",
+      "winter_departure": "May 22-31"
+    },
     "weekly_frequency": [
       0.0034542,
       0.0019374,
@@ -2359,10 +2368,10 @@
     ],
     "timing": {
       "spring_arrival": "May 1-7",
-      "spring_peak": "May 1-7",
+      "spring_peak": "May 8-14",
       "spring_departure": "May 15-21",
       "fall_arrival": "August 22-31",
-      "fall_peak": "September 8-14",
+      "fall_peak": "September 1-7",
       "fall_departure": "September 22-30"
     },
     "weekly_frequency": [
@@ -2419,12 +2428,17 @@
   {
     "name": "Black-bellied Plover",
     "code": "blaplo",
-    "category": "single-season",
+    "category": "two-passage-migrant",
     "flags": [
+      "classic_bimodal",
       "low_presence"
     ],
     "timing": {
-      "peak": "September 8-14"
+      "spring_peak": "May 15-21",
+      "spring_departure": "May 8-14",
+      "fall_arrival": "August 15-21",
+      "fall_peak": "October 15-21",
+      "fall_departure": "October 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -2542,10 +2556,17 @@
   {
     "name": "Black-billed Cuckoo",
     "code": "blacuc",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
-      "peak": "May 22-31"
+      "spring_arrival": "May 15-21",
+      "spring_peak": "May 22-31",
+      "spring_departure": "June 15-21",
+      "fall_arrival": "August 15-21",
+      "fall_peak": "September 1-7",
+      "fall_departure": "September 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -2661,9 +2682,7 @@
     "name": "Black-crowned Night Heron",
     "code": "blaher",
     "category": "irregular",
-    "flags": [
-      "three_valleys_irregular"
-    ],
+    "flags": [],
     "timing": {
       "status": "irregular",
       "first_appears": "January 15-21",
@@ -2918,7 +2937,7 @@
     ],
     "timing": {
       "spring_arrival": "May 1-7",
-      "spring_peak": "May 1-7",
+      "spring_peak": "May 8-14",
       "spring_departure": "May 15-21",
       "fall_arrival": "August 22-31",
       "fall_peak": "September 8-14",
@@ -2984,8 +3003,8 @@
     ],
     "timing": {
       "spring_arrival": "May 1-7",
-      "spring_peak": "May 15-21",
-      "spring_departure": "May 15-21",
+      "spring_peak": "May 8-14",
+      "spring_departure": "May 22-31",
       "fall_arrival": "August 22-31",
       "fall_peak": "September 1-7",
       "fall_departure": "September 15-21"
@@ -3049,11 +3068,11 @@
       "classic_bimodal"
     ],
     "timing": {
-      "spring_arrival": "May 15-21",
+      "spring_arrival": "May 8-14",
       "spring_peak": "May 15-21",
-      "spring_departure": "May 15-21",
+      "spring_departure": "May 22-31",
       "fall_arrival": "September 1-7",
-      "fall_peak": "September 8-14",
+      "fall_peak": "September 15-21",
       "fall_departure": "October 1-7"
     },
     "weekly_frequency": [
@@ -3113,7 +3132,9 @@
     "category": "single-season",
     "flags": [],
     "timing": {
-      "peak": "July 22-31"
+      "arrival": "July 1-7",
+      "peak": "July 22-31",
+      "departure": "August 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -3170,9 +3191,7 @@
     "name": "Blue Jay",
     "code": "blujay",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -3233,7 +3252,9 @@
     "category": "single-season",
     "flags": [],
     "timing": {
-      "peak": "May 1-7"
+      "arrival": "April 15-21",
+      "peak": "May 8-14",
+      "departure": "July 22-31"
     },
     "weekly_frequency": [
       0.0,
@@ -3297,9 +3318,9 @@
       "spring_arrival": "April 22-30",
       "spring_peak": "May 1-7",
       "spring_departure": "May 15-21",
-      "fall_arrival": "September 15-21",
-      "fall_peak": "September 22-30",
-      "fall_departure": "October 8-14"
+      "fall_arrival": "September 8-14",
+      "fall_peak": "October 1-7",
+      "fall_departure": "October 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -3361,10 +3382,11 @@
     ],
     "timing": {
       "spring_arrival": "March 22-31",
-      "spring_peak": "April 15-21",
-      "spring_departure": "April 22-30",
-      "fall_peak": "September 1-7",
-      "fall_departure": "August 22-31"
+      "spring_peak": "April 8-14",
+      "spring_departure": "May 1-7",
+      "fall_arrival": "July 22-31",
+      "fall_peak": "September 8-14",
+      "fall_departure": "October 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -3426,11 +3448,11 @@
     ],
     "timing": {
       "spring_arrival": "May 1-7",
-      "spring_peak": "May 15-21",
-      "spring_departure": "June 15-21",
-      "fall_arrival": "August 22-31",
+      "spring_peak": "May 8-14",
+      "spring_departure": "June 22-30",
+      "fall_arrival": "August 15-21",
       "fall_peak": "September 1-7",
-      "fall_departure": "September 1-7"
+      "fall_departure": "September 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -3486,10 +3508,13 @@
   {
     "name": "Bobolink",
     "code": "boboli",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "June 1-7"
+      "status": "irregular",
+      "first_appears": "May 1-7",
+      "peak": "June 1-7",
+      "last_appears": "October 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -3607,17 +3632,14 @@
   {
     "name": "Bonaparte's Gull",
     "code": "bongul",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal"
+      "overwintering"
     ],
     "timing": {
-      "spring_arrival": "March 15-21",
-      "spring_peak": "April 15-21",
-      "spring_departure": "April 22-30",
-      "fall_arrival": "October 15-21",
-      "fall_peak": "November 1-7",
-      "fall_departure": "December 8-14"
+      "winter_arrival": "September 8-14",
+      "winter_peak": "November 1-7",
+      "winter_departure": "May 8-14"
     },
     "weekly_frequency": [
       0.0101468,
@@ -3859,10 +3881,17 @@
   {
     "name": "Broad-winged Hawk",
     "code": "brohaw",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
-      "peak": "September 15-21"
+      "spring_arrival": "April 15-21",
+      "spring_peak": "April 22-30",
+      "spring_departure": "August 8-14",
+      "fall_arrival": "September 8-14",
+      "fall_peak": "September 15-21",
+      "fall_departure": "September 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -3919,13 +3948,11 @@
     "name": "Brown Creeper",
     "code": "brocre",
     "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "flags": [],
     "timing": {
-      "winter_arrival": "September 22-30",
-      "winter_peak": "April 8-14",
-      "winter_departure": "April 22-30"
+      "arrival": "January 1-7",
+      "peak": "April 8-14",
+      "departure": "April 22-30"
     },
     "weekly_frequency": [
       0.0388601,
@@ -3989,9 +4016,9 @@
       "spring_arrival": "April 8-14",
       "spring_peak": "April 22-30",
       "spring_departure": "July 8-14",
-      "fall_arrival": "September 8-14",
-      "fall_peak": "September 22-30",
-      "fall_departure": "September 22-30"
+      "fall_arrival": "September 1-7",
+      "fall_peak": "September 15-21",
+      "fall_departure": "October 1-7"
     },
     "weekly_frequency": [
       0.0004318,
@@ -4047,10 +4074,13 @@
   {
     "name": "Brown-headed Cowbird",
     "code": "brocow",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "May 1-7"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "May 1-7",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0060449,
@@ -4230,14 +4260,13 @@
   {
     "name": "Bufflehead",
     "code": "buffle",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "November 1-7",
-      "winter_peak": "March 22-31",
-      "winter_departure": "April 15-21"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "March 22-31",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.039076,
@@ -4295,12 +4324,13 @@
     "code": "cacgoo",
     "category": "single-season",
     "flags": [
-      "overwintering"
+      "overwintering",
+      "two_passage_overwinter"
     ],
     "timing": {
       "winter_arrival": "October 15-21",
       "winter_peak": "November 8-14",
-      "winter_departure": "March 8-14"
+      "winter_departure": "March 22-31"
     },
     "weekly_frequency": [
       0.0066926,
@@ -4357,10 +4387,7 @@
     "name": "Canada Goose",
     "code": "cangoo",
     "category": "resident",
-    "flags": [
-      "seasonal_variation",
-      "min_max_near_boundary"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -4484,14 +4511,13 @@
   {
     "name": "Canvasback",
     "code": "canvas",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "February 1-7",
-      "winter_peak": "February 22-28",
-      "winter_departure": "April 1-7"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "February 22-28",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0056131,
@@ -4553,7 +4579,7 @@
     ],
     "timing": {
       "spring_arrival": "May 1-7",
-      "spring_peak": "May 15-21",
+      "spring_peak": "May 8-14",
       "spring_departure": "May 15-21",
       "fall_arrival": "August 22-31",
       "fall_peak": "September 1-7",
@@ -4614,9 +4640,7 @@
     "name": "Carolina Wren",
     "code": "carwre",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -4674,17 +4698,12 @@
   {
     "name": "Caspian Tern",
     "code": "caster",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
-      "spring_arrival": "April 15-21",
-      "spring_peak": "April 15-21",
-      "spring_departure": "April 15-21",
-      "fall_arrival": "July 8-14",
-      "fall_peak": "August 8-14",
-      "fall_departure": "September 15-21"
+      "arrival": "April 15-21",
+      "peak": "April 15-21",
+      "departure": "April 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -4740,10 +4759,12 @@
   {
     "name": "Cedar Waxwing",
     "code": "cedwax",
-    "category": "single-season",
-    "flags": [],
+    "category": "resident",
+    "flags": [
+      "min_max_near_boundary"
+    ],
     "timing": {
-      "peak": "August 22-31"
+      "status": "year-round"
     },
     "weekly_frequency": [
       0.0231002,
@@ -4802,7 +4823,9 @@
     "category": "single-season",
     "flags": [],
     "timing": {
-      "peak": "May 15-21"
+      "arrival": "May 1-7",
+      "peak": "May 15-21",
+      "departure": "June 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -4864,10 +4887,10 @@
     ],
     "timing": {
       "spring_arrival": "May 1-7",
-      "spring_peak": "May 15-21",
+      "spring_peak": "May 8-14",
       "spring_departure": "May 22-31",
       "fall_arrival": "August 22-31",
-      "fall_peak": "September 1-7",
+      "fall_peak": "September 8-14",
       "fall_departure": "September 22-30"
     },
     "weekly_frequency": [
@@ -4924,10 +4947,13 @@
   {
     "name": "Chimney Swift",
     "code": "chiswi",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "July 22-31"
+      "status": "irregular",
+      "first_appears": "April 8-14",
+      "peak": "July 22-31",
+      "last_appears": "November 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -4983,10 +5009,13 @@
   {
     "name": "Chipping Sparrow",
     "code": "chispa",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "May 8-14"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "May 8-14",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0036701,
@@ -5105,7 +5134,9 @@
     "category": "single-season",
     "flags": [],
     "timing": {
-      "peak": "May 22-31"
+      "arrival": "May 1-7",
+      "peak": "October 1-7",
+      "departure": "September 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -5161,10 +5192,13 @@
   {
     "name": "Cliff Swallow",
     "code": "cliswa",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "July 22-31"
+      "status": "irregular",
+      "first_appears": "April 8-14",
+      "peak": "July 22-31",
+      "last_appears": "September 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -5220,10 +5254,17 @@
   {
     "name": "Common Gallinule",
     "code": "comgal",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
-      "peak": "June 1-7"
+      "spring_arrival": "April 22-30",
+      "spring_peak": "May 1-7",
+      "spring_departure": "July 1-7",
+      "fall_arrival": "July 15-21",
+      "fall_peak": "September 1-7",
+      "fall_departure": "October 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -5279,14 +5320,13 @@
   {
     "name": "Common Goldeneye",
     "code": "comgol",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "November 22-30",
-      "winter_peak": "March 1-7",
-      "winter_departure": "March 22-31"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "March 1-7",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0893782,
@@ -5342,10 +5382,13 @@
   {
     "name": "Common Grackle",
     "code": "comgra",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "May 15-21"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "May 15-21",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0023748,
@@ -5409,8 +5452,9 @@
       "spring_arrival": "March 15-21",
       "spring_peak": "April 1-7",
       "spring_departure": "April 15-21",
-      "fall_peak": "November 22-30",
-      "fall_departure": "November 15-21"
+      "fall_arrival": "October 22-31",
+      "fall_peak": "November 15-21",
+      "fall_departure": "December 1-7"
     },
     "weekly_frequency": [
       0.0004318,
@@ -5466,14 +5510,13 @@
   {
     "name": "Common Merganser",
     "code": "commer",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "December 1-7",
-      "winter_peak": "March 1-7",
-      "winter_departure": "April 1-7"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "March 1-7",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0921848,
@@ -5534,11 +5577,11 @@
       "classic_bimodal"
     ],
     "timing": {
-      "spring_arrival": "May 15-21",
-      "spring_peak": "May 15-21",
-      "spring_departure": "May 22-31",
+      "spring_arrival": "May 8-14",
+      "spring_peak": "May 22-31",
+      "spring_departure": "June 8-14",
       "fall_arrival": "August 15-21",
-      "fall_peak": "August 22-31",
+      "fall_peak": "September 1-7",
       "fall_departure": "September 15-21"
     },
     "weekly_frequency": [
@@ -5595,10 +5638,17 @@
   {
     "name": "Common Tern",
     "code": "comter",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
-      "peak": "May 8-14"
+      "spring_arrival": "May 8-14",
+      "spring_peak": "May 15-21",
+      "spring_departure": "May 22-31",
+      "fall_arrival": "July 15-21",
+      "fall_peak": "September 15-21",
+      "fall_departure": "September 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -5654,10 +5704,13 @@
   {
     "name": "Common Yellowthroat",
     "code": "comyel",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "May 15-21"
+      "status": "irregular",
+      "first_appears": "April 15-21",
+      "peak": "May 15-21",
+      "last_appears": "November 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -5724,7 +5777,7 @@
       "spring_departure": "May 22-31",
       "fall_arrival": "September 1-7",
       "fall_peak": "September 8-14",
-      "fall_departure": "September 8-14"
+      "fall_departure": "September 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -5781,9 +5834,7 @@
     "name": "Cooper's Hawk",
     "code": "coohaw",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -5841,14 +5892,13 @@
   {
     "name": "Dark-eyed Junco",
     "code": "darjun",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "October 8-14",
-      "winter_peak": "November 15-21",
-      "winter_departure": "April 15-21"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "November 15-21",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.3901123,
@@ -5964,10 +6014,13 @@
   {
     "name": "Dickcissel",
     "code": "dickci",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "June 15-21"
+      "status": "irregular",
+      "first_appears": "May 22-31",
+      "peak": "June 15-21",
+      "last_appears": "August 22-31"
     },
     "weekly_frequency": [
       0.0,
@@ -6023,10 +6076,13 @@
   {
     "name": "Double-crested Cormorant",
     "code": "doucor",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "September 8-14"
+      "status": "irregular",
+      "first_appears": "March 1-7",
+      "peak": "September 8-14",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0,
@@ -6083,9 +6139,7 @@
     "name": "Downy Woodpecker",
     "code": "dowwoo",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -6148,12 +6202,12 @@
       "classic_bimodal"
     ],
     "timing": {
-      "spring_arrival": "May 15-21",
-      "spring_peak": "May 15-21",
-      "spring_departure": "May 15-21",
+      "spring_arrival": "April 15-21",
+      "spring_peak": "May 22-31",
+      "spring_departure": "June 1-7",
       "fall_arrival": "October 15-21",
-      "fall_peak": "November 1-7",
-      "fall_departure": "November 1-7"
+      "fall_peak": "October 22-31",
+      "fall_departure": "November 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -6270,9 +6324,7 @@
     "name": "Eastern Bluebird",
     "code": "easblu",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -6330,10 +6382,13 @@
   {
     "name": "Eastern Kingbird",
     "code": "easkin",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "July 22-31"
+      "status": "irregular",
+      "first_appears": "April 22-30",
+      "peak": "July 22-31",
+      "last_appears": "September 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -6389,10 +6444,13 @@
   {
     "name": "Eastern Meadowlark",
     "code": "easmea",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "June 1-7"
+      "status": "irregular",
+      "first_appears": "February 22-28",
+      "peak": "June 1-7",
+      "last_appears": "November 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -6448,10 +6506,13 @@
   {
     "name": "Eastern Phoebe",
     "code": "easpho",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "April 1-7"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "April 1-7",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0021589,
@@ -6507,16 +6568,13 @@
   {
     "name": "Eastern Screech-Owl",
     "code": "easscr",
-    "category": "two-passage-migrant",
-    "flags": [
-      "three_valley_migrant"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "spring_peak": "May 8-14",
-      "spring_departure": "May 1-7",
-      "fall_arrival": "August 1-7",
-      "fall_peak": "September 15-21",
-      "fall_departure": "September 15-21"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "December 15-21",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0088515,
@@ -6575,7 +6633,9 @@
     "category": "single-season",
     "flags": [],
     "timing": {
-      "peak": "May 8-14"
+      "arrival": "March 22-31",
+      "peak": "October 8-14",
+      "departure": "October 22-31"
     },
     "weekly_frequency": [
       0.0017271,
@@ -6634,7 +6694,9 @@
     "category": "single-season",
     "flags": [],
     "timing": {
-      "peak": "May 15-21"
+      "arrival": "April 22-30",
+      "peak": "September 1-7",
+      "departure": "September 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -6698,8 +6760,8 @@
       "spring_arrival": "April 22-30",
       "spring_peak": "May 15-21",
       "spring_departure": "June 8-14",
-      "fall_peak": "September 1-7",
-      "fall_departure": "August 22-31"
+      "fall_peak": "September 8-14",
+      "fall_departure": "September 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -6755,10 +6817,13 @@
   {
     "name": "Eastern Wood-Pewee",
     "code": "easwoo",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "May 22-31"
+      "status": "irregular",
+      "first_appears": "May 1-7",
+      "peak": "May 22-31",
+      "last_appears": "October 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -7124,7 +7189,9 @@
       "low_presence"
     ],
     "timing": {
-      "peak": "October 22-31"
+      "arrival": "October 22-31",
+      "peak": "November 1-7",
+      "departure": "November 15-21"
     },
     "weekly_frequency": [
       0.0002159,
@@ -7180,10 +7247,13 @@
   {
     "name": "Field Sparrow",
     "code": "fiespa",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "June 15-21"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "June 15-21",
+      "last_appears": "December 15-21"
     },
     "weekly_frequency": [
       0.0017271,
@@ -7239,10 +7309,17 @@
   {
     "name": "Forster's Tern",
     "code": "forter",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
-      "peak": "August 1-7"
+      "spring_arrival": "April 8-14",
+      "spring_peak": "April 22-30",
+      "spring_departure": "May 8-14",
+      "fall_arrival": "July 8-14",
+      "fall_peak": "August 8-14",
+      "fall_departure": "August 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -7298,17 +7375,13 @@
   {
     "name": "Fox Sparrow",
     "code": "foxspa",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "spring_arrival": "March 22-31",
-      "spring_peak": "April 1-7",
-      "spring_departure": "April 15-21",
-      "fall_arrival": "October 22-31",
-      "fall_peak": "November 15-21",
-      "fall_departure": "November 22-30"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "April 1-7",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0036701,
@@ -7426,14 +7499,13 @@
   {
     "name": "Gadwall",
     "code": "gadwal",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "October 8-14",
-      "winter_peak": "March 1-7",
-      "winter_departure": "April 22-30"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "March 1-7",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0317358,
@@ -7549,13 +7621,15 @@
   {
     "name": "Glaucous Gull",
     "code": "glagul",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [
-      "overwintering"
+      "two_peaks_close"
     ],
     "timing": {
-      "winter_arrival": "December 1-7",
-      "winter_peak": "December 8-14"
+      "status": "irregular",
+      "first_appears": "March 8-14",
+      "peak": "December 8-14",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0004318,
@@ -7611,10 +7685,13 @@
   {
     "name": "Golden Eagle",
     "code": "goleag",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "November 8-14"
+      "status": "irregular",
+      "first_appears": "January 15-21",
+      "peak": "November 8-14",
+      "last_appears": "December 8-14"
     },
     "weekly_frequency": [
       0.0002159,
@@ -7670,17 +7747,15 @@
   {
     "name": "Golden-crowned Kinglet",
     "code": "golkin",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal"
+      "overwintering",
+      "two_passage_overwinter"
     ],
     "timing": {
-      "spring_arrival": "March 22-31",
-      "spring_peak": "April 8-14",
-      "spring_departure": "April 15-21",
-      "fall_arrival": "October 1-7",
-      "fall_peak": "October 8-14",
-      "fall_departure": "November 8-14"
+      "winter_arrival": "September 15-21",
+      "winter_peak": "October 8-14",
+      "winter_departure": "June 1-7"
     },
     "weekly_frequency": [
       0.029361,
@@ -7742,9 +7817,9 @@
       "low_presence"
     ],
     "timing": {
-      "spring_arrival": "May 1-7",
-      "spring_peak": "May 1-7",
-      "spring_departure": "May 1-7",
+      "spring_arrival": "April 8-14",
+      "spring_peak": "May 8-14",
+      "spring_departure": "May 15-21",
       "fall_arrival": "August 22-31",
       "fall_peak": "September 1-7",
       "fall_departure": "September 15-21"
@@ -7863,10 +7938,13 @@
   {
     "name": "Grasshopper Sparrow",
     "code": "graspa",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "June 8-14"
+      "status": "irregular",
+      "first_appears": "May 1-7",
+      "peak": "June 8-14",
+      "last_appears": "August 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -7922,10 +8000,13 @@
   {
     "name": "Gray Catbird",
     "code": "gracat",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "May 15-21"
+      "status": "irregular",
+      "first_appears": "February 22-28",
+      "peak": "May 15-21",
+      "last_appears": "December 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -7988,8 +8069,8 @@
     ],
     "timing": {
       "spring_arrival": "May 1-7",
-      "spring_peak": "May 15-21",
-      "spring_departure": "May 15-21",
+      "spring_peak": "May 8-14",
+      "spring_departure": "May 22-31",
       "fall_arrival": "September 8-14",
       "fall_peak": "September 15-21",
       "fall_departure": "October 1-7"
@@ -8048,15 +8129,12 @@
   {
     "name": "Graylag Goose",
     "code": "gragoo",
-    "category": "irregular",
-    "flags": [
-      "three_valleys_irregular"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
-      "status": "irregular",
-      "first_appears": "January 1-7",
+      "arrival": "February 8-14",
       "peak": "March 1-7",
-      "last_appears": "December 22-31"
+      "departure": "April 1-7"
     },
     "weekly_frequency": [
       0.0084197,
@@ -8112,15 +8190,16 @@
   {
     "name": "Graylag x Canada Goose (hybrid)",
     "code": "grgoos",
-    "category": "irregular",
+    "category": "two-passage-migrant",
     "flags": [
-      "many_valleys"
+      "classic_bimodal"
     ],
     "timing": {
-      "status": "irregular",
-      "first_appears": "February 1-7",
-      "peak": "August 15-21",
-      "last_appears": "November 22-30"
+      "spring_arrival": "February 1-7",
+      "spring_peak": "March 15-21",
+      "spring_departure": "March 8-14",
+      "fall_peak": "July 1-7",
+      "fall_departure": "June 22-30"
     },
     "weekly_frequency": [
       0.0002159,
@@ -8176,16 +8255,14 @@
   {
     "name": "Great Black-backed Gull",
     "code": "gregul",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal"
+      "overwintering"
     ],
     "timing": {
-      "spring_peak": "March 1-7",
-      "spring_departure": "February 22-28",
-      "fall_arrival": "December 8-14",
-      "fall_peak": "December 8-14",
-      "fall_departure": "December 8-14"
+      "winter_arrival": "December 1-7",
+      "winter_peak": "December 8-14",
+      "winter_departure": "March 8-14"
     },
     "weekly_frequency": [
       0.0047496,
@@ -8242,10 +8319,7 @@
     "name": "Great Blue Heron",
     "code": "greher",
     "category": "resident",
-    "flags": [
-      "seasonal_variation",
-      "min_max_near_boundary"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -8303,10 +8377,13 @@
   {
     "name": "Great Crested Flycatcher",
     "code": "grefly",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "May 15-21"
+      "status": "irregular",
+      "first_appears": "April 22-30",
+      "peak": "May 15-21",
+      "last_appears": "September 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -8365,7 +8442,9 @@
     "category": "single-season",
     "flags": [],
     "timing": {
-      "peak": "August 8-14"
+      "arrival": "April 1-7",
+      "peak": "April 15-21",
+      "departure": "November 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -8423,7 +8502,6 @@
     "code": "greowl",
     "category": "resident",
     "flags": [
-      "seasonal_variation",
       "min_max_near_boundary"
     ],
     "timing": {
@@ -8488,9 +8566,9 @@
       "overwintering"
     ],
     "timing": {
-      "winter_arrival": "January 15-21",
+      "winter_arrival": "October 1-7",
       "winter_peak": "March 1-7",
-      "winter_departure": "March 22-31"
+      "winter_departure": "May 1-7"
     },
     "weekly_frequency": [
       0.0032383,
@@ -8546,11 +8624,16 @@
   {
     "name": "Greater White-fronted Goose",
     "code": "gregoo",
-    "category": "two-passage-migrant",
+    "category": "irregular",
     "flags": [
-      "classic_bimodal"
+      "two_peaks_close"
     ],
-    "timing": {},
+    "timing": {
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "February 22-28",
+      "last_appears": "December 22-31"
+    },
     "weekly_frequency": [
       0.0051813,
       0.0025831,
@@ -8610,12 +8693,12 @@
       "classic_bimodal"
     ],
     "timing": {
-      "spring_arrival": "April 15-21",
+      "spring_arrival": "April 8-14",
       "spring_peak": "April 22-30",
-      "spring_departure": "April 22-30",
-      "fall_arrival": "July 22-31",
-      "fall_peak": "November 1-7",
-      "fall_departure": "November 1-7"
+      "spring_departure": "May 8-14",
+      "fall_arrival": "July 8-14",
+      "fall_peak": "October 22-31",
+      "fall_departure": "November 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -8671,10 +8754,13 @@
   {
     "name": "Green Heron",
     "code": "grhero",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "July 15-21"
+      "status": "irregular",
+      "first_appears": "April 8-14",
+      "peak": "July 15-21",
+      "last_appears": "October 22-31"
     },
     "weekly_frequency": [
       0.0,
@@ -8730,11 +8816,14 @@
   {
     "name": "Green-winged Teal",
     "code": "gretea",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
-    "timing": {},
+    "category": "irregular",
+    "flags": [],
+    "timing": {
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "March 22-31",
+      "last_appears": "December 22-31"
+    },
     "weekly_frequency": [
       0.0064767,
       0.0077494,
@@ -8852,9 +8941,7 @@
     "name": "Hairy Woodpecker",
     "code": "haiwoo",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -9098,10 +9185,13 @@
   {
     "name": "Henslow's Sparrow",
     "code": "henspa",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "July 8-14"
+      "status": "irregular",
+      "first_appears": "April 15-21",
+      "peak": "July 8-14",
+      "last_appears": "August 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -9157,17 +9247,15 @@
   {
     "name": "Hermit Thrush",
     "code": "herthr",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "three_valley_migrant"
+      "overwintering",
+      "two_passage_overwinter"
     ],
     "timing": {
-      "spring_arrival": "April 1-7",
-      "spring_peak": "April 22-30",
-      "spring_departure": "May 1-7",
-      "fall_arrival": "October 1-7",
-      "fall_peak": "October 8-14",
-      "fall_departure": "October 22-31"
+      "winter_arrival": "September 15-21",
+      "winter_peak": "October 8-14",
+      "winter_departure": "May 15-21"
     },
     "weekly_frequency": [
       0.0066926,
@@ -9224,9 +9312,7 @@
     "name": "Hooded Merganser",
     "code": "hoomer",
     "category": "irregular",
-    "flags": [
-      "two_valleys_close"
-    ],
+    "flags": [],
     "timing": {
       "status": "irregular",
       "first_appears": "January 1-7",
@@ -9352,7 +9438,9 @@
     "category": "single-season",
     "flags": [],
     "timing": {
-      "peak": "May 15-21"
+      "arrival": "May 1-7",
+      "peak": "May 22-31",
+      "departure": "July 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -9408,17 +9496,12 @@
   {
     "name": "Horned Grebe",
     "code": "horgre",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
-      "spring_arrival": "February 22-28",
-      "spring_peak": "March 22-31",
-      "spring_departure": "April 15-21",
-      "fall_arrival": "November 1-7",
-      "fall_peak": "November 8-14",
-      "fall_departure": "November 8-14"
+      "arrival": "January 15-21",
+      "peak": "November 8-14",
+      "departure": "November 22-30"
     },
     "weekly_frequency": [
       0.0008636,
@@ -9474,14 +9557,12 @@
   {
     "name": "Horned Lark",
     "code": "horlar",
-    "category": "single-season",
+    "category": "resident",
     "flags": [
-      "overwintering"
+      "min_max_near_boundary"
     ],
     "timing": {
-      "winter_arrival": "October 1-7",
-      "winter_peak": "January 22-31",
-      "winter_departure": "June 1-7"
+      "status": "year-round"
     },
     "weekly_frequency": [
       0.0386442,
@@ -9777,16 +9858,15 @@
   {
     "name": "Iceland Gull",
     "code": "icegul",
-    "category": "two-passage-migrant",
+    "category": "irregular",
     "flags": [
-      "classic_bimodal"
+      "two_peaks_close"
     ],
     "timing": {
-      "spring_peak": "March 22-31",
-      "spring_departure": "March 15-21",
-      "fall_arrival": "December 1-7",
-      "fall_peak": "December 1-7",
-      "fall_departure": "December 8-14"
+      "status": "irregular",
+      "first_appears": "January 8-14",
+      "peak": "December 1-7",
+      "last_appears": "December 15-21"
     },
     "weekly_frequency": [
       0.0004318,
@@ -9904,10 +9984,13 @@
   {
     "name": "Indigo Bunting",
     "code": "indbun",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "May 22-31"
+      "status": "irregular",
+      "first_appears": "April 15-21",
+      "peak": "May 22-31",
+      "last_appears": "October 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -10025,10 +10108,13 @@
   {
     "name": "Killdeer",
     "code": "killde",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "August 8-14"
+      "status": "irregular",
+      "first_appears": "January 8-14",
+      "peak": "August 8-14",
+      "last_appears": "December 15-21"
     },
     "weekly_frequency": [
       0.0008636,
@@ -10213,9 +10299,9 @@
       "overwintering"
     ],
     "timing": {
-      "winter_arrival": "November 15-21",
+      "winter_arrival": "November 1-7",
       "winter_peak": "January 22-31",
-      "winter_departure": "March 8-14"
+      "winter_departure": "April 15-21"
     },
     "weekly_frequency": [
       0.0103627,
@@ -10519,10 +10605,15 @@
   {
     "name": "Least Bittern",
     "code": "leabit",
-    "category": "single-season",
-    "flags": [],
+    "category": "irregular",
+    "flags": [
+      "two_peaks_close"
+    ],
     "timing": {
-      "peak": "June 15-21"
+      "status": "irregular",
+      "first_appears": "May 1-7",
+      "peak": "June 15-21",
+      "last_appears": "August 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -10584,11 +10675,11 @@
     ],
     "timing": {
       "spring_arrival": "May 1-7",
-      "spring_peak": "May 15-21",
+      "spring_peak": "May 8-14",
       "spring_departure": "May 22-31",
-      "fall_arrival": "August 22-31",
+      "fall_arrival": "August 15-21",
       "fall_peak": "September 1-7",
-      "fall_departure": "September 8-14"
+      "fall_departure": "September 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -10649,9 +10740,9 @@
       "classic_bimodal"
     ],
     "timing": {
-      "spring_arrival": "May 15-21",
-      "spring_peak": "May 15-21",
-      "spring_departure": "May 15-21",
+      "spring_arrival": "May 1-7",
+      "spring_peak": "May 8-14",
+      "spring_departure": "May 22-31",
       "fall_arrival": "July 8-14",
       "fall_peak": "August 8-14",
       "fall_departure": "September 1-7"
@@ -10710,16 +10801,15 @@
   {
     "name": "Lesser Black-backed Gull",
     "code": "lesgul",
-    "category": "two-passage-migrant",
+    "category": "irregular",
     "flags": [
-      "classic_bimodal"
+      "two_peaks_close"
     ],
     "timing": {
-      "spring_peak": "March 22-31",
-      "spring_departure": "March 15-21",
-      "fall_arrival": "December 1-7",
-      "fall_peak": "December 8-14",
-      "fall_departure": "December 8-14"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "December 8-14",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0012953,
@@ -10775,13 +10865,13 @@
   {
     "name": "Lesser Scaup",
     "code": "lessca",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_peak": "March 22-31",
-      "winter_departure": "April 15-21"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "March 22-31",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0118739,
@@ -10837,17 +10927,12 @@
   {
     "name": "Lesser Yellowlegs",
     "code": "lesyel",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
-      "spring_arrival": "April 15-21",
-      "spring_peak": "April 22-30",
-      "spring_departure": "May 1-7",
-      "fall_arrival": "July 8-14",
-      "fall_peak": "August 15-21",
-      "fall_departure": "September 22-30"
+      "arrival": "April 15-21",
+      "peak": "April 22-30",
+      "departure": "May 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -10972,7 +11057,7 @@
     "timing": {
       "spring_arrival": "May 1-7",
       "spring_peak": "May 8-14",
-      "spring_departure": "May 8-14",
+      "spring_departure": "May 15-21",
       "fall_arrival": "September 15-21",
       "fall_peak": "October 1-7",
       "fall_departure": "October 15-21"
@@ -11217,15 +11302,17 @@
   {
     "name": "Long-eared Owl",
     "code": "lonowl",
-    "category": "irregular",
+    "category": "two-passage-migrant",
     "flags": [
-      "two_valleys_close"
+      "classic_bimodal"
     ],
     "timing": {
-      "status": "irregular",
-      "first_appears": "January 15-21",
-      "peak": "January 15-21",
-      "last_appears": "October 15-21"
+      "spring_arrival": "January 15-21",
+      "spring_peak": "February 8-14",
+      "spring_departure": "February 15-21",
+      "fall_arrival": "May 8-14",
+      "fall_peak": "October 15-21",
+      "fall_departure": "October 15-21"
     },
     "weekly_frequency": [
       0.0004318,
@@ -11287,11 +11374,11 @@
     ],
     "timing": {
       "spring_arrival": "February 15-21",
-      "spring_peak": "March 8-14",
-      "spring_departure": "March 8-14",
+      "spring_peak": "March 1-7",
+      "spring_departure": "March 15-21",
       "fall_arrival": "October 15-21",
-      "fall_peak": "November 1-7",
-      "fall_departure": "November 1-7"
+      "fall_peak": "October 22-31",
+      "fall_departure": "November 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -11347,16 +11434,12 @@
   {
     "name": "Louisiana Waterthrush",
     "code": "louwat",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
-      "spring_arrival": "April 1-7",
-      "spring_peak": "April 1-7",
-      "spring_departure": "May 8-14",
-      "fall_peak": "September 1-7",
-      "fall_departure": "August 22-31"
+      "arrival": "April 1-7",
+      "peak": "April 8-14",
+      "departure": "May 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -11417,11 +11500,11 @@
       "classic_bimodal"
     ],
     "timing": {
-      "spring_arrival": "May 8-14",
-      "spring_peak": "May 15-21",
-      "spring_departure": "May 15-21",
+      "spring_arrival": "May 1-7",
+      "spring_peak": "May 8-14",
+      "spring_departure": "May 22-31",
       "fall_arrival": "August 22-31",
-      "fall_peak": "September 1-7",
+      "fall_peak": "September 8-14",
       "fall_departure": "September 22-30"
     },
     "weekly_frequency": [
@@ -11479,9 +11562,7 @@
     "name": "Mallard",
     "code": "mallar",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -11539,14 +11620,13 @@
   {
     "name": "Mallard x American Black Duck (hybrid)",
     "code": "malduc",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "June 8-14",
-      "winter_peak": "February 22-28",
-      "winter_departure": "March 15-21"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "February 22-28",
+      "last_appears": "December 15-21"
     },
     "weekly_frequency": [
       0.0023748,
@@ -11784,10 +11864,13 @@
   {
     "name": "Marsh Wren",
     "code": "marwre",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "June 15-21"
+      "status": "irregular",
+      "first_appears": "April 15-21",
+      "peak": "June 15-21",
+      "last_appears": "November 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -11843,14 +11926,13 @@
   {
     "name": "Merlin",
     "code": "merlin",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "August 22-31",
-      "winter_peak": "January 22-31",
-      "winter_departure": "March 8-14"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "January 22-31",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0151123,
@@ -11969,9 +12051,7 @@
     "name": "Mourning Dove",
     "code": "moudov",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -12158,10 +12238,7 @@
     "name": "Mute Swan",
     "code": "mutswa",
     "category": "resident",
-    "flags": [
-      "seasonal_variation",
-      "min_max_near_boundary"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -12219,17 +12296,12 @@
   {
     "name": "Nashville Warbler",
     "code": "naswar",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
-      "spring_arrival": "May 1-7",
-      "spring_peak": "May 1-7",
-      "spring_departure": "May 15-21",
-      "fall_arrival": "August 22-31",
-      "fall_peak": "September 15-21",
-      "fall_departure": "October 8-14"
+      "arrival": "May 1-7",
+      "peak": "May 8-14",
+      "departure": "May 15-21"
     },
     "weekly_frequency": [
       0.0006477,
@@ -12347,15 +12419,12 @@
   {
     "name": "Northern Bobwhite",
     "code": "norbob",
-    "category": "irregular",
-    "flags": [
-      "many_valleys"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
-      "status": "irregular",
-      "first_appears": "January 1-7",
+      "arrival": "January 1-7",
       "peak": "August 8-14",
-      "last_appears": "November 8-14"
+      "departure": "August 15-21"
     },
     "weekly_frequency": [
       0.0015,
@@ -12471,10 +12540,7 @@
     "name": "Northern Flicker",
     "code": "norfli",
     "category": "resident",
-    "flags": [
-      "seasonal_variation",
-      "min_max_near_boundary"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -12532,14 +12598,13 @@
   {
     "name": "Northern Harrier",
     "code": "norhar",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "October 8-14",
-      "winter_peak": "January 15-21",
-      "winter_departure": "March 1-7"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "January 15-21",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0345423,
@@ -12598,7 +12663,9 @@
     "category": "single-season",
     "flags": [],
     "timing": {
-      "peak": "May 8-14"
+      "arrival": "April 22-30",
+      "peak": "May 8-14",
+      "departure": "September 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -12655,10 +12722,7 @@
     "name": "Northern Mockingbird",
     "code": "normoc",
     "category": "resident",
-    "flags": [
-      "seasonal_variation",
-      "min_max_near_boundary"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -12724,9 +12788,9 @@
       "spring_arrival": "May 1-7",
       "spring_peak": "May 8-14",
       "spring_departure": "May 15-21",
-      "fall_arrival": "September 8-14",
+      "fall_arrival": "September 1-7",
       "fall_peak": "September 15-21",
-      "fall_departure": "September 22-30"
+      "fall_departure": "October 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -12787,9 +12851,9 @@
       "overwintering"
     ],
     "timing": {
-      "winter_arrival": "October 8-14",
+      "winter_arrival": "September 8-14",
       "winter_peak": "March 1-7",
-      "winter_departure": "April 1-7"
+      "winter_departure": "April 22-30"
     },
     "weekly_frequency": [
       0.0073402,
@@ -12845,10 +12909,13 @@
   {
     "name": "Northern Rough-winged Swallow",
     "code": "norswa",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "May 1-7"
+      "status": "irregular",
+      "first_appears": "April 1-7",
+      "peak": "May 1-7",
+      "last_appears": "October 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -12967,16 +13034,12 @@
   {
     "name": "Northern Shoveler",
     "code": "norsho",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
-      "spring_arrival": "March 8-14",
-      "spring_peak": "March 22-31",
-      "spring_departure": "April 15-21",
-      "fall_peak": "November 8-14",
-      "fall_departure": "November 1-7"
+      "arrival": "February 22-28",
+      "peak": "November 8-14",
+      "departure": "December 8-14"
     },
     "weekly_frequency": [
       0.0008636,
@@ -13096,12 +13159,13 @@
     "code": "norshr",
     "category": "single-season",
     "flags": [
-      "overwintering"
+      "overwintering",
+      "two_passage_overwinter"
     ],
     "timing": {
-      "winter_arrival": "October 22-31",
+      "winter_arrival": "October 15-21",
       "winter_peak": "January 1-7",
-      "winter_departure": "March 8-14"
+      "winter_departure": "March 22-31"
     },
     "weekly_frequency": [
       0.0099309,
@@ -13157,10 +13221,17 @@
   {
     "name": "Northern Waterthrush",
     "code": "norwat",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
-      "peak": "May 1-7"
+      "spring_arrival": "April 22-30",
+      "spring_peak": "May 8-14",
+      "spring_departure": "May 15-21",
+      "fall_arrival": "August 8-14",
+      "fall_peak": "September 1-7",
+      "fall_departure": "September 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -13219,7 +13290,9 @@
     "category": "single-season",
     "flags": [],
     "timing": {
-      "peak": "May 15-21"
+      "arrival": "April 22-30",
+      "peak": "May 8-14",
+      "departure": "July 22-31"
     },
     "weekly_frequency": [
       0.0,
@@ -13280,10 +13353,11 @@
       "classic_bimodal"
     ],
     "timing": {
-      "spring_peak": "May 22-31",
-      "spring_departure": "May 15-21",
+      "spring_arrival": "May 8-14",
+      "spring_peak": "May 15-21",
+      "spring_departure": "June 1-7",
       "fall_arrival": "August 15-21",
-      "fall_peak": "August 22-31",
+      "fall_peak": "September 1-7",
       "fall_departure": "September 15-21"
     },
     "weekly_frequency": [
@@ -13345,8 +13419,8 @@
       "classic_bimodal"
     ],
     "timing": {
-      "spring_arrival": "May 1-7",
-      "spring_peak": "May 1-7",
+      "spring_arrival": "April 22-30",
+      "spring_peak": "May 8-14",
       "spring_departure": "May 15-21",
       "fall_arrival": "September 22-30",
       "fall_peak": "October 8-14",
@@ -13406,10 +13480,13 @@
   {
     "name": "Orchard Oriole",
     "code": "orcori",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "May 15-21"
+      "status": "irregular",
+      "first_appears": "April 22-30",
+      "peak": "May 15-21",
+      "last_appears": "August 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -13465,10 +13542,13 @@
   {
     "name": "Osprey",
     "code": "osprey",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "August 8-14"
+      "status": "irregular",
+      "first_appears": "March 15-21",
+      "peak": "August 8-14",
+      "last_appears": "November 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -13530,9 +13610,9 @@
     ],
     "timing": {
       "spring_arrival": "May 1-7",
-      "spring_peak": "May 15-21",
+      "spring_peak": "May 8-14",
       "spring_departure": "June 1-7",
-      "fall_arrival": "September 1-7",
+      "fall_arrival": "August 22-31",
       "fall_peak": "September 8-14",
       "fall_departure": "September 22-30"
     },
@@ -13660,8 +13740,9 @@
       "spring_arrival": "April 22-30",
       "spring_peak": "May 1-7",
       "spring_departure": "May 8-14",
-      "fall_peak": "October 8-14",
-      "fall_departure": "October 1-7"
+      "fall_arrival": "September 8-14",
+      "fall_peak": "October 1-7",
+      "fall_departure": "October 15-21"
     },
     "weekly_frequency": [
       0.0002159,
@@ -13717,17 +13798,13 @@
   {
     "name": "Pectoral Sandpiper",
     "code": "pecsan",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "spring_arrival": "April 15-21",
-      "spring_peak": "April 22-30",
-      "spring_departure": "April 22-30",
-      "fall_arrival": "July 22-31",
-      "fall_peak": "November 1-7",
-      "fall_departure": "November 1-7"
+      "status": "irregular",
+      "first_appears": "March 22-31",
+      "peak": "November 1-7",
+      "last_appears": "November 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -13784,10 +13861,7 @@
     "name": "Peregrine Falcon",
     "code": "perfal",
     "category": "resident",
-    "flags": [
-      "seasonal_variation",
-      "min_max_near_boundary"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -13851,9 +13925,9 @@
       "low_presence"
     ],
     "timing": {
-      "spring_arrival": "May 15-21",
+      "spring_arrival": "May 8-14",
       "spring_peak": "May 15-21",
-      "spring_departure": "May 15-21",
+      "spring_departure": "May 22-31",
       "fall_arrival": "September 1-7",
       "fall_peak": "September 8-14",
       "fall_departure": "September 22-30"
@@ -13912,17 +13986,12 @@
   {
     "name": "Pied-billed Grebe",
     "code": "piegre",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
-      "spring_arrival": "March 1-7",
-      "spring_peak": "April 1-7",
-      "spring_departure": "April 22-30",
-      "fall_arrival": "September 22-30",
-      "fall_peak": "October 22-31",
-      "fall_departure": "November 22-30"
+      "arrival": "March 1-7",
+      "peak": "April 1-7",
+      "departure": "April 22-30"
     },
     "weekly_frequency": [
       0.0120898,
@@ -13979,9 +14048,7 @@
     "name": "Pileated Woodpecker",
     "code": "pilwoo",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -14101,14 +14168,13 @@
   {
     "name": "Pine Siskin",
     "code": "pinsis",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "October 8-14",
-      "winter_peak": "November 22-30",
-      "winter_departure": "May 1-7"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "November 22-30",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0319516,
@@ -14170,11 +14236,11 @@
     ],
     "timing": {
       "spring_arrival": "April 8-14",
-      "spring_peak": "April 15-21",
+      "spring_peak": "April 22-30",
       "spring_departure": "June 1-7",
-      "fall_arrival": "September 1-7",
+      "fall_arrival": "August 22-31",
       "fall_peak": "September 8-14",
-      "fall_departure": "September 8-14"
+      "fall_departure": "October 8-14"
     },
     "weekly_frequency": [
       0.0015,
@@ -14235,7 +14301,9 @@
       "low_presence"
     ],
     "timing": {
-      "peak": "May 1-7"
+      "arrival": "April 22-30",
+      "peak": "May 8-14",
+      "departure": "June 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -14291,16 +14359,12 @@
   {
     "name": "Prothonotary Warbler",
     "code": "prowar",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
-      "spring_arrival": "May 1-7",
-      "spring_peak": "May 8-14",
-      "spring_departure": "July 1-7",
-      "fall_peak": "September 1-7",
-      "fall_departure": "August 22-31"
+      "arrival": "April 15-21",
+      "peak": "August 22-31",
+      "departure": "August 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -14356,11 +14420,15 @@
   {
     "name": "Purple Finch",
     "code": "purfin",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal"
+      "overwintering"
     ],
-    "timing": {},
+    "timing": {
+      "winter_arrival": "September 8-14",
+      "winter_peak": "October 8-14",
+      "winter_departure": "May 22-31"
+    },
     "weekly_frequency": [
       0.005829,
       0.0064579,
@@ -14415,10 +14483,13 @@
   {
     "name": "Purple Martin",
     "code": "purmar",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "July 22-31"
+      "status": "irregular",
+      "first_appears": "April 1-7",
+      "peak": "July 22-31",
+      "last_appears": "September 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -14474,10 +14545,16 @@
   {
     "name": "Red Crossbill",
     "code": "redcro",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
-      "peak": "November 1-7"
+      "spring_peak": "February 8-14",
+      "spring_departure": "February 1-7",
+      "fall_arrival": "November 1-7",
+      "fall_peak": "November 8-14",
+      "fall_departure": "December 1-7"
     },
     "weekly_frequency": [
       0.0004318,
@@ -14596,9 +14673,7 @@
     "name": "Red-bellied Woodpecker",
     "code": "redwoo",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -14656,16 +14731,14 @@
   {
     "name": "Red-breasted Merganser",
     "code": "redmer",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal"
+      "overwintering"
     ],
     "timing": {
-      "spring_arrival": "February 22-28",
-      "spring_peak": "March 22-31",
-      "spring_departure": "April 15-21",
-      "fall_peak": "November 22-30",
-      "fall_departure": "November 15-21"
+      "winter_arrival": "October 15-21",
+      "winter_peak": "March 22-31",
+      "winter_departure": "May 1-7"
     },
     "weekly_frequency": [
       0.0015112,
@@ -14721,14 +14794,13 @@
   {
     "name": "Red-breasted Nuthatch",
     "code": "rednut",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "September 1-7",
-      "winter_peak": "November 15-21",
-      "winter_departure": "April 15-21"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "November 15-21",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0725389,
@@ -14784,10 +14856,17 @@
   {
     "name": "Red-eyed Vireo",
     "code": "redvir",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
-      "peak": "May 22-31"
+      "spring_arrival": "May 8-14",
+      "spring_peak": "May 22-31",
+      "spring_departure": "August 1-7",
+      "fall_arrival": "August 8-14",
+      "fall_peak": "September 1-7",
+      "fall_departure": "September 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -14845,8 +14924,7 @@
     "code": "rewood",
     "category": "resident",
     "flags": [
-      "seasonal_variation",
-      "min_max_near_boundary"
+      "seasonal_variation"
     ],
     "timing": {
       "status": "year-round"
@@ -14910,11 +14988,11 @@
       "classic_bimodal"
     ],
     "timing": {
-      "spring_arrival": "March 8-14",
-      "spring_peak": "April 1-7",
-      "spring_departure": "April 8-14",
-      "fall_arrival": "November 15-21",
-      "fall_peak": "December 1-7",
+      "spring_arrival": "January 15-21",
+      "spring_peak": "May 8-14",
+      "spring_departure": "May 1-7",
+      "fall_arrival": "October 15-21",
+      "fall_peak": "November 22-30",
       "fall_departure": "December 1-7"
     },
     "weekly_frequency": [
@@ -15033,14 +15111,12 @@
   {
     "name": "Red-shouldered Hawk",
     "code": "redhaw",
-    "category": "single-season",
+    "category": "resident",
     "flags": [
-      "overwintering"
+      "min_max_near_boundary"
     ],
     "timing": {
-      "winter_arrival": "August 22-31",
-      "winter_peak": "June 15-21",
-      "winter_departure": "June 22-30"
+      "status": "year-round"
     },
     "weekly_frequency": [
       0.0023748,
@@ -15097,9 +15173,7 @@
     "name": "Red-tailed Hawk",
     "code": "rehawk",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -15219,10 +15293,13 @@
   {
     "name": "Red-winged Blackbird",
     "code": "redbla",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "April 22-30"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "April 22-30",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0053972,
@@ -15278,14 +15355,13 @@
   {
     "name": "Redhead",
     "code": "redhea",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "January 15-21",
-      "winter_peak": "March 1-7",
-      "winter_departure": "April 1-7"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "March 1-7",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0224525,
@@ -15346,9 +15422,9 @@
       "overwintering"
     ],
     "timing": {
-      "winter_arrival": "November 15-21",
+      "winter_arrival": "November 1-7",
       "winter_peak": "January 15-21",
-      "winter_departure": "March 8-14"
+      "winter_departure": "March 22-31"
     },
     "weekly_frequency": [
       0.0103627,
@@ -15404,14 +15480,12 @@
   {
     "name": "Ring-billed Gull",
     "code": "ringul",
-    "category": "single-season",
+    "category": "resident",
     "flags": [
-      "overwintering"
+      "min_max_near_boundary"
     ],
     "timing": {
-      "winter_arrival": "July 15-21",
-      "winter_peak": "November 1-7",
-      "winter_departure": "April 15-21"
+      "status": "year-round"
     },
     "weekly_frequency": [
       0.1422712,
@@ -15467,14 +15541,13 @@
   {
     "name": "Ring-necked Duck",
     "code": "rinduc",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "February 1-7",
-      "winter_peak": "March 15-21",
-      "winter_departure": "April 15-21"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "March 15-21",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0202936,
@@ -15530,13 +15603,13 @@
   {
     "name": "Ring-necked Pheasant",
     "code": "rinphe",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_peak": "May 8-14",
-      "winter_departure": "July 1-7"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "May 8-14",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0066926,
@@ -15593,9 +15666,7 @@
     "name": "Rock Pigeon",
     "code": "rocpig",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -15653,10 +15724,17 @@
   {
     "name": "Rose-breasted Grosbeak",
     "code": "rosgro",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
-      "peak": "May 15-21"
+      "spring_arrival": "May 1-7",
+      "spring_peak": "May 8-14",
+      "spring_departure": "July 8-14",
+      "fall_arrival": "August 8-14",
+      "fall_peak": "September 8-14",
+      "fall_departure": "September 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -15774,14 +15852,17 @@
   {
     "name": "Ross's Goose",
     "code": "rosgoo",
-    "category": "single-season",
+    "category": "two-passage-migrant",
     "flags": [
-      "overwintering"
+      "classic_bimodal"
     ],
     "timing": {
-      "winter_arrival": "January 15-21",
-      "winter_peak": "February 8-14",
-      "winter_departure": "March 1-7"
+      "spring_arrival": "January 1-7",
+      "spring_peak": "February 1-7",
+      "spring_departure": "February 8-14",
+      "fall_arrival": "May 8-14",
+      "fall_peak": "May 8-14",
+      "fall_departure": "May 8-14"
     },
     "weekly_frequency": [
       0.0012953,
@@ -15837,14 +15918,15 @@
   {
     "name": "Rough-legged Hawk",
     "code": "rouhaw",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [
-      "overwintering"
+      "two_peaks_close"
     ],
     "timing": {
-      "winter_arrival": "November 8-14",
-      "winter_peak": "January 15-21",
-      "winter_departure": "February 22-28"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "January 15-21",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0066926,
@@ -15966,10 +16048,13 @@
   {
     "name": "Ruby-throated Hummingbird",
     "code": "rubhum",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "September 1-7"
+      "status": "irregular",
+      "first_appears": "February 22-28",
+      "peak": "September 1-7",
+      "last_appears": "October 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -16027,12 +16112,13 @@
     "code": "rudduc",
     "category": "single-season",
     "flags": [
-      "overwintering"
+      "overwintering",
+      "two_passage_overwinter"
     ],
     "timing": {
-      "winter_arrival": "October 15-21",
+      "winter_arrival": "September 22-30",
       "winter_peak": "April 1-7",
-      "winter_departure": "April 22-30"
+      "winter_departure": "June 1-7"
     },
     "weekly_frequency": [
       0.0049655,
@@ -16210,15 +16296,17 @@
   {
     "name": "Ruffed Grouse",
     "code": "rufgro",
-    "category": "irregular",
+    "category": "two-passage-migrant",
     "flags": [
-      "many_valleys"
+      "classic_bimodal"
     ],
     "timing": {
-      "status": "irregular",
-      "first_appears": "March 22-31",
-      "peak": "May 15-21",
-      "last_appears": "October 8-14"
+      "spring_arrival": "March 22-31",
+      "spring_peak": "May 15-21",
+      "spring_departure": "May 22-31",
+      "fall_arrival": "October 8-14",
+      "fall_peak": "October 8-14",
+      "fall_departure": "October 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -16336,17 +16424,12 @@
   {
     "name": "Rusty Blackbird",
     "code": "rusbla",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
-      "spring_arrival": "March 1-7",
-      "spring_peak": "March 15-21",
-      "spring_departure": "April 15-21",
-      "fall_arrival": "October 8-14",
-      "fall_peak": "October 22-31",
-      "fall_departure": "November 8-14"
+      "arrival": "February 22-28",
+      "peak": "October 15-21",
+      "departure": "November 15-21"
     },
     "weekly_frequency": [
       0.0012953,
@@ -16586,12 +16669,12 @@
   {
     "name": "Sandhill Crane",
     "code": "sancra",
-    "category": "single-season",
-    "flags": [],
+    "category": "resident",
+    "flags": [
+      "min_max_near_boundary"
+    ],
     "timing": {
-      "arrival": "February 15-21",
-      "peak": "March 15-21",
-      "departure": "December 15-21"
+      "status": "year-round"
     },
     "weekly_frequency": [
       0.0386442,
@@ -16647,16 +16730,12 @@
   {
     "name": "Savannah Sparrow",
     "code": "savspa",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
-      "spring_arrival": "April 8-14",
-      "spring_peak": "June 1-7",
-      "spring_departure": "July 22-31",
-      "fall_peak": "October 1-7",
-      "fall_departure": "September 22-30"
+      "arrival": "April 1-7",
+      "peak": "October 8-14",
+      "departure": "October 22-31"
     },
     "weekly_frequency": [
       0.0002159,
@@ -16720,9 +16799,9 @@
       "spring_arrival": "May 8-14",
       "spring_peak": "May 15-21",
       "spring_departure": "July 8-14",
-      "fall_arrival": "September 1-7",
+      "fall_arrival": "August 22-31",
       "fall_peak": "September 8-14",
-      "fall_departure": "September 8-14"
+      "fall_departure": "September 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -16786,8 +16865,9 @@
       "spring_arrival": "May 8-14",
       "spring_peak": "May 22-31",
       "spring_departure": "August 15-21",
-      "fall_peak": "October 1-7",
-      "fall_departure": "September 22-30"
+      "fall_arrival": "October 1-7",
+      "fall_peak": "October 8-14",
+      "fall_departure": "October 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -16843,17 +16923,15 @@
   {
     "name": "Semipalmated Plover",
     "code": "semplo",
-    "category": "two-passage-migrant",
+    "category": "irregular",
     "flags": [
-      "classic_bimodal"
+      "two_peaks_close"
     ],
     "timing": {
-      "spring_arrival": "May 8-14",
-      "spring_peak": "May 15-21",
-      "spring_departure": "May 22-31",
-      "fall_arrival": "July 22-31",
-      "fall_peak": "August 1-7",
-      "fall_departure": "August 15-21"
+      "status": "irregular",
+      "first_appears": "April 22-30",
+      "peak": "August 1-7",
+      "last_appears": "October 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -16909,17 +16987,15 @@
   {
     "name": "Semipalmated Sandpiper",
     "code": "semsan",
-    "category": "two-passage-migrant",
+    "category": "irregular",
     "flags": [
-      "classic_bimodal"
+      "two_peaks_close"
     ],
     "timing": {
-      "spring_arrival": "May 15-21",
-      "spring_peak": "June 1-7",
-      "spring_departure": "June 1-7",
-      "fall_arrival": "July 22-31",
-      "fall_peak": "July 22-31",
-      "fall_departure": "September 8-14"
+      "status": "irregular",
+      "first_appears": "May 15-21",
+      "peak": "July 22-31",
+      "last_appears": "September 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -16975,14 +17051,13 @@
   {
     "name": "Sharp-shinned Hawk",
     "code": "shahaw",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "September 8-14",
-      "winter_peak": "October 8-14",
-      "winter_departure": "April 22-30"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "October 8-14",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0127375,
@@ -17038,16 +17113,15 @@
   {
     "name": "Short-billed Dowitcher",
     "code": "shodow",
-    "category": "two-passage-migrant",
+    "category": "irregular",
     "flags": [
-      "classic_bimodal"
+      "two_peaks_close"
     ],
     "timing": {
-      "spring_peak": "May 15-21",
-      "spring_departure": "May 8-14",
-      "fall_arrival": "July 8-14",
-      "fall_peak": "July 8-14",
-      "fall_departure": "July 8-14"
+      "status": "irregular",
+      "first_appears": "May 1-7",
+      "peak": "July 8-14",
+      "last_appears": "September 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -17103,14 +17177,13 @@
   {
     "name": "Short-eared Owl",
     "code": "shoowl",
-    "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "category": "irregular",
+    "flags": [],
     "timing": {
-      "winter_arrival": "October 22-31",
-      "winter_peak": "January 15-21",
-      "winter_departure": "March 1-7"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "January 15-21",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0205095,
@@ -17226,14 +17299,15 @@
   {
     "name": "Snow Bunting",
     "code": "snobun",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [
-      "overwintering"
+      "two_peaks_close"
     ],
     "timing": {
-      "winter_arrival": "December 22-31",
-      "winter_peak": "January 15-21",
-      "winter_departure": "February 15-21"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "January 15-21",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0187824,
@@ -17289,11 +17363,15 @@
   {
     "name": "Snow Goose",
     "code": "snogoo",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal"
+      "overwintering"
     ],
-    "timing": {},
+    "timing": {
+      "winter_arrival": "September 8-14",
+      "winter_peak": "March 1-7",
+      "winter_departure": "April 15-21"
+    },
     "weekly_frequency": [
       0.0107945,
       0.0054892,
@@ -17408,12 +17486,18 @@
   {
     "name": "Snowy Egret",
     "code": "snoegr",
-    "category": "single-season",
+    "category": "two-passage-migrant",
     "flags": [
+      "classic_bimodal",
       "low_presence"
     ],
     "timing": {
-      "peak": "August 8-14"
+      "spring_arrival": "May 1-7",
+      "spring_peak": "May 1-7",
+      "spring_departure": "May 8-14",
+      "fall_arrival": "August 8-14",
+      "fall_peak": "August 15-21",
+      "fall_departure": "September 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -17470,12 +17554,11 @@
     "name": "Snowy Owl",
     "code": "snoowl",
     "category": "single-season",
-    "flags": [
-      "overwintering"
-    ],
+    "flags": [],
     "timing": {
-      "winter_arrival": "December 8-14",
-      "winter_peak": "December 8-14"
+      "arrival": "January 8-14",
+      "peak": "April 15-21",
+      "departure": "April 15-21"
     },
     "weekly_frequency": [
       0.0004318,
@@ -17531,17 +17614,12 @@
   {
     "name": "Solitary Sandpiper",
     "code": "solsan",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
-      "spring_arrival": "April 22-30",
-      "spring_peak": "May 1-7",
-      "spring_departure": "May 8-14",
-      "fall_arrival": "July 8-14",
-      "fall_peak": "August 8-14",
-      "fall_departure": "September 15-21"
+      "arrival": "April 15-21",
+      "peak": "May 1-7",
+      "departure": "May 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -17597,12 +17675,12 @@
   {
     "name": "Song Sparrow",
     "code": "sonspa",
-    "category": "single-season",
-    "flags": [],
+    "category": "resident",
+    "flags": [
+      "min_max_near_boundary"
+    ],
     "timing": {
-      "arrival": "March 1-7",
-      "peak": "May 8-14",
-      "departure": "October 22-31"
+      "status": "year-round"
     },
     "weekly_frequency": [
       0.0651986,
@@ -17658,16 +17736,12 @@
   {
     "name": "Sora",
     "code": "sora",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
+    "category": "single-season",
+    "flags": [],
     "timing": {
-      "spring_arrival": "April 15-21",
-      "spring_peak": "April 22-30",
-      "spring_departure": "May 22-31",
-      "fall_peak": "September 1-7",
-      "fall_departure": "August 22-31"
+      "arrival": "April 15-21",
+      "peak": "May 1-7",
+      "departure": "May 22-31"
     },
     "weekly_frequency": [
       0.0,
@@ -17785,10 +17859,13 @@
   {
     "name": "Spotted Sandpiper",
     "code": "sposan",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "August 8-14"
+      "status": "irregular",
+      "first_appears": "April 8-14",
+      "peak": "August 8-14",
+      "last_appears": "October 22-31"
     },
     "weekly_frequency": [
       0.0,
@@ -17849,7 +17926,9 @@
       "low_presence"
     ],
     "timing": {
-      "peak": "August 22-31"
+      "arrival": "July 22-31",
+      "peak": "August 15-21",
+      "departure": "September 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -17910,7 +17989,9 @@
       "low_presence"
     ],
     "timing": {
-      "peak": "June 1-7"
+      "arrival": "May 1-7",
+      "peak": "July 8-14",
+      "departure": "July 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -17966,11 +18047,16 @@
   {
     "name": "Surf Scoter",
     "code": "sursco",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal"
+      "overwintering",
+      "two_passage_overwinter"
     ],
-    "timing": {},
+    "timing": {
+      "winter_arrival": "October 15-21",
+      "winter_peak": "December 15-21",
+      "winter_departure": "June 1-7"
+    },
     "weekly_frequency": [
       0.0062608,
       0.0003229,
@@ -18090,11 +18176,11 @@
       "classic_bimodal"
     ],
     "timing": {
-      "spring_arrival": "May 8-14",
+      "spring_arrival": "May 1-7",
       "spring_peak": "May 15-21",
       "spring_departure": "May 22-31",
       "fall_arrival": "September 1-7",
-      "fall_peak": "September 8-14",
+      "fall_peak": "September 15-21",
       "fall_departure": "October 1-7"
     },
     "weekly_frequency": [
@@ -18216,7 +18302,9 @@
     "category": "single-season",
     "flags": [],
     "timing": {
-      "peak": "May 1-7"
+      "arrival": "April 8-14",
+      "peak": "October 8-14",
+      "departure": "October 22-31"
     },
     "weekly_frequency": [
       0.0036701,
@@ -18277,11 +18365,11 @@
       "classic_bimodal"
     ],
     "timing": {
-      "spring_arrival": "May 8-14",
-      "spring_peak": "May 15-21",
-      "spring_departure": "May 15-21",
+      "spring_arrival": "May 1-7",
+      "spring_peak": "May 8-14",
+      "spring_departure": "May 22-31",
       "fall_arrival": "August 22-31",
-      "fall_peak": "September 1-7",
+      "fall_peak": "September 8-14",
       "fall_departure": "October 1-7"
     },
     "weekly_frequency": [
@@ -18400,10 +18488,13 @@
   {
     "name": "Tree Swallow",
     "code": "treswa",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "May 1-7"
+      "status": "irregular",
+      "first_appears": "March 1-7",
+      "peak": "May 1-7",
+      "last_appears": "November 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -18459,14 +18550,12 @@
   {
     "name": "Trumpeter Swan",
     "code": "truswa",
-    "category": "single-season",
+    "category": "resident",
     "flags": [
-      "overwintering"
+      "min_max_near_boundary"
     ],
     "timing": {
-      "winter_arrival": "August 8-14",
-      "winter_peak": "February 1-7",
-      "winter_departure": "April 15-21"
+      "status": "year-round"
     },
     "weekly_frequency": [
       0.1034111,
@@ -18523,9 +18612,7 @@
     "name": "Tufted Titmouse",
     "code": "tuftit",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -18585,12 +18672,13 @@
     "code": "tunswa",
     "category": "single-season",
     "flags": [
-      "overwintering"
+      "overwintering",
+      "two_passage_overwinter"
     ],
     "timing": {
-      "winter_arrival": "November 1-7",
+      "winter_arrival": "October 1-7",
       "winter_peak": "March 1-7",
-      "winter_departure": "March 22-31"
+      "winter_departure": "May 15-21"
     },
     "weekly_frequency": [
       0.0123057,
@@ -18646,10 +18734,13 @@
   {
     "name": "Turkey Vulture",
     "code": "turvul",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "April 8-14"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "April 8-14",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0094991,
@@ -18705,18 +18796,14 @@
   {
     "name": "Upland Sandpiper",
     "code": "uplsan",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal",
       "low_presence"
     ],
     "timing": {
-      "spring_arrival": "April 22-30",
-      "spring_peak": "May 1-7",
-      "spring_departure": "May 1-7",
-      "fall_arrival": "August 1-7",
-      "fall_peak": "August 1-7",
-      "fall_departure": "August 1-7"
+      "arrival": "April 22-30",
+      "peak": "April 22-30",
+      "departure": "May 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -18842,8 +18929,9 @@
       "spring_arrival": "May 1-7",
       "spring_peak": "May 15-21",
       "spring_departure": "July 8-14",
+      "fall_arrival": "August 22-31",
       "fall_peak": "September 1-7",
-      "fall_departure": "August 22-31"
+      "fall_departure": "September 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -18899,16 +18987,15 @@
   {
     "name": "Vesper Sparrow",
     "code": "vesspa",
-    "category": "two-passage-migrant",
+    "category": "irregular",
     "flags": [
-      "classic_bimodal"
+      "two_peaks_close"
     ],
     "timing": {
-      "spring_arrival": "April 8-14",
-      "spring_peak": "July 8-14",
-      "spring_departure": "August 8-14",
-      "fall_peak": "October 8-14",
-      "fall_departure": "October 1-7"
+      "status": "irregular",
+      "first_appears": "March 22-31",
+      "peak": "July 8-14",
+      "last_appears": "October 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -18964,10 +19051,13 @@
   {
     "name": "Virginia Rail",
     "code": "virrai",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [],
     "timing": {
-      "peak": "April 22-30"
+      "status": "irregular",
+      "first_appears": "March 15-21",
+      "peak": "April 22-30",
+      "last_appears": "October 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -19033,7 +19123,7 @@
       "spring_peak": "May 22-31",
       "spring_departure": "June 1-7",
       "fall_arrival": "October 1-7",
-      "fall_peak": "October 22-31",
+      "fall_peak": "November 1-7",
       "fall_departure": "November 15-21"
     },
     "weekly_frequency": [
@@ -19157,7 +19247,9 @@
       "low_presence"
     ],
     "timing": {
-      "peak": "April 22-30"
+      "arrival": "March 22-31",
+      "peak": "June 1-7",
+      "departure": "June 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -19334,9 +19426,7 @@
     "name": "White-breasted Nuthatch",
     "code": "whinut",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -19394,17 +19484,15 @@
   {
     "name": "White-crowned Sparrow",
     "code": "whispa",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal"
+      "overwintering",
+      "two_passage_overwinter"
     ],
     "timing": {
-      "spring_arrival": "May 1-7",
-      "spring_peak": "May 1-7",
-      "spring_departure": "May 15-21",
-      "fall_arrival": "October 1-7",
-      "fall_peak": "October 8-14",
-      "fall_departure": "October 22-31"
+      "winter_arrival": "September 15-21",
+      "winter_peak": "May 1-7",
+      "winter_departure": "May 22-31"
     },
     "weekly_frequency": [
       0.0086356,
@@ -19463,7 +19551,9 @@
     "category": "single-season",
     "flags": [],
     "timing": {
-      "peak": "May 1-7"
+      "arrival": "April 22-30",
+      "peak": "May 8-14",
+      "departure": "June 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -19585,12 +19675,12 @@
       "low_presence"
     ],
     "timing": {
-      "spring_arrival": "June 1-7",
-      "spring_peak": "June 1-7",
-      "spring_departure": "June 1-7",
+      "spring_arrival": "May 1-7",
+      "spring_peak": "May 22-31",
+      "spring_departure": "May 15-21",
       "fall_arrival": "August 22-31",
-      "fall_peak": "September 8-14",
-      "fall_departure": "September 15-21"
+      "fall_peak": "October 15-21",
+      "fall_departure": "October 22-31"
     },
     "weekly_frequency": [
       0.0,
@@ -19648,12 +19738,13 @@
     "code": "whspar",
     "category": "single-season",
     "flags": [
-      "overwintering"
+      "overwintering",
+      "two_passage_overwinter"
     ],
     "timing": {
-      "winter_arrival": "September 22-30",
+      "winter_arrival": "September 8-14",
       "winter_peak": "October 8-14",
-      "winter_departure": "May 8-14"
+      "winter_departure": "May 22-31"
     },
     "weekly_frequency": [
       0.1142055,
@@ -19709,11 +19800,16 @@
   {
     "name": "White-winged Crossbill",
     "code": "whicro",
-    "category": "two-passage-migrant",
+    "category": "irregular",
     "flags": [
-      "classic_bimodal"
+      "two_peaks_close"
     ],
-    "timing": {},
+    "timing": {
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "November 1-7",
+      "last_appears": "December 8-14"
+    },
     "weekly_frequency": [
       0.0012953,
       0.0019374,
@@ -19768,11 +19864,14 @@
   {
     "name": "White-winged Scoter",
     "code": "whisco",
-    "category": "two-passage-migrant",
-    "flags": [
-      "classic_bimodal"
-    ],
-    "timing": {},
+    "category": "irregular",
+    "flags": [],
+    "timing": {
+      "status": "irregular",
+      "first_appears": "January 15-21",
+      "peak": "March 1-7",
+      "last_appears": "December 22-31"
+    },
     "weekly_frequency": [
       0.0,
       0.0,
@@ -19833,11 +19932,11 @@
     ],
     "timing": {
       "spring_arrival": "July 1-7",
-      "spring_peak": "July 1-7",
+      "spring_peak": "July 8-14",
       "spring_departure": "August 8-14",
       "fall_arrival": "October 1-7",
-      "fall_peak": "October 1-7",
-      "fall_departure": "October 1-7"
+      "fall_peak": "October 8-14",
+      "fall_departure": "October 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -19894,9 +19993,7 @@
     "name": "Wild Turkey",
     "code": "wiltur",
     "category": "resident",
-    "flags": [
-      "seasonal_variation"
-    ],
+    "flags": [],
     "timing": {
       "status": "year-round"
     },
@@ -20019,7 +20116,9 @@
     "category": "single-season",
     "flags": [],
     "timing": {
-      "peak": "June 1-7"
+      "arrival": "May 15-21",
+      "peak": "June 1-7",
+      "departure": "July 22-31"
     },
     "weekly_frequency": [
       0.0,
@@ -20077,7 +20176,6 @@
     "code": "wilpha",
     "category": "irregular",
     "flags": [
-      "three_valleys_irregular",
       "low_presence"
     ],
     "timing": {
@@ -20148,8 +20246,8 @@
       "spring_arrival": "March 22-31",
       "spring_peak": "April 15-21",
       "spring_departure": "May 1-7",
-      "fall_arrival": "September 8-14",
-      "fall_peak": "November 1-7",
+      "fall_arrival": "September 1-7",
+      "fall_peak": "October 22-31",
       "fall_departure": "November 8-14"
     },
     "weekly_frequency": [
@@ -20213,7 +20311,7 @@
     "timing": {
       "spring_arrival": "May 8-14",
       "spring_peak": "May 15-21",
-      "spring_departure": "May 15-21",
+      "spring_departure": "May 22-31",
       "fall_arrival": "August 22-31",
       "fall_peak": "September 8-14",
       "fall_departure": "September 15-21"
@@ -20274,12 +20372,13 @@
     "code": "winwre",
     "category": "single-season",
     "flags": [
-      "overwintering"
+      "overwintering",
+      "two_passage_overwinter"
     ],
     "timing": {
-      "winter_arrival": "September 22-30",
+      "winter_arrival": "September 8-14",
       "winter_peak": "April 8-14",
-      "winter_departure": "April 22-30"
+      "winter_departure": "May 8-14"
     },
     "weekly_frequency": [
       0.0071244,
@@ -20335,10 +20434,12 @@
   {
     "name": "Wood Duck",
     "code": "wooduc",
-    "category": "single-season",
-    "flags": [],
+    "category": "resident",
+    "flags": [
+      "min_max_near_boundary"
+    ],
     "timing": {
-      "peak": "April 8-14"
+      "status": "year-round"
     },
     "weekly_frequency": [
       0.0164076,
@@ -20402,8 +20503,9 @@
       "spring_arrival": "May 1-7",
       "spring_peak": "May 15-21",
       "spring_departure": "July 15-21",
+      "fall_arrival": "August 15-21",
       "fall_peak": "September 8-14",
-      "fall_departure": "September 1-7"
+      "fall_departure": "September 22-30"
     },
     "weekly_frequency": [
       0.0,
@@ -20590,7 +20692,7 @@
     "timing": {
       "spring_arrival": "May 15-21",
       "spring_peak": "May 22-31",
-      "spring_departure": "May 22-31",
+      "spring_departure": "June 1-7",
       "fall_arrival": "August 15-21",
       "fall_peak": "September 1-7",
       "fall_departure": "September 15-21"
@@ -20649,17 +20751,15 @@
   {
     "name": "Yellow-bellied Sapsucker",
     "code": "yelsap",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal"
+      "overwintering",
+      "two_passage_overwinter"
     ],
     "timing": {
-      "spring_arrival": "April 1-7",
-      "spring_peak": "April 8-14",
-      "spring_departure": "April 22-30",
-      "fall_arrival": "September 22-30",
-      "fall_peak": "October 1-7",
-      "fall_departure": "October 8-14"
+      "winter_arrival": "September 8-14",
+      "winter_peak": "October 1-7",
+      "winter_departure": "May 8-14"
     },
     "weekly_frequency": [
       0.0060449,
@@ -20718,7 +20818,9 @@
     "category": "single-season",
     "flags": [],
     "timing": {
-      "peak": "June 1-7"
+      "arrival": "May 15-21",
+      "peak": "June 1-7",
+      "departure": "September 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -20779,7 +20881,9 @@
       "low_presence"
     ],
     "timing": {
-      "peak": "June 15-21"
+      "arrival": "May 8-14",
+      "peak": "June 8-14",
+      "departure": "June 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -20835,18 +20939,14 @@
   {
     "name": "Yellow-crowned Night Heron",
     "code": "yelher",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal",
       "low_presence"
     ],
     "timing": {
-      "spring_arrival": "June 15-21",
-      "spring_peak": "June 15-21",
-      "spring_departure": "June 22-30",
-      "fall_arrival": "October 1-7",
-      "fall_peak": "October 1-7",
-      "fall_departure": "October 1-7"
+      "arrival": "June 1-7",
+      "peak": "June 22-30",
+      "departure": "July 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -20964,17 +21064,15 @@
   {
     "name": "Yellow-rumped Warbler",
     "code": "yelwar",
-    "category": "two-passage-migrant",
+    "category": "single-season",
     "flags": [
-      "classic_bimodal"
+      "overwintering",
+      "two_passage_overwinter"
     ],
     "timing": {
-      "spring_arrival": "April 8-14",
-      "spring_peak": "May 1-7",
-      "spring_departure": "May 15-21",
-      "fall_arrival": "September 22-30",
-      "fall_peak": "October 8-14",
-      "fall_departure": "October 22-31"
+      "winter_arrival": "September 8-14",
+      "winter_peak": "May 1-7",
+      "winter_departure": "June 1-7"
     },
     "weekly_frequency": [
       0.0025907,
@@ -21030,10 +21128,17 @@
   {
     "name": "Yellow-throated Vireo",
     "code": "yelvir",
-    "category": "single-season",
-    "flags": [],
+    "category": "two-passage-migrant",
+    "flags": [
+      "classic_bimodal"
+    ],
     "timing": {
-      "peak": "May 15-21"
+      "spring_arrival": "May 1-7",
+      "spring_peak": "May 15-21",
+      "spring_departure": "July 15-21",
+      "fall_arrival": "August 22-31",
+      "fall_peak": "September 8-14",
+      "fall_departure": "September 15-21"
     },
     "weekly_frequency": [
       0.0,
@@ -21089,12 +21194,15 @@
   {
     "name": "Yellow-throated Warbler",
     "code": "yewarb",
-    "category": "single-season",
+    "category": "irregular",
     "flags": [
       "low_presence"
     ],
     "timing": {
-      "peak": "May 1-7"
+      "status": "irregular",
+      "first_appears": "April 22-30",
+      "peak": "May 1-7",
+      "last_appears": "June 8-14"
     },
     "weekly_frequency": [
       0.0002159,

@@ -87,42 +87,33 @@ function renderTimingInfo() {
         return;
     }
 
-    // Vagrant
-    if (timing.status === 'irregular') {
+    // Irregular visitor (vagrant or irregular presence)
+    if (timing.status === 'irregular' || timing.first_appears) {
+        const firstAppears = timing.first_appears || '';
+        const peak = timing.peak || '';
+        const lastAppears = timing.last_appears || '';
+
         container.innerHTML = `
             <div class="text-center py-8">
                 <div class="text-4xl mb-2">❓</div>
                 <p class="text-lg font-medium text-gray-900">Irregular Visitor</p>
                 <p class="text-gray-600 text-sm mt-1">Rare or unpredictable occurrence</p>
-            </div>
-        `;
-        return;
-    }
-
-    // Check if winter resident
-    const isWinterResident = currentSpecies.flags && currentSpecies.flags.includes('winter_resident');
-
-    // Single-season (including winter residents)
-    if (timing.arrival || timing.winter_arrival) {
-        const arrival = timing.arrival || timing.winter_arrival;
-        const peak = timing.peak || timing.winter_peak;
-        const departure = timing.departure || timing.winter_departure;
-        const label = isWinterResident ? 'Winter' : 'Season';
-
-        container.innerHTML = `
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="text-center p-4 rounded-lg" style="background-color: #D4EDE9;">
-                    <div class="text-sm font-medium mb-1" style="color: #1A5D54;">Arrival</div>
-                    <div class="text-xl font-bold">${arrival}</div>
-                </div>
-                <div class="text-center p-4 rounded-lg" style="background-color: #FDF3D7;">
-                    <div class="text-sm font-medium mb-1" style="color: #8B6F1B;">Peak</div>
-                    <div class="text-xl font-bold">${peak}</div>
-                </div>
-                <div class="text-center p-4 rounded-lg" style="background-color: #F2E5DD;">
-                    <div class="text-sm font-medium mb-1" style="color: #7A4F36;">Departure</div>
-                    <div class="text-xl font-bold">${departure}</div>
-                </div>
+                ${firstAppears ? `
+                    <div class="mt-4 grid grid-cols-3 gap-3 max-w-xl mx-auto">
+                        <div class="text-center">
+                            <div class="text-xs" style="color: #6B7280;">First appears</div>
+                            <div class="text-sm font-medium mt-1">${firstAppears}</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-xs" style="color: #6B7280;">Peak</div>
+                            <div class="text-sm font-medium mt-1">${peak}</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-xs" style="color: #6B7280;">Last appears</div>
+                            <div class="text-sm font-medium mt-1">${lastAppears}</div>
+                        </div>
+                    </div>
+                ` : ''}
             </div>
         `;
         return;
@@ -174,6 +165,55 @@ function renderTimingInfo() {
                             <div class="text-base font-bold">${timing.fall_departure}</div>
                         </div>
                     </div>
+                </div>
+            </div>
+        `;
+        return;
+    }
+
+    // Single-season winter (overwintering)
+    if (timing.winter_arrival) {
+        container.innerHTML = `
+            <div class="space-y-4">
+                <div class="text-center">
+                    <div class="text-4xl mb-2">❄️</div>
+                    <p class="text-lg font-medium text-gray-900">Winter Resident</p>
+                    <p class="text-gray-600 text-sm mt-1">Present during winter months</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="text-center p-4 rounded-lg" style="background-color: #D4EDE9;">
+                        <div class="text-sm font-medium mb-1" style="color: #1A5D54;">Arrival</div>
+                        <div class="text-xl font-bold">${timing.winter_arrival}</div>
+                    </div>
+                    <div class="text-center p-4 rounded-lg" style="background-color: #FDF3D7;">
+                        <div class="text-sm font-medium mb-1" style="color: #8B6F1B;">Peak</div>
+                        <div class="text-xl font-bold">${timing.winter_peak}</div>
+                    </div>
+                    <div class="text-center p-4 rounded-lg" style="background-color: #F2E5DD;">
+                        <div class="text-sm font-medium mb-1" style="color: #7A4F36;">Departure</div>
+                        <div class="text-xl font-bold">${timing.winter_departure}</div>
+                    </div>
+                </div>
+            </div>
+        `;
+        return;
+    }
+
+    // Single-season summer
+    if (timing.arrival) {
+        container.innerHTML = `
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="text-center p-4 rounded-lg" style="background-color: #D4EDE9;">
+                    <div class="text-sm font-medium mb-1" style="color: #1A5D54;">Arrival</div>
+                    <div class="text-xl font-bold">${timing.arrival}</div>
+                </div>
+                <div class="text-center p-4 rounded-lg" style="background-color: #FDF3D7;">
+                    <div class="text-sm font-medium mb-1" style="color: #8B6F1B;">Peak</div>
+                    <div class="text-xl font-bold">${timing.peak}</div>
+                </div>
+                <div class="text-center p-4 rounded-lg" style="background-color: #F2E5DD;">
+                    <div class="text-sm font-medium mb-1" style="color: #7A4F36;">Departure</div>
+                    <div class="text-xl font-bold">${timing.departure}</div>
                 </div>
             </div>
         `;
