@@ -121,7 +121,9 @@ def calculate_timing_two_passage(species_name, frequencies, category, pattern_ty
         winter_valley = valleys[1]
 
     peak_freq = max(frequencies)
-    threshold = max(peak_freq * 0.25, 0.001)
+    # Lower threshold to 10% of peak (or 0.1% absolute) to better detect arrivals/departures
+    # in narrow presence windows between valleys
+    threshold = max(peak_freq * 0.10, 0.001)
 
     # Spring passage: after winter valley ends, before summer valley begins
     winter_valley_end = winter_valley[1]
@@ -134,70 +136,187 @@ def calculate_timing_two_passage(species_name, frequencies, category, pattern_ty
     if spring_start_search >= 48:
         spring_start_search = 0
 
-    # Validate search range
-    if spring_start_search >= spring_end_search:
-        # Invalid range, fallback to irregular
+    # Detect if search range wraps around year (start > end means wraparound)
+    spring_wraps = spring_start_search >= spring_end_search
+
+    # Only fail validation if ranges are truly invalid (not just wraparound)
+    if spring_wraps and spring_start_search < 48:
+        # This is a valid wraparound case (e.g., weeks 45-12)
+        # We'll handle this by searching in two parts below
+        pass
+    elif spring_start_search >= spring_end_search:
+        # Invalid range that's not a wraparound
         return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
 
     # Find spring arrival
     spring_arrival_week = None
-    for week in range(spring_start_search, min(spring_end_search, 48)):
-        if frequencies[week] >= threshold:
-            spring_arrival_week = week
-            break
+    if spring_wraps:
+        # Search wraparound: first part (spring_start to end of year)
+        for week in range(spring_start_search, 48):
+            if frequencies[week] >= threshold:
+                spring_arrival_week = week
+                break
+        # Then search second part (start of year to spring_end) if not found
+        if spring_arrival_week is None:
+            for week in range(0, spring_end_search):
+                if frequencies[week] >= threshold:
+                    spring_arrival_week = week
+                    break
+    else:
+        # Normal search
+        for week in range(spring_start_search, spring_end_search):
+            if frequencies[week] >= threshold:
+                spring_arrival_week = week
+                break
 
     # Find spring peak
     spring_peak_week = spring_start_search
     spring_peak_freq = 0
-    for week in range(spring_start_search, min(spring_end_search, 48)):
-        if frequencies[week] > spring_peak_freq:
-            spring_peak_freq = frequencies[week]
-            spring_peak_week = week
+    if spring_wraps:
+        # Search wraparound: first part
+        for week in range(spring_start_search, 48):
+            if frequencies[week] > spring_peak_freq:
+                spring_peak_freq = frequencies[week]
+                spring_peak_week = week
+        # Then search second part
+        for week in range(0, spring_end_search):
+            if frequencies[week] > spring_peak_freq:
+                spring_peak_freq = frequencies[week]
+                spring_peak_week = week
+    else:
+        # Normal search
+        for week in range(spring_start_search, spring_end_search):
+            if frequencies[week] > spring_peak_freq:
+                spring_peak_freq = frequencies[week]
+                spring_peak_week = week
 
     # Find spring departure
     spring_departure_week = None
-    for week in range(spring_peak_week, min(summer_valley_start, 48)):
-        if frequencies[week] < threshold:
-            spring_departure_week = week - 1
-            break
-    if spring_departure_week is None:
-        spring_departure_week = min(summer_valley_start, 48) - 1
+    if spring_wraps:
+        # For wraparound, departure search starts from peak to valley start
+        # If peak is in first part (>= spring_start), search to end of year then beginning
+        if spring_peak_week >= spring_start_search:
+            for week in range(spring_peak_week, 48):
+                if frequencies[week] < threshold:
+                    spring_departure_week = week - 1
+                    break
+            # Continue search at beginning of year if not found
+            if spring_departure_week is None:
+                for week in range(0, summer_valley_start):
+                    if frequencies[week] < threshold:
+                        spring_departure_week = week - 1
+                        break
+        else:
+            # Peak is in second part (< spring_end), search normally
+            for week in range(spring_peak_week, summer_valley_start):
+                if frequencies[week] < threshold:
+                    spring_departure_week = week - 1
+                    break
+        # Default to valley start - 1 if not found
+        if spring_departure_week is None:
+            spring_departure_week = summer_valley_start - 1
+    else:
+        # Normal search
+        for week in range(spring_peak_week, summer_valley_start):
+            if frequencies[week] < threshold:
+                spring_departure_week = week - 1
+                break
+        if spring_departure_week is None:
+            spring_departure_week = summer_valley_start - 1
 
     # Fall passage: after summer valley ends, before winter valley begins
     summer_valley_end = summer_valley[1]
     winter_valley_start = winter_valley[0]
 
     fall_start_search = summer_valley_end + 1
-    fall_end_search = winter_valley_start if winter_valley_start > summer_valley_end else 48
+    fall_end_search = winter_valley_start if winter_valley_start > summer_valley_end else winter_valley_start
 
-    # Validate search range
-    if fall_start_search >= fall_end_search or fall_start_search >= 48:
-        # Invalid range, fallback to irregular
+    # Detect if fall search range wraps around year
+    fall_wraps = fall_start_search >= fall_end_search
+
+    # Only fail validation if ranges are truly invalid (not just wraparound)
+    if fall_wraps and fall_start_search < 48:
+        # This is a valid wraparound case
+        pass
+    elif fall_start_search >= fall_end_search or fall_start_search >= 48:
+        # Invalid range that's not a wraparound
         return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
 
     # Find fall arrival
     fall_arrival_week = None
-    for week in range(fall_start_search, min(fall_end_search, 48)):
-        if frequencies[week] >= threshold:
-            fall_arrival_week = week
-            break
+    if fall_wraps:
+        # Search wraparound: first part (fall_start to end of year)
+        for week in range(fall_start_search, 48):
+            if frequencies[week] >= threshold:
+                fall_arrival_week = week
+                break
+        # Then search second part (start of year to fall_end) if not found
+        if fall_arrival_week is None:
+            for week in range(0, fall_end_search):
+                if frequencies[week] >= threshold:
+                    fall_arrival_week = week
+                    break
+    else:
+        # Normal search
+        for week in range(fall_start_search, fall_end_search):
+            if frequencies[week] >= threshold:
+                fall_arrival_week = week
+                break
 
     # Find fall peak
     fall_peak_week = fall_start_search
     fall_peak_freq = 0
-    for week in range(fall_start_search, min(fall_end_search, 48)):
-        if frequencies[week] > fall_peak_freq:
-            fall_peak_freq = frequencies[week]
-            fall_peak_week = week
+    if fall_wraps:
+        # Search wraparound: first part
+        for week in range(fall_start_search, 48):
+            if frequencies[week] > fall_peak_freq:
+                fall_peak_freq = frequencies[week]
+                fall_peak_week = week
+        # Then search second part
+        for week in range(0, fall_end_search):
+            if frequencies[week] > fall_peak_freq:
+                fall_peak_freq = frequencies[week]
+                fall_peak_week = week
+    else:
+        # Normal search
+        for week in range(fall_start_search, fall_end_search):
+            if frequencies[week] > fall_peak_freq:
+                fall_peak_freq = frequencies[week]
+                fall_peak_week = week
 
     # Find fall departure
     fall_departure_week = None
-    for week in range(fall_peak_week, min(fall_end_search, 48)):
-        if frequencies[week] < threshold:
-            fall_departure_week = week - 1
-            break
-    if fall_departure_week is None:
-        fall_departure_week = min(fall_end_search, 48) - 1
+    if fall_wraps:
+        # For wraparound, departure search starts from peak to valley start
+        # If peak is in first part (>= fall_start), search to end of year then beginning
+        if fall_peak_week >= fall_start_search:
+            for week in range(fall_peak_week, 48):
+                if frequencies[week] < threshold:
+                    fall_departure_week = week - 1
+                    break
+            # Continue search at beginning of year if not found
+            if fall_departure_week is None:
+                for week in range(0, winter_valley_start):
+                    if frequencies[week] < threshold:
+                        fall_departure_week = week - 1
+                        break
+        else:
+            # Peak is in second part (< fall_end), search normally
+            for week in range(fall_peak_week, winter_valley_start):
+                if frequencies[week] < threshold:
+                    fall_departure_week = week - 1
+                    break
+        # Default to valley start - 1 if not found
+        if fall_departure_week is None:
+            fall_departure_week = winter_valley_start - 1 if winter_valley_start > 0 else 47
+    else:
+        # Normal search
+        for week in range(fall_peak_week, fall_end_search):
+            if frequencies[week] < threshold:
+                fall_departure_week = week - 1
+                break
+        if fall_departure_week is None:
+            fall_departure_week = fall_end_search - 1
 
     return {
         'species': species_name,
@@ -227,7 +346,9 @@ def calculate_timing_three_valley_migrant(species_name, frequencies, category, p
     winter_valley_2 = valleys[2]   # Second winter valley (wraps to beginning)
 
     peak_freq = max(frequencies)
-    threshold = max(peak_freq * 0.25, 0.001)
+    # Lower threshold to 10% of peak (or 0.1% absolute) to better detect arrivals/departures
+    # in narrow presence windows between valleys
+    threshold = max(peak_freq * 0.10, 0.001)
 
     # Spring passage: between first winter valley end and summer valley start
     spring_start_search = winter_valley_1[1] + 1
@@ -316,7 +437,8 @@ def calculate_timing_single_season_summer(species_name, frequencies, category, p
     valley_start, valley_end = valleys[0]
 
     peak_freq = max(frequencies)
-    threshold = max(peak_freq * 0.25, 0.001)
+    # Lower threshold to 10% of peak (or 0.1% absolute) to better detect arrivals/departures
+    threshold = max(peak_freq * 0.10, 0.001)
 
     # Presence period: after winter valley ends (spring) until it begins again (fall)
     # Winter valley typically wraps around year (e.g., week 44-7)
@@ -389,7 +511,8 @@ def calculate_timing_single_season_winter(species_name, frequencies, category, p
         return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
 
     peak_freq = max(frequencies)
-    threshold = max(peak_freq * 0.25, 0.001)
+    # Lower threshold to 10% of peak (or 0.1% absolute) to better detect arrivals/departures
+    threshold = max(peak_freq * 0.10, 0.001)
 
     # Presence period wraps around the year: after summer valley ends (fall) → winter → before valley begins (spring)
     # Search from valley_end+1 to end of year, then from 0 to valley_start-1
