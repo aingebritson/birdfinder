@@ -130,16 +130,16 @@ function renderTimingInfo() {
                         Spring Migration
                     </h3>
                     <div class="grid grid-cols-3 gap-3">
-                        <div class="text-center p-3 rounded-lg" style="background-color: #D1FAE5;">
-                            <div class="text-xs font-medium mb-1" style="color: #059669;">Arrival</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #CCFBF1;">
+                            <div class="text-xs font-medium mb-1" style="color: #0D9488;">Arrival</div>
                             <div class="text-base font-bold">${timing.spring_arrival}</div>
                         </div>
                         <div class="text-center p-3 rounded-lg" style="background-color: #FEF3C7;">
                             <div class="text-xs font-medium mb-1" style="color: #CA8A04;">Peak</div>
                             <div class="text-base font-bold">${timing.spring_peak}</div>
                         </div>
-                        <div class="text-center p-3 rounded-lg" style="background-color: #FEE2E2;">
-                            <div class="text-xs font-medium mb-1" style="color: #DC2626;">Departure</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #F5E6DC;">
+                            <div class="text-xs font-medium mb-1" style="color: #C17F59;">Departure</div>
                             <div class="text-base font-bold">${timing.spring_departure}</div>
                         </div>
                     </div>
@@ -152,16 +152,16 @@ function renderTimingInfo() {
                         Fall Migration
                     </h3>
                     <div class="grid grid-cols-3 gap-3">
-                        <div class="text-center p-3 rounded-lg" style="background-color: #D1FAE5;">
-                            <div class="text-xs font-medium mb-1" style="color: #059669;">Arrival</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #CCFBF1;">
+                            <div class="text-xs font-medium mb-1" style="color: #0D9488;">Arrival</div>
                             <div class="text-base font-bold">${timing.fall_arrival}</div>
                         </div>
                         <div class="text-center p-3 rounded-lg" style="background-color: #FEF3C7;">
                             <div class="text-xs font-medium mb-1" style="color: #CA8A04;">Peak</div>
                             <div class="text-base font-bold">${timing.fall_peak}</div>
                         </div>
-                        <div class="text-center p-3 rounded-lg" style="background-color: #FEE2E2;">
-                            <div class="text-xs font-medium mb-1" style="color: #DC2626;">Departure</div>
+                        <div class="text-center p-3 rounded-lg" style="background-color: #F5E6DC;">
+                            <div class="text-xs font-medium mb-1" style="color: #C17F59;">Departure</div>
                             <div class="text-base font-bold">${timing.fall_departure}</div>
                         </div>
                     </div>
@@ -181,16 +181,16 @@ function renderTimingInfo() {
                     <p class="text-gray-600 text-sm mt-1">Present during winter months</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="text-center p-4 rounded-lg" style="background-color: #D1FAE5;">
-                        <div class="text-sm font-medium mb-1" style="color: #059669;">Arrival</div>
+                    <div class="text-center p-4 rounded-lg" style="background-color: #CCFBF1;">
+                        <div class="text-sm font-medium mb-1" style="color: #0D9488;">Arrival</div>
                         <div class="text-xl font-bold">${timing.winter_arrival}</div>
                     </div>
                     <div class="text-center p-4 rounded-lg" style="background-color: #FEF3C7;">
                         <div class="text-sm font-medium mb-1" style="color: #CA8A04;">Peak</div>
                         <div class="text-xl font-bold">${timing.winter_peak}</div>
                     </div>
-                    <div class="text-center p-4 rounded-lg" style="background-color: #FEE2E2;">
-                        <div class="text-sm font-medium mb-1" style="color: #DC2626;">Departure</div>
+                    <div class="text-center p-4 rounded-lg" style="background-color: #F5E6DC;">
+                        <div class="text-sm font-medium mb-1" style="color: #C17F59;">Departure</div>
                         <div class="text-xl font-bold">${timing.winter_departure}</div>
                     </div>
                 </div>
@@ -203,16 +203,16 @@ function renderTimingInfo() {
     if (timing.arrival) {
         container.innerHTML = `
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="text-center p-4 rounded-lg" style="background-color: #D1FAE5;">
-                    <div class="text-sm font-medium mb-1" style="color: #059669;">Arrival</div>
+                <div class="text-center p-4 rounded-lg" style="background-color: #CCFBF1;">
+                    <div class="text-sm font-medium mb-1" style="color: #0D9488;">Arrival</div>
                     <div class="text-xl font-bold">${timing.arrival}</div>
                 </div>
                 <div class="text-center p-4 rounded-lg" style="background-color: #FEF3C7;">
                     <div class="text-sm font-medium mb-1" style="color: #CA8A04;">Peak</div>
                     <div class="text-xl font-bold">${timing.peak}</div>
                 </div>
-                <div class="text-center p-4 rounded-lg" style="background-color: #FEE2E2;">
-                    <div class="text-sm font-medium mb-1" style="color: #DC2626;">Departure</div>
+                <div class="text-center p-4 rounded-lg" style="background-color: #F5E6DC;">
+                    <div class="text-sm font-medium mb-1" style="color: #C17F59;">Departure</div>
                     <div class="text-xl font-bold">${timing.departure}</div>
                 </div>
             </div>
