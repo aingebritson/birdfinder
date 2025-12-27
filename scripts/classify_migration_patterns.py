@@ -257,7 +257,7 @@ def classify_species(metrics):
                     pattern_type = 'two-passage'
                     flags.append('separated_valleys')
                 else:
-                    category = 'irregular'
+                    category = 'vagrant'
                     pattern_type = 'irregular'
                     flags.append('two_valleys_same_season')
             else:
@@ -271,7 +271,7 @@ def classify_species(metrics):
                     pattern_type = 'winter'
                     flags.append('overwintering|two_summer_valleys_merged')
                 else:
-                    category = 'irregular'
+                    category = 'vagrant'
                     pattern_type = 'irregular'
                     flags.append('two_valleys_close')
 
@@ -308,7 +308,7 @@ def classify_species(metrics):
                 flags.append('overwintering|mixed_valley_summer_lean')
             else:
                 # Valley truly in the middle (spring/fall)
-                category = 'irregular'
+                category = 'vagrant'
                 pattern_type = 'irregular'
                 flags.append('one_valley_mixed_season')
 
@@ -324,13 +324,13 @@ def classify_species(metrics):
             pattern_type = 'two-passage'
             flags.append('three_valley_migrant')
         else:
-            category = 'irregular'
+            category = 'vagrant'
             pattern_type = 'irregular'
             flags.append('three_valleys_irregular')
 
-    # 6. Irregular: 4+ valleys or other edge cases
+    # 6. Vagrant/Irregular: 4+ valleys or other edge cases
     else:
-        category = 'irregular'
+        category = 'vagrant'
         pattern_type = 'irregular'
 
         if metrics['num_valleys'] >= 4:
