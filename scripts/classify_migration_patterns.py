@@ -205,10 +205,12 @@ def classify_species(metrics):
         if metrics['min_max_ratio'] < 0.5:
             flags.append('seasonal_variation')
 
-    # 2. Vagrant: Fewer than 10 weeks with any presence
-    elif metrics['weeks_with_presence'] < 10:
+    # 2. Vagrant: Fewer than 10 weeks with any presence OR peak frequency below 0.5%
+    elif metrics['weeks_with_presence'] < 10 or metrics['peak_frequency'] < 0.005:
         category = 'vagrant'
         pattern_type = 'irregular'
+        if metrics['peak_frequency'] < 0.005:
+            flags.append('low_peak_frequency')
 
     # 3. Two-passage migrant: 2 valleys (one summer, one winter)
     elif metrics['num_valleys'] == 2:
