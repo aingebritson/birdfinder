@@ -516,7 +516,8 @@ def main():
     def detect_valleys(frequencies):
         """
         Detect valleys (absence periods) in frequency data.
-        A valley is 4+ consecutive weeks below 15% of species' peak frequency.
+        A valley is 4+ consecutive weeks below 15% of species' peak frequency,
+        with a minimum threshold of 0.5% to ensure consistency with peak classification.
         Returns: list of (start_week, end_week) tuples for each valley
         """
         if not frequencies or len(frequencies) < 5:
@@ -526,7 +527,9 @@ def main():
         if peak_freq == 0:
             return []
 
-        threshold = peak_freq * 0.15
+        # Use the maximum of 15% of peak OR 0.5% absolute threshold
+        # This ensures weeks below 0.5% are always considered part of valleys
+        threshold = max(peak_freq * 0.15, 0.005)
 
         valleys = []
         in_valley = False
