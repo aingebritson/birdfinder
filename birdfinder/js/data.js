@@ -9,7 +9,7 @@ let speciesData = [];
  */
 async function loadSpeciesData() {
     try {
-        const response = await fetch('birdfinder/data/species_data.json');
+        const response = await fetch('data/species_data.json');
         speciesData = await response.json();
         console.log(`Loaded ${speciesData.length} species`);
         return speciesData;
