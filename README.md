@@ -356,20 +356,50 @@ python3 scripts/run_pipeline.py washtenaw
 # Copy to web app
 cp regions/washtenaw/washtenaw_species_data.json birdfinder/data/species_data.json
 
-# Open index.html in browser
+# View in browser
+cd birdfinder
+python3 -m http.server 8000
+# Visit http://localhost:8000
 ```
 
 ## Deployment
 
-To deploy the web application:
+The web application is entirely static and can be deployed to any hosting service.
 
-1. Upload all HTML files and the `birdfinder/` directory to your web server
-2. Ensure `birdfinder/data/species_data.json` contains your processed region data
-3. No server-side processing required - works as static files
+### GitHub Pages (Automated)
 
-**GitHub Pages**: Can be deployed directly to GitHub Pages (all static files)
+This repository is configured for automatic deployment to GitHub Pages:
 
-**Custom Domain**: Works with any static hosting (Netlify, Vercel, Cloudflare Pages, etc.)
+**Setup (one-time)**:
+1. Go to repository Settings → Pages
+2. Under "Build and deployment":
+   - Source: Deploy from a branch
+   - Branch: `gh-pages`
+   - Folder: `/ (root)`
+3. Click Save
+
+**Daily workflow**:
+- Make changes to files in `birdfinder/` on the `main` branch
+- Commit and push to `main`
+- GitHub Actions automatically deploys to `gh-pages` within ~1 minute
+- Your site updates at `https://[username].github.io/[repo-name]/`
+
+**How it works**:
+- The `.github/workflows/deploy-gh-pages.yml` workflow runs on every push to `main`
+- It copies the `birdfinder/` contents to the root of the `gh-pages` branch
+- GitHub Pages serves the `gh-pages` branch at your site URL
+- You can monitor deployments in the "Actions" tab on GitHub
+
+### Other Static Hosting
+
+**Netlify / Vercel / Cloudflare Pages:**
+- Set the "Publish directory" to `birdfinder`
+- No build command needed (static files)
+
+**Traditional Web Hosting:**
+- Upload the contents of the `birdfinder/` directory to your web root
+- Ensure `data/species_data.json` is included
+- No server-side processing required
 
 ## License
 
