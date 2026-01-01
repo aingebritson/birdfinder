@@ -65,6 +65,7 @@ cp regions/[region_name]/[region_name]_species_data.json birdfinder/data/species
 │   └── data/
 │       └── species_data.json   # Active species data (copy from regions/)
 ├── scripts/                     # Data processing pipeline
+│   ├── fetch_hotspots.py       # Fetch eBird hotspot data via API
 │   ├── run_pipeline.py         # Run all steps in sequence
 │   ├── parse_ebird_data.py     # Step 1: Parse eBird file
 │   ├── classify_migration_patterns.py  # Step 2: Classify species
@@ -74,6 +75,9 @@ cp regions/[region_name]/[region_name]_species_data.json birdfinder/data/species
     └── [region_name]/          # e.g., washtenaw/
         ├── ebird_*.txt         # Input: eBird barchart file
         ├── [region]_species_data.json  # Output: Final JSON
+        ├── hotspots/           # eBird hotspot data
+        │   ├── raw/            # Raw timestamped API responses
+        │   └── [region]_hotspots.json  # Cleaned hotspot data
         └── intermediate/        # Intermediate processing files
 ```
 
@@ -140,6 +144,49 @@ Update the region name in HTML files:
 ## Data Processing Pipeline
 
 The pipeline processes raw eBird barchart data into a structured JSON format for the web application.
+
+### Fetching Hotspot Data
+
+Before processing species data, you can fetch and maintain a list of eBird hotspots for your region.
+
+**Setup:**
+```bash
+# Create .env file with your eBird API key
+cp .env.example .env
+# Edit .env and add: EBIRD_API_KEY=your_key_here
+
+# Install dependencies in virtual environment
+python3 -m venv venv
+source venv/bin/activate
+pip install python-dotenv requests
+```
+
+**Usage:**
+```bash
+source venv/bin/activate
+python3 scripts/fetch_hotspots.py
+```
+
+**What it does:**
+- Fetches all eBird hotspots for Washtenaw County (US-MI-161)
+- Saves raw timestamped data to `regions/washtenaw/hotspots/raw/`
+- Saves cleaned JSON to `regions/washtenaw/hotspots/washtenaw_hotspots.json`
+- On subsequent runs, compares with existing data and reports changes (new hotspots, removals, name changes)
+
+**Output structure:**
+```json
+{
+  "locId": "L123456",
+  "name": "Nichols Arboretum",
+  "lat": 42.281,
+  "lng": -83.726,
+  "numSpecies": 215,
+  "latestObs": "2025-01-15",
+  "knowledge": null
+}
+```
+
+The `knowledge` field is reserved for future manual enrichment with hotspot details.
 
 ### Pipeline Steps
 
