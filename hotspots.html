@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browse All Species - BirdFinder</title>
+    <title>Hotspots - BirdFinder</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="shadow-sm">
         <div class="max-w-7xl mx-auto px-4 py-6">
-            <h1 class="text-3xl font-bold">Browse All Species</h1>
+            <h1 class="text-3xl font-bold">Birding Hotspots</h1>
             <p class="mt-1" style="opacity: 0.9;">Washtenaw County, Michigan</p>
         </div>
     </header>
@@ -21,56 +21,39 @@
             <a href="index.html" class="font-medium pb-1" style="color: #6B7280;">
                 This Week
             </a>
-            <a href="#" id="browse-link" class="nav-active font-medium pb-1">
+            <a href="browse.html" class="font-medium pb-1" style="color: #6B7280;">
                 Browse All Species
             </a>
-            <a href="hotspots.html" class="font-medium pb-1" style="color: #6B7280;">
+            <a href="hotspots.html" id="hotspots-link" class="nav-active font-medium pb-1">
                 Hotspots
             </a>
         </div>
 
-        <!-- Search and Filter -->
+        <!-- Search Box -->
         <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
             <div class="flex flex-col sm:flex-row gap-4">
                 <!-- Search Box -->
                 <div class="flex-1">
                     <label for="search" class="block text-sm font-medium text-gray-700 mb-2">
-                        Search Species
+                        Search Hotspots
                     </label>
                     <input
                         type="text"
                         id="search"
-                        placeholder="Type species name..."
+                        placeholder="Type hotspot name..."
                         class="w-full px-4 py-2 border border-gray-300 rounded-lg"
                     />
-                </div>
-
-                <!-- Category Filter -->
-                <div class="sm:w-64">
-                    <label for="category-filter" class="block text-sm font-medium text-gray-700 mb-2">
-                        Filter by Category
-                    </label>
-                    <select
-                        id="category-filter"
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    >
-                        <option value="all">All Categories</option>
-                        <option value="resident">Year-round Resident</option>
-                        <option value="single-season">Single Season</option>
-                        <option value="two-passage-migrant">Two-passage Migrant</option>
-                        <option value="vagrant">Vagrant</option>
-                    </select>
                 </div>
             </div>
 
             <!-- Results Count -->
             <div class="mt-4 text-sm text-gray-600">
-                Showing <span id="results-count" class="font-medium">0</span> species
+                Showing <span id="results-count" class="font-medium">0</span> hotspots
             </div>
         </div>
 
-        <!-- Species List -->
-        <div id="species-list" class="species-grid">
+        <!-- Hotspots List -->
+        <div id="hotspots-list" class="species-grid">
             <div class="text-gray-500 text-center py-8">Loading...</div>
         </div>
 
@@ -78,8 +61,8 @@
         <div id="empty-state" class="hidden">
             <div class="text-center py-12">
                 <div class="text-gray-400 text-5xl mb-4">🔍</div>
-                <p class="text-gray-600 font-medium">No species found</p>
-                <p class="text-gray-500 text-sm mt-1">Try adjusting your search or filter</p>
+                <p class="text-gray-600 font-medium">No hotspots found</p>
+                <p class="text-gray-500 text-sm mt-1">Try adjusting your search</p>
             </div>
         </div>
     </main>
@@ -91,7 +74,6 @@
         </div>
     </footer>
 
-    <script src="js/data.js"></script>
-    <script src="js/browse.js"></script>
+    <script src="js/hotspots.js"></script>
 </body>
 </html>
