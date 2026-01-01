@@ -50,10 +50,10 @@ cp regions/[region_name]/[region_name]_species_data.json birdfinder/data/species
 
 ```
 .
-├── index.html                   # This Week view (main page)
-├── browse.html                  # Browse All Species view
-├── species.html                 # Species Detail view
-├── birdfinder/                  # Web application assets
+├── birdfinder/                  # Web application (auto-deployed to gh-pages)
+│   ├── index.html              # This Week view (main page)
+│   ├── browse.html             # Browse All Species view
+│   ├── species.html            # Species Detail view
 │   ├── css/
 │   │   └── styles.css          # Custom styles (Kirtland's Warbler palette)
 │   ├── js/
@@ -71,31 +71,37 @@ cp regions/[region_name]/[region_name]_species_data.json birdfinder/data/species
 │   ├── classify_migration_patterns.py  # Step 2: Classify species
 │   ├── calculate_arrival_departure.py  # Step 3: Calculate timing
 │   └── merge_to_json.py        # Step 4: Merge to JSON
-└── regions/                     # Region-specific data
-    └── [region_name]/          # e.g., washtenaw/
-        ├── ebird_*.txt         # Input: eBird barchart file
-        ├── [region]_species_data.json  # Output: Final JSON
-        ├── hotspots/           # eBird hotspot data
-        │   ├── raw/            # Raw timestamped API responses
-        │   └── [region]_hotspots.json  # Cleaned hotspot data
-        └── intermediate/        # Intermediate processing files
+├── regions/                     # Region-specific data
+│   └── [region_name]/          # e.g., washtenaw/
+│       ├── ebird_*.txt         # Input: eBird barchart file
+│       ├── [region]_species_data.json  # Output: Final JSON
+│       ├── hotspots/           # eBird hotspot data
+│       │   ├── raw/            # Raw timestamped API responses
+│       │   └── [region]_hotspots.json  # Cleaned hotspot data
+│       └── intermediate/        # Intermediate processing files
+├── .github/
+│   └── workflows/
+│       └── deploy-gh-pages.yml # GitHub Actions auto-deployment
+├── .gitignore
+├── .env.example                # Template for API keys
+└── README.md
 ```
 
 ## Web Application
 
 ### Pages
 
-**This Week ([index.html](index.html))**
+**This Week ([birdfinder/index.html](birdfinder/index.html))**
 - Shows species arriving, at peak, or departing in the current week
 - Navigate to previous/next weeks or jump back to current week
 - Click any species to view detailed information
 
-**Browse All Species ([browse.html](browse.html))**
+**Browse All Species ([birdfinder/browse.html](birdfinder/browse.html))**
 - Search species by name
 - Filter by migration category (resident, single-season, two-passage migrant, vagrant)
 - View all species with their frequency bars
 
-**Species Detail ([species.html](species.html))**
+**Species Detail ([birdfinder/species.html](birdfinder/species.html))**
 - Annual frequency chart showing detection probability throughout the year
 - Migration timing information (arrival, peak, departure dates)
 - Category badge and species code
@@ -137,9 +143,9 @@ The app uses a sophisticated Kirtland's Warbler-inspired color scheme defined in
 **Region Name**
 
 Update the region name in HTML files:
-- [index.html](index.html) line 14: `<p>Washtenaw County, Michigan</p>`
-- [browse.html](browse.html) line 14: `<p>Washtenaw County, Michigan</p>`
-- [species.html](species.html) line 19: `<p>Washtenaw County, Michigan</p>`
+- [birdfinder/index.html](birdfinder/index.html) line 14: `<p>Washtenaw County, Michigan</p>`
+- [birdfinder/browse.html](birdfinder/browse.html) line 14: `<p>Washtenaw County, Michigan</p>`
+- [birdfinder/species.html](birdfinder/species.html) line 19: `<p>Washtenaw County, Michigan</p>`
 
 ## Data Processing Pipeline
 
