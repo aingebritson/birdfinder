@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Species Detail - BirdFinder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-6">
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="font-medium">
+                    ← Back
+                </a>
+                <div>
+                    <h1 class="text-3xl font-bold" id="species-name">Loading...</h1>
+                    <p class="mt-1" style="opacity: 0.9;">Washtenaw County, Michigan</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Loading State -->
+        <div id="loading" class="text-center py-12">
+            <div style="color: #9CA3AF;">Loading species data...</div>
+        </div>
+
+        <!-- Error State -->
+        <div id="error" class="hidden">
+            <div class="bg-red-50 border border-red-200 rounded-lg p-6 text-center">
+                <p class="text-red-800 font-medium">Species not found</p>
+                <p class="text-red-600 text-sm mt-2">The species you're looking for doesn't exist in our database.</p>
+                <a href="index.html" class="inline-block mt-4 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700">
+                    Return Home
+                </a>
+            </div>
+        </div>
+
+        <!-- Species Content -->
+        <div id="species-content" class="hidden">
+            <!-- Category Badge -->
+            <div class="mb-6">
+                <span id="category-badge" class="badge">Loading...</span>
+            </div>
+
+            <!-- Timing Information -->
+            <section class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                <h2 class="text-xl font-bold mb-4">Migration Timing</h2>
+                <div id="timing-info">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Frequency Chart -->
+            <section class="bg-white rounded-lg shadow-sm p-6">
+                <h2 class="text-xl font-bold mb-4">Annual Frequency</h2>
+                <div class="text-sm mb-4" style="color: #6B7280;">
+                    Probability of detection throughout the year (based on eBird data)
+                </div>
+                <div id="frequency-chart" class="chart-container">
+                    <!-- Chart will be drawn here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="mt-12">
+        <div class="max-w-4xl mx-auto px-4 py-6 text-center text-sm">
+            <p>Bird phenology data from eBird</p>
+            <p class="mt-1">Washtenaw County, Michigan • 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/week-calculator.js"></script>
+    <script src="js/species-detail.js"></script>
+</body>
+</html>
