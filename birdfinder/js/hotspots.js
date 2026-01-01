@@ -1,0 +1,126 @@
+/**
+ * Hotspots page - Display and search eBird hotspots
+ */
+
+let hotspotsData = [];
+let filteredHotspots = [];
+
+/**
+ * Load hotspots data from JSON file
+ */
+async function loadHotspots() {
+    try {
+        const response = await fetch('data/washtenaw_hotspots.json');
+        hotspotsData = await response.json();
+
+        // Sort alphabetically by name
+        hotspotsData.sort((a, b) => a.name.localeCompare(b.name));
+
+        console.log(`Loaded ${hotspotsData.length} hotspots`);
+        filteredHotspots = hotspotsData;
+        renderHotspots();
+        updateResultsCount();
+    } catch (error) {
+        console.error('Error loading hotspots data:', error);
+        document.getElementById('hotspots-list').innerHTML =
+            '<div class="text-center py-8 text-red-600">Error loading hotspots data</div>';
+    }
+}
+
+/**
+ * Search hotspots by name
+ */
+function searchHotspots(query) {
+    const lowerQuery = query.toLowerCase();
+    filteredHotspots = hotspotsData.filter(h =>
+        h.name.toLowerCase().includes(lowerQuery)
+    );
+    renderHotspots();
+    updateResultsCount();
+}
+
+/**
+ * Update the results count display
+ */
+function updateResultsCount() {
+    document.getElementById('results-count').textContent = filteredHotspots.length;
+}
+
+/**
+ * Format date for display
+ */
+function formatDate(dateString) {
+    if (!dateString) return 'No recent observations';
+
+    // eBird dates come as "YYYY-MM-DD HH:MM" format
+    const date = new Date(dateString.replace(' ', 'T'));
+    const now = new Date();
+    const diffTime = Math.abs(now - date);
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+    if (diffDays === 0) return 'Today';
+    if (diffDays === 1) return 'Yesterday';
+    if (diffDays < 7) return `${diffDays} days ago`;
+    if (diffDays < 30) return `${Math.floor(diffDays / 7)} weeks ago`;
+    if (diffDays < 365) return `${Math.floor(diffDays / 30)} months ago`;
+    return `${Math.floor(diffDays / 365)} years ago`;
+}
+
+/**
+ * Render hotspots list
+ */
+function renderHotspots() {
+    const container = document.getElementById('hotspots-list');
+    const emptyState = document.getElementById('empty-state');
+
+    if (filteredHotspots.length === 0) {
+        container.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+        return;
+    }
+
+    container.classList.remove('hidden');
+    emptyState.classList.add('hidden');
+
+    container.innerHTML = filteredHotspots.map(hotspot => `
+        <a href="https://ebird.org/hotspot/${hotspot.locId}"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="species-card block">
+            <div class="flex justify-between items-start mb-2">
+                <h3 class="font-semibold text-lg">${hotspot.name}</h3>
+                <svg class="w-4 h-4 text-gray-400 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+            </div>
+
+            <div class="space-y-1 text-sm" style="color: #6B7280;">
+                <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                    </svg>
+                    <span><strong>${hotspot.numSpecies}</strong> species recorded</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>Latest: ${formatDate(hotspot.latestObs)}</span>
+                </div>
+            </div>
+        </a>
+    `).join('');
+}
+
+/**
+ * Initialize page
+ */
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadHotspots();
+
+    // Set up search
+    const searchInput = document.getElementById('search');
+    searchInput.addEventListener('input', (e) => {
+        searchHotspots(e.target.value);
+    });
+});
