@@ -53,12 +53,6 @@ function sortHotspots() {
             case 'species':
                 compareValue = a.numSpecies - b.numSpecies;
                 break;
-            case 'date':
-                // Handle null/missing dates
-                const dateA = a.latestObs ? new Date(a.latestObs.replace(' ', 'T')) : new Date(0);
-                const dateB = b.latestObs ? new Date(b.latestObs.replace(' ', 'T')) : new Date(0);
-                compareValue = dateA - dateB;
-                break;
         }
 
         return currentSort.ascending ? compareValue : -compareValue;
@@ -89,8 +83,7 @@ function setSort(field) {
 function updateSortButtons() {
     const buttons = {
         name: document.getElementById('sort-name'),
-        species: document.getElementById('sort-species'),
-        date: document.getElementById('sort-date')
+        species: document.getElementById('sort-species')
     };
 
     // Update active states
@@ -106,7 +99,6 @@ function updateSortButtons() {
     const arrow = currentSort.ascending ? '↑' : '↓';
     buttons.name.textContent = currentSort.field === 'name' ? `Name ${arrow}` : 'Name';
     buttons.species.textContent = currentSort.field === 'species' ? `# Species ${arrow}` : '# Species';
-    buttons.date.textContent = currentSort.field === 'date' ? `Latest Observation ${arrow}` : 'Latest Observation';
 }
 
 /**
@@ -171,12 +163,6 @@ function renderHotspots() {
                     </svg>
                     <span><strong>${hotspot.numSpecies}</strong> species recorded</span>
                 </div>
-                <div class="flex items-center gap-2">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <span>Latest: ${formatDate(hotspot.latestObs)}</span>
-                </div>
             </div>
         </a>
     `).join('');
@@ -197,7 +183,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Set up sort buttons
     document.getElementById('sort-name').addEventListener('click', () => setSort('name'));
     document.getElementById('sort-species').addEventListener('click', () => setSort('species'));
-    document.getElementById('sort-date').addEventListener('click', () => setSort('date'));
 
     // Initialize button states
     updateSortButtons();
