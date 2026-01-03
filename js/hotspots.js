@@ -4,6 +4,7 @@
 
 let hotspotsData = [];
 let filteredHotspots = [];
+let currentSort = { field: 'name', ascending: true };
 
 /**
  * Load hotspots data from JSON file
@@ -13,11 +14,9 @@ async function loadHotspots() {
         const response = await fetch('data/washtenaw_hotspots.json');
         hotspotsData = await response.json();
 
-        // Sort alphabetically by name
-        hotspotsData.sort((a, b) => a.name.localeCompare(b.name));
-
         console.log(`Loaded ${hotspotsData.length} hotspots`);
         filteredHotspots = hotspotsData;
+        sortHotspots();
         renderHotspots();
         updateResultsCount();
     } catch (error) {
@@ -35,8 +34,79 @@ function searchHotspots(query) {
     filteredHotspots = hotspotsData.filter(h =>
         h.name.toLowerCase().includes(lowerQuery)
     );
+    sortHotspots();
     renderHotspots();
     updateResultsCount();
+}
+
+/**
+ * Sort hotspots based on current sort settings
+ */
+function sortHotspots() {
+    filteredHotspots.sort((a, b) => {
+        let compareValue = 0;
+
+        switch (currentSort.field) {
+            case 'name':
+                compareValue = a.name.localeCompare(b.name);
+                break;
+            case 'species':
+                compareValue = a.numSpecies - b.numSpecies;
+                break;
+            case 'date':
+                // Handle null/missing dates
+                const dateA = a.latestObs ? new Date(a.latestObs.replace(' ', 'T')) : new Date(0);
+                const dateB = b.latestObs ? new Date(b.latestObs.replace(' ', 'T')) : new Date(0);
+                compareValue = dateA - dateB;
+                break;
+        }
+
+        return currentSort.ascending ? compareValue : -compareValue;
+    });
+}
+
+/**
+ * Set sort field and direction
+ */
+function setSort(field) {
+    // If clicking the same field, toggle direction
+    if (currentSort.field === field) {
+        currentSort.ascending = !currentSort.ascending;
+    } else {
+        // New field - set to descending for species/date, ascending for name
+        currentSort.field = field;
+        currentSort.ascending = field === 'name';
+    }
+
+    sortHotspots();
+    renderHotspots();
+    updateSortButtons();
+}
+
+/**
+ * Update sort button visual states
+ */
+function updateSortButtons() {
+    const buttons = {
+        name: document.getElementById('sort-name'),
+        species: document.getElementById('sort-species'),
+        date: document.getElementById('sort-date')
+    };
+
+    // Update active states
+    Object.entries(buttons).forEach(([field, btn]) => {
+        if (currentSort.field === field) {
+            btn.classList.add('sort-btn-active');
+        } else {
+            btn.classList.remove('sort-btn-active');
+        }
+    });
+
+    // Update button text with arrows
+    const arrow = currentSort.ascending ? '↑' : '↓';
+    buttons.name.textContent = currentSort.field === 'name' ? `Name ${arrow}` : 'Name';
+    buttons.species.textContent = currentSort.field === 'species' ? `# Species ${arrow}` : '# Species';
+    buttons.date.textContent = currentSort.field === 'date' ? `Latest Observation ${arrow}` : 'Latest Observation';
 }
 
 /**
@@ -123,4 +193,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     searchInput.addEventListener('input', (e) => {
         searchHotspots(e.target.value);
     });
+
+    // Set up sort buttons
+    document.getElementById('sort-name').addEventListener('click', () => setSort('name'));
+    document.getElementById('sort-species').addEventListener('click', () => setSort('species'));
+    document.getElementById('sort-date').addEventListener('click', () => setSort('date'));
+
+    // Initialize button states
+    updateSortButtons();
 });
