@@ -148,7 +148,7 @@ function renderHotspots() {
         <a href="https://ebird.org/hotspot/${hotspot.locId}"
            target="_blank"
            rel="noopener noreferrer"
-           class="species-card block">
+           class="species-card block bg-white rounded-lg shadow-sm hover:shadow-md p-4 border border-gray-200">
             <div class="flex justify-between items-start mb-2">
                 <h3 class="font-semibold text-lg">${hotspot.name}</h3>
                 <svg class="w-4 h-4 text-gray-400 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
