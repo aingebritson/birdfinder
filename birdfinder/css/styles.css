@@ -301,3 +301,26 @@ input:focus, select:focus {
 .species-grid > div[style*="color: #9ca3af"] {
     grid-column: 1 / -1;
 }
+
+/* Sort button styles */
+.sort-btn {
+    background-color: #FFFFFF;
+    color: var(--color-text-secondary);
+    border-color: var(--color-border);
+}
+
+.sort-btn:hover {
+    background-color: var(--color-container-bg);
+    border-color: var(--color-accent);
+}
+
+.sort-btn-active {
+    background-color: var(--color-accent);
+    color: var(--color-main-bg);
+    border-color: var(--color-accent);
+}
+
+.sort-btn-active:hover {
+    background-color: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+}
