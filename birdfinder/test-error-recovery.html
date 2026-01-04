@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Recovery Test - BirdFinder</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .test-section {
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .test-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .test-result {
+            min-height: 100px;
+            background: #F9FAFB;
+            border-radius: 4px;
+            padding: 15px;
+        }
+        .test-controls {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn-primary {
+            background: #2563EB;
+            color: white;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #1D4ED8;
+        }
+        .btn-secondary {
+            background: white;
+            color: #374151;
+            border: 1px solid #D1D5DB;
+        }
+        .btn-secondary:hover {
+            background: #F9FAFB;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <h1 class="text-3xl font-bold mb-2">Error Recovery Test Suite</h1>
+        <p class="text-gray-600 mb-8">Test various error scenarios and recovery mechanisms</p>
+
+        <!-- Test 1: Valid Data Load -->
+        <div class="test-section">
+            <div class="test-title">Test 1: Valid Data Load</div>
+            <p class="text-sm text-gray-600 mb-3">Should load successfully with retry capability</p>
+            <div id="test1-result" class="test-result"></div>
+            <div class="test-controls">
+                <button class="btn btn-primary" onclick="runTest1()">Run Test</button>
+            </div>
+        </div>
+
+        <!-- Test 2: 404 Not Found -->
+        <div class="test-section">
+            <div class="test-title">Test 2: 404 Not Found Error</div>
+            <p class="text-sm text-gray-600 mb-3">Should show error immediately (not retryable)</p>
+            <div id="test2-result" class="test-result"></div>
+            <div class="test-controls">
+                <button class="btn btn-primary" onclick="runTest2()">Run Test</button>
+            </div>
+        </div>
+
+        <!-- Test 3: Network Timeout -->
+        <div class="test-section">
+            <div class="test-title">Test 3: Network Timeout</div>
+            <p class="text-sm text-gray-600 mb-3">Should retry with exponential backoff (1s timeout)</p>
+            <div id="test3-result" class="test-result"></div>
+            <div class="test-controls">
+                <button class="btn btn-primary" onclick="runTest3()">Run Test</button>
+            </div>
+        </div>
+
+        <!-- Test 4: JSON Parse Error -->
+        <div class="test-section">
+            <div class="test-title">Test 4: Invalid JSON Format</div>
+            <p class="text-sm text-gray-600 mb-3">Should show parse error (not retryable)</p>
+            <div id="test4-result" class="test-result"></div>
+            <div class="test-controls">
+                <button class="btn btn-primary" onclick="runTest4()">Run Test</button>
+            </div>
+        </div>
+
+        <!-- Console Log -->
+        <div class="test-section">
+            <div class="test-title">Console Output</div>
+            <p class="text-sm text-gray-600 mb-3">Check browser console for detailed logs</p>
+            <div id="console-log" class="test-result font-mono text-xs" style="max-height: 200px; overflow-y: auto;">
+                <div class="text-gray-500">Open browser DevTools console for full output</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/data-loader.js"></script>
+    <script>
+        // Override console.log to capture output
+        const originalLog = console.log;
+        const originalWarn = console.warn;
+        const originalError = console.error;
+        const consoleOutput = [];
+
+        function addConsoleMessage(level, ...args) {
+            const message = args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ');
+            consoleOutput.push(`[${level}] ${message}`);
+
+            const consoleEl = document.getElementById('console-log');
+            if (consoleEl) {
+                consoleEl.innerHTML = consoleOutput.slice(-20).map(m =>
+                    `<div class="text-gray-700">${m}</div>`
+                ).join('');
+                consoleEl.scrollTop = consoleEl.scrollHeight;
+            }
+        }
+
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            addConsoleMessage('LOG', ...args);
+        };
+
+        console.warn = function(...args) {
+            originalWarn.apply(console, args);
+            addConsoleMessage('WARN', ...args);
+        };
+
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            addConsoleMessage('ERROR', ...args);
+        };
+
+        // Test 1: Valid data load
+        async function runTest1() {
+            const container = document.getElementById('test1-result');
+            showLoadingUI(container, 'Loading species data...');
+
+            try {
+                const data = await fetchWithRetry('data/species_data.json', {
+                    autoRetry: true,
+                    onProgress: (msg) => showLoadingUI(container, msg)
+                });
+
+                container.innerHTML = `
+                    <div class="text-green-600 font-semibold">✓ Success!</div>
+                    <div class="text-sm text-gray-600 mt-2">Loaded ${data.length} species</div>
+                    <div class="text-xs text-gray-500 mt-1">First species: ${data[0]?.name || 'N/A'}</div>
+                `;
+            } catch (error) {
+                showErrorUI(container, error, () => runTest1());
+            }
+        }
+
+        // Test 2: 404 Not Found
+        async function runTest2() {
+            const container = document.getElementById('test2-result');
+            showLoadingUI(container, 'Loading non-existent file...');
+
+            try {
+                await fetchWithRetry('data/does-not-exist.json', {
+                    autoRetry: true,
+                    onProgress: (msg) => showLoadingUI(container, msg)
+                });
+            } catch (error) {
+                showErrorUI(container, error, () => runTest2());
+            }
+        }
+
+        // Test 3: Timeout simulation
+        async function runTest3() {
+            const container = document.getElementById('test3-result');
+            showLoadingUI(container, 'Attempting to load with 1s timeout...');
+
+            try {
+                // Use a URL that will timeout (httpbin has a delay endpoint)
+                await fetchWithRetry('https://httpbin.org/delay/5', {
+                    autoRetry: true,
+                    timeoutMs: 1000,
+                    onProgress: (msg) => showLoadingUI(container, msg),
+                    onRetry: (attempt, max) => {
+                        console.log(`Retry attempt ${attempt}/${max}`);
+                    }
+                });
+            } catch (error) {
+                showErrorUI(container, error, () => runTest3());
+            }
+        }
+
+        // Test 4: Invalid JSON
+        async function runTest4() {
+            const container = document.getElementById('test4-result');
+            showLoadingUI(container, 'Loading invalid JSON...');
+
+            // Create a mock response with invalid JSON
+            const originalFetch = window.fetch;
+            window.fetch = async function(url, options) {
+                if (url === 'test-invalid.json') {
+                    return {
+                        ok: true,
+                        status: 200,
+                        json: async () => {
+                            throw new SyntaxError('Unexpected token < in JSON at position 0');
+                        }
+                    };
+                }
+                return originalFetch(url, options);
+            };
+
+            try {
+                await fetchWithRetry('test-invalid.json', {
+                    autoRetry: true,
+                    onProgress: (msg) => showLoadingUI(container, msg)
+                });
+            } catch (error) {
+                showErrorUI(container, error, () => runTest4());
+            } finally {
+                window.fetch = originalFetch;
+            }
+        }
+
+        // Initialize
+        console.log('Error Recovery Test Suite initialized');
+        console.log('Click "Run Test" buttons to test different error scenarios');
+    </script>
+</body>
+</html>

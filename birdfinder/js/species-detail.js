@@ -16,13 +16,52 @@ function getSpeciesCodeFromURL() {
  * Initialize the page
  */
 async function init() {
-    await loadSpeciesData();
+    const loadingEl = document.getElementById('loading');
+    const errorEl = document.getElementById('error');
+    const contentEl = document.getElementById('species-content');
+
+    // Load data with error handling
+    await loadSpeciesData({
+        onProgress: (message) => {
+            // Update loading message
+            const loadingText = loadingEl.querySelector('p');
+            if (loadingText) {
+                loadingText.textContent = message;
+            }
+        },
+        onError: (error) => {
+            loadingEl.classList.add('hidden');
+            errorEl.classList.remove('hidden');
+
+            // Show detailed error with retry button
+            const errorContent = errorEl.querySelector('.error-content') || errorEl;
+            showErrorUI(errorContent, error, () => {
+                // Retry: clear cache and reload
+                clearCache();
+                errorEl.classList.add('hidden');
+                loadingEl.classList.remove('hidden');
+                init();
+            });
+        }
+    });
 
     const speciesCode = getSpeciesCodeFromURL();
 
     if (!speciesCode) {
         showError();
         return;
+    }
+
+    // Check if data loaded
+    if (speciesData.length === 0) {
+        const error = getLoadError();
+        if (error) {
+            // Error already handled above
+            return;
+        } else {
+            showError();
+            return;
+        }
     }
 
     // Find species by code
@@ -34,8 +73,8 @@ async function init() {
     }
 
     // Hide loading, show content
-    document.getElementById('loading').classList.add('hidden');
-    document.getElementById('species-content').classList.remove('hidden');
+    loadingEl.classList.add('hidden');
+    contentEl.classList.remove('hidden');
 
     // Render species details
     renderSpeciesDetails();
