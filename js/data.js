@@ -1,22 +1,98 @@
 /**
- * Data loader - Loads species data from JSON
+ * Data loader - Loads species data from JSON with error recovery
  */
 
 let speciesData = [];
+let loadError = null;
+let isLoading = false;
 
 /**
- * Load species data from JSON file
+ * Load species data from JSON file with retry logic
+ *
+ * @param {Object} options - Loading options
+ * @param {Function} options.onProgress - Progress callback (message) => void
+ * @param {Function} options.onError - Error callback (error) => void
+ * @returns {Promise<Array>} Species data array (empty if failed)
  */
-async function loadSpeciesData() {
-    try {
-        const response = await fetch('data/species_data.json');
-        speciesData = await response.json();
-        console.log(`Loaded ${speciesData.length} species`);
+async function loadSpeciesData(options = {}) {
+    const { onProgress = null, onError = null } = options;
+
+    // Return cached data if already loaded
+    if (speciesData.length > 0) {
+        console.log(`Using cached species data (${speciesData.length} species)`);
         return speciesData;
-    } catch (error) {
-        console.error('Error loading species data:', error);
-        return [];
     }
+
+    // Prevent concurrent loads
+    if (isLoading) {
+        console.log('Load already in progress, waiting...');
+        // Wait for the ongoing load to complete
+        while (isLoading) {
+            await new Promise(resolve => setTimeout(resolve, 100));
+        }
+        return speciesData;
+    }
+
+    isLoading = true;
+    loadError = null;
+
+    try {
+        const data = await fetchWithRetry('data/species_data.json', {
+            autoRetry: true,
+            timeoutMs: 10000,
+            onProgress: (message) => {
+                console.log(`Species data: ${message}`);
+                if (onProgress) onProgress(message);
+            },
+            onRetry: (attempt, maxAttempts) => {
+                console.warn(`Retrying species data load (${attempt}/${maxAttempts})...`);
+            }
+        });
+
+        // Validate data structure
+        if (!Array.isArray(data)) {
+            throw new Error('Species data is not an array');
+        }
+
+        if (data.length === 0) {
+            console.warn('Species data is empty');
+        }
+
+        speciesData = data;
+        console.log(`✓ Loaded ${speciesData.length} species`);
+        return speciesData;
+
+    } catch (error) {
+        loadError = error;
+        console.error('Failed to load species data:', error);
+
+        if (onError) {
+            onError(error);
+        }
+
+        // Return empty array for graceful degradation
+        return [];
+
+    } finally {
+        isLoading = false;
+    }
+}
+
+/**
+ * Get the last load error (if any)
+ *
+ * @returns {DataLoadError|null} The error or null if no error
+ */
+function getLoadError() {
+    return loadError;
+}
+
+/**
+ * Clear cached data and force reload on next call
+ */
+function clearCache() {
+    speciesData = [];
+    loadError = null;
 }
 
 /**

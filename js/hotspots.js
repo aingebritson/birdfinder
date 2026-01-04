@@ -7,22 +7,47 @@ let filteredHotspots = [];
 let currentSort = { field: 'name', ascending: true };
 
 /**
- * Load hotspots data from JSON file
+ * Load hotspots data from JSON file with error recovery
  */
 async function loadHotspots() {
-    try {
-        const response = await fetch('data/washtenaw_hotspots.json');
-        hotspotsData = await response.json();
+    const container = document.getElementById('hotspots-list');
 
-        console.log(`Loaded ${hotspotsData.length} hotspots`);
+    // Show loading state
+    showLoadingUI(container, 'Loading hotspots data...');
+
+    try {
+        const data = await fetchWithRetry('data/washtenaw_hotspots.json', {
+            autoRetry: true,
+            timeoutMs: 10000,
+            onProgress: (message) => {
+                showLoadingUI(container, message);
+            },
+            onRetry: (attempt, maxAttempts) => {
+                console.warn(`Retrying hotspots data load (${attempt}/${maxAttempts})...`);
+            }
+        });
+
+        // Validate data structure
+        if (!Array.isArray(data)) {
+            throw new Error('Hotspots data is not an array');
+        }
+
+        hotspotsData = data;
+        console.log(`✓ Loaded ${hotspotsData.length} hotspots`);
+
         filteredHotspots = hotspotsData;
         sortHotspots();
         renderHotspots();
         updateResultsCount();
+
     } catch (error) {
-        console.error('Error loading hotspots data:', error);
-        document.getElementById('hotspots-list').innerHTML =
-            '<div class="text-center py-8 text-red-600">Error loading hotspots data</div>';
+        console.error('Failed to load hotspots data:', error);
+
+        // Show error with retry button
+        showErrorUI(container, error, () => {
+            // Retry
+            loadHotspots();
+        });
     }
 }
 

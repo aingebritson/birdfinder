@@ -8,7 +8,32 @@ let currentWeekIndex = WeekCalculator.getCurrentWeek();
  * Initialize the page
  */
 async function init() {
-    await loadSpeciesData();
+    // Load data with error handling
+    await loadSpeciesData({
+        onError: (error) => {
+            // Show error in all three list containers
+            const containers = ['arriving-list', 'peak-list', 'departing-list'];
+            containers.forEach((containerId) => {
+                const container = document.getElementById(containerId);
+                if (container) {
+                    showErrorUI(container, error, () => {
+                        // Retry: clear cache and reload
+                        clearCache();
+                        init();
+                    });
+                }
+            });
+        }
+    });
+
+    // Check if data loaded
+    if (speciesData.length === 0) {
+        const error = getLoadError();
+        if (error) {
+            // Error already shown above
+            return;
+        }
+    }
 
     console.log(`Loaded ${speciesData.length} species`);
     console.log('Sample species:', speciesData[0]);

@@ -10,7 +10,40 @@ let currentCategoryFilter = 'all';
  * Initialize the page
  */
 async function init() {
-    await loadSpeciesData();
+    const speciesListContainer = document.getElementById('species-list');
+    const emptyState = document.getElementById('empty-state');
+
+    // Show loading state
+    showLoadingUI(speciesListContainer, 'Loading species data...');
+    emptyState.classList.add('hidden');
+
+    // Load data with error handling
+    await loadSpeciesData({
+        onProgress: (message) => {
+            showLoadingUI(speciesListContainer, message);
+        },
+        onError: (error) => {
+            showErrorUI(speciesListContainer, error, () => {
+                // Retry: clear cache and reload
+                clearCache();
+                init();
+            });
+        }
+    });
+
+    // Check if data loaded successfully
+    if (speciesData.length === 0) {
+        const error = getLoadError();
+        if (error) {
+            // Error UI already shown by onError callback
+            return;
+        } else {
+            // Empty data but no error
+            speciesListContainer.innerHTML = '';
+            emptyState.classList.remove('hidden');
+            return;
+        }
+    }
 
     console.log(`Loaded ${speciesData.length} species for browse`);
 
