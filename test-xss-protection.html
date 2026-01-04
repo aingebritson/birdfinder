@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS Protection Test Suite - BirdFinder</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .test-section {
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .test-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .test-result {
+            min-height: 60px;
+            background: #F9FAFB;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 10px;
+        }
+        .test-controls {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn-primary {
+            background: #2563EB;
+            color: white;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #1D4ED8;
+        }
+        .status-pass {
+            color: #10B981;
+            font-weight: 600;
+        }
+        .status-fail {
+            color: #EF4444;
+            font-weight: 600;
+        }
+        .xss-attempt {
+            font-family: monospace;
+            font-size: 12px;
+            background: #FEF3C7;
+            padding: 8px;
+            border-radius: 4px;
+            margin: 8px 0;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <h1 class="text-3xl font-bold mb-2">XSS Protection Test Suite</h1>
+        <p class="text-gray-600 mb-8">Verify that all user input is properly sanitized</p>
+
+        <!-- Test 1: Basic Script Injection -->
+        <div class="test-section">
+            <div class="test-title">Test 1: Basic Script Tag Injection</div>
+            <p class="text-sm text-gray-600 mb-3">Attempt: &lt;script&gt;alert('XSS')&lt;/script&gt;</p>
+            <div id="test1-result" class="test-result"></div>
+            <div class="test-controls">
+                <button class="btn btn-primary" onclick="runTest1()">Run Test</button>
+            </div>
+        </div>
+
+        <!-- Test 2: Event Handler Injection -->
+        <div class="test-section">
+            <div class="test-title">Test 2: Event Handler Injection</div>
+            <p class="text-sm text-gray-600 mb-3">Attempt: &lt;img src=x onerror=alert('XSS')&gt;</p>
+            <div id="test2-result" class="test-result"></div>
+            <div class="test-controls">
+                <button class="btn btn-primary" onclick="runTest2()">Run Test</button>
+            </div>
+        </div>
+
+        <!-- Test 3: JavaScript URL -->
+        <div class="test-section">
+            <div class="test-title">Test 3: JavaScript URL</div>
+            <p class="text-sm text-gray-600 mb-3">Attempt: &lt;a href="javascript:alert('XSS')"&gt;Click&lt;/a&gt;</p>
+            <div id="test3-result" class="test-result"></div>
+            <div class="test-controls">
+                <button class="btn btn-primary" onclick="runTest3()">Run Test</button>
+            </div>
+        </div>
+
+        <!-- Test 4: Data URI Injection -->
+        <div class="test-section">
+            <div class="test-title">Test 4: Data URI Injection</div>
+            <p class="text-sm text-gray-600 mb-3">Attempt: data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4=</p>
+            <div id="test4-result" class="test-result"></div>
+            <div class="test-controls">
+                <button class="btn btn-primary" onclick="runTest4()">Run Test</button>
+            </div>
+        </div>
+
+        <!-- Test 5: Markdown Injection -->
+        <div class="test-section">
+            <div class="test-title">Test 5: Markdown with Embedded Scripts</div>
+            <p class="text-sm text-gray-600 mb-3">Attempt: **Bold** &lt;script&gt;alert('XSS')&lt;/script&gt;</p>
+            <div id="test5-result" class="test-result"></div>
+            <div class="test-controls">
+                <button class="btn btn-primary" onclick="runTest5()">Run Test</button>
+            </div>
+        </div>
+
+        <!-- Test 6: Safe Markdown -->
+        <div class="test-section">
+            <div class="test-title">Test 6: Safe Markdown Rendering</div>
+            <p class="text-sm text-gray-600 mb-3">Valid markdown should render correctly</p>
+            <div id="test6-result" class="test-result"></div>
+            <div class="test-controls">
+                <button class="btn btn-primary" onclick="runTest6()">Run Test</button>
+            </div>
+        </div>
+
+        <!-- Test 7: URL Sanitization -->
+        <div class="test-section">
+            <div class="test-title">Test 7: URL Sanitization</div>
+            <p class="text-sm text-gray-600 mb-3">Various URL attacks</p>
+            <div id="test7-result" class="test-result"></div>
+            <div class="test-controls">
+                <button class="btn btn-primary" onclick="runTest7()">Run Test</button>
+            </div>
+        </div>
+
+        <!-- Test 8: HTML Entity Escaping -->
+        <div class="test-section">
+            <div class="test-title">Test 8: HTML Entity Escaping</div>
+            <p class="text-sm text-gray-600 mb-3">Special characters should be escaped</p>
+            <div id="test8-result" class="test-result"></div>
+            <div class="test-controls">
+                <button class="btn btn-primary" onclick="runTest8()">Run Test</button>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="test-section">
+            <div class="test-title">Test Summary</div>
+            <div id="test-summary" class="test-result">
+                Run tests to see results
+            </div>
+        </div>
+    </main>
+
+    <script src="js/sanitizer.js"></script>
+    <script>
+        let testResults = {
+            passed: 0,
+            failed: 0,
+            total: 0
+        };
+
+        function recordResult(testName, passed, message) {
+            testResults.total++;
+            if (passed) {
+                testResults.passed++;
+            } else {
+                testResults.failed++;
+            }
+            updateSummary();
+            return passed;
+        }
+
+        function updateSummary() {
+            const summary = document.getElementById('test-summary');
+            const passRate = (testResults.passed / testResults.total * 100).toFixed(0);
+            summary.innerHTML = `
+                <div class="text-lg font-semibold mb-2">Results: ${testResults.passed}/${testResults.total} tests passed (${passRate}%)</div>
+                <div class="text-sm">
+                    <span class="status-pass">✓ ${testResults.passed} passed</span> •
+                    <span class="status-fail">✗ ${testResults.failed} failed</span>
+                </div>
+            `;
+        }
+
+        function runTest1() {
+            const container = document.getElementById('test1-result');
+            const maliciousInput = '<script>alert("XSS")</script>';
+            const escaped = escapeHtml(maliciousInput);
+
+            // Check that script tag was escaped
+            const passed = !escaped.includes('<script>') && escaped.includes('&lt;script&gt;');
+
+            container.innerHTML = `
+                <div class="${passed ? 'status-pass' : 'status-fail'}">${passed ? '✓ PASS' : '✗ FAIL'}</div>
+                <div class="xss-attempt">Input: ${escapeHtml(maliciousInput)}</div>
+                <div class="xss-attempt">Output: ${escapeHtml(escaped)}</div>
+                <div class="text-sm mt-2">${passed ? 'Script tags properly escaped' : 'Script tags not properly escaped!'}</div>
+            `;
+
+            recordResult('Script Injection', passed);
+        }
+
+        function runTest2() {
+            const container = document.getElementById('test2-result');
+            const maliciousInput = '<img src=x onerror=alert("XSS")>';
+            const sanitized = sanitizeHtml(maliciousInput);
+
+            // Check that event handlers were stripped
+            const passed = !sanitized.toLowerCase().includes('onerror');
+
+            container.innerHTML = `
+                <div class="${passed ? 'status-pass' : 'status-fail'}">${passed ? '✓ PASS' : '✗ FAIL'}</div>
+                <div class="xss-attempt">Input: ${escapeHtml(maliciousInput)}</div>
+                <div class="xss-attempt">Output: ${escapeHtml(sanitized)}</div>
+                <div class="text-sm mt-2">${passed ? 'Event handlers properly stripped' : 'Event handlers not properly stripped!'}</div>
+            `;
+
+            recordResult('Event Handler Injection', passed);
+        }
+
+        function runTest3() {
+            const container = document.getElementById('test3-result');
+            const maliciousUrl = 'javascript:alert("XSS")';
+            const sanitized = sanitizeUrl(maliciousUrl);
+
+            // Should return null for javascript: URLs
+            const passed = sanitized === null;
+
+            container.innerHTML = `
+                <div class="${passed ? 'status-pass' : 'status-fail'}">${passed ? '✓ PASS' : '✗ FAIL'}</div>
+                <div class="xss-attempt">Input: ${escapeHtml(maliciousUrl)}</div>
+                <div class="xss-attempt">Output: ${sanitized === null ? 'null (blocked)' : escapeHtml(sanitized)}</div>
+                <div class="text-sm mt-2">${passed ? 'JavaScript URLs properly blocked' : 'JavaScript URLs not blocked!'}</div>
+            `;
+
+            recordResult('JavaScript URL', passed);
+        }
+
+        function runTest4() {
+            const container = document.getElementById('test4-result');
+            const maliciousUrl = 'data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4=';
+            const sanitized = sanitizeUrl(maliciousUrl);
+
+            // Should return null for data: URLs
+            const passed = sanitized === null;
+
+            container.innerHTML = `
+                <div class="${passed ? 'status-pass' : 'status-fail'}">${passed ? '✓ PASS' : '✗ FAIL'}</div>
+                <div class="xss-attempt">Input: ${escapeHtml(maliciousUrl.substring(0, 50))}...</div>
+                <div class="xss-attempt">Output: ${sanitized === null ? 'null (blocked)' : escapeHtml(sanitized)}</div>
+                <div class="text-sm mt-2">${passed ? 'Data URLs properly blocked' : 'Data URLs not blocked!'}</div>
+            `;
+
+            recordResult('Data URI Injection', passed);
+        }
+
+        function runTest5() {
+            const container = document.getElementById('test5-result');
+            const maliciousMarkdown = '**Bold** <script>alert("XSS")</script>';
+            const sanitized = markdownToHtmlSafe(maliciousMarkdown);
+
+            // Should escape the script tag
+            const passed = !sanitized.includes('<script>') && sanitized.includes('&lt;script&gt;');
+
+            container.innerHTML = `
+                <div class="${passed ? 'status-pass' : 'status-fail'}">${passed ? '✓ PASS' : '✗ FAIL'}</div>
+                <div class="xss-attempt">Input: ${escapeHtml(maliciousMarkdown)}</div>
+                <div class="xss-attempt">Output: ${escapeHtml(sanitized)}</div>
+                <div class="text-sm mt-2">${passed ? 'Markdown properly sanitized' : 'Markdown not properly sanitized!'}</div>
+            `;
+
+            recordResult('Markdown Injection', passed);
+        }
+
+        function runTest6() {
+            const container = document.getElementById('test6-result');
+            const safeMarkdown = '# Heading\n\n**Bold text** and *italic text*\n\n- List item 1\n- List item 2\n\n[Safe Link](https://example.com)';
+            const rendered = markdownToHtmlSafe(safeMarkdown);
+
+            // Should contain proper HTML elements
+            const hasHeading = rendered.includes('<h1');
+            const hasStrong = rendered.includes('<strong>');
+            const hasEm = rendered.includes('<em>');
+            const hasList = rendered.includes('<ul');
+            const hasLink = rendered.includes('<a href="https://example.com"');
+            const passed = hasHeading && hasStrong && hasEm && hasList && hasLink;
+
+            container.innerHTML = `
+                <div class="${passed ? 'status-pass' : 'status-fail'}">${passed ? '✓ PASS' : '✗ FAIL'}</div>
+                <div class="text-sm mb-2">Rendered output:</div>
+                <div class="border border-gray-300 p-3 rounded" style="background: white;">${rendered}</div>
+                <div class="text-sm mt-2">${passed ? 'Safe markdown renders correctly' : 'Markdown not rendering correctly!'}</div>
+            `;
+
+            recordResult('Safe Markdown', passed);
+        }
+
+        function runTest7() {
+            const container = document.getElementById('test7-result');
+            const testUrls = [
+                { url: 'javascript:alert("XSS")', expected: null, name: 'javascript:' },
+                { url: 'data:text/html,<script>alert("XSS")</script>', expected: null, name: 'data:' },
+                { url: 'vbscript:msgbox("XSS")', expected: null, name: 'vbscript:' },
+                { url: 'https://example.com', expected: 'https://example.com', name: 'https: (safe)' },
+                { url: 'mailto:user@example.com', expected: 'mailto:user@example.com', name: 'mailto: (safe)' }
+            ];
+
+            let allPassed = true;
+            let results = testUrls.map(test => {
+                const result = sanitizeUrl(test.url);
+                const passed = result === test.expected || (test.expected && result === test.expected);
+                if (!passed) allPassed = false;
+
+                return `<div class="text-sm ${passed ? 'status-pass' : 'status-fail'}">
+                    ${passed ? '✓' : '✗'} ${test.name}: ${result === null ? 'blocked' : 'allowed'}
+                </div>`;
+            }).join('');
+
+            container.innerHTML = `
+                <div class="${allPassed ? 'status-pass' : 'status-fail'}">${allPassed ? '✓ PASS' : '✗ FAIL'}</div>
+                ${results}
+                <div class="text-sm mt-2">${allPassed ? 'All URLs properly validated' : 'Some URLs not properly validated!'}</div>
+            `;
+
+            recordResult('URL Sanitization', allPassed);
+        }
+
+        function runTest8() {
+            const container = document.getElementById('test8-result');
+            const specialChars = '< > & " \' /';
+            const escaped = escapeHtml(specialChars);
+
+            const passed = escaped.includes('&lt;') &&
+                          escaped.includes('&gt;') &&
+                          escaped.includes('&amp;') &&
+                          escaped.includes('&quot;');
+
+            container.innerHTML = `
+                <div class="${passed ? 'status-pass' : 'status-fail'}">${passed ? '✓ PASS' : '✗ FAIL'}</div>
+                <div class="xss-attempt">Input: ${escapeHtml(specialChars)}</div>
+                <div class="xss-attempt">Output: ${escapeHtml(escaped)}</div>
+                <div class="text-sm mt-2">${passed ? 'Special characters properly escaped' : 'Special characters not properly escaped!'}</div>
+            `;
+
+            recordResult('HTML Entity Escaping', passed);
+        }
+
+        // Auto-run all tests on load
+        window.addEventListener('load', () => {
+            console.log('XSS Protection Test Suite initialized');
+        });
+    </script>
+</body>
+</html>

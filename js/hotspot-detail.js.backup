@@ -1,6 +1,5 @@
 /**
  * Hotspot Detail Page - Shows individual hotspot information
- * XSS-SAFE VERSION with comprehensive input sanitization
  */
 
 let currentHotspot = null;
@@ -79,18 +78,14 @@ function showError() {
  * Render hotspot details
  */
 function renderHotspotDetails() {
-    // Use textContent for safe text insertion
-    setTextContentSafe(document.getElementById('hotspot-name'), currentHotspot.name);
-    setTextContentSafe(document.getElementById('species-count'), currentHotspot.numSpecies);
+    document.getElementById('hotspot-name').textContent = currentHotspot.name;
+    document.getElementById('species-count').textContent = currentHotspot.numSpecies;
 
-    // Update eBird link with URL sanitization
+    // Update eBird link
     const ebirdLink = document.getElementById('ebird-link');
-    const safeUrl = sanitizeUrl(`https://ebird.org/hotspot/${escapeHtml(currentHotspot.locId)}`);
-    if (safeUrl) {
-        ebirdLink.href = safeUrl;
-    }
+    ebirdLink.href = `https://ebird.org/hotspot/${currentHotspot.locId}`;
 
-    // Update page title (safe - browser handles escaping)
+    // Update page title
     document.title = `${currentHotspot.name} - BirdFinder`;
 }
 
@@ -109,8 +104,8 @@ function renderVisitorInfo() {
             'roadside': 'Roadside parking',
             'none': 'No parking available'
         };
-        const parkingType = escapeHtml(parkingTypes[currentHotspot.parking.type] || 'Parking available');
-        const parkingNotes = currentHotspot.parking.notes ? escapeHtml(currentHotspot.parking.notes) : '';
+        const parkingType = parkingTypes[currentHotspot.parking.type] || 'Parking available';
+        const parkingNotes = currentHotspot.parking.notes;
 
         infoItems.push(`
             <div class="flex items-start gap-3">
@@ -127,7 +122,6 @@ function renderVisitorInfo() {
 
     // Hours
     if (currentHotspot.hours) {
-        const hoursText = escapeHtml(currentHotspot.hours);
         infoItems.push(`
             <div class="flex items-start gap-3">
                 <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: #334155;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -135,7 +129,7 @@ function renderVisitorInfo() {
                 </svg>
                 <div>
                     <div class="font-medium">Hours</div>
-                    <div class="text-sm text-gray-600 mt-1">${hoursText}</div>
+                    <div class="text-sm text-gray-600 mt-1">${currentHotspot.hours}</div>
                 </div>
             </div>
         `);
@@ -143,14 +137,13 @@ function renderVisitorInfo() {
 
     // Fee
     if (currentHotspot.fee !== null && currentHotspot.fee !== undefined) {
-        const feeText = escapeHtml(currentHotspot.fee || 'Free');
         infoItems.push(`
             <div class="flex items-start gap-3">
                 <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: #334155;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    <path stroke-linnejoin="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
                 <div>
-                    <div class="font-medium">${feeText}</div>
+                    <div class="font-medium">${currentHotspot.fee || 'Free'}</div>
                 </div>
             </div>
         `);
@@ -179,7 +172,7 @@ function renderVisitorInfo() {
         };
 
         const featuresList = currentHotspot.features
-            .map(f => escapeHtml(featureLabels[f] || f))
+            .map(f => featureLabels[f] || f)
             .join(', ');
 
         infoItems.push(`
@@ -199,7 +192,7 @@ function renderVisitorInfo() {
 }
 
 /**
- * Render "How to Bird Here" content with XSS protection
+ * Render "How to Bird Here" content
  */
 function renderHowToBird() {
     const section = document.getElementById('how-to-bird-section');
@@ -207,14 +200,40 @@ function renderHowToBird() {
 
     if (currentHotspot.howToBird) {
         section.classList.remove('hidden');
-        // Use safe markdown converter that escapes all HTML
-        const safeHtml = markdownToHtmlSafe(currentHotspot.howToBird);
-        container.innerHTML = safeHtml;
+        // Convert markdown to HTML (basic implementation)
+        const htmlContent = markdownToHtml(currentHotspot.howToBird);
+        container.innerHTML = htmlContent;
     }
 }
 
 /**
- * Render habitats with XSS protection
+ * Basic markdown to HTML converter
+ */
+function markdownToHtml(markdown) {
+    let html = markdown;
+
+    // Headers
+    html = html.replace(/^### (.*$)/gim, '<h3 class="text-lg font-semibold mt-4 mb-2">$1</h3>');
+    html = html.replace(/^## (.*$)/gim, '<h2 class="text-xl font-bold mt-6 mb-3">$1</h2>');
+    html = html.replace(/^# (.*$)/gim, '<h1 class="text-2xl font-bold mt-6 mb-4">$1</h1>');
+
+    // Bold
+    html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+    // Italic
+    html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
+
+    // Paragraphs (double line breaks)
+    html = html.split('\n\n').map(para => {
+        if (para.trim().startsWith('<h')) return para;
+        return `<p class="mb-3 text-gray-700 leading-relaxed">${para.trim()}</p>`;
+    }).join('\n');
+
+    return html;
+}
+
+/**
+ * Render habitats
  */
 function renderHabitats() {
     const section = document.getElementById('habitats-section');
@@ -237,7 +256,7 @@ function renderHabitats() {
         };
 
         const habitatBadges = currentHotspot.habitats.map(habitat => {
-            const label = escapeHtml(habitatLabels[habitat] || habitat);
+            const label = habitatLabels[habitat] || habitat;
             return `<span class="px-3 py-1.5 text-sm font-medium rounded-lg bg-green-100 text-green-800">${label}</span>`;
         }).join('');
 
@@ -246,7 +265,7 @@ function renderHabitats() {
 }
 
 /**
- * Render birding tips with XSS protection
+ * Render birding tips
  */
 function renderTips() {
     const section = document.getElementById('tips-section');
@@ -256,13 +275,12 @@ function renderTips() {
         section.classList.remove('hidden');
 
         const tipsList = currentHotspot.tips.map(tip => {
-            const safeTip = escapeHtml(tip);
             return `
                 <li class="flex items-start gap-3">
                     <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: #CA8A04;" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                     </svg>
-                    <span class="text-gray-700">${safeTip}</span>
+                    <span class="text-gray-700">${tip}</span>
                 </li>
             `;
         }).join('');
@@ -272,7 +290,7 @@ function renderTips() {
 }
 
 /**
- * Render external links with URL and XSS protection
+ * Render external links
  */
 function renderLinks() {
     const section = document.getElementById('links-section');
@@ -282,25 +300,16 @@ function renderLinks() {
         section.classList.remove('hidden');
 
         const linksList = currentHotspot.links.map(link => {
-            const safeUrl = sanitizeUrl(link.url);
-            const safeLabel = escapeHtml(link.label);
-
-            // Skip links with invalid URLs
-            if (!safeUrl) {
-                console.warn('Skipped link with invalid URL:', link);
-                return '';
-            }
-
             return `
-                <a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer"
+                <a href="${link.url}" target="_blank" rel="noopener noreferrer"
                    class="flex items-center gap-2 text-blue-600 hover:text-blue-800 hover:underline">
-                    <span>${safeLabel}</span>
+                    <span>${link.label}</span>
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                     </svg>
                 </a>
             `;
-        }).filter(html => html).join(''); // Filter out empty strings
+        }).join('');
 
         container.innerHTML = linksList;
     }
