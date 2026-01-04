@@ -9,6 +9,18 @@ throughout the pipeline and fail fast with clear error messages.
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 
+# Import constants for validation
+from .constants import (
+    WEEKS_PER_YEAR,
+    WEEK_INDEX_MIN,
+    WEEK_INDEX_MAX,
+    FREQUENCY_MIN,
+    FREQUENCY_MAX,
+    SPECIES_CODE_LENGTH,
+    VALID_CATEGORIES,
+    VALID_PATTERN_TYPES
+)
+
 
 class ValidationError(Exception):
     """Custom exception for validation failures."""
@@ -41,9 +53,9 @@ def validate_frequency_array(frequencies: List[float], species_name: str = "Unkn
             f"got {type(frequencies).__name__}"
         )
 
-    if len(frequencies) != 48:
+    if len(frequencies) != WEEKS_PER_YEAR:
         raise ValidationError(
-            f"Frequency array must have exactly 48 values (one per week) for species: {species_name}, "
+            f"Frequency array must have exactly {WEEKS_PER_YEAR} values (one per week) for species: {species_name}, "
             f"got {len(frequencies)} values"
         )
 
@@ -54,9 +66,9 @@ def validate_frequency_array(frequencies: List[float], species_name: str = "Unkn
                 f"got {type(freq).__name__}: {freq}"
             )
 
-        if freq < 0.0 or freq > 1.0:
+        if freq < FREQUENCY_MIN or freq > FREQUENCY_MAX:
             raise ValidationError(
-                f"Frequency value at week {i} must be in range [0.0, 1.0] for species: {species_name}, "
+                f"Frequency value at week {i} must be in range [{FREQUENCY_MIN}, {FREQUENCY_MAX}] for species: {species_name}, "
                 f"got {freq}"
             )
 
@@ -78,9 +90,9 @@ def validate_week_index(week: int, context: str = "") -> None:
             f"got {type(week).__name__}: {week}"
         )
 
-    if week < 0 or week > 47:
+    if week < WEEK_INDEX_MIN or week > WEEK_INDEX_MAX:
         raise ValidationError(
-            f"Week index must be in range [0, 47]{' (' + context + ')' if context else ''}, "
+            f"Week index must be in range [{WEEK_INDEX_MIN}, {WEEK_INDEX_MAX}]{' (' + context + ')' if context else ''}, "
             f"got {week}"
         )
 
@@ -129,24 +141,16 @@ def validate_category(category: str, species_name: str = "Unknown") -> None:
     Raises:
         ValidationError: If category is invalid
     """
-    valid_categories = {
-        'resident',
-        'single-season',
-        'two-passage-migrant',
-        'vagrant',
-        'irregular'
-    }
-
     if not isinstance(category, str):
         raise ValidationError(
             f"Category must be a string for species: {species_name}, "
             f"got {type(category).__name__}: {category}"
         )
 
-    if category not in valid_categories:
+    if category not in VALID_CATEGORIES:
         raise ValidationError(
             f"Invalid category '{category}' for species: {species_name}. "
-            f"Must be one of: {', '.join(sorted(valid_categories))}"
+            f"Must be one of: {', '.join(sorted(VALID_CATEGORIES))}"
         )
 
 
@@ -161,24 +165,16 @@ def validate_pattern_type(pattern_type: str, species_name: str = "Unknown") -> N
     Raises:
         ValidationError: If pattern type is invalid
     """
-    valid_patterns = {
-        'year-round',
-        'irregular',
-        'two-passage',
-        'summer',
-        'winter'
-    }
-
     if not isinstance(pattern_type, str):
         raise ValidationError(
             f"Pattern type must be a string for species: {species_name}, "
             f"got {type(pattern_type).__name__}: {pattern_type}"
         )
 
-    if pattern_type not in valid_patterns:
+    if pattern_type not in VALID_PATTERN_TYPES:
         raise ValidationError(
             f"Invalid pattern type '{pattern_type}' for species: {species_name}. "
-            f"Must be one of: {', '.join(sorted(valid_patterns))}"
+            f"Must be one of: {', '.join(sorted(VALID_PATTERN_TYPES))}"
         )
 
 
@@ -204,9 +200,9 @@ def validate_species_code(code: str, species_name: str = "Unknown") -> None:
             f"got {type(code).__name__}: {code}"
         )
 
-    if len(code) != 6:
+    if len(code) != SPECIES_CODE_LENGTH:
         raise ValidationError(
-            f"Species code must be exactly 6 characters for species: {species_name}, "
+            f"Species code must be exactly {SPECIES_CODE_LENGTH} characters for species: {species_name}, "
             f"got {len(code)} characters: '{code}'"
         )
 

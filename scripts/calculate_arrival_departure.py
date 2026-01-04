@@ -12,6 +12,11 @@ import sys
 # Add parent directory to path to import utils
 sys.path.insert(0, str(Path(__file__).parent))
 from utils.valley_detection import detect_valleys
+from utils.constants import (
+    WEEKS_PER_YEAR,
+    ARRIVAL_THRESHOLD_PEAK_RATIO,
+    ARRIVAL_THRESHOLD_ABSOLUTE
+)
 
 
 def week_to_date_range(week_num):
@@ -126,9 +131,9 @@ def calculate_timing_two_passage(species_name, frequencies, category, pattern_ty
         winter_valley = valleys[1]
 
     peak_freq = max(frequencies)
-    # Lower threshold to 10% of peak (or 0.1% absolute) to better detect arrivals/departures
-    # in narrow presence windows between valleys
-    threshold = max(peak_freq * 0.10, 0.001)
+    # Lower threshold to ARRIVAL_THRESHOLD_PEAK_RATIO of peak (or ARRIVAL_THRESHOLD_ABSOLUTE absolute)
+    # to better detect arrivals/departures in narrow presence windows between valleys
+    threshold = max(peak_freq * ARRIVAL_THRESHOLD_PEAK_RATIO, ARRIVAL_THRESHOLD_ABSOLUTE)
 
     # Spring passage: after winter valley ends, before summer valley begins
     winter_valley_end = winter_valley[1]
@@ -351,9 +356,9 @@ def calculate_timing_three_valley_migrant(species_name, frequencies, category, p
     winter_valley_2 = valleys[2]   # Second winter valley (wraps to beginning)
 
     peak_freq = max(frequencies)
-    # Lower threshold to 10% of peak (or 0.1% absolute) to better detect arrivals/departures
-    # in narrow presence windows between valleys
-    threshold = max(peak_freq * 0.10, 0.001)
+    # Lower threshold to ARRIVAL_THRESHOLD_PEAK_RATIO of peak (or ARRIVAL_THRESHOLD_ABSOLUTE absolute)
+    # to better detect arrivals/departures in narrow presence windows between valleys
+    threshold = max(peak_freq * ARRIVAL_THRESHOLD_PEAK_RATIO, ARRIVAL_THRESHOLD_ABSOLUTE)
 
     # Spring passage: between first winter valley end and summer valley start
     spring_start_search = winter_valley_1[1] + 1

@@ -170,6 +170,118 @@ Error: eBird data JSON file not found: /path/to/missing/file.json
 
 ---
 
+## 2025-01-03: Create Constants Module for Magic Numbers
+
+**Issue:** Magic numbers and threshold values were scattered throughout the codebase, making them difficult to understand, maintain, and adjust.
+
+**Problem:**
+- Hardcoded thresholds (0.15, 0.005, 0.10, 0.001, etc.) with no context
+- Week ranges (40-47, 0-11, 16-35) repeated multiple times
+- Category and pattern type strings duplicated across files
+- No single source of truth for configuration values
+
+**Solution:** Created centralized constants module with well-documented, named constants.
+
+### Changes Made
+
+1. **Created constants module:**
+   - [scripts/utils/constants.py](scripts/utils/constants.py) - Centralized constants with comprehensive documentation
+   - Organized into logical sections: week structure, seasonal ranges, thresholds, categories, flags
+
+2. **Updated [scripts/classify_migration_patterns.py](scripts/classify_migration_patterns.py):**
+   - Replaced magic numbers with named constants
+   - Used `MIN_WEEKS_PRESENCE` instead of `10`
+   - Used `MIN_PEAK_FREQUENCY` instead of `0.005`
+   - Used `VALLEY_TYPE_WINTER`/`VALLEY_TYPE_SUMMER` instead of string literals
+   - Used category/pattern type constants
+
+3. **Updated [scripts/calculate_arrival_departure.py](scripts/calculate_arrival_departure.py):**
+   - Used `ARRIVAL_THRESHOLD_PEAK_RATIO` instead of `0.10`
+   - Used `ARRIVAL_THRESHOLD_ABSOLUTE` instead of `0.001`
+   - Used `WEEKS_PER_YEAR` instead of hardcoded `48`
+
+4. **Updated [scripts/utils/validation.py](scripts/utils/validation.py):**
+   - Used `WEEKS_PER_YEAR` instead of `48`
+   - Used `WEEK_INDEX_MIN`/`WEEK_INDEX_MAX` instead of `0`/`47`
+   - Used `FREQUENCY_MIN`/`FREQUENCY_MAX` instead of `0.0`/`1.0`
+   - Used `SPECIES_CODE_LENGTH` instead of `6`
+   - Used `VALID_CATEGORIES` and `VALID_PATTERN_TYPES` sets
+
+### Constants Defined
+
+**Week Structure:**
+- `WEEKS_PER_YEAR = 48`
+- `WEEK_INDEX_MIN = 0`, `WEEK_INDEX_MAX = 47`
+- `WINTER_WEEKS_START = 44`, `WINTER_WEEKS_END = 7`
+- `SUMMER_WEEKS_START = 16`, `SUMMER_WEEKS_END = 35`
+
+**Valley Detection:**
+- `VALLEY_MIN_LENGTH_WEEKS = 4`
+- `VALLEY_THRESHOLD_PEAK_RATIO = 0.15` (15% of peak)
+- `VALLEY_THRESHOLD_ABSOLUTE = 0.005` (0.5%)
+
+**Arrival/Departure:**
+- `ARRIVAL_THRESHOLD_PEAK_RATIO = 0.10` (10% of peak)
+- `ARRIVAL_THRESHOLD_ABSOLUTE = 0.001` (0.1%)
+- `MIN_PEAK_FREQUENCY = 0.005` (0.5%)
+
+**Species Classification:**
+- `MIN_WEEKS_PRESENCE = 10`
+- `RESIDENT_MIN_MAX_RATIO_THRESHOLD = 0.20` (20%)
+- `OVERWINTERING_MIN_WEEKS = 8`
+
+**Data Validation:**
+- `FREQUENCY_MIN = 0.0`, `FREQUENCY_MAX = 1.0`
+- `SPECIES_CODE_LENGTH = 6`
+
+**Categories & Types:**
+- `VALID_CATEGORIES = {resident, single-season, two-passage-migrant, vagrant, irregular}`
+- `VALID_PATTERN_TYPES = {year-round, irregular, two-passage, summer, winter}`
+
+### Benefits
+
+✅ **Self-documenting** - Constant names explain their purpose
+✅ **Single source of truth** - Change once, applies everywhere
+✅ **Type safety** - Using sets for valid values prevents typos
+✅ **Easier tuning** - All thresholds in one place for experimentation
+✅ **Better IDE support** - Auto-completion for constant names
+✅ **Comprehensible** - Comments explain what each threshold means
+
+### Testing
+
+- ✅ Full pipeline runs successfully
+- ✅ All validation tests pass
+- ✅ Output identical to before refactoring (340 species)
+- ✅ Constants properly imported across all modules
+
+### Example Improvements
+
+**Before:**
+```python
+if metrics['weeks_with_presence'] < 10 or metrics['peak_frequency'] < 0.005:
+    category = 'vagrant'
+```
+
+**After:**
+```python
+if metrics['weeks_with_presence'] < MIN_WEEKS_PRESENCE or metrics['peak_frequency'] < MIN_PEAK_FREQUENCY:
+    category = CATEGORY_VAGRANT
+```
+
+Much more readable and maintainable!
+
+### Files Modified
+
+- `scripts/classify_migration_patterns.py`
+- `scripts/calculate_arrival_departure.py`
+- `scripts/utils/validation.py`
+
+### Files Created
+
+- `scripts/utils/constants.py` (180 lines)
+
+---
+
 ## Future Refactoring Tasks
 
 Based on code review, the following improvements are recommended (in priority order):
@@ -178,7 +290,7 @@ Based on code review, the following improvements are recommended (in priority or
 
 1. ✅ **Extract duplicate valley detection code** to shared module (COMPLETED)
 2. ✅ **Add input validation** throughout Python pipeline (COMPLETED)
-3. ⬜ **Create constants module** for magic numbers (thresholds, week ranges)
+3. ✅ **Create constants module** for magic numbers (thresholds, week ranges) (COMPLETED)
 4. ⬜ **Add error recovery** in JavaScript data loading
 5. ⬜ **Fix XSS vulnerability** in markdown rendering
 6. ⬜ **Add automated tests** for core algorithms

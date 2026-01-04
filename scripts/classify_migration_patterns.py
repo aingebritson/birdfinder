@@ -28,6 +28,42 @@ from utils.validation import (
     validate_valley_tuple,
     validate_week_index
 )
+from utils.constants import (
+    # Week ranges
+    WINTER_WEEKS_START, WINTER_WEEKS_END,
+    SUMMER_WEEKS_START, SUMMER_WEEKS_END,
+    # Thresholds
+    MIN_WEEKS_PRESENCE,
+    MIN_PEAK_FREQUENCY,
+    RESIDENT_MIN_MAX_RATIO_THRESHOLD,
+    RESIDENT_SEASONAL_VARIATION_THRESHOLD,
+    OVERWINTERING_MIN_WEEKS,
+    ARRIVAL_THRESHOLD_ABSOLUTE,
+    # Categories
+    CATEGORY_RESIDENT,
+    CATEGORY_SINGLE_SEASON,
+    CATEGORY_TWO_PASSAGE,
+    CATEGORY_VAGRANT,
+    CATEGORY_IRREGULAR,
+    # Pattern types
+    PATTERN_YEAR_ROUND,
+    PATTERN_IRREGULAR,
+    PATTERN_TWO_PASSAGE,
+    PATTERN_SUMMER,
+    PATTERN_WINTER,
+    # Valley types
+    VALLEY_TYPE_WINTER,
+    VALLEY_TYPE_SUMMER,
+    # Flags
+    FLAG_LOW_PEAK_FREQUENCY,
+    FLAG_SEASONAL_VARIATION,
+    FLAG_MIN_MAX_NEAR_BOUNDARY,
+    FLAG_CLASSIC_BIMODAL,
+    FLAG_OVERWINTERING,
+    FLAG_THREE_VALLEYS_IRREGULAR,
+    FLAG_CLOSE_VALLEYS,
+    FLAG_WINTER_BREEDING
+)
 
 
 def classify_valley_timing(valley_start, valley_end):
@@ -42,8 +78,8 @@ def classify_valley_timing(valley_start, valley_end):
     # Expanded definitions to be more lenient
     # Winter: weeks 40-47 (Oct-Dec) + 0-11 (Jan-Mar)
     winter_weeks = set(range(40, 48)) | set(range(0, 12))
-    # Summer: weeks 16-35 (late Apr-early Sep)
-    summer_weeks = set(range(16, 36))
+    # Summer: weeks SUMMER_WEEKS_START to SUMMER_WEEKS_END + 1
+    summer_weeks = set(range(SUMMER_WEEKS_START, SUMMER_WEEKS_END + 1))
 
     valley_weeks = set(range(valley_start, valley_end + 1))
 
@@ -53,9 +89,9 @@ def classify_valley_timing(valley_start, valley_end):
 
     # More lenient rule: 40% threshold instead of 50%
     if winter_count >= total_valley_weeks * 0.4:
-        return 'winter'
+        return VALLEY_TYPE_WINTER
     elif summer_count >= total_valley_weeks * 0.4:
-        return 'summer'
+        return VALLEY_TYPE_SUMMER
     else:
         return 'mixed'
 
@@ -65,12 +101,12 @@ def detect_overwintering(frequencies):
     Detect if a species is overwintering (present in winter but absent in summer).
 
     Criteria:
-    - Frequency > 0.1% in both week 0 AND week 47
-    - Has at least 8 consecutive weeks < 0.1% in middle of year
+    - Frequency > ARRIVAL_THRESHOLD_ABSOLUTE in both week 0 AND week 47
+    - Has at least OVERWINTERING_MIN_WEEKS consecutive weeks < ARRIVAL_THRESHOLD_ABSOLUTE in middle of year
 
     Returns: True if overwintering, False otherwise
     """
-    threshold = 0.001  # 0.1%
+    threshold = ARRIVAL_THRESHOLD_ABSOLUTE
 
     # Check if present at both ends of the year
     if frequencies[0] <= threshold or frequencies[47] <= threshold:
@@ -87,7 +123,7 @@ def detect_overwintering(frequencies):
         else:
             current_consecutive = 0
 
-    return max_consecutive_low >= 8
+    return max_consecutive_low >= OVERWINTERING_MIN_WEEKS
 
 
 def calculate_metrics(species_data):
@@ -160,19 +196,19 @@ def classify_species(metrics):
 
     # 1. Resident: 0 valleys (never has 4+ consecutive weeks below 15% of peak)
     if metrics['num_valleys'] == 0:
-        category = 'resident'
-        pattern_type = 'year-round'
+        category = CATEGORY_RESIDENT
+        pattern_type = PATTERN_YEAR_ROUND
 
         # Flag if there's seasonal variation
         if metrics['min_max_ratio'] < 0.5:
-            flags.append('seasonal_variation')
+            flags.append(FLAG_SEASONAL_VARIATION)
 
-    # 2. Vagrant: Fewer than 10 weeks with any presence OR peak frequency below 0.5%
-    elif metrics['weeks_with_presence'] < 10 or metrics['peak_frequency'] < 0.005:
-        category = 'vagrant'
-        pattern_type = 'irregular'
-        if metrics['peak_frequency'] < 0.005:
-            flags.append('low_peak_frequency')
+    # 2. Vagrant: Fewer than MIN_WEEKS_PRESENCE weeks with any presence OR peak frequency below MIN_PEAK_FREQUENCY
+    elif metrics['weeks_with_presence'] < MIN_WEEKS_PRESENCE or metrics['peak_frequency'] < MIN_PEAK_FREQUENCY:
+        category = CATEGORY_VAGRANT
+        pattern_type = PATTERN_IRREGULAR
+        if metrics['peak_frequency'] < MIN_PEAK_FREQUENCY:
+            flags.append(FLAG_LOW_PEAK_FREQUENCY)
 
     # 3. Two-passage migrant: 2 valleys (one summer, one winter)
     elif metrics['num_valleys'] == 2:
