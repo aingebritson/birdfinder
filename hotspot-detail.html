@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotspot Detail - BirdFinder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-6">
+            <div class="flex items-center gap-4">
+                <a href="hotspots.html" class="font-medium">
+                    ← Back
+                </a>
+                <div>
+                    <h1 class="text-3xl font-bold" id="hotspot-name">Loading...</h1>
+                    <p class="mt-1" style="opacity: 0.9;">Washtenaw County, Michigan</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Quick Links -->
+        <div class="flex gap-4 mb-6">
+            <a href="index.html" class="font-medium pb-1" style="color: #6B7280;">
+                This Week
+            </a>
+            <a href="browse.html" class="font-medium pb-1" style="color: #6B7280;">
+                Browse All Species
+            </a>
+            <a href="hotspots.html" id="hotspots-link" class="nav-active font-medium pb-1">
+                Hotspots
+            </a>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loading" class="text-center py-12">
+            <div style="color: #9CA3AF;">Loading hotspot data...</div>
+        </div>
+
+        <!-- Error State -->
+        <div id="error" class="hidden">
+            <div class="bg-red-50 border border-red-200 rounded-lg p-6 text-center">
+                <p class="text-red-800 font-medium">Hotspot not found</p>
+                <p class="text-red-600 text-sm mt-2">The hotspot you're looking for doesn't exist in our database.</p>
+                <a href="hotspots.html" class="inline-block mt-4 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700">
+                    Back to Hotspots
+                </a>
+            </div>
+        </div>
+
+        <!-- Hotspot Content -->
+        <div id="hotspot-content" class="hidden space-y-6">
+            <!-- Stats Overview -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <div class="text-sm font-medium" style="color: #6B7280;">Species Recorded</div>
+                        <div class="text-3xl font-bold mt-1" id="species-count">0</div>
+                    </div>
+                    <a id="ebird-link" href="#" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                        <span>View on eBird</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Visitor Information -->
+            <section id="visitor-info-section" class="bg-white rounded-lg shadow-sm p-6">
+                <h2 class="text-xl font-bold mb-4">Visitor Information</h2>
+                <div id="visitor-info" class="space-y-3">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- How to Bird Here -->
+            <section id="how-to-bird-section" class="hidden bg-white rounded-lg shadow-sm p-6">
+                <h2 class="text-xl font-bold mb-4">How to Bird Here</h2>
+                <div id="how-to-bird" class="prose prose-sm max-w-none">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Habitats -->
+            <section id="habitats-section" class="hidden bg-white rounded-lg shadow-sm p-6">
+                <h2 class="text-xl font-bold mb-4">Habitats</h2>
+                <div id="habitats" class="flex flex-wrap gap-2">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Birding Tips -->
+            <section id="tips-section" class="hidden bg-white rounded-lg shadow-sm p-6">
+                <h2 class="text-xl font-bold mb-4">Birding Tips</h2>
+                <ul id="tips" class="space-y-2">
+                    <!-- Will be populated by JavaScript -->
+                </ul>
+            </section>
+
+            <!-- Links -->
+            <section id="links-section" class="hidden bg-white rounded-lg shadow-sm p-6">
+                <h2 class="text-xl font-bold mb-4">Additional Resources</h2>
+                <div id="links" class="space-y-2">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="mt-12">
+        <div class="max-w-4xl mx-auto px-4 py-6 text-center text-sm">
+            <p>Bird phenology data from eBird</p>
+            <p class="mt-1">Washtenaw County, Michigan • 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/hotspot-detail.js"></script>
+</body>
+</html>
