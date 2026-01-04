@@ -6,13 +6,30 @@ Parse eBird barchart data into usable formats (CSV and JSON)
 import csv
 import json
 from pathlib import Path
+import sys
+
+# Add parent directory to path to import utils
+sys.path.insert(0, str(Path(__file__).parent))
+from utils.validation import (
+    ValidationError,
+    validate_frequency_array,
+    validate_species_name,
+    validate_file_exists,
+    validate_region_name
+)
 
 
 def parse_ebird_barchart(input_file):
     """Parse the eBird barchart text file into structured data"""
 
+    # Validate input file exists
+    validate_file_exists(input_file, "eBird barchart file")
+
     with open(input_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
+
+    if not lines:
+        raise ValidationError(f"eBird barchart file is empty: {input_file}")
 
     # Find the header information
     num_taxa = None
@@ -66,11 +83,18 @@ def parse_ebird_barchart(input_file):
         if 'sp.' in species_name or '/' in species_name:
             continue
 
+        # Validate frequency data
         if frequencies and len(frequencies) == 48:
-            species_data.append({
-                'species': species_name,
-                'frequencies': frequencies
-            })
+            try:
+                validate_species_name(species_name)
+                validate_frequency_array(frequencies, species_name)
+                species_data.append({
+                    'species': species_name,
+                    'frequencies': frequencies
+                })
+            except ValidationError as e:
+                print(f"Warning: Skipping species due to validation error: {e}")
+                continue
 
     return {
         'num_taxa': num_taxa,
@@ -144,6 +168,13 @@ def main():
         sys.exit(1)
 
     region_name = sys.argv[1]
+
+    # Validate region name
+    try:
+        validate_region_name(region_name)
+    except ValidationError as e:
+        print(f"Error: {e}")
+        sys.exit(1)
 
     # Determine project root (go up from scripts/ if needed)
     if Path.cwd().name == 'scripts':

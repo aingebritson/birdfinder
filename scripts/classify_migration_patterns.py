@@ -17,6 +17,17 @@ import sys
 # Add parent directory to path to import utils
 sys.path.insert(0, str(Path(__file__).parent))
 from utils.valley_detection import detect_valleys
+from utils.validation import (
+    ValidationError,
+    validate_frequency_array,
+    validate_species_name,
+    validate_category,
+    validate_pattern_type,
+    validate_file_exists,
+    validate_region_name,
+    validate_valley_tuple,
+    validate_week_index
+)
 
 
 def classify_valley_timing(valley_start, valley_end):
@@ -85,6 +96,10 @@ def calculate_metrics(species_data):
     frequencies = species_data['frequencies']
     species_name = species_data['species']
 
+    # Validate input data
+    validate_species_name(species_name)
+    validate_frequency_array(frequencies, species_name)
+
     # Basic frequency metrics
     peak_frequency = max(frequencies)
     min_frequency = min(frequencies)
@@ -101,7 +116,9 @@ def calculate_metrics(species_data):
 
     # Classify valley timing if applicable
     valley_types = []
-    for valley_start, valley_end in valleys:
+    for valley in valleys:
+        validate_valley_tuple(valley, species_name)
+        valley_start, valley_end = valley
         valley_type = classify_valley_timing(valley_start, valley_end)
         valley_types.append(valley_type)
 
@@ -300,6 +317,13 @@ def main():
 
     region_name = sys.argv[1]
 
+    # Validate region name
+    try:
+        validate_region_name(region_name)
+    except ValidationError as e:
+        print(f"Error: {e}")
+        sys.exit(1)
+
     # Determine project root (go up from scripts/ if needed)
     if Path.cwd().name == 'scripts':
         project_root = Path.cwd().parent
@@ -311,6 +335,13 @@ def main():
 
     # Load the JSON data
     json_file = intermediate_path / f"{region_name}_ebird_data.json"
+
+    # Validate input file exists
+    try:
+        validate_file_exists(json_file, "eBird data JSON file")
+    except ValidationError as e:
+        print(f"Error: {e}")
+        sys.exit(1)
 
     print(f"Loading data from: {json_file}")
     with open(json_file, 'r') as f:

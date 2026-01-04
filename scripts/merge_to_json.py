@@ -7,6 +7,16 @@ import csv
 import json
 import re
 from pathlib import Path
+import sys
+
+# Add parent directory to path to import utils
+sys.path.insert(0, str(Path(__file__).parent))
+from utils.validation import (
+    ValidationError,
+    validate_species_data_structure,
+    validate_file_exists,
+    validate_region_name
+)
 
 
 def generate_species_code(species_name, existing_codes=None):
@@ -26,8 +36,14 @@ def generate_species_code(species_name, existing_codes=None):
 
     # Generate base code
     if len(words) == 1:
-        # Single word: take first 6 letters
-        base_code = words[0][:6].lower()
+        # Single word: take first 6 letters, pad with repeated letters if needed
+        word = words[0].lower()
+        if len(word) >= 6:
+            base_code = word[:6]
+        else:
+            # Pad short words by repeating the word until we have 6 characters
+            # e.g., "ruff" -> "ruffruff"[:6] -> "ruffru"
+            base_code = (word * ((6 // len(word)) + 1))[:6]
     elif len(words) == 2:
         # Two words: 3 letters from each
         base_code = (words[0][:3] + words[1][:3]).lower()
@@ -163,6 +179,13 @@ def main():
 
     region_name = sys.argv[1]
 
+    # Validate region name
+    try:
+        validate_region_name(region_name)
+    except ValidationError as e:
+        print(f"Error: {e}")
+        sys.exit(1)
+
     # Determine project root (go up from scripts/ if needed)
     if Path.cwd().name == 'scripts':
         project_root = Path.cwd().parent
@@ -171,6 +194,20 @@ def main():
 
     region_path = project_root / "regions" / region_name
     intermediate_path = region_path / "intermediate"
+
+    # Validate input files exist
+    required_files = [
+        (intermediate_path / f"{region_name}_ebird_data_wide.csv", "Frequency data CSV"),
+        (intermediate_path / f"{region_name}_migration_pattern_classifications.csv", "Classification data CSV"),
+        (intermediate_path / f"{region_name}_migration_timing.csv", "Timing data CSV")
+    ]
+
+    for file_path, description in required_files:
+        try:
+            validate_file_exists(file_path, description)
+        except ValidationError as e:
+            print(f"Error: {e}")
+            sys.exit(1)
 
     # Load all three CSV files
     print("Loading data files...")
@@ -245,7 +282,12 @@ def main():
             'weekly_frequency': frequency_data[species_name]
         }
 
-        species_list.append(species_obj)
+        # Validate species data structure
+        try:
+            validate_species_data_structure(species_obj, len(species_list))
+            species_list.append(species_obj)
+        except ValidationError as e:
+            print(f"  Warning: Skipping species due to validation error: {e}")
 
     print(f"  Merged {len(species_list)} species")
 
