@@ -3,7 +3,13 @@
 Tests for validation utilities.
 """
 
-from validation import (
+import sys
+from pathlib import Path
+
+# Add scripts directory to path so utils can be imported as a package
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from utils.validation import (
     ValidationError,
     validate_frequency_array,
     validate_week_index,

@@ -588,6 +588,184 @@ container.innerHTML = markdownToHtmlSafe(userInput); // ✓ Safe!
 
 ---
 
+## 2025-01-04: Add Automated Tests for Core Algorithms
+
+**Issue:** Core algorithms in the Python pipeline lacked automated tests, making it risky to refactor or modify the logic. Manual testing was time-consuming and error-prone.
+
+**Problem:**
+- No automated tests for migration classification algorithm
+- No automated tests for arrival/departure timing calculation
+- Difficult to verify correctness after refactoring
+- No regression testing for edge cases
+- Manual testing required running full pipeline
+- Risk of breaking changes going unnoticed
+
+**Solution:** Created comprehensive test suites for the two most complex algorithms in the pipeline, with a unified test runner.
+
+### Changes Made
+
+1. **Created migration classification test suite:**
+   - [scripts/test_migration_classification.py](scripts/test_migration_classification.py) - 17 comprehensive tests
+   - Extracted classification logic from `classify_migration_patterns.py`
+   - Tests all 5 migration categories: resident, vagrant, single-season, two-passage-migrant, irregular
+   - Tests edge cases: minimum thresholds, wraparound valleys, zero frequencies
+   - Tests realistic patterns: American Robin, Baltimore Oriole, Yellow-rumped Warbler
+
+2. **Created arrival/departure timing test suite:**
+   - [scripts/test_arrival_departure.py](scripts/test_arrival_departure.py) - 15+ comprehensive tests
+   - Extracted timing detection logic from `calculate_arrival_departure.py`
+   - Tests arrival detection with various patterns
+   - Tests departure detection with sharp and gradual drop-offs
+   - Tests peak week detection with plateaus and multiple local maxima
+   - Tests year boundary wraparound for winter species
+   - Tests threshold calculations (10% of peak vs 0.1% absolute minimum)
+   - Tests realistic patterns: Baltimore Oriole (summer), Dark-eyed Junco (winter)
+
+3. **Created unified test runner:**
+   - [scripts/run_tests.py](scripts/run_tests.py) - Runs all test suites with colored output
+   - Executes 5 test suites: species code generation, valley detection, migration classification, arrival/departure timing, input validation
+   - Provides summary with pass/fail/skip counts
+   - Color-coded output for easy scanning
+   - Exit codes for CI/CD integration
+
+4. **Fixed import issue in validation tests:**
+   - Updated [scripts/utils/test_validation.py](scripts/utils/test_validation.py) to use correct import path
+   - Fixed relative import issue when running tests directly
+
+### Test Coverage
+
+**Migration Classification Tests (17 tests):**
+- ✅ Resident classification (3 tests): consistent presence, high min/max ratio, stable presence
+- ✅ Vagrant classification (3 tests): rare species, low peak, brief presence
+- ✅ Single-season classification (2 tests): summer breeder, winter resident
+- ✅ Two-passage migrant classification (1 test): spring/fall migration
+- ✅ Irregular classification (1 test): erratic presence with 3+ valleys
+- ✅ Edge cases (4 tests): boundary thresholds, zero frequencies, wraparound valleys
+- ✅ Realistic patterns (3 tests): Robin (resident), Oriole (single-season), Warbler (two-passage)
+
+**Arrival/Departure Timing Tests (15 tests):**
+- ✅ Simple arrival detection (2 tests): spring arrival, gradual buildup
+- ✅ Simple departure detection (2 tests): fall departure, sharp drop-off
+- ✅ Peak week detection (3 tests): clear peak, multiple local maxima, plateau
+- ✅ Wraparound scenarios (2 tests): winter species crossing year boundary
+- ✅ Threshold calculations (2 tests): high peak (10%), low peak (0.1% absolute)
+- ✅ Edge cases (4 tests): immediate arrival, year boundary departure, no threshold crossing
+- ✅ Realistic patterns (2 tests): Baltimore Oriole timing, Dark-eyed Junco timing
+
+**All Test Suites (5 total):**
+- ✅ Species Code Generation Tests (6 test scenarios)
+- ✅ Valley Detection Algorithm Tests (6 tests)
+- ✅ Migration Pattern Classification Tests (17 tests)
+- ✅ Arrival/Departure Timing Tests (15 tests)
+- ✅ Input Validation Tests (24 tests)
+
+**Total: 68+ automated tests covering all core algorithms**
+
+### Benefits
+
+✅ **Regression protection** - Changes can't break existing behavior unnoticed
+✅ **Confidence in refactoring** - Can safely improve code structure
+✅ **Edge case coverage** - Tests verify boundary conditions and wraparound logic
+✅ **Documentation** - Tests show how algorithms are supposed to work
+✅ **Fast feedback** - Run all tests in ~2 seconds vs full pipeline minutes
+✅ **Realistic validation** - Tests use actual bird species patterns (Robin, Oriole, Junco, Warbler)
+✅ **CI/CD ready** - Exit codes and summary output for automation
+✅ **Maintainable** - Clear test names and comprehensive assertions
+
+### Testing
+
+- ✅ All 5 test suites pass (68+ total tests)
+- ✅ Test runner provides clear summary with color coding
+- ✅ Tests verify algorithm correctness with realistic bird patterns
+- ✅ Edge cases covered: year boundary, zero frequencies, threshold boundaries
+- ✅ Tests run independently without requiring full pipeline execution
+
+### Example Test Output
+
+```
+============================================================
+Bird Data Pipeline - Test Suite Runner
+============================================================
+
+✓ Species Code Generation Tests - ALL TESTS PASSED
+✓ Valley Detection Algorithm Tests - ALL TESTS PASSED
+✓ Migration Pattern Classification Tests - ALL TESTS PASSED
+✓ Arrival/Departure Timing Tests - ALL TESTS PASSED
+✓ Input Validation Tests - ALL TESTS PASSED
+
+============================================================
+Test Summary
+============================================================
+
+✓ Species Code Generation Tests
+✓ Valley Detection Algorithm Tests
+✓ Migration Pattern Classification Tests
+✓ Arrival/Departure Timing Tests
+✓ Input Validation Tests
+
+Total: 5 test suites
+Passed: 5
+
+ALL TESTS PASSED!
+```
+
+### Key Algorithm Tests
+
+**Migration Classification Example:**
+```python
+def test_realistic_patterns():
+    # American Robin - year-round resident
+    freq_robin = [0.65] * 48  # Consistent high presence
+    category, _ = classify_species(freq_robin)
+    assert category == CATEGORY_RESIDENT
+
+    # Baltimore Oriole - summer breeder
+    freq_oriole = [0.0] * 16 + [0.75] * 20 + [0.0] * 12
+    category, _ = classify_species(freq_oriole)
+    assert category == CATEGORY_SINGLE_SEASON
+
+    # Yellow-rumped Warbler - two-passage migrant
+    freq_warbler = create_two_passage_pattern()
+    category, _ = classify_species(freq_warbler)
+    assert category == CATEGORY_TWO_PASSAGE
+```
+
+**Arrival/Departure Timing Example:**
+```python
+def test_wraparound_scenarios():
+    # Winter peak crossing year boundary
+    freq = [0.0] * 48
+    freq[44] = 0.15  # Late fall arrival
+    freq[0] = 0.90   # Peak in January
+    freq[6] = 0.05   # Early spring departure
+
+    arrival = find_arrival_week(freq, valley_end=43, peak_week=0)
+    departure = find_departure_week(freq, peak_week=0, valley_start=8)
+
+    assert arrival == 44  # Arrival in late fall
+    assert departure == 6  # Departure in early spring
+```
+
+### Files Created
+
+- `scripts/test_migration_classification.py` (390 lines, 17 tests)
+- `scripts/test_arrival_departure.py` (403 lines, 15 tests)
+- `scripts/run_tests.py` (170 lines)
+
+### Files Modified
+
+- `scripts/utils/test_validation.py` (fixed import path)
+
+### Next Steps
+
+The automated test suite is now complete. Suggested improvements:
+- Consider adding integration tests that verify end-to-end pipeline output
+- Add performance benchmarks for large datasets
+- Set up CI/CD to run tests on every commit
+- Add test coverage reporting
+
+---
+
 ## Future Refactoring Tasks
 
 Based on code review, the following improvements are recommended (in priority order):
@@ -599,7 +777,7 @@ Based on code review, the following improvements are recommended (in priority or
 3. ✅ **Create constants module** for magic numbers (thresholds, week ranges) (COMPLETED)
 4. ✅ **Add error recovery** in JavaScript data loading (COMPLETED)
 5. ✅ **Fix XSS vulnerability** in markdown rendering (COMPLETED)
-6. ⬜ **Add automated tests** for core algorithms
+6. ✅ **Add automated tests** for core algorithms (COMPLETED)
 
 ### Medium Priority
 
