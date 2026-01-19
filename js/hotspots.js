@@ -197,10 +197,14 @@ function renderHotspots() {
 document.addEventListener('DOMContentLoaded', async () => {
     await loadHotspots();
 
-    // Set up search
+    // Set up search with debouncing to avoid excessive filtering on every keystroke
     const searchInput = document.getElementById('search');
+    const debouncedSearch = debounce((value) => {
+        searchHotspots(value);
+    }, SEARCH_DEBOUNCE_MS);
+
     searchInput.addEventListener('input', (e) => {
-        searchHotspots(e.target.value);
+        debouncedSearch(e.target.value);
     });
 
     // Set up sort buttons
