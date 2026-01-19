@@ -1086,6 +1086,110 @@ fall_timing = find_passage_timing(frequencies, fall_start, fall_end, threshold)
 
 ---
 
+## 2026-01-18: Add Debouncing to Search Inputs
+
+**Issue:** Search inputs triggered filtering on every keystroke, causing unnecessary computation and potential UI lag when filtering large lists.
+
+**Problem:**
+- Every keystroke in search boxes triggered immediate filtering
+- For fast typists, 5+ filter operations could fire for a single word
+- Wasted computation since intermediate results are immediately discarded
+- Could cause UI jank on slower devices or with larger datasets
+- No consistent pattern for input handling across the codebase
+
+**Solution:** Created a debounce utility module and applied it to all search inputs, delaying filter execution until 300ms after the user stops typing.
+
+### Changes Made
+
+1. **Created debounce utility module:**
+   - [birdfinder/js/debounce.js](birdfinder/js/debounce.js) - Reusable debounce function
+   - `debounce(func, wait)` - Returns debounced version of any function
+   - `SEARCH_DEBOUNCE_MS` constant (300ms) for consistent delay across pages
+
+2. **Updated [birdfinder/js/browse.js](birdfinder/js/browse.js):**
+   - Wrapped search handler with debounce
+   - Search now waits 300ms after last keystroke before filtering
+   - Category filter unchanged (immediate response appropriate for dropdowns)
+
+3. **Updated [birdfinder/js/hotspots.js](birdfinder/js/hotspots.js):**
+   - Wrapped search handler with debounce
+   - Same 300ms delay as browse page for consistency
+
+4. **Updated HTML files:**
+   - [birdfinder/browse.html](birdfinder/browse.html) - Added debounce.js script
+   - [birdfinder/hotspots.html](birdfinder/hotspots.html) - Added debounce.js script
+
+### How Debouncing Works
+
+**Before (no debouncing):**
+```
+User types "robin" → 5 filter operations:
+  "r"     → filter runs (wasted)
+  "ro"    → filter runs (wasted)
+  "rob"   → filter runs (wasted)
+  "robi"  → filter runs (wasted)
+  "robin" → filter runs (used)
+```
+
+**After (with 300ms debounce):**
+```
+User types "robin" → 1 filter operation:
+  "r" → "ro" → "rob" → "robi" → "robin" → (300ms pause) → filter runs once
+```
+
+### Benefits
+
+- **Reduced computation** - Filter only runs once per typing pause instead of every keystroke
+- **Smoother UI** - No flickering from rapid result updates
+- **Better performance** - Especially noticeable on slower devices or larger datasets
+- **Consistent pattern** - Same debounce delay (300ms) across all search inputs
+- **Reusable utility** - `debounce()` function can be used for other rapid events
+
+### Implementation Details
+
+```javascript
+// debounce.js
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+}
+
+const SEARCH_DEBOUNCE_MS = 300;
+
+// Usage in browse.js
+const debouncedSearch = debounce((value) => {
+    currentSearchQuery = value.toLowerCase();
+    updateResults();
+}, SEARCH_DEBOUNCE_MS);
+
+searchInput.addEventListener('input', (e) => {
+    debouncedSearch(e.target.value);
+});
+```
+
+### Testing
+
+- Browse page search debouncing works correctly
+- Hotspots page search debouncing works correctly
+- 300ms delay feels responsive while preventing excessive filtering
+- Category dropdown filter remains immediate (no debounce needed)
+
+### Files Modified
+
+- `birdfinder/js/browse.js`
+- `birdfinder/js/hotspots.js`
+- `birdfinder/browse.html`
+- `birdfinder/hotspots.html`
+
+### Files Created
+
+- `birdfinder/js/debounce.js` (25 lines)
+
+---
+
 ## Future Refactoring Tasks
 
 Based on code review, the following improvements are recommended (in priority order):
@@ -1103,7 +1207,7 @@ Based on code review, the following improvements are recommended (in priority or
 
 7. ✅ **Create configuration system** for regions (COMPLETED)
 8. ✅ **Refactor long functions** in arrival/departure calculation (COMPLETED)
-9. ⬜ **Add debouncing** to search inputs
+9. ✅ **Add debouncing** to search inputs (COMPLETED)
 10. ⬜ **Document data schemas** with TypeScript interfaces or JSON Schema
 
 ### Low Priority

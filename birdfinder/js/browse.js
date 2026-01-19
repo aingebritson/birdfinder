@@ -51,9 +51,14 @@ async function init() {
     const searchInput = document.getElementById('search');
     const categoryFilter = document.getElementById('category-filter');
 
-    searchInput.addEventListener('input', (e) => {
-        currentSearchQuery = e.target.value.toLowerCase();
+    // Debounce search to avoid excessive filtering on every keystroke
+    const debouncedSearch = debounce((value) => {
+        currentSearchQuery = value.toLowerCase();
         updateResults();
+    }, SEARCH_DEBOUNCE_MS);
+
+    searchInput.addEventListener('input', (e) => {
+        debouncedSearch(e.target.value);
     });
 
     categoryFilter.addEventListener('change', (e) => {
