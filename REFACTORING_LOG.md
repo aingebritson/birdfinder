@@ -953,6 +953,139 @@ Future enhancements for the configuration system:
 
 ---
 
+## 2026-01-18: Refactor Long Functions in Arrival/Departure Calculation
+
+**Issue:** The `calculate_arrival_departure.py` file contained extremely long functions with duplicated search logic, making the code hard to read, maintain, and test.
+
+**Problem:**
+- `calculate_timing_two_passage()` was 238 lines with repeated wraparound handling
+- `calculate_timing_three_valley_migrant()` was 89 lines duplicating timing logic
+- `calculate_timing_single_season_summer()` and `_winter()` were 60-70 lines each
+- Same patterns for finding arrival/peak/departure copied throughout
+- Complex year-wraparound logic duplicated in every function
+- Difficult to test individual timing operations
+
+**Solution:** Extracted reusable helper functions into a new `timing_helpers.py` module, then refactored all timing functions to use these helpers.
+
+### Changes Made
+
+1. **Created timing helpers module:**
+   - [scripts/utils/timing_helpers.py](scripts/utils/timing_helpers.py) - Reusable timing calculation functions
+   - `week_range()` - Generate week lists handling year wraparound
+   - `find_arrival_week()` - Find first week above threshold
+   - `find_peak_week()` - Find week with highest frequency
+   - `find_departure_week()` - Find last week above threshold
+   - `find_last_week_above_threshold()` - Search backwards for departure
+   - `calculate_threshold()` - Compute threshold from peak frequency
+   - `identify_valley_type()` - Determine if valley is winter or summer
+   - `get_presence_weeks()` - Get weeks when species is present
+   - `find_passage_timing()` - Calculate complete passage timing (arrival/peak/departure)
+
+2. **Refactored `calculate_timing_two_passage()`:**
+   - Reduced from 238 lines to 50 lines (79% reduction)
+   - Replaced manual wraparound handling with `week_range()`
+   - Replaced duplicated search loops with helper functions
+   - Used `find_passage_timing()` for spring and fall passages
+
+3. **Refactored `calculate_timing_three_valley_migrant()`:**
+   - Reduced from 89 lines to 52 lines (42% reduction)
+   - Now uses same helper functions as two-passage calculation
+   - Cleaner separation of spring and fall passage logic
+
+4. **Refactored `calculate_timing_single_season_summer()`:**
+   - Reduced from 63 lines to 41 lines (35% reduction)
+   - Uses `week_range()` for presence period calculation
+   - Uses helper functions for arrival/peak/departure
+
+5. **Refactored `calculate_timing_single_season_winter()`:**
+   - Reduced from 71 lines to 44 lines (38% reduction)
+   - Same pattern as summer function
+   - Cleaner wraparound handling
+
+6. **Created comprehensive test suite:**
+   - [scripts/utils/test_timing_helpers.py](scripts/utils/test_timing_helpers.py) - 26 tests
+   - Tests all helper functions including edge cases
+   - Tests wraparound scenarios
+   - Tests threshold calculations
+
+### Code Reduction Summary
+
+| Function | Before | After | Reduction |
+|----------|--------|-------|-----------|
+| `calculate_timing_two_passage()` | 238 lines | 50 lines | 79% |
+| `calculate_timing_three_valley_migrant()` | 89 lines | 52 lines | 42% |
+| `calculate_timing_single_season_summer()` | 63 lines | 41 lines | 35% |
+| `calculate_timing_single_season_winter()` | 71 lines | 44 lines | 38% |
+| **Total in main file** | **461 lines** | **187 lines** | **59%** |
+
+Plus added 296 lines in `timing_helpers.py` which are now reusable and tested.
+
+### Benefits
+
+✅ **DRY (Don't Repeat Yourself)** - Timing logic defined once, used everywhere
+✅ **Testable** - Each helper function can be tested in isolation
+✅ **Readable** - Functions now describe what they do, not how they loop
+✅ **Maintainable** - Fix a bug once, fixed everywhere
+✅ **Robust wraparound handling** - `week_range()` handles all year-boundary cases
+✅ **Self-documenting** - Helper function names explain their purpose
+✅ **Comprehensive tests** - 26 new tests covering edge cases
+
+### Testing
+
+- ✅ All 7 test suites pass (including new timing helpers tests)
+- ✅ 26 new tests for timing helper functions
+- ✅ Full pipeline runs successfully
+- ✅ Output JSON unchanged from before refactoring
+- ✅ Existing arrival/departure tests still pass
+
+### Example: Before vs After
+
+**Before (calculate_timing_two_passage, excerpt):**
+```python
+# Find spring arrival
+spring_arrival_week = None
+if spring_wraps:
+    for week in range(spring_start_search, 48):
+        if frequencies[week] >= threshold:
+            spring_arrival_week = week
+            break
+    if spring_arrival_week is None:
+        for week in range(0, spring_end_search):
+            if frequencies[week] >= threshold:
+                spring_arrival_week = week
+                break
+else:
+    for week in range(spring_start_search, spring_end_search):
+        if frequencies[week] >= threshold:
+            spring_arrival_week = week
+            break
+
+# Find spring peak (similar 20 lines)
+# Find spring departure (similar 30 lines)
+# Then repeat ALL OF THIS for fall passage...
+```
+
+**After:**
+```python
+# Calculate spring timing using helpers
+spring_timing = find_passage_timing(frequencies, spring_start, spring_end, threshold)
+
+# Calculate fall timing using helpers
+fall_timing = find_passage_timing(frequencies, fall_start, fall_end, threshold)
+```
+
+### Files Modified
+
+- `scripts/calculate_arrival_departure.py` - Refactored all timing functions
+- `scripts/run_tests.py` - Added timing helpers test suite
+
+### Files Created
+
+- `scripts/utils/timing_helpers.py` (296 lines, 10 helper functions)
+- `scripts/utils/test_timing_helpers.py` (250 lines, 26 tests)
+
+---
+
 ## Future Refactoring Tasks
 
 Based on code review, the following improvements are recommended (in priority order):
@@ -969,7 +1102,7 @@ Based on code review, the following improvements are recommended (in priority or
 ### Medium Priority
 
 7. ✅ **Create configuration system** for regions (COMPLETED)
-8. ⬜ **Refactor long functions** in arrival/departure calculation
+8. ✅ **Refactor long functions** in arrival/departure calculation (COMPLETED)
 9. ⬜ **Add debouncing** to search inputs
 10. ⬜ **Document data schemas** with TypeScript interfaces or JSON Schema
 

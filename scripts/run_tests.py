@@ -97,6 +97,10 @@ def main():
         {
             'file': 'utils/test_region_config.py',
             'description': 'Region Configuration Tests'
+        },
+        {
+            'file': 'utils/test_timing_helpers.py',
+            'description': 'Timing Helper Functions Tests'
         }
     ]
 
