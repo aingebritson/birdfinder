@@ -1,0 +1,43 @@
+{
+  "_comment": "This is a template for creating new region configuration files.",
+  "_usage": "Copy this to regions/[your_region_id]/config.json and customize the values.",
+
+  "region_id": "example_region",
+  "display_name": "Example Region Name",
+  "description": "A brief description of this region (e.g., 'Bird data for Example County, covering the greater Example City area')",
+  "ebird_region_code": "US-XX-123",
+  "timezone": "America/New_York",
+
+  "paths": {
+    "_comment": "Optional: Override default file path patterns. Use {region_id} as placeholder.",
+    "input_pattern": "ebird_*.txt",
+    "output_file": "{region_id}_species_data.json",
+    "intermediate_dir": "intermediate",
+    "hotspots_dir": "hotspots"
+  },
+
+  "thresholds": {
+    "_comment": "Optional: Override algorithm thresholds for this region. Leave empty to use global defaults from constants.py",
+    "_example_valley_threshold": 0.15,
+    "_example_arrival_threshold": 0.10
+  },
+
+  "seasonal_weeks": {
+    "_comment": "Optional: Override seasonal week ranges for this region (useful for different latitudes)",
+    "_example_winter": {
+      "start": 44,
+      "end": 7
+    },
+    "_example_summer": {
+      "start": 16,
+      "end": 35
+    }
+  },
+
+  "display_settings": {
+    "_comment": "Optional: UI and display preferences",
+    "copyright_year": 2025,
+    "theme_name": "Default",
+    "about_text": "BirdFinder helps you discover which birds are present throughout the year."
+  }
+}

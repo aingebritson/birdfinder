@@ -93,6 +93,10 @@ def main():
         {
             'file': 'utils/test_validation.py',
             'description': 'Input Validation Tests'
+        },
+        {
+            'file': 'utils/test_region_config.py',
+            'description': 'Region Configuration Tests'
         }
     ]
 

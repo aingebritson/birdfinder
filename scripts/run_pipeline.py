@@ -26,10 +26,18 @@ import sys
 from pathlib import Path
 import os
 
+# Add parent directory to path for imports
+if __name__ == "__main__":
+    sys.path.insert(0, str(Path(__file__).parent))
 
-def find_input_file(region_path):
+from utils.region_config import load_region_config, ConfigError
+
+
+def find_input_file(region_path, config):
     """Find the eBird barchart .txt file in the region directory"""
-    txt_files = list(region_path.glob("ebird_*.txt"))
+    # Use configured input pattern if available
+    input_pattern = config.get_path('input_pattern', 'ebird_*.txt')
+    txt_files = list(region_path.glob(input_pattern))
     if not txt_files:
         return None
     if len(txt_files) > 1:
@@ -81,14 +89,24 @@ def main():
     else:
         project_root = Path.cwd()
 
+    # Load region configuration
+    try:
+        config = load_region_config(region_name, project_root)
+    except ConfigError as e:
+        print(f"❌ Configuration Error: {e}")
+        sys.exit(1)
+
     scripts_dir = project_root / "scripts"
     region_path = project_root / "regions" / region_name
 
     print("="*70)
     print("eBird Data Processing Pipeline")
     print("="*70)
-    print(f"\nRegion: {region_name}")
+    print(f"\nRegion: {config.display_name}")
+    print(f"Region ID: {region_name}")
     print(f"Region path: {region_path}")
+    if config.config_path:
+        print(f"Config file: {config.config_path.relative_to(project_root)}")
 
     # Check that region directory exists
     if not region_path.exists():
@@ -99,10 +117,11 @@ def main():
         sys.exit(1)
 
     # Find input file
-    input_file = find_input_file(region_path)
+    input_file = find_input_file(region_path, config)
     if not input_file:
+        input_pattern = config.get_path('input_pattern', 'ebird_*.txt')
         print(f"\n❌ Error: No eBird barchart file found in {region_path}")
-        print(f"\nExpected: regions/{region_name}/ebird_*.txt")
+        print(f"\nExpected: regions/{region_name}/{input_pattern}")
         sys.exit(1)
 
     print(f"Input file: {input_file.name}")

@@ -766,6 +766,193 @@ The automated test suite is now complete. Suggested improvements:
 
 ---
 
+## 2026-01-18: Create Configuration System for Regions
+
+**Issue:** Region-specific settings were scattered throughout the codebase with no centralized configuration, making it difficult to add new regions or customize settings without modifying code.
+
+**Problem:**
+- Display names hardcoded in HTML files
+- No way to customize algorithm thresholds per region
+- Seasonal week definitions assumed same latitude for all regions
+- No region metadata (eBird codes, timezones, descriptions)
+- Manual process to add new regions
+- No validation of region configurations
+
+**Solution:** Created comprehensive region configuration system with JSON-based config files, validation, and Python API.
+
+### Changes Made
+
+1. **Created region configuration module:**
+   - [scripts/utils/region_config.py](scripts/utils/region_config.py) - Configuration loader with validation
+   - `RegionConfig` dataclass for type-safe config access
+   - `load_region_config()` - Load config with fallback to defaults
+   - `save_region_config()` - Save config to JSON
+   - `list_available_regions()` - List all configured regions
+   - Custom `ConfigError` exception for clear error messages
+
+2. **Created configuration templates and examples:**
+   - [regions/washtenaw/config.json](regions/washtenaw/config.json) - Example config for Washtenaw County
+   - [config/region_template.json](config/region_template.json) - Template for new regions
+   - Supports both per-region configs and global multi-region config
+
+3. **Updated pipeline scripts:**
+   - [scripts/run_pipeline.py](scripts/run_pipeline.py) - Load and display region config
+   - Shows region display name and config file location
+   - Uses configured input file patterns
+
+4. **Created comprehensive test suite:**
+   - [scripts/utils/test_region_config.py](scripts/utils/test_region_config.py) - 20 comprehensive tests
+   - Tests config loading from multiple sources
+   - Tests validation of all config fields
+   - Tests threshold, path, and seasonal week overrides
+   - Tests error handling and edge cases
+
+5. **Created documentation:**
+   - [docs/REGION_CONFIG.md](docs/REGION_CONFIG.md) - Complete configuration guide
+   - Quick start guide for new regions
+   - Schema reference with all available fields
+   - Usage examples for common scenarios
+   - API reference for Python integration
+   - Troubleshooting guide
+
+### Configuration Features
+
+**Supported Config Locations:**
+1. **Region-specific:** `regions/[region_id]/config.json` (recommended)
+2. **Global multi-region:** `config/regions.json` (all regions in one file)
+3. **Automatic fallback:** Uses defaults if no config found
+
+**Configurable Settings:**
+
+**Metadata:**
+- `region_id` - Unique identifier (required)
+- `display_name` - Human-readable name (required)
+- `description` - Region description
+- `ebird_region_code` - eBird API region code
+- `timezone` - IANA timezone identifier
+
+**File Paths:**
+- `input_pattern` - Glob pattern for eBird input files
+- `output_file` - Output JSON filename pattern
+- `intermediate_dir` - Intermediate files directory
+- `hotspots_dir` - Hotspots data directory
+
+**Algorithm Thresholds:**
+- Override any threshold from `constants.py` per region
+- Examples: `VALLEY_THRESHOLD_PEAK_RATIO`, `MIN_WEEKS_PRESENCE`
+- Useful for regions with different data characteristics
+
+**Seasonal Definitions:**
+- Override winter/summer/spring/fall week ranges
+- Adapt to different latitudes and climates
+- Week ranges wrap around year boundary
+
+**Display Settings:**
+- UI preferences (copyright year, theme, about text)
+- Future frontend integration
+
+### Benefits
+
+✅ **Centralized configuration** - All region settings in one JSON file
+✅ **No code changes needed** - Add regions by creating config files
+✅ **Type-safe API** - Python dataclass with getter methods
+✅ **Validation** - Catches configuration errors early with clear messages
+✅ **Flexible** - Supports per-region or global config approaches
+✅ **Fallback to defaults** - Works without config files (backward compatible)
+✅ **Self-documenting** - JSON schema is clear and readable
+✅ **Testable** - Comprehensive test suite with 20 tests
+✅ **Documented** - Complete guide with examples and API reference
+
+### Testing
+
+- ✅ All 20 configuration tests pass
+- ✅ Pipeline runs successfully with config system
+- ✅ Backward compatible - works with existing regions
+- ✅ Validation catches errors (invalid JSON, missing fields, path traversal)
+- ✅ Supports multiple config file locations
+- ✅ Fallback to defaults works correctly
+
+### Example Configuration
+
+**Minimal config (required fields only):**
+```json
+{
+  "region_id": "washtenaw",
+  "display_name": "Washtenaw County, Michigan"
+}
+```
+
+**Full config (all features):**
+```json
+{
+  "region_id": "washtenaw",
+  "display_name": "Washtenaw County, Michigan",
+  "description": "Bird data for Washtenaw County in southeastern Michigan",
+  "ebird_region_code": "US-MI-161",
+  "timezone": "America/Detroit",
+  "paths": {
+    "input_pattern": "ebird_*.txt",
+    "output_file": "{region_id}_species_data.json"
+  },
+  "thresholds": {
+    "VALLEY_THRESHOLD_PEAK_RATIO": 0.15,
+    "MIN_WEEKS_PRESENCE": 10
+  },
+  "seasonal_weeks": {
+    "winter": {"start": 44, "end": 7},
+    "summer": {"start": 16, "end": 35}
+  },
+  "display_settings": {
+    "copyright_year": 2025,
+    "theme_name": "Kirtland's Warbler"
+  }
+}
+```
+
+### Python API Usage
+
+```python
+from utils.region_config import load_region_config
+
+# Load configuration
+config = load_region_config('washtenaw')
+
+# Access properties
+print(config.display_name)  # "Washtenaw County, Michigan"
+
+# Get thresholds with fallback
+threshold = config.get_threshold('VALLEY_THRESHOLD_PEAK_RATIO', 0.15)
+
+# Get paths
+input_pattern = config.get_path('input_pattern', 'ebird_*.txt')
+
+# Get seasonal weeks
+winter_weeks = config.get_seasonal_weeks('winter')
+```
+
+### Files Modified
+
+- `scripts/run_pipeline.py` - Load and use region config
+
+### Files Created
+
+- `scripts/utils/region_config.py` (510 lines)
+- `scripts/utils/test_region_config.py` (370 lines, 20 tests)
+- `regions/washtenaw/config.json` (example config)
+- `config/region_template.json` (template for new regions)
+- `docs/REGION_CONFIG.md` (comprehensive documentation)
+
+### Next Steps
+
+Future enhancements for the configuration system:
+- Integrate display settings into frontend HTML generation
+- Add CLI tool to create/validate region configs
+- Add JSON Schema file for IDE autocomplete
+- Support environment variable overrides
+- Add config migration tool for bulk updates
+
+---
+
 ## Future Refactoring Tasks
 
 Based on code review, the following improvements are recommended (in priority order):
@@ -781,7 +968,7 @@ Based on code review, the following improvements are recommended (in priority or
 
 ### Medium Priority
 
-7. ⬜ **Create configuration system** for regions
+7. ✅ **Create configuration system** for regions (COMPLETED)
 8. ⬜ **Refactor long functions** in arrival/departure calculation
 9. ⬜ **Add debouncing** to search inputs
 10. ⬜ **Document data schemas** with TypeScript interfaces or JSON Schema
