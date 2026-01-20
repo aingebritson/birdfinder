@@ -40,6 +40,7 @@ class RegionConfig:
         thresholds: Dictionary of algorithm thresholds (overrides constants.py defaults)
         seasonal_weeks: Dictionary of seasonal week range definitions
         display_settings: Dictionary of UI/display preferences
+        hotspot_guide: Dictionary of hotspot guide pipeline settings
 
         config_path: Path to the config file (set automatically)
     """
@@ -54,6 +55,7 @@ class RegionConfig:
     thresholds: Dict[str, float] = field(default_factory=dict)
     seasonal_weeks: Dict[str, Any] = field(default_factory=dict)
     display_settings: Dict[str, Any] = field(default_factory=dict)
+    hotspot_guide: Dict[str, Any] = field(default_factory=dict)
 
     config_path: Optional[Path] = None
 
@@ -107,6 +109,25 @@ class RegionConfig:
             Setting value or default
         """
         return self.display_settings.get(name, default)
+
+    def get_hotspot_guide_config(self) -> Dict[str, Any]:
+        """
+        Get hotspot guide configuration with defaults.
+
+        Returns:
+            Dictionary with hotspot guide settings, including:
+            - enabled: Whether hotspot guide pipeline is enabled
+            - min_checklists_threshold: Minimum checklists to include a hotspot
+            - high_confidence_min: Checklists needed for "high" confidence
+            - medium_confidence_min: Checklists needed for "medium" confidence
+        """
+        defaults = {
+            'enabled': False,
+            'min_checklists_threshold': 10,
+            'high_confidence_min': 100,
+            'medium_confidence_min': 30,
+        }
+        return {**defaults, **self.hotspot_guide}
 
 
 def load_region_config(region_id: str, project_root: Optional[Path] = None) -> RegionConfig:
@@ -182,6 +203,7 @@ def _load_config_from_file(config_path: Path, region_id: str) -> RegionConfig:
         thresholds=data.get('thresholds', {}),
         seasonal_weeks=data.get('seasonal_weeks', {}),
         display_settings=data.get('display_settings', {}),
+        hotspot_guide=data.get('hotspot_guide', {}),
         config_path=config_path
     )
 
@@ -231,6 +253,7 @@ def _load_from_global_config(config_path: Path, region_id: str) -> RegionConfig:
         thresholds=region_data.get('thresholds', {}),
         seasonal_weeks=region_data.get('seasonal_weeks', {}),
         display_settings=region_data.get('display_settings', {}),
+        hotspot_guide=region_data.get('hotspot_guide', {}),
         config_path=config_path
     )
 
