@@ -5,3 +5,11 @@
 
 # Virtual environment
 venv/
+
+# eBird Basic Dataset files (too large for git)
+# Download from https://ebird.org/data/download
+**/ebird_basic_dataset/
+ebd_*.txt
+
+# Hotspot guide output (regenerated from pipeline)
+**/hotspot_guide_output/

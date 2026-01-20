@@ -19,7 +19,7 @@ from pathlib import Path
 # Add scripts directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from hotspot_guide.config import SAMPLING_FILE, MAIN_FILE, OUTPUT_DIR, ensure_initialized
+from hotspot_guide import config as hg_config
 from hotspot_guide.processors import (
     count_checklists_per_hotspot,
     count_species_detections,
@@ -45,7 +45,12 @@ def main():
     """Main processing pipeline."""
 
     # Ensure config is initialized
-    ensure_initialized()
+    hg_config.ensure_initialized()
+
+    # Access config values at runtime (after init_config was called)
+    MAIN_FILE = hg_config.MAIN_FILE
+    SAMPLING_FILE = hg_config.SAMPLING_FILE
+    OUTPUT_DIR = hg_config.OUTPUT_DIR
 
     logger.info("=" * 60)
     logger.info("eBird Hotspot Guide Generator")
