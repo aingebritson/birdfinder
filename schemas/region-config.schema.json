@@ -1,0 +1,226 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://birdfinder.local/schemas/region-config.schema.json",
+  "title": "Region Configuration",
+  "description": "Configuration for a BirdFinder region, including paths, thresholds, and display settings",
+  "type": "object",
+  "required": ["region_id", "display_name"],
+  "properties": {
+    "region_id": {
+      "type": "string",
+      "description": "Unique identifier for the region, used in file paths (e.g., 'washtenaw')",
+      "pattern": "^[a-z][a-z0-9_-]*$",
+      "minLength": 1,
+      "maxLength": 50
+    },
+    "display_name": {
+      "type": "string",
+      "description": "Human-readable name for the region (e.g., 'Washtenaw County, Michigan')",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "description": "Longer description of the region for display in the UI"
+    },
+    "ebird_region_code": {
+      "type": "string",
+      "description": "eBird region code for API queries (e.g., 'US-MI-161')",
+      "pattern": "^[A-Z]{2}(-[A-Z0-9]+)*$"
+    },
+    "timezone": {
+      "type": "string",
+      "description": "IANA timezone identifier (e.g., 'America/Detroit')",
+      "pattern": "^[A-Za-z_]+/[A-Za-z_]+$"
+    },
+    "paths": {
+      "$ref": "#/$defs/paths"
+    },
+    "thresholds": {
+      "$ref": "#/$defs/thresholds"
+    },
+    "seasonal_weeks": {
+      "$ref": "#/$defs/seasonalWeeks"
+    },
+    "display_settings": {
+      "$ref": "#/$defs/displaySettings"
+    },
+    "hotspot_guide": {
+      "$ref": "#/$defs/hotspotGuide"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "paths": {
+      "type": "object",
+      "description": "File path configuration for pipeline input/output",
+      "properties": {
+        "input_pattern": {
+          "type": "string",
+          "description": "Glob pattern for eBird input files (e.g., 'ebird_*.txt')",
+          "default": "ebird_*.txt"
+        },
+        "output_file": {
+          "type": "string",
+          "description": "Output filename pattern, supports {region_id} placeholder",
+          "default": "{region_id}_species_data.json"
+        },
+        "intermediate_dir": {
+          "type": "string",
+          "description": "Directory for intermediate processing files",
+          "default": "intermediate"
+        },
+        "hotspots_dir": {
+          "type": "string",
+          "description": "Directory for hotspot data files",
+          "default": "hotspots"
+        }
+      },
+      "additionalProperties": false
+    },
+    "thresholds": {
+      "type": "object",
+      "description": "Algorithm threshold overrides (keys match constants.py)",
+      "properties": {
+        "VALLEY_THRESHOLD_PEAK_RATIO": {
+          "type": "number",
+          "description": "Valley detection threshold as ratio of peak (default: 0.15)",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "VALLEY_THRESHOLD_ABSOLUTE": {
+          "type": "number",
+          "description": "Valley detection absolute minimum threshold (default: 0.005)",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "VALLEY_MIN_LENGTH_WEEKS": {
+          "type": "integer",
+          "description": "Minimum weeks for valley detection (default: 4)",
+          "minimum": 1,
+          "maximum": 48
+        },
+        "MIN_WEEKS_PRESENCE": {
+          "type": "integer",
+          "description": "Minimum weeks present to not be vagrant (default: 10)",
+          "minimum": 1,
+          "maximum": 48
+        },
+        "MIN_PEAK_FREQUENCY": {
+          "type": "number",
+          "description": "Minimum peak frequency to not be vagrant (default: 0.005)",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "ARRIVAL_THRESHOLD_PEAK_RATIO": {
+          "type": "number",
+          "description": "Arrival/departure threshold as ratio of peak (default: 0.10)",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "ARRIVAL_THRESHOLD_ABSOLUTE": {
+          "type": "number",
+          "description": "Arrival/departure absolute minimum (default: 0.001)",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "RESIDENT_MIN_MAX_RATIO_THRESHOLD": {
+          "type": "number",
+          "description": "Min/max ratio for resident classification (default: 0.20)",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "seasonalWeeks": {
+      "type": "object",
+      "description": "Week range definitions for seasons (can adapt to different latitudes)",
+      "properties": {
+        "winter": {
+          "$ref": "#/$defs/weekRange"
+        },
+        "spring": {
+          "$ref": "#/$defs/weekRange"
+        },
+        "summer": {
+          "$ref": "#/$defs/weekRange"
+        },
+        "fall": {
+          "$ref": "#/$defs/weekRange"
+        }
+      },
+      "additionalProperties": false
+    },
+    "weekRange": {
+      "type": "object",
+      "description": "Week range that may wrap around year boundary",
+      "required": ["start", "end"],
+      "properties": {
+        "start": {
+          "type": "integer",
+          "description": "Start week index (0-47)",
+          "minimum": 0,
+          "maximum": 47
+        },
+        "end": {
+          "type": "integer",
+          "description": "End week index (0-47), may be less than start for wraparound",
+          "minimum": 0,
+          "maximum": 47
+        }
+      },
+      "additionalProperties": false
+    },
+    "displaySettings": {
+      "type": "object",
+      "description": "UI display configuration",
+      "properties": {
+        "copyright_year": {
+          "type": "integer",
+          "description": "Year to display in copyright notice",
+          "minimum": 2020,
+          "maximum": 2100
+        },
+        "theme_name": {
+          "type": "string",
+          "description": "Theme or mascot name for the region"
+        },
+        "about_text": {
+          "type": "string",
+          "description": "About/intro text for the region"
+        }
+      },
+      "additionalProperties": false
+    },
+    "hotspotGuide": {
+      "type": "object",
+      "description": "Hotspot guide feature configuration",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "description": "Whether to generate hotspot guide data",
+          "default": false
+        },
+        "min_checklists_threshold": {
+          "type": "integer",
+          "description": "Minimum complete checklists to include a hotspot",
+          "minimum": 1,
+          "default": 10
+        },
+        "high_confidence_min": {
+          "type": "integer",
+          "description": "Minimum checklists for high confidence rating",
+          "minimum": 1,
+          "default": 100
+        },
+        "medium_confidence_min": {
+          "type": "integer",
+          "description": "Minimum checklists for medium confidence rating",
+          "minimum": 1,
+          "default": 30
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

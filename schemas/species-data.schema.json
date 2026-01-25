@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://birdfinder.local/schemas/species-data.schema.json",
+  "title": "Species Data",
+  "description": "Array of bird species with occurrence data, migration patterns, and timing information",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/species"
+  },
+  "$defs": {
+    "species": {
+      "type": "object",
+      "description": "A single bird species with all occurrence and timing data",
+      "required": ["name", "code", "category", "timing", "weekly_frequency"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Common name of the species (e.g., 'American Robin')",
+          "minLength": 1,
+          "pattern": "^[^/]+$"
+        },
+        "code": {
+          "type": "string",
+          "description": "6-character species code, lowercase alphabetic",
+          "pattern": "^[a-z]{6}$"
+        },
+        "category": {
+          "$ref": "#/$defs/category"
+        },
+        "flags": {
+          "type": "array",
+          "description": "Edge case indicators and additional classification details",
+          "items": {
+            "$ref": "#/$defs/flag"
+          },
+          "default": []
+        },
+        "timing": {
+          "$ref": "#/$defs/timing"
+        },
+        "weekly_frequency": {
+          "$ref": "#/$defs/weeklyFrequency"
+        }
+      },
+      "additionalProperties": false
+    },
+    "category": {
+      "type": "string",
+      "description": "Migration category based on presence pattern analysis",
+      "enum": ["resident", "single-season", "two-passage-migrant", "vagrant", "irregular"]
+    },
+    "flag": {
+      "type": "string",
+      "description": "Edge case flag indicating special classification conditions",
+      "enum": [
+        "low_peak_frequency",
+        "seasonal_variation",
+        "overwintering",
+        "min_max_near_boundary",
+        "classic_bimodal",
+        "separated_valleys",
+        "three_valley_migrant",
+        "mixed_valley_winter_lean",
+        "mixed_valley_summer_lean",
+        "low_presence",
+        "many_valleys"
+      ]
+    },
+    "timing": {
+      "type": "object",
+      "description": "Timing information varies by migration pattern type",
+      "oneOf": [
+        { "$ref": "#/$defs/timingYearRound" },
+        { "$ref": "#/$defs/timingSummer" },
+        { "$ref": "#/$defs/timingWinter" },
+        { "$ref": "#/$defs/timingTwoPassage" },
+        { "$ref": "#/$defs/timingIrregular" }
+      ]
+    },
+    "timingYearRound": {
+      "type": "object",
+      "description": "Timing for year-round resident species",
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "const": "year-round"
+        }
+      },
+      "additionalProperties": false
+    },
+    "timingSummer": {
+      "type": "object",
+      "description": "Timing for summer breeding species (single-season)",
+      "required": ["peak"],
+      "properties": {
+        "arrival": {
+          "$ref": "#/$defs/dateRange"
+        },
+        "peak": {
+          "$ref": "#/$defs/dateRange"
+        },
+        "departure": {
+          "$ref": "#/$defs/dateRange"
+        }
+      },
+      "additionalProperties": false
+    },
+    "timingWinter": {
+      "type": "object",
+      "description": "Timing for winter resident species (single-season, overwintering)",
+      "required": ["winter_peak"],
+      "properties": {
+        "winter_arrival": {
+          "$ref": "#/$defs/dateRange"
+        },
+        "winter_peak": {
+          "$ref": "#/$defs/dateRange"
+        },
+        "winter_departure": {
+          "$ref": "#/$defs/dateRange"
+        }
+      },
+      "additionalProperties": false
+    },
+    "timingTwoPassage": {
+      "type": "object",
+      "description": "Timing for two-passage migrants with spring and fall migrations",
+      "required": ["spring_peak", "fall_peak"],
+      "properties": {
+        "spring_arrival": {
+          "$ref": "#/$defs/dateRange"
+        },
+        "spring_peak": {
+          "$ref": "#/$defs/dateRange"
+        },
+        "spring_departure": {
+          "$ref": "#/$defs/dateRange"
+        },
+        "fall_arrival": {
+          "$ref": "#/$defs/dateRange"
+        },
+        "fall_peak": {
+          "$ref": "#/$defs/dateRange"
+        },
+        "fall_departure": {
+          "$ref": "#/$defs/dateRange"
+        }
+      },
+      "additionalProperties": false
+    },
+    "timingIrregular": {
+      "type": "object",
+      "description": "Timing for vagrant or irregular species",
+      "required": ["status", "peak"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "const": "irregular"
+        },
+        "first_appears": {
+          "$ref": "#/$defs/dateRange"
+        },
+        "peak": {
+          "$ref": "#/$defs/dateRange"
+        },
+        "last_appears": {
+          "$ref": "#/$defs/dateRange"
+        }
+      },
+      "additionalProperties": false
+    },
+    "dateRange": {
+      "type": "string",
+      "description": "Date range in 'Month Day-Day' format (e.g., 'May 8-14', 'December 22-31')",
+      "pattern": "^(January|February|March|April|May|June|July|August|September|October|November|December) \\d{1,2}-\\d{1,2}$"
+    },
+    "weeklyFrequency": {
+      "type": "array",
+      "description": "48 frequency values (one per week), representing occurrence rate from 0.0 to 1.0",
+      "items": {
+        "type": "number",
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "minItems": 48,
+      "maxItems": 48
+    }
+  }
+}

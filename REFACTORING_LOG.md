@@ -1190,6 +1190,140 @@ searchInput.addEventListener('input', (e) => {
 
 ---
 
+## 2026-01-25: Document Data Schemas with JSON Schema and TypeScript
+
+**Issue:** Data structures passed between Python pipeline and JavaScript frontend had no formal documentation, making it difficult to understand expected fields, types, and constraints.
+
+**Problem:**
+- Species data JSON structure only existed implicitly in code
+- No validation of JSON file structure at runtime or build time
+- New developers had to trace through code to understand data formats
+- No IDE autocomplete or type checking for data access
+- Risk of mismatches between Python output and JavaScript consumption
+- Hotspot data structures undocumented
+
+**Solution:** Created comprehensive JSON Schema definitions and TypeScript interfaces for all major data structures.
+
+### Changes Made
+
+1. **Created JSON Schema files:**
+   - [schemas/species-data.schema.json](schemas/species-data.schema.json) - Species data array with timing variants
+   - [schemas/region-config.schema.json](schemas/region-config.schema.json) - Region configuration
+   - [schemas/hotspot-index.schema.json](schemas/hotspot-index.schema.json) - Hotspot listing data
+   - [schemas/hotspot-detail.schema.json](schemas/hotspot-detail.schema.json) - Per-hotspot species data
+
+2. **Created TypeScript definition files:**
+   - [birdfinder/types/species.d.ts](birdfinder/types/species.d.ts) - Species types with type guards
+   - [birdfinder/types/hotspot.d.ts](birdfinder/types/hotspot.d.ts) - Hotspot types
+   - [birdfinder/types/region-config.d.ts](birdfinder/types/region-config.d.ts) - Config types
+   - [birdfinder/types/index.d.ts](birdfinder/types/index.d.ts) - Re-exports all types
+
+### Schema Features
+
+**Species Data Schema:**
+- Defines 5 timing pattern variants using `oneOf`:
+  - `TimingYearRound` - `{ "status": "year-round" }`
+  - `TimingSummer` - `{ "arrival", "peak", "departure" }`
+  - `TimingWinter` - `{ "winter_arrival", "winter_peak", "winter_departure" }`
+  - `TimingTwoPassage` - Spring and fall timing fields
+  - `TimingIrregular` - `{ "status": "irregular", "first_appears", "peak", "last_appears" }`
+- Enumerates valid categories: `resident`, `single-season`, `two-passage-migrant`, `vagrant`, `irregular`
+- Enumerates valid flags: `low_peak_frequency`, `seasonal_variation`, `overwintering`, etc.
+- Validates 48-element frequency array with range [0.0, 1.0]
+- Pattern validation for species codes (`^[a-z]{6}$`)
+- Pattern validation for date ranges (`^(January|February|...) \d{1,2}-\d{1,2}$`)
+
+**Region Config Schema:**
+- Documents all threshold overrides with descriptions
+- Validates eBird region code format
+- Validates timezone format
+- Documents hotspot guide configuration options
+
+**Hotspot Schemas:**
+- Index schema for quick hotspot listing
+- Detail schema for per-hotspot species occurrence data
+- Validates locality ID format (`^L\d+$`)
+- Documents seasonal rate structure
+- Validates coordinate ranges
+
+### TypeScript Features
+
+**Type Guards for Timing Patterns:**
+```typescript
+import { isYearRound, isTwoPassage, isWinter } from './types';
+
+if (isYearRound(species.timing)) {
+  // TypeScript knows timing.status === 'year-round'
+} else if (isTwoPassage(species.timing)) {
+  // TypeScript knows timing has spring_peak, fall_peak
+}
+```
+
+**Tuple Type for Weekly Frequency:**
+```typescript
+// Exactly 48 numbers enforced at type level
+export type WeeklyFrequency = [
+  number, number, number, number, // ... 48 total
+];
+```
+
+### Benefits
+
+✅ **Self-documenting** - Schema files serve as authoritative documentation
+✅ **IDE support** - TypeScript enables autocomplete and error checking
+✅ **Validation ready** - JSON Schema can be used with ajv or similar validators
+✅ **Contract enforcement** - Clear interface between Python and JavaScript
+✅ **Type guards** - Runtime type narrowing for timing pattern variants
+✅ **Comprehensive** - Covers all major data structures in the project
+
+### Testing
+
+- ✅ Existing species data validates against schema
+- ✅ Existing hotspot data validates against schema
+- ✅ Region config validates against schema
+- ✅ TypeScript compiles without errors
+
+### Example Usage
+
+**Validating JSON with schema (Node.js):**
+```javascript
+import Ajv from 'ajv';
+import speciesSchema from './schemas/species-data.schema.json';
+
+const ajv = new Ajv();
+const validate = ajv.compile(speciesSchema);
+const valid = validate(speciesData);
+if (!valid) console.log(validate.errors);
+```
+
+**Using TypeScript types:**
+```typescript
+import type { Species, HotspotDetail } from './types';
+
+function getTimingDescription(species: Species): string {
+  if (isYearRound(species.timing)) {
+    return 'Present year-round';
+  }
+  if (isTwoPassage(species.timing)) {
+    return `Spring peak: ${species.timing.spring_peak}`;
+  }
+  // ...
+}
+```
+
+### Files Created
+
+- `schemas/species-data.schema.json` (170 lines)
+- `schemas/region-config.schema.json` (180 lines)
+- `schemas/hotspot-index.schema.json` (55 lines)
+- `schemas/hotspot-detail.schema.json` (175 lines)
+- `birdfinder/types/species.d.ts` (115 lines)
+- `birdfinder/types/hotspot.d.ts` (115 lines)
+- `birdfinder/types/region-config.d.ts` (95 lines)
+- `birdfinder/types/index.d.ts` (55 lines)
+
+---
+
 ## Future Refactoring Tasks
 
 Based on code review, the following improvements are recommended (in priority order):
@@ -1208,7 +1342,7 @@ Based on code review, the following improvements are recommended (in priority or
 7. ✅ **Create configuration system** for regions (COMPLETED)
 8. ✅ **Refactor long functions** in arrival/departure calculation (COMPLETED)
 9. ✅ **Add debouncing** to search inputs (COMPLETED)
-10. ⬜ **Document data schemas** with TypeScript interfaces or JSON Schema
+10. ✅ **Document data schemas** with TypeScript interfaces or JSON Schema (COMPLETED)
 
 ### Low Priority
 

@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://birdfinder.local/schemas/hotspot-detail.schema.json",
+  "title": "Hotspot Detail",
+  "description": "Detailed species occurrence data for a single birding hotspot",
+  "type": "object",
+  "required": ["hotspot", "effort", "species", "metadata"],
+  "properties": {
+    "hotspot": {
+      "$ref": "#/$defs/hotspotInfo"
+    },
+    "effort": {
+      "$ref": "#/$defs/effort"
+    },
+    "species": {
+      "type": "array",
+      "description": "Species detected at this hotspot, sorted by occurrence rate (descending)",
+      "items": {
+        "$ref": "#/$defs/speciesOccurrence"
+      }
+    },
+    "metadata": {
+      "$ref": "#/$defs/metadata"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "hotspotInfo": {
+      "type": "object",
+      "description": "Basic hotspot identification and location",
+      "required": ["locality_id", "name", "coordinates"],
+      "properties": {
+        "locality_id": {
+          "type": "string",
+          "description": "eBird locality ID (e.g., 'L320822')",
+          "pattern": "^L\\d+$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Hotspot name from eBird",
+          "minLength": 1
+        },
+        "coordinates": {
+          "$ref": "#/$defs/coordinates"
+        }
+      },
+      "additionalProperties": false
+    },
+    "coordinates": {
+      "type": "object",
+      "description": "Geographic coordinates",
+      "required": ["latitude", "longitude"],
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "description": "Latitude in decimal degrees",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude in decimal degrees",
+          "minimum": -180,
+          "maximum": 180
+        }
+      },
+      "additionalProperties": false
+    },
+    "effort": {
+      "type": "object",
+      "description": "Birding effort statistics for this hotspot",
+      "required": ["total_complete_checklists", "total_species_detected", "monthly_checklists"],
+      "properties": {
+        "total_complete_checklists": {
+          "type": "integer",
+          "description": "Total number of complete checklists submitted",
+          "minimum": 1
+        },
+        "total_species_detected": {
+          "type": "integer",
+          "description": "Total unique species detected at this hotspot",
+          "minimum": 1
+        },
+        "monthly_checklists": {
+          "$ref": "#/$defs/monthlyChecklists"
+        }
+      },
+      "additionalProperties": false
+    },
+    "monthlyChecklists": {
+      "type": "object",
+      "description": "Checklist counts by month (1-12)",
+      "required": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+      "properties": {
+        "1": { "type": "integer", "minimum": 0, "description": "January" },
+        "2": { "type": "integer", "minimum": 0, "description": "February" },
+        "3": { "type": "integer", "minimum": 0, "description": "March" },
+        "4": { "type": "integer", "minimum": 0, "description": "April" },
+        "5": { "type": "integer", "minimum": 0, "description": "May" },
+        "6": { "type": "integer", "minimum": 0, "description": "June" },
+        "7": { "type": "integer", "minimum": 0, "description": "July" },
+        "8": { "type": "integer", "minimum": 0, "description": "August" },
+        "9": { "type": "integer", "minimum": 0, "description": "September" },
+        "10": { "type": "integer", "minimum": 0, "description": "October" },
+        "11": { "type": "integer", "minimum": 0, "description": "November" },
+        "12": { "type": "integer", "minimum": 0, "description": "December" }
+      },
+      "additionalProperties": false
+    },
+    "speciesOccurrence": {
+      "type": "object",
+      "description": "Species occurrence data at this hotspot",
+      "required": [
+        "rank", "common_name", "code", "scientific_name",
+        "occurrence_rate", "detection_count", "average_count", "max_count", "seasonal"
+      ],
+      "properties": {
+        "rank": {
+          "type": "integer",
+          "description": "Rank by occurrence rate (1 = most frequently seen)",
+          "minimum": 1
+        },
+        "common_name": {
+          "type": "string",
+          "description": "Common name of the species",
+          "minLength": 1
+        },
+        "code": {
+          "type": "string",
+          "description": "6-character species code, lowercase alphabetic",
+          "pattern": "^[a-z]{6}$"
+        },
+        "scientific_name": {
+          "type": "string",
+          "description": "Scientific (Latin) name of the species",
+          "minLength": 1
+        },
+        "occurrence_rate": {
+          "type": "number",
+          "description": "Fraction of checklists where this species was detected (0.0 to 1.0)",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "detection_count": {
+          "type": "integer",
+          "description": "Number of checklists where this species was detected",
+          "minimum": 1
+        },
+        "average_count": {
+          "type": "number",
+          "description": "Average count per checklist when detected",
+          "minimum": 0
+        },
+        "max_count": {
+          "type": "integer",
+          "description": "Maximum count ever recorded on a single checklist",
+          "minimum": 0
+        },
+        "seasonal": {
+          "$ref": "#/$defs/seasonalRates"
+        }
+      },
+      "additionalProperties": false
+    },
+    "seasonalRates": {
+      "type": "object",
+      "description": "Occurrence rates by season",
+      "required": ["spring", "summer", "fall", "winter"],
+      "properties": {
+        "spring": {
+          "type": "number",
+          "description": "Occurrence rate in spring (April-May)",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "summer": {
+          "type": "number",
+          "description": "Occurrence rate in summer (June-July)",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "fall": {
+          "type": "number",
+          "description": "Occurrence rate in fall (August-October)",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "winter": {
+          "type": "number",
+          "description": "Occurrence rate in winter (November-February)",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "metadata": {
+      "type": "object",
+      "description": "File generation metadata",
+      "required": ["generated_at", "data_version"],
+      "properties": {
+        "generated_at": {
+          "type": "string",
+          "description": "ISO 8601 timestamp when file was generated",
+          "format": "date-time"
+        },
+        "data_version": {
+          "type": "string",
+          "description": "Version identifier for the source data (e.g., 'Dec-2025')",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

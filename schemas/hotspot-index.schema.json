@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://birdfinder.local/schemas/hotspot-index.schema.json",
+  "title": "Hotspot Index",
+  "description": "Array of hotspot location references for quick listing and search",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/hotspotRef"
+  },
+  "$defs": {
+    "hotspotRef": {
+      "type": "object",
+      "description": "Reference to a birding hotspot location",
+      "required": ["locId", "name", "lat", "lng", "numSpecies"],
+      "properties": {
+        "locId": {
+          "type": "string",
+          "description": "eBird locality ID (e.g., 'L320822')",
+          "pattern": "^L\\d+$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Hotspot name from eBird",
+          "minLength": 1
+        },
+        "lat": {
+          "type": "number",
+          "description": "Latitude in decimal degrees",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "lng": {
+          "type": "number",
+          "description": "Longitude in decimal degrees",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "numSpecies": {
+          "type": "integer",
+          "description": "Total number of species detected at this hotspot",
+          "minimum": 0
+        },
+        "latestObs": {
+          "type": ["string", "null"],
+          "description": "Date/time of most recent observation (format: 'YYYY-MM-DD HH:MM')",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}$"
+        },
+        "knowledge": {
+          "description": "Reserved for future use (local knowledge, tips, etc.)",
+          "type": ["object", "null"]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
