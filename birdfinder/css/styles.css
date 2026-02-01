@@ -324,3 +324,73 @@ input:focus, select:focus {
     background-color: var(--color-accent-hover);
     border-color: var(--color-accent-hover);
 }
+
+/* Hotspot cards grid */
+.hotspots-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+/* Desktop: 2 columns */
+@media (min-width: 768px) {
+    .hotspots-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Hotspot card */
+.hotspot-card {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: all 0.15s ease;
+    text-decoration: none;
+}
+
+.hotspot-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+}
+
+.hotspot-name {
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.hotspot-card:hover .hotspot-name {
+    color: var(--color-accent);
+}
+
+.hotspot-stats {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.hotspot-occurrence {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+.hotspot-separator {
+    color: var(--color-text-secondary);
+    margin: 0 0.25rem;
+}
+
+.hotspot-lift {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+}
+
+.hotspot-detections {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+}
