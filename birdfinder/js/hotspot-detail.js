@@ -5,8 +5,8 @@
 
 let currentHotspot = null;
 let hotspotsData = [];
-let hotspotSpeciesData = null; // Full species data from individual hotspot file
-let hotspotIndex = null; // Index mapping locId to file paths
+let notableSpeciesIndex = null; // Pre-filtered specialties by hotspot
+let commonSpeciesIndex = null; // Top species by occurrence per hotspot
 
 /**
  * Get hotspot location ID from URL
@@ -31,38 +31,29 @@ async function loadHotspotsData() {
 }
 
 /**
- * Load hotspot index to get file paths
+ * Load notable species index (pre-filtered specialties)
  */
-async function loadHotspotIndex() {
+async function loadNotableSpeciesIndex() {
     try {
-        const response = await fetch('../regions/washtenaw/hotspot_guide_output/index/hotspot_index.json');
-        hotspotIndex = await response.json();
+        const response = await fetch('data/notable_species_by_hotspot.json');
+        notableSpeciesIndex = await response.json();
         return true;
     } catch (error) {
-        console.error('Error loading hotspot index:', error);
+        console.error('Error loading notable species index:', error);
         return false;
     }
 }
 
 /**
- * Load individual hotspot species data
+ * Load common species index (top 15 by occurrence per hotspot)
  */
-async function loadHotspotSpeciesData(locId) {
-    if (!hotspotIndex) return false;
-
-    // Find the file path for this hotspot
-    const hotspotEntry = hotspotIndex.hotspots.find(h => h.locality_id === locId);
-    if (!hotspotEntry) {
-        console.warn('Hotspot not found in index:', locId);
-        return false;
-    }
-
+async function loadCommonSpeciesIndex() {
     try {
-        const response = await fetch(`../regions/washtenaw/hotspot_guide_output/${hotspotEntry.file}`);
-        hotspotSpeciesData = await response.json();
+        const response = await fetch('data/common_species_by_hotspot.json');
+        commonSpeciesIndex = await response.json();
         return true;
     } catch (error) {
-        console.error('Error loading hotspot species data:', error);
+        console.error('Error loading common species index:', error);
         return false;
     }
 }
@@ -106,14 +97,18 @@ async function init() {
     renderLinks();
 
     // Load and render species data (async, don't block the main content)
-    loadHotspotIndex().then(indexLoaded => {
-        if (indexLoaded) {
-            loadHotspotSpeciesData(locId).then(speciesLoaded => {
-                if (speciesLoaded) {
-                    renderSpecialties();
-                    renderCommonSpecies();
-                }
-            });
+    Promise.all([
+        loadNotableSpeciesIndex(),
+        loadCommonSpeciesIndex()
+    ]).then(([notableLoaded, commonLoaded]) => {
+        // Render specialties from pre-filtered index
+        if (notableLoaded) {
+            renderSpecialties(locId);
+        }
+
+        // Render common species from index
+        if (commonLoaded) {
+            renderCommonSpecies(locId);
         }
     });
 }
@@ -359,22 +354,16 @@ function renderLinks() {
 
 /**
  * Render specialties section - species where this hotspot is unusually good
- * Filter: lift > 2.0, detection_count > 5
+ * Uses pre-filtered notable_species_by_hotspot.json (lift > 2.0, detection_count > 5)
  * Sort by lift descending, show top 10
  */
-function renderSpecialties() {
+function renderSpecialties(locId) {
     const section = document.getElementById('specialties-section');
     const container = document.getElementById('specialties-list');
 
-    if (!hotspotSpeciesData || !hotspotSpeciesData.species) {
-        return;
-    }
-
-    // Filter for specialties: lift > 2.0 and detection_count > 5
-    const specialties = hotspotSpeciesData.species
-        .filter(s => s.lift && s.lift > 2.0 && s.detection_count && s.detection_count > 5)
-        .sort((a, b) => b.lift - a.lift)
-        .slice(0, 10);
+    // Get specialties from pre-filtered index
+    const hotspotData = notableSpeciesIndex?.hotspots?.[locId];
+    const specialties = hotspotData?.notable_species || [];
 
     if (specialties.length === 0) {
         section.classList.remove('hidden');
@@ -388,7 +377,10 @@ function renderSpecialties() {
 
     section.classList.remove('hidden');
 
-    const speciesList = specialties.map(species => {
+    // Already sorted by lift in the index, just take top 10
+    const topSpecialties = specialties.slice(0, 10);
+
+    const speciesList = topSpecialties.map(species => {
         const safeName = escapeHtml(species.common_name);
         const safeCode = escapeHtml(species.code);
         const liftDisplay = species.lift.toFixed(1);
@@ -411,20 +403,15 @@ function renderSpecialties() {
 
 /**
  * Render common species section - species most likely to encounter
- * Sort by occurrence_rate descending, show top 15
+ * Uses pre-computed common_species_by_hotspot.json (top 15 by occurrence)
  */
-function renderCommonSpecies() {
+function renderCommonSpecies(locId) {
     const section = document.getElementById('common-section');
     const container = document.getElementById('common-list');
 
-    if (!hotspotSpeciesData || !hotspotSpeciesData.species) {
-        return;
-    }
-
-    // Sort by occurrence rate and take top 15
-    const commonSpecies = [...hotspotSpeciesData.species]
-        .sort((a, b) => b.occurrence_rate - a.occurrence_rate)
-        .slice(0, 15);
+    // Get common species from pre-computed index
+    const hotspotData = commonSpeciesIndex?.hotspots?.[locId];
+    const commonSpecies = hotspotData?.common_species || [];
 
     if (commonSpecies.length === 0) {
         return;

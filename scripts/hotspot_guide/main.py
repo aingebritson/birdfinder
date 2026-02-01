@@ -30,6 +30,7 @@ from hotspot_guide.output import (
     write_hotspot_files,
     write_index_files,
     write_notable_species_index,
+    write_common_species_index,
     write_metadata,
 )
 from hotspot_guide.output.json_writer import build_species_code_map
@@ -122,6 +123,9 @@ def main():
 
     write_notable_species_index(species_guides, hotspot_data, index_dir, code_map)
     logger.info(f"  Wrote notable_species_by_hotspot.json to {index_dir}")
+
+    write_common_species_index(species_guides, hotspot_data, index_dir, code_map)
+    logger.info(f"  Wrote common_species_by_hotspot.json to {index_dir}")
 
     write_metadata(OUTPUT_DIR, hotspot_data, species_guides, MAIN_FILE)
     logger.info(f"  Wrote metadata.json to {OUTPUT_DIR}")

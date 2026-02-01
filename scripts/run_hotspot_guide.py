@@ -107,11 +107,22 @@ def main():
     run_pipeline()
 
     # Copy hotspot data to birdfinder for web access
-    hotspot_source = output_dir / "index" / "top_hotspots_by_species.json"
     birdfinder_data = project_root / "birdfinder" / "data"
-    if hotspot_source.exists() and birdfinder_data.exists():
-        shutil.copy(hotspot_source, birdfinder_data / "top_hotspots_by_species.json")
-        print(f"\nCopied hotspot data to birdfinder/data/")
+    if birdfinder_data.exists():
+        index_files = [
+            "top_hotspots_by_species.json",
+            "notable_species_by_hotspot.json",
+            "common_species_by_hotspot.json",
+            "hotspot_index.json",
+        ]
+        copied = []
+        for filename in index_files:
+            source = output_dir / "index" / filename
+            if source.exists():
+                shutil.copy(source, birdfinder_data / filename)
+                copied.append(filename)
+        if copied:
+            print(f"\nCopied to birdfinder/data/: {', '.join(copied)}")
 
 
 if __name__ == "__main__":
