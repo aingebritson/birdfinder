@@ -26,6 +26,7 @@ Output:
     - metadata.json
 """
 
+import shutil
 import sys
 from pathlib import Path
 
@@ -104,6 +105,13 @@ def main():
 
     # Run the pipeline
     run_pipeline()
+
+    # Copy hotspot data to birdfinder for web access
+    hotspot_source = output_dir / "index" / "top_hotspots_by_species.json"
+    birdfinder_data = project_root / "birdfinder" / "data"
+    if hotspot_source.exists() and birdfinder_data.exists():
+        shutil.copy(hotspot_source, birdfinder_data / "top_hotspots_by_species.json")
+        print(f"\nCopied hotspot data to birdfinder/data/")
 
 
 if __name__ == "__main__":
