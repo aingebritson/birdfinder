@@ -5,6 +5,8 @@
 
 let currentHotspot = null;
 let hotspotsData = [];
+let hotspotSpeciesData = null; // Full species data from individual hotspot file
+let hotspotIndex = null; // Index mapping locId to file paths
 
 /**
  * Get hotspot location ID from URL
@@ -24,6 +26,43 @@ async function loadHotspotsData() {
         return true;
     } catch (error) {
         console.error('Error loading hotspots data:', error);
+        return false;
+    }
+}
+
+/**
+ * Load hotspot index to get file paths
+ */
+async function loadHotspotIndex() {
+    try {
+        const response = await fetch('../regions/washtenaw/hotspot_guide_output/index/hotspot_index.json');
+        hotspotIndex = await response.json();
+        return true;
+    } catch (error) {
+        console.error('Error loading hotspot index:', error);
+        return false;
+    }
+}
+
+/**
+ * Load individual hotspot species data
+ */
+async function loadHotspotSpeciesData(locId) {
+    if (!hotspotIndex) return false;
+
+    // Find the file path for this hotspot
+    const hotspotEntry = hotspotIndex.hotspots.find(h => h.locality_id === locId);
+    if (!hotspotEntry) {
+        console.warn('Hotspot not found in index:', locId);
+        return false;
+    }
+
+    try {
+        const response = await fetch(`../regions/washtenaw/hotspot_guide_output/${hotspotEntry.file}`);
+        hotspotSpeciesData = await response.json();
+        return true;
+    } catch (error) {
+        console.error('Error loading hotspot species data:', error);
         return false;
     }
 }
@@ -65,6 +104,18 @@ async function init() {
     renderHabitats();
     renderTips();
     renderLinks();
+
+    // Load and render species data (async, don't block the main content)
+    loadHotspotIndex().then(indexLoaded => {
+        if (indexLoaded) {
+            loadHotspotSpeciesData(locId).then(speciesLoaded => {
+                if (speciesLoaded) {
+                    renderSpecialties();
+                    renderCommonSpecies();
+                }
+            });
+        }
+    });
 }
 
 /**
@@ -304,6 +355,99 @@ function renderLinks() {
 
         container.innerHTML = linksList;
     }
+}
+
+/**
+ * Render specialties section - species where this hotspot is unusually good
+ * Filter: lift > 2.0, detection_count > 5
+ * Sort by lift descending, show top 10
+ */
+function renderSpecialties() {
+    const section = document.getElementById('specialties-section');
+    const container = document.getElementById('specialties-list');
+
+    if (!hotspotSpeciesData || !hotspotSpeciesData.species) {
+        return;
+    }
+
+    // Filter for specialties: lift > 2.0 and detection_count > 5
+    const specialties = hotspotSpeciesData.species
+        .filter(s => s.lift && s.lift > 2.0 && s.detection_count && s.detection_count > 5)
+        .sort((a, b) => b.lift - a.lift)
+        .slice(0, 10);
+
+    if (specialties.length === 0) {
+        section.classList.remove('hidden');
+        container.innerHTML = `
+            <div class="text-sm" style="color: #6B7280; padding: 1rem 0;">
+                No unusual specialties — this hotspot has a typical species mix for the county.
+            </div>
+        `;
+        return;
+    }
+
+    section.classList.remove('hidden');
+
+    const speciesList = specialties.map(species => {
+        const safeName = escapeHtml(species.common_name);
+        const safeCode = escapeHtml(species.code);
+        const liftDisplay = species.lift.toFixed(1);
+        const occurrenceDisplay = (species.occurrence_rate * 100).toFixed(1);
+
+        return `
+            <a href="species.html?code=${safeCode}" class="species-item species-item-specialty">
+                <div class="species-item-name">${safeName}</div>
+                <div class="species-item-stats">
+                    <span class="specialty-lift">${liftDisplay}× county average</span>
+                    <span class="species-item-separator">•</span>
+                    <span class="species-item-occurrence">${occurrenceDisplay}% occurrence</span>
+                </div>
+            </a>
+        `;
+    }).join('');
+
+    container.innerHTML = speciesList;
+}
+
+/**
+ * Render common species section - species most likely to encounter
+ * Sort by occurrence_rate descending, show top 15
+ */
+function renderCommonSpecies() {
+    const section = document.getElementById('common-section');
+    const container = document.getElementById('common-list');
+
+    if (!hotspotSpeciesData || !hotspotSpeciesData.species) {
+        return;
+    }
+
+    // Sort by occurrence rate and take top 15
+    const commonSpecies = [...hotspotSpeciesData.species]
+        .sort((a, b) => b.occurrence_rate - a.occurrence_rate)
+        .slice(0, 15);
+
+    if (commonSpecies.length === 0) {
+        return;
+    }
+
+    section.classList.remove('hidden');
+
+    const speciesList = commonSpecies.map(species => {
+        const safeName = escapeHtml(species.common_name);
+        const safeCode = escapeHtml(species.code);
+        const occurrenceDisplay = (species.occurrence_rate * 100).toFixed(1);
+
+        return `
+            <a href="species.html?code=${safeCode}" class="species-item">
+                <div class="species-item-name">${safeName}</div>
+                <div class="species-item-stats">
+                    <span class="species-item-occurrence">${occurrenceDisplay}% of checklists</span>
+                </div>
+            </a>
+        `;
+    }).join('');
+
+    container.innerHTML = speciesList;
 }
 
 // Initialize when DOM is ready

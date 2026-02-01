@@ -394,3 +394,82 @@ input:focus, select:focus {
     font-size: 0.75rem;
     color: var(--color-text-secondary);
 }
+
+/* Species list styles for hotspot detail page */
+.species-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.species-item {
+    display: block;
+    padding: 0.75rem 1rem;
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.species-item:hover {
+    border-color: var(--color-accent);
+    transform: translateX(4px);
+}
+
+.species-item-name {
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.species-item:hover .species-item-name {
+    color: var(--color-accent);
+}
+
+.species-item-stats {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+}
+
+.species-item-separator {
+    color: var(--color-text-secondary);
+    margin: 0 0.25rem;
+}
+
+.species-item-occurrence {
+    color: var(--color-text-secondary);
+}
+
+/* Specialties section - highlighted background */
+.specialties-section {
+    background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+    border: 1px solid #F59E0B;
+}
+
+.specialties-section h2 {
+    color: #92400E;
+}
+
+.specialties-section p {
+    color: #A16207;
+}
+
+/* Specialty lift badge */
+.specialty-lift {
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+/* Specialty items within the highlighted section */
+.species-item-specialty {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.species-item-specialty:hover {
+    background-color: #FFFFFF;
+}
