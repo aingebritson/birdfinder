@@ -441,17 +441,14 @@ function renderFrequencyChart() {
  * Load hotspot data from JSON file
  */
 async function loadHotspotData() {
-    const url = '../regions/washtenaw/hotspot_guide_output/index/top_hotspots_by_species.json';
-    console.log('Fetching hotspot data from:', url);
     try {
-        const data = await fetchWithRetry(url, {
+        const data = await fetchWithRetry('data/top_hotspots_by_species.json', {
             autoRetry: true,
             timeoutMs: 10000
         });
         hotspotData = data;
-        console.log('✓ Loaded hotspot data, species count:', Object.keys(data.species || {}).length);
     } catch (error) {
-        console.warn('Could not load hotspot data:', error.message, error);
+        console.warn('Could not load hotspot data:', error.message);
         hotspotData = null;
     }
 }
@@ -463,12 +460,8 @@ function renderHotspots() {
     const container = document.getElementById('hotspots-container');
     if (!container) return;
 
-    console.log('renderHotspots: hotspotData =', hotspotData);
-    console.log('renderHotspots: currentSpecies.code =', currentSpecies?.code);
-
     // Check if we have hotspot data
     if (!hotspotData || !hotspotData.species) {
-        console.log('renderHotspots: No hotspot data or species object');
         container.innerHTML = `
             <div class="text-center py-6" style="color: #6B7280;">
                 <p>No hotspot data available - this species is rarely recorded in the county</p>
@@ -479,7 +472,6 @@ function renderHotspots() {
 
     // Find hotspots for current species by code
     const speciesHotspots = hotspotData.species[currentSpecies.code];
-    console.log('renderHotspots: speciesHotspots =', speciesHotspots);
 
     if (!speciesHotspots || !speciesHotspots.top_hotspots || speciesHotspots.top_hotspots.length === 0) {
         container.innerHTML = `
