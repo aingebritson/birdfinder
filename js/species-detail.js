@@ -3,6 +3,7 @@
  */
 
 let currentSpecies = null;
+let hotspotData = null;
 
 /**
  * Get species code from URL
@@ -80,6 +81,10 @@ async function init() {
     renderSpeciesDetails();
     renderTimingInfo();
     renderFrequencyChart();
+
+    // Load and render hotspot data
+    await loadHotspotData();
+    renderHotspots();
 }
 
 /**
@@ -430,6 +435,77 @@ function renderFrequencyChart() {
         tooltip.style.opacity = '0';
         indicator.style.opacity = '0';
     });
+}
+
+/**
+ * Load hotspot data from JSON file
+ */
+async function loadHotspotData() {
+    try {
+        const data = await fetchWithRetry('../regions/washtenaw/hotspot_guide_output/index/top_hotspots_by_species.json', {
+            autoRetry: true,
+            timeoutMs: 10000
+        });
+        hotspotData = data;
+        console.log('✓ Loaded hotspot data');
+    } catch (error) {
+        console.warn('Could not load hotspot data:', error.message);
+        hotspotData = null;
+    }
+}
+
+/**
+ * Render hotspot cards for current species
+ */
+function renderHotspots() {
+    const container = document.getElementById('hotspots-container');
+    if (!container) return;
+
+    // Check if we have hotspot data
+    if (!hotspotData || !hotspotData.species) {
+        container.innerHTML = `
+            <div class="text-center py-6" style="color: #6B7280;">
+                <p>No hotspot data available - this species is rarely recorded in the county</p>
+            </div>
+        `;
+        return;
+    }
+
+    // Find hotspots for current species by code
+    const speciesHotspots = hotspotData.species[currentSpecies.code];
+
+    if (!speciesHotspots || !speciesHotspots.top_hotspots || speciesHotspots.top_hotspots.length === 0) {
+        container.innerHTML = `
+            <div class="text-center py-6" style="color: #6B7280;">
+                <p>No hotspot data available - this species is rarely recorded in the county</p>
+            </div>
+        `;
+        return;
+    }
+
+    // Render hotspot cards
+    const hotspotsHtml = speciesHotspots.top_hotspots.map(hotspot => {
+        const occurrencePercent = (hotspot.occurrence_rate * 100).toFixed(1);
+        const liftText = hotspot.lift ? `${hotspot.lift.toFixed(1)}× county average` : '';
+        const ebirdUrl = `https://ebird.org/hotspot/${hotspot.locality_id}`;
+
+        return `
+            <a href="${ebirdUrl}" target="_blank" rel="noopener noreferrer" class="hotspot-card block">
+                <div class="hotspot-name">${hotspot.name}</div>
+                <div class="hotspot-stats">
+                    <span class="hotspot-occurrence">${occurrencePercent}% of checklists</span>
+                    ${liftText ? `<span class="hotspot-separator">•</span><span class="hotspot-lift">${liftText}</span>` : ''}
+                </div>
+                <div class="hotspot-detections">${hotspot.detection_count.toLocaleString()} detections</div>
+            </a>
+        `;
+    }).join('');
+
+    container.innerHTML = `
+        <div class="hotspots-grid">
+            ${hotspotsHtml}
+        </div>
+    `;
 }
 
 // Initialize when DOM is ready
