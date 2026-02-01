@@ -4,6 +4,13 @@
     "code": "harduc",
     "scientific_name": "Histrionicus histrionicus"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0023,
+    "total_detections": 338,
+    "total_checklists_with_species": 338,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 3
+  },
   "summary": {
     "total_hotspots_detected": 3,
     "total_detections": 338,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.1637,
+        "lift": 71.6,
         "detection_count": 301,
         "total_checklists": 1839,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0549,
+        "lift": 24.03,
         "detection_count": 34,
         "total_checklists": 619,
         "confidence": "high"
@@ -98,6 +107,7 @@
       },
       "occurrence": {
         "rate": 0.0007,
+        "lift": 0.3,
         "detection_count": 3,
         "total_checklists": 4386,
         "confidence": "high"
@@ -129,7 +139,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.745866Z",
+    "generated_at": "2026-01-25T23:05:32.200974Z",
     "data_version": "Dec-2025"
   }
 }

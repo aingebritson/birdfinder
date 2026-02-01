@@ -4,6 +4,13 @@
     "code": "leabit",
     "scientific_name": "Botaurus exilis"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0012,
+    "total_detections": 173,
+    "total_checklists_with_species": 173,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 20
+  },
   "summary": {
     "total_hotspots_detected": 20,
     "total_detections": 173,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0802,
+        "lift": 68.55,
         "detection_count": 139,
         "total_checklists": 1733,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0294,
+        "lift": 25.14,
         "detection_count": 1,
         "total_checklists": 34,
         "confidence": "medium"
@@ -85,6 +94,7 @@
       },
       "occurrence": {
         "rate": 0.0167,
+        "lift": 14.24,
         "detection_count": 1,
         "total_checklists": 60,
         "confidence": "medium"
@@ -119,6 +129,7 @@
       },
       "occurrence": {
         "rate": 0.0098,
+        "lift": 8.38,
         "detection_count": 1,
         "total_checklists": 102,
         "confidence": "high"
@@ -156,6 +167,7 @@
       },
       "occurrence": {
         "rate": 0.0075,
+        "lift": 6.43,
         "detection_count": 1,
         "total_checklists": 133,
         "confidence": "high"
@@ -193,6 +205,7 @@
       },
       "occurrence": {
         "rate": 0.0068,
+        "lift": 5.85,
         "detection_count": 1,
         "total_checklists": 146,
         "confidence": "high"
@@ -231,6 +244,7 @@
       },
       "occurrence": {
         "rate": 0.0064,
+        "lift": 5.48,
         "detection_count": 1,
         "total_checklists": 156,
         "confidence": "high"
@@ -263,6 +277,7 @@
       },
       "occurrence": {
         "rate": 0.0042,
+        "lift": 3.59,
         "detection_count": 9,
         "total_checklists": 2142,
         "confidence": "high"
@@ -302,6 +317,7 @@
       },
       "occurrence": {
         "rate": 0.0029,
+        "lift": 2.45,
         "detection_count": 3,
         "total_checklists": 1048,
         "confidence": "high"
@@ -341,6 +357,7 @@
       },
       "occurrence": {
         "rate": 0.0027,
+        "lift": 2.35,
         "detection_count": 1,
         "total_checklists": 364,
         "confidence": "high"
@@ -380,6 +397,7 @@
       },
       "occurrence": {
         "rate": 0.0025,
+        "lift": 2.11,
         "detection_count": 1,
         "total_checklists": 406,
         "confidence": "high"
@@ -419,6 +437,7 @@
       },
       "occurrence": {
         "rate": 0.0024,
+        "lift": 2.06,
         "detection_count": 2,
         "total_checklists": 831,
         "confidence": "high"
@@ -458,6 +477,7 @@
       },
       "occurrence": {
         "rate": 0.0018,
+        "lift": 1.5,
         "detection_count": 1,
         "total_checklists": 570,
         "confidence": "high"
@@ -497,6 +517,7 @@
       },
       "occurrence": {
         "rate": 0.0017,
+        "lift": 1.41,
         "detection_count": 4,
         "total_checklists": 2419,
         "confidence": "high"
@@ -536,6 +557,7 @@
       },
       "occurrence": {
         "rate": 0.0013,
+        "lift": 1.14,
         "detection_count": 2,
         "total_checklists": 1499,
         "confidence": "high"
@@ -575,6 +597,7 @@
       },
       "occurrence": {
         "rate": 0.0012,
+        "lift": 1.04,
         "detection_count": 1,
         "total_checklists": 824,
         "confidence": "high"
@@ -614,6 +637,7 @@
       },
       "occurrence": {
         "rate": 0.0005,
+        "lift": 0.44,
         "detection_count": 1,
         "total_checklists": 1936,
         "confidence": "high"
@@ -653,6 +677,7 @@
       },
       "occurrence": {
         "rate": 0.0004,
+        "lift": 0.36,
         "detection_count": 1,
         "total_checklists": 2386,
         "confidence": "high"
@@ -692,6 +717,7 @@
       },
       "occurrence": {
         "rate": 0.0003,
+        "lift": 0.26,
         "detection_count": 1,
         "total_checklists": 3323,
         "confidence": "high"
@@ -731,6 +757,7 @@
       },
       "occurrence": {
         "rate": 0.0002,
+        "lift": 0.18,
         "detection_count": 1,
         "total_checklists": 4859,
         "confidence": "high"
@@ -762,7 +789,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.738871Z",
+    "generated_at": "2026-01-25T23:05:32.192664Z",
     "data_version": "Dec-2025"
   }
 }

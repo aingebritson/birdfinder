@@ -4,6 +4,13 @@
     "code": "yelcha",
     "scientific_name": "Icteria virens"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0018,
+    "total_detections": 264,
+    "total_checklists_with_species": 264,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 24
+  },
   "summary": {
     "total_hotspots_detected": 24,
     "total_detections": 264,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.2064,
+        "lift": 115.61,
         "detection_count": 45,
         "total_checklists": 218,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0962,
+        "lift": 53.85,
         "detection_count": 5,
         "total_checklists": 52,
         "confidence": "medium"
@@ -85,6 +94,7 @@
       },
       "occurrence": {
         "rate": 0.0455,
+        "lift": 25.46,
         "detection_count": 27,
         "total_checklists": 594,
         "confidence": "high"
@@ -124,6 +134,7 @@
       },
       "occurrence": {
         "rate": 0.0256,
+        "lift": 14.36,
         "detection_count": 1,
         "total_checklists": 39,
         "confidence": "medium"
@@ -156,6 +167,7 @@
       },
       "occurrence": {
         "rate": 0.0254,
+        "lift": 14.23,
         "detection_count": 36,
         "total_checklists": 1417,
         "confidence": "high"
@@ -195,6 +207,7 @@
       },
       "occurrence": {
         "rate": 0.0242,
+        "lift": 13.57,
         "detection_count": 42,
         "total_checklists": 1733,
         "confidence": "high"
@@ -234,6 +247,7 @@
       },
       "occurrence": {
         "rate": 0.0141,
+        "lift": 7.92,
         "detection_count": 34,
         "total_checklists": 2403,
         "confidence": "high"
@@ -273,6 +287,7 @@
       },
       "occurrence": {
         "rate": 0.0123,
+        "lift": 6.88,
         "detection_count": 10,
         "total_checklists": 814,
         "confidence": "high"
@@ -308,6 +323,7 @@
       },
       "occurrence": {
         "rate": 0.0107,
+        "lift": 6.02,
         "detection_count": 26,
         "total_checklists": 2419,
         "confidence": "high"
@@ -347,6 +363,7 @@
       },
       "occurrence": {
         "rate": 0.01,
+        "lift": 5.58,
         "detection_count": 6,
         "total_checklists": 602,
         "confidence": "high"
@@ -386,6 +403,7 @@
       },
       "occurrence": {
         "rate": 0.009,
+        "lift": 5.05,
         "detection_count": 1,
         "total_checklists": 111,
         "confidence": "high"
@@ -422,6 +440,7 @@
       },
       "occurrence": {
         "rate": 0.0076,
+        "lift": 4.28,
         "detection_count": 3,
         "total_checklists": 393,
         "confidence": "high"
@@ -461,6 +480,7 @@
       },
       "occurrence": {
         "rate": 0.0065,
+        "lift": 3.62,
         "detection_count": 2,
         "total_checklists": 309,
         "confidence": "high"
@@ -500,6 +520,7 @@
       },
       "occurrence": {
         "rate": 0.0051,
+        "lift": 2.86,
         "detection_count": 1,
         "total_checklists": 196,
         "confidence": "high"
@@ -538,6 +559,7 @@
       },
       "occurrence": {
         "rate": 0.0049,
+        "lift": 2.75,
         "detection_count": 6,
         "total_checklists": 1222,
         "confidence": "high"
@@ -577,6 +599,7 @@
       },
       "occurrence": {
         "rate": 0.0049,
+        "lift": 2.74,
         "detection_count": 5,
         "total_checklists": 1021,
         "confidence": "high"
@@ -616,6 +639,7 @@
       },
       "occurrence": {
         "rate": 0.0049,
+        "lift": 2.76,
         "detection_count": 4,
         "total_checklists": 812,
         "confidence": "high"
@@ -655,6 +679,7 @@
       },
       "occurrence": {
         "rate": 0.0039,
+        "lift": 2.2,
         "detection_count": 3,
         "total_checklists": 765,
         "confidence": "high"
@@ -694,6 +719,7 @@
       },
       "occurrence": {
         "rate": 0.0028,
+        "lift": 1.59,
         "detection_count": 1,
         "total_checklists": 353,
         "confidence": "high"
@@ -733,6 +759,7 @@
       },
       "occurrence": {
         "rate": 0.0027,
+        "lift": 1.49,
         "detection_count": 1,
         "total_checklists": 376,
         "confidence": "high"
@@ -772,6 +799,7 @@
       },
       "occurrence": {
         "rate": 0.0024,
+        "lift": 1.36,
         "detection_count": 1,
         "total_checklists": 413,
         "confidence": "high"
@@ -811,6 +839,7 @@
       },
       "occurrence": {
         "rate": 0.001,
+        "lift": 0.54,
         "detection_count": 2,
         "total_checklists": 2073,
         "confidence": "high"
@@ -850,6 +879,7 @@
       },
       "occurrence": {
         "rate": 0.0008,
+        "lift": 0.44,
         "detection_count": 1,
         "total_checklists": 1277,
         "confidence": "high"
@@ -889,6 +919,7 @@
       },
       "occurrence": {
         "rate": 0.0002,
+        "lift": 0.12,
         "detection_count": 1,
         "total_checklists": 4859,
         "confidence": "high"
@@ -920,7 +951,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.683142Z",
+    "generated_at": "2026-01-25T23:05:32.123456Z",
     "data_version": "Dec-2025"
   }
 }

@@ -4,6 +4,13 @@
     "code": "fragul",
     "scientific_name": "Leucophaeus pipixcan"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0,
+    "total_detections": 3,
+    "total_checklists_with_species": 3,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 2
+  },
   "summary": {
     "total_hotspots_detected": 2,
     "total_detections": 3,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0009,
+        "lift": 45.76,
         "detection_count": 1,
         "total_checklists": 1077,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0005,
+        "lift": 22.47,
         "detection_count": 2,
         "total_checklists": 4386,
         "confidence": "high"
@@ -90,7 +99,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.735037Z",
+    "generated_at": "2026-01-25T23:05:32.188638Z",
     "data_version": "Dec-2025"
   }
 }

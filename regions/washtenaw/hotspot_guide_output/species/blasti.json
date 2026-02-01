@@ -4,6 +4,13 @@
     "code": "blasti",
     "scientific_name": "Himantopus mexicanus"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0004,
+    "total_detections": 55,
+    "total_checklists_with_species": 55,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 1
+  },
   "summary": {
     "total_hotspots_detected": 1,
     "total_detections": 55,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0166,
+        "lift": 44.49,
         "detection_count": 55,
         "total_checklists": 3323,
         "confidence": "high"
@@ -51,7 +59,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.743485Z",
+    "generated_at": "2026-01-25T23:05:32.198263Z",
     "data_version": "Dec-2025"
   }
 }

@@ -4,6 +4,13 @@
     "code": "kirwar",
     "scientific_name": "Setophaga kirtlandii"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0006,
+    "total_detections": 90,
+    "total_checklists_with_species": 90,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 5
+  },
   "summary": {
     "total_hotspots_detected": 5,
     "total_detections": 90,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0207,
+        "lift": 33.95,
         "detection_count": 38,
         "total_checklists": 1839,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0076,
+        "lift": 12.42,
         "detection_count": 28,
         "total_checklists": 3703,
         "confidence": "high"
@@ -98,6 +107,7 @@
       },
       "occurrence": {
         "rate": 0.0048,
+        "lift": 7.87,
         "detection_count": 21,
         "total_checklists": 4386,
         "confidence": "high"
@@ -137,6 +147,7 @@
       },
       "occurrence": {
         "rate": 0.0028,
+        "lift": 4.61,
         "detection_count": 1,
         "total_checklists": 356,
         "confidence": "high"
@@ -175,6 +186,7 @@
       },
       "occurrence": {
         "rate": 0.0002,
+        "lift": 0.26,
         "detection_count": 2,
         "total_checklists": 12539,
         "confidence": "high"
@@ -206,7 +218,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.738694Z",
+    "generated_at": "2026-01-25T23:05:32.192433Z",
     "data_version": "Dec-2025"
   }
 }

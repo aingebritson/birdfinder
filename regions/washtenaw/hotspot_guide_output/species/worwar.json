@@ -4,6 +4,13 @@
     "code": "worwar",
     "scientific_name": "Helmitheros vermivorum"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0003,
+    "total_detections": 49,
+    "total_checklists_with_species": 49,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 5
+  },
   "summary": {
     "total_hotspots_detected": 5,
     "total_detections": 49,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0102,
+        "lift": 30.79,
         "detection_count": 2,
         "total_checklists": 196,
         "confidence": "high"
@@ -58,6 +66,7 @@
       },
       "occurrence": {
         "rate": 0.0079,
+        "lift": 23.76,
         "detection_count": 6,
         "total_checklists": 762,
         "confidence": "high"
@@ -97,6 +106,7 @@
       },
       "occurrence": {
         "rate": 0.0031,
+        "lift": 9.39,
         "detection_count": 39,
         "total_checklists": 12539,
         "confidence": "high"
@@ -136,6 +146,7 @@
       },
       "occurrence": {
         "rate": 0.0016,
+        "lift": 4.77,
         "detection_count": 1,
         "total_checklists": 632,
         "confidence": "high"
@@ -175,6 +186,7 @@
       },
       "occurrence": {
         "rate": 0.0005,
+        "lift": 1.46,
         "detection_count": 1,
         "total_checklists": 2073,
         "confidence": "high"
@@ -206,7 +218,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.732658Z",
+    "generated_at": "2026-01-25T23:05:32.185942Z",
     "data_version": "Dec-2025"
   }
 }

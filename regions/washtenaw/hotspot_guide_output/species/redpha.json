@@ -4,6 +4,13 @@
     "code": "redpha",
     "scientific_name": "Phalaropus lobatus"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0002,
+    "total_detections": 29,
+    "total_checklists_with_species": 29,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 4
+  },
   "summary": {
     "total_hotspots_detected": 4,
     "total_detections": 29,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0421,
+        "lift": 214.67,
         "detection_count": 24,
         "total_checklists": 570,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0083,
+        "lift": 42.49,
         "detection_count": 1,
         "total_checklists": 120,
         "confidence": "high"
@@ -97,6 +106,7 @@
       },
       "occurrence": {
         "rate": 0.0014,
+        "lift": 7.05,
         "detection_count": 3,
         "total_checklists": 2169,
         "confidence": "high"
@@ -136,6 +146,7 @@
       },
       "occurrence": {
         "rate": 0.0003,
+        "lift": 1.53,
         "detection_count": 1,
         "total_checklists": 3323,
         "confidence": "high"
@@ -167,7 +178,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.710421Z",
+    "generated_at": "2026-01-25T23:05:32.163220Z",
     "data_version": "Dec-2025"
   }
 }

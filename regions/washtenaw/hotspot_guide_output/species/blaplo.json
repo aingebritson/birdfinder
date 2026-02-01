@@ -4,6 +4,13 @@
     "code": "blaplo",
     "scientific_name": "Pluvialis squatarola"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0004,
+    "total_detections": 59,
+    "total_checklists_with_species": 59,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 6
+  },
   "summary": {
     "total_hotspots_detected": 6,
     "total_detections": 59,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.2069,
+        "lift": 518.49,
         "detection_count": 24,
         "total_checklists": 116,
         "confidence": "high"
@@ -52,6 +60,7 @@
       },
       "occurrence": {
         "rate": 0.0939,
+        "lift": 235.26,
         "detection_count": 23,
         "total_checklists": 245,
         "confidence": "high"
@@ -85,6 +94,7 @@
       },
       "occurrence": {
         "rate": 0.0238,
+        "lift": 59.67,
         "detection_count": 1,
         "total_checklists": 42,
         "confidence": "medium"
@@ -113,6 +123,7 @@
       },
       "occurrence": {
         "rate": 0.0023,
+        "lift": 5.7,
         "detection_count": 2,
         "total_checklists": 879,
         "confidence": "high"
@@ -152,6 +163,7 @@
       },
       "occurrence": {
         "rate": 0.0018,
+        "lift": 4.52,
         "detection_count": 6,
         "total_checklists": 3323,
         "confidence": "high"
@@ -191,6 +203,7 @@
       },
       "occurrence": {
         "rate": 0.0007,
+        "lift": 1.76,
         "detection_count": 3,
         "total_checklists": 4283,
         "confidence": "high"
@@ -222,7 +235,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.729873Z",
+    "generated_at": "2026-01-25T23:05:32.182968Z",
     "data_version": "Dec-2025"
   }
 }

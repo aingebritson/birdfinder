@@ -4,6 +4,13 @@
     "code": "brebla",
     "scientific_name": "Euphagus cyanocephalus"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0,
+    "total_detections": 7,
+    "total_checklists_with_species": 7,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 2
+  },
   "summary": {
     "total_hotspots_detected": 2,
     "total_detections": 7,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0085,
+        "lift": 178.62,
         "detection_count": 4,
         "total_checklists": 473,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0014,
+        "lift": 29.58,
         "detection_count": 3,
         "total_checklists": 2142,
         "confidence": "high"
@@ -90,7 +99,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.737961Z",
+    "generated_at": "2026-01-25T23:05:32.191633Z",
     "data_version": "Dec-2025"
   }
 }

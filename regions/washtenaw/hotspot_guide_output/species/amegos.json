@@ -4,6 +4,13 @@
     "code": "amegos",
     "scientific_name": "Astur atricapillus"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0,
+    "total_detections": 2,
+    "total_checklists_with_species": 2,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 2
+  },
   "summary": {
     "total_hotspots_detected": 2,
     "total_detections": 2,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.001,
+        "lift": 70.54,
         "detection_count": 1,
         "total_checklists": 1048,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0004,
+        "lift": 26.65,
         "detection_count": 1,
         "total_checklists": 2774,
         "confidence": "high"
@@ -90,7 +99,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.738570Z",
+    "generated_at": "2026-01-25T23:05:32.192312Z",
     "data_version": "Dec-2025"
   }
 }

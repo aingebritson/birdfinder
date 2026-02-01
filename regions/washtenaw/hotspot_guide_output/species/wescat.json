@@ -4,6 +4,13 @@
     "code": "wescat",
     "scientific_name": "Ardea ibis"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 20,
+    "total_checklists_with_species": 20,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 5
+  },
   "summary": {
     "total_hotspots_detected": 5,
     "total_detections": 20,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0231,
+        "lift": 170.79,
         "detection_count": 14,
         "total_checklists": 606,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0061,
+        "lift": 44.8,
         "detection_count": 1,
         "total_checklists": 165,
         "confidence": "high"
@@ -89,6 +98,7 @@
       },
       "occurrence": {
         "rate": 0.0036,
+        "lift": 26.85,
         "detection_count": 3,
         "total_checklists": 826,
         "confidence": "high"
@@ -128,6 +138,7 @@
       },
       "occurrence": {
         "rate": 0.0012,
+        "lift": 8.97,
         "detection_count": 1,
         "total_checklists": 824,
         "confidence": "high"
@@ -167,6 +178,7 @@
       },
       "occurrence": {
         "rate": 0.0011,
+        "lift": 8.41,
         "detection_count": 1,
         "total_checklists": 879,
         "confidence": "high"
@@ -198,7 +210,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.732964Z",
+    "generated_at": "2026-01-25T23:05:32.186328Z",
     "data_version": "Dec-2025"
   }
 }

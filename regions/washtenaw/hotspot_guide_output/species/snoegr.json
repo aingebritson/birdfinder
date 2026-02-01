@@ -4,6 +4,13 @@
     "code": "snoegr",
     "scientific_name": "Egretta thula"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0007,
+    "total_detections": 104,
+    "total_checklists_with_species": 104,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 7
+  },
   "summary": {
     "total_hotspots_detected": 7,
     "total_detections": 104,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0602,
+        "lift": 85.52,
         "detection_count": 8,
         "total_checklists": 133,
         "confidence": "high"
@@ -56,6 +64,7 @@
       },
       "occurrence": {
         "rate": 0.0241,
+        "lift": 34.23,
         "detection_count": 80,
         "total_checklists": 3323,
         "confidence": "high"
@@ -95,6 +104,7 @@
       },
       "occurrence": {
         "rate": 0.0102,
+        "lift": 14.56,
         "detection_count": 9,
         "total_checklists": 879,
         "confidence": "high"
@@ -134,6 +144,7 @@
       },
       "occurrence": {
         "rate": 0.0016,
+        "lift": 2.3,
         "detection_count": 4,
         "total_checklists": 2471,
         "confidence": "high"
@@ -173,6 +184,7 @@
       },
       "occurrence": {
         "rate": 0.0005,
+        "lift": 0.66,
         "detection_count": 1,
         "total_checklists": 2169,
         "confidence": "high"
@@ -212,6 +224,7 @@
       },
       "occurrence": {
         "rate": 0.0003,
+        "lift": 0.37,
         "detection_count": 1,
         "total_checklists": 3881,
         "confidence": "high"
@@ -251,6 +264,7 @@
       },
       "occurrence": {
         "rate": 0.0002,
+        "lift": 0.33,
         "detection_count": 1,
         "total_checklists": 4283,
         "confidence": "high"
@@ -282,7 +296,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.741920Z",
+    "generated_at": "2026-01-25T23:05:32.196433Z",
     "data_version": "Dec-2025"
   }
 }

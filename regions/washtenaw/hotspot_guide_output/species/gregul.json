@@ -4,6 +4,13 @@
     "code": "gregul",
     "scientific_name": "Larus marinus"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0014,
+    "total_detections": 211,
+    "total_checklists_with_species": 211,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 11
+  },
   "summary": {
     "total_hotspots_detected": 11,
     "total_detections": 211,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.1689,
+        "lift": 118.34,
         "detection_count": 51,
         "total_checklists": 302,
         "confidence": "high"
@@ -53,6 +61,7 @@
       },
       "occurrence": {
         "rate": 0.0379,
+        "lift": 26.55,
         "detection_count": 23,
         "total_checklists": 607,
         "confidence": "high"
@@ -92,6 +101,7 @@
       },
       "occurrence": {
         "rate": 0.0294,
+        "lift": 20.61,
         "detection_count": 19,
         "total_checklists": 646,
         "confidence": "high"
@@ -130,6 +140,7 @@
       },
       "occurrence": {
         "rate": 0.0242,
+        "lift": 16.94,
         "detection_count": 106,
         "total_checklists": 4386,
         "confidence": "high"
@@ -169,6 +180,7 @@
       },
       "occurrence": {
         "rate": 0.005,
+        "lift": 3.47,
         "detection_count": 1,
         "total_checklists": 202,
         "confidence": "high"
@@ -206,6 +218,7 @@
       },
       "occurrence": {
         "rate": 0.004,
+        "lift": 2.78,
         "detection_count": 2,
         "total_checklists": 504,
         "confidence": "high"
@@ -243,6 +256,7 @@
       },
       "occurrence": {
         "rate": 0.0027,
+        "lift": 1.86,
         "detection_count": 2,
         "total_checklists": 753,
         "confidence": "high"
@@ -282,6 +296,7 @@
       },
       "occurrence": {
         "rate": 0.0014,
+        "lift": 1.01,
         "detection_count": 3,
         "total_checklists": 2073,
         "confidence": "high"
@@ -321,6 +336,7 @@
       },
       "occurrence": {
         "rate": 0.0009,
+        "lift": 0.65,
         "detection_count": 1,
         "total_checklists": 1077,
         "confidence": "high"
@@ -360,6 +376,7 @@
       },
       "occurrence": {
         "rate": 0.0005,
+        "lift": 0.33,
         "detection_count": 2,
         "total_checklists": 4283,
         "confidence": "high"
@@ -399,6 +416,7 @@
       },
       "occurrence": {
         "rate": 0.0004,
+        "lift": 0.25,
         "detection_count": 1,
         "total_checklists": 2774,
         "confidence": "high"
@@ -430,7 +448,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.719056Z",
+    "generated_at": "2026-01-25T23:05:32.172117Z",
     "data_version": "Dec-2025"
   }
 }

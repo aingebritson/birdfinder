@@ -4,6 +4,13 @@
     "code": "whisan",
     "scientific_name": "Calidris fuscicollis"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0009,
+    "total_detections": 133,
+    "total_checklists_with_species": 133,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 11
+  },
   "summary": {
     "total_hotspots_detected": 11,
     "total_detections": 133,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0374,
+        "lift": 41.63,
         "detection_count": 17,
         "total_checklists": 454,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0345,
+        "lift": 38.33,
         "detection_count": 4,
         "total_checklists": 116,
         "confidence": "high"
@@ -91,6 +100,7 @@
       },
       "occurrence": {
         "rate": 0.0281,
+        "lift": 31.21,
         "detection_count": 16,
         "total_checklists": 570,
         "confidence": "high"
@@ -130,6 +140,7 @@
       },
       "occurrence": {
         "rate": 0.0172,
+        "lift": 19.07,
         "detection_count": 57,
         "total_checklists": 3323,
         "confidence": "high"
@@ -169,6 +180,7 @@
       },
       "occurrence": {
         "rate": 0.0116,
+        "lift": 12.93,
         "detection_count": 7,
         "total_checklists": 602,
         "confidence": "high"
@@ -208,6 +220,7 @@
       },
       "occurrence": {
         "rate": 0.0083,
+        "lift": 9.23,
         "detection_count": 18,
         "total_checklists": 2169,
         "confidence": "high"
@@ -247,6 +260,7 @@
       },
       "occurrence": {
         "rate": 0.0059,
+        "lift": 6.53,
         "detection_count": 3,
         "total_checklists": 511,
         "confidence": "high"
@@ -286,6 +300,7 @@
       },
       "occurrence": {
         "rate": 0.0053,
+        "lift": 5.91,
         "detection_count": 2,
         "total_checklists": 376,
         "confidence": "high"
@@ -325,6 +340,7 @@
       },
       "occurrence": {
         "rate": 0.0041,
+        "lift": 4.54,
         "detection_count": 1,
         "total_checklists": 245,
         "confidence": "high"
@@ -358,6 +374,7 @@
       },
       "occurrence": {
         "rate": 0.002,
+        "lift": 2.22,
         "detection_count": 3,
         "total_checklists": 1499,
         "confidence": "high"
@@ -397,6 +414,7 @@
       },
       "occurrence": {
         "rate": 0.0012,
+        "lift": 1.3,
         "detection_count": 5,
         "total_checklists": 4283,
         "confidence": "high"
@@ -428,7 +446,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.732294Z",
+    "generated_at": "2026-01-25T23:05:32.185531Z",
     "data_version": "Dec-2025"
   }
 }

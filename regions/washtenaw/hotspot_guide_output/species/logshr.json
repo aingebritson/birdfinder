@@ -4,6 +4,13 @@
     "code": "logshr",
     "scientific_name": "Lanius ludovicianus"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0002,
+    "total_detections": 27,
+    "total_checklists_with_species": 27,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 3
+  },
   "summary": {
     "total_hotspots_detected": 3,
     "total_detections": 27,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0548,
+        "lift": 300.06,
         "detection_count": 4,
         "total_checklists": 73,
         "confidence": "medium"
@@ -49,6 +57,7 @@
       },
       "occurrence": {
         "rate": 0.0051,
+        "lift": 28.13,
         "detection_count": 22,
         "total_checklists": 4283,
         "confidence": "high"
@@ -88,6 +97,7 @@
       },
       "occurrence": {
         "rate": 0.0005,
+        "lift": 2.64,
         "detection_count": 1,
         "total_checklists": 2073,
         "confidence": "high"
@@ -119,7 +129,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.743561Z",
+    "generated_at": "2026-01-25T23:05:32.198360Z",
     "data_version": "Dec-2025"
   }
 }

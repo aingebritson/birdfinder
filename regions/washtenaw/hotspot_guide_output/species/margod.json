@@ -4,6 +4,13 @@
     "code": "margod",
     "scientific_name": "Limosa fedoa"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0004,
+    "total_detections": 53,
+    "total_checklists_with_species": 53,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 2
+  },
   "summary": {
     "total_hotspots_detected": 2,
     "total_detections": 53,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.1633,
+        "lift": 455.47,
         "detection_count": 40,
         "total_checklists": 245,
         "confidence": "high"
@@ -53,6 +61,7 @@
       },
       "occurrence": {
         "rate": 0.0039,
+        "lift": 10.91,
         "detection_count": 13,
         "total_checklists": 3323,
         "confidence": "high"
@@ -84,7 +93,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.746325Z",
+    "generated_at": "2026-01-25T23:05:32.201372Z",
     "data_version": "Dec-2025"
   }
 }

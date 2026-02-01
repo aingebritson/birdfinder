@@ -4,6 +4,13 @@
     "code": "yelrai",
     "scientific_name": "Coturnicops noveboracensis"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0003,
+    "total_detections": 42,
+    "total_checklists_with_species": 42,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 2
+  },
   "summary": {
     "total_hotspots_detected": 2,
     "total_detections": 42,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.069,
+        "lift": 242.78,
         "detection_count": 2,
         "total_checklists": 29,
         "confidence": "low"
@@ -49,6 +57,7 @@
       },
       "occurrence": {
         "rate": 0.0371,
+        "lift": 130.75,
         "detection_count": 40,
         "total_checklists": 1077,
         "confidence": "high"
@@ -80,7 +89,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.746209Z",
+    "generated_at": "2026-01-25T23:05:32.201268Z",
     "data_version": "Dec-2025"
   }
 }

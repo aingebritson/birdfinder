@@ -4,6 +4,13 @@
     "code": "blawhi",
     "scientific_name": "Dendrocygna autumnalis"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0003,
+    "total_detections": 45,
+    "total_checklists_with_species": 45,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 2
+  },
   "summary": {
     "total_hotspots_detected": 2,
     "total_detections": 45,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0071,
+        "lift": 23.29,
         "detection_count": 38,
         "total_checklists": 5360,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0018,
+        "lift": 5.93,
         "detection_count": 7,
         "total_checklists": 3881,
         "confidence": "high"
@@ -90,7 +99,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.745575Z",
+    "generated_at": "2026-01-25T23:05:32.200713Z",
     "data_version": "Dec-2025"
   }
 }

@@ -27,6 +27,7 @@ class SpeciesAtHotspot:
     detection_count: int
     total_checklists: int
     occurrence_rate: float
+    lift: float | None  # hotspot_rate / county_baseline_rate
     avg_count: float | None
     max_count: int | None
     seasonal_rates: Dict[str, float]
@@ -41,6 +42,11 @@ class SpeciesGuide:
     scientific_name: str
     total_detections: int
     total_hotspots_detected: int
+    # Baseline fields for lift calculation
+    county_baseline_rate: float  # total_detections / total_checklists_countywide
+    total_checklists_with_species: int  # checklists where species was detected (all hotspots)
+    total_checklists_countywide: int  # all complete checklists across all hotspots
+    hotspots_detected_all: int  # hotspots where detected (including below threshold)
     hotspots: List[SpeciesAtHotspot] = field(default_factory=list)
 
 
@@ -68,6 +74,7 @@ def calculate_occurrence_rates(
     Calculate occurrence rates for each species at each hotspot.
 
     Occurrence Rate = (# checklists where species detected) / (# complete checklists)
+    Lift = hotspot_occurrence_rate / county_baseline_rate
 
     Args:
         hotspot_data: Dictionary of hotspot metadata from checklist_counter
@@ -79,11 +86,34 @@ def calculate_occurrence_rates(
     """
     species_guides: Dict[str, SpeciesGuide] = {}
 
+    # Calculate total county-wide checklists across ALL hotspots
+    total_checklists_countywide = sum(
+        h['total_checklists'] for h in hotspot_data.values()
+    )
+
     for species_name, hotspot_detections in species_detections.items():
         hotspots_list: List[SpeciesAtHotspot] = []
-        total_detections = 0
         scientific_name = None
 
+        # First pass: Calculate baseline across ALL hotspots (not just threshold-meeting)
+        total_detections_all = 0
+        hotspots_detected_all = 0
+        for loc_id, detection_data in hotspot_detections.items():
+            if loc_id not in hotspot_data:
+                continue
+            if scientific_name is None:
+                scientific_name = detection_data['scientific_name']
+            total_detections_all += len(detection_data['checklist_ids'])
+            hotspots_detected_all += 1
+
+        # Calculate baseline rate
+        if total_checklists_countywide > 0:
+            baseline_rate = total_detections_all / total_checklists_countywide
+        else:
+            baseline_rate = 0.0
+
+        # Second pass: Process hotspots meeting threshold and calculate lift
+        total_detections_threshold = 0
         for loc_id, detection_data in hotspot_detections.items():
             # Skip if hotspot not in our hotspot data
             if loc_id not in hotspot_data:
@@ -95,13 +125,15 @@ def calculate_occurrence_rates(
             if hotspot['total_checklists'] < min_checklists:
                 continue
 
-            # Get scientific name from first detection
-            if scientific_name is None:
-                scientific_name = detection_data['scientific_name']
-
             detection_count = len(detection_data['checklist_ids'])
-            total_detections += detection_count
+            total_detections_threshold += detection_count
             occurrence_rate = detection_count / hotspot['total_checklists']
+
+            # Calculate lift
+            if baseline_rate > 0:
+                lift = round(occurrence_rate / baseline_rate, 2)
+            else:
+                lift = None
 
             # Calculate seasonal rates
             seasonal_rates: Dict[str, float] = {}
@@ -145,6 +177,7 @@ def calculate_occurrence_rates(
                 detection_count=detection_count,
                 total_checklists=hotspot['total_checklists'],
                 occurrence_rate=round(occurrence_rate, RATE_DECIMAL_PLACES),
+                lift=lift,
                 avg_count=avg_count,
                 max_count=max_count,
                 seasonal_rates=seasonal_rates,
@@ -161,8 +194,12 @@ def calculate_occurrence_rates(
         species_guides[species_name] = SpeciesGuide(
             common_name=species_name,
             scientific_name=scientific_name or '',
-            total_detections=total_detections,
+            total_detections=total_detections_threshold,
             total_hotspots_detected=len(hotspots_list),
+            county_baseline_rate=round(baseline_rate, RATE_DECIMAL_PLACES),
+            total_checklists_with_species=total_detections_all,
+            total_checklists_countywide=total_checklists_countywide,
+            hotspots_detected_all=hotspots_detected_all,
             hotspots=hotspots_list,
         )
 

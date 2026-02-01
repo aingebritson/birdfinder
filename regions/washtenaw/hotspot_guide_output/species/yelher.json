@@ -4,6 +4,13 @@
     "code": "yelher",
     "scientific_name": "Nyctanassa violacea"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0013,
+    "total_detections": 189,
+    "total_checklists_with_species": 189,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 3
+  },
   "summary": {
     "total_hotspots_detected": 3,
     "total_detections": 189,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.75,
+        "lift": 586.73,
         "detection_count": 30,
         "total_checklists": 40,
         "confidence": "medium"
@@ -45,6 +53,7 @@
       },
       "occurrence": {
         "rate": 0.5132,
+        "lift": 401.5,
         "detection_count": 97,
         "total_checklists": 189,
         "confidence": "high"
@@ -76,6 +85,7 @@
       },
       "occurrence": {
         "rate": 0.0337,
+        "lift": 26.37,
         "detection_count": 62,
         "total_checklists": 1839,
         "confidence": "high"
@@ -107,7 +117,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.745001Z",
+    "generated_at": "2026-01-25T23:05:32.199931Z",
     "data_version": "Dec-2025"
   }
 }

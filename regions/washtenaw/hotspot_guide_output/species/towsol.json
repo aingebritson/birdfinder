@@ -4,6 +4,13 @@
     "code": "towsol",
     "scientific_name": "Myadestes townsendi"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0006,
+    "total_detections": 85,
+    "total_checklists_with_species": 85,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 1
+  },
   "summary": {
     "total_hotspots_detected": 1,
     "total_detections": 85,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0351,
+        "lift": 61.12,
         "detection_count": 85,
         "total_checklists": 2419,
         "confidence": "high"
@@ -51,7 +59,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.744512Z",
+    "generated_at": "2026-01-25T23:05:32.199297Z",
     "data_version": "Dec-2025"
   }
 }

@@ -4,6 +4,13 @@
     "code": "harspa",
     "scientific_name": "Zonotrichia querula"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0005,
+    "total_detections": 71,
+    "total_checklists_with_species": 71,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 2
+  },
   "summary": {
     "total_hotspots_detected": 2,
     "total_detections": 71,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.8434,
+        "lift": 1756.31,
         "detection_count": 70,
         "total_checklists": 83,
         "confidence": "medium"
@@ -47,6 +55,7 @@
       },
       "occurrence": {
         "rate": 0.0001,
+        "lift": 0.17,
         "detection_count": 1,
         "total_checklists": 12539,
         "confidence": "high"
@@ -78,7 +87,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.638141Z",
+    "generated_at": "2026-01-25T23:05:32.077447Z",
     "data_version": "Dec-2025"
   }
 }

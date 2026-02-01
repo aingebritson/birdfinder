@@ -7,14 +7,23 @@
     "source_file": "ebd_US-MI-161_smp_relDec-2025.txt"
   },
   "processing": {
-    "generated_at": "2026-01-20T02:37:00.069167Z",
+    "generated_at": "2026-01-25T23:05:32.541942Z",
     "total_hotspots": 315,
     "total_species": 304,
     "total_complete_checklists": 147856,
     "total_species_detections": 2847240
   },
   "methodology": {
-    "description": "Occurrence rate = (checklists with species) / (total complete checklists at hotspot)",
+    "occurrence_rate": {
+      "description": "Occurrence rate = (checklists with species) / (total complete checklists at hotspot)",
+      "interpretation": "Probability of seeing this species on a visit to this hotspot"
+    },
+    "lift": {
+      "description": "Lift = hotspot_occurrence_rate / county_baseline_rate",
+      "formula": "lift = (detections at hotspot / checklists at hotspot) / (detections countywide / checklists countywide)",
+      "interpretation": "1.0 = average for county, 2.0 = 2x better than average, etc.",
+      "baseline_note": "County baseline is calculated across ALL hotspots, not just those meeting the minimum checklist threshold"
+    },
     "filters": [
       "LOCALITY TYPE = H (hotspots only)",
       "ALL SPECIES REPORTED = 1 (complete checklists only)",
@@ -23,10 +32,11 @@
     "minimum_checklists": 10
   },
   "files": {
-    "species/": "One JSON file per species (named by 6-letter code) with hotspot rankings",
-    "hotspots/": "One JSON file per hotspot with species list",
+    "species/": "One JSON file per species (named by 6-letter code) with hotspot rankings and lift values",
+    "hotspots/": "One JSON file per hotspot with species list and lift values",
     "index/species_index.json": "Quick lookup of all species",
     "index/hotspot_index.json": "Quick lookup of all hotspots",
-    "index/top_hotspots_by_species.json": "Top 5 hotspots per species (keyed by code)"
+    "index/top_hotspots_by_species.json": "Top 5 hotspots per species (keyed by code)",
+    "index/notable_species_by_hotspot.json": "Top 10 high-lift species per hotspot (lift > 2.0, detections > 5)"
   }
 }

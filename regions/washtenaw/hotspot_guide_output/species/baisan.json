@@ -4,6 +4,13 @@
     "code": "baisan",
     "scientific_name": "Calidris bairdii"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0007,
+    "total_detections": 108,
+    "total_checklists_with_species": 108,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 9
+  },
   "summary": {
     "total_hotspots_detected": 9,
     "total_detections": 108,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0704,
+        "lift": 96.33,
         "detection_count": 33,
         "total_checklists": 469,
         "confidence": "high"
@@ -57,6 +65,7 @@
       },
       "occurrence": {
         "rate": 0.0526,
+        "lift": 72.05,
         "detection_count": 30,
         "total_checklists": 570,
         "confidence": "high"
@@ -96,6 +105,7 @@
       },
       "occurrence": {
         "rate": 0.0216,
+        "lift": 29.59,
         "detection_count": 19,
         "total_checklists": 879,
         "confidence": "high"
@@ -135,6 +145,7 @@
       },
       "occurrence": {
         "rate": 0.0163,
+        "lift": 22.35,
         "detection_count": 4,
         "total_checklists": 245,
         "confidence": "high"
@@ -168,6 +179,7 @@
       },
       "occurrence": {
         "rate": 0.0145,
+        "lift": 19.84,
         "detection_count": 2,
         "total_checklists": 138,
         "confidence": "high"
@@ -200,6 +212,7 @@
       },
       "occurrence": {
         "rate": 0.0055,
+        "lift": 7.52,
         "detection_count": 2,
         "total_checklists": 364,
         "confidence": "high"
@@ -239,6 +252,7 @@
       },
       "occurrence": {
         "rate": 0.0032,
+        "lift": 4.42,
         "detection_count": 7,
         "total_checklists": 2169,
         "confidence": "high"
@@ -278,6 +292,7 @@
       },
       "occurrence": {
         "rate": 0.0027,
+        "lift": 3.71,
         "detection_count": 9,
         "total_checklists": 3323,
         "confidence": "high"
@@ -317,6 +332,7 @@
       },
       "occurrence": {
         "rate": 0.0013,
+        "lift": 1.83,
         "detection_count": 2,
         "total_checklists": 1499,
         "confidence": "high"
@@ -348,7 +364,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.739665Z",
+    "generated_at": "2026-01-25T23:05:32.193645Z",
     "data_version": "Dec-2025"
   }
 }

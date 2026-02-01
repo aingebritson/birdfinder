@@ -4,6 +4,13 @@
     "code": "snoowl",
     "scientific_name": "Bubo scandiacus"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0005,
+    "total_detections": 78,
+    "total_checklists_with_species": 78,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 4
+  },
   "summary": {
     "total_hotspots_detected": 4,
     "total_detections": 78,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0154,
+        "lift": 29.16,
         "detection_count": 3,
         "total_checklists": 195,
         "confidence": "high"
@@ -56,6 +64,7 @@
       },
       "occurrence": {
         "rate": 0.0135,
+        "lift": 25.67,
         "detection_count": 58,
         "total_checklists": 4283,
         "confidence": "high"
@@ -95,6 +104,7 @@
       },
       "occurrence": {
         "rate": 0.0072,
+        "lift": 13.72,
         "detection_count": 15,
         "total_checklists": 2073,
         "confidence": "high"
@@ -134,6 +144,7 @@
       },
       "occurrence": {
         "rate": 0.0034,
+        "lift": 6.38,
         "detection_count": 2,
         "total_checklists": 594,
         "confidence": "high"
@@ -165,7 +176,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.742465Z",
+    "generated_at": "2026-01-25T23:05:32.196990Z",
     "data_version": "Dec-2025"
   }
 }

@@ -4,6 +4,13 @@
     "code": "miskit",
     "scientific_name": "Ictinia mississippiensis"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0016,
+    "total_detections": 233,
+    "total_checklists_with_species": 233,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 2
+  },
   "summary": {
     "total_hotspots_detected": 2,
     "total_detections": 233,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.1637,
+        "lift": 103.9,
         "detection_count": 232,
         "total_checklists": 1417,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0017,
+        "lift": 1.1,
         "detection_count": 1,
         "total_checklists": 577,
         "confidence": "high"
@@ -90,7 +99,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.745267Z",
+    "generated_at": "2026-01-25T23:05:32.200296Z",
     "data_version": "Dec-2025"
   }
 }

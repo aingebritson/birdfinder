@@ -4,6 +4,13 @@
     "code": "conwar",
     "scientific_name": "Oporornis agilis"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0014,
+    "total_detections": 205,
+    "total_checklists_with_species": 205,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 24
+  },
   "summary": {
     "total_hotspots_detected": 24,
     "total_detections": 205,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0352,
+        "lift": 25.4,
         "detection_count": 5,
         "total_checklists": 142,
         "confidence": "high"
@@ -55,6 +63,7 @@
       },
       "occurrence": {
         "rate": 0.0226,
+        "lift": 16.27,
         "detection_count": 3,
         "total_checklists": 133,
         "confidence": "high"
@@ -92,6 +101,7 @@
       },
       "occurrence": {
         "rate": 0.0144,
+        "lift": 10.42,
         "detection_count": 12,
         "total_checklists": 831,
         "confidence": "high"
@@ -131,6 +141,7 @@
       },
       "occurrence": {
         "rate": 0.0131,
+        "lift": 9.44,
         "detection_count": 16,
         "total_checklists": 1222,
         "confidence": "high"
@@ -170,6 +181,7 @@
       },
       "occurrence": {
         "rate": 0.0102,
+        "lift": 7.36,
         "detection_count": 2,
         "total_checklists": 196,
         "confidence": "high"
@@ -208,6 +220,7 @@
       },
       "occurrence": {
         "rate": 0.0096,
+        "lift": 6.9,
         "detection_count": 120,
         "total_checklists": 12539,
         "confidence": "high"
@@ -247,6 +260,7 @@
       },
       "occurrence": {
         "rate": 0.0074,
+        "lift": 5.33,
         "detection_count": 3,
         "total_checklists": 406,
         "confidence": "high"
@@ -286,6 +300,7 @@
       },
       "occurrence": {
         "rate": 0.0056,
+        "lift": 4.07,
         "detection_count": 8,
         "total_checklists": 1417,
         "confidence": "high"
@@ -325,6 +340,7 @@
       },
       "occurrence": {
         "rate": 0.0042,
+        "lift": 3.05,
         "detection_count": 2,
         "total_checklists": 473,
         "confidence": "high"
@@ -364,6 +380,7 @@
       },
       "occurrence": {
         "rate": 0.0032,
+        "lift": 2.33,
         "detection_count": 1,
         "total_checklists": 309,
         "confidence": "high"
@@ -403,6 +420,7 @@
       },
       "occurrence": {
         "rate": 0.0024,
+        "lift": 1.73,
         "detection_count": 1,
         "total_checklists": 417,
         "confidence": "high"
@@ -442,6 +460,7 @@
       },
       "occurrence": {
         "rate": 0.0016,
+        "lift": 1.13,
         "detection_count": 2,
         "total_checklists": 1277,
         "confidence": "high"
@@ -481,6 +500,7 @@
       },
       "occurrence": {
         "rate": 0.0016,
+        "lift": 1.14,
         "detection_count": 1,
         "total_checklists": 632,
         "confidence": "high"
@@ -520,6 +540,7 @@
       },
       "occurrence": {
         "rate": 0.0015,
+        "lift": 1.12,
         "detection_count": 2,
         "total_checklists": 1291,
         "confidence": "high"
@@ -559,6 +580,7 @@
       },
       "occurrence": {
         "rate": 0.0014,
+        "lift": 0.97,
         "detection_count": 5,
         "total_checklists": 3703,
         "confidence": "high"
@@ -598,6 +620,7 @@
       },
       "occurrence": {
         "rate": 0.0014,
+        "lift": 0.99,
         "detection_count": 1,
         "total_checklists": 728,
         "confidence": "high"
@@ -637,6 +660,7 @@
       },
       "occurrence": {
         "rate": 0.0013,
+        "lift": 0.93,
         "detection_count": 5,
         "total_checklists": 3881,
         "confidence": "high"
@@ -676,6 +700,7 @@
       },
       "occurrence": {
         "rate": 0.0012,
+        "lift": 0.87,
         "detection_count": 4,
         "total_checklists": 3323,
         "confidence": "high"
@@ -715,6 +740,7 @@
       },
       "occurrence": {
         "rate": 0.001,
+        "lift": 0.74,
         "detection_count": 5,
         "total_checklists": 4859,
         "confidence": "high"
@@ -754,6 +780,7 @@
       },
       "occurrence": {
         "rate": 0.0008,
+        "lift": 0.6,
         "detection_count": 2,
         "total_checklists": 2403,
         "confidence": "high"
@@ -793,6 +820,7 @@
       },
       "occurrence": {
         "rate": 0.0006,
+        "lift": 0.42,
         "detection_count": 1,
         "total_checklists": 1733,
         "confidence": "high"
@@ -832,6 +860,7 @@
       },
       "occurrence": {
         "rate": 0.0006,
+        "lift": 0.45,
         "detection_count": 1,
         "total_checklists": 1614,
         "confidence": "high"
@@ -871,6 +900,7 @@
       },
       "occurrence": {
         "rate": 0.0005,
+        "lift": 0.35,
         "detection_count": 2,
         "total_checklists": 4143,
         "confidence": "high"
@@ -910,6 +940,7 @@
       },
       "occurrence": {
         "rate": 0.0004,
+        "lift": 0.3,
         "detection_count": 1,
         "total_checklists": 2386,
         "confidence": "high"
@@ -941,7 +972,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.573320Z",
+    "generated_at": "2026-01-25T23:05:32.014111Z",
     "data_version": "Dec-2025"
   }
 }

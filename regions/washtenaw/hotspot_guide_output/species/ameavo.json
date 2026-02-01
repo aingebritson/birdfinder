@@ -4,6 +4,13 @@
     "code": "ameavo",
     "scientific_name": "Recurvirostra americana"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0004,
+    "total_detections": 59,
+    "total_checklists_with_species": 59,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 3
+  },
   "summary": {
     "total_hotspots_detected": 3,
     "total_detections": 59,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0113,
+        "lift": 28.4,
         "detection_count": 28,
         "total_checklists": 2471,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.009,
+        "lift": 22.62,
         "detection_count": 30,
         "total_checklists": 3323,
         "confidence": "high"
@@ -98,6 +107,7 @@
       },
       "occurrence": {
         "rate": 0.0025,
+        "lift": 6.16,
         "detection_count": 1,
         "total_checklists": 407,
         "confidence": "high"
@@ -129,7 +139,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.744170Z",
+    "generated_at": "2026-01-25T23:05:32.198959Z",
     "data_version": "Dec-2025"
   }
 }

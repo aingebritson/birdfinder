@@ -4,6 +4,13 @@
     "code": "sumtan",
     "scientific_name": "Piranga rubra"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0014,
+    "total_detections": 212,
+    "total_checklists_with_species": 212,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 11
+  },
   "summary": {
     "total_hotspots_detected": 11,
     "total_detections": 212,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.1475,
+        "lift": 102.87,
         "detection_count": 118,
         "total_checklists": 800,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0753,
+        "lift": 52.5,
         "detection_count": 49,
         "total_checklists": 651,
         "confidence": "high"
@@ -98,6 +107,7 @@
       },
       "occurrence": {
         "rate": 0.045,
+        "lift": 31.42,
         "detection_count": 5,
         "total_checklists": 111,
         "confidence": "high"
@@ -134,6 +144,7 @@
       },
       "occurrence": {
         "rate": 0.0139,
+        "lift": 9.69,
         "detection_count": 2,
         "total_checklists": 144,
         "confidence": "high"
@@ -172,6 +183,7 @@
       },
       "occurrence": {
         "rate": 0.0104,
+        "lift": 7.26,
         "detection_count": 25,
         "total_checklists": 2403,
         "confidence": "high"
@@ -211,6 +223,7 @@
       },
       "occurrence": {
         "rate": 0.0069,
+        "lift": 4.84,
         "detection_count": 1,
         "total_checklists": 144,
         "confidence": "high"
@@ -246,6 +259,7 @@
       },
       "occurrence": {
         "rate": 0.0019,
+        "lift": 1.35,
         "detection_count": 1,
         "total_checklists": 515,
         "confidence": "high"
@@ -284,6 +298,7 @@
       },
       "occurrence": {
         "rate": 0.0011,
+        "lift": 0.76,
         "detection_count": 2,
         "total_checklists": 1839,
         "confidence": "high"
@@ -323,6 +338,7 @@
       },
       "occurrence": {
         "rate": 0.0005,
+        "lift": 0.33,
         "detection_count": 6,
         "total_checklists": 12539,
         "confidence": "high"
@@ -362,6 +378,7 @@
       },
       "occurrence": {
         "rate": 0.0005,
+        "lift": 0.38,
         "detection_count": 2,
         "total_checklists": 3703,
         "confidence": "high"
@@ -401,6 +418,7 @@
       },
       "occurrence": {
         "rate": 0.0004,
+        "lift": 0.25,
         "detection_count": 1,
         "total_checklists": 2774,
         "confidence": "high"
@@ -432,7 +450,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.739335Z",
+    "generated_at": "2026-01-25T23:05:32.193209Z",
     "data_version": "Dec-2025"
   }
 }

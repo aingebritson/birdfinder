@@ -4,6 +4,13 @@
     "code": "blugro",
     "scientific_name": "Passerina caerulea"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0029,
+    "total_detections": 435,
+    "total_checklists_with_species": 435,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 5
+  },
   "summary": {
     "total_hotspots_detected": 5,
     "total_detections": 435,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.3055,
+        "lift": 103.85,
         "detection_count": 238,
         "total_checklists": 779,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.166,
+        "lift": 56.43,
         "detection_count": 127,
         "total_checklists": 765,
         "confidence": "high"
@@ -98,6 +107,7 @@
       },
       "occurrence": {
         "rate": 0.0614,
+        "lift": 20.88,
         "detection_count": 50,
         "total_checklists": 814,
         "confidence": "high"
@@ -133,6 +143,7 @@
       },
       "occurrence": {
         "rate": 0.0312,
+        "lift": 10.62,
         "detection_count": 2,
         "total_checklists": 64,
         "confidence": "medium"
@@ -165,6 +176,7 @@
       },
       "occurrence": {
         "rate": 0.0141,
+        "lift": 4.79,
         "detection_count": 18,
         "total_checklists": 1277,
         "confidence": "high"
@@ -196,7 +208,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.743137Z",
+    "generated_at": "2026-01-25T23:05:32.197824Z",
     "data_version": "Dec-2025"
   }
 }

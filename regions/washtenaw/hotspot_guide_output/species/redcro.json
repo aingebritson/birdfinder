@@ -4,6 +4,13 @@
     "code": "redcro",
     "scientific_name": "Loxia curvirostra"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0011,
+    "total_detections": 162,
+    "total_checklists_with_species": 162,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 6
+  },
   "summary": {
     "total_hotspots_detected": 6,
     "total_detections": 162,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.1992,
+        "lift": 181.83,
         "detection_count": 153,
         "total_checklists": 768,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0039,
+        "lift": 3.59,
         "detection_count": 3,
         "total_checklists": 762,
         "confidence": "high"
@@ -98,6 +107,7 @@
       },
       "occurrence": {
         "rate": 0.0024,
+        "lift": 2.19,
         "detection_count": 1,
         "total_checklists": 417,
         "confidence": "high"
@@ -137,6 +147,7 @@
       },
       "occurrence": {
         "rate": 0.0004,
+        "lift": 0.34,
         "detection_count": 2,
         "total_checklists": 5360,
         "confidence": "high"
@@ -176,6 +187,7 @@
       },
       "occurrence": {
         "rate": 0.0004,
+        "lift": 0.33,
         "detection_count": 1,
         "total_checklists": 2774,
         "confidence": "high"
@@ -215,6 +227,7 @@
       },
       "occurrence": {
         "rate": 0.0002,
+        "lift": 0.15,
         "detection_count": 2,
         "total_checklists": 12539,
         "confidence": "high"
@@ -246,7 +259,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.627049Z",
+    "generated_at": "2026-01-25T23:05:32.065866Z",
     "data_version": "Dec-2025"
   }
 }

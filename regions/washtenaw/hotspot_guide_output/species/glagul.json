@@ -4,6 +4,13 @@
     "code": "glagul",
     "scientific_name": "Larus hyperboreus"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0006,
+    "total_detections": 85,
+    "total_checklists_with_species": 85,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 7
+  },
   "summary": {
     "total_hotspots_detected": 7,
     "total_detections": 85,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.1656,
+        "lift": 287.99,
         "detection_count": 50,
         "total_checklists": 302,
         "confidence": "high"
@@ -53,6 +61,7 @@
       },
       "occurrence": {
         "rate": 0.0099,
+        "lift": 17.19,
         "detection_count": 6,
         "total_checklists": 607,
         "confidence": "high"
@@ -92,6 +101,7 @@
       },
       "occurrence": {
         "rate": 0.0077,
+        "lift": 13.46,
         "detection_count": 5,
         "total_checklists": 646,
         "confidence": "high"
@@ -130,6 +140,7 @@
       },
       "occurrence": {
         "rate": 0.0046,
+        "lift": 7.93,
         "detection_count": 20,
         "total_checklists": 4386,
         "confidence": "high"
@@ -169,6 +180,7 @@
       },
       "occurrence": {
         "rate": 0.001,
+        "lift": 1.68,
         "detection_count": 2,
         "total_checklists": 2073,
         "confidence": "high"
@@ -208,6 +220,7 @@
       },
       "occurrence": {
         "rate": 0.0009,
+        "lift": 1.62,
         "detection_count": 1,
         "total_checklists": 1077,
         "confidence": "high"
@@ -247,6 +260,7 @@
       },
       "occurrence": {
         "rate": 0.0007,
+        "lift": 1.16,
         "detection_count": 1,
         "total_checklists": 1499,
         "confidence": "high"
@@ -278,7 +292,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.719383Z",
+    "generated_at": "2026-01-25T23:05:32.172426Z",
     "data_version": "Dec-2025"
   }
 }

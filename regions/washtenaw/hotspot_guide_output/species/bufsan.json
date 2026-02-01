@@ -4,6 +4,13 @@
     "code": "bufsan",
     "scientific_name": "Calidris subruficollis"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 21,
+    "total_checklists_with_species": 21,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 4
+  },
   "summary": {
     "total_hotspots_detected": 4,
     "total_detections": 21,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0603,
+        "lift": 424.87,
         "detection_count": 7,
         "total_checklists": 116,
         "confidence": "high"
@@ -52,6 +60,7 @@
       },
       "occurrence": {
         "rate": 0.0294,
+        "lift": 207.08,
         "detection_count": 1,
         "total_checklists": 34,
         "confidence": "medium"
@@ -80,6 +89,7 @@
       },
       "occurrence": {
         "rate": 0.0217,
+        "lift": 153.06,
         "detection_count": 1,
         "total_checklists": 46,
         "confidence": "medium"
@@ -109,6 +119,7 @@
       },
       "occurrence": {
         "rate": 0.0211,
+        "lift": 148.23,
         "detection_count": 12,
         "total_checklists": 570,
         "confidence": "high"
@@ -140,7 +151,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.732832Z",
+    "generated_at": "2026-01-25T23:05:32.186152Z",
     "data_version": "Dec-2025"
   }
 }

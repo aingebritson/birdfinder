@@ -4,6 +4,13 @@
     "code": "londow",
     "scientific_name": "Limnodromus scolopaceus"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0004,
+    "total_detections": 61,
+    "total_checklists_with_species": 61,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 4
+  },
   "summary": {
     "total_hotspots_detected": 4,
     "total_detections": 61,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0632,
+        "lift": 153.09,
         "detection_count": 36,
         "total_checklists": 570,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0119,
+        "lift": 28.86,
         "detection_count": 1,
         "total_checklists": 84,
         "confidence": "medium"
@@ -89,6 +98,7 @@
       },
       "occurrence": {
         "rate": 0.0078,
+        "lift": 18.97,
         "detection_count": 4,
         "total_checklists": 511,
         "confidence": "high"
@@ -128,6 +138,7 @@
       },
       "occurrence": {
         "rate": 0.006,
+        "lift": 14.59,
         "detection_count": 20,
         "total_checklists": 3323,
         "confidence": "high"
@@ -159,7 +170,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.732141Z",
+    "generated_at": "2026-01-25T23:05:32.185367Z",
     "data_version": "Dec-2025"
   }
 }

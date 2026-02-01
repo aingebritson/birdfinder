@@ -4,6 +4,13 @@
     "code": "lither",
     "scientific_name": "Egretta caerulea"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0008,
+    "total_detections": 116,
+    "total_checklists_with_species": 116,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 3
+  },
   "summary": {
     "total_hotspots_detected": 3,
     "total_detections": 116,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.1141,
+        "lift": 145.38,
         "detection_count": 43,
         "total_checklists": 377,
         "confidence": "high"
@@ -49,6 +57,7 @@
       },
       "occurrence": {
         "rate": 0.0902,
+        "lift": 114.96,
         "detection_count": 57,
         "total_checklists": 632,
         "confidence": "high"
@@ -88,6 +97,7 @@
       },
       "occurrence": {
         "rate": 0.0737,
+        "lift": 93.98,
         "detection_count": 16,
         "total_checklists": 217,
         "confidence": "high"
@@ -117,7 +127,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.743009Z",
+    "generated_at": "2026-01-25T23:05:32.197690Z",
     "data_version": "Dec-2025"
   }
 }

@@ -4,6 +4,13 @@
     "code": "wilpha",
     "scientific_name": "Phalaropus tricolor"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0002,
+    "total_detections": 31,
+    "total_checklists_with_species": 31,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 7
+  },
   "summary": {
     "total_hotspots_detected": 7,
     "total_detections": 31,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0357,
+        "lift": 170.34,
         "detection_count": 3,
         "total_checklists": 84,
         "confidence": "medium"
@@ -50,6 +58,7 @@
       },
       "occurrence": {
         "rate": 0.0294,
+        "lift": 140.28,
         "detection_count": 1,
         "total_checklists": 34,
         "confidence": "medium"
@@ -76,6 +85,7 @@
       },
       "occurrence": {
         "rate": 0.0092,
+        "lift": 43.98,
         "detection_count": 20,
         "total_checklists": 2169,
         "confidence": "high"
@@ -115,6 +125,7 @@
       },
       "occurrence": {
         "rate": 0.0027,
+        "lift": 13.1,
         "detection_count": 1,
         "total_checklists": 364,
         "confidence": "high"
@@ -154,6 +165,7 @@
       },
       "occurrence": {
         "rate": 0.0018,
+        "lift": 8.37,
         "detection_count": 1,
         "total_checklists": 570,
         "confidence": "high"
@@ -193,6 +205,7 @@
       },
       "occurrence": {
         "rate": 0.0013,
+        "lift": 6.26,
         "detection_count": 1,
         "total_checklists": 762,
         "confidence": "high"
@@ -232,6 +245,7 @@
       },
       "occurrence": {
         "rate": 0.0012,
+        "lift": 5.74,
         "detection_count": 4,
         "total_checklists": 3323,
         "confidence": "high"
@@ -263,7 +277,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.742112Z",
+    "generated_at": "2026-01-25T23:05:32.196646Z",
     "data_version": "Dec-2025"
   }
 }

@@ -4,6 +4,13 @@
     "code": "prawar",
     "scientific_name": "Setophaga discolor"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0011,
+    "total_detections": 156,
+    "total_checklists_with_species": 156,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 6
+  },
   "summary": {
     "total_hotspots_detected": 6,
     "total_detections": 156,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.4167,
+        "lift": 394.91,
         "detection_count": 65,
         "total_checklists": 156,
         "confidence": "high"
@@ -52,6 +60,7 @@
       },
       "occurrence": {
         "rate": 0.0176,
+        "lift": 16.68,
         "detection_count": 42,
         "total_checklists": 2386,
         "confidence": "high"
@@ -91,6 +100,7 @@
       },
       "occurrence": {
         "rate": 0.0167,
+        "lift": 15.8,
         "detection_count": 2,
         "total_checklists": 120,
         "confidence": "high"
@@ -129,6 +139,7 @@
       },
       "occurrence": {
         "rate": 0.0098,
+        "lift": 9.28,
         "detection_count": 38,
         "total_checklists": 3881,
         "confidence": "high"
@@ -168,6 +179,7 @@
       },
       "occurrence": {
         "rate": 0.0008,
+        "lift": 0.74,
         "detection_count": 1,
         "total_checklists": 1277,
         "confidence": "high"
@@ -207,6 +219,7 @@
       },
       "occurrence": {
         "rate": 0.0006,
+        "lift": 0.6,
         "detection_count": 8,
         "total_checklists": 12539,
         "confidence": "high"
@@ -238,7 +251,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.689957Z",
+    "generated_at": "2026-01-25T23:05:32.140103Z",
     "data_version": "Dec-2025"
   }
 }

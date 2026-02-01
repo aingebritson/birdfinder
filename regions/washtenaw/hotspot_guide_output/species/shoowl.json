@@ -4,6 +4,13 @@
     "code": "shoowl",
     "scientific_name": "Asio flammeus"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0059,
+    "total_detections": 872,
+    "total_checklists_with_species": 872,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 9
+  },
   "summary": {
     "total_hotspots_detected": 9,
     "total_detections": 872,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.141,
+        "lift": 23.91,
         "detection_count": 604,
         "total_checklists": 4283,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0685,
+        "lift": 11.61,
         "detection_count": 142,
         "total_checklists": 2073,
         "confidence": "high"
@@ -98,6 +107,7 @@
       },
       "occurrence": {
         "rate": 0.0644,
+        "lift": 10.93,
         "detection_count": 104,
         "total_checklists": 1614,
         "confidence": "high"
@@ -137,6 +147,7 @@
       },
       "occurrence": {
         "rate": 0.04,
+        "lift": 6.78,
         "detection_count": 3,
         "total_checklists": 75,
         "confidence": "medium"
@@ -167,6 +178,7 @@
       },
       "occurrence": {
         "rate": 0.008,
+        "lift": 1.35,
         "detection_count": 3,
         "total_checklists": 376,
         "confidence": "high"
@@ -206,6 +218,7 @@
       },
       "occurrence": {
         "rate": 0.0067,
+        "lift": 1.14,
         "detection_count": 4,
         "total_checklists": 594,
         "confidence": "high"
@@ -245,6 +258,7 @@
       },
       "occurrence": {
         "rate": 0.0033,
+        "lift": 0.56,
         "detection_count": 2,
         "total_checklists": 602,
         "confidence": "high"
@@ -284,6 +298,7 @@
       },
       "occurrence": {
         "rate": 0.0027,
+        "lift": 0.46,
         "detection_count": 9,
         "total_checklists": 3323,
         "confidence": "high"
@@ -323,6 +338,7 @@
       },
       "occurrence": {
         "rate": 0.0001,
+        "lift": 0.01,
         "detection_count": 1,
         "total_checklists": 12539,
         "confidence": "high"
@@ -354,7 +370,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.624874Z",
+    "generated_at": "2026-01-25T23:05:32.063650Z",
     "data_version": "Dec-2025"
   }
 }

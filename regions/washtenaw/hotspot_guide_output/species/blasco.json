@@ -4,6 +4,13 @@
     "code": "blasco",
     "scientific_name": "Melanitta americana"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0011,
+    "total_detections": 160,
+    "total_checklists_with_species": 160,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 11
+  },
   "summary": {
     "total_hotspots_detected": 11,
     "total_detections": 160,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0533,
+        "lift": 49.27,
         "detection_count": 33,
         "total_checklists": 619,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0381,
+        "lift": 35.18,
         "detection_count": 41,
         "total_checklists": 1077,
         "confidence": "high"
@@ -98,6 +107,7 @@
       },
       "occurrence": {
         "rate": 0.0248,
+        "lift": 22.87,
         "detection_count": 15,
         "total_checklists": 606,
         "confidence": "high"
@@ -137,6 +147,7 @@
       },
       "occurrence": {
         "rate": 0.0198,
+        "lift": 18.32,
         "detection_count": 55,
         "total_checklists": 2774,
         "confidence": "high"
@@ -176,6 +187,7 @@
       },
       "occurrence": {
         "rate": 0.0135,
+        "lift": 12.45,
         "detection_count": 9,
         "total_checklists": 668,
         "confidence": "high"
@@ -215,6 +227,7 @@
       },
       "occurrence": {
         "rate": 0.002,
+        "lift": 1.83,
         "detection_count": 1,
         "total_checklists": 504,
         "confidence": "high"
@@ -252,6 +265,7 @@
       },
       "occurrence": {
         "rate": 0.0016,
+        "lift": 1.52,
         "detection_count": 1,
         "total_checklists": 607,
         "confidence": "high"
@@ -291,6 +305,7 @@
       },
       "occurrence": {
         "rate": 0.0015,
+        "lift": 1.43,
         "detection_count": 1,
         "total_checklists": 646,
         "confidence": "high"
@@ -329,6 +344,7 @@
       },
       "occurrence": {
         "rate": 0.0008,
+        "lift": 0.77,
         "detection_count": 2,
         "total_checklists": 2403,
         "confidence": "high"
@@ -368,6 +384,7 @@
       },
       "occurrence": {
         "rate": 0.0003,
+        "lift": 0.28,
         "detection_count": 1,
         "total_checklists": 3323,
         "confidence": "high"
@@ -407,6 +424,7 @@
       },
       "occurrence": {
         "rate": 0.0002,
+        "lift": 0.21,
         "detection_count": 1,
         "total_checklists": 4386,
         "confidence": "high"
@@ -438,7 +456,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.735170Z",
+    "generated_at": "2026-01-25T23:05:32.188772Z",
     "data_version": "Dec-2025"
   }
 }

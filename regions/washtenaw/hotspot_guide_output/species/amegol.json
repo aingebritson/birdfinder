@@ -4,6 +4,13 @@
     "code": "amegol",
     "scientific_name": "Pluvialis dominica"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0005,
+    "total_detections": 69,
+    "total_checklists_with_species": 69,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 9
+  },
   "summary": {
     "total_hotspots_detected": 9,
     "total_detections": 69,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.2059,
+        "lift": 441.17,
         "detection_count": 7,
         "total_checklists": 34,
         "confidence": "medium"
@@ -48,6 +56,7 @@
       },
       "occurrence": {
         "rate": 0.1034,
+        "lift": 221.67,
         "detection_count": 12,
         "total_checklists": 116,
         "confidence": "high"
@@ -80,6 +89,7 @@
       },
       "occurrence": {
         "rate": 0.0238,
+        "lift": 51.02,
         "detection_count": 1,
         "total_checklists": 42,
         "confidence": "medium"
@@ -108,6 +118,7 @@
       },
       "occurrence": {
         "rate": 0.0148,
+        "lift": 31.69,
         "detection_count": 13,
         "total_checklists": 879,
         "confidence": "high"
@@ -147,6 +158,7 @@
       },
       "occurrence": {
         "rate": 0.0117,
+        "lift": 25.01,
         "detection_count": 25,
         "total_checklists": 2142,
         "confidence": "high"
@@ -186,6 +198,7 @@
       },
       "occurrence": {
         "rate": 0.0076,
+        "lift": 16.23,
         "detection_count": 2,
         "total_checklists": 264,
         "confidence": "high"
@@ -220,6 +233,7 @@
       },
       "occurrence": {
         "rate": 0.0022,
+        "lift": 4.72,
         "detection_count": 1,
         "total_checklists": 454,
         "confidence": "high"
@@ -259,6 +273,7 @@
       },
       "occurrence": {
         "rate": 0.0018,
+        "lift": 3.95,
         "detection_count": 4,
         "total_checklists": 2169,
         "confidence": "high"
@@ -298,6 +313,7 @@
       },
       "occurrence": {
         "rate": 0.0012,
+        "lift": 2.58,
         "detection_count": 4,
         "total_checklists": 3323,
         "confidence": "high"
@@ -329,7 +345,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.740207Z",
+    "generated_at": "2026-01-25T23:05:32.194217Z",
     "data_version": "Dec-2025"
   }
 }

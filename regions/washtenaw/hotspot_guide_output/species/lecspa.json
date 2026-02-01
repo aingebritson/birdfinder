@@ -4,6 +4,13 @@
     "code": "lecspa",
     "scientific_name": "Ammospiza leconteii"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 15,
+    "total_checklists_with_species": 15,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 1
+  },
   "summary": {
     "total_hotspots_detected": 1,
     "total_detections": 15,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0087,
+        "lift": 85.32,
         "detection_count": 15,
         "total_checklists": 1733,
         "confidence": "high"
@@ -51,7 +59,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.744084Z",
+    "generated_at": "2026-01-25T23:05:32.198876Z",
     "data_version": "Dec-2025"
   }
 }

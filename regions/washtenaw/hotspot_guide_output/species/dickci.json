@@ -4,6 +4,13 @@
     "code": "dickci",
     "scientific_name": "Spiza americana"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0053,
+    "total_detections": 783,
+    "total_checklists_with_species": 783,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 20
+  },
   "summary": {
     "total_hotspots_detected": 20,
     "total_detections": 783,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.274,
+        "lift": 51.73,
         "detection_count": 20,
         "total_checklists": 73,
         "confidence": "medium"
@@ -49,6 +57,7 @@
       },
       "occurrence": {
         "rate": 0.2641,
+        "lift": 49.88,
         "detection_count": 215,
         "total_checklists": 814,
         "confidence": "high"
@@ -84,6 +93,7 @@
       },
       "occurrence": {
         "rate": 0.1951,
+        "lift": 36.85,
         "detection_count": 152,
         "total_checklists": 779,
         "confidence": "high"
@@ -123,6 +133,7 @@
       },
       "occurrence": {
         "rate": 0.1124,
+        "lift": 21.23,
         "detection_count": 86,
         "total_checklists": 765,
         "confidence": "high"
@@ -162,6 +173,7 @@
       },
       "occurrence": {
         "rate": 0.0372,
+        "lift": 7.03,
         "detection_count": 14,
         "total_checklists": 376,
         "confidence": "high"
@@ -201,6 +213,7 @@
       },
       "occurrence": {
         "rate": 0.0359,
+        "lift": 6.78,
         "detection_count": 7,
         "total_checklists": 195,
         "confidence": "high"
@@ -237,6 +250,7 @@
       },
       "occurrence": {
         "rate": 0.0354,
+        "lift": 6.68,
         "detection_count": 21,
         "total_checklists": 594,
         "confidence": "high"
@@ -276,6 +290,7 @@
       },
       "occurrence": {
         "rate": 0.0322,
+        "lift": 6.08,
         "detection_count": 52,
         "total_checklists": 1614,
         "confidence": "high"
@@ -315,6 +330,7 @@
       },
       "occurrence": {
         "rate": 0.0315,
+        "lift": 5.95,
         "detection_count": 135,
         "total_checklists": 4283,
         "confidence": "high"
@@ -354,6 +370,7 @@
       },
       "occurrence": {
         "rate": 0.0294,
+        "lift": 5.56,
         "detection_count": 61,
         "total_checklists": 2073,
         "confidence": "high"
@@ -393,6 +410,7 @@
       },
       "occurrence": {
         "rate": 0.0189,
+        "lift": 3.56,
         "detection_count": 1,
         "total_checklists": 53,
         "confidence": "medium"
@@ -424,6 +442,7 @@
       },
       "occurrence": {
         "rate": 0.0158,
+        "lift": 2.98,
         "detection_count": 9,
         "total_checklists": 570,
         "confidence": "high"
@@ -463,6 +482,7 @@
       },
       "occurrence": {
         "rate": 0.0058,
+        "lift": 1.09,
         "detection_count": 2,
         "total_checklists": 346,
         "confidence": "high"
@@ -502,6 +522,7 @@
       },
       "occurrence": {
         "rate": 0.0047,
+        "lift": 0.88,
         "detection_count": 1,
         "total_checklists": 214,
         "confidence": "high"
@@ -539,6 +560,7 @@
       },
       "occurrence": {
         "rate": 0.0044,
+        "lift": 0.83,
         "detection_count": 2,
         "total_checklists": 454,
         "confidence": "high"
@@ -578,6 +600,7 @@
       },
       "occurrence": {
         "rate": 0.0019,
+        "lift": 0.37,
         "detection_count": 1,
         "total_checklists": 514,
         "confidence": "high"
@@ -615,6 +638,7 @@
       },
       "occurrence": {
         "rate": 0.0017,
+        "lift": 0.33,
         "detection_count": 1,
         "total_checklists": 577,
         "confidence": "high"
@@ -654,6 +678,7 @@
       },
       "occurrence": {
         "rate": 0.0012,
+        "lift": 0.23,
         "detection_count": 1,
         "total_checklists": 824,
         "confidence": "high"
@@ -693,6 +718,7 @@
       },
       "occurrence": {
         "rate": 0.001,
+        "lift": 0.18,
         "detection_count": 1,
         "total_checklists": 1021,
         "confidence": "high"
@@ -732,6 +758,7 @@
       },
       "occurrence": {
         "rate": 0.0002,
+        "lift": 0.04,
         "detection_count": 1,
         "total_checklists": 5360,
         "confidence": "high"
@@ -763,7 +790,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.714375Z",
+    "generated_at": "2026-01-25T23:05:32.167248Z",
     "data_version": "Dec-2025"
   }
 }

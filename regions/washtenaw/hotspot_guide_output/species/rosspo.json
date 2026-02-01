@@ -4,6 +4,13 @@
     "code": "rosspo",
     "scientific_name": "Platalea ajaja"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0029,
+    "total_detections": 428,
+    "total_checklists_with_species": 428,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 5
+  },
   "summary": {
     "total_hotspots_detected": 5,
     "total_detections": 428,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.7939,
+        "lift": 274.27,
         "detection_count": 131,
         "total_checklists": 165,
         "confidence": "high"
@@ -50,6 +58,7 @@
       },
       "occurrence": {
         "rate": 0.6764,
+        "lift": 233.67,
         "detection_count": 255,
         "total_checklists": 377,
         "confidence": "high"
@@ -79,6 +88,7 @@
       },
       "occurrence": {
         "rate": 0.1567,
+        "lift": 54.13,
         "detection_count": 34,
         "total_checklists": 217,
         "confidence": "high"
@@ -116,6 +126,7 @@
       },
       "occurrence": {
         "rate": 0.0301,
+        "lift": 10.39,
         "detection_count": 4,
         "total_checklists": 133,
         "confidence": "high"
@@ -153,6 +164,7 @@
       },
       "occurrence": {
         "rate": 0.0167,
+        "lift": 5.76,
         "detection_count": 4,
         "total_checklists": 240,
         "confidence": "high"
@@ -183,7 +195,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.745395Z",
+    "generated_at": "2026-01-25T23:05:32.200533Z",
     "data_version": "Dec-2025"
   }
 }

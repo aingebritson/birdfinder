@@ -4,6 +4,13 @@
     "code": "hooori",
     "scientific_name": "Icterus cucullatus"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0004,
+    "total_detections": 56,
+    "total_checklists_with_species": 56,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 2
+  },
   "summary": {
     "total_hotspots_detected": 2,
     "total_detections": 56,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.6962,
+        "lift": 1838.17,
         "detection_count": 55,
         "total_checklists": 79,
         "confidence": "medium"
@@ -45,6 +53,7 @@
       },
       "occurrence": {
         "rate": 0.0286,
+        "lift": 75.44,
         "detection_count": 1,
         "total_checklists": 35,
         "confidence": "medium"
@@ -68,7 +77,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.744887Z",
+    "generated_at": "2026-01-25T23:05:32.199719Z",
     "data_version": "Dec-2025"
   }
 }

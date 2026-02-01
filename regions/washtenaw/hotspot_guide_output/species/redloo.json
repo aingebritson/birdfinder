@@ -4,6 +4,13 @@
     "code": "redloo",
     "scientific_name": "Gavia stellata"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0009,
+    "total_detections": 131,
+    "total_checklists_with_species": 131,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 4
+  },
   "summary": {
     "total_hotspots_detected": 4,
     "total_detections": 131,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0614,
+        "lift": 69.29,
         "detection_count": 38,
         "total_checklists": 619,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0524,
+        "lift": 59.14,
         "detection_count": 35,
         "total_checklists": 668,
         "confidence": "high"
@@ -98,6 +107,7 @@
       },
       "occurrence": {
         "rate": 0.0204,
+        "lift": 23.06,
         "detection_count": 22,
         "total_checklists": 1077,
         "confidence": "high"
@@ -137,6 +147,7 @@
       },
       "occurrence": {
         "rate": 0.0067,
+        "lift": 7.58,
         "detection_count": 36,
         "total_checklists": 5360,
         "confidence": "high"
@@ -168,7 +179,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.740998Z",
+    "generated_at": "2026-01-25T23:05:32.195351Z",
     "data_version": "Dec-2025"
   }
 }

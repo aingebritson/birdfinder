@@ -4,6 +4,13 @@
     "code": "kenwar",
     "scientific_name": "Geothlypis formosa"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0006,
+    "total_detections": 85,
+    "total_checklists_with_species": 85,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 5
+  },
   "summary": {
     "total_hotspots_detected": 5,
     "total_detections": 85,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0751,
+        "lift": 130.59,
         "detection_count": 25,
         "total_checklists": 333,
         "confidence": "high"
@@ -56,6 +64,7 @@
       },
       "occurrence": {
         "rate": 0.025,
+        "lift": 43.49,
         "detection_count": 3,
         "total_checklists": 120,
         "confidence": "high"
@@ -94,6 +103,7 @@
       },
       "occurrence": {
         "rate": 0.0105,
+        "lift": 18.26,
         "detection_count": 8,
         "total_checklists": 762,
         "confidence": "high"
@@ -133,6 +143,7 @@
       },
       "occurrence": {
         "rate": 0.0037,
+        "lift": 6.38,
         "detection_count": 46,
         "total_checklists": 12539,
         "confidence": "high"
@@ -172,6 +183,7 @@
       },
       "occurrence": {
         "rate": 0.0008,
+        "lift": 1.41,
         "detection_count": 3,
         "total_checklists": 3703,
         "confidence": "high"
@@ -203,7 +215,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.731317Z",
+    "generated_at": "2026-01-25T23:05:32.184471Z",
     "data_version": "Dec-2025"
   }
 }

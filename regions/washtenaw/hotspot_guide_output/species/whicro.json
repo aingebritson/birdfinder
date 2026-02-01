@@ -4,6 +4,13 @@
     "code": "whicro",
     "scientific_name": "Loxia leucoptera"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0005,
+    "total_detections": 71,
+    "total_checklists_with_species": 71,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 9
+  },
   "summary": {
     "total_hotspots_detected": 9,
     "total_detections": 71,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0729,
+        "lift": 151.85,
         "detection_count": 56,
         "total_checklists": 768,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0333,
+        "lift": 69.42,
         "detection_count": 1,
         "total_checklists": 30,
         "confidence": "medium"
@@ -91,6 +100,7 @@
       },
       "occurrence": {
         "rate": 0.0306,
+        "lift": 63.75,
         "detection_count": 6,
         "total_checklists": 196,
         "confidence": "high"
@@ -129,6 +139,7 @@
       },
       "occurrence": {
         "rate": 0.0019,
+        "lift": 3.97,
         "detection_count": 2,
         "total_checklists": 1048,
         "confidence": "high"
@@ -168,6 +179,7 @@
       },
       "occurrence": {
         "rate": 0.0019,
+        "lift": 3.94,
         "detection_count": 1,
         "total_checklists": 528,
         "confidence": "high"
@@ -207,6 +219,7 @@
       },
       "occurrence": {
         "rate": 0.0013,
+        "lift": 2.73,
         "detection_count": 1,
         "total_checklists": 762,
         "confidence": "high"
@@ -246,6 +259,7 @@
       },
       "occurrence": {
         "rate": 0.0007,
+        "lift": 1.5,
         "detection_count": 2,
         "total_checklists": 2774,
         "confidence": "high"
@@ -285,6 +299,7 @@
       },
       "occurrence": {
         "rate": 0.0005,
+        "lift": 1.02,
         "detection_count": 1,
         "total_checklists": 2040,
         "confidence": "high"
@@ -324,6 +339,7 @@
       },
       "occurrence": {
         "rate": 0.0003,
+        "lift": 0.63,
         "detection_count": 1,
         "total_checklists": 3323,
         "confidence": "high"
@@ -355,7 +371,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.735487Z",
+    "generated_at": "2026-01-25T23:05:32.189080Z",
     "data_version": "Dec-2025"
   }
 }

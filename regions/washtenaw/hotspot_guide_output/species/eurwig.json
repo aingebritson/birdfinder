@@ -4,6 +4,13 @@
     "code": "eurwig",
     "scientific_name": "Mareca penelope"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0002,
+    "total_detections": 30,
+    "total_checklists_with_species": 30,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 1
+  },
   "summary": {
     "total_hotspots_detected": 1,
     "total_detections": 30,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.014,
+        "lift": 69.03,
         "detection_count": 30,
         "total_checklists": 2142,
         "confidence": "high"
@@ -51,7 +59,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.741759Z",
+    "generated_at": "2026-01-25T23:05:32.196236Z",
     "data_version": "Dec-2025"
   }
 }

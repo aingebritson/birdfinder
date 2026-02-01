@@ -4,6 +4,13 @@
     "code": "rosgoo",
     "scientific_name": "Anser rossii"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0009,
+    "total_detections": 132,
+    "total_checklists_with_species": 132,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 21
+  },
   "summary": {
     "total_hotspots_detected": 21,
     "total_detections": 132,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0539,
+        "lift": 60.34,
         "detection_count": 16,
         "total_checklists": 297,
         "confidence": "high"
@@ -56,6 +64,7 @@
       },
       "occurrence": {
         "rate": 0.0286,
+        "lift": 32.0,
         "detection_count": 1,
         "total_checklists": 35,
         "confidence": "medium"
@@ -86,6 +95,7 @@
       },
       "occurrence": {
         "rate": 0.0233,
+        "lift": 26.05,
         "detection_count": 14,
         "total_checklists": 602,
         "confidence": "high"
@@ -125,6 +135,7 @@
       },
       "occurrence": {
         "rate": 0.0225,
+        "lift": 25.17,
         "detection_count": 2,
         "total_checklists": 89,
         "confidence": "medium"
@@ -159,6 +170,7 @@
       },
       "occurrence": {
         "rate": 0.0217,
+        "lift": 24.28,
         "detection_count": 14,
         "total_checklists": 646,
         "confidence": "high"
@@ -197,6 +209,7 @@
       },
       "occurrence": {
         "rate": 0.014,
+        "lift": 15.72,
         "detection_count": 8,
         "total_checklists": 570,
         "confidence": "high"
@@ -236,6 +249,7 @@
       },
       "occurrence": {
         "rate": 0.0127,
+        "lift": 14.28,
         "detection_count": 13,
         "total_checklists": 1020,
         "confidence": "high"
@@ -275,6 +289,7 @@
       },
       "occurrence": {
         "rate": 0.0127,
+        "lift": 14.18,
         "detection_count": 3,
         "total_checklists": 237,
         "confidence": "high"
@@ -313,6 +328,7 @@
       },
       "occurrence": {
         "rate": 0.0093,
+        "lift": 10.37,
         "detection_count": 1,
         "total_checklists": 108,
         "confidence": "high"
@@ -345,6 +361,7 @@
       },
       "occurrence": {
         "rate": 0.0082,
+        "lift": 9.23,
         "detection_count": 5,
         "total_checklists": 607,
         "confidence": "high"
@@ -384,6 +401,7 @@
       },
       "occurrence": {
         "rate": 0.0082,
+        "lift": 9.23,
         "detection_count": 3,
         "total_checklists": 364,
         "confidence": "high"
@@ -423,6 +441,7 @@
       },
       "occurrence": {
         "rate": 0.0073,
+        "lift": 8.17,
         "detection_count": 32,
         "total_checklists": 4386,
         "confidence": "high"
@@ -462,6 +481,7 @@
       },
       "occurrence": {
         "rate": 0.004,
+        "lift": 4.44,
         "detection_count": 2,
         "total_checklists": 504,
         "confidence": "high"
@@ -499,6 +519,7 @@
       },
       "occurrence": {
         "rate": 0.0034,
+        "lift": 3.77,
         "detection_count": 2,
         "total_checklists": 594,
         "confidence": "high"
@@ -538,6 +559,7 @@
       },
       "occurrence": {
         "rate": 0.0029,
+        "lift": 3.24,
         "detection_count": 6,
         "total_checklists": 2073,
         "confidence": "high"
@@ -577,6 +599,7 @@
       },
       "occurrence": {
         "rate": 0.0027,
+        "lift": 2.98,
         "detection_count": 2,
         "total_checklists": 753,
         "confidence": "high"
@@ -616,6 +639,7 @@
       },
       "occurrence": {
         "rate": 0.002,
+        "lift": 2.19,
         "detection_count": 1,
         "total_checklists": 511,
         "confidence": "high"
@@ -655,6 +679,7 @@
       },
       "occurrence": {
         "rate": 0.0009,
+        "lift": 1.05,
         "detection_count": 2,
         "total_checklists": 2142,
         "confidence": "high"
@@ -694,6 +719,7 @@
       },
       "occurrence": {
         "rate": 0.0007,
+        "lift": 0.81,
         "detection_count": 2,
         "total_checklists": 2774,
         "confidence": "high"
@@ -733,6 +759,7 @@
       },
       "occurrence": {
         "rate": 0.0005,
+        "lift": 0.52,
         "detection_count": 2,
         "total_checklists": 4283,
         "confidence": "high"
@@ -772,6 +799,7 @@
       },
       "occurrence": {
         "rate": 0.0005,
+        "lift": 0.52,
         "detection_count": 1,
         "total_checklists": 2169,
         "confidence": "high"
@@ -803,7 +831,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.740444Z",
+    "generated_at": "2026-01-25T23:05:32.194539Z",
     "data_version": "Dec-2025"
   }
 }

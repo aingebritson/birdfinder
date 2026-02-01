@@ -4,6 +4,13 @@
     "code": "gragoo",
     "scientific_name": "Anser anser"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 16,
+    "total_checklists_with_species": 16,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 3
+  },
   "summary": {
     "total_hotspots_detected": 3,
     "total_detections": 16,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0033,
+        "lift": 30.45,
         "detection_count": 2,
         "total_checklists": 607,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0023,
+        "lift": 21.07,
         "detection_count": 10,
         "total_checklists": 4386,
         "confidence": "high"
@@ -98,6 +107,7 @@
       },
       "occurrence": {
         "rate": 0.0022,
+        "lift": 20.1,
         "detection_count": 4,
         "total_checklists": 1839,
         "confidence": "high"
@@ -129,7 +139,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.745704Z",
+    "generated_at": "2026-01-25T23:05:32.200835Z",
     "data_version": "Dec-2025"
   }
 }

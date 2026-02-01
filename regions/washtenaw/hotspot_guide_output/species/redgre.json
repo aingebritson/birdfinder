@@ -4,6 +4,13 @@
     "code": "redgre",
     "scientific_name": "Podiceps grisegena"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0015,
+    "total_detections": 215,
+    "total_checklists_with_species": 215,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 11
+  },
   "summary": {
     "total_hotspots_detected": 11,
     "total_detections": 215,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0659,
+        "lift": 45.34,
         "detection_count": 71,
         "total_checklists": 1077,
         "confidence": "high"
@@ -59,6 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0462,
+        "lift": 31.78,
         "detection_count": 28,
         "total_checklists": 606,
         "confidence": "high"
@@ -98,6 +107,7 @@
       },
       "occurrence": {
         "rate": 0.018,
+        "lift": 12.35,
         "detection_count": 3,
         "total_checklists": 167,
         "confidence": "high"
@@ -136,6 +146,7 @@
       },
       "occurrence": {
         "rate": 0.0147,
+        "lift": 10.14,
         "detection_count": 6,
         "total_checklists": 407,
         "confidence": "high"
@@ -175,6 +186,7 @@
       },
       "occurrence": {
         "rate": 0.0124,
+        "lift": 8.53,
         "detection_count": 30,
         "total_checklists": 2419,
         "confidence": "high"
@@ -214,6 +226,7 @@
       },
       "occurrence": {
         "rate": 0.0115,
+        "lift": 7.93,
         "detection_count": 32,
         "total_checklists": 2774,
         "confidence": "high"
@@ -253,6 +266,7 @@
       },
       "occurrence": {
         "rate": 0.0063,
+        "lift": 4.36,
         "detection_count": 34,
         "total_checklists": 5360,
         "confidence": "high"
@@ -292,6 +306,7 @@
       },
       "occurrence": {
         "rate": 0.0053,
+        "lift": 3.65,
         "detection_count": 3,
         "total_checklists": 566,
         "confidence": "high"
@@ -331,6 +346,7 @@
       },
       "occurrence": {
         "rate": 0.0013,
+        "lift": 0.91,
         "detection_count": 1,
         "total_checklists": 753,
         "confidence": "high"
@@ -370,6 +386,7 @@
       },
       "occurrence": {
         "rate": 0.0005,
+        "lift": 0.33,
         "detection_count": 6,
         "total_checklists": 12539,
         "confidence": "high"
@@ -409,6 +426,7 @@
       },
       "occurrence": {
         "rate": 0.0004,
+        "lift": 0.29,
         "detection_count": 1,
         "total_checklists": 2403,
         "confidence": "high"
@@ -440,7 +458,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.737667Z",
+    "generated_at": "2026-01-25T23:05:32.191306Z",
     "data_version": "Dec-2025"
   }
 }

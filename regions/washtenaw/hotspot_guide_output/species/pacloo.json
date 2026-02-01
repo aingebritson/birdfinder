@@ -4,6 +4,13 @@
     "code": "pacloo",
     "scientific_name": "Gavia pacifica"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0003,
+    "total_detections": 46,
+    "total_checklists_with_species": 46,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 1
+  },
   "summary": {
     "total_hotspots_detected": 1,
     "total_detections": 46,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0427,
+        "lift": 137.29,
         "detection_count": 46,
         "total_checklists": 1077,
         "confidence": "high"
@@ -51,7 +59,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.733590Z",
+    "generated_at": "2026-01-25T23:05:32.187040Z",
     "data_version": "Dec-2025"
   }
 }

@@ -4,6 +4,13 @@
     "code": "redpol",
     "scientific_name": "Acanthis flammea"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0002,
+    "total_detections": 25,
+    "total_checklists_with_species": 25,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 9
+  },
   "summary": {
     "total_hotspots_detected": 9,
     "total_detections": 25,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0385,
+        "lift": 227.47,
         "detection_count": 1,
         "total_checklists": 26,
         "confidence": "low"
@@ -48,6 +56,7 @@
       },
       "occurrence": {
         "rate": 0.0026,
+        "lift": 15.24,
         "detection_count": 10,
         "total_checklists": 3881,
         "confidence": "high"
@@ -87,6 +96,7 @@
       },
       "occurrence": {
         "rate": 0.0024,
+        "lift": 14.39,
         "detection_count": 1,
         "total_checklists": 411,
         "confidence": "high"
@@ -125,6 +135,7 @@
       },
       "occurrence": {
         "rate": 0.001,
+        "lift": 5.71,
         "detection_count": 2,
         "total_checklists": 2073,
         "confidence": "high"
@@ -164,6 +175,7 @@
       },
       "occurrence": {
         "rate": 0.0009,
+        "lift": 5.52,
         "detection_count": 4,
         "total_checklists": 4283,
         "confidence": "high"
@@ -203,6 +215,7 @@
       },
       "occurrence": {
         "rate": 0.0007,
+        "lift": 4.41,
         "detection_count": 4,
         "total_checklists": 5360,
         "confidence": "high"
@@ -242,6 +255,7 @@
       },
       "occurrence": {
         "rate": 0.0006,
+        "lift": 3.41,
         "detection_count": 1,
         "total_checklists": 1733,
         "confidence": "high"
@@ -281,6 +295,7 @@
       },
       "occurrence": {
         "rate": 0.0002,
+        "lift": 1.22,
         "detection_count": 1,
         "total_checklists": 4859,
         "confidence": "high"
@@ -320,6 +335,7 @@
       },
       "occurrence": {
         "rate": 0.0001,
+        "lift": 0.47,
         "detection_count": 1,
         "total_checklists": 12539,
         "confidence": "high"
@@ -351,7 +367,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.707244Z",
+    "generated_at": "2026-01-25T23:05:32.159988Z",
     "data_version": "Dec-2025"
   }
 }

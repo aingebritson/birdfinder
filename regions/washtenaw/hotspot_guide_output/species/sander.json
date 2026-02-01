@@ -4,6 +4,13 @@
     "code": "sander",
     "scientific_name": "Calidris alba"
   },
+  "baseline": {
+    "county_occurrence_rate": 0.0,
+    "total_detections": 6,
+    "total_checklists_with_species": 6,
+    "total_checklists_countywide": 147856,
+    "hotspots_detected": 4
+  },
   "summary": {
     "total_hotspots_detected": 4,
     "total_detections": 6,
@@ -20,6 +27,7 @@
       },
       "occurrence": {
         "rate": 0.0476,
+        "lift": 1173.46,
         "detection_count": 2,
         "total_checklists": 42,
         "confidence": "medium"
@@ -48,6 +56,7 @@
       },
       "occurrence": {
         "rate": 0.0007,
+        "lift": 16.44,
         "detection_count": 1,
         "total_checklists": 1499,
         "confidence": "high"
@@ -87,6 +96,7 @@
       },
       "occurrence": {
         "rate": 0.0005,
+        "lift": 11.51,
         "detection_count": 2,
         "total_checklists": 4283,
         "confidence": "high"
@@ -126,6 +136,7 @@
       },
       "occurrence": {
         "rate": 0.0003,
+        "lift": 7.42,
         "detection_count": 1,
         "total_checklists": 3323,
         "confidence": "high"
@@ -157,7 +168,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-01-20T02:36:59.731487Z",
+    "generated_at": "2026-01-25T23:05:32.184660Z",
     "data_version": "Dec-2025"
   }
 }
