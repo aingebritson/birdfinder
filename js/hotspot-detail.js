@@ -96,19 +96,12 @@ async function init() {
     renderLinks();
 
     // Load and render species data (async, don't block the main content)
-    Promise.all([
-        loadNotableSpeciesIndex(),
-        loadCommonSpeciesIndex()
-    ]).then(([notableLoaded, commonLoaded]) => {
-        // Render specialties from pre-filtered index
-        if (notableLoaded) {
+    loadNotableSpeciesIndex().then(loaded => {
+        if (loaded) {
             renderSpecialties(locId);
         }
-
-        // Render common species from index
-        if (commonLoaded) {
-            renderCommonSpecies(locId);
-        }
+    }).catch(error => {
+        console.error('Error loading species data:', error);
     });
 }
 
