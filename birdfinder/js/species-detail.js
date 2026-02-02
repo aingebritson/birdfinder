@@ -486,7 +486,7 @@ function renderHotspots() {
     const hotspotsHtml = speciesHotspots.top_hotspots.map(hotspot => {
         const occurrencePercent = (hotspot.occurrence_rate * 100).toFixed(1);
         const liftText = hotspot.lift ? `${hotspot.lift.toFixed(1)}× county average` : '';
-        const hotspotUrl = `hotspot.html?id=${hotspot.locality_id}`;
+        const hotspotUrl = `hotspot-detail.html?id=${hotspot.locality_id}`;
 
         return `
             <a href="${hotspotUrl}" class="hotspot-card block">
