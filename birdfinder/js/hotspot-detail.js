@@ -17,26 +17,14 @@ function getLocIdFromURL() {
 }
 
 /**
- * Load hotspots data from JSON file
- */
-async function loadHotspotsData() {
-    try {
-        const response = await fetch('data/washtenaw_hotspots_enriched.json');
-        hotspotsData = await response.json();
-        return true;
-    } catch (error) {
-        console.error('Error loading hotspots data:', error);
-        return false;
-    }
-}
-
-/**
- * Load notable species index (pre-filtered specialties)
+ * Load notable species index (pre-filtered specialties) with retry logic
  */
 async function loadNotableSpeciesIndex() {
     try {
-        const response = await fetch('data/notable_species_by_hotspot.json');
-        notableSpeciesIndex = await response.json();
+        notableSpeciesIndex = await fetchWithRetry('data/notable_species_by_hotspot.json', {
+            autoRetry: true,
+            timeoutMs: 10000
+        });
         return true;
     } catch (error) {
         console.error('Error loading notable species index:', error);
@@ -45,12 +33,14 @@ async function loadNotableSpeciesIndex() {
 }
 
 /**
- * Load common species index (top 15 by occurrence per hotspot)
+ * Load common species index (top 15 by occurrence per hotspot) with retry logic
  */
 async function loadCommonSpeciesIndex() {
     try {
-        const response = await fetch('data/common_species_by_hotspot.json');
-        commonSpeciesIndex = await response.json();
+        commonSpeciesIndex = await fetchWithRetry('data/common_species_by_hotspot.json', {
+            autoRetry: true,
+            timeoutMs: 10000
+        });
         return true;
     } catch (error) {
         console.error('Error loading common species index:', error);
@@ -62,10 +52,37 @@ async function loadCommonSpeciesIndex() {
  * Initialize the page
  */
 async function init() {
-    const success = await loadHotspotsData();
+    const loadingEl = document.getElementById('loading');
+    const errorEl = document.getElementById('error');
 
-    if (!success) {
-        showError();
+    let loadError = null;
+    try {
+        hotspotsData = await fetchWithRetry('data/washtenaw_hotspots_enriched.json', {
+            autoRetry: true,
+            timeoutMs: 10000,
+            onProgress: (message) => {
+                const loadingText = loadingEl.querySelector('div');
+                if (loadingText) {
+                    loadingText.textContent = message;
+                }
+            }
+        });
+    } catch (error) {
+        loadError = error;
+        console.error('Error loading hotspots data:', error);
+    }
+
+    // If data loading failed, show error with retry option
+    if (loadError) {
+        loadingEl.classList.add('hidden');
+        errorEl.classList.remove('hidden');
+        showErrorUI(errorEl, loadError, () => {
+            // Retry: reset state and reload
+            hotspotsData = [];
+            errorEl.classList.add('hidden');
+            loadingEl.classList.remove('hidden');
+            init();
+        });
         return;
     }
 
@@ -85,7 +102,7 @@ async function init() {
     }
 
     // Hide loading, show content
-    document.getElementById('loading').classList.add('hidden');
+    loadingEl.classList.add('hidden');
     document.getElementById('hotspot-content').classList.remove('hidden');
 
     // Render hotspot details
