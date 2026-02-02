@@ -399,9 +399,16 @@ input:focus, select:focus {
 
 /* Species list styles for hotspot detail page */
 .species-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 0.5rem;
+    grid-template-columns: 1fr;
+}
+
+/* Desktop: 2 columns */
+@media (min-width: 768px) {
+    .species-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .species-item {
