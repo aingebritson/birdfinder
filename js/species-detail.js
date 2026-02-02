@@ -482,8 +482,12 @@ function renderHotspots() {
         return;
     }
 
-    // Render hotspot cards
-    const hotspotsHtml = speciesHotspots.top_hotspots.map(hotspot => {
+    // Render hotspot cards (filter to 25+ detections, show top 10)
+    const filteredHotspots = speciesHotspots.top_hotspots
+        .filter(h => h.detection_count >= 25)
+        .slice(0, 10);
+
+    const hotspotsHtml = filteredHotspots.map(hotspot => {
         const occurrencePercent = (hotspot.occurrence_rate * 100).toFixed(1);
         const liftText = hotspot.lift ? `${hotspot.lift.toFixed(1)}× county average` : '';
         const hotspotUrl = `hotspot-detail.html?locId=${hotspot.locality_id}`;
@@ -495,7 +499,7 @@ function renderHotspots() {
                     <span class="hotspot-occurrence">${occurrencePercent}% of checklists</span>
                     ${liftText ? `<span class="hotspot-separator">•</span><span class="hotspot-lift">${liftText}</span>` : ''}
                 </div>
-                <div class="hotspot-detections">${hotspot.detection_count.toLocaleString()} detections</div>
+                <div class="hotspot-detections">${hotspot.detection_count.toLocaleString()} observations</div>
             </a>
         `;
     }).join('');
