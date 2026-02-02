@@ -90,7 +90,6 @@ async function init() {
 
     // Render hotspot details
     renderHotspotDetails();
-    renderVisitorInfo();
     renderHowToBird();
     renderHabitats();
     renderTips();
@@ -384,7 +383,7 @@ function renderSpecialties(locId) {
         const safeName = escapeHtml(species.common_name);
         const safeCode = escapeHtml(species.code);
         const liftDisplay = species.lift.toFixed(1);
-        const occurrenceDisplay = (species.occurrence_rate * 100).toFixed(1);
+        const detectionCount = species.detection_count || 0;
 
         return `
             <a href="species.html?code=${safeCode}" class="species-item species-item-specialty">
@@ -392,7 +391,7 @@ function renderSpecialties(locId) {
                 <div class="species-item-stats">
                     <span class="specialty-lift">${liftDisplay}× county average</span>
                     <span class="species-item-separator">•</span>
-                    <span class="species-item-occurrence">${occurrenceDisplay}% occurrence</span>
+                    <span class="species-item-detections">${detectionCount} observation${detectionCount !== 1 ? 's' : ''}</span>
                 </div>
             </a>
         `;
@@ -423,12 +422,15 @@ function renderCommonSpecies(locId) {
         const safeName = escapeHtml(species.common_name);
         const safeCode = escapeHtml(species.code);
         const occurrenceDisplay = (species.occurrence_rate * 100).toFixed(1);
+        const detectionCount = species.detection_count || 0;
 
         return `
             <a href="species.html?code=${safeCode}" class="species-item">
                 <div class="species-item-name">${safeName}</div>
                 <div class="species-item-stats">
                     <span class="species-item-occurrence">${occurrenceDisplay}% of checklists</span>
+                    <span class="species-item-separator">•</span>
+                    <span class="species-item-detections">${detectionCount} observation${detectionCount !== 1 ? 's' : ''}</span>
                 </div>
             </a>
         `;
