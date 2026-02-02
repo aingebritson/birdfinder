@@ -461,10 +461,9 @@ input:focus, select:focus {
     color: #94A3B8;
 }
 
-/* Specialties section - highlighted background */
+/* Specialties section - plain white container to match other sections */
 .specialties-section {
-    background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
-    border: 1px solid #F59E0B;
+    background-color: #FFFFFF;
 }
 
 .specialties-section h2 {
@@ -472,7 +471,7 @@ input:focus, select:focus {
 }
 
 .specialties-section p {
-    color: #A16207;
+    color: #6B7280;
 }
 
 /* Specialty lift badge */

@@ -141,16 +141,30 @@ function renderSpeciesList(elementId, speciesList) {
 }
 
 /**
+ * Get the border color for a category
+ */
+function getCategoryBorderColor(category) {
+    const colors = {
+        'resident': '#334155',       // dark slate
+        'single-season': '#CA8A04',  // gold
+        'two-passage-migrant': '#0D9488', // teal
+        'vagrant': '#C17F59'         // rust
+    };
+    return colors[category] || '#334155';
+}
+
+/**
  * Create HTML for a species card
  */
 function createSpeciesCard(species, frequency) {
     const categoryBadge = getCategoryBadgeClass(species.category);
     const categoryName = getCategoryDisplay(species.category);
+    const borderColor = getCategoryBorderColor(species.category);
     const freqPercent = (frequency * 100).toFixed(1);
     const barWidth = Math.min(frequency * 100, 100);
 
     return `
-        <a href="species.html?code=${species.code}" class="species-card block bg-white rounded-lg shadow-sm hover:shadow-md p-4 border border-gray-200">
+        <a href="species.html?code=${species.code}" class="species-card block bg-white rounded-lg shadow-sm hover:shadow-md p-4 border border-gray-200" style="border-left: 4px solid ${borderColor};">
             <div class="flex items-start justify-between mb-3">
                 <div class="flex-1">
                     <h4 class="font-semibold text-lg">${species.name}</h4>
