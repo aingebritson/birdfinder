@@ -486,10 +486,10 @@ function renderHotspots() {
     const hotspotsHtml = speciesHotspots.top_hotspots.map(hotspot => {
         const occurrencePercent = (hotspot.occurrence_rate * 100).toFixed(1);
         const liftText = hotspot.lift ? `${hotspot.lift.toFixed(1)}× county average` : '';
-        const ebirdUrl = `https://ebird.org/hotspot/${hotspot.locality_id}`;
+        const hotspotUrl = `hotspot.html?id=${hotspot.locality_id}`;
 
         return `
-            <a href="${ebirdUrl}" target="_blank" rel="noopener noreferrer" class="hotspot-card block">
+            <a href="${hotspotUrl}" class="hotspot-card block">
                 <div class="hotspot-name">${hotspot.name}</div>
                 <div class="hotspot-stats">
                     <span class="hotspot-occurrence">${occurrencePercent}% of checklists</span>

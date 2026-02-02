@@ -339,31 +339,33 @@ input:focus, select:focus {
     }
 }
 
-/* Hotspot card */
+/* Hotspot card - dark slate variant */
 .hotspot-card {
-    background-color: var(--color-card-bg);
-    border: 1px solid var(--color-border);
+    background-color: #334155;
+    border: 1px solid #475569;
     border-radius: 0.5rem;
     padding: 1rem;
     transition: all 0.15s ease;
     text-decoration: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .hotspot-card:hover {
-    border-color: var(--color-accent);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background-color: #475569;
+    border-color: #64748B;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transform: translateY(-1px);
 }
 
 .hotspot-name {
-    font-weight: 600;
-    color: var(--color-text-primary);
+    font-weight: 700;
+    color: #FEF9C3;
     margin-bottom: 0.5rem;
     line-height: 1.3;
 }
 
 .hotspot-card:hover .hotspot-name {
-    color: var(--color-accent);
+    color: #FFFBEB;
 }
 
 .hotspot-stats {
@@ -377,22 +379,22 @@ input:focus, select:focus {
 .hotspot-occurrence {
     font-size: 1.125rem;
     font-weight: 700;
-    color: var(--color-text-primary);
+    color: #FEF9C3;
 }
 
 .hotspot-separator {
-    color: var(--color-text-secondary);
+    color: #CBD5E1;
     margin: 0 0.25rem;
 }
 
 .hotspot-lift {
     font-size: 0.875rem;
-    color: var(--color-text-secondary);
+    color: #CBD5E1;
 }
 
 .hotspot-detections {
     font-size: 0.75rem;
-    color: var(--color-text-secondary);
+    color: #94A3B8;
 }
 
 /* Species list styles for hotspot detail page */
