@@ -71,14 +71,6 @@
                 </div>
             </div>
 
-            <!-- Visitor Information -->
-            <section id="visitor-info-section" class="bg-white rounded-lg shadow-sm p-6">
-                <h2 class="text-xl font-bold mb-4">Visitor Information</h2>
-                <div id="visitor-info" class="space-y-3">
-                    <!-- Will be populated by JavaScript -->
-                </div>
-            </section>
-
             <!-- How to Bird Here -->
             <section id="how-to-bird-section" class="hidden bg-white rounded-lg shadow-sm p-6">
                 <h2 class="text-xl font-bold mb-4">How to Bird Here</h2>
@@ -111,23 +103,26 @@
                 </div>
             </section>
 
-            <!-- Specialties Section -->
-            <section id="specialties-section" class="hidden specialties-section rounded-lg shadow-sm p-6">
-                <h2 class="text-xl font-bold mb-2">What's Special Here</h2>
-                <p class="text-sm mb-4" style="color: #6B7280;">Species where this hotspot stands out compared to the county average</p>
-                <div id="specialties-list" class="species-list">
-                    <!-- Will be populated by JavaScript -->
-                </div>
-            </section>
+            <!-- Species Sections - Side by side on desktop -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Specialties Section -->
+                <section id="specialties-section" class="hidden specialties-section rounded-lg shadow-sm p-6">
+                    <h2 class="text-xl font-bold mb-2">What's Special Here</h2>
+                    <p class="text-sm mb-4" style="color: #6B7280;">Species where this hotspot stands out compared to the county average</p>
+                    <div id="specialties-list" class="species-list">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </section>
 
-            <!-- Common Species Section -->
-            <section id="common-section" class="hidden bg-white rounded-lg shadow-sm p-6">
-                <h2 class="text-xl font-bold mb-2">Likely to See</h2>
-                <p class="text-sm mb-4" style="color: #6B7280;">Species you're most likely to encounter on any visit</p>
-                <div id="common-list" class="species-list">
-                    <!-- Will be populated by JavaScript -->
-                </div>
-            </section>
+                <!-- Common Species Section -->
+                <section id="common-section" class="hidden bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-xl font-bold mb-2">Likely to See</h2>
+                    <p class="text-sm mb-4" style="color: #6B7280;">Species you're most likely to encounter on any visit</p>
+                    <div id="common-list" class="species-list">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
 
