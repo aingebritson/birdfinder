@@ -141,16 +141,16 @@ function renderSpeciesList(elementId, speciesList) {
 }
 
 /**
- * Get the border color for a category
+ * Get the border color for a category (Field Journal palette)
  */
 function getCategoryBorderColor(category) {
     const colors = {
-        'resident': '#334155',       // dark slate
-        'single-season': '#CA8A04',  // gold
-        'two-passage-migrant': '#0D9488', // teal
-        'vagrant': '#C17F59'         // rust
+        'resident': '#2D3E36',       // forest
+        'single-season': '#C9A55C',  // ochre
+        'two-passage-migrant': '#4A6D5C', // moss
+        'vagrant': '#C17F59'         // terracotta
     };
-    return colors[category] || '#334155';
+    return colors[category] || '#2D3E36';
 }
 
 /**
@@ -164,15 +164,15 @@ function createSpeciesCard(species, frequency) {
     const barWidth = Math.min(frequency * 100, 100);
 
     return `
-        <a href="species.html?code=${species.code}" class="species-card block bg-white rounded-lg shadow-sm hover:shadow-md p-4 border border-gray-200" style="border-left: 4px solid ${borderColor};">
+        <a href="species.html?code=${species.code}" class="species-card" style="--card-accent: ${borderColor};">
             <div class="flex items-start justify-between mb-3">
                 <div class="flex-1">
-                    <h4 class="font-semibold text-lg">${species.name}</h4>
-                    <span class="badge ${categoryBadge} mt-1">${categoryName}</span>
+                    <h4>${species.name}</h4>
+                    <span class="badge ${categoryBadge} mt-2">${categoryName}</span>
                 </div>
                 <div class="text-right ml-4">
-                    <div class="frequency-percent text-2xl">${freqPercent}%</div>
-                    <div class="text-xs" style="color: #475569;">frequency</div>
+                    <div class="frequency-percent">${freqPercent}%</div>
+                    <div class="text-xs" style="color: var(--color-ink-muted);">frequency</div>
                 </div>
             </div>
             <div class="frequency-bar" style="width: ${barWidth}%;"></div>
