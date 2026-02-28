@@ -121,16 +121,16 @@ function renderSpeciesList() {
 }
 
 /**
- * Get the border color for a category
+ * Get the border color for a category (Field Journal palette)
  */
 function getCategoryBorderColor(category) {
     const colors = {
-        'resident': '#334155',       // dark slate
-        'single-season': '#CA8A04',  // gold
-        'two-passage-migrant': '#0D9488', // teal
-        'vagrant': '#C17F59'         // rust
+        'resident': '#2D3E36',       // forest
+        'single-season': '#C9A55C',  // ochre
+        'two-passage-migrant': '#4A6D5C', // moss
+        'vagrant': '#C17F59'         // terracotta
     };
-    return colors[category] || '#334155';
+    return colors[category] || '#2D3E36';
 }
 
 /**
@@ -145,17 +145,17 @@ function createSpeciesCard(species) {
     const timingSummary = getTimingSummary(species);
 
     return `
-        <a href="species.html?code=${species.code}" class="species-card block bg-white rounded-lg shadow-sm hover:shadow-md p-4 border border-gray-200" style="border-left: 4px solid ${borderColor};">
+        <a href="species.html?code=${species.code}" class="species-card" style="--card-accent: ${borderColor};">
             <div class="flex items-start justify-between">
                 <div class="flex-1">
-                    <h3 class="font-semibold text-gray-900 text-lg">${species.name}</h3>
+                    <h4>${species.name}</h4>
                     <div class="mt-2 flex flex-wrap items-center gap-2">
                         <span class="badge ${categoryBadge}">${categoryName}</span>
-                        ${timingSummary ? `<span class="text-sm text-gray-600">${timingSummary}</span>` : ''}
+                        ${timingSummary ? `<span class="text-sm" style="color: var(--color-ink-muted);">${timingSummary}</span>` : ''}
                     </div>
                 </div>
-                <div class="ml-4 text-gray-400">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="ml-4" style="color: var(--color-ink-faint);">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                     </svg>
                 </div>

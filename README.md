@@ -60,7 +60,7 @@ cp regions/[region_name]/[region_name]_species_data.json birdfinder/data/species
 │   ├── hotspots.html           # Hotspot directory
 │   ├── hotspot-detail.html     # Individual hotspot details
 │   ├── css/
-│   │   └── styles.css          # Custom styles (Kirtland's Warbler palette)
+│   │   └── styles.css          # Custom styles (Field Journal aesthetic)
 │   ├── js/
 │   │   ├── data-loader.js      # Robust data loading with retry logic
 │   │   ├── data.js             # Species data access functions
@@ -149,16 +149,22 @@ cp regions/[region_name]/[region_name]_species_data.json birdfinder/data/species
 - Common species list (top 15 most frequently detected)
 - Notable species (rare or specialty birds for the location)
 
-### Color Palette
+### Design System
 
-The app uses a Kirtland's Warbler-inspired color scheme defined in [birdfinder/css/styles.css](birdfinder/css/styles.css):
+The app uses a "Field Journal" aesthetic - warm, naturalist-inspired design with a cozy, professional feel. Defined in [birdfinder/css/styles.css](birdfinder/css/styles.css).
 
-- **Header/footer**: `#334155` (dark slate) with `#FEF9C3` (cream) text
-- **Main background**: `#FEFCE8` (pale yellow)
-- **Cards**: `#BFDBFE` (light blue)
-- **Primary accent**: `#CA8A04` (warm gold)
-- **Category badges**: Resident (slate), Single-season (gold), Two-passage (teal), Vagrant (terracotta)
-- **Status indicators**: Arriving (green), At peak (gold), Departing (red)
+**Typography:**
+- **Headings**: Bitter (warm slab-serif)
+- **Body**: DM Sans (friendly, modern sans-serif)
+
+**Color Palette:**
+- **Header/footer**: `#2D3E36` (forest green) with terracotta/ochre accent stripe
+- **Main background**: `#FAF6F1` (warm cream) with subtle paper texture
+- **Cards**: White with soft shadows and colored left borders
+- **Primary accent**: `#C17F59` (terracotta)
+- **Secondary accent**: `#C9A55C` (ochre)
+- **Category badges**: Resident (forest), Single-season (ochre), Two-passage (moss), Vagrant (terracotta)
+- **Status indicators**: Arriving (green), At peak (ochre), Departing (rust)
 
 ### Customization
 
