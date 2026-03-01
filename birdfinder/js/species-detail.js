@@ -272,8 +272,8 @@ function renderFrequencyChart() {
 
     // Calculate dimensions - use offsetWidth for more accurate width
     const width = container.offsetWidth || container.clientWidth;
-    const height = 200;
-    const padding = { top: 20, right: 20, bottom: 40, left: 50 };
+    const height = 280;
+    const padding = { top: 25, right: 20, bottom: 45, left: 50 };
     const chartWidth = width - padding.left - padding.right;
     const chartHeight = height - padding.top - padding.bottom;
 
