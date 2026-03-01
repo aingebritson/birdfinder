@@ -21,6 +21,7 @@ The pipeline expects:
 - Output: regions/[region_name]/[region_name]_species_data.json
 """
 
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -162,6 +163,13 @@ def main():
     # Success!
     output_file = region_path / f"{region_name}_species_data.json"
     intermediate_dir = region_path / "intermediate"
+
+    # Copy species data to birdfinder/data/ so the frontend stays in sync
+    birdfinder_data = project_root / "birdfinder" / "data"
+    if birdfinder_data.exists() and output_file.exists():
+        dest = birdfinder_data / "species_data.json"
+        shutil.copy(output_file, dest)
+        print(f"\nCopied to birdfinder/data/species_data.json")
 
     print("\n" + "="*70)
     print("✓ Pipeline Complete!")
