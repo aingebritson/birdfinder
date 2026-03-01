@@ -506,11 +506,7 @@ function renderHotspots() {
         `;
     }).join('');
 
-    container.innerHTML = `
-        <div class="hotspots-grid">
-            ${hotspotsHtml}
-        </div>
-    `;
+    container.innerHTML = hotspotsHtml;
 }
 
 // Initialize when DOM is ready
