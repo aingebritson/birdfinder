@@ -159,7 +159,7 @@ The app uses a "Field Journal" aesthetic - warm, naturalist-inspired design with
 
 **Color Palette:**
 - **Header/footer**: `#2D3E36` (forest green) with terracotta/ochre accent stripe
-- **Main background**: `#FAF6F1` (warm cream) with subtle paper texture
+- **Main background**: `#FAF6F1` (warm cream)
 - **Cards**: White with soft shadows and colored left borders
 - **Primary accent**: `#C17F59` (terracotta)
 - **Secondary accent**: `#C9A55C` (ochre)
