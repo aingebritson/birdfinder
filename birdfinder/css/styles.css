@@ -544,6 +544,16 @@ a:hover {
     border-color: var(--color-forest);
 }
 
+.btn-nav .nav-icon {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.btn-nav .nav-icon svg {
+    display: block;
+}
+
 /* ==========================================================================
    Week Selector
    ========================================================================== */
@@ -642,6 +652,17 @@ label {
 .sort-btn-active:hover {
     background: var(--color-forest-light);
     border-color: var(--color-forest-light);
+}
+
+.sort-arrow {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+}
+
+.sort-arrow svg {
+    display: block;
 }
 
 /* ==========================================================================
@@ -863,6 +884,16 @@ label {
     font-size: 2.5rem;
     margin-bottom: 0.75rem;
     opacity: 0.6;
+}
+
+.status-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-icon svg {
+    display: block;
 }
 
 .skeleton {

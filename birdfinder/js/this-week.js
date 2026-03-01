@@ -128,7 +128,7 @@ function renderSpeciesList(elementId, speciesList) {
     if (speciesList.length === 0) {
         container.innerHTML = `
             <div class="empty-state">
-                <div class="empty-state-icon">🔍</div>
+                <div class="empty-state-icon" style="color: var(--color-ink-muted);">${Icons.search(36)}</div>
                 <p>No species found for this week</p>
             </div>
         `;

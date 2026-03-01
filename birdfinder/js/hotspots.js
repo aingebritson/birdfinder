@@ -121,9 +121,13 @@ function updateSortButtons() {
     });
 
     // Update button text with arrows
-    const arrow = currentSort.ascending ? '↑' : '↓';
-    buttons.name.textContent = currentSort.field === 'name' ? `Name ${arrow}` : 'Name';
-    buttons.species.textContent = currentSort.field === 'species' ? `# Species ${arrow}` : '# Species';
+    const arrowIcon = currentSort.ascending ? Icons.sortAsc(12) : Icons.sortDesc(12);
+    buttons.name.innerHTML = currentSort.field === 'name'
+        ? `Name <span class="sort-arrow">${arrowIcon}</span>`
+        : 'Name';
+    buttons.species.innerHTML = currentSort.field === 'species'
+        ? `# Species <span class="sort-arrow">${arrowIcon}</span>`
+        : '# Species';
 }
 
 /**

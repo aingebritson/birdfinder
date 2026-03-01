@@ -121,7 +121,7 @@ function renderTimingInfo() {
     if (currentSpecies.category === 'resident') {
         container.innerHTML = `
             <div class="text-center py-8">
-                <div class="text-4xl mb-2">🏠</div>
+                <div class="status-icon mb-2" style="color: var(--color-forest);">${Icons.home(36)}</div>
                 <p class="text-lg font-medium" style="color: var(--color-ink);">Year-round Resident</p>
                 <p class="text-sm mt-1" style="color: var(--color-ink-muted);">Present throughout the year</p>
             </div>
@@ -137,7 +137,7 @@ function renderTimingInfo() {
 
         container.innerHTML = `
             <div class="text-center py-8">
-                <div class="text-4xl mb-2">❓</div>
+                <div class="status-icon mb-2" style="color: var(--color-ink-muted);">${Icons.helpCircle(36)}</div>
                 <p class="text-lg font-medium" style="color: var(--color-ink);">Irregular Visitor</p>
                 <p class="text-sm mt-1" style="color: var(--color-ink-muted);">Rare or unpredictable occurrence</p>
                 ${firstAppears ? `
@@ -168,7 +168,7 @@ function renderTimingInfo() {
                 <!-- Spring -->
                 <div>
                     <h3 class="text-lg font-semibold mb-3 flex items-center gap-2" style="font-family: var(--font-display);">
-                        <span>🌱</span>
+                        <span style="color: var(--color-arriving);">${Icons.sprout(22)}</span>
                         Spring Migration
                     </h3>
                     <div class="grid grid-cols-3 gap-3">
@@ -190,7 +190,7 @@ function renderTimingInfo() {
                 <!-- Fall -->
                 <div>
                     <h3 class="text-lg font-semibold mb-3 flex items-center gap-2" style="font-family: var(--font-display);">
-                        <span>🍂</span>
+                        <span style="color: var(--color-terracotta);">${Icons.leaf(22)}</span>
                         Fall Migration
                     </h3>
                     <div class="grid grid-cols-3 gap-3">
@@ -218,7 +218,7 @@ function renderTimingInfo() {
         container.innerHTML = `
             <div class="space-y-4">
                 <div class="text-center">
-                    <div class="text-4xl mb-2">❄️</div>
+                    <div class="status-icon mb-2" style="color: #5B8FB9;">${Icons.snowflake(36)}</div>
                     <p class="text-lg font-medium" style="color: var(--color-ink);">Winter Resident</p>
                     <p class="text-sm mt-1" style="color: var(--color-ink-muted);">Present during winter months</p>
                 </div>

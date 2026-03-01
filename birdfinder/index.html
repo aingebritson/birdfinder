@@ -34,13 +34,23 @@
                 </div>
                 <div class="flex items-center gap-2">
                     <button id="prev-week" class="btn-nav">
-                        <span aria-hidden="true">&larr;</span> Previous
+                        <span aria-hidden="true" class="nav-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </span>
+                        Previous
                     </button>
                     <button id="current-week" class="btn-this-week">
                         This Week
                     </button>
                     <button id="next-week" class="btn-nav">
-                        Next <span aria-hidden="true">&rarr;</span>
+                        Next
+                        <span aria-hidden="true" class="nav-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </span>
                     </button>
                 </div>
             </div>
@@ -51,7 +61,7 @@
             <h3 class="section-header">
                 <span class="section-icon arriving">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 5v14M5 12l7 7 7-7"/>
+                        <path d="M3 12h18M14 5l7 7-7 7"/>
                     </svg>
                 </span>
                 Arriving
@@ -87,7 +97,7 @@
             <h3 class="section-header">
                 <span class="section-icon departing">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 19V5M5 12l7-7 7 7"/>
+                        <path d="M21 12H3M10 5l-7 7 7 7"/>
                     </svg>
                 </span>
                 Departing
@@ -108,6 +118,7 @@
         </div>
     </footer>
 
+    <script src="js/icons.js"></script>
     <script src="js/data-loader.js"></script>
     <script src="js/data.js"></script>
     <script src="js/week-calculator.js"></script>
