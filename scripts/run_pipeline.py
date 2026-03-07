@@ -164,12 +164,12 @@ def main():
     output_file = region_path / f"{region_name}_species_data.json"
     intermediate_dir = region_path / "intermediate"
 
-    # Copy species data to birdfinder/data/ so the frontend stays in sync
-    birdfinder_data = project_root / "birdfinder" / "data"
-    if birdfinder_data.exists() and output_file.exists():
-        dest = birdfinder_data / "species_data.json"
+    # Copy species data to washtenaw/data/ so the frontend stays in sync
+    washtenaw_data = project_root / "washtenaw" / "data"
+    if washtenaw_data.exists() and output_file.exists():
+        dest = washtenaw_data / "species_data.json"
         shutil.copy(output_file, dest)
-        print(f"\nCopied to birdfinder/data/species_data.json")
+        print(f"\nCopied to washtenaw/data/species_data.json")
 
     print("\n" + "="*70)
     print("✓ Pipeline Complete!")
