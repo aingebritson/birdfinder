@@ -3,126 +3,640 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BirdFinder - Washtenaw County Bird Phenology</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Flightcall — Bird Phenology by County</title>
+    <meta name="description" content="Real-time bird phenology by county. Know which species are arriving, at peak, or departing — and where to find them.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;0,700;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --cream:          #FAF6F1;
+            --cream-dark:     #F0EBE3;
+            --parchment:      #EDE8E0;
+            --forest:         #2D3E36;
+            --forest-light:   #3D5147;
+            --moss:           #4A6D5C;
+            --sage:           #7A9E8E;
+            --terracotta:     #C17F59;
+            --terracotta-dk:  #A66B48;
+            --ochre:          #C9A55C;
+            --ink:            #2A2520;
+            --ink-light:      #4A453E;
+            --ink-muted:      #6B665E;
+            --ink-faint:      #9B9690;
+            --font-display:   'Bitter', Georgia, serif;
+            --font-body:      'DM Sans', system-ui, sans-serif;
+        }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            background: var(--cream);
+            color: var(--ink);
+            font-family: var(--font-body);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Subtle paper grain overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.025;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+            background-size: 200px 200px;
+        }
+
+        /* ─── Header ─────────────────────────────────────────────── */
+
+        .site-header {
+            background: var(--forest);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .site-header::before {
+            content: '';
+            display: block;
+            height: 5px;
+            background: linear-gradient(90deg, var(--terracotta), var(--ochre), var(--terracotta));
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3.5rem 2rem 3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .wordmark {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            line-height: 1;
+            color: var(--cream);
+            letter-spacing: -0.025em;
+            animation: fadeUp 0.5s ease both;
+        }
+
+        .wordmark .accent {
+            color: var(--ochre);
+        }
+
+        .tagline {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-weight: 400;
+            font-size: clamp(0.9375rem, 1.8vw, 1.1875rem);
+            color: var(--sage);
+            margin-top: 1.1rem;
+            line-height: 1.5;
+            animation: fadeUp 0.5s 0.08s ease both;
+        }
+
+        /* SVG phenology waveform decoration */
+        .header-decoration {
+            position: relative;
+            animation: fadeUp 0.6s 0.15s ease both;
+        }
+
+        .pheno-waves {
+            width: 100%;
+            max-width: 460px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+        }
+
+        /* ─── Main content ────────────────────────────────────────── */
+
+        main {
+            flex: 1;
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 2rem;
+        }
+
+        /* ─── Intro ───────────────────────────────────────────────── */
+
+        .intro {
+            padding: 2.75rem 0 2.5rem;
+            border-bottom: 1px solid var(--parchment);
+            animation: fadeUp 0.5s 0.22s ease both;
+        }
+
+        .intro p {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: var(--ink-light);
+            max-width: 58ch;
+        }
+
+        /* ─── Directory ───────────────────────────────────────────── */
+
+        .directory {
+            padding: 2.5rem 0 4rem;
+            animation: fadeUp 0.5s 0.3s ease both;
+        }
+
+        .directory-label {
+            font-size: 0.6875rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .directory-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--parchment);
+        }
+
+        .county-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+            gap: 1.25rem;
+        }
+
+        /* ─── Active county card ──────────────────────────────────── */
+
+        .county-card {
+            background: white;
+            border-radius: 6px;
+            border-left: 4px solid var(--terracotta);
+            box-shadow: 0 2px 8px rgba(45, 62, 54, 0.08);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            padding: 1.5rem 1.75rem;
+            transition: transform 0.18s ease, box-shadow 0.18s ease;
+        }
+
+        .county-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 28px rgba(45, 62, 54, 0.13);
+        }
+
+        .county-card:hover .card-arrow {
+            transform: translateX(4px);
+        }
+
+        .card-status {
+            font-size: 0.625rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--moss);
+            margin-bottom: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--moss);
+            flex-shrink: 0;
+        }
+
+        .card-county-name {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--forest);
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+        }
+
+        .card-state {
+            font-size: 0.875rem;
+            color: var(--ink-muted);
+            margin-bottom: 1.375rem;
+        }
+
+        .card-stats {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.375rem;
+            align-items: flex-end;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.125rem;
+        }
+
+        .stat-value {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--forest);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.625rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--ink-faint);
+            font-weight: 500;
+        }
+
+        .stat-sep {
+            width: 1px;
+            height: 2rem;
+            background: var(--parchment);
+            align-self: flex-end;
+            margin-bottom: 0.125rem;
+        }
+
+        /* Mini phenology sparkline */
+        .card-pheno {
+            height: 32px;
+            margin-bottom: 1.375rem;
+            display: flex;
+            align-items: flex-end;
+            gap: 1.5px;
+        }
+
+        .pheno-bar {
+            flex: 1;
+            border-radius: 1px;
+            transition: opacity 0.2s;
+        }
+
+        .county-card:hover .pheno-bar {
+            filter: brightness(1.05);
+        }
+
+        .card-cta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid var(--cream-dark);
+            padding-top: 1rem;
+        }
+
+        .card-cta-text {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--terracotta);
+        }
+
+        .card-arrow {
+            color: var(--terracotta);
+            transition: transform 0.18s ease;
+            flex-shrink: 0;
+        }
+
+        /* ─── Ghost cards ─────────────────────────────────────────── */
+
+        .county-card-ghost {
+            border-radius: 6px;
+            border: 1.5px dashed var(--parchment);
+            background: transparent;
+            padding: 1.5rem 1.75rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+            text-align: center;
+            gap: 0.625rem;
+        }
+
+        .ghost-icon {
+            color: var(--ink-faint);
+            opacity: 0.5;
+        }
+
+        .ghost-text {
+            font-size: 0.8125rem;
+            color: var(--ink-faint);
+            font-style: italic;
+        }
+
+        .more-note {
+            margin-top: 1.5rem;
+            font-size: 0.8125rem;
+            color: var(--ink-faint);
+            text-align: center;
+            font-style: italic;
+        }
+
+        /* ─── Footer ──────────────────────────────────────────────── */
+
+        footer {
+            background: var(--forest);
+        }
+
+        footer::before {
+            content: '';
+            display: block;
+            height: 4px;
+            background: linear-gradient(90deg, var(--terracotta), var(--ochre), var(--terracotta));
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1.375rem 2rem;
+            text-align: center;
+        }
+
+        .footer-inner p {
+            font-size: 0.8125rem;
+            color: var(--sage);
+        }
+
+        .footer-inner a {
+            color: var(--ochre);
+            text-decoration: none;
+        }
+
+        .footer-inner a:hover {
+            text-decoration: underline;
+        }
+
+        /* ─── Animations ──────────────────────────────────────────── */
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(14px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ─── Responsive ──────────────────────────────────────────── */
+
+        @media (max-width: 680px) {
+            .header-inner {
+                grid-template-columns: 1fr;
+                padding: 2.5rem 1.25rem 2rem;
+                gap: 1.5rem;
+            }
+
+            .header-decoration {
+                display: none;
+            }
+
+            main {
+                padding: 0 1.25rem;
+            }
+
+            .county-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 sm:py-8">
-            <div class="site-title">
-                <h1 class="text-2xl sm:text-3xl font-bold">BirdFinder</h1>
-            </div>
-            <p class="mt-1">Washtenaw County, Michigan</p>
-        </div>
-    </header>
 
-    <main class="max-w-7xl mx-auto px-4 py-6 sm:px-6 sm:py-8">
-        <!-- Navigation -->
-        <nav class="nav-links mb-6">
-            <a href="index.html" class="nav-link nav-active">This Week</a>
-            <a href="browse.html" class="nav-link">Browse All Species</a>
-            <a href="hotspots.html" class="nav-link">Hotspots</a>
-        </nav>
+<header class="site-header">
+    <div class="header-inner">
 
-        <!-- Week Selector -->
-        <div class="week-selector mb-8">
-            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                <div>
-                    <h2 id="week-title">This Week</h2>
-                    <p id="week-dates">Loading...</p>
-                </div>
-                <div class="flex items-center gap-2">
-                    <button id="prev-week" class="btn-nav">
-                        <span aria-hidden="true" class="nav-icon">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M15 18l-6-6 6-6"/>
-                            </svg>
-                        </span>
-                        Previous
-                    </button>
-                    <button id="current-week" class="btn-this-week">
-                        This Week
-                    </button>
-                    <button id="next-week" class="btn-nav">
-                        Next
-                        <span aria-hidden="true" class="nav-icon">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M9 18l6-6-6-6"/>
-                            </svg>
-                        </span>
-                    </button>
-                </div>
-            </div>
+        <div class="header-text">
+            <h1 class="wordmark">Flight<span class="accent">call</span></h1>
+            <p class="tagline">Know what to find,<br>and where to look.</p>
         </div>
 
-        <!-- Arriving Section -->
-        <section class="mb-10">
-            <h3 class="section-header">
-                <span class="section-icon arriving">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 12h18M14 5l7 7-7 7"/>
-                    </svg>
-                </span>
-                Arriving
-            </h3>
-            <div id="arriving-list" class="species-grid">
-                <div class="empty-state">
-                    <div class="empty-state-icon">...</div>
-                    <p>Loading species...</p>
-                </div>
-            </div>
-        </section>
+        <div class="header-decoration" aria-hidden="true">
+            <!--
+                Abstract phenology waveforms — each path represents a
+                species migration pattern type across a 52-week year.
+                Spring migrant (ochre), summer breeder (sage/teal),
+                fall migrant (terracotta), winter visitor (moss),
+                two-passage migrant (double-peaked, ochre dashed).
+            -->
+            <svg class="pheno-waves" viewBox="0 0 460 210" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-        <!-- At Peak Section -->
-        <section class="mb-10">
-            <h3 class="section-header">
-                <span class="section-icon peak">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-                        <circle cx="12" cy="12" r="8"/>
-                    </svg>
-                </span>
-                At Peak
-            </h3>
-            <div id="peak-list" class="species-grid">
-                <div class="empty-state">
-                    <div class="empty-state-icon">...</div>
-                    <p>Loading species...</p>
-                </div>
-            </div>
-        </section>
+                <!-- Soft fill areas for depth -->
+                <path d="M0 175 C60 175 100 160 140 128 C175 102 200 82 230 80
+                         C258 78 290 100 320 128 C360 162 410 175 460 177
+                         L460 210 L0 210 Z"
+                      fill="#7A9E8E" opacity="0.07"/>
 
-        <!-- Departing Section -->
-        <section class="mb-10">
-            <h3 class="section-header">
-                <span class="section-icon departing">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 12H3M10 5l-7 7 7 7"/>
-                    </svg>
-                </span>
-                Departing
-            </h3>
-            <div id="departing-list" class="species-grid">
-                <div class="empty-state">
-                    <div class="empty-state-icon">...</div>
-                    <p>Loading species...</p>
-                </div>
-            </div>
-        </section>
-    </main>
+                <path d="M75 175 C105 148 135 110 162 80
+                         C182 58 205 50 225 55
+                         C252 62 280 100 310 142 L310 175 Z"
+                      fill="#C9A55C" opacity="0.07"/>
 
-    <footer>
-        <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 text-center">
-            <p>Bird phenology data from <a href="https://ebird.org" target="_blank" rel="noopener">eBird</a></p>
-            <p class="mt-1">Washtenaw County, Michigan</p>
-            <p class="mt-2 text-xs opacity-60">Data updated March 2026</p>
+                <!-- Year-round resident (flat, very subtle) -->
+                <path d="M0 138 C77 136 153 130 230 132 C307 134 383 136 460 134"
+                      stroke="#FAF6F1" stroke-width="1" opacity="0.1" stroke-linecap="round"/>
+
+                <!-- Spring migrant — peaks ~week 17 (late April) -->
+                <path d="M0 160 C38 160 68 130 100 100
+                         C122 78 148 60 170 58
+                         C195 56 222 78 252 112
+                         C286 150 360 168 460 168"
+                      stroke="#C9A55C" stroke-width="1.6" opacity="0.5" stroke-linecap="round"/>
+
+                <!-- Summer breeder — peaks June/July (week 24–30) -->
+                <path d="M0 165 C55 165 95 155 135 130
+                         C165 112 192 88 230 86
+                         C265 84 295 108 325 132
+                         C365 162 412 168 460 170"
+                      stroke="#7A9E8E" stroke-width="1.6" opacity="0.55" stroke-linecap="round"/>
+
+                <!-- Fall migrant — peaks Sept (week 37) -->
+                <path d="M0 168 C48 168 95 170 148 160
+                         C188 152 218 130 260 95
+                         C290 70 315 64 338 70
+                         C368 80 405 122 460 148"
+                      stroke="#C17F59" stroke-width="1.6" opacity="0.45" stroke-linecap="round"/>
+
+                <!-- Winter visitor — peaks Dec/Jan (wraps) -->
+                <path d="M0 118 C28 104 50 100 72 106
+                         C94 114 112 140 162 158
+                         C248 175 360 174 420 164
+                         C436 160 450 148 460 140"
+                      stroke="#4A6D5C" stroke-width="1.2" opacity="0.35" stroke-linecap="round"/>
+
+                <!-- Two-passage migrant (dashed, twin peaks) -->
+                <path d="M0 170 C32 170 58 148 82 116
+                         C100 92 115 84 130 90
+                         C148 98 165 128 200 155
+                         C228 172 255 170 280 162
+                         C302 154 325 126 355 96
+                         C378 74 400 74 420 84
+                         C438 93 450 110 460 120"
+                      stroke="#C9A55C" stroke-width="1" opacity="0.3"
+                      stroke-dasharray="4 3" stroke-linecap="round"/>
+
+                <!-- Baseline axis -->
+                <line x1="0" y1="176" x2="460" y2="176"
+                      stroke="#FAF6F1" stroke-width="0.75" opacity="0.12"/>
+
+                <!-- Season boundary ticks -->
+                <line x1="115" y1="174" x2="115" y2="179" stroke="#FAF6F1" stroke-width="0.75" opacity="0.2"/>
+                <line x1="230" y1="174" x2="230" y2="179" stroke="#FAF6F1" stroke-width="0.75" opacity="0.2"/>
+                <line x1="345" y1="174" x2="345" y2="179" stroke="#FAF6F1" stroke-width="0.75" opacity="0.2"/>
+
+                <!-- Season labels -->
+                <text x="57"  y="192" font-family="DM Sans, sans-serif" font-size="7.5" fill="#FAF6F1" opacity="0.22" letter-spacing="0.1em" text-anchor="middle">WINTER</text>
+                <text x="172" y="192" font-family="DM Sans, sans-serif" font-size="7.5" fill="#FAF6F1" opacity="0.22" letter-spacing="0.1em" text-anchor="middle">SPRING</text>
+                <text x="287" y="192" font-family="DM Sans, sans-serif" font-size="7.5" fill="#FAF6F1" opacity="0.22" letter-spacing="0.1em" text-anchor="middle">SUMMER</text>
+                <text x="402" y="192" font-family="DM Sans, sans-serif" font-size="7.5" fill="#FAF6F1" opacity="0.22" letter-spacing="0.1em" text-anchor="middle">FALL</text>
+
+                <!-- Legend — right side, vertical -->
+                <circle cx="424" cy="60" r="3" fill="#C9A55C" opacity="0.7"/>
+                <text x="432" y="64" font-family="DM Sans, sans-serif" font-size="7" fill="#FAF6F1" opacity="0.35">Spring migrant</text>
+                <circle cx="424" cy="76" r="3" fill="#7A9E8E" opacity="0.7"/>
+                <text x="432" y="80" font-family="DM Sans, sans-serif" font-size="7" fill="#FAF6F1" opacity="0.35">Summer breeder</text>
+                <circle cx="424" cy="92" r="3" fill="#C17F59" opacity="0.7"/>
+                <text x="432" y="96" font-family="DM Sans, sans-serif" font-size="7" fill="#FAF6F1" opacity="0.35">Fall migrant</text>
+                <circle cx="424" cy="108" r="3" fill="#4A6D5C" opacity="0.7"/>
+                <text x="432" y="112" font-family="DM Sans, sans-serif" font-size="7" fill="#FAF6F1" opacity="0.35">Winter visitor</text>
+            </svg>
         </div>
-    </footer>
 
-    <script src="js/icons.js"></script>
-    <script src="js/data-loader.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/week-calculator.js"></script>
-    <script src="js/this-week.js"></script>
+    </div>
+</header>
+
+<main>
+
+    <section class="intro">
+        <p>Real-time bird phenology data for Michigan counties, powered by eBird.
+        Know which species are arriving, at peak, or departing —
+        and exactly where to find them.</p>
+    </section>
+
+    <section class="directory">
+        <div class="directory-label">Field Locations</div>
+
+        <div class="county-grid">
+
+            <!-- Washtenaw County — available -->
+            <a href="washtenaw/" class="county-card">
+
+                <div class="card-status">
+                    <span class="status-dot"></span>
+                    Available now
+                </div>
+
+                <div class="card-county-name">Washtenaw County</div>
+                <div class="card-state">Michigan</div>
+
+                <div class="card-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">340</span>
+                        <span class="stat-label">Species</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="stat-item">
+                        <span class="stat-value">315</span>
+                        <span class="stat-label">Hotspots</span>
+                    </div>
+                </div>
+
+                <!--
+                    Mini phenology sparkline.
+                    26 bars = biweekly approximation across the year.
+                    Heights reflect the general pulse of Michigan bird activity:
+                    low in winter, rising sharply in spring, peaking in
+                    summer, secondary fall pulse, then declining.
+                -->
+                <div class="card-pheno" aria-hidden="true">
+                    <div class="pheno-bar" style="height:32%; background:#4A6D5C; opacity:0.55;"></div>
+                    <div class="pheno-bar" style="height:28%; background:#4A6D5C; opacity:0.55;"></div>
+                    <div class="pheno-bar" style="height:26%; background:#4A6D5C; opacity:0.55;"></div>
+                    <div class="pheno-bar" style="height:30%; background:#4A6D5C; opacity:0.55;"></div>
+                    <div class="pheno-bar" style="height:40%; background:#7A9E8E; opacity:0.65;"></div>
+                    <div class="pheno-bar" style="height:58%; background:#7A9E8E; opacity:0.7;"></div>
+                    <div class="pheno-bar" style="height:74%; background:#C9A55C; opacity:0.8;"></div>
+                    <div class="pheno-bar" style="height:86%; background:#C9A55C; opacity:0.85;"></div>
+                    <div class="pheno-bar" style="height:92%; background:#C9A55C; opacity:0.9;"></div>
+                    <div class="pheno-bar" style="height:90%; background:#C17F59; opacity:0.9;"></div>
+                    <div class="pheno-bar" style="height:94%; background:#C17F59; opacity:0.9;"></div>
+                    <div class="pheno-bar" style="height:96%; background:#C17F59; opacity:0.9;"></div>
+                    <div class="pheno-bar" style="height:88%; background:#C17F59; opacity:0.9;"></div>
+                    <div class="pheno-bar" style="height:82%; background:#C9A55C; opacity:0.85;"></div>
+                    <div class="pheno-bar" style="height:75%; background:#7A9E8E; opacity:0.75;"></div>
+                    <div class="pheno-bar" style="height:70%; background:#7A9E8E; opacity:0.75;"></div>
+                    <div class="pheno-bar" style="height:68%; background:#7A9E8E; opacity:0.75;"></div>
+                    <div class="pheno-bar" style="height:74%; background:#C9A55C; opacity:0.8;"></div>
+                    <div class="pheno-bar" style="height:80%; background:#C9A55C; opacity:0.8;"></div>
+                    <div class="pheno-bar" style="height:72%; background:#C9A55C; opacity:0.75;"></div>
+                    <div class="pheno-bar" style="height:60%; background:#7A9E8E; opacity:0.7;"></div>
+                    <div class="pheno-bar" style="height:46%; background:#4A6D5C; opacity:0.6;"></div>
+                    <div class="pheno-bar" style="height:36%; background:#4A6D5C; opacity:0.55;"></div>
+                    <div class="pheno-bar" style="height:30%; background:#4A6D5C; opacity:0.55;"></div>
+                    <div class="pheno-bar" style="height:28%; background:#4A6D5C; opacity:0.55;"></div>
+                    <div class="pheno-bar" style="height:31%; background:#4A6D5C; opacity:0.55;"></div>
+                </div>
+
+                <div class="card-cta">
+                    <span class="card-cta-text">Explore this county</span>
+                    <svg class="card-arrow" width="18" height="18" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+
+            </a>
+
+            <!-- Ghost card — coming soon -->
+            <div class="county-card-ghost">
+                <svg class="ghost-icon" width="26" height="26" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="1.5"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" stroke-dasharray="3 3"/>
+                    <path d="M12 8v8M8 12h8"/>
+                </svg>
+                <span class="ghost-text">More counties coming</span>
+            </div>
+
+            <!-- Ghost card — placeholder -->
+            <div class="county-card-ghost">
+                <svg class="ghost-icon" width="26" height="26" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="1.5"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" stroke-dasharray="3 3"/>
+                    <path d="M12 8v8M8 12h8"/>
+                </svg>
+                <span class="ghost-text">More counties coming</span>
+            </div>
+
+        </div>
+
+        <p class="more-note">Expanding to more Michigan counties throughout 2026</p>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <p>Data powered by <a href="https://ebird.org" target="_blank" rel="noopener">eBird</a> / Cornell Lab of Ornithology</p>
+    </div>
+</footer>
+
 </body>
 </html>
