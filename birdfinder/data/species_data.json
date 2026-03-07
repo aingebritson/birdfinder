@@ -1323,17 +1323,16 @@
   {
     "name": "American White Pelican",
     "code": "amepel",
-    "category": "two-passage-migrant",
+    "category": "vagrant",
     "flags": [
-      "classic_bimodal"
+      "classic_bimodal",
+      "manual_override"
     ],
     "timing": {
-      "spring_arrival": "February 15-21",
-      "spring_peak": "February 15-21",
-      "spring_departure": "February 15-21",
-      "fall_arrival": "June 15-21",
-      "fall_peak": "June 15-21",
-      "fall_departure": "June 22-30"
+      "status": "irregular",
+      "first_appears": "February 15-21",
+      "peak": "February 15-21",
+      "last_appears": "August 8-14"
     },
     "weekly_frequency": [
       0.0,
@@ -8882,14 +8881,18 @@
   {
     "name": "Green-winged Teal",
     "code": "gretea",
-    "category": "single-season",
+    "category": "two-passage-migrant",
     "flags": [
-      "overwintering"
+      "overwintering",
+      "manual_override"
     ],
     "timing": {
-      "winter_arrival": "July 22-31",
-      "winter_peak": "March 22-31",
-      "winter_departure": "May 1-7"
+      "spring_arrival": "January 1-7",
+      "spring_peak": "March 22-31",
+      "spring_departure": "May 1-7",
+      "fall_arrival": "July 22-31",
+      "fall_peak": "October 1-7",
+      "fall_departure": "November 22-30"
     },
     "weekly_frequency": [
       0.0081065,
