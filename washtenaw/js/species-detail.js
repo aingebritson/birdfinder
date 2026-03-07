@@ -14,9 +14,34 @@ function getSpeciesCodeFromURL() {
 }
 
 /**
+ * Update back link based on `from` query param
+ */
+function updateBackLink() {
+    const params = new URLSearchParams(window.location.search);
+    const from = params.get('from');
+    const link = document.getElementById('back-link');
+    if (!link) return;
+
+    const label = document.getElementById('back-label');
+    if (from === 'browse') {
+        link.href = 'browse.html';
+        if (label) label.textContent = 'Back to Browse';
+    } else if (from === 'hotspot') {
+        const locId = params.get('locId');
+        link.href = locId ? `hotspot-detail.html?locId=${encodeURIComponent(locId)}` : 'hotspots.html';
+        if (label) label.textContent = 'Back to Hotspot';
+    } else {
+        // Default: this-week or direct navigation
+        link.href = 'index.html';
+        if (label) label.textContent = 'Back to This Week';
+    }
+}
+
+/**
  * Initialize the page
  */
 async function init() {
+    updateBackLink();
     const loadingEl = document.getElementById('loading');
     const errorEl = document.getElementById('error');
     const contentEl = document.getElementById('species-content');

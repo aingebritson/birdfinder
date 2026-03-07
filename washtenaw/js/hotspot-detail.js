@@ -396,7 +396,7 @@ function renderSpecialties(locId) {
         const detectionCount = species.detection_count || 0;
 
         return `
-            <a href="species.html?code=${safeCode}" class="species-item species-item-specialty">
+            <a href="species.html?code=${safeCode}&from=hotspot&locId=${escapeHtml(currentHotspot.locId)}" class="species-item species-item-specialty">
                 <div class="species-item-name">${safeName}</div>
                 <div class="species-item-stats">
                     <span class="specialty-lift">${liftDisplay}× county average</span>
@@ -435,7 +435,7 @@ function renderCommonSpecies(locId) {
         const detectionCount = species.detection_count || 0;
 
         return `
-            <a href="species.html?code=${safeCode}" class="species-item">
+            <a href="species.html?code=${safeCode}&from=hotspot&locId=${escapeHtml(currentHotspot.locId)}" class="species-item">
                 <div class="species-item-name">${safeName}</div>
                 <div class="species-item-stats">
                     <span class="species-item-occurrence">${occurrenceDisplay}% of checklists</span>

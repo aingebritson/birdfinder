@@ -164,7 +164,7 @@ function createSpeciesCard(species, frequency) {
     const barWidth = Math.min(frequency * 100, 100);
 
     return `
-        <a href="species.html?code=${species.code}" class="species-card" style="--card-accent: ${borderColor};">
+        <a href="species.html?code=${species.code}&from=this-week" class="species-card" style="--card-accent: ${borderColor};">
             <div class="flex items-start justify-between mb-3">
                 <div class="flex-1">
                     <h4>${species.name}</h4>
