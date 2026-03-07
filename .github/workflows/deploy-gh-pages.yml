@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'birdfinder/**'
+      - 'washtenaw/**'
+      - 'index.html'
 
 permissions:
   contents: write
@@ -34,10 +35,11 @@ jobs:
           # Remove all files except .git
           find . -maxdepth 1 ! -name '.git' ! -name '.' ! -name '..' -exec rm -rf {} +
 
-          # Copy birdfinder contents to root
-          git checkout main -- birdfinder/
-          mv birdfinder/* .
-          rm -rf birdfinder/
+          # Copy landing page to root
+          git checkout main -- index.html
+
+          # Copy washtenaw app into washtenaw/ subdirectory
+          git checkout main -- washtenaw/
 
           # Stage all changes
           git add -A

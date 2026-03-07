@@ -1,8 +1,10 @@
-# BirdFinder
+# Flightcall
 
-A bird phenology web application that displays migration timing, detection probabilities, and birding hotspots for species in your region. Built with eBird data.
+*Know what to find, and where to look.*
 
-**Live Example:** Washtenaw County, Michigan (340 species)
+A bird phenology web application that displays migration timing, detection probabilities, and birding hotspots for species in your region. Built with eBird data. The root landing page serves as a county directory; each county's app lives in its own subdirectory.
+
+**Live Example:** Washtenaw County, Michigan (340 species, 315 hotspots)
 
 ## Features
 
@@ -20,14 +22,14 @@ A bird phenology web application that displays migration timing, detection proba
 
 1. Copy your processed species data to the web app:
 ```bash
-cp regions/[region_name]/[region_name]_species_data.json birdfinder/data/species_data.json
+cp regions/[region_name]/[region_name]_species_data.json washtenaw/data/species_data.json
 ```
 
-2. Serve with a local server:
+2. Serve with a local server from the repo root (serves both landing page and county app):
 ```bash
-cd birdfinder
 python3 -m http.server 8000
-# Visit http://localhost:8000
+# Landing page:  http://localhost:8000
+# County app:    http://localhost:8000/washtenaw/
 ```
 
 ### Process Data for Your Region
@@ -46,14 +48,15 @@ python3 scripts/run_pipeline.py [region_name]
 
 4. Copy the output to the web app:
 ```bash
-cp regions/[region_name]/[region_name]_species_data.json birdfinder/data/species_data.json
+cp regions/[region_name]/[region_name]_species_data.json washtenaw/data/species_data.json
 ```
 
 ## Project Structure
 
 ```
 .
-├── birdfinder/                  # Web application (auto-deployed to gh-pages)
+├── index.html                   # Landing page — county directory (Flightcall home)
+├── washtenaw/                   # Washtenaw County app (deployed to /washtenaw/ on gh-pages)
 │   ├── index.html              # This Week view (main page)
 │   ├── browse.html             # Browse All Species view
 │   ├── species.html            # Species Detail view
@@ -122,28 +125,28 @@ cp regions/[region_name]/[region_name]_species_data.json birdfinder/data/species
 
 ### Pages
 
-**This Week** ([birdfinder/index.html](birdfinder/index.html))
+**This Week** ([washtenaw/index.html](washtenaw/index.html))
 - Shows species arriving, at peak, or departing in the current week
 - Navigate to previous/next weeks or jump back to current week
 - Click any species to view detailed information
 
-**Browse All Species** ([birdfinder/browse.html](birdfinder/browse.html))
+**Browse All Species** ([washtenaw/browse.html](washtenaw/browse.html))
 - Search species by name
 - Filter by migration category (resident, single-season, two-passage migrant, vagrant)
 - View all species with their frequency bars
 
-**Species Detail** ([birdfinder/species.html](birdfinder/species.html))
+**Species Detail** ([washtenaw/species.html](washtenaw/species.html))
 - Annual frequency chart showing detection probability throughout the year
 - Migration timing information (arrival, peak, departure dates)
 - Top hotspots for finding this species
 - Category badge and species code
 
-**Hotspots Directory** ([birdfinder/hotspots.html](birdfinder/hotspots.html))
+**Hotspots Directory** ([washtenaw/hotspots.html](washtenaw/hotspots.html))
 - Search and sort hotspots by name or species count
 - View total species recorded at each location
 - Link to eBird location pages
 
-**Hotspot Detail** ([birdfinder/hotspot-detail.html](birdfinder/hotspot-detail.html))
+**Hotspot Detail** ([washtenaw/hotspot-detail.html](washtenaw/hotspot-detail.html))
 - Practical info: parking, hours, fees, facilities
 - Habitat descriptions and birding tips
 - Common species list (top 15 most frequently detected)
@@ -151,7 +154,7 @@ cp regions/[region_name]/[region_name]_species_data.json birdfinder/data/species
 
 ### Design System
 
-The app uses a "Field Journal" aesthetic - warm, naturalist-inspired design with a cozy, professional feel. Defined in [birdfinder/css/styles.css](birdfinder/css/styles.css).
+The app uses a "Field Journal" aesthetic - warm, naturalist-inspired design with a cozy, professional feel. Defined in [washtenaw/css/styles.css](washtenaw/css/styles.css).
 
 **Typography:**
 - **Headings**: Bitter (warm slab-serif)
@@ -166,16 +169,16 @@ The app uses a "Field Journal" aesthetic - warm, naturalist-inspired design with
 - **Category badges**: Resident (forest), Single-season (ochre), Two-passage (moss), Vagrant (terracotta)
 - **Status indicators**: Arriving (green), At peak (ochre), Departing (rust)
 
-### Customization
+### Adding a New County
 
-Update the region name in HTML files:
-- `birdfinder/index.html`
-- `birdfinder/browse.html`
-- `birdfinder/species.html`
-- `birdfinder/hotspots.html`
-- `birdfinder/hotspot-detail.html`
+To add a new county, create a new county directory (e.g., `genesee/`) modeled after `washtenaw/`. Then:
+1. Run the data pipeline for the new region: `python3 scripts/run_pipeline.py genesee`
+2. Copy the output data files into `genesee/data/`
+3. Update all HTML files in `genesee/` to reference the correct county name
+4. Add the county card to the root `index.html` landing page
+5. Update `.github/workflows/deploy-gh-pages.yml` to include `genesee/**` in the deploy step
 
-Change the `<p>Washtenaw County, Michigan</p>` text in the header of each file.
+To rename the county in an existing app directory, change the `<p>Washtenaw County, Michigan</p>` text in the header and footer of each HTML file.
 
 ## Data Processing Pipeline
 
@@ -296,8 +299,10 @@ Additional notes about the hotspot can go here as free-form Markdown.
 
 The repository is configured for automatic deployment:
 
-1. Push changes to `main` branch
-2. GitHub Actions deploys `birdfinder/` to `gh-pages` branch
+1. Push changes to `main` branch (touching `index.html` or `washtenaw/**`)
+2. GitHub Actions deploys to `gh-pages` branch:
+   - `index.html` → site root (`/`)
+   - `washtenaw/` → `/washtenaw/` subdirectory
 3. Site updates at `https://[username].github.io/[repo-name]/`
 
 **Setup** (one-time):
@@ -307,12 +312,13 @@ The repository is configured for automatic deployment:
 ### Other Hosting
 
 **Netlify / Vercel / Cloudflare Pages:**
-- Publish directory: `birdfinder`
+- Publish directory: repo root
 - No build command needed
+- Both `index.html` and `washtenaw/` will be served correctly
 
 **Traditional hosting:**
-- Upload `birdfinder/` contents to web root
-- Ensure all `data/*.json` files are included
+- Upload `index.html` and the `washtenaw/` directory to web root
+- Ensure all `washtenaw/data/*.json` files are included
 
 ## License
 
