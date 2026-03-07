@@ -386,16 +386,6 @@ def main():
     sample_sizes = data['sample_sizes']
     species_data = data['species_data']
 
-    # Load manual classification overrides from region config
-    overrides = {}
-    config_file = region_path / "config.json"
-    if config_file.exists():
-        with open(config_file, 'r') as f:
-            region_config = json.load(f)
-        overrides = region_config.get('classification_overrides', {})
-        if overrides:
-            print(f"Loaded {len(overrides)} classification override(s): {', '.join(overrides.keys())}")
-
     print(f"Processing {len(species_data)} species...")
 
     # Load old classifications if they exist
@@ -414,14 +404,6 @@ def main():
     for species in species_data:
         metrics = calculate_metrics(species)
         category, pattern_type, flags = classify_species(metrics)
-
-        # Apply manual overrides from region config
-        if metrics['species'] in overrides:
-            override = overrides[metrics['species']]
-            category = override['category']
-            pattern_type = override['pattern_type']
-            flags = [f for f in flags if not f.startswith('manual_override')]
-            flags.append('manual_override')
 
         # Track changes
         old_category = old_classifications.get(metrics['species'])

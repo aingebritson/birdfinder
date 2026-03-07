@@ -127,25 +127,6 @@ def calculate_timing_two_passage(species_name, frequencies, category, pattern_ty
     Returns:
         Dictionary with timing data for spring and fall passages
     """
-    # Handle overridden two-passage species with a single summer valley:
-    # treat the year boundary as the implicit winter gap.
-    if len(valleys) == 1 and identify_valley_type(valleys[0]) == 'summer':
-        summer_valley = valleys[0]
-        threshold = calculate_threshold(frequencies, ARRIVAL_THRESHOLD_PEAK_RATIO, ARRIVAL_THRESHOLD_ABSOLUTE)
-        spring_timing = find_passage_timing(frequencies, 0, summer_valley[0], threshold)
-        fall_timing = find_passage_timing(frequencies, (summer_valley[1] + 1) % WEEKS_PER_YEAR, WEEKS_PER_YEAR - 1, threshold)
-        return {
-            'species': species_name,
-            'category': category,
-            'pattern_type': pattern_type,
-            'spring_arrival': week_to_date_range(spring_timing['arrival']) if spring_timing['arrival'] is not None else '',
-            'spring_peak': week_to_date_range(spring_timing['peak']),
-            'spring_departure': week_to_date_range(spring_timing['departure']) if spring_timing['departure'] is not None else '',
-            'fall_arrival': week_to_date_range(fall_timing['arrival']) if fall_timing['arrival'] is not None else '',
-            'fall_peak': week_to_date_range(fall_timing['peak']),
-            'fall_departure': week_to_date_range(fall_timing['departure']) if fall_timing['departure'] is not None else ''
-        }
-
     if len(valleys) != 2:
         return calculate_timing_irregular(species_name, frequencies, category, pattern_type)
 
