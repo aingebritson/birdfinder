@@ -107,7 +107,7 @@ function renderSpeciesDetails() {
     badge.className = `badge ${getCategoryBadgeClass(currentSpecies.category)}`;
 
     // Update page title
-    document.title = `${currentSpecies.name} - BirdFinder`;
+    document.title = `${currentSpecies.name} - Flightcall`;
 }
 
 /**

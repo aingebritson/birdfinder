@@ -146,7 +146,7 @@ function renderHotspotDetails() {
     }
 
     // Update page title (safe - browser handles escaping)
-    document.title = `${currentHotspot.name} - BirdFinder`;
+    document.title = `${currentHotspot.name} - Flightcall`;
 }
 
 /**
