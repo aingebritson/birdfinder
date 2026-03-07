@@ -79,8 +79,8 @@ def parse_ebird_barchart(input_file):
                 except ValueError:
                     pass
 
-        # Filter out species with 'sp.' or '/' in the name
-        if 'sp.' in species_name or '/' in species_name:
+        # Filter out unidentified species (sp., /) and hybrids
+        if 'sp.' in species_name or '/' in species_name or '(hybrid)' in species_name:
             continue
 
         # Validate frequency data
