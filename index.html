@@ -503,12 +503,12 @@
 
                 <div class="card-stats">
                     <div class="stat-item">
-                        <span class="stat-value">340</span>
+                        <span class="stat-value" id="washtenaw-species-count">—</span>
                         <span class="stat-label">Species</span>
                     </div>
                     <div class="stat-sep"></div>
                     <div class="stat-item">
-                        <span class="stat-value">315</span>
+                        <span class="stat-value" id="washtenaw-hotspot-count">—</span>
                         <span class="stat-label">Hotspots</span>
                     </div>
                 </div>
@@ -559,9 +559,21 @@
             return                                { color: '#7A9E8E', opacity: 0.45 + norm * 0.35 }; // late fall → sage
         }
 
+        // Populate hotspot count
+        fetch('washtenaw/data/hotspot_index.json')
+            .then(function (r) { return r.json(); })
+            .then(function (index) {
+                var el = document.getElementById('washtenaw-hotspot-count');
+                if (el) el.textContent = index.total_hotspots || (Array.isArray(index.hotspots) ? index.hotspots.length : '—');
+            })
+            .catch(function () {});
+
         fetch('washtenaw/data/species_data.json')
             .then(function (r) { return r.json(); })
             .then(function (species) {
+                // Populate species count
+                var countEl = document.getElementById('washtenaw-species-count');
+                if (countEl) countEl.textContent = species.length;
                 // Infer week count from first species with valid data
                 var weekCount = 52;
                 for (var s = 0; s < species.length; s++) {
