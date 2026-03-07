@@ -70,7 +70,7 @@ def enrich_hotspot(hotspot, content_data):
     return enriched
 
 
-def build_enriched_hotspots(base_dir='regions/washtenaw/hotspots', output_dir='birdfinder/data'):
+def build_enriched_hotspots(base_dir='regions/washtenaw/hotspots', output_dir='washtenaw/data'):
     """Main function to build enriched hotspots JSON."""
     base_dir = Path(base_dir)
     output_dir = Path(output_dir)

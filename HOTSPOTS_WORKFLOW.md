@@ -16,7 +16,7 @@ regions/washtenaw/hotspots/
 │   ├── README.md                         # Content authoring guide
 │   └── L320822.md                        # Example: Nichols Arboretum
 
-birdfinder/data/
+washtenaw/data/
 └── washtenaw_hotspots_enriched.json     # Generated: merged data for web app
 
 scripts/
@@ -86,7 +86,7 @@ source venv/bin/activate
 python scripts/build_enriched_hotspots.py
 ```
 
-This merges your content with the base hotspot data and outputs to `birdfinder/data/washtenaw_hotspots_enriched.json`.
+This merges your content with the base hotspot data and outputs to `washtenaw/data/washtenaw_hotspots_enriched.json`.
 
 ### 4. View on Web
 

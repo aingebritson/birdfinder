@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://birdfinder.local/schemas/region-config.schema.json",
+  "$id": "https://flightcall.local/schemas/region-config.schema.json",
   "title": "Region Configuration",
-  "description": "Configuration for a BirdFinder region, including paths, thresholds, and display settings",
+  "description": "Configuration for a Flightcall region, including paths, thresholds, and display settings",
   "type": "object",
   "required": ["region_id", "display_name"],
   "properties": {
