@@ -8,13 +8,13 @@
     "county_occurrence_rate": 0.0024,
     "total_detections": 361,
     "total_checklists_with_species": 361,
-    "total_checklists_countywide": 147856,
+    "total_checklists_countywide": 148961,
     "hotspots_detected": 13
   },
   "summary": {
     "total_hotspots_detected": 13,
     "total_detections": 361,
-    "highest_occurrence_rate": 0.0451
+    "highest_occurrence_rate": 0.045
   },
   "hotspots": [
     {
@@ -26,10 +26,10 @@
         "longitude": -83.7561071
       },
       "occurrence": {
-        "rate": 0.0451,
-        "lift": 18.46,
+        "rate": 0.045,
+        "lift": 18.57,
         "detection_count": 125,
-        "total_checklists": 2774,
+        "total_checklists": 2777,
         "confidence": "high"
       },
       "abundance": {
@@ -40,7 +40,7 @@
         "spring": 0.075,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0107
+        "winter": 0.0106
       },
       "monthly": {
         "1": 0.0,
@@ -66,10 +66,10 @@
         "longitude": -83.9254618
       },
       "occurrence": {
-        "rate": 0.0427,
-        "lift": 17.49,
+        "rate": 0.0421,
+        "lift": 17.37,
         "detection_count": 46,
-        "total_checklists": 1077,
+        "total_checklists": 1093,
         "confidence": "high"
       },
       "abundance": {
@@ -80,7 +80,7 @@
         "spring": 0.0152,
         "summer": 0.0,
         "fall": 0.1136,
-        "winter": 0.0045
+        "winter": 0.0043
       },
       "monthly": {
         "1": 0.0,
@@ -106,10 +106,10 @@
         "longitude": -83.693397
       },
       "occurrence": {
-        "rate": 0.0228,
-        "lift": 9.32,
+        "rate": 0.0221,
+        "lift": 9.11,
         "detection_count": 122,
-        "total_checklists": 5360,
+        "total_checklists": 5526,
         "confidence": "high"
       },
       "abundance": {
@@ -120,10 +120,10 @@
         "spring": 0.0176,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0414
+        "winter": 0.0384
       },
       "monthly": {
-        "1": 0.036,
+        "1": 0.0303,
         "2": 0.0854,
         "3": 0.0417,
         "4": 0.0,
@@ -147,9 +147,9 @@
       },
       "occurrence": {
         "rate": 0.0218,
-        "lift": 8.94,
+        "lift": 8.99,
         "detection_count": 11,
-        "total_checklists": 504,
+        "total_checklists": 505,
         "confidence": "high"
       },
       "abundance": {
@@ -184,10 +184,10 @@
         "longitude": -83.5577067
       },
       "occurrence": {
-        "rate": 0.017,
-        "lift": 6.97,
+        "rate": 0.0147,
+        "lift": 6.08,
         "detection_count": 11,
-        "total_checklists": 646,
+        "total_checklists": 747,
         "confidence": "high"
       },
       "abundance": {
@@ -198,10 +198,10 @@
         "spring": 0.0,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0233
+        "winter": 0.0192
       },
       "monthly": {
-        "1": 0.0797,
+        "1": 0.046,
         "2": 0.0,
         "3": 0.0,
         "4": 0.0,
@@ -216,46 +216,6 @@
     },
     {
       "rank": 6,
-      "locality_id": "L1124805",
-      "name": "Ford Lake",
-      "coordinates": {
-        "latitude": 42.2186656,
-        "longitude": -83.5890484
-      },
-      "occurrence": {
-        "rate": 0.0115,
-        "lift": 4.72,
-        "detection_count": 7,
-        "total_checklists": 607,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
-      },
-      "seasonal": {
-        "spring": 0.0056,
-        "summer": 0.0,
-        "fall": 0.042,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0073,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 0.0,
-        "7": 0.0,
-        "8": 0.0,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0652,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 7,
       "locality_id": "L20311322",
       "name": "Loonfeather Point Park",
       "coordinates": {
@@ -264,9 +224,9 @@
       },
       "occurrence": {
         "rate": 0.0113,
-        "lift": 4.63,
+        "lift": 4.64,
         "detection_count": 7,
-        "total_checklists": 619,
+        "total_checklists": 622,
         "confidence": "high"
       },
       "abundance": {
@@ -295,6 +255,46 @@
       }
     },
     {
+      "rank": 7,
+      "locality_id": "L1124805",
+      "name": "Ford Lake",
+      "coordinates": {
+        "latitude": 42.2186656,
+        "longitude": -83.5890484
+      },
+      "occurrence": {
+        "rate": 0.011,
+        "lift": 4.54,
+        "detection_count": 7,
+        "total_checklists": 636,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0056,
+        "summer": 0.0,
+        "fall": 0.042,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0073,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0652,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 8,
       "locality_id": "L1147171",
       "name": "Barton Nature Area",
@@ -304,9 +304,9 @@
       },
       "occurrence": {
         "rate": 0.0079,
-        "lift": 3.24,
+        "lift": 3.25,
         "detection_count": 19,
-        "total_checklists": 2403,
+        "total_checklists": 2414,
         "confidence": "high"
       },
       "abundance": {
@@ -317,7 +317,7 @@
         "spring": 0.0009,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0307
+        "winter": 0.0302
       },
       "monthly": {
         "1": 0.0,
@@ -343,10 +343,10 @@
         "longitude": -83.5544943
       },
       "occurrence": {
-        "rate": 0.0066,
-        "lift": 2.72,
+        "rate": 0.0063,
+        "lift": 2.62,
         "detection_count": 5,
-        "total_checklists": 753,
+        "total_checklists": 788,
         "confidence": "high"
       },
       "abundance": {
@@ -357,10 +357,10 @@
         "spring": 0.0142,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0058
+        "winter": 0.0052
       },
       "monthly": {
-        "1": 0.0141,
+        "1": 0.0113,
         "2": 0.0,
         "3": 0.0341,
         "4": 0.0,
@@ -383,10 +383,10 @@
         "longitude": -83.6711213
       },
       "occurrence": {
-        "rate": 0.006,
-        "lift": 2.45,
+        "rate": 0.0059,
+        "lift": 2.43,
         "detection_count": 1,
-        "total_checklists": 167,
+        "total_checklists": 170,
         "confidence": "high"
       },
       "abundance": {
@@ -397,7 +397,7 @@
         "spring": 0.0,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0105
+        "winter": 0.0102
       },
       "monthly": {
         "1": 0.0,
@@ -423,7 +423,7 @@
       },
       "occurrence": {
         "rate": 0.005,
-        "lift": 2.03,
+        "lift": 2.04,
         "detection_count": 3,
         "total_checklists": 606,
         "confidence": "high"
@@ -465,7 +465,7 @@
         "rate": 0.0007,
         "lift": 0.28,
         "detection_count": 3,
-        "total_checklists": 4386,
+        "total_checklists": 4404,
         "confidence": "high"
       },
       "abundance": {
@@ -505,7 +505,7 @@
         "rate": 0.0001,
         "lift": 0.03,
         "detection_count": 1,
-        "total_checklists": 12539,
+        "total_checklists": 12588,
         "confidence": "high"
       },
       "abundance": {
@@ -535,7 +535,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-02T01:07:12.983990Z",
+    "generated_at": "2026-03-07T15:12:57.541187Z",
     "data_version": "Dec-2025"
   }
 }

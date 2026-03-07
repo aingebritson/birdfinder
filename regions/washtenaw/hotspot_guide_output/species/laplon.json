@@ -8,13 +8,13 @@
     "county_occurrence_rate": 0.0044,
     "total_detections": 648,
     "total_checklists_with_species": 648,
-    "total_checklists_countywide": 147856,
+    "total_checklists_countywide": 148961,
     "hotspots_detected": 34
   },
   "summary": {
     "total_hotspots_detected": 34,
     "total_detections": 648,
-    "highest_occurrence_rate": 0.0899
+    "highest_occurrence_rate": 0.0871
   },
   "hotspots": [
     {
@@ -26,10 +26,10 @@
         "longitude": -83.5701871
       },
       "occurrence": {
-        "rate": 0.0899,
-        "lift": 20.51,
+        "rate": 0.0871,
+        "lift": 20.02,
         "detection_count": 385,
-        "total_checklists": 4283,
+        "total_checklists": 4421,
         "confidence": "high"
       },
       "abundance": {
@@ -39,11 +39,11 @@
       "seasonal": {
         "spring": 0.0584,
         "summer": 0.0,
-        "fall": 0.0539,
-        "winter": 0.1322
+        "fall": 0.0538,
+        "winter": 0.1242
       },
       "monthly": {
-        "1": 0.1378,
+        "1": 0.1217,
         "2": 0.1497,
         "3": 0.0994,
         "4": 0.0326,
@@ -52,7 +52,7 @@
         "7": 0.0,
         "8": 0.0,
         "9": 0.0,
-        "10": 0.0141,
+        "10": 0.014,
         "11": 0.0881,
         "12": 0.0964
       }
@@ -66,10 +66,10 @@
         "longitude": -83.6031482
       },
       "occurrence": {
-        "rate": 0.068,
-        "lift": 15.52,
+        "rate": 0.0666,
+        "lift": 15.3,
         "detection_count": 141,
-        "total_checklists": 2073,
+        "total_checklists": 2118,
         "confidence": "high"
       },
       "abundance": {
@@ -80,10 +80,10 @@
         "spring": 0.0289,
         "summer": 0.0,
         "fall": 0.0475,
-        "winter": 0.1035
+        "winter": 0.0992
       },
       "monthly": {
-        "1": 0.1096,
+        "1": 0.1009,
         "2": 0.1312,
         "3": 0.049,
         "4": 0.024,
@@ -107,7 +107,7 @@
       },
       "occurrence": {
         "rate": 0.0469,
-        "lift": 10.7,
+        "lift": 10.78,
         "detection_count": 3,
         "total_checklists": 64,
         "confidence": "medium"
@@ -132,46 +132,6 @@
     },
     {
       "rank": 4,
-      "locality_id": "L8146557",
-      "name": "Domino's Farms",
-      "coordinates": {
-        "latitude": 42.315379,
-        "longitude": -83.684363
-      },
-      "occurrence": {
-        "rate": 0.04,
-        "lift": 9.12,
-        "detection_count": 33,
-        "total_checklists": 826,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 11.4,
-        "max_count": 50
-      },
-      "seasonal": {
-        "spring": 0.0,
-        "summer": 0.0,
-        "fall": 0.0,
-        "winter": 0.1218
-      },
-      "monthly": {
-        "1": 0.0699,
-        "2": 0.3966,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 0.0,
-        "7": 0.0,
-        "8": 0.0,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 5,
       "locality_id": "L1173660",
       "name": "Schwab Rd Pond",
       "coordinates": {
@@ -180,7 +140,7 @@
       },
       "occurrence": {
         "rate": 0.04,
-        "lift": 9.13,
+        "lift": 9.2,
         "detection_count": 3,
         "total_checklists": 75,
         "confidence": "medium"
@@ -202,6 +162,46 @@
       }
     },
     {
+      "rank": 5,
+      "locality_id": "L8146557",
+      "name": "Domino's Farms",
+      "coordinates": {
+        "latitude": 42.315379,
+        "longitude": -83.684363
+      },
+      "occurrence": {
+        "rate": 0.0398,
+        "lift": 9.14,
+        "detection_count": 33,
+        "total_checklists": 830,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 11.4,
+        "max_count": 50
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.12
+      },
+      "monthly": {
+        "1": 0.068,
+        "2": 0.3966,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 6,
       "locality_id": "L2388678",
       "name": "Torrey Rd. hawk watch",
@@ -211,7 +211,7 @@
       },
       "occurrence": {
         "rate": 0.0341,
-        "lift": 7.78,
+        "lift": 7.84,
         "detection_count": 9,
         "total_checklists": 264,
         "confidence": "high"
@@ -246,7 +246,7 @@
       },
       "occurrence": {
         "rate": 0.0273,
-        "lift": 6.22,
+        "lift": 6.27,
         "detection_count": 3,
         "total_checklists": 110,
         "confidence": "high"
@@ -285,7 +285,7 @@
       },
       "occurrence": {
         "rate": 0.0189,
-        "lift": 4.31,
+        "lift": 4.34,
         "detection_count": 1,
         "total_checklists": 53,
         "confidence": "medium"
@@ -316,10 +316,10 @@
         "longitude": -83.7100804
       },
       "occurrence": {
-        "rate": 0.0127,
+        "rate": 0.0126,
         "lift": 2.89,
         "detection_count": 6,
-        "total_checklists": 473,
+        "total_checklists": 478,
         "confidence": "high"
       },
       "abundance": {
@@ -357,7 +357,7 @@
       },
       "occurrence": {
         "rate": 0.0122,
-        "lift": 2.79,
+        "lift": 2.81,
         "detection_count": 3,
         "total_checklists": 245,
         "confidence": "high"
@@ -390,10 +390,10 @@
         "longitude": -83.6379338
       },
       "occurrence": {
-        "rate": 0.0119,
-        "lift": 2.72,
+        "rate": 0.0104,
+        "lift": 2.39,
         "detection_count": 1,
-        "total_checklists": 84,
+        "total_checklists": 96,
         "confidence": "medium"
       },
       "abundance": {
@@ -406,6 +406,7 @@
         "winter": 0.0
       },
       "monthly": {
+        "1": 0.0,
         "5": 0.0,
         "7": 0.0,
         "8": 0.0,
@@ -424,9 +425,9 @@
       },
       "occurrence": {
         "rate": 0.0097,
-        "lift": 2.22,
+        "lift": 2.23,
         "detection_count": 5,
-        "total_checklists": 514,
+        "total_checklists": 516,
         "confidence": "high"
       },
       "abundance": {
@@ -462,7 +463,7 @@
       },
       "occurrence": {
         "rate": 0.0092,
-        "lift": 2.09,
+        "lift": 2.11,
         "detection_count": 2,
         "total_checklists": 218,
         "confidence": "high"
@@ -501,10 +502,10 @@
         "longitude": -83.7013345
       },
       "occurrence": {
-        "rate": 0.0065,
-        "lift": 1.48,
+        "rate": 0.0064,
+        "lift": 1.47,
         "detection_count": 2,
-        "total_checklists": 309,
+        "total_checklists": 312,
         "confidence": "high"
       },
       "abundance": {
@@ -515,7 +516,7 @@
         "spring": 0.0,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0465
+        "winter": 0.0435
       },
       "monthly": {
         "1": 0.0,
@@ -541,10 +542,10 @@
         "longitude": -84.1293639
       },
       "occurrence": {
-        "rate": 0.0051,
-        "lift": 1.15,
+        "rate": 0.005,
+        "lift": 1.16,
         "detection_count": 3,
-        "total_checklists": 594,
+        "total_checklists": 595,
         "confidence": "high"
       },
       "abundance": {
@@ -581,10 +582,10 @@
         "longitude": -83.746615
       },
       "occurrence": {
-        "rate": 0.0051,
-        "lift": 1.17,
+        "rate": 0.005,
+        "lift": 1.15,
         "detection_count": 1,
-        "total_checklists": 195,
+        "total_checklists": 200,
         "confidence": "high"
       },
       "abundance": {
@@ -595,7 +596,7 @@
         "spring": 0.0,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0116
+        "winter": 0.011
       },
       "monthly": {
         "1": 0.0,
@@ -606,7 +607,7 @@
         "8": 0.0,
         "10": 0.0,
         "11": 0.0,
-        "12": 0.0135
+        "12": 0.0132
       }
     },
     {
@@ -658,10 +659,10 @@
         "longitude": -83.6072981
       },
       "occurrence": {
-        "rate": 0.0027,
+        "rate": 0.0026,
         "lift": 0.61,
         "detection_count": 1,
-        "total_checklists": 376,
+        "total_checklists": 379,
         "confidence": "high"
       },
       "abundance": {
@@ -701,7 +702,7 @@
         "rate": 0.0024,
         "lift": 0.55,
         "detection_count": 8,
-        "total_checklists": 3323,
+        "total_checklists": 3324,
         "confidence": "high"
       },
       "abundance": {
@@ -712,10 +713,10 @@
         "spring": 0.0024,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0272
+        "winter": 0.027
       },
       "monthly": {
-        "1": 0.0196,
+        "1": 0.0192,
         "2": 0.0111,
         "3": 0.009,
         "4": 0.0,
@@ -741,7 +742,7 @@
         "rate": 0.0021,
         "lift": 0.47,
         "detection_count": 5,
-        "total_checklists": 2419,
+        "total_checklists": 2420,
         "confidence": "high"
       },
       "abundance": {
@@ -771,46 +772,6 @@
     },
     {
       "rank": 21,
-      "locality_id": "L477087",
-      "name": "Portage Lake (Washtenaw Co.)",
-      "coordinates": {
-        "latitude": 42.4185144,
-        "longitude": -83.9254618
-      },
-      "occurrence": {
-        "rate": 0.0019,
-        "lift": 0.42,
-        "detection_count": 2,
-        "total_checklists": 1077,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
-      },
-      "seasonal": {
-        "spring": 0.0,
-        "summer": 0.0,
-        "fall": 0.0,
-        "winter": 0.0045
-      },
-      "monthly": {
-        "1": 0.0085,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 0.0,
-        "7": 0.0,
-        "8": 0.0,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 22,
       "locality_id": "L1916119",
       "name": "Waterloo RA--Crooked Lake",
       "coordinates": {
@@ -821,7 +782,7 @@
         "rate": 0.0019,
         "lift": 0.44,
         "detection_count": 2,
-        "total_checklists": 1048,
+        "total_checklists": 1049,
         "confidence": "high"
       },
       "abundance": {
@@ -850,34 +811,34 @@
       }
     },
     {
-      "rank": 23,
-      "locality_id": "L1475046",
-      "name": "Vreeland Rd. pond",
+      "rank": 22,
+      "locality_id": "L477087",
+      "name": "Portage Lake (Washtenaw Co.)",
       "coordinates": {
-        "latitude": 42.2891886,
-        "longitude": -83.6156524
+        "latitude": 42.4185144,
+        "longitude": -83.9254618
       },
       "occurrence": {
-        "rate": 0.0017,
-        "lift": 0.38,
-        "detection_count": 1,
-        "total_checklists": 602,
+        "rate": 0.0018,
+        "lift": 0.42,
+        "detection_count": 2,
+        "total_checklists": 1093,
         "confidence": "high"
       },
       "abundance": {
-        "average_count": 8.0,
-        "max_count": 8
+        "average_count": 1.0,
+        "max_count": 1
       },
       "seasonal": {
-        "spring": 0.0027,
+        "spring": 0.0,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0
+        "winter": 0.0043
       },
       "monthly": {
-        "1": 0.0,
+        "1": 0.0079,
         "2": 0.0,
-        "3": 0.0233,
+        "3": 0.0,
         "4": 0.0,
         "5": 0.0,
         "6": 0.0,
@@ -890,7 +851,7 @@
       }
     },
     {
-      "rank": 24,
+      "rank": 23,
       "locality_id": "L1275192",
       "name": "Whitmore Lake (Washtenaw Co.)",
       "coordinates": {
@@ -930,7 +891,7 @@
       }
     },
     {
-      "rank": 25,
+      "rank": 24,
       "locality_id": "L2372685",
       "name": "Hewen's Creek Park",
       "coordinates": {
@@ -941,7 +902,7 @@
         "rate": 0.0016,
         "lift": 0.37,
         "detection_count": 1,
-        "total_checklists": 625,
+        "total_checklists": 628,
         "confidence": "high"
       },
       "abundance": {
@@ -970,6 +931,46 @@
       }
     },
     {
+      "rank": 25,
+      "locality_id": "L1475046",
+      "name": "Vreeland Rd. pond",
+      "coordinates": {
+        "latitude": 42.2891886,
+        "longitude": -83.6156524
+      },
+      "occurrence": {
+        "rate": 0.0016,
+        "lift": 0.38,
+        "detection_count": 1,
+        "total_checklists": 609,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 8.0,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.0026,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0233,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 26,
       "locality_id": "L612840",
       "name": "County Farm Park",
@@ -981,7 +982,7 @@
         "rate": 0.0015,
         "lift": 0.35,
         "detection_count": 2,
-        "total_checklists": 1291,
+        "total_checklists": 1298,
         "confidence": "high"
       },
       "abundance": {
@@ -1019,7 +1020,7 @@
       },
       "occurrence": {
         "rate": 0.0013,
-        "lift": 0.29,
+        "lift": 0.3,
         "detection_count": 1,
         "total_checklists": 779,
         "confidence": "high"
@@ -1058,10 +1059,10 @@
         "longitude": -83.6015797
       },
       "occurrence": {
-        "rate": 0.0012,
+        "rate": 0.0011,
         "lift": 0.26,
         "detection_count": 2,
-        "total_checklists": 1733,
+        "total_checklists": 1740,
         "confidence": "high"
       },
       "abundance": {
@@ -1072,10 +1073,10 @@
         "spring": 0.0014,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0044
+        "winter": 0.0043
       },
       "monthly": {
-        "1": 0.0114,
+        "1": 0.0105,
         "2": 0.0,
         "3": 0.0,
         "4": 0.0054,
@@ -1101,7 +1102,7 @@
         "rate": 0.001,
         "lift": 0.23,
         "detection_count": 2,
-        "total_checklists": 1962,
+        "total_checklists": 1968,
         "confidence": "high"
       },
       "abundance": {
@@ -1141,7 +1142,7 @@
         "rate": 0.0009,
         "lift": 0.21,
         "detection_count": 4,
-        "total_checklists": 4386,
+        "total_checklists": 4404,
         "confidence": "high"
       },
       "abundance": {
@@ -1181,7 +1182,7 @@
         "rate": 0.0007,
         "lift": 0.17,
         "detection_count": 3,
-        "total_checklists": 4143,
+        "total_checklists": 4177,
         "confidence": "high"
       },
       "abundance": {
@@ -1221,7 +1222,7 @@
         "rate": 0.0006,
         "lift": 0.14,
         "detection_count": 1,
-        "total_checklists": 1614,
+        "total_checklists": 1626,
         "confidence": "high"
       },
       "abundance": {
@@ -1261,7 +1262,7 @@
         "rate": 0.0005,
         "lift": 0.11,
         "detection_count": 1,
-        "total_checklists": 2040,
+        "total_checklists": 2048,
         "confidence": "high"
       },
       "abundance": {
@@ -1272,7 +1273,7 @@
         "spring": 0.0,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0037
+        "winter": 0.0036
       },
       "monthly": {
         "1": 0.0,
@@ -1301,7 +1302,7 @@
         "rate": 0.0002,
         "lift": 0.05,
         "detection_count": 1,
-        "total_checklists": 4859,
+        "total_checklists": 4888,
         "confidence": "high"
       },
       "abundance": {
@@ -1331,7 +1332,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-02T01:07:12.976710Z",
+    "generated_at": "2026-03-07T15:12:57.533099Z",
     "data_version": "Dec-2025"
   }
 }

@@ -8,13 +8,13 @@
     "county_occurrence_rate": 0.0036,
     "total_detections": 537,
     "total_checklists_with_species": 537,
-    "total_checklists_countywide": 147856,
+    "total_checklists_countywide": 148961,
     "hotspots_detected": 39
   },
   "summary": {
     "total_hotspots_detected": 39,
     "total_detections": 537,
-    "highest_occurrence_rate": 0.0574
+    "highest_occurrence_rate": 0.0571
   },
   "hotspots": [
     {
@@ -26,10 +26,10 @@
         "longitude": -83.7754498
       },
       "occurrence": {
-        "rate": 0.0574,
-        "lift": 15.81,
+        "rate": 0.0571,
+        "lift": 15.85,
         "detection_count": 12,
-        "total_checklists": 209,
+        "total_checklists": 210,
         "confidence": "high"
       },
       "abundance": {
@@ -39,7 +39,8 @@
       "seasonal": {
         "spring": 0.0723,
         "summer": 0.0,
-        "fall": 0.0
+        "fall": 0.0,
+        "winter": 0.0
       },
       "monthly": {
         "2": 0.0,
@@ -62,7 +63,7 @@
       },
       "occurrence": {
         "rate": 0.0492,
-        "lift": 13.54,
+        "lift": 13.64,
         "detection_count": 6,
         "total_checklists": 122,
         "confidence": "high"
@@ -94,7 +95,7 @@
       },
       "occurrence": {
         "rate": 0.0417,
-        "lift": 11.47,
+        "lift": 11.56,
         "detection_count": 5,
         "total_checklists": 120,
         "confidence": "high"
@@ -133,7 +134,7 @@
       },
       "occurrence": {
         "rate": 0.0301,
-        "lift": 8.28,
+        "lift": 8.34,
         "detection_count": 4,
         "total_checklists": 133,
         "confidence": "high"
@@ -170,10 +171,10 @@
         "longitude": -83.91289
       },
       "occurrence": {
-        "rate": 0.0255,
-        "lift": 7.02,
+        "rate": 0.0254,
+        "lift": 7.04,
         "detection_count": 52,
-        "total_checklists": 2040,
+        "total_checklists": 2048,
         "confidence": "high"
       },
       "abundance": {
@@ -210,10 +211,10 @@
         "longitude": -83.7221074
       },
       "occurrence": {
-        "rate": 0.0232,
-        "lift": 6.39,
+        "rate": 0.0231,
+        "lift": 6.41,
         "detection_count": 291,
-        "total_checklists": 12539,
+        "total_checklists": 12588,
         "confidence": "high"
       },
       "abundance": {
@@ -250,10 +251,10 @@
         "longitude": -83.639136
       },
       "occurrence": {
-        "rate": 0.0191,
-        "lift": 5.25,
+        "rate": 0.019,
+        "lift": 5.28,
         "detection_count": 27,
-        "total_checklists": 1417,
+        "total_checklists": 1418,
         "confidence": "high"
       },
       "abundance": {
@@ -290,10 +291,10 @@
         "longitude": -84.093131
       },
       "occurrence": {
-        "rate": 0.0177,
+        "rate": 0.0175,
         "lift": 4.87,
         "detection_count": 2,
-        "total_checklists": 113,
+        "total_checklists": 114,
         "confidence": "high"
       },
       "abundance": {
@@ -326,9 +327,9 @@
       },
       "occurrence": {
         "rate": 0.0162,
-        "lift": 4.46,
+        "lift": 4.49,
         "detection_count": 60,
-        "total_checklists": 3703,
+        "total_checklists": 3704,
         "confidence": "high"
       },
       "abundance": {
@@ -366,7 +367,7 @@
       },
       "occurrence": {
         "rate": 0.0132,
-        "lift": 3.64,
+        "lift": 3.67,
         "detection_count": 3,
         "total_checklists": 227,
         "confidence": "high"
@@ -404,10 +405,10 @@
         "longitude": -84.0802038
       },
       "occurrence": {
-        "rate": 0.0132,
-        "lift": 3.62,
+        "rate": 0.0128,
+        "lift": 3.56,
         "detection_count": 1,
-        "total_checklists": 76,
+        "total_checklists": 78,
         "confidence": "medium"
       },
       "abundance": {
@@ -417,9 +418,11 @@
       "seasonal": {
         "spring": 0.0,
         "summer": 0.0,
-        "fall": 0.1667
+        "fall": 0.1667,
+        "winter": 0.0
       },
       "monthly": {
+        "1": 0.0,
         "3": 0.0,
         "5": 0.0,
         "6": 0.0,
@@ -429,35 +432,6 @@
     },
     {
       "rank": 12,
-      "locality_id": "L1044782",
-      "name": "Morgan Woods Nature Preserve",
-      "coordinates": {
-        "latitude": 42.2175373,
-        "longitude": -83.7245536
-      },
-      "occurrence": {
-        "rate": 0.0127,
-        "lift": 3.49,
-        "detection_count": 1,
-        "total_checklists": 79,
-        "confidence": "medium"
-      },
-      "abundance": {
-        "average_count": null,
-        "max_count": null
-      },
-      "seasonal": {
-        "spring": 0.0,
-        "winter": 0.0
-      },
-      "monthly": {
-        "3": 0.0,
-        "5": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 13,
       "locality_id": "L7909307",
       "name": "Leslee Niethammer Saline River Preserve",
       "coordinates": {
@@ -466,7 +440,7 @@
       },
       "occurrence": {
         "rate": 0.0125,
-        "lift": 3.44,
+        "lift": 3.47,
         "detection_count": 3,
         "total_checklists": 240,
         "confidence": "high"
@@ -496,6 +470,35 @@
       }
     },
     {
+      "rank": 13,
+      "locality_id": "L1044782",
+      "name": "Morgan Woods Nature Preserve",
+      "coordinates": {
+        "latitude": 42.2175373,
+        "longitude": -83.7245536
+      },
+      "occurrence": {
+        "rate": 0.0125,
+        "lift": 3.47,
+        "detection_count": 1,
+        "total_checklists": 80,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": null,
+        "max_count": null
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "5": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 14,
       "locality_id": "L258923",
       "name": "Waterloo RA (Washtenaw Co.)",
@@ -505,7 +508,7 @@
       },
       "occurrence": {
         "rate": 0.0102,
-        "lift": 2.81,
+        "lift": 2.83,
         "detection_count": 2,
         "total_checklists": 196,
         "confidence": "high"
@@ -544,7 +547,7 @@
       },
       "occurrence": {
         "rate": 0.0092,
-        "lift": 2.54,
+        "lift": 2.56,
         "detection_count": 2,
         "total_checklists": 217,
         "confidence": "high"
@@ -581,10 +584,10 @@
         "longitude": -84.0760275
       },
       "occurrence": {
-        "rate": 0.009,
+        "rate": 0.0089,
         "lift": 2.48,
         "detection_count": 1,
-        "total_checklists": 111,
+        "total_checklists": 112,
         "confidence": "high"
       },
       "abundance": {
@@ -620,10 +623,10 @@
         "longitude": -83.7100804
       },
       "occurrence": {
-        "rate": 0.0085,
-        "lift": 2.33,
+        "rate": 0.0084,
+        "lift": 2.32,
         "detection_count": 4,
-        "total_checklists": 473,
+        "total_checklists": 478,
         "confidence": "high"
       },
       "abundance": {
@@ -661,9 +664,9 @@
       },
       "occurrence": {
         "rate": 0.0081,
-        "lift": 2.23,
+        "lift": 2.24,
         "detection_count": 4,
-        "total_checklists": 493,
+        "total_checklists": 495,
         "confidence": "high"
       },
       "abundance": {
@@ -701,7 +704,7 @@
       },
       "occurrence": {
         "rate": 0.0076,
-        "lift": 2.1,
+        "lift": 2.12,
         "detection_count": 3,
         "total_checklists": 393,
         "confidence": "high"
@@ -740,10 +743,10 @@
         "longitude": -83.7344912
       },
       "occurrence": {
-        "rate": 0.0074,
-        "lift": 2.03,
+        "rate": 0.0073,
+        "lift": 2.02,
         "detection_count": 3,
-        "total_checklists": 406,
+        "total_checklists": 411,
         "confidence": "high"
       },
       "abundance": {
@@ -781,7 +784,7 @@
       },
       "occurrence": {
         "rate": 0.007,
-        "lift": 1.94,
+        "lift": 1.96,
         "detection_count": 9,
         "total_checklists": 1277,
         "confidence": "high"
@@ -823,7 +826,7 @@
         "rate": 0.0067,
         "lift": 1.86,
         "detection_count": 3,
-        "total_checklists": 445,
+        "total_checklists": 448,
         "confidence": "high"
       },
       "abundance": {
@@ -861,7 +864,7 @@
       },
       "occurrence": {
         "rate": 0.0049,
-        "lift": 1.34,
+        "lift": 1.35,
         "detection_count": 1,
         "total_checklists": 206,
         "confidence": "high"
@@ -902,7 +905,7 @@
         "rate": 0.0042,
         "lift": 1.16,
         "detection_count": 3,
-        "total_checklists": 715,
+        "total_checklists": 717,
         "confidence": "high"
       },
       "abundance": {
@@ -941,7 +944,7 @@
         "rate": 0.0037,
         "lift": 1.02,
         "detection_count": 3,
-        "total_checklists": 812,
+        "total_checklists": 813,
         "confidence": "high"
       },
       "abundance": {
@@ -979,9 +982,9 @@
       },
       "occurrence": {
         "rate": 0.0028,
-        "lift": 0.76,
+        "lift": 0.77,
         "detection_count": 2,
-        "total_checklists": 723,
+        "total_checklists": 724,
         "confidence": "high"
       },
       "abundance": {
@@ -1021,7 +1024,7 @@
         "rate": 0.0024,
         "lift": 0.65,
         "detection_count": 1,
-        "total_checklists": 422,
+        "total_checklists": 424,
         "confidence": "high"
       },
       "abundance": {
@@ -1061,7 +1064,7 @@
         "rate": 0.0021,
         "lift": 0.57,
         "detection_count": 4,
-        "total_checklists": 1936,
+        "total_checklists": 1945,
         "confidence": "high"
       },
       "abundance": {
@@ -1091,46 +1094,6 @@
     },
     {
       "rank": 29,
-      "locality_id": "L492256",
-      "name": "Matthaei Botanical Gardens",
-      "coordinates": {
-        "latitude": 42.3007381,
-        "longitude": -83.6628628
-      },
-      "occurrence": {
-        "rate": 0.0019,
-        "lift": 0.51,
-        "detection_count": 9,
-        "total_checklists": 4859,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.1,
-        "max_count": 3
-      },
-      "seasonal": {
-        "spring": 0.0024,
-        "summer": 0.0,
-        "fall": 0.0026,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0054,
-        "6": 0.0,
-        "7": 0.0,
-        "8": 0.0021,
-        "9": 0.0052,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 30,
       "locality_id": "L2082265",
       "name": "Olson Park",
       "coordinates": {
@@ -1139,7 +1102,7 @@
       },
       "occurrence": {
         "rate": 0.0019,
-        "lift": 0.53,
+        "lift": 0.54,
         "detection_count": 1,
         "total_checklists": 518,
         "confidence": "high"
@@ -1170,6 +1133,46 @@
       }
     },
     {
+      "rank": 30,
+      "locality_id": "L492256",
+      "name": "Matthaei Botanical Gardens",
+      "coordinates": {
+        "latitude": 42.3007381,
+        "longitude": -83.6628628
+      },
+      "occurrence": {
+        "rate": 0.0018,
+        "lift": 0.51,
+        "detection_count": 9,
+        "total_checklists": 4888,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.1,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0024,
+        "summer": 0.0,
+        "fall": 0.0026,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0054,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0021,
+        "9": 0.0052,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 31,
       "locality_id": "L4765377",
       "name": "Watkins Lake County Preserve",
@@ -1179,9 +1182,9 @@
       },
       "occurrence": {
         "rate": 0.0017,
-        "lift": 0.46,
+        "lift": 0.47,
         "detection_count": 1,
-        "total_checklists": 594,
+        "total_checklists": 595,
         "confidence": "high"
       },
       "abundance": {
@@ -1219,9 +1222,9 @@
       },
       "occurrence": {
         "rate": 0.0015,
-        "lift": 0.42,
+        "lift": 0.43,
         "detection_count": 1,
-        "total_checklists": 651,
+        "total_checklists": 652,
         "confidence": "high"
       },
       "abundance": {
@@ -1261,7 +1264,7 @@
         "rate": 0.0014,
         "lift": 0.4,
         "detection_count": 6,
-        "total_checklists": 4143,
+        "total_checklists": 4177,
         "confidence": "high"
       },
       "abundance": {
@@ -1298,10 +1301,10 @@
         "longitude": -83.7147367
       },
       "occurrence": {
-        "rate": 0.0012,
-        "lift": 0.32,
+        "rate": 0.0011,
+        "lift": 0.31,
         "detection_count": 1,
-        "total_checklists": 855,
+        "total_checklists": 884,
         "confidence": "high"
       },
       "abundance": {
@@ -1341,7 +1344,7 @@
         "rate": 0.0006,
         "lift": 0.16,
         "detection_count": 1,
-        "total_checklists": 1733,
+        "total_checklists": 1740,
         "confidence": "high"
       },
       "abundance": {
@@ -1381,7 +1384,7 @@
         "rate": 0.0005,
         "lift": 0.14,
         "detection_count": 2,
-        "total_checklists": 3881,
+        "total_checklists": 3927,
         "confidence": "high"
       },
       "abundance": {
@@ -1421,7 +1424,7 @@
         "rate": 0.0004,
         "lift": 0.11,
         "detection_count": 1,
-        "total_checklists": 2419,
+        "total_checklists": 2420,
         "confidence": "high"
       },
       "abundance": {
@@ -1461,7 +1464,7 @@
         "rate": 0.0004,
         "lift": 0.11,
         "detection_count": 1,
-        "total_checklists": 2403,
+        "total_checklists": 2414,
         "confidence": "high"
       },
       "abundance": {
@@ -1501,7 +1504,7 @@
         "rate": 0.0003,
         "lift": 0.08,
         "detection_count": 1,
-        "total_checklists": 3323,
+        "total_checklists": 3324,
         "confidence": "high"
       },
       "abundance": {
@@ -1531,7 +1534,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-02T01:07:12.595958Z",
+    "generated_at": "2026-03-07T15:12:57.142482Z",
     "data_version": "Dec-2025"
   }
 }

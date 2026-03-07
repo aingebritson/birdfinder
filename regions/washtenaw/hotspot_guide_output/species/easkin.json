@@ -5,15 +5,15 @@
     "scientific_name": "Tyrannus tyrannus"
   },
   "baseline": {
-    "county_occurrence_rate": 0.115,
-    "total_detections": 17003,
-    "total_checklists_with_species": 17005,
-    "total_checklists_countywide": 147856,
+    "county_occurrence_rate": 0.1142,
+    "total_detections": 17006,
+    "total_checklists_with_species": 17008,
+    "total_checklists_countywide": 148961,
     "hotspots_detected": 247
   },
   "summary": {
     "total_hotspots_detected": 245,
-    "total_detections": 17003,
+    "total_detections": 17006,
     "highest_occurrence_rate": 0.5802
   },
   "hotspots": [
@@ -27,7 +27,7 @@
       },
       "occurrence": {
         "rate": 0.5802,
-        "lift": 5.05,
+        "lift": 5.08,
         "detection_count": 452,
         "total_checklists": 779,
         "confidence": "high"
@@ -67,7 +67,7 @@
       },
       "occurrence": {
         "rate": 0.481,
-        "lift": 4.18,
+        "lift": 4.21,
         "detection_count": 368,
         "total_checklists": 765,
         "confidence": "high"
@@ -107,7 +107,7 @@
       },
       "occurrence": {
         "rate": 0.4668,
-        "lift": 4.06,
+        "lift": 4.09,
         "detection_count": 380,
         "total_checklists": 814,
         "confidence": "high"
@@ -135,32 +135,6 @@
     },
     {
       "rank": 4,
-      "locality_id": "L24319719",
-      "name": "Salem Twp Farm Preserve",
-      "coordinates": {
-        "latitude": 42.3861907,
-        "longitude": -83.5771608
-      },
-      "occurrence": {
-        "rate": 0.4615,
-        "lift": 4.01,
-        "detection_count": 12,
-        "total_checklists": 26,
-        "confidence": "low"
-      },
-      "abundance": {
-        "average_count": 3.1,
-        "max_count": 4
-      },
-      "seasonal": {
-        "spring": 0.5263
-      },
-      "monthly": {
-        "5": 0.625
-      }
-    },
-    {
-      "rank": 5,
       "locality_id": "L5948371",
       "name": "Robin Hills Farm",
       "coordinates": {
@@ -169,7 +143,7 @@
       },
       "occurrence": {
         "rate": 0.4545,
-        "lift": 3.95,
+        "lift": 3.98,
         "detection_count": 5,
         "total_checklists": 11,
         "confidence": "low"
@@ -186,7 +160,7 @@
       }
     },
     {
-      "rank": 6,
+      "rank": 5,
       "locality_id": "L1511045",
       "name": "Grass Lake Sanctuary",
       "coordinates": {
@@ -195,7 +169,7 @@
       },
       "occurrence": {
         "rate": 0.4375,
-        "lift": 3.8,
+        "lift": 3.83,
         "detection_count": 7,
         "total_checklists": 16,
         "confidence": "low"
@@ -213,6 +187,32 @@
       }
     },
     {
+      "rank": 6,
+      "locality_id": "L24319719",
+      "name": "Salem Twp Farm Preserve",
+      "coordinates": {
+        "latitude": 42.3861907,
+        "longitude": -83.5771608
+      },
+      "occurrence": {
+        "rate": 0.4286,
+        "lift": 3.75,
+        "detection_count": 12,
+        "total_checklists": 28,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 3.1,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.5263
+      },
+      "monthly": {
+        "5": 0.625
+      }
+    },
+    {
       "rank": 7,
       "locality_id": "L4402888",
       "name": "Iron Mill Pond",
@@ -222,7 +222,7 @@
       },
       "occurrence": {
         "rate": 0.3596,
-        "lift": 3.13,
+        "lift": 3.15,
         "detection_count": 32,
         "total_checklists": 89,
         "confidence": "medium"
@@ -257,7 +257,7 @@
       },
       "occurrence": {
         "rate": 0.3425,
-        "lift": 2.98,
+        "lift": 3.0,
         "detection_count": 25,
         "total_checklists": 73,
         "confidence": "medium"
@@ -279,41 +279,6 @@
     },
     {
       "rank": 9,
-      "locality_id": "L9555358",
-      "name": "Staebler Farm County Park",
-      "coordinates": {
-        "latitude": 42.332098,
-        "longitude": -83.6100382
-      },
-      "occurrence": {
-        "rate": 0.3288,
-        "lift": 2.86,
-        "detection_count": 24,
-        "total_checklists": 73,
-        "confidence": "medium"
-      },
-      "abundance": {
-        "average_count": 1.5,
-        "max_count": 3
-      },
-      "seasonal": {
-        "spring": 0.1786,
-        "summer": 0.6154,
-        "fall": 0.2
-      },
-      "monthly": {
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.5,
-        "6": 0.5625,
-        "7": 0.7,
-        "8": 0.4,
-        "9": 0.1429,
-        "10": 0.0
-      }
-    },
-    {
-      "rank": 10,
       "locality_id": "L1513727",
       "name": "Sharon Shorthills Preserve",
       "coordinates": {
@@ -322,7 +287,7 @@
       },
       "occurrence": {
         "rate": 0.3282,
-        "lift": 2.85,
+        "lift": 2.87,
         "detection_count": 129,
         "total_checklists": 393,
         "confidence": "high"
@@ -353,6 +318,42 @@
       }
     },
     {
+      "rank": 10,
+      "locality_id": "L9555358",
+      "name": "Staebler Farm County Park",
+      "coordinates": {
+        "latitude": 42.332098,
+        "longitude": -83.6100382
+      },
+      "occurrence": {
+        "rate": 0.3243,
+        "lift": 2.84,
+        "detection_count": 24,
+        "total_checklists": 74,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.1786,
+        "summer": 0.6154,
+        "fall": 0.2,
+        "winter": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.5,
+        "6": 0.5625,
+        "7": 0.7,
+        "8": 0.4,
+        "9": 0.1429,
+        "10": 0.0
+      }
+    },
+    {
       "rank": 11,
       "locality_id": "L18473929",
       "name": "Waterloo RA--Mill Lake",
@@ -361,10 +362,10 @@
         "longitude": -84.093131
       },
       "occurrence": {
-        "rate": 0.3186,
+        "rate": 0.3158,
         "lift": 2.77,
         "detection_count": 36,
-        "total_checklists": 113,
+        "total_checklists": 114,
         "confidence": "high"
       },
       "abundance": {
@@ -397,7 +398,7 @@
       },
       "occurrence": {
         "rate": 0.3,
-        "lift": 2.61,
+        "lift": 2.63,
         "detection_count": 9,
         "total_checklists": 30,
         "confidence": "medium"
@@ -429,10 +430,10 @@
         "longitude": -84.1293639
       },
       "occurrence": {
-        "rate": 0.2828,
-        "lift": 2.46,
+        "rate": 0.2824,
+        "lift": 2.47,
         "detection_count": 168,
-        "total_checklists": 594,
+        "total_checklists": 595,
         "confidence": "high"
       },
       "abundance": {
@@ -470,7 +471,7 @@
       },
       "occurrence": {
         "rate": 0.2707,
-        "lift": 2.35,
+        "lift": 2.37,
         "detection_count": 36,
         "total_checklists": 133,
         "confidence": "high"
@@ -508,7 +509,7 @@
       },
       "occurrence": {
         "rate": 0.2692,
-        "lift": 2.34,
+        "lift": 2.36,
         "detection_count": 28,
         "total_checklists": 104,
         "confidence": "high"
@@ -548,7 +549,7 @@
       },
       "occurrence": {
         "rate": 0.2551,
-        "lift": 2.22,
+        "lift": 2.23,
         "detection_count": 50,
         "total_checklists": 196,
         "confidence": "high"
@@ -586,10 +587,10 @@
         "longitude": -84.0557957
       },
       "occurrence": {
-        "rate": 0.2542,
+        "rate": 0.2518,
         "lift": 2.21,
         "detection_count": 105,
-        "total_checklists": 413,
+        "total_checklists": 417,
         "confidence": "high"
       },
       "abundance": {
@@ -626,10 +627,10 @@
         "longitude": -83.7286823
       },
       "occurrence": {
-        "rate": 0.25,
+        "rate": 0.2473,
         "lift": 2.17,
         "detection_count": 45,
-        "total_checklists": 180,
+        "total_checklists": 182,
         "confidence": "high"
       },
       "abundance": {
@@ -643,6 +644,7 @@
         "winter": 0.0
       },
       "monthly": {
+        "1": 0.0,
         "2": 0.0,
         "3": 0.0,
         "4": 0.0,
@@ -664,10 +666,10 @@
         "longitude": -84.1148043
       },
       "occurrence": {
-        "rate": 0.2452,
-        "lift": 2.13,
+        "rate": 0.245,
+        "lift": 2.15,
         "detection_count": 257,
-        "total_checklists": 1048,
+        "total_checklists": 1049,
         "confidence": "high"
       },
       "abundance": {
@@ -675,7 +677,7 @@
         "max_count": 10
       },
       "seasonal": {
-        "spring": 0.1717,
+        "spring": 0.1713,
         "summer": 0.8478,
         "fall": 0.2941,
         "winter": 0.0
@@ -705,7 +707,7 @@
       },
       "occurrence": {
         "rate": 0.2439,
-        "lift": 2.12,
+        "lift": 2.14,
         "detection_count": 10,
         "total_checklists": 41,
         "confidence": "medium"
@@ -734,7 +736,7 @@
       },
       "occurrence": {
         "rate": 0.2407,
-        "lift": 2.09,
+        "lift": 2.11,
         "detection_count": 26,
         "total_checklists": 108,
         "confidence": "high"
@@ -766,10 +768,10 @@
         "longitude": -83.7038898
       },
       "occurrence": {
-        "rate": 0.2362,
-        "lift": 2.05,
+        "rate": 0.2357,
+        "lift": 2.06,
         "detection_count": 354,
-        "total_checklists": 1499,
+        "total_checklists": 1502,
         "confidence": "high"
       },
       "abundance": {
@@ -778,7 +780,7 @@
       },
       "seasonal": {
         "spring": 0.0854,
-        "summer": 0.5708,
+        "summer": 0.5696,
         "fall": 0.1157,
         "winter": 0.0
       },
@@ -789,7 +791,7 @@
         "4": 0.0,
         "5": 0.2402,
         "6": 0.6061,
-        "7": 0.4933,
+        "7": 0.4901,
         "8": 0.3039,
         "9": 0.0,
         "10": 0.0,
@@ -806,10 +808,10 @@
         "longitude": -83.6464258
       },
       "occurrence": {
-        "rate": 0.2272,
+        "rate": 0.2261,
         "lift": 1.98,
         "detection_count": 232,
-        "total_checklists": 1021,
+        "total_checklists": 1026,
         "confidence": "high"
       },
       "abundance": {
@@ -819,7 +821,7 @@
       "seasonal": {
         "spring": 0.1781,
         "summer": 0.4462,
-        "fall": 0.1154,
+        "fall": 0.1143,
         "winter": 0.0
       },
       "monthly": {
@@ -839,6 +841,36 @@
     },
     {
       "rank": 24,
+      "locality_id": "L2082240",
+      "name": "Foxfire West Park",
+      "coordinates": {
+        "latitude": 42.318828,
+        "longitude": -83.7252831
+      },
+      "occurrence": {
+        "rate": 0.2222,
+        "lift": 1.95,
+        "detection_count": 6,
+        "total_checklists": 27,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.4286
+      },
+      "monthly": {
+        "3": 0.0,
+        "6": 0.6,
+        "7": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 25,
       "locality_id": "L9145831",
       "name": "Leslie Park Golf Course",
       "coordinates": {
@@ -846,10 +878,10 @@
         "longitude": -83.725147
       },
       "occurrence": {
-        "rate": 0.2222,
-        "lift": 1.93,
+        "rate": 0.2188,
+        "lift": 1.92,
         "detection_count": 14,
-        "total_checklists": 63,
+        "total_checklists": 64,
         "confidence": "medium"
       },
       "abundance": {
@@ -875,36 +907,6 @@
       }
     },
     {
-      "rank": 25,
-      "locality_id": "L2082240",
-      "name": "Foxfire West Park",
-      "coordinates": {
-        "latitude": 42.318828,
-        "longitude": -83.7252831
-      },
-      "occurrence": {
-        "rate": 0.2222,
-        "lift": 1.93,
-        "detection_count": 6,
-        "total_checklists": 27,
-        "confidence": "low"
-      },
-      "abundance": {
-        "average_count": 1.5,
-        "max_count": 2
-      },
-      "seasonal": {
-        "spring": 0.0,
-        "summer": 0.4286
-      },
-      "monthly": {
-        "3": 0.0,
-        "6": 0.6,
-        "7": 0.0,
-        "11": 0.0
-      }
-    },
-    {
       "rank": 26,
       "locality_id": "L675460",
       "name": "Gotfredson Rd. marsh",
@@ -913,10 +915,10 @@
         "longitude": -83.5669041
       },
       "occurrence": {
-        "rate": 0.2184,
-        "lift": 1.9,
+        "rate": 0.2179,
+        "lift": 1.91,
         "detection_count": 180,
-        "total_checklists": 824,
+        "total_checklists": 826,
         "confidence": "high"
       },
       "abundance": {
@@ -946,46 +948,6 @@
     },
     {
       "rank": 27,
-      "locality_id": "L188710",
-      "name": "Hudson Mills Metropark",
-      "coordinates": {
-        "latitude": 42.3831,
-        "longitude": -83.91289
-      },
-      "occurrence": {
-        "rate": 0.2157,
-        "lift": 1.88,
-        "detection_count": 440,
-        "total_checklists": 2040,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 2.5,
-        "max_count": 25
-      },
-      "seasonal": {
-        "spring": 0.3353,
-        "summer": 0.5529,
-        "fall": 0.0224,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0337,
-        "5": 0.512,
-        "6": 0.5371,
-        "7": 0.5875,
-        "8": 0.1094,
-        "9": 0.0025,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 28,
       "locality_id": "L5835005",
       "name": "Pinckney RA--Pickerel Lake",
       "coordinates": {
@@ -994,7 +956,7 @@
       },
       "occurrence": {
         "rate": 0.2157,
-        "lift": 1.88,
+        "lift": 1.89,
         "detection_count": 22,
         "total_checklists": 102,
         "confidence": "high"
@@ -1023,7 +985,7 @@
       }
     },
     {
-      "rank": 29,
+      "rank": 28,
       "locality_id": "L2190747",
       "name": "Delhi Metropark",
       "coordinates": {
@@ -1032,7 +994,7 @@
       },
       "occurrence": {
         "rate": 0.2156,
-        "lift": 1.87,
+        "lift": 1.89,
         "detection_count": 58,
         "total_checklists": 269,
         "confidence": "high"
@@ -1063,47 +1025,7 @@
       }
     },
     {
-      "rank": 30,
-      "locality_id": "L1591926",
-      "name": "Argo Nature Area",
-      "coordinates": {
-        "latitude": 42.2927543,
-        "longitude": -83.7439746
-      },
-      "occurrence": {
-        "rate": 0.2153,
-        "lift": 1.87,
-        "detection_count": 166,
-        "total_checklists": 771,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 2.4,
-        "max_count": 8
-      },
-      "seasonal": {
-        "spring": 0.1888,
-        "summer": 0.5696,
-        "fall": 0.1549,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.3724,
-        "6": 0.4839,
-        "7": 0.6923,
-        "8": 0.5789,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 31,
+      "rank": 29,
       "locality_id": "L15789326",
       "name": "stakeout Roseate Spoonbill, Koch Warner Drain, Saline (2021)",
       "coordinates": {
@@ -1112,7 +1034,7 @@
       },
       "occurrence": {
         "rate": 0.2149,
-        "lift": 1.87,
+        "lift": 1.88,
         "detection_count": 81,
         "total_checklists": 377,
         "confidence": "high"
@@ -1133,6 +1055,86 @@
       }
     },
     {
+      "rank": 30,
+      "locality_id": "L188710",
+      "name": "Hudson Mills Metropark",
+      "coordinates": {
+        "latitude": 42.3831,
+        "longitude": -83.91289
+      },
+      "occurrence": {
+        "rate": 0.2148,
+        "lift": 1.88,
+        "detection_count": 440,
+        "total_checklists": 2048,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.5,
+        "max_count": 25
+      },
+      "seasonal": {
+        "spring": 0.3353,
+        "summer": 0.5529,
+        "fall": 0.0224,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0337,
+        "5": 0.512,
+        "6": 0.5371,
+        "7": 0.5875,
+        "8": 0.1094,
+        "9": 0.0025,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 31,
+      "locality_id": "L1591926",
+      "name": "Argo Nature Area",
+      "coordinates": {
+        "latitude": 42.2927543,
+        "longitude": -83.7439746
+      },
+      "occurrence": {
+        "rate": 0.2147,
+        "lift": 1.88,
+        "detection_count": 166,
+        "total_checklists": 773,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.4,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.1888,
+        "summer": 0.5696,
+        "fall": 0.1538,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.3724,
+        "6": 0.4839,
+        "7": 0.6923,
+        "8": 0.5789,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 32,
       "locality_id": "L2082271",
       "name": "Skyline High School",
@@ -1142,7 +1144,7 @@
       },
       "occurrence": {
         "rate": 0.2117,
-        "lift": 1.84,
+        "lift": 1.85,
         "detection_count": 109,
         "total_checklists": 515,
         "confidence": "high"
@@ -1180,10 +1182,10 @@
         "longitude": -84.0041256
       },
       "occurrence": {
-        "rate": 0.2097,
-        "lift": 1.82,
+        "rate": 0.209,
+        "lift": 1.83,
         "detection_count": 121,
-        "total_checklists": 577,
+        "total_checklists": 579,
         "confidence": "high"
       },
       "abundance": {
@@ -1221,7 +1223,7 @@
       },
       "occurrence": {
         "rate": 0.2059,
-        "lift": 1.79,
+        "lift": 1.8,
         "detection_count": 14,
         "total_checklists": 68,
         "confidence": "medium"
@@ -1257,7 +1259,7 @@
       },
       "occurrence": {
         "rate": 0.2,
-        "lift": 1.74,
+        "lift": 1.75,
         "detection_count": 15,
         "total_checklists": 75,
         "confidence": "medium"
@@ -1288,7 +1290,7 @@
       },
       "occurrence": {
         "rate": 0.2,
-        "lift": 1.74,
+        "lift": 1.75,
         "detection_count": 14,
         "total_checklists": 70,
         "confidence": "medium"
@@ -1319,7 +1321,7 @@
       },
       "occurrence": {
         "rate": 0.2,
-        "lift": 1.74,
+        "lift": 1.75,
         "detection_count": 3,
         "total_checklists": 15,
         "confidence": "low"
@@ -1344,10 +1346,10 @@
         "longitude": -83.6628628
       },
       "occurrence": {
-        "rate": 0.1992,
+        "rate": 0.198,
         "lift": 1.73,
         "detection_count": 968,
-        "total_checklists": 4859,
+        "total_checklists": 4888,
         "confidence": "high"
       },
       "abundance": {
@@ -1357,7 +1359,7 @@
       "seasonal": {
         "spring": 0.2491,
         "summer": 0.6979,
-        "fall": 0.1142,
+        "fall": 0.1141,
         "winter": 0.0
       },
       "monthly": {
@@ -1368,7 +1370,7 @@
         "5": 0.5177,
         "6": 0.5972,
         "7": 0.7799,
-        "8": 0.4289,
+        "8": 0.428,
         "9": 0.026,
         "10": 0.0,
         "11": 0.0,
@@ -1384,10 +1386,10 @@
         "longitude": -83.7111855
       },
       "occurrence": {
-        "rate": 0.196,
+        "rate": 0.1944,
         "lift": 1.7,
         "detection_count": 812,
-        "total_checklists": 4143,
+        "total_checklists": 4177,
         "confidence": "high"
       },
       "abundance": {
@@ -1425,7 +1427,7 @@
       },
       "occurrence": {
         "rate": 0.1944,
-        "lift": 1.69,
+        "lift": 1.7,
         "detection_count": 14,
         "total_checklists": 72,
         "confidence": "medium"
@@ -1461,7 +1463,7 @@
       },
       "occurrence": {
         "rate": 0.1928,
-        "lift": 1.68,
+        "lift": 1.69,
         "detection_count": 16,
         "total_checklists": 83,
         "confidence": "medium"
@@ -1491,7 +1493,7 @@
       },
       "occurrence": {
         "rate": 0.1905,
-        "lift": 1.66,
+        "lift": 1.67,
         "detection_count": 8,
         "total_checklists": 42,
         "confidence": "medium"
@@ -1511,35 +1513,6 @@
     },
     {
       "rank": 43,
-      "locality_id": "L16939153",
-      "name": "Secrest Nature Preserve",
-      "coordinates": {
-        "latitude": 42.3242947,
-        "longitude": -83.589753
-      },
-      "occurrence": {
-        "rate": 0.1875,
-        "lift": 1.63,
-        "detection_count": 6,
-        "total_checklists": 32,
-        "confidence": "medium"
-      },
-      "abundance": {
-        "average_count": 1.3,
-        "max_count": 2
-      },
-      "seasonal": {
-        "spring": 0.2222,
-        "summer": 0.2857
-      },
-      "monthly": {
-        "5": 0.2353,
-        "6": 0.5,
-        "7": 0.0
-      }
-    },
-    {
-      "rank": 44,
       "locality_id": "L3079640",
       "name": "Fox Science Preserve",
       "coordinates": {
@@ -1548,7 +1521,7 @@
       },
       "occurrence": {
         "rate": 0.1841,
-        "lift": 1.6,
+        "lift": 1.61,
         "detection_count": 65,
         "total_checklists": 353,
         "confidence": "high"
@@ -1579,7 +1552,89 @@
       }
     },
     {
+      "rank": 44,
+      "locality_id": "L16939153",
+      "name": "Secrest Nature Preserve",
+      "coordinates": {
+        "latitude": 42.3242947,
+        "longitude": -83.589753
+      },
+      "occurrence": {
+        "rate": 0.1818,
+        "lift": 1.59,
+        "detection_count": 6,
+        "total_checklists": 33,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.2222,
+        "summer": 0.2857,
+        "winter": 0.0
+      },
+      "monthly": {
+        "5": 0.2353,
+        "6": 0.5,
+        "7": 0.0
+      }
+    },
+    {
       "rank": 45,
+      "locality_id": "L11468219",
+      "name": "Arkona Rd. fluddle",
+      "coordinates": {
+        "latitude": 42.095339,
+        "longitude": -83.879294
+      },
+      "occurrence": {
+        "rate": 0.1818,
+        "lift": 1.59,
+        "detection_count": 2,
+        "total_checklists": 11,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.1
+      },
+      "monthly": {
+        "5": 0.1111
+      }
+    },
+    {
+      "rank": 46,
+      "locality_id": "L2217777",
+      "name": "Huron River--Delhi Rapids to Tubbs Rd. Bridge",
+      "coordinates": {
+        "latitude": 42.3220476,
+        "longitude": -83.8080025
+      },
+      "occurrence": {
+        "rate": 0.1818,
+        "lift": 1.59,
+        "detection_count": 2,
+        "total_checklists": 11,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "summer": 0.3333
+      },
+      "monthly": {
+        "6": 0.0
+      }
+    },
+    {
+      "rank": 47,
       "locality_id": "L1155167",
       "name": "Lillie Park",
       "coordinates": {
@@ -1587,10 +1642,10 @@
         "longitude": -83.6985254
       },
       "occurrence": {
-        "rate": 0.182,
+        "rate": 0.1808,
         "lift": 1.58,
         "detection_count": 115,
-        "total_checklists": 632,
+        "total_checklists": 636,
         "confidence": "high"
       },
       "abundance": {
@@ -1619,58 +1674,6 @@
       }
     },
     {
-      "rank": 46,
-      "locality_id": "L11468219",
-      "name": "Arkona Rd. fluddle",
-      "coordinates": {
-        "latitude": 42.095339,
-        "longitude": -83.879294
-      },
-      "occurrence": {
-        "rate": 0.1818,
-        "lift": 1.58,
-        "detection_count": 2,
-        "total_checklists": 11,
-        "confidence": "low"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
-      },
-      "seasonal": {
-        "spring": 0.1
-      },
-      "monthly": {
-        "5": 0.1111
-      }
-    },
-    {
-      "rank": 47,
-      "locality_id": "L2217777",
-      "name": "Huron River--Delhi Rapids to Tubbs Rd. Bridge",
-      "coordinates": {
-        "latitude": 42.3220476,
-        "longitude": -83.8080025
-      },
-      "occurrence": {
-        "rate": 0.1818,
-        "lift": 1.58,
-        "detection_count": 2,
-        "total_checklists": 11,
-        "confidence": "low"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
-      },
-      "seasonal": {
-        "summer": 0.3333
-      },
-      "monthly": {
-        "6": 0.0
-      }
-    },
-    {
       "rank": 48,
       "locality_id": "L5579249",
       "name": "Conservancy Farm",
@@ -1679,10 +1682,10 @@
         "longitude": -83.5966498
       },
       "occurrence": {
-        "rate": 0.1809,
-        "lift": 1.57,
-        "detection_count": 292,
-        "total_checklists": 1614,
+        "rate": 0.1802,
+        "lift": 1.58,
+        "detection_count": 293,
+        "total_checklists": 1626,
         "confidence": "high"
       },
       "abundance": {
@@ -1691,7 +1694,7 @@
       },
       "seasonal": {
         "spring": 0.1241,
-        "summer": 0.3763,
+        "summer": 0.3776,
         "fall": 0.0965,
         "winter": 0.0
       },
@@ -1702,7 +1705,7 @@
         "4": 0.0,
         "5": 0.2155,
         "6": 0.3974,
-        "7": 0.339,
+        "7": 0.3427,
         "8": 0.25,
         "9": 0.0,
         "10": 0.0,
@@ -1720,7 +1723,7 @@
       },
       "occurrence": {
         "rate": 0.1789,
-        "lift": 1.56,
+        "lift": 1.57,
         "detection_count": 39,
         "total_checklists": 218,
         "confidence": "high"
@@ -1759,10 +1762,10 @@
         "longitude": -83.5996056
       },
       "occurrence": {
-        "rate": 0.1667,
-        "lift": 1.45,
+        "rate": 0.1664,
+        "lift": 1.46,
         "detection_count": 88,
-        "total_checklists": 528,
+        "total_checklists": 529,
         "confidence": "high"
       },
       "abundance": {
@@ -1792,6 +1795,46 @@
     },
     {
       "rank": 51,
+      "locality_id": "L1018782",
+      "name": "Gerald E. Eddy Discovery Center",
+      "coordinates": {
+        "latitude": 42.3231592,
+        "longitude": -84.0858364
+      },
+      "occurrence": {
+        "rate": 0.163,
+        "lift": 1.43,
+        "detection_count": 96,
+        "total_checklists": 589,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.9,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.1619,
+        "summer": 0.2784,
+        "fall": 0.0603,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.2162,
+        "6": 0.211,
+        "7": 0.3881,
+        "8": 0.2121,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 52,
       "locality_id": "L2606090",
       "name": "Pleasant Lake",
       "coordinates": {
@@ -1799,10 +1842,10 @@
         "longitude": -83.9536199
       },
       "occurrence": {
-        "rate": 0.1657,
-        "lift": 1.44,
+        "rate": 0.1619,
+        "lift": 1.42,
         "detection_count": 57,
-        "total_checklists": 344,
+        "total_checklists": 352,
         "confidence": "high"
       },
       "abundance": {
@@ -1831,46 +1874,6 @@
       }
     },
     {
-      "rank": 52,
-      "locality_id": "L1018782",
-      "name": "Gerald E. Eddy Discovery Center",
-      "coordinates": {
-        "latitude": 42.3231592,
-        "longitude": -84.0858364
-      },
-      "occurrence": {
-        "rate": 0.1633,
-        "lift": 1.42,
-        "detection_count": 96,
-        "total_checklists": 588,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.9,
-        "max_count": 8
-      },
-      "seasonal": {
-        "spring": 0.1619,
-        "summer": 0.28,
-        "fall": 0.0603,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.2162,
-        "6": 0.211,
-        "7": 0.3939,
-        "8": 0.2121,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
       "rank": 53,
       "locality_id": "L2275398",
       "name": "Waterloo RA--McClure Rd.",
@@ -1879,10 +1882,10 @@
         "longitude": -84.1208768
       },
       "occurrence": {
-        "rate": 0.1618,
+        "rate": 0.1606,
         "lift": 1.41,
         "detection_count": 22,
-        "total_checklists": 136,
+        "total_checklists": 137,
         "confidence": "high"
       },
       "abundance": {
@@ -1912,10 +1915,10 @@
         "longitude": -83.768177
       },
       "occurrence": {
-        "rate": 0.1607,
+        "rate": 0.1604,
         "lift": 1.4,
         "detection_count": 81,
-        "total_checklists": 504,
+        "total_checklists": 505,
         "confidence": "high"
       },
       "abundance": {
@@ -1951,7 +1954,7 @@
       },
       "occurrence": {
         "rate": 0.1583,
-        "lift": 1.38,
+        "lift": 1.39,
         "detection_count": 19,
         "total_checklists": 120,
         "confidence": "high"
@@ -1989,10 +1992,10 @@
         "longitude": -83.7036753
       },
       "occurrence": {
-        "rate": 0.1561,
-        "lift": 1.36,
+        "rate": 0.1543,
+        "lift": 1.35,
         "detection_count": 606,
-        "total_checklists": 3881,
+        "total_checklists": 3927,
         "confidence": "high"
       },
       "abundance": {
@@ -2022,46 +2025,6 @@
     },
     {
       "rank": 57,
-      "locality_id": "L2082197",
-      "name": "Bandemer Nature Area",
-      "coordinates": {
-        "latitude": 42.2994767,
-        "longitude": -83.7427336
-      },
-      "occurrence": {
-        "rate": 0.1523,
-        "lift": 1.32,
-        "detection_count": 62,
-        "total_checklists": 407,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 2.4,
-        "max_count": 5
-      },
-      "seasonal": {
-        "spring": 0.1136,
-        "summer": 0.3973,
-        "fall": 0.1313,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.2083,
-        "6": 0.36,
-        "7": 0.4783,
-        "8": 0.4062,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 58,
       "locality_id": "L459615",
       "name": "Independence Lake County Park",
       "coordinates": {
@@ -2070,9 +2033,9 @@
       },
       "occurrence": {
         "rate": 0.1521,
-        "lift": 1.32,
+        "lift": 1.33,
         "detection_count": 368,
-        "total_checklists": 2419,
+        "total_checklists": 2420,
         "confidence": "high"
       },
       "abundance": {
@@ -2101,6 +2064,46 @@
       }
     },
     {
+      "rank": 58,
+      "locality_id": "L2082197",
+      "name": "Bandemer Nature Area",
+      "coordinates": {
+        "latitude": 42.2994767,
+        "longitude": -83.7427336
+      },
+      "occurrence": {
+        "rate": 0.1512,
+        "lift": 1.32,
+        "detection_count": 62,
+        "total_checklists": 410,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.4,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.1136,
+        "summer": 0.3973,
+        "fall": 0.1313,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.2083,
+        "6": 0.36,
+        "7": 0.4783,
+        "8": 0.4062,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 59,
       "locality_id": "L9971591",
       "name": "Ervin-Stucki Preserve",
@@ -2110,7 +2113,7 @@
       },
       "occurrence": {
         "rate": 0.1508,
-        "lift": 1.31,
+        "lift": 1.32,
         "detection_count": 19,
         "total_checklists": 126,
         "confidence": "high"
@@ -2142,46 +2145,6 @@
     },
     {
       "rank": 60,
-      "locality_id": "L3578883",
-      "name": "B2B Trail--Dexter to Hudson Mills Metropark",
-      "coordinates": {
-        "latitude": 42.3435582,
-        "longitude": -83.8871491
-      },
-      "occurrence": {
-        "rate": 0.1505,
-        "lift": 1.31,
-        "detection_count": 31,
-        "total_checklists": 206,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.7,
-        "max_count": 6
-      },
-      "seasonal": {
-        "spring": 0.1667,
-        "summer": 0.3333,
-        "fall": 0.0256,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.3261,
-        "6": 0.4074,
-        "7": 0.2222,
-        "8": 0.0556,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 61,
       "locality_id": "L1147171",
       "name": "Barton Nature Area",
       "coordinates": {
@@ -2189,10 +2152,10 @@
         "longitude": -83.7555492
       },
       "occurrence": {
-        "rate": 0.1502,
+        "rate": 0.1495,
         "lift": 1.31,
         "detection_count": 361,
-        "total_checklists": 2403,
+        "total_checklists": 2414,
         "confidence": "high"
       },
       "abundance": {
@@ -2202,7 +2165,7 @@
       "seasonal": {
         "spring": 0.1433,
         "summer": 0.6577,
-        "fall": 0.0747,
+        "fall": 0.0745,
         "winter": 0.0
       },
       "monthly": {
@@ -2221,42 +2184,7 @@
       }
     },
     {
-      "rank": 62,
-      "locality_id": "L19027939",
-      "name": "Pinckney RA--South Lake",
-      "coordinates": {
-        "latitude": 42.4046944,
-        "longitude": -84.0583513
-      },
-      "occurrence": {
-        "rate": 0.15,
-        "lift": 1.3,
-        "detection_count": 9,
-        "total_checklists": 60,
-        "confidence": "medium"
-      },
-      "abundance": {
-        "average_count": 5.2,
-        "max_count": 32
-      },
-      "seasonal": {
-        "spring": 0.0952,
-        "summer": 0.8,
-        "fall": 0.1154,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "4": 0.0,
-        "5": 0.1538,
-        "7": 1.0,
-        "8": 0.6,
-        "10": 0.0,
-        "11": 0.0
-      }
-    },
-    {
-      "rank": 63,
+      "rank": 61,
       "locality_id": "L389647",
       "name": "South Pond",
       "coordinates": {
@@ -2265,7 +2193,7 @@
       },
       "occurrence": {
         "rate": 0.1485,
-        "lift": 1.29,
+        "lift": 1.3,
         "detection_count": 367,
         "total_checklists": 2471,
         "confidence": "high"
@@ -2296,7 +2224,7 @@
       }
     },
     {
-      "rank": 64,
+      "rank": 62,
       "locality_id": "L19212791",
       "name": "Dominican Meadows Preserve",
       "coordinates": {
@@ -2305,7 +2233,7 @@
       },
       "occurrence": {
         "rate": 0.1477,
-        "lift": 1.28,
+        "lift": 1.29,
         "detection_count": 13,
         "total_checklists": 88,
         "confidence": "medium"
@@ -2334,6 +2262,81 @@
       }
     },
     {
+      "rank": 63,
+      "locality_id": "L3578883",
+      "name": "B2B Trail--Dexter to Hudson Mills Metropark",
+      "coordinates": {
+        "latitude": 42.3435582,
+        "longitude": -83.8871491
+      },
+      "occurrence": {
+        "rate": 0.1476,
+        "lift": 1.29,
+        "detection_count": 31,
+        "total_checklists": 210,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.7,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.1667,
+        "summer": 0.3333,
+        "fall": 0.0256,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.3261,
+        "6": 0.4074,
+        "7": 0.2222,
+        "8": 0.0556,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 64,
+      "locality_id": "L19027939",
+      "name": "Pinckney RA--South Lake",
+      "coordinates": {
+        "latitude": 42.4046944,
+        "longitude": -84.0583513
+      },
+      "occurrence": {
+        "rate": 0.1475,
+        "lift": 1.29,
+        "detection_count": 9,
+        "total_checklists": 61,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 5.2,
+        "max_count": 32
+      },
+      "seasonal": {
+        "spring": 0.0952,
+        "summer": 0.8,
+        "fall": 0.1154,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "4": 0.0,
+        "5": 0.1538,
+        "7": 1.0,
+        "8": 0.6,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
       "rank": 65,
       "locality_id": "L1217368",
       "name": "Pinckney RA--Hankerd Rd.",
@@ -2343,7 +2346,7 @@
       },
       "occurrence": {
         "rate": 0.1474,
-        "lift": 1.28,
+        "lift": 1.29,
         "detection_count": 23,
         "total_checklists": 156,
         "confidence": "high"
@@ -2368,46 +2371,6 @@
     },
     {
       "rank": 66,
-      "locality_id": "L11791078",
-      "name": "North Hydro Park",
-      "coordinates": {
-        "latitude": 42.2075962,
-        "longitude": -83.5544943
-      },
-      "occurrence": {
-        "rate": 0.1461,
-        "lift": 1.27,
-        "detection_count": 110,
-        "total_checklists": 753,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 2.5,
-        "max_count": 10
-      },
-      "seasonal": {
-        "spring": 0.1848,
-        "summer": 0.6825,
-        "fall": 0.2105,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.08,
-        "5": 0.4795,
-        "6": 0.5,
-        "7": 0.8485,
-        "8": 0.8966,
-        "9": 0.0625,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 67,
       "locality_id": "L320822",
       "name": "Nichols Arboretum",
       "coordinates": {
@@ -2415,10 +2378,10 @@
         "longitude": -83.7221074
       },
       "occurrence": {
-        "rate": 0.1442,
-        "lift": 1.25,
+        "rate": 0.1436,
+        "lift": 1.26,
         "detection_count": 1808,
-        "total_checklists": 12539,
+        "total_checklists": 12588,
         "confidence": "high"
       },
       "abundance": {
@@ -2447,7 +2410,7 @@
       }
     },
     {
-      "rank": 68,
+      "rank": 67,
       "locality_id": "L1131706",
       "name": "Pinckney RA--Embury Rd.",
       "coordinates": {
@@ -2487,6 +2450,46 @@
       }
     },
     {
+      "rank": 68,
+      "locality_id": "L11791078",
+      "name": "North Hydro Park",
+      "coordinates": {
+        "latitude": 42.2075962,
+        "longitude": -83.5544943
+      },
+      "occurrence": {
+        "rate": 0.1396,
+        "lift": 1.22,
+        "detection_count": 110,
+        "total_checklists": 788,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.5,
+        "max_count": 10
+      },
+      "seasonal": {
+        "spring": 0.1848,
+        "summer": 0.6825,
+        "fall": 0.2105,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.08,
+        "5": 0.4795,
+        "6": 0.5,
+        "7": 0.8485,
+        "8": 0.8966,
+        "9": 0.0625,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 69,
       "locality_id": "L7640129",
       "name": "Matthaei Botanical Gardens Trail",
@@ -2495,10 +2498,10 @@
         "longitude": -83.6657669
       },
       "occurrence": {
-        "rate": 0.14,
+        "rate": 0.1391,
         "lift": 1.22,
         "detection_count": 21,
-        "total_checklists": 150,
+        "total_checklists": 151,
         "confidence": "high"
       },
       "abundance": {
@@ -2512,6 +2515,7 @@
         "winter": 0.0
       },
       "monthly": {
+        "1": 0.0,
         "2": 0.0,
         "3": 0.0,
         "4": 0.0,
@@ -2527,46 +2531,6 @@
     },
     {
       "rank": 70,
-      "locality_id": "L908259",
-      "name": "DeVine Preserve",
-      "coordinates": {
-        "latitude": 42.2726409,
-        "longitude": -83.8490295
-      },
-      "occurrence": {
-        "rate": 0.1391,
-        "lift": 1.21,
-        "detection_count": 170,
-        "total_checklists": 1222,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.6,
-        "max_count": 6
-      },
-      "seasonal": {
-        "spring": 0.1738,
-        "summer": 0.2479,
-        "fall": 0.0519,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0125,
-        "5": 0.2438,
-        "6": 0.2568,
-        "7": 0.2326,
-        "8": 0.375,
-        "9": 0.025,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 71,
       "locality_id": "L1124964",
       "name": "Chelsea SGA--Four Mile Lake",
       "coordinates": {
@@ -2575,9 +2539,9 @@
       },
       "occurrence": {
         "rate": 0.139,
-        "lift": 1.21,
+        "lift": 1.22,
         "detection_count": 462,
-        "total_checklists": 3323,
+        "total_checklists": 3324,
         "confidence": "high"
       },
       "abundance": {
@@ -2606,47 +2570,47 @@
       }
     },
     {
-      "rank": 72,
-      "locality_id": "L1084604",
-      "name": "North Bay Park/Ford Lake Boardwalk",
+      "rank": 71,
+      "locality_id": "L908259",
+      "name": "DeVine Preserve",
       "coordinates": {
-        "latitude": 42.2282671,
-        "longitude": -83.6102566
+        "latitude": 42.2726409,
+        "longitude": -83.8490295
       },
       "occurrence": {
-        "rate": 0.1382,
-        "lift": 1.2,
-        "detection_count": 606,
-        "total_checklists": 4386,
+        "rate": 0.1387,
+        "lift": 1.21,
+        "detection_count": 170,
+        "total_checklists": 1226,
         "confidence": "high"
       },
       "abundance": {
-        "average_count": 2.2,
-        "max_count": 8
+        "average_count": 1.6,
+        "max_count": 6
       },
       "seasonal": {
-        "spring": 0.1032,
-        "summer": 0.6501,
-        "fall": 0.1294,
+        "spring": 0.1738,
+        "summer": 0.2479,
+        "fall": 0.0516,
         "winter": 0.0
       },
       "monthly": {
         "1": 0.0,
         "2": 0.0,
         "3": 0.0,
-        "4": 0.0,
-        "5": 0.4036,
-        "6": 0.5257,
-        "7": 0.7379,
-        "8": 0.5968,
-        "9": 0.0,
+        "4": 0.0125,
+        "5": 0.2438,
+        "6": 0.2568,
+        "7": 0.2326,
+        "8": 0.375,
+        "9": 0.025,
         "10": 0.0,
         "11": 0.0,
         "12": 0.0
       }
     },
     {
-      "rank": 73,
+      "rank": 72,
       "locality_id": "L30112354",
       "name": "Goodband Rd. marsh",
       "coordinates": {
@@ -2655,7 +2619,7 @@
       },
       "occurrence": {
         "rate": 0.1379,
-        "lift": 1.2,
+        "lift": 1.21,
         "detection_count": 4,
         "total_checklists": 29,
         "confidence": "low"
@@ -2676,6 +2640,46 @@
       }
     },
     {
+      "rank": 73,
+      "locality_id": "L1084604",
+      "name": "North Bay Park/Ford Lake Boardwalk",
+      "coordinates": {
+        "latitude": 42.2282671,
+        "longitude": -83.6102566
+      },
+      "occurrence": {
+        "rate": 0.1378,
+        "lift": 1.21,
+        "detection_count": 607,
+        "total_checklists": 4404,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.2,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.103,
+        "summer": 0.6509,
+        "fall": 0.1294,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.4036,
+        "6": 0.5257,
+        "7": 0.739,
+        "8": 0.5968,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 74,
       "locality_id": "L2082268",
       "name": "Ruthven Nature Area",
@@ -2684,10 +2688,10 @@
         "longitude": -83.6974633
       },
       "occurrence": {
-        "rate": 0.1363,
-        "lift": 1.18,
+        "rate": 0.1359,
+        "lift": 1.19,
         "detection_count": 56,
-        "total_checklists": 411,
+        "total_checklists": 412,
         "confidence": "high"
       },
       "abundance": {
@@ -2724,7 +2728,7 @@
       },
       "occurrence": {
         "rate": 0.1353,
-        "lift": 1.18,
+        "lift": 1.19,
         "detection_count": 18,
         "total_checklists": 133,
         "confidence": "high"
@@ -2761,7 +2765,7 @@
       },
       "occurrence": {
         "rate": 0.135,
-        "lift": 1.17,
+        "lift": 1.18,
         "detection_count": 37,
         "total_checklists": 274,
         "confidence": "high"
@@ -2801,7 +2805,7 @@
       },
       "occurrence": {
         "rate": 0.1348,
-        "lift": 1.17,
+        "lift": 1.18,
         "detection_count": 67,
         "total_checklists": 497,
         "confidence": "high"
@@ -2840,10 +2844,10 @@
         "longitude": -83.6609745
       },
       "occurrence": {
-        "rate": 0.1346,
-        "lift": 1.17,
+        "rate": 0.1321,
+        "lift": 1.16,
         "detection_count": 7,
-        "total_checklists": 52,
+        "total_checklists": 53,
         "confidence": "medium"
       },
       "abundance": {
@@ -2868,7 +2872,7 @@
       },
       "occurrence": {
         "rate": 0.1296,
-        "lift": 1.13,
+        "lift": 1.14,
         "detection_count": 7,
         "total_checklists": 54,
         "confidence": "medium"
@@ -2897,6 +2901,37 @@
     },
     {
       "rank": 80,
+      "locality_id": "L36387338",
+      "name": "Van Curler Preserve",
+      "coordinates": {
+        "latitude": 42.3401904,
+        "longitude": -83.8574061
+      },
+      "occurrence": {
+        "rate": 0.129,
+        "lift": 1.13,
+        "detection_count": 4,
+        "total_checklists": 31,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.2667,
+        "fall": 0.0
+      },
+      "monthly": {
+        "4": 0.1429,
+        "5": 0.375,
+        "6": 0.0,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    {
+      "rank": 81,
       "locality_id": "L20311322",
       "name": "Loonfeather Point Park",
       "coordinates": {
@@ -2904,10 +2939,10 @@
         "longitude": -83.5836702
       },
       "occurrence": {
-        "rate": 0.1292,
-        "lift": 1.12,
+        "rate": 0.1286,
+        "lift": 1.13,
         "detection_count": 80,
-        "total_checklists": 619,
+        "total_checklists": 622,
         "confidence": "high"
       },
       "abundance": {
@@ -2936,37 +2971,6 @@
       }
     },
     {
-      "rank": 81,
-      "locality_id": "L36387338",
-      "name": "Van Curler Preserve",
-      "coordinates": {
-        "latitude": 42.3401904,
-        "longitude": -83.8574061
-      },
-      "occurrence": {
-        "rate": 0.129,
-        "lift": 1.12,
-        "detection_count": 4,
-        "total_checklists": 31,
-        "confidence": "medium"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
-      },
-      "seasonal": {
-        "spring": 0.2667,
-        "fall": 0.0
-      },
-      "monthly": {
-        "4": 0.1429,
-        "5": 0.375,
-        "6": 0.0,
-        "8": 0.0,
-        "9": 0.0
-      }
-    },
-    {
       "rank": 82,
       "locality_id": "L10302500",
       "name": "Feldkamp Rd.",
@@ -2976,7 +2980,7 @@
       },
       "occurrence": {
         "rate": 0.1282,
-        "lift": 1.11,
+        "lift": 1.12,
         "detection_count": 5,
         "total_checklists": 39,
         "confidence": "medium"
@@ -3011,7 +3015,7 @@
         "rate": 0.125,
         "lift": 1.09,
         "detection_count": 463,
-        "total_checklists": 3703,
+        "total_checklists": 3704,
         "confidence": "high"
       },
       "abundance": {
@@ -3087,7 +3091,7 @@
       },
       "occurrence": {
         "rate": 0.1232,
-        "lift": 1.07,
+        "lift": 1.08,
         "detection_count": 17,
         "total_checklists": 138,
         "confidence": "high"
@@ -3112,83 +3116,6 @@
     },
     {
       "rank": 86,
-      "locality_id": "L2478564",
-      "name": "Ann Arbor Municipal Airport",
-      "coordinates": {
-        "latitude": 42.223349,
-        "longitude": -83.746615
-      },
-      "occurrence": {
-        "rate": 0.1231,
-        "lift": 1.07,
-        "detection_count": 24,
-        "total_checklists": 195,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.6,
-        "max_count": 3
-      },
-      "seasonal": {
-        "spring": 0.0,
-        "summer": 0.3191,
-        "fall": 0.25,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "3": 0.0,
-        "5": 0.0,
-        "6": 0.2381,
-        "7": 0.3846,
-        "8": 0.3913,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 87,
-      "locality_id": "L1371386",
-      "name": "Draper-Houston Meadows Preserve",
-      "coordinates": {
-        "latitude": 42.0909473,
-        "longitude": -83.7013345
-      },
-      "occurrence": {
-        "rate": 0.123,
-        "lift": 1.07,
-        "detection_count": 38,
-        "total_checklists": 309,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.4,
-        "max_count": 3
-      },
-      "seasonal": {
-        "spring": 0.1402,
-        "summer": 0.3226,
-        "fall": 0.0704,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.2771,
-        "6": 0.2353,
-        "7": 0.4286,
-        "8": 0.2941,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 88,
       "locality_id": "L1522623",
       "name": "Pinckney RA--Silver Lake",
       "coordinates": {
@@ -3197,7 +3124,7 @@
       },
       "occurrence": {
         "rate": 0.1229,
-        "lift": 1.07,
+        "lift": 1.08,
         "detection_count": 50,
         "total_checklists": 407,
         "confidence": "high"
@@ -3228,37 +3155,84 @@
       }
     },
     {
-      "rank": 89,
-      "locality_id": "L9698769",
-      "name": "Hickory Nature Area",
+      "rank": 87,
+      "locality_id": "L1371386",
+      "name": "Draper-Houston Meadows Preserve",
       "coordinates": {
-        "latitude": 42.311853,
-        "longitude": -83.740662
+        "latitude": 42.0909473,
+        "longitude": -83.7013345
       },
       "occurrence": {
-        "rate": 0.12,
-        "lift": 1.04,
-        "detection_count": 3,
-        "total_checklists": 25,
-        "confidence": "low"
+        "rate": 0.1218,
+        "lift": 1.07,
+        "detection_count": 38,
+        "total_checklists": 312,
+        "confidence": "high"
       },
       "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
+        "average_count": 1.4,
+        "max_count": 3
       },
       "seasonal": {
-        "spring": 0.375,
-        "summer": 0.0
+        "spring": 0.1402,
+        "summer": 0.3226,
+        "fall": 0.0704,
+        "winter": 0.0
       },
       "monthly": {
+        "1": 0.0,
+        "2": 0.0,
         "3": 0.0,
-        "5": 1.0,
-        "6": 0.0,
-        "7": 0.0
+        "4": 0.0,
+        "5": 0.2771,
+        "6": 0.2353,
+        "7": 0.4286,
+        "8": 0.2941,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
       }
     },
     {
-      "rank": 90,
+      "rank": 88,
+      "locality_id": "L2478564",
+      "name": "Ann Arbor Municipal Airport",
+      "coordinates": {
+        "latitude": 42.223349,
+        "longitude": -83.746615
+      },
+      "occurrence": {
+        "rate": 0.12,
+        "lift": 1.05,
+        "detection_count": 24,
+        "total_checklists": 200,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.6,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.3191,
+        "fall": 0.25,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "6": 0.2381,
+        "7": 0.3846,
+        "8": 0.3913,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 89,
       "locality_id": "L894219",
       "name": "Water Conservation Easement (Vreeland Rd & Prospect Rd)",
       "coordinates": {
@@ -3266,10 +3240,10 @@
         "longitude": -83.6072981
       },
       "occurrence": {
-        "rate": 0.1197,
+        "rate": 0.1187,
         "lift": 1.04,
         "detection_count": 45,
-        "total_checklists": 376,
+        "total_checklists": 379,
         "confidence": "high"
       },
       "abundance": {
@@ -3298,7 +3272,7 @@
       }
     },
     {
-      "rank": 91,
+      "rank": 90,
       "locality_id": "L14395009",
       "name": "Ford Lake Park",
       "coordinates": {
@@ -3307,7 +3281,7 @@
       },
       "occurrence": {
         "rate": 0.1183,
-        "lift": 1.03,
+        "lift": 1.04,
         "detection_count": 79,
         "total_checklists": 668,
         "confidence": "high"
@@ -3338,7 +3312,7 @@
       }
     },
     {
-      "rank": 92,
+      "rank": 91,
       "locality_id": "L6600072",
       "name": "Chi-Bro Park",
       "coordinates": {
@@ -3347,7 +3321,7 @@
       },
       "occurrence": {
         "rate": 0.1176,
-        "lift": 1.02,
+        "lift": 1.03,
         "detection_count": 6,
         "total_checklists": 51,
         "confidence": "medium"
@@ -3372,7 +3346,7 @@
       }
     },
     {
-      "rank": 93,
+      "rank": 92,
       "locality_id": "L5840012",
       "name": "Mary McCann Park",
       "coordinates": {
@@ -3381,7 +3355,7 @@
       },
       "occurrence": {
         "rate": 0.1159,
-        "lift": 1.01,
+        "lift": 1.02,
         "detection_count": 8,
         "total_checklists": 69,
         "confidence": "medium"
@@ -3405,6 +3379,36 @@
       }
     },
     {
+      "rank": 93,
+      "locality_id": "L9698769",
+      "name": "Hickory Nature Area",
+      "coordinates": {
+        "latitude": 42.311853,
+        "longitude": -83.740662
+      },
+      "occurrence": {
+        "rate": 0.1154,
+        "lift": 1.01,
+        "detection_count": 3,
+        "total_checklists": 26,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.375,
+        "summer": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "5": 1.0,
+        "6": 0.0,
+        "7": 0.0
+      }
+    },
+    {
       "rank": 94,
       "locality_id": "L687562",
       "name": "Waterloo RA--Sylvan Springs",
@@ -3414,7 +3418,7 @@
       },
       "occurrence": {
         "rate": 0.1132,
-        "lift": 0.98,
+        "lift": 0.99,
         "detection_count": 6,
         "total_checklists": 53,
         "confidence": "medium"
@@ -3444,7 +3448,7 @@
       },
       "occurrence": {
         "rate": 0.1121,
-        "lift": 0.97,
+        "lift": 0.98,
         "detection_count": 13,
         "total_checklists": 116,
         "confidence": "high"
@@ -3476,10 +3480,10 @@
         "longitude": -83.7754498
       },
       "occurrence": {
-        "rate": 0.11,
+        "rate": 0.1095,
         "lift": 0.96,
         "detection_count": 23,
-        "total_checklists": 209,
+        "total_checklists": 210,
         "confidence": "high"
       },
       "abundance": {
@@ -3489,7 +3493,8 @@
       "seasonal": {
         "spring": 0.1024,
         "summer": 0.2,
-        "fall": 0.0714
+        "fall": 0.0714,
+        "winter": 0.0
       },
       "monthly": {
         "2": 0.0,
@@ -3512,7 +3517,7 @@
       },
       "occurrence": {
         "rate": 0.1094,
-        "lift": 0.95,
+        "lift": 0.96,
         "detection_count": 7,
         "total_checklists": 64,
         "confidence": "medium"
@@ -3544,10 +3549,10 @@
         "longitude": -83.6047554
       },
       "occurrence": {
-        "rate": 0.1079,
+        "rate": 0.107,
         "lift": 0.94,
         "detection_count": 49,
-        "total_checklists": 454,
+        "total_checklists": 458,
         "confidence": "high"
       },
       "abundance": {
@@ -3585,7 +3590,7 @@
       },
       "occurrence": {
         "rate": 0.1069,
-        "lift": 0.93,
+        "lift": 0.94,
         "detection_count": 94,
         "total_checklists": 879,
         "confidence": "high"
@@ -3624,10 +3629,10 @@
         "longitude": -83.7746572
       },
       "occurrence": {
-        "rate": 0.1066,
+        "rate": 0.1064,
         "lift": 0.93,
         "detection_count": 50,
-        "total_checklists": 469,
+        "total_checklists": 470,
         "confidence": "high"
       },
       "abundance": {
@@ -3663,7 +3668,7 @@
       },
       "occurrence": {
         "rate": 0.1064,
-        "lift": 0.92,
+        "lift": 0.93,
         "detection_count": 10,
         "total_checklists": 94,
         "confidence": "medium"
@@ -3694,45 +3699,6 @@
     },
     {
       "rank": 102,
-      "locality_id": "L16318428",
-      "name": "Mill Creek Park",
-      "coordinates": {
-        "latitude": 42.3379973,
-        "longitude": -83.890372
-      },
-      "occurrence": {
-        "rate": 0.1062,
-        "lift": 0.92,
-        "detection_count": 12,
-        "total_checklists": 113,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.3,
-        "max_count": 2
-      },
-      "seasonal": {
-        "spring": 0.1163,
-        "summer": 0.3889,
-        "fall": 0.0,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.25,
-        "6": 0.1429,
-        "7": 0.5455,
-        "8": 0.0,
-        "9": 0.0,
-        "10": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 103,
       "locality_id": "L9000726",
       "name": "Wilderness Park",
       "coordinates": {
@@ -3741,7 +3707,7 @@
       },
       "occurrence": {
         "rate": 0.106,
-        "lift": 0.92,
+        "lift": 0.93,
         "detection_count": 23,
         "total_checklists": 217,
         "confidence": "high"
@@ -3770,47 +3736,7 @@
       }
     },
     {
-      "rank": 104,
-      "locality_id": "L5151062",
-      "name": "Arb/Gallup Bike Pathway",
-      "coordinates": {
-        "latitude": 42.2829764,
-        "longitude": -83.7147367
-      },
-      "occurrence": {
-        "rate": 0.1053,
-        "lift": 0.92,
-        "detection_count": 90,
-        "total_checklists": 855,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 2.1,
-        "max_count": 8
-      },
-      "seasonal": {
-        "spring": 0.2335,
-        "summer": 0.4808,
-        "fall": 0.0532,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0377,
-        "5": 0.4361,
-        "6": 0.4848,
-        "7": 0.4737,
-        "8": 0.4167,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 105,
+      "rank": 103,
       "locality_id": "L3576213",
       "name": "M-52 and Lehman Rd. fluddle",
       "coordinates": {
@@ -3850,7 +3776,46 @@
       }
     },
     {
-      "rank": 106,
+      "rank": 104,
+      "locality_id": "L16318428",
+      "name": "Mill Creek Park",
+      "coordinates": {
+        "latitude": 42.3379973,
+        "longitude": -83.890372
+      },
+      "occurrence": {
+        "rate": 0.1053,
+        "lift": 0.92,
+        "detection_count": 12,
+        "total_checklists": 114,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.1163,
+        "summer": 0.3889,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.25,
+        "6": 0.1429,
+        "7": 0.5455,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 105,
       "locality_id": "L5580294",
       "name": "Whitmore Lake Preserve",
       "coordinates": {
@@ -3858,10 +3823,10 @@
         "longitude": -83.7344912
       },
       "occurrence": {
-        "rate": 0.1034,
+        "rate": 0.1022,
         "lift": 0.9,
         "detection_count": 42,
-        "total_checklists": 406,
+        "total_checklists": 411,
         "confidence": "high"
       },
       "abundance": {
@@ -3890,6 +3855,46 @@
       }
     },
     {
+      "rank": 106,
+      "locality_id": "L5151062",
+      "name": "Arb/Gallup Bike Pathway",
+      "coordinates": {
+        "latitude": 42.2829764,
+        "longitude": -83.7147367
+      },
+      "occurrence": {
+        "rate": 0.1018,
+        "lift": 0.89,
+        "detection_count": 90,
+        "total_checklists": 884,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.1,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.2335,
+        "summer": 0.4808,
+        "fall": 0.0532,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0377,
+        "5": 0.4361,
+        "6": 0.4848,
+        "7": 0.4737,
+        "8": 0.4167,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 107,
       "locality_id": "L1487097",
       "name": "Burns-Stokes Preserve",
@@ -3898,10 +3903,10 @@
         "longitude": -83.8408471
       },
       "occurrence": {
-        "rate": 0.0995,
+        "rate": 0.0991,
         "lift": 0.87,
         "detection_count": 42,
-        "total_checklists": 422,
+        "total_checklists": 424,
         "confidence": "high"
       },
       "abundance": {
@@ -3931,84 +3936,6 @@
     },
     {
       "rank": 108,
-      "locality_id": "L284571",
-      "name": "Gallup Park",
-      "coordinates": {
-        "latitude": 42.273276,
-        "longitude": -83.693397
-      },
-      "occurrence": {
-        "rate": 0.0976,
-        "lift": 0.85,
-        "detection_count": 523,
-        "total_checklists": 5360,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 2.6,
-        "max_count": 20
-      },
-      "seasonal": {
-        "spring": 0.1067,
-        "summer": 0.5644,
-        "fall": 0.0883,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.007,
-        "5": 0.4354,
-        "6": 0.5019,
-        "7": 0.6735,
-        "8": 0.5547,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 109,
-      "locality_id": "L17721399",
-      "name": "Whitmore Lake High School swamp",
-      "coordinates": {
-        "latitude": 42.391612,
-        "longitude": -83.770766
-      },
-      "occurrence": {
-        "rate": 0.0976,
-        "lift": 0.85,
-        "detection_count": 8,
-        "total_checklists": 82,
-        "confidence": "medium"
-      },
-      "abundance": {
-        "average_count": 1.9,
-        "max_count": 3
-      },
-      "seasonal": {
-        "spring": 0.1136,
-        "summer": 0.2857,
-        "fall": 0.0667,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.4167,
-        "7": 0.2,
-        "8": 0.3333,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 110,
       "locality_id": "L15958664",
       "name": "Liberty Pond Nature Area",
       "coordinates": {
@@ -4017,7 +3944,7 @@
       },
       "occurrence": {
         "rate": 0.0968,
-        "lift": 0.84,
+        "lift": 0.85,
         "detection_count": 12,
         "total_checklists": 124,
         "confidence": "high"
@@ -4048,6 +3975,85 @@
       }
     },
     {
+      "rank": 109,
+      "locality_id": "L17721399",
+      "name": "Whitmore Lake High School swamp",
+      "coordinates": {
+        "latitude": 42.391612,
+        "longitude": -83.770766
+      },
+      "occurrence": {
+        "rate": 0.0964,
+        "lift": 0.84,
+        "detection_count": 8,
+        "total_checklists": 83,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.9,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.1136,
+        "summer": 0.2857,
+        "fall": 0.0625,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.4167,
+        "7": 0.2,
+        "8": 0.3333,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 110,
+      "locality_id": "L284571",
+      "name": "Gallup Park",
+      "coordinates": {
+        "latitude": 42.273276,
+        "longitude": -83.693397
+      },
+      "occurrence": {
+        "rate": 0.0946,
+        "lift": 0.83,
+        "detection_count": 523,
+        "total_checklists": 5526,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.6,
+        "max_count": 20
+      },
+      "seasonal": {
+        "spring": 0.1066,
+        "summer": 0.5644,
+        "fall": 0.0882,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.007,
+        "5": 0.4337,
+        "6": 0.5019,
+        "7": 0.6735,
+        "8": 0.5547,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 111,
       "locality_id": "L7951455",
       "name": "Goose Lake SGA",
@@ -4057,7 +4063,7 @@
       },
       "occurrence": {
         "rate": 0.0943,
-        "lift": 0.82,
+        "lift": 0.83,
         "detection_count": 5,
         "total_checklists": 53,
         "confidence": "medium"
@@ -4113,38 +4119,6 @@
     },
     {
       "rank": 113,
-      "locality_id": "L4600891",
-      "name": "Waterloo RA--Cassidy Rd.",
-      "coordinates": {
-        "latitude": 42.3582585,
-        "longitude": -84.0802038
-      },
-      "occurrence": {
-        "rate": 0.0921,
-        "lift": 0.8,
-        "detection_count": 7,
-        "total_checklists": 76,
-        "confidence": "medium"
-      },
-      "abundance": {
-        "average_count": 1.1,
-        "max_count": 2
-      },
-      "seasonal": {
-        "spring": 0.0889,
-        "summer": 0.1364,
-        "fall": 0.0
-      },
-      "monthly": {
-        "3": 0.0,
-        "5": 0.0952,
-        "6": 0.2727,
-        "7": 0.0,
-        "9": 0.0
-      }
-    },
-    {
-      "rank": 114,
       "locality_id": "L7909307",
       "name": "Leslee Niethammer Saline River Preserve",
       "coordinates": {
@@ -4183,7 +4157,7 @@
       }
     },
     {
-      "rank": 115,
+      "rank": 114,
       "locality_id": "L35153895",
       "name": "Vreeland Rd. fluddle",
       "coordinates": {
@@ -4191,10 +4165,10 @@
         "longitude": -83.634941
       },
       "occurrence": {
-        "rate": 0.0914,
+        "rate": 0.0911,
         "lift": 0.8,
         "detection_count": 47,
-        "total_checklists": 514,
+        "total_checklists": 516,
         "confidence": "high"
       },
       "abundance": {
@@ -4202,7 +4176,7 @@
         "max_count": 3
       },
       "seasonal": {
-        "spring": 0.0217,
+        "spring": 0.0215,
         "summer": 0.2632,
         "fall": 0.0421,
         "winter": 0.0
@@ -4210,7 +4184,7 @@
       "monthly": {
         "3": 0.0,
         "4": 0.0,
-        "5": 0.0333,
+        "5": 0.0328,
         "6": 0.3077,
         "7": 0.2447,
         "8": 0.0952,
@@ -4218,6 +4192,40 @@
         "10": 0.0,
         "11": 0.0,
         "12": 0.0
+      }
+    },
+    {
+      "rank": 115,
+      "locality_id": "L4600891",
+      "name": "Waterloo RA--Cassidy Rd.",
+      "coordinates": {
+        "latitude": 42.3582585,
+        "longitude": -84.0802038
+      },
+      "occurrence": {
+        "rate": 0.0897,
+        "lift": 0.79,
+        "detection_count": 7,
+        "total_checklists": 78,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.1,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0889,
+        "summer": 0.1364,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0952,
+        "6": 0.2727,
+        "7": 0.0,
+        "9": 0.0
       }
     },
     {
@@ -4229,10 +4237,10 @@
         "longitude": -83.9006352
       },
       "occurrence": {
-        "rate": 0.0896,
+        "rate": 0.0891,
         "lift": 0.78,
         "detection_count": 31,
-        "total_checklists": 346,
+        "total_checklists": 348,
         "confidence": "high"
       },
       "abundance": {
@@ -4300,7 +4308,7 @@
       },
       "occurrence": {
         "rate": 0.0862,
-        "lift": 0.75,
+        "lift": 0.76,
         "detection_count": 5,
         "total_checklists": 58,
         "confidence": "medium"
@@ -4333,7 +4341,7 @@
       },
       "occurrence": {
         "rate": 0.0853,
-        "lift": 0.74,
+        "lift": 0.75,
         "detection_count": 185,
         "total_checklists": 2169,
         "confidence": "high"
@@ -4404,6 +4412,72 @@
     },
     {
       "rank": 121,
+      "locality_id": "L11932941",
+      "name": "Gleaner Hall Rd. marsh",
+      "coordinates": {
+        "latitude": 42.33784,
+        "longitude": -83.73274
+      },
+      "occurrence": {
+        "rate": 0.0833,
+        "lift": 0.73,
+        "detection_count": 1,
+        "total_checklists": 12,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.1667
+      },
+      "monthly": {
+        "5": 0.25
+      }
+    },
+    {
+      "rank": 122,
+      "locality_id": "L512604",
+      "name": "Trinkle Marsh",
+      "coordinates": {
+        "latitude": 42.309387,
+        "longitude": -83.9339161
+      },
+      "occurrence": {
+        "rate": 0.0831,
+        "lift": 0.73,
+        "detection_count": 178,
+        "total_checklists": 2143,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.4,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0497,
+        "summer": 0.4757,
+        "fall": 0.0323,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0065,
+        "5": 0.1789,
+        "6": 0.475,
+        "7": 0.4767,
+        "8": 0.1548,
+        "9": 0.0224,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 123,
       "locality_id": "L16183167",
       "name": "Mooreville Preserve",
       "coordinates": {
@@ -4411,10 +4485,10 @@
         "longitude": -83.734827
       },
       "occurrence": {
-        "rate": 0.0833,
+        "rate": 0.0824,
         "lift": 0.72,
         "detection_count": 7,
-        "total_checklists": 84,
+        "total_checklists": 85,
         "confidence": "medium"
       },
       "abundance": {
@@ -4442,101 +4516,7 @@
       }
     },
     {
-      "rank": 122,
-      "locality_id": "L2477299",
-      "name": "Arborcrest Cemetery",
-      "coordinates": {
-        "latitude": 42.289969,
-        "longitude": -83.7099758
-      },
-      "occurrence": {
-        "rate": 0.0833,
-        "lift": 0.72,
-        "detection_count": 3,
-        "total_checklists": 36,
-        "confidence": "medium"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
-      },
-      "seasonal": {
-        "spring": 0.6,
-        "winter": 0.0
-      },
-      "monthly": {
-        "5": 0.75,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 123,
-      "locality_id": "L11932941",
-      "name": "Gleaner Hall Rd. marsh",
-      "coordinates": {
-        "latitude": 42.33784,
-        "longitude": -83.73274
-      },
-      "occurrence": {
-        "rate": 0.0833,
-        "lift": 0.72,
-        "detection_count": 1,
-        "total_checklists": 12,
-        "confidence": "low"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
-      },
-      "seasonal": {
-        "spring": 0.1667
-      },
-      "monthly": {
-        "5": 0.25
-      }
-    },
-    {
       "rank": 124,
-      "locality_id": "L512604",
-      "name": "Trinkle Marsh",
-      "coordinates": {
-        "latitude": 42.309387,
-        "longitude": -83.9339161
-      },
-      "occurrence": {
-        "rate": 0.0826,
-        "lift": 0.72,
-        "detection_count": 177,
-        "total_checklists": 2142,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.4,
-        "max_count": 4
-      },
-      "seasonal": {
-        "spring": 0.0497,
-        "summer": 0.4732,
-        "fall": 0.0323,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0065,
-        "5": 0.1789,
-        "6": 0.475,
-        "7": 0.4706,
-        "8": 0.1548,
-        "9": 0.0224,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 125,
       "locality_id": "L2862482",
       "name": "Park Lyndon County Park",
       "coordinates": {
@@ -4544,10 +4524,10 @@
         "longitude": -84.0614256
       },
       "occurrence": {
-        "rate": 0.0818,
+        "rate": 0.0816,
         "lift": 0.71,
         "detection_count": 68,
-        "total_checklists": 831,
+        "total_checklists": 833,
         "confidence": "high"
       },
       "abundance": {
@@ -4556,7 +4536,7 @@
       },
       "seasonal": {
         "spring": 0.0746,
-        "summer": 0.1481,
+        "summer": 0.1474,
         "fall": 0.0147,
         "winter": 0.0
       },
@@ -4566,7 +4546,7 @@
         "3": 0.0,
         "4": 0.0,
         "5": 0.0892,
-        "6": 0.1429,
+        "6": 0.1417,
         "7": 0.1587,
         "8": 0.0435,
         "9": 0.0,
@@ -4576,7 +4556,7 @@
       }
     },
     {
-      "rank": 126,
+      "rank": 125,
       "locality_id": "L11253243",
       "name": "Fletcher Rd. wetland",
       "coordinates": {
@@ -4585,7 +4565,7 @@
       },
       "occurrence": {
         "rate": 0.0811,
-        "lift": 0.7,
+        "lift": 0.71,
         "detection_count": 3,
         "total_checklists": 37,
         "confidence": "medium"
@@ -4604,6 +4584,34 @@
       }
     },
     {
+      "rank": 126,
+      "locality_id": "L2477299",
+      "name": "Arborcrest Cemetery",
+      "coordinates": {
+        "latitude": 42.289969,
+        "longitude": -83.7099758
+      },
+      "occurrence": {
+        "rate": 0.0811,
+        "lift": 0.71,
+        "detection_count": 3,
+        "total_checklists": 37,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.6,
+        "winter": 0.0
+      },
+      "monthly": {
+        "5": 0.75,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 127,
       "locality_id": "L899963",
       "name": "LeFurge Woods Nature Preserve",
@@ -4612,10 +4620,10 @@
         "longitude": -83.6015797
       },
       "occurrence": {
-        "rate": 0.0802,
+        "rate": 0.0799,
         "lift": 0.7,
         "detection_count": 139,
-        "total_checklists": 1733,
+        "total_checklists": 1740,
         "confidence": "high"
       },
       "abundance": {
@@ -4652,10 +4660,10 @@
         "longitude": -83.6923027
       },
       "occurrence": {
-        "rate": 0.0799,
+        "rate": 0.0789,
         "lift": 0.69,
         "detection_count": 52,
-        "total_checklists": 651,
+        "total_checklists": 659,
         "confidence": "high"
       },
       "abundance": {
@@ -4692,10 +4700,10 @@
         "longitude": -83.6381006
       },
       "occurrence": {
-        "rate": 0.0792,
+        "rate": 0.0789,
         "lift": 0.69,
         "detection_count": 24,
-        "total_checklists": 303,
+        "total_checklists": 304,
         "confidence": "high"
       },
       "abundance": {
@@ -4732,10 +4740,10 @@
         "longitude": -83.6290455
       },
       "occurrence": {
-        "rate": 0.0784,
+        "rate": 0.078,
         "lift": 0.68,
         "detection_count": 49,
-        "total_checklists": 625,
+        "total_checklists": 628,
         "confidence": "high"
       },
       "abundance": {
@@ -4772,10 +4780,10 @@
         "longitude": -83.6990404
       },
       "occurrence": {
-        "rate": 0.077,
+        "rate": 0.0766,
         "lift": 0.67,
         "detection_count": 149,
-        "total_checklists": 1936,
+        "total_checklists": 1945,
         "confidence": "high"
       },
       "abundance": {
@@ -4805,46 +4813,6 @@
     },
     {
       "rank": 132,
-      "locality_id": "L1475046",
-      "name": "Vreeland Rd. pond",
-      "coordinates": {
-        "latitude": 42.2891886,
-        "longitude": -83.6156524
-      },
-      "occurrence": {
-        "rate": 0.0748,
-        "lift": 0.65,
-        "detection_count": 45,
-        "total_checklists": 602,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.5,
-        "max_count": 5
-      },
-      "seasonal": {
-        "spring": 0.0532,
-        "summer": 0.2987,
-        "fall": 0.0267,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0079,
-        "5": 0.0918,
-        "6": 0.4146,
-        "7": 0.1667,
-        "8": 0.08,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 133,
       "locality_id": "L20626842",
       "name": "Salt Springs Park",
       "coordinates": {
@@ -4853,7 +4821,7 @@
       },
       "occurrence": {
         "rate": 0.0741,
-        "lift": 0.64,
+        "lift": 0.65,
         "detection_count": 6,
         "total_checklists": 81,
         "confidence": "medium"
@@ -4882,7 +4850,7 @@
       }
     },
     {
-      "rank": 134,
+      "rank": 133,
       "locality_id": "L24337426",
       "name": "Bethlehem Cemetery",
       "coordinates": {
@@ -4891,7 +4859,7 @@
       },
       "occurrence": {
         "rate": 0.0741,
-        "lift": 0.64,
+        "lift": 0.65,
         "detection_count": 2,
         "total_checklists": 27,
         "confidence": "low"
@@ -4910,36 +4878,39 @@
       }
     },
     {
-      "rank": 135,
-      "locality_id": "L761586",
-      "name": "Washtenaw Community College--West Woods",
+      "rank": 134,
+      "locality_id": "L1475046",
+      "name": "Vreeland Rd. pond",
       "coordinates": {
-        "latitude": 42.2644793,
-        "longitude": -83.672905
+        "latitude": 42.2891886,
+        "longitude": -83.6156524
       },
       "occurrence": {
-        "rate": 0.0737,
-        "lift": 0.64,
-        "detection_count": 7,
-        "total_checklists": 95,
-        "confidence": "medium"
+        "rate": 0.0739,
+        "lift": 0.65,
+        "detection_count": 45,
+        "total_checklists": 609,
+        "confidence": "high"
       },
       "abundance": {
-        "average_count": 1.1,
-        "max_count": 2
+        "average_count": 1.5,
+        "max_count": 5
       },
       "seasonal": {
-        "spring": 0.1667,
-        "fall": 0.0,
+        "spring": 0.0529,
+        "summer": 0.2987,
+        "fall": 0.0267,
         "winter": 0.0
       },
       "monthly": {
         "1": 0.0,
         "2": 0.0,
         "3": 0.0,
-        "4": 0.0714,
-        "5": 0.3636,
-        "8": 0.0,
+        "4": 0.0079,
+        "5": 0.0909,
+        "6": 0.4146,
+        "7": 0.1667,
+        "8": 0.08,
         "9": 0.0,
         "10": 0.0,
         "11": 0.0,
@@ -4947,7 +4918,7 @@
       }
     },
     {
-      "rank": 136,
+      "rank": 135,
       "locality_id": "L4638933",
       "name": "Riverbend Preserve",
       "coordinates": {
@@ -4955,10 +4926,10 @@
         "longitude": -83.9757693
       },
       "occurrence": {
-        "rate": 0.0736,
+        "rate": 0.0732,
         "lift": 0.64,
         "detection_count": 12,
-        "total_checklists": 163,
+        "total_checklists": 164,
         "confidence": "high"
       },
       "abundance": {
@@ -4987,27 +4958,26 @@
       }
     },
     {
-      "rank": 137,
-      "locality_id": "L2082199",
-      "name": "Bird Hills Nature Area--North",
+      "rank": 136,
+      "locality_id": "L761586",
+      "name": "Washtenaw Community College--West Woods",
       "coordinates": {
-        "latitude": 42.3089427,
-        "longitude": -83.758167
+        "latitude": 42.2644793,
+        "longitude": -83.672905
       },
       "occurrence": {
-        "rate": 0.0721,
+        "rate": 0.0722,
         "lift": 0.63,
-        "detection_count": 8,
-        "total_checklists": 111,
-        "confidence": "high"
+        "detection_count": 7,
+        "total_checklists": 97,
+        "confidence": "medium"
       },
       "abundance": {
-        "average_count": 1.2,
+        "average_count": 1.1,
         "max_count": 2
       },
       "seasonal": {
-        "spring": 0.1842,
-        "summer": 0.0357,
+        "spring": 0.1667,
         "fall": 0.0,
         "winter": 0.0
       },
@@ -5015,16 +4985,17 @@
         "1": 0.0,
         "2": 0.0,
         "3": 0.0,
-        "4": 0.0,
-        "5": 0.4375,
-        "6": 0.0556,
-        "7": 0.0,
+        "4": 0.0714,
+        "5": 0.3636,
+        "8": 0.0,
+        "9": 0.0,
         "10": 0.0,
+        "11": 0.0,
         "12": 0.0
       }
     },
     {
-      "rank": 138,
+      "rank": 137,
       "locality_id": "L2082281",
       "name": "Traver Creek Nature Area",
       "coordinates": {
@@ -5058,45 +5029,7 @@
       }
     },
     {
-      "rank": 139,
-      "locality_id": "L2082236",
-      "name": "Forest Nature Area",
-      "coordinates": {
-        "latitude": 42.2703862,
-        "longitude": -83.6577559
-      },
-      "occurrence": {
-        "rate": 0.0718,
-        "lift": 0.62,
-        "detection_count": 28,
-        "total_checklists": 390,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.2,
-        "max_count": 2
-      },
-      "seasonal": {
-        "spring": 0.0357,
-        "summer": 0.2875,
-        "fall": 0.0,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0794,
-        "6": 0.25,
-        "7": 0.375,
-        "9": 0.0,
-        "10": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 140,
+      "rank": 138,
       "locality_id": "L7270421",
       "name": "Riverside Park (Ypsilanti)",
       "coordinates": {
@@ -5105,7 +5038,7 @@
       },
       "occurrence": {
         "rate": 0.0717,
-        "lift": 0.62,
+        "lift": 0.63,
         "detection_count": 17,
         "total_checklists": 237,
         "confidence": "high"
@@ -5135,7 +5068,45 @@
       }
     },
     {
-      "rank": 141,
+      "rank": 139,
+      "locality_id": "L2082236",
+      "name": "Forest Nature Area",
+      "coordinates": {
+        "latitude": 42.2703862,
+        "longitude": -83.6577559
+      },
+      "occurrence": {
+        "rate": 0.0714,
+        "lift": 0.63,
+        "detection_count": 28,
+        "total_checklists": 392,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0357,
+        "summer": 0.2875,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0794,
+        "6": 0.25,
+        "7": 0.375,
+        "9": 0.0,
+        "10": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 140,
       "locality_id": "L5813092",
       "name": "Whitehall Nursing Home fluddle",
       "coordinates": {
@@ -5144,7 +5115,7 @@
       },
       "occurrence": {
         "rate": 0.0714,
-        "lift": 0.62,
+        "lift": 0.63,
         "detection_count": 6,
         "total_checklists": 84,
         "confidence": "medium"
@@ -5166,7 +5137,7 @@
       }
     },
     {
-      "rank": 142,
+      "rank": 141,
       "locality_id": "L771459",
       "name": "Nan Weston Nature Preserve at Sharon Hollow",
       "coordinates": {
@@ -5174,10 +5145,10 @@
         "longitude": -84.1105589
       },
       "occurrence": {
-        "rate": 0.0699,
+        "rate": 0.0697,
         "lift": 0.61,
         "detection_count": 50,
-        "total_checklists": 715,
+        "total_checklists": 717,
         "confidence": "high"
       },
       "abundance": {
@@ -5205,7 +5176,7 @@
       }
     },
     {
-      "rank": 143,
+      "rank": 142,
       "locality_id": "L2082204",
       "name": "Bluffs Nature Area",
       "coordinates": {
@@ -5213,10 +5184,10 @@
         "longitude": -83.7490153
       },
       "occurrence": {
-        "rate": 0.0697,
+        "rate": 0.0692,
         "lift": 0.61,
         "detection_count": 31,
-        "total_checklists": 445,
+        "total_checklists": 448,
         "confidence": "high"
       },
       "abundance": {
@@ -5245,7 +5216,7 @@
       }
     },
     {
-      "rank": 144,
+      "rank": 143,
       "locality_id": "L18327816",
       "name": "Northfield Twp. Community Park",
       "coordinates": {
@@ -5281,7 +5252,7 @@
       }
     },
     {
-      "rank": 145,
+      "rank": 144,
       "locality_id": "L7971685",
       "name": "Jack R. Smiley Nature Preserve",
       "coordinates": {
@@ -5320,6 +5291,43 @@
       }
     },
     {
+      "rank": 145,
+      "locality_id": "L2082199",
+      "name": "Bird Hills Nature Area--North",
+      "coordinates": {
+        "latitude": 42.3089427,
+        "longitude": -83.758167
+      },
+      "occurrence": {
+        "rate": 0.0684,
+        "lift": 0.6,
+        "detection_count": 8,
+        "total_checklists": 117,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.1842,
+        "summer": 0.0357,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.4375,
+        "6": 0.0556,
+        "7": 0.0,
+        "10": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 146,
       "locality_id": "L5669027",
       "name": "Frog Island Park",
@@ -5328,10 +5336,10 @@
         "longitude": -83.612008
       },
       "occurrence": {
-        "rate": 0.0684,
-        "lift": 0.59,
+        "rate": 0.0681,
+        "lift": 0.6,
         "detection_count": 13,
-        "total_checklists": 190,
+        "total_checklists": 191,
         "confidence": "high"
       },
       "abundance": {
@@ -5368,10 +5376,10 @@
         "longitude": -83.8065863
       },
       "occurrence": {
-        "rate": 0.0671,
-        "lift": 0.58,
+        "rate": 0.0668,
+        "lift": 0.59,
         "detection_count": 28,
-        "total_checklists": 417,
+        "total_checklists": 419,
         "confidence": "high"
       },
       "abundance": {
@@ -5464,7 +5472,7 @@
       },
       "occurrence": {
         "rate": 0.0661,
-        "lift": 0.57,
+        "lift": 0.58,
         "detection_count": 22,
         "total_checklists": 333,
         "confidence": "high"
@@ -5493,86 +5501,6 @@
     },
     {
       "rank": 151,
-      "locality_id": "L2661845",
-      "name": "Waterworks Park",
-      "coordinates": {
-        "latitude": 42.2353968,
-        "longitude": -83.6075771
-      },
-      "occurrence": {
-        "rate": 0.0658,
-        "lift": 0.57,
-        "detection_count": 121,
-        "total_checklists": 1839,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.5,
-        "max_count": 4
-      },
-      "seasonal": {
-        "spring": 0.0452,
-        "summer": 0.3825,
-        "fall": 0.0769,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0106,
-        "5": 0.148,
-        "6": 0.3603,
-        "7": 0.4468,
-        "8": 0.3871,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 152,
-      "locality_id": "L1148523",
-      "name": "Pittsfield Preserve",
-      "coordinates": {
-        "latitude": 42.2117127,
-        "longitude": -83.7100804
-      },
-      "occurrence": {
-        "rate": 0.0655,
-        "lift": 0.57,
-        "detection_count": 31,
-        "total_checklists": 473,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 2.2,
-        "max_count": 7
-      },
-      "seasonal": {
-        "spring": 0.0827,
-        "summer": 0.1778,
-        "fall": 0.0093,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.1849,
-        "6": 0.3478,
-        "7": 0.0,
-        "8": 0.0385,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 153,
       "locality_id": "L2082273",
       "name": "Stapp Nature Area",
       "coordinates": {
@@ -5609,6 +5537,86 @@
       }
     },
     {
+      "rank": 152,
+      "locality_id": "L2661845",
+      "name": "Waterworks Park",
+      "coordinates": {
+        "latitude": 42.2353968,
+        "longitude": -83.6075771
+      },
+      "occurrence": {
+        "rate": 0.0649,
+        "lift": 0.57,
+        "detection_count": 121,
+        "total_checklists": 1863,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0452,
+        "summer": 0.3825,
+        "fall": 0.0769,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0106,
+        "5": 0.148,
+        "6": 0.3603,
+        "7": 0.4468,
+        "8": 0.3871,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 153,
+      "locality_id": "L1148523",
+      "name": "Pittsfield Preserve",
+      "coordinates": {
+        "latitude": 42.2117127,
+        "longitude": -83.7100804
+      },
+      "occurrence": {
+        "rate": 0.0649,
+        "lift": 0.57,
+        "detection_count": 31,
+        "total_checklists": 478,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.2,
+        "max_count": 7
+      },
+      "seasonal": {
+        "spring": 0.0827,
+        "summer": 0.1778,
+        "fall": 0.0093,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1849,
+        "6": 0.3478,
+        "7": 0.0,
+        "8": 0.0385,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 154,
       "locality_id": "L4491092",
       "name": "Miller-Smith Preserve",
@@ -5618,7 +5626,7 @@
       },
       "occurrence": {
         "rate": 0.0648,
-        "lift": 0.56,
+        "lift": 0.57,
         "detection_count": 7,
         "total_checklists": 108,
         "confidence": "high"
@@ -5658,7 +5666,7 @@
       },
       "occurrence": {
         "rate": 0.0646,
-        "lift": 0.56,
+        "lift": 0.57,
         "detection_count": 23,
         "total_checklists": 356,
         "confidence": "high"
@@ -5689,46 +5697,6 @@
     },
     {
       "rank": 156,
-      "locality_id": "L284573",
-      "name": "Superior Twp. Roads",
-      "coordinates": {
-        "latitude": 42.2922212,
-        "longitude": -83.6031482
-      },
-      "occurrence": {
-        "rate": 0.0642,
-        "lift": 0.56,
-        "detection_count": 133,
-        "total_checklists": 2073,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 2.0,
-        "max_count": 12
-      },
-      "seasonal": {
-        "spring": 0.1079,
-        "summer": 0.4333,
-        "fall": 0.0625,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.006,
-        "5": 0.3716,
-        "6": 0.5132,
-        "7": 0.2955,
-        "8": 0.4651,
-        "9": 0.1471,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 157,
       "locality_id": "L896482",
       "name": "Cherry Hill Nature Preserve",
       "coordinates": {
@@ -5739,7 +5707,7 @@
         "rate": 0.0642,
         "lift": 0.56,
         "detection_count": 91,
-        "total_checklists": 1417,
+        "total_checklists": 1418,
         "confidence": "high"
       },
       "abundance": {
@@ -5762,6 +5730,46 @@
         "7": 0.303,
         "8": 0.024,
         "9": 0.0209,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 157,
+      "locality_id": "L284573",
+      "name": "Superior Twp. Roads",
+      "coordinates": {
+        "latitude": 42.2922212,
+        "longitude": -83.6031482
+      },
+      "occurrence": {
+        "rate": 0.0628,
+        "lift": 0.55,
+        "detection_count": 133,
+        "total_checklists": 2118,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 12
+      },
+      "seasonal": {
+        "spring": 0.1079,
+        "summer": 0.4333,
+        "fall": 0.0625,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.006,
+        "5": 0.3716,
+        "6": 0.5132,
+        "7": 0.2955,
+        "8": 0.4651,
+        "9": 0.1471,
         "10": 0.0,
         "11": 0.0,
         "12": 0.0
@@ -5816,10 +5824,10 @@
         "longitude": -84.0687693
       },
       "occurrence": {
-        "rate": 0.0606,
+        "rate": 0.0602,
         "lift": 0.53,
         "detection_count": 8,
-        "total_checklists": 132,
+        "total_checklists": 133,
         "confidence": "high"
       },
       "abundance": {
@@ -5896,7 +5904,7 @@
         "rate": 0.0588,
         "lift": 0.51,
         "detection_count": 60,
-        "total_checklists": 1020,
+        "total_checklists": 1021,
         "confidence": "high"
       },
       "abundance": {
@@ -5934,7 +5942,7 @@
       },
       "occurrence": {
         "rate": 0.0568,
-        "lift": 0.49,
+        "lift": 0.5,
         "detection_count": 5,
         "total_checklists": 88,
         "confidence": "medium"
@@ -5967,10 +5975,10 @@
         "longitude": -83.6096277
       },
       "occurrence": {
-        "rate": 0.0566,
+        "rate": 0.0564,
         "lift": 0.49,
         "detection_count": 15,
-        "total_checklists": 265,
+        "total_checklists": 266,
         "confidence": "high"
       },
       "abundance": {
@@ -5999,37 +6007,6 @@
     },
     {
       "rank": 164,
-      "locality_id": "L14034394",
-      "name": "University of Michigan--North Campus",
-      "coordinates": {
-        "latitude": 42.2905911,
-        "longitude": -83.7191805
-      },
-      "occurrence": {
-        "rate": 0.0541,
-        "lift": 0.47,
-        "detection_count": 2,
-        "total_checklists": 37,
-        "confidence": "medium"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
-      },
-      "seasonal": {
-        "spring": 0.0,
-        "winter": 0.0
-      },
-      "monthly": {
-        "2": 0.0,
-        "3": 0.0,
-        "5": 0.0,
-        "8": 0.6667,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 165,
       "locality_id": "L2111486",
       "name": "Curtiss Park",
       "coordinates": {
@@ -6038,7 +6015,7 @@
       },
       "occurrence": {
         "rate": 0.0534,
-        "lift": 0.46,
+        "lift": 0.47,
         "detection_count": 11,
         "total_checklists": 206,
         "confidence": "high"
@@ -6068,7 +6045,7 @@
       }
     },
     {
-      "rank": 166,
+      "rank": 165,
       "locality_id": "L8146557",
       "name": "Domino's Farms",
       "coordinates": {
@@ -6076,10 +6053,10 @@
         "longitude": -83.684363
       },
       "occurrence": {
-        "rate": 0.0533,
+        "rate": 0.053,
         "lift": 0.46,
         "detection_count": 44,
-        "total_checklists": 826,
+        "total_checklists": 830,
         "confidence": "high"
       },
       "abundance": {
@@ -6108,6 +6085,37 @@
       }
     },
     {
+      "rank": 166,
+      "locality_id": "L14034394",
+      "name": "University of Michigan--North Campus",
+      "coordinates": {
+        "latitude": 42.2905911,
+        "longitude": -83.7191805
+      },
+      "occurrence": {
+        "rate": 0.0526,
+        "lift": 0.46,
+        "detection_count": 2,
+        "total_checklists": 38,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "8": 0.6667,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 167,
       "locality_id": "L4624792",
       "name": "Toma Rd. and Stinchfield Woods Rd. powerline cut",
@@ -6117,7 +6125,7 @@
       },
       "occurrence": {
         "rate": 0.0523,
-        "lift": 0.45,
+        "lift": 0.46,
         "detection_count": 8,
         "total_checklists": 153,
         "confidence": "high"
@@ -6157,7 +6165,7 @@
       },
       "occurrence": {
         "rate": 0.0522,
-        "lift": 0.45,
+        "lift": 0.46,
         "detection_count": 6,
         "total_checklists": 115,
         "confidence": "high"
@@ -6196,7 +6204,7 @@
       },
       "occurrence": {
         "rate": 0.0521,
-        "lift": 0.45,
+        "lift": 0.46,
         "detection_count": 27,
         "total_checklists": 518,
         "confidence": "high"
@@ -6228,41 +6236,6 @@
     },
     {
       "rank": 170,
-      "locality_id": "L930569",
-      "name": "Shanghai Prairie",
-      "coordinates": {
-        "latitude": 42.2713707,
-        "longitude": -83.649559
-      },
-      "occurrence": {
-        "rate": 0.0513,
-        "lift": 0.45,
-        "detection_count": 2,
-        "total_checklists": 39,
-        "confidence": "medium"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 2
-      },
-      "seasonal": {
-        "spring": 0.0,
-        "summer": 0.2,
-        "fall": 0.0625,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "5": 0.0,
-        "6": 0.25,
-        "8": 0.3333,
-        "9": 0.0,
-        "10": 0.0
-      }
-    },
-    {
-      "rank": 171,
       "locality_id": "L2082201",
       "name": "Black Pond Woods Nature Area",
       "coordinates": {
@@ -6270,10 +6243,10 @@
         "longitude": -83.7296927
       },
       "occurrence": {
-        "rate": 0.0512,
-        "lift": 0.44,
+        "rate": 0.0511,
+        "lift": 0.45,
         "detection_count": 37,
-        "total_checklists": 723,
+        "total_checklists": 724,
         "confidence": "high"
       },
       "abundance": {
@@ -6302,7 +6275,7 @@
       }
     },
     {
-      "rank": 172,
+      "rank": 171,
       "locality_id": "L11038419",
       "name": "Waltrous Rd.",
       "coordinates": {
@@ -6330,7 +6303,7 @@
       }
     },
     {
-      "rank": 173,
+      "rank": 172,
       "locality_id": "L492247",
       "name": "Stinchfield Woods",
       "coordinates": {
@@ -6338,10 +6311,10 @@
         "longitude": -83.921556
       },
       "occurrence": {
-        "rate": 0.0499,
-        "lift": 0.43,
+        "rate": 0.0497,
+        "lift": 0.44,
         "detection_count": 38,
-        "total_checklists": 762,
+        "total_checklists": 765,
         "confidence": "high"
       },
       "abundance": {
@@ -6370,6 +6343,41 @@
       }
     },
     {
+      "rank": 173,
+      "locality_id": "L930569",
+      "name": "Shanghai Prairie",
+      "coordinates": {
+        "latitude": 42.2713707,
+        "longitude": -83.649559
+      },
+      "occurrence": {
+        "rate": 0.0488,
+        "lift": 0.43,
+        "detection_count": 2,
+        "total_checklists": 41,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.2,
+        "fall": 0.0625,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "5": 0.0,
+        "6": 0.25,
+        "8": 0.3333,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
       "rank": 174,
       "locality_id": "L828868",
       "name": "Vreeland Rd.",
@@ -6378,10 +6386,10 @@
         "longitude": -83.5701871
       },
       "occurrence": {
-        "rate": 0.0493,
-        "lift": 0.43,
+        "rate": 0.0477,
+        "lift": 0.42,
         "detection_count": 211,
-        "total_checklists": 4283,
+        "total_checklists": 4421,
         "confidence": "high"
       },
       "abundance": {
@@ -6391,7 +6399,7 @@
       "seasonal": {
         "spring": 0.0548,
         "summer": 0.3716,
-        "fall": 0.0387,
+        "fall": 0.0386,
         "winter": 0.0
       },
       "monthly": {
@@ -6419,7 +6427,7 @@
       },
       "occurrence": {
         "rate": 0.0476,
-        "lift": 0.41,
+        "lift": 0.42,
         "detection_count": 9,
         "total_checklists": 189,
         "confidence": "high"
@@ -6450,10 +6458,10 @@
         "longitude": -83.7026863
       },
       "occurrence": {
-        "rate": 0.0476,
+        "rate": 0.0465,
         "lift": 0.41,
         "detection_count": 2,
-        "total_checklists": 42,
+        "total_checklists": 43,
         "confidence": "medium"
       },
       "abundance": {
@@ -6478,46 +6486,6 @@
     },
     {
       "rank": 177,
-      "locality_id": "L1018788",
-      "name": "Cedar Lake Campground",
-      "coordinates": {
-        "latitude": 42.3173683,
-        "longitude": -84.0757084
-      },
-      "occurrence": {
-        "rate": 0.0456,
-        "lift": 0.4,
-        "detection_count": 35,
-        "total_checklists": 768,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.6,
-        "max_count": 3
-      },
-      "seasonal": {
-        "spring": 0.0816,
-        "summer": 0.3488,
-        "fall": 0.0,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.2151,
-        "6": 0.2273,
-        "7": 0.4762,
-        "8": 0.0,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 178,
       "locality_id": "L321171",
       "name": "Waterloo RA--Green Lake Wetlands",
       "coordinates": {
@@ -6547,6 +6515,46 @@
       }
     },
     {
+      "rank": 178,
+      "locality_id": "L1018788",
+      "name": "Cedar Lake Campground",
+      "coordinates": {
+        "latitude": 42.3173683,
+        "longitude": -84.0757084
+      },
+      "occurrence": {
+        "rate": 0.0454,
+        "lift": 0.4,
+        "detection_count": 35,
+        "total_checklists": 771,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.6,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0816,
+        "summer": 0.3488,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.2151,
+        "6": 0.2273,
+        "7": 0.4762,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 179,
       "locality_id": "L2842581",
       "name": "Sloan Preserve",
@@ -6556,7 +6564,7 @@
       },
       "occurrence": {
         "rate": 0.0452,
-        "lift": 0.39,
+        "lift": 0.4,
         "detection_count": 9,
         "total_checklists": 199,
         "confidence": "high"
@@ -6594,10 +6602,10 @@
         "longitude": -84.0760275
       },
       "occurrence": {
-        "rate": 0.045,
+        "rate": 0.0446,
         "lift": 0.39,
         "detection_count": 5,
-        "total_checklists": 111,
+        "total_checklists": 112,
         "confidence": "high"
       },
       "abundance": {
@@ -6633,10 +6641,10 @@
         "longitude": -83.7204659
       },
       "occurrence": {
-        "rate": 0.0448,
+        "rate": 0.0444,
         "lift": 0.39,
         "detection_count": 6,
-        "total_checklists": 134,
+        "total_checklists": 135,
         "confidence": "high"
       },
       "abundance": {
@@ -6659,46 +6667,6 @@
     },
     {
       "rank": 182,
-      "locality_id": "L2082266",
-      "name": "Riverside Park (Ann Arbor)",
-      "coordinates": {
-        "latitude": 42.2869847,
-        "longitude": -83.736527
-      },
-      "occurrence": {
-        "rate": 0.0445,
-        "lift": 0.39,
-        "detection_count": 17,
-        "total_checklists": 382,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.5,
-        "max_count": 4
-      },
-      "seasonal": {
-        "spring": 0.0417,
-        "summer": 0.3667,
-        "fall": 0.0392,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0976,
-        "6": 0.1111,
-        "7": 0.4762,
-        "8": 0.1667,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 183,
       "locality_id": "L1651157",
       "name": "S. Parker Rd. marsh",
       "coordinates": {
@@ -6731,6 +6699,46 @@
         "6": 0.125,
         "7": 0.4444,
         "8": 0.2353,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 183,
+      "locality_id": "L2082266",
+      "name": "Riverside Park (Ann Arbor)",
+      "coordinates": {
+        "latitude": 42.2869847,
+        "longitude": -83.736527
+      },
+      "occurrence": {
+        "rate": 0.0439,
+        "lift": 0.38,
+        "detection_count": 17,
+        "total_checklists": 387,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0417,
+        "summer": 0.3667,
+        "fall": 0.0392,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0976,
+        "6": 0.1111,
+        "7": 0.4762,
+        "8": 0.1667,
         "9": 0.0,
         "10": 0.0,
         "11": 0.0,
@@ -6786,7 +6794,7 @@
       },
       "occurrence": {
         "rate": 0.043,
-        "lift": 0.37,
+        "lift": 0.38,
         "detection_count": 4,
         "total_checklists": 93,
         "confidence": "medium"
@@ -6825,10 +6833,10 @@
         "longitude": -83.8080159
       },
       "occurrence": {
-        "rate": 0.0426,
+        "rate": 0.0424,
         "lift": 0.37,
         "detection_count": 21,
-        "total_checklists": 493,
+        "total_checklists": 495,
         "confidence": "high"
       },
       "abundance": {
@@ -6858,46 +6866,6 @@
     },
     {
       "rank": 187,
-      "locality_id": "L612840",
-      "name": "County Farm Park",
-      "coordinates": {
-        "latitude": 42.2552048,
-        "longitude": -83.7072372
-      },
-      "occurrence": {
-        "rate": 0.0418,
-        "lift": 0.36,
-        "detection_count": 54,
-        "total_checklists": 1291,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.6,
-        "max_count": 6
-      },
-      "seasonal": {
-        "spring": 0.049,
-        "summer": 0.1235,
-        "fall": 0.0157,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0979,
-        "6": 0.1111,
-        "7": 0.1375,
-        "8": 0.1087,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 188,
       "locality_id": "L13988264",
       "name": "Mitchell Field",
       "coordinates": {
@@ -6922,6 +6890,46 @@
       "monthly": {
         "1": 0.0,
         "5": 0.0833,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 188,
+      "locality_id": "L612840",
+      "name": "County Farm Park",
+      "coordinates": {
+        "latitude": 42.2552048,
+        "longitude": -83.7072372
+      },
+      "occurrence": {
+        "rate": 0.0416,
+        "lift": 0.36,
+        "detection_count": 54,
+        "total_checklists": 1298,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.6,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.0489,
+        "summer": 0.1235,
+        "fall": 0.0157,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0976,
+        "6": 0.1111,
+        "7": 0.1375,
+        "8": 0.1087,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
         "12": 0.0
       }
     },
@@ -7038,7 +7046,7 @@
         "rate": 0.0387,
         "lift": 0.34,
         "detection_count": 31,
-        "total_checklists": 800,
+        "total_checklists": 801,
         "confidence": "high"
       },
       "abundance": {
@@ -7068,46 +7076,6 @@
     },
     {
       "rank": 193,
-      "locality_id": "L1124805",
-      "name": "Ford Lake",
-      "coordinates": {
-        "latitude": 42.2186656,
-        "longitude": -83.5890484
-      },
-      "occurrence": {
-        "rate": 0.0379,
-        "lift": 0.33,
-        "detection_count": 23,
-        "total_checklists": 607,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 3.2,
-        "max_count": 7
-      },
-      "seasonal": {
-        "spring": 0.0111,
-        "summer": 0.3333,
-        "fall": 0.0909,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.3333,
-        "6": 0.0,
-        "7": 0.5,
-        "8": 0.5,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 194,
       "locality_id": "L903193",
       "name": "Parker Mill Park",
       "coordinates": {
@@ -7147,7 +7115,7 @@
       }
     },
     {
-      "rank": 195,
+      "rank": 194,
       "locality_id": "L12728771",
       "name": "Hickory Woods Park",
       "coordinates": {
@@ -7155,10 +7123,10 @@
         "longitude": -83.6694074
       },
       "occurrence": {
-        "rate": 0.0368,
+        "rate": 0.0365,
         "lift": 0.32,
         "detection_count": 7,
-        "total_checklists": 190,
+        "total_checklists": 192,
         "confidence": "high"
       },
       "abundance": {
@@ -7187,7 +7155,7 @@
       }
     },
     {
-      "rank": 196,
+      "rank": 195,
       "locality_id": "L15848733",
       "name": "stakeout Roseate Spoonbill, Bemis Rd. swamp (2021)",
       "coordinates": {
@@ -7218,7 +7186,7 @@
       }
     },
     {
-      "rank": 197,
+      "rank": 196,
       "locality_id": "L6326511",
       "name": "Searles Nature Preserve",
       "coordinates": {
@@ -7257,6 +7225,46 @@
       }
     },
     {
+      "rank": 197,
+      "locality_id": "L1124805",
+      "name": "Ford Lake",
+      "coordinates": {
+        "latitude": 42.2186656,
+        "longitude": -83.5890484
+      },
+      "occurrence": {
+        "rate": 0.0362,
+        "lift": 0.32,
+        "detection_count": 23,
+        "total_checklists": 636,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.2,
+        "max_count": 7
+      },
+      "seasonal": {
+        "spring": 0.0111,
+        "summer": 0.3333,
+        "fall": 0.0909,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.3333,
+        "6": 0.0,
+        "7": 0.5,
+        "8": 0.5,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 198,
       "locality_id": "L15609026",
       "name": "Osborne Mill Preserve",
@@ -7266,7 +7274,7 @@
       },
       "occurrence": {
         "rate": 0.0361,
-        "lift": 0.31,
+        "lift": 0.32,
         "detection_count": 3,
         "total_checklists": 83,
         "confidence": "medium"
@@ -7305,7 +7313,7 @@
         "rate": 0.0353,
         "lift": 0.31,
         "detection_count": 23,
-        "total_checklists": 651,
+        "total_checklists": 652,
         "confidence": "high"
       },
       "abundance": {
@@ -7378,10 +7386,10 @@
         "longitude": -83.7200153
       },
       "occurrence": {
-        "rate": 0.0347,
+        "rate": 0.0345,
         "lift": 0.3,
         "detection_count": 5,
-        "total_checklists": 144,
+        "total_checklists": 145,
         "confidence": "high"
       },
       "abundance": {
@@ -7418,7 +7426,7 @@
       },
       "occurrence": {
         "rate": 0.0314,
-        "lift": 0.27,
+        "lift": 0.28,
         "detection_count": 5,
         "total_checklists": 159,
         "confidence": "high"
@@ -7485,10 +7493,10 @@
         "longitude": -83.6917019
       },
       "occurrence": {
-        "rate": 0.0308,
+        "rate": 0.0305,
         "lift": 0.27,
         "detection_count": 4,
-        "total_checklists": 130,
+        "total_checklists": 131,
         "confidence": "high"
       },
       "abundance": {
@@ -7502,6 +7510,7 @@
         "winter": 0.0
       },
       "monthly": {
+        "1": 0.0,
         "4": 0.0,
         "5": 0.0,
         "6": 0.0625,
@@ -7562,10 +7571,10 @@
         "longitude": -83.7287848
       },
       "occurrence": {
-        "rate": 0.0299,
+        "rate": 0.0297,
         "lift": 0.26,
         "detection_count": 32,
-        "total_checklists": 1072,
+        "total_checklists": 1078,
         "confidence": "high"
       },
       "abundance": {
@@ -7595,35 +7604,6 @@
     },
     {
       "rank": 207,
-      "locality_id": "L18089501",
-      "name": "Willow Rd. and Maple Rd. fields",
-      "coordinates": {
-        "latitude": 42.1116909,
-        "longitude": -83.7748474
-      },
-      "occurrence": {
-        "rate": 0.0294,
-        "lift": 0.26,
-        "detection_count": 1,
-        "total_checklists": 34,
-        "confidence": "medium"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
-      },
-      "seasonal": {
-        "spring": 0.0,
-        "fall": 0.0
-      },
-      "monthly": {
-        "5": 0.0,
-        "9": 0.0,
-        "10": 0.0
-      }
-    },
-    {
-      "rank": 208,
       "locality_id": "L30555826",
       "name": "Lehman Rd. fluddle",
       "coordinates": {
@@ -7650,7 +7630,7 @@
       }
     },
     {
-      "rank": 209,
+      "rank": 208,
       "locality_id": "L1038865",
       "name": "Montibeller Park",
       "coordinates": {
@@ -7682,7 +7662,7 @@
       }
     },
     {
-      "rank": 210,
+      "rank": 209,
       "locality_id": "L16088080",
       "name": "B2B Trail--Lyndon Twp. trailhead",
       "coordinates": {
@@ -7690,10 +7670,10 @@
         "longitude": -84.0780909
       },
       "occurrence": {
-        "rate": 0.0282,
+        "rate": 0.028,
         "lift": 0.24,
         "detection_count": 4,
-        "total_checklists": 142,
+        "total_checklists": 143,
         "confidence": "high"
       },
       "abundance": {
@@ -7703,7 +7683,8 @@
       "seasonal": {
         "spring": 0.0099,
         "summer": 0.125,
-        "fall": 0.0
+        "fall": 0.0,
+        "winter": 0.0
       },
       "monthly": {
         "3": 0.0,
@@ -7718,6 +7699,36 @@
       }
     },
     {
+      "rank": 210,
+      "locality_id": "L18089501",
+      "name": "Willow Rd. and Maple Rd. fields",
+      "coordinates": {
+        "latitude": 42.1116909,
+        "longitude": -83.7748474
+      },
+      "occurrence": {
+        "rate": 0.0278,
+        "lift": 0.24,
+        "detection_count": 1,
+        "total_checklists": 36,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "5": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
       "rank": 211,
       "locality_id": "L605901",
       "name": "Avis Farms--ponds",
@@ -7726,10 +7737,10 @@
         "longitude": -83.7429428
       },
       "occurrence": {
-        "rate": 0.0274,
+        "rate": 0.0273,
         "lift": 0.24,
         "detection_count": 14,
-        "total_checklists": 511,
+        "total_checklists": 512,
         "confidence": "high"
       },
       "abundance": {
@@ -7766,10 +7777,10 @@
         "longitude": -83.6829567
       },
       "occurrence": {
-        "rate": 0.027,
+        "rate": 0.0268,
         "lift": 0.23,
         "detection_count": 3,
-        "total_checklists": 111,
+        "total_checklists": 112,
         "confidence": "high"
       },
       "abundance": {
@@ -7863,39 +7874,6 @@
     },
     {
       "rank": 215,
-      "locality_id": "L4904660",
-      "name": "University of Michigan--Northwood V. housing area",
-      "coordinates": {
-        "latitude": 42.2946435,
-        "longitude": -83.6955535
-      },
-      "occurrence": {
-        "rate": 0.0244,
-        "lift": 0.21,
-        "detection_count": 1,
-        "total_checklists": 41,
-        "confidence": "medium"
-      },
-      "abundance": {
-        "average_count": 3.0,
-        "max_count": 3
-      },
-      "seasonal": {
-        "spring": 0.0,
-        "fall": 0.0,
-        "winter": 0.0
-      },
-      "monthly": {
-        "2": 0.0,
-        "3": 0.0,
-        "5": 0.0,
-        "8": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 216,
       "locality_id": "L16962498",
       "name": "Foster Rd. bridge",
       "coordinates": {
@@ -7903,10 +7881,10 @@
         "longitude": -83.7780377
       },
       "occurrence": {
-        "rate": 0.024,
+        "rate": 0.0238,
         "lift": 0.21,
         "detection_count": 3,
-        "total_checklists": 125,
+        "total_checklists": 126,
         "confidence": "high"
       },
       "abundance": {
@@ -7930,7 +7908,7 @@
       }
     },
     {
-      "rank": 217,
+      "rank": 216,
       "locality_id": "L30026247",
       "name": "Lima Center Woods",
       "coordinates": {
@@ -7954,6 +7932,39 @@
       "monthly": {
         "3": 0.0,
         "5": 0.1111
+      }
+    },
+    {
+      "rank": 217,
+      "locality_id": "L4904660",
+      "name": "University of Michigan--Northwood V. housing area",
+      "coordinates": {
+        "latitude": 42.2946435,
+        "longitude": -83.6955535
+      },
+      "occurrence": {
+        "rate": 0.0238,
+        "lift": 0.21,
+        "detection_count": 1,
+        "total_checklists": 42,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "8": 0.0,
+        "11": 0.0,
+        "12": 0.0
       }
     },
     {
@@ -8108,7 +8119,7 @@
       },
       "occurrence": {
         "rate": 0.02,
-        "lift": 0.17,
+        "lift": 0.18,
         "detection_count": 1,
         "total_checklists": 50,
         "confidence": "medium"
@@ -8177,7 +8188,7 @@
         "rate": 0.0172,
         "lift": 0.15,
         "detection_count": 14,
-        "total_checklists": 812,
+        "total_checklists": 813,
         "confidence": "high"
       },
       "abundance": {
@@ -8214,10 +8225,10 @@
         "longitude": -83.725723
       },
       "occurrence": {
-        "rate": 0.0171,
+        "rate": 0.017,
         "lift": 0.15,
         "detection_count": 6,
-        "total_checklists": 351,
+        "total_checklists": 353,
         "confidence": "high"
       },
       "abundance": {
@@ -8246,45 +8257,6 @@
     },
     {
       "rank": 226,
-      "locality_id": "L1324728",
-      "name": "Ford Lake--Bridge Rd. dam",
-      "coordinates": {
-        "latitude": 42.2061917,
-        "longitude": -83.5577067
-      },
-      "occurrence": {
-        "rate": 0.017,
-        "lift": 0.15,
-        "detection_count": 11,
-        "total_checklists": 646,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 2.7,
-        "max_count": 6
-      },
-      "seasonal": {
-        "spring": 0.0732,
-        "summer": 0.5,
-        "fall": 0.0233,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.2609,
-        "6": 0.6667,
-        "7": 0.3333,
-        "8": 0.1818,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 227,
       "locality_id": "L1036396",
       "name": "Little Lake",
       "coordinates": {
@@ -8321,37 +8293,7 @@
       }
     },
     {
-      "rank": 228,
-      "locality_id": "L1044770",
-      "name": "Washtenaw Community College--East Woods",
-      "coordinates": {
-        "latitude": 42.2607315,
-        "longitude": -83.6650944
-      },
-      "occurrence": {
-        "rate": 0.0167,
-        "lift": 0.14,
-        "detection_count": 1,
-        "total_checklists": 60,
-        "confidence": "medium"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
-      },
-      "seasonal": {
-        "spring": 0.2,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "4": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 229,
+      "rank": 227,
       "locality_id": "L1275192",
       "name": "Whitmore Lake (Washtenaw Co.)",
       "coordinates": {
@@ -8391,6 +8333,75 @@
       }
     },
     {
+      "rank": 228,
+      "locality_id": "L1044770",
+      "name": "Washtenaw Community College--East Woods",
+      "coordinates": {
+        "latitude": 42.2607315,
+        "longitude": -83.6650944
+      },
+      "occurrence": {
+        "rate": 0.0164,
+        "lift": 0.14,
+        "detection_count": 1,
+        "total_checklists": 61,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.2,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "4": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 229,
+      "locality_id": "L1324728",
+      "name": "Ford Lake--Bridge Rd. dam",
+      "coordinates": {
+        "latitude": 42.2061917,
+        "longitude": -83.5577067
+      },
+      "occurrence": {
+        "rate": 0.0147,
+        "lift": 0.13,
+        "detection_count": 11,
+        "total_checklists": 747,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.7,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.0732,
+        "summer": 0.5,
+        "fall": 0.0233,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.2609,
+        "6": 0.6667,
+        "7": 0.3333,
+        "8": 0.1818,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 230,
       "locality_id": "L901120",
       "name": "Marsh View Meadows Park",
@@ -8400,7 +8411,7 @@
       },
       "occurrence": {
         "rate": 0.0143,
-        "lift": 0.12,
+        "lift": 0.13,
         "detection_count": 1,
         "total_checklists": 70,
         "confidence": "medium"
@@ -8432,10 +8443,10 @@
         "longitude": -83.7561071
       },
       "occurrence": {
-        "rate": 0.0123,
+        "rate": 0.0122,
         "lift": 0.11,
         "detection_count": 34,
-        "total_checklists": 2774,
+        "total_checklists": 2777,
         "confidence": "high"
       },
       "abundance": {
@@ -8472,10 +8483,10 @@
         "longitude": -83.6711213
       },
       "occurrence": {
-        "rate": 0.012,
+        "rate": 0.0118,
         "lift": 0.1,
         "detection_count": 2,
-        "total_checklists": 167,
+        "total_checklists": 170,
         "confidence": "high"
       },
       "abundance": {
@@ -8543,6 +8554,41 @@
     },
     {
       "rank": 234,
+      "locality_id": "L18274968",
+      "name": "Huron River Oxbow",
+      "coordinates": {
+        "latitude": 42.3127811,
+        "longitude": -83.7916523
+      },
+      "occurrence": {
+        "rate": 0.0101,
+        "lift": 0.09,
+        "detection_count": 2,
+        "total_checklists": 199,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0118,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 235,
       "locality_id": "L11867399",
       "name": "Grizzly Nature Trail",
       "coordinates": {
@@ -8550,10 +8596,10 @@
         "longitude": -83.6376983
       },
       "occurrence": {
-        "rate": 0.0102,
+        "rate": 0.0101,
         "lift": 0.09,
         "detection_count": 2,
-        "total_checklists": 197,
+        "total_checklists": 198,
         "confidence": "high"
       },
       "abundance": {
@@ -8582,41 +8628,6 @@
       }
     },
     {
-      "rank": 235,
-      "locality_id": "L18274968",
-      "name": "Huron River Oxbow",
-      "coordinates": {
-        "latitude": 42.3127811,
-        "longitude": -83.7916523
-      },
-      "occurrence": {
-        "rate": 0.0101,
-        "lift": 0.09,
-        "detection_count": 2,
-        "total_checklists": 198,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
-      },
-      "seasonal": {
-        "spring": 0.0118,
-        "fall": 0.0,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "8": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
       "rank": 236,
       "locality_id": "L477087",
       "name": "Portage Lake (Washtenaw Co.)",
@@ -8625,10 +8636,10 @@
         "longitude": -83.9254618
       },
       "occurrence": {
-        "rate": 0.0093,
+        "rate": 0.0091,
         "lift": 0.08,
         "detection_count": 10,
-        "total_checklists": 1077,
+        "total_checklists": 1093,
         "confidence": "high"
       },
       "abundance": {
@@ -8700,7 +8711,7 @@
         "rate": 0.0071,
         "lift": 0.06,
         "detection_count": 14,
-        "total_checklists": 1962,
+        "total_checklists": 1968,
         "confidence": "high"
       },
       "abundance": {
@@ -8740,7 +8751,7 @@
         "rate": 0.0071,
         "lift": 0.06,
         "detection_count": 4,
-        "total_checklists": 561,
+        "total_checklists": 562,
         "confidence": "high"
       },
       "abundance": {
@@ -8813,10 +8824,10 @@
         "longitude": -83.6952209
       },
       "occurrence": {
-        "rate": 0.0055,
+        "rate": 0.0054,
         "lift": 0.05,
         "detection_count": 4,
-        "total_checklists": 728,
+        "total_checklists": 736,
         "confidence": "high"
       },
       "abundance": {
@@ -8856,7 +8867,7 @@
         "rate": 0.0052,
         "lift": 0.05,
         "detection_count": 4,
-        "total_checklists": 762,
+        "total_checklists": 763,
         "confidence": "high"
       },
       "abundance": {
@@ -8936,7 +8947,7 @@
         "rate": 0.0042,
         "lift": 0.04,
         "detection_count": 3,
-        "total_checklists": 718,
+        "total_checklists": 719,
         "confidence": "high"
       },
       "abundance": {
@@ -8973,10 +8984,10 @@
         "longitude": -83.7376857
       },
       "occurrence": {
-        "rate": 0.002,
+        "rate": 0.0019,
         "lift": 0.02,
         "detection_count": 1,
-        "total_checklists": 509,
+        "total_checklists": 517,
         "confidence": "high"
       },
       "abundance": {
@@ -9006,7 +9017,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-02T01:07:12.571985Z",
+    "generated_at": "2026-03-07T15:12:57.118330Z",
     "data_version": "Dec-2025"
   }
 }

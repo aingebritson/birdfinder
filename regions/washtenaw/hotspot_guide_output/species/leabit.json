@@ -8,13 +8,13 @@
     "county_occurrence_rate": 0.0012,
     "total_detections": 173,
     "total_checklists_with_species": 173,
-    "total_checklists_countywide": 147856,
+    "total_checklists_countywide": 148961,
     "hotspots_detected": 20
   },
   "summary": {
     "total_hotspots_detected": 20,
     "total_detections": 173,
-    "highest_occurrence_rate": 0.0802
+    "highest_occurrence_rate": 0.0799
   },
   "hotspots": [
     {
@@ -26,10 +26,10 @@
         "longitude": -83.6015797
       },
       "occurrence": {
-        "rate": 0.0802,
-        "lift": 68.55,
+        "rate": 0.0799,
+        "lift": 68.78,
         "detection_count": 139,
-        "total_checklists": 1733,
+        "total_checklists": 1740,
         "confidence": "high"
       },
       "abundance": {
@@ -67,7 +67,7 @@
       },
       "occurrence": {
         "rate": 0.0294,
-        "lift": 25.14,
+        "lift": 25.32,
         "detection_count": 1,
         "total_checklists": 34,
         "confidence": "medium"
@@ -93,10 +93,10 @@
         "longitude": -84.0583513
       },
       "occurrence": {
-        "rate": 0.0167,
-        "lift": 14.24,
+        "rate": 0.0164,
+        "lift": 14.12,
         "detection_count": 1,
-        "total_checklists": 60,
+        "total_checklists": 61,
         "confidence": "medium"
       },
       "abundance": {
@@ -129,7 +129,7 @@
       },
       "occurrence": {
         "rate": 0.0098,
-        "lift": 8.38,
+        "lift": 8.44,
         "detection_count": 1,
         "total_checklists": 102,
         "confidence": "high"
@@ -167,7 +167,7 @@
       },
       "occurrence": {
         "rate": 0.0075,
-        "lift": 6.43,
+        "lift": 6.47,
         "detection_count": 1,
         "total_checklists": 133,
         "confidence": "high"
@@ -205,7 +205,7 @@
       },
       "occurrence": {
         "rate": 0.0068,
-        "lift": 5.85,
+        "lift": 5.9,
         "detection_count": 1,
         "total_checklists": 146,
         "confidence": "high"
@@ -244,7 +244,7 @@
       },
       "occurrence": {
         "rate": 0.0064,
-        "lift": 5.48,
+        "lift": 5.52,
         "detection_count": 1,
         "total_checklists": 156,
         "confidence": "high"
@@ -277,9 +277,9 @@
       },
       "occurrence": {
         "rate": 0.0042,
-        "lift": 3.59,
+        "lift": 3.62,
         "detection_count": 9,
-        "total_checklists": 2142,
+        "total_checklists": 2143,
         "confidence": "high"
       },
       "abundance": {
@@ -288,7 +288,7 @@
       },
       "seasonal": {
         "spring": 0.0008,
-        "summer": 0.0341,
+        "summer": 0.034,
         "fall": 0.002,
         "winter": 0.0
       },
@@ -299,7 +299,7 @@
         "4": 0.0,
         "5": 0.0029,
         "6": 0.05,
-        "7": 0.0118,
+        "7": 0.0116,
         "8": 0.0,
         "9": 0.0075,
         "10": 0.0,
@@ -317,9 +317,9 @@
       },
       "occurrence": {
         "rate": 0.0029,
-        "lift": 2.45,
+        "lift": 2.46,
         "detection_count": 3,
-        "total_checklists": 1048,
+        "total_checklists": 1049,
         "confidence": "high"
       },
       "abundance": {
@@ -357,7 +357,7 @@
       },
       "occurrence": {
         "rate": 0.0027,
-        "lift": 2.35,
+        "lift": 2.37,
         "detection_count": 1,
         "total_checklists": 364,
         "confidence": "high"
@@ -389,46 +389,6 @@
     },
     {
       "rank": 11,
-      "locality_id": "L5580294",
-      "name": "Whitmore Lake Preserve",
-      "coordinates": {
-        "latitude": 42.4130317,
-        "longitude": -83.7344912
-      },
-      "occurrence": {
-        "rate": 0.0025,
-        "lift": 2.11,
-        "detection_count": 1,
-        "total_checklists": 406,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
-      },
-      "seasonal": {
-        "spring": 0.0,
-        "summer": 0.0152,
-        "fall": 0.0,
-        "winter": 0.0
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 0.0263,
-        "7": 0.0,
-        "8": 0.0,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0
-      }
-    },
-    {
-      "rank": 12,
       "locality_id": "L2862482",
       "name": "Park Lyndon County Park",
       "coordinates": {
@@ -437,9 +397,9 @@
       },
       "occurrence": {
         "rate": 0.0024,
-        "lift": 2.06,
+        "lift": 2.07,
         "detection_count": 2,
-        "total_checklists": 831,
+        "total_checklists": 833,
         "confidence": "high"
       },
       "abundance": {
@@ -468,6 +428,46 @@
       }
     },
     {
+      "rank": 12,
+      "locality_id": "L5580294",
+      "name": "Whitmore Lake Preserve",
+      "coordinates": {
+        "latitude": 42.4130317,
+        "longitude": -83.7344912
+      },
+      "occurrence": {
+        "rate": 0.0024,
+        "lift": 2.1,
+        "detection_count": 1,
+        "total_checklists": 411,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0152,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0263,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
       "rank": 13,
       "locality_id": "L3576213",
       "name": "M-52 and Lehman Rd. fluddle",
@@ -477,7 +477,7 @@
       },
       "occurrence": {
         "rate": 0.0018,
-        "lift": 1.5,
+        "lift": 1.51,
         "detection_count": 1,
         "total_checklists": 570,
         "confidence": "high"
@@ -517,9 +517,9 @@
       },
       "occurrence": {
         "rate": 0.0017,
-        "lift": 1.41,
+        "lift": 1.42,
         "detection_count": 4,
-        "total_checklists": 2419,
+        "total_checklists": 2420,
         "confidence": "high"
       },
       "abundance": {
@@ -557,9 +557,9 @@
       },
       "occurrence": {
         "rate": 0.0013,
-        "lift": 1.14,
+        "lift": 1.15,
         "detection_count": 2,
-        "total_checklists": 1499,
+        "total_checklists": 1502,
         "confidence": "high"
       },
       "abundance": {
@@ -599,7 +599,7 @@
         "rate": 0.0012,
         "lift": 1.04,
         "detection_count": 1,
-        "total_checklists": 824,
+        "total_checklists": 826,
         "confidence": "high"
       },
       "abundance": {
@@ -639,7 +639,7 @@
         "rate": 0.0005,
         "lift": 0.44,
         "detection_count": 1,
-        "total_checklists": 1936,
+        "total_checklists": 1945,
         "confidence": "high"
       },
       "abundance": {
@@ -719,7 +719,7 @@
         "rate": 0.0003,
         "lift": 0.26,
         "detection_count": 1,
-        "total_checklists": 3323,
+        "total_checklists": 3324,
         "confidence": "high"
       },
       "abundance": {
@@ -759,7 +759,7 @@
         "rate": 0.0002,
         "lift": 0.18,
         "detection_count": 1,
-        "total_checklists": 4859,
+        "total_checklists": 4888,
         "confidence": "high"
       },
       "abundance": {
@@ -789,7 +789,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-02T01:07:12.990724Z",
+    "generated_at": "2026-03-07T15:12:57.548677Z",
     "data_version": "Dec-2025"
   }
 }

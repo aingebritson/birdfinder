@@ -6,15 +6,15 @@
   },
   "baseline": {
     "county_occurrence_rate": 0.0006,
-    "total_detections": 93,
-    "total_checklists_with_species": 93,
-    "total_checklists_countywide": 147856,
+    "total_detections": 94,
+    "total_checklists_with_species": 94,
+    "total_checklists_countywide": 148961,
     "hotspots_detected": 22
   },
   "summary": {
     "total_hotspots_detected": 22,
-    "total_detections": 93,
-    "highest_occurrence_rate": 0.0833
+    "total_detections": 94,
+    "highest_occurrence_rate": 0.0984
   },
   "hotspots": [
     {
@@ -26,24 +26,24 @@
         "longitude": -84.0583513
       },
       "occurrence": {
-        "rate": 0.0833,
-        "lift": 132.49,
-        "detection_count": 5,
-        "total_checklists": 60,
+        "rate": 0.0984,
+        "lift": 155.87,
+        "detection_count": 6,
+        "total_checklists": 61,
         "confidence": "medium"
       },
       "abundance": {
-        "average_count": 1.8,
+        "average_count": 1.7,
         "max_count": 2
       },
       "seasonal": {
         "spring": 0.0,
         "summer": 0.0,
         "fall": 0.1538,
-        "winter": 0.125
+        "winter": 0.2222
       },
       "monthly": {
-        "1": 0.0,
+        "1": 0.1667,
         "4": 0.0,
         "5": 0.0,
         "7": 0.0,
@@ -62,7 +62,7 @@
       },
       "occurrence": {
         "rate": 0.0327,
-        "lift": 51.96,
+        "lift": 51.79,
         "detection_count": 5,
         "total_checklists": 153,
         "confidence": "high"
@@ -102,7 +102,7 @@
       },
       "occurrence": {
         "rate": 0.0092,
-        "lift": 14.59,
+        "lift": 14.54,
         "detection_count": 2,
         "total_checklists": 218,
         "confidence": "high"
@@ -134,46 +134,6 @@
     },
     {
       "rank": 4,
-      "locality_id": "L895861",
-      "name": "Brauer Preserve",
-      "coordinates": {
-        "latitude": 42.2349202,
-        "longitude": -83.9006352
-      },
-      "occurrence": {
-        "rate": 0.0087,
-        "lift": 13.78,
-        "detection_count": 3,
-        "total_checklists": 346,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
-      },
-      "seasonal": {
-        "spring": 0.0,
-        "summer": 0.0,
-        "fall": 0.0,
-        "winter": 0.0556
-      },
-      "monthly": {
-        "1": 0.1176,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 0.0,
-        "7": 0.0,
-        "8": 0.0,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0435
-      }
-    },
-    {
-      "rank": 5,
       "locality_id": "L1131706",
       "name": "Pinckney RA--Embury Rd.",
       "coordinates": {
@@ -182,7 +142,7 @@
       },
       "occurrence": {
         "rate": 0.0086,
-        "lift": 13.69,
+        "lift": 13.65,
         "detection_count": 11,
         "total_checklists": 1277,
         "confidence": "high"
@@ -213,6 +173,46 @@
       }
     },
     {
+      "rank": 5,
+      "locality_id": "L895861",
+      "name": "Brauer Preserve",
+      "coordinates": {
+        "latitude": 42.2349202,
+        "longitude": -83.9006352
+      },
+      "occurrence": {
+        "rate": 0.0086,
+        "lift": 13.66,
+        "detection_count": 3,
+        "total_checklists": 348,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0536
+      },
+      "monthly": {
+        "1": 0.1053,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0435
+      }
+    },
+    {
       "rank": 6,
       "locality_id": "L899963",
       "name": "LeFurge Woods Nature Preserve",
@@ -221,10 +221,10 @@
         "longitude": -83.6015797
       },
       "occurrence": {
-        "rate": 0.0081,
-        "lift": 12.84,
+        "rate": 0.008,
+        "lift": 12.75,
         "detection_count": 14,
-        "total_checklists": 1733,
+        "total_checklists": 1740,
         "confidence": "high"
       },
       "abundance": {
@@ -235,7 +235,7 @@
         "spring": 0.0,
         "summer": 0.0,
         "fall": 0.012,
-        "winter": 0.0351
+        "winter": 0.034
       },
       "monthly": {
         "1": 0.0,
@@ -261,10 +261,10 @@
         "longitude": -83.6694074
       },
       "occurrence": {
-        "rate": 0.0053,
-        "lift": 8.37,
+        "rate": 0.0052,
+        "lift": 8.25,
         "detection_count": 1,
-        "total_checklists": 190,
+        "total_checklists": 192,
         "confidence": "high"
       },
       "abundance": {
@@ -275,7 +275,7 @@
         "spring": 0.0,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0303
+        "winter": 0.0286
       },
       "monthly": {
         "1": 0.0,
@@ -302,9 +302,9 @@
       },
       "occurrence": {
         "rate": 0.0049,
-        "lift": 7.83,
+        "lift": 7.8,
         "detection_count": 4,
-        "total_checklists": 812,
+        "total_checklists": 813,
         "confidence": "high"
       },
       "abundance": {
@@ -315,10 +315,10 @@
         "spring": 0.0,
         "summer": 0.0,
         "fall": 0.0233,
-        "winter": 0.0364
+        "winter": 0.0357
       },
       "monthly": {
-        "1": 0.125,
+        "1": 0.1111,
         "2": 0.0,
         "3": 0.0,
         "4": 0.0,
@@ -342,9 +342,9 @@
       },
       "occurrence": {
         "rate": 0.0043,
-        "lift": 6.87,
+        "lift": 6.81,
         "detection_count": 21,
-        "total_checklists": 4859,
+        "total_checklists": 4888,
         "confidence": "high"
       },
       "abundance": {
@@ -382,9 +382,9 @@
       },
       "occurrence": {
         "rate": 0.0039,
-        "lift": 6.26,
+        "lift": 6.21,
         "detection_count": 3,
-        "total_checklists": 762,
+        "total_checklists": 765,
         "confidence": "high"
       },
       "abundance": {
@@ -395,10 +395,10 @@
         "spring": 0.0081,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0083
+        "winter": 0.0081
       },
       "monthly": {
-        "1": 0.0156,
+        "1": 0.0149,
         "2": 0.0,
         "3": 0.0,
         "4": 0.0408,
@@ -422,9 +422,9 @@
       },
       "occurrence": {
         "rate": 0.0028,
-        "lift": 4.45,
+        "lift": 4.42,
         "detection_count": 2,
-        "total_checklists": 715,
+        "total_checklists": 717,
         "confidence": "high"
       },
       "abundance": {
@@ -461,9 +461,9 @@
       },
       "occurrence": {
         "rate": 0.0026,
-        "lift": 4.14,
+        "lift": 4.11,
         "detection_count": 2,
-        "total_checklists": 768,
+        "total_checklists": 771,
         "confidence": "high"
       },
       "abundance": {
@@ -474,10 +474,10 @@
         "spring": 0.0,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0104
+        "winter": 0.0103
       },
       "monthly": {
-        "1": 0.0267,
+        "1": 0.0256,
         "2": 0.0,
         "3": 0.0,
         "4": 0.0,
@@ -493,6 +493,46 @@
     },
     {
       "rank": 13,
+      "locality_id": "L1173642",
+      "name": "Leonard Preserve",
+      "coordinates": {
+        "latitude": 42.155339,
+        "longitude": -84.0557957
+      },
+      "occurrence": {
+        "rate": 0.0024,
+        "lift": 3.8,
+        "detection_count": 1,
+        "total_checklists": 417,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0145
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0323
+      }
+    },
+    {
+      "rank": 14,
       "locality_id": "L5580294",
       "name": "Whitmore Lake Preserve",
       "coordinates": {
@@ -500,10 +540,10 @@
         "longitude": -83.7344912
       },
       "occurrence": {
-        "rate": 0.0025,
-        "lift": 3.92,
+        "rate": 0.0024,
+        "lift": 3.86,
         "detection_count": 1,
-        "total_checklists": 406,
+        "total_checklists": 411,
         "confidence": "high"
       },
       "abundance": {
@@ -532,46 +572,6 @@
       }
     },
     {
-      "rank": 14,
-      "locality_id": "L1173642",
-      "name": "Leonard Preserve",
-      "coordinates": {
-        "latitude": 42.155339,
-        "longitude": -84.0557957
-      },
-      "occurrence": {
-        "rate": 0.0024,
-        "lift": 3.85,
-        "detection_count": 1,
-        "total_checklists": 413,
-        "confidence": "high"
-      },
-      "abundance": {
-        "average_count": 1.0,
-        "max_count": 1
-      },
-      "seasonal": {
-        "spring": 0.0,
-        "summer": 0.0,
-        "fall": 0.0,
-        "winter": 0.0154
-      },
-      "monthly": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 0.0,
-        "7": 0.0,
-        "8": 0.0,
-        "9": 0.0,
-        "10": 0.0,
-        "11": 0.0,
-        "12": 0.0323
-      }
-    },
-    {
       "rank": 15,
       "locality_id": "L459615",
       "name": "Independence Lake County Park",
@@ -581,9 +581,9 @@
       },
       "occurrence": {
         "rate": 0.0021,
-        "lift": 3.29,
+        "lift": 3.27,
         "detection_count": 5,
-        "total_checklists": 2419,
+        "total_checklists": 2420,
         "confidence": "high"
       },
       "abundance": {
@@ -621,9 +621,9 @@
       },
       "occurrence": {
         "rate": 0.002,
-        "lift": 3.22,
+        "lift": 3.2,
         "detection_count": 1,
-        "total_checklists": 493,
+        "total_checklists": 495,
         "confidence": "high"
       },
       "abundance": {
@@ -634,7 +634,7 @@
         "spring": 0.0,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0101
+        "winter": 0.0099
       },
       "monthly": {
         "1": 0.0,
@@ -648,7 +648,7 @@
         "9": 0.0,
         "10": 0.0,
         "11": 0.0,
-        "12": 0.0189
+        "12": 0.0185
       }
     },
     {
@@ -661,9 +661,9 @@
       },
       "occurrence": {
         "rate": 0.0016,
-        "lift": 2.6,
+        "lift": 2.59,
         "detection_count": 2,
-        "total_checklists": 1222,
+        "total_checklists": 1226,
         "confidence": "high"
       },
       "abundance": {
@@ -686,7 +686,7 @@
         "7": 0.0,
         "8": 0.0,
         "9": 0.0,
-        "10": 0.0333,
+        "10": 0.0328,
         "11": 0.0,
         "12": 0.0
       }
@@ -700,10 +700,10 @@
         "longitude": -83.7607666
       },
       "occurrence": {
-        "rate": 0.0013,
-        "lift": 1.99,
+        "rate": 0.0012,
+        "lift": 1.98,
         "detection_count": 1,
-        "total_checklists": 800,
+        "total_checklists": 801,
         "confidence": "high"
       },
       "abundance": {
@@ -741,9 +741,9 @@
       },
       "occurrence": {
         "rate": 0.0009,
-        "lift": 1.44,
+        "lift": 1.43,
         "detection_count": 3,
-        "total_checklists": 3323,
+        "total_checklists": 3324,
         "confidence": "high"
       },
       "abundance": {
@@ -781,9 +781,9 @@
       },
       "occurrence": {
         "rate": 0.0008,
-        "lift": 1.23,
+        "lift": 1.22,
         "detection_count": 1,
-        "total_checklists": 1291,
+        "total_checklists": 1298,
         "confidence": "high"
       },
       "abundance": {
@@ -794,7 +794,7 @@
         "spring": 0.0,
         "summer": 0.0,
         "fall": 0.0,
-        "winter": 0.0043
+        "winter": 0.0042
       },
       "monthly": {
         "1": 0.0,
@@ -808,7 +808,7 @@
         "9": 0.0,
         "10": 0.0,
         "11": 0.0,
-        "12": 0.0149
+        "12": 0.0145
       }
     },
     {
@@ -823,7 +823,7 @@
         "rate": 0.0007,
         "lift": 1.12,
         "detection_count": 1,
-        "total_checklists": 1417,
+        "total_checklists": 1418,
         "confidence": "high"
       },
       "abundance": {
@@ -861,9 +861,9 @@
       },
       "occurrence": {
         "rate": 0.0003,
-        "lift": 0.51,
+        "lift": 0.5,
         "detection_count": 4,
-        "total_checklists": 12539,
+        "total_checklists": 12588,
         "confidence": "high"
       },
       "abundance": {
@@ -893,7 +893,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-02T01:07:12.989409Z",
+    "generated_at": "2026-03-07T15:12:57.547783Z",
     "data_version": "Dec-2025"
   }
 }
