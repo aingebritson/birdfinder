@@ -4,7 +4,7 @@
 
 A bird phenology web application that displays migration timing, detection probabilities, and birding hotspots for species in your region. Built with eBird data. The root landing page serves as a county directory; each county's app lives in its own subdirectory.
 
-**Live Example:** Washtenaw County, Michigan (340 species, 315 hotspots)
+**Live Example:** Washtenaw County, Michigan (327 species, 315 hotspots)
 
 ## Features
 
