@@ -36,9 +36,10 @@ jobs:
           # Remove all files except .git
           find . -maxdepth 1 ! -name '.git' ! -name '.' ! -name '..' -exec rm -rf {} +
 
-          # Copy landing page and about page to root
+          # Copy landing page, about page, and custom domain config to root
           git checkout main -- index.html
           git checkout main -- about.html
+          git checkout main -- CNAME
 
           # Copy washtenaw app into washtenaw/ subdirectory
           git checkout main -- washtenaw/
