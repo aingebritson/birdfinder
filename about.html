@@ -376,19 +376,19 @@
         question.</p>
 
         <p><strong>Species phenology</strong> is derived from the
-        <strong>eBird barchart export</strong> — a summary of reporting frequency across a
+        <strong>eBird barchart export</strong>, a summary of reporting frequency across a
         county or region for each of 48 calendar weeks (4 weeks per month, every month).
         Each value is the fraction of complete eBird checklists in which a given species
         was recorded. These are the same numbers that drive the familiar colored bars in
         the eBird species barchart tool.</p>
 
         <p><strong>Hotspot rankings</strong> are derived from the
-        <strong>eBird Basic Dataset (EBD)</strong> — the full, checklist-level export for
+        <strong>eBird Basic Dataset (EBD)</strong>, the full, checklist-level export for
         the county. This gives individual observation and checklist records, which allows
         occurrence rates, counts, and seasonal breakdowns to be calculated per hotspot.</p>
 
-        <p>Only <strong>complete checklists</strong> — those submitted with "All Species
-        Reported" checked — are used in any calculation. Protocol checklists where
+        <p>Only <strong>complete checklists</strong>, those submitted with "All Species
+        Reported" checked, are used in any calculation. Protocol checklists where
         the observer may have recorded only selected species are excluded, so that
         absence of a species on a checklist can be treated as a genuine non-detection.</p>
     </section>
@@ -407,7 +407,7 @@
             <p><strong>What counts as a valley?</strong>
             A valley is a run of 4 or more consecutive weeks where detection frequency
             falls below both 15% of the species' annual peak frequency and below 0.5%
-            in absolute terms. Both conditions must hold — a species with a very high
+            in absolute terms. Both conditions must hold: a species with a very high
             peak that dips to 10% of that peak is not considered absent.</p>
         </div>
 
@@ -430,13 +430,13 @@
                 <div class="pattern-name">Overwintering species</div>
                 <p>One valley, occurring in summer (May–August). The species is absent
                 in summer but present fall through spring, wrapping around the year.
-                Examples: American Tree Sparrow, Snow Bunting.</p>
+                Examples: American Tree Sparrow, Hooded Merganser.</p>
             </div>
             <div class="pattern-card two-passage">
                 <div class="pattern-name">Two-passage migrant</div>
                 <p>Two valleys — one in summer, one in winter. The species is only
                 reliably present during spring and fall migration windows.
-                Examples: Semipalmated Sandpiper, Blackpoll Warbler, Baird's Sandpiper.</p>
+                Examples: Solitary Sandpiper, Tennessee Warbler, Rusty Blackbird.</p>
             </div>
             <div class="pattern-card irregular">
                 <div class="pattern-name">Vagrant / Irregular</div>
@@ -445,12 +445,6 @@
                 Timing is simplified to first appearance, peak, and last appearance.</p>
             </div>
         </div>
-
-        <p>A special case handles <strong>three-valley migrants</strong> — species with a
-        winter valley, a narrow summer presence window, and a second winter valley. This
-        pattern (winter–summer–winter) is reclassified as a two-passage migrant, because
-        the "summer presence" is in fact a brief inter-passage gap rather than sustained
-        breeding. Many shorebirds fall into this pattern.</p>
     </section>
 
     <!-- ── Arrival / Departure ──────────────────────────────────────── -->
@@ -460,7 +454,7 @@
         <h2 class="section-heading">Calculating arrival, peak, and departure</h2>
 
         <p>Once a species is classified, its presence window is defined by the valley
-        boundaries — the weeks between the end of one absence period and the start of
+        boundaries: the weeks between the end of one absence period and the start of
         the next. Within that window, three timing landmarks are calculated:</p>
 
         <p><strong>Arrival</strong> is the first week inside the presence window where
@@ -520,20 +514,13 @@
         </div>
 
         <p>Hotspots with fewer than 10 complete checklists on record are excluded from
-        rankings — there is not enough data to produce a reliable rate. For context,
-        confidence levels are assigned: <strong>high</strong> (100+ checklists),
-        <strong>medium</strong> (30–99), and <strong>low</strong> (10–29).</p>
+        rankings: there is not enough data to produce a reliable rate.</p>
 
         <p>Hotspots are also given a <strong>lift score</strong>: the hotspot's occurrence
         rate divided by the county-wide baseline rate for that species. A lift of 2.5 means
         the species is 2.5× more likely to appear on a checklist at that hotspot than at an
-        average location in the county. Lift scores help identify true strongholds rather
+        average location in the county. Lift scores help identify truly special birds rather
         than simply common species at busy hotspots.</p>
-
-        <p>Seasonal and monthly occurrence rates are also computed where sufficient data
-        exist (at least 5 complete checklists for a given season, 3 for a given month).
-        Seasons follow calendar months: spring (March–May), summer (June–July),
-        fall (August–November), winter (December–February).</p>
     </section>
 
     <!-- ── Limitations ─────────────────────────────────────────────── -->
