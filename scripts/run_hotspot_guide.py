@@ -106,9 +106,9 @@ def main():
     # Run the pipeline
     run_pipeline()
 
-    # Copy hotspot data to washtenaw for web access
-    washtenaw_data = project_root / "washtenaw" / "data"
-    if washtenaw_data.exists():
+    # Copy hotspot data to <region>/data/ for web access
+    region_data_dir = project_root / region_name / "data"
+    if region_data_dir.exists():
         index_files = [
             "top_hotspots_by_species.json",
             "notable_species_by_hotspot.json",
@@ -119,10 +119,10 @@ def main():
         for filename in index_files:
             source = output_dir / "index" / filename
             if source.exists():
-                shutil.copy(source, washtenaw_data / filename)
+                shutil.copy(source, region_data_dir / filename)
                 copied.append(filename)
         if copied:
-            print(f"\nCopied to washtenaw/data/: {', '.join(copied)}")
+            print(f"\nCopied to {region_name}/data/: {', '.join(copied)}")
 
 
 if __name__ == "__main__":

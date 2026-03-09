@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'washtenaw/**'
+      - 'oakland/**'
       - 'index.html'
       - 'about.html'
 
@@ -43,6 +44,9 @@ jobs:
 
           # Copy washtenaw app into washtenaw/ subdirectory
           git checkout main -- washtenaw/
+
+          # Copy oakland app into oakland/ subdirectory
+          git checkout main -- oakland/
 
           # Stage all changes
           git add -A

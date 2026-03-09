@@ -1,10 +1,17 @@
 #!/usr/bin/env python3
 """
-Fetch eBird hotspot data for Washtenaw County, Michigan.
+Fetch eBird hotspot data for a region.
 
 This script fetches hotspot data from the eBird API and saves it in two formats:
-1. Raw timestamped JSON in regions/washtenaw/hotspots/raw/
-2. Cleaned JSON for web app use in regions/washtenaw/hotspots/washtenaw_hotspots.json
+1. Raw timestamped JSON in regions/<region>/hotspots/raw/
+2. Cleaned JSON for web app use in regions/<region>/hotspots/<region>_hotspots.json
+
+Usage:
+    python3 scripts/fetch_hotspots.py <region_name>
+
+Example:
+    python3 scripts/fetch_hotspots.py washtenaw
+    python3 scripts/fetch_hotspots.py oakland
 
 Requires:
     - python-dotenv: pip install python-dotenv
@@ -21,12 +28,12 @@ from pathlib import Path
 from io import StringIO
 from dotenv import load_dotenv
 
+# Add scripts directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent))
+from utils.region_config import load_region_config, ConfigError
 
-# Configuration
-COUNTY_CODE = "US-MI-161"  # Washtenaw County, Michigan
+
 API_BASE_URL = "https://api.ebird.org/v2"
-RAW_DIR = Path("regions/washtenaw/hotspots/raw")
-OUTPUT_FILE = Path("regions/washtenaw/hotspots/washtenaw_hotspots.json")
 
 
 def load_api_key():
@@ -44,12 +51,12 @@ def load_api_key():
     return api_key
 
 
-def fetch_hotspots(api_key):
+def fetch_hotspots(api_key, county_code):
     """Fetch hotspot data from eBird API."""
-    url = f"{API_BASE_URL}/ref/hotspot/{COUNTY_CODE}"
+    url = f"{API_BASE_URL}/ref/hotspot/{county_code}"
     headers = {"X-eBirdApiToken": api_key}
 
-    print(f"Fetching hotspots for {COUNTY_CODE}...")
+    print(f"Fetching hotspots for {county_code}...")
 
     try:
         response = requests.get(url, headers=headers, timeout=30)
@@ -156,17 +163,43 @@ def compare_hotspots(old_data, new_data):
 
 def main():
     """Main execution function."""
+    if len(sys.argv) != 2:
+        print("Usage: python3 fetch_hotspots.py <region_name>")
+        print("Example: python3 fetch_hotspots.py washtenaw")
+        sys.exit(1)
+
+    region_name = sys.argv[1]
+
+    # Determine project root
+    project_root = Path(__file__).parent.parent
+
+    # Load region config
+    try:
+        region_config = load_region_config(region_name, project_root)
+    except ConfigError as e:
+        print(f"Error loading region config: {e}")
+        sys.exit(1)
+
+    if not region_config.ebird_region_code:
+        print(f"Error: No ebird_region_code set in config for region '{region_name}'.")
+        sys.exit(1)
+
+    county_code = region_config.ebird_region_code
+    region_path = project_root / "regions" / region_name
+    raw_dir = region_path / "hotspots" / "raw"
+    output_file = region_path / "hotspots" / f"{region_name}_hotspots.json"
+
     # Load API key
     api_key = load_api_key()
 
     # Fetch raw data
-    raw_data = fetch_hotspots(api_key)
+    raw_data = fetch_hotspots(api_key, county_code)
     print(f"✓ Fetched {len(raw_data)} hotspots")
 
     # Save raw data with timestamp
-    RAW_DIR.mkdir(parents=True, exist_ok=True)
+    raw_dir.mkdir(parents=True, exist_ok=True)
     timestamp = datetime.now().strftime("%Y-%m-%d")
-    raw_file = RAW_DIR / f"ebird_hotspots_{timestamp}.json"
+    raw_file = raw_dir / f"ebird_hotspots_{timestamp}.json"
 
     with open(raw_file, 'w', encoding='utf-8') as f:
         json.dump(raw_data, f, indent=2, ensure_ascii=False)
@@ -176,18 +209,18 @@ def main():
     cleaned_data = [clean_hotspot_data(h) for h in raw_data]
 
     # Compare with existing data if it exists
-    if OUTPUT_FILE.exists():
-        with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
+    if output_file.exists():
+        with open(output_file, 'r', encoding='utf-8') as f:
             old_data = json.load(f)
         compare_hotspots(old_data, cleaned_data)
     else:
         print(f"\nNo existing data found. Creating new file with {len(cleaned_data)} hotspots.")
 
     # Save cleaned data
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(cleaned_data, f, indent=2, ensure_ascii=False)
-    print(f"✓ Saved cleaned data to {OUTPUT_FILE}")
+    print(f"✓ Saved cleaned data to {output_file}")
 
     print("\n✓ Done!")
 
