@@ -303,6 +303,39 @@
             flex-shrink: 0;
         }
 
+        /* ─── Inactive (coming soon) county card ─────────────────── */
+
+        .county-card--inactive {
+            background: var(--cream);
+            border-left-color: var(--ink-faint);
+            box-shadow: none;
+            cursor: default;
+            opacity: 0.72;
+        }
+
+        .county-card--inactive:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        .county-card--inactive .card-status {
+            color: var(--ink-faint);
+        }
+
+        .status-dot--inactive {
+            background: var(--ink-faint);
+        }
+
+        .county-card--inactive .card-county-name,
+        .county-card--inactive .stat-value {
+            color: var(--ink-muted);
+        }
+
+        .county-card--inactive .card-cta-text {
+            color: var(--ink-faint);
+            font-style: italic;
+        }
+
         .more-note {
             margin-top: 1.5rem;
             font-size: 0.8125rem;
@@ -526,6 +559,37 @@
                 </div>
 
             </a>
+
+            <!-- Oakland County — coming soon -->
+            <div class="county-card county-card--inactive">
+
+                <div class="card-status">
+                    <span class="status-dot status-dot--inactive"></span>
+                    Coming soon
+                </div>
+
+                <div class="card-county-name">Oakland County</div>
+                <div class="card-state">Michigan</div>
+
+                <div class="card-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">—</span>
+                        <span class="stat-label">Species</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="stat-item">
+                        <span class="stat-value">—</span>
+                        <span class="stat-label">Hotspots</span>
+                    </div>
+                </div>
+
+                <div class="card-pheno" aria-hidden="true"></div>
+
+                <div class="card-cta">
+                    <span class="card-cta-text">In preparation</span>
+                </div>
+
+            </div>
 
         </div>
 
