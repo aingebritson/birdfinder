@@ -1,0 +1,144 @@
+{
+  "species": {
+    "common_name": "Black Vulture",
+    "code": "blavul",
+    "scientific_name": "Coragyps atratus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0012,
+    "total_detections": 96,
+    "total_checklists_with_species": 96,
+    "total_checklists_countywide": 78826,
+    "hotspots_detected": 3
+  },
+  "summary": {
+    "total_hotspots_detected": 3,
+    "total_detections": 96,
+    "highest_occurrence_rate": 0.042
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L301020",
+      "name": "Detroit Zoo",
+      "coordinates": {
+        "latitude": 42.4763714,
+        "longitude": -83.1535819
+      },
+      "occurrence": {
+        "rate": 0.042,
+        "lift": 34.5,
+        "detection_count": 91,
+        "total_checklists": 2166,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0262,
+        "summer": 0.0844,
+        "fall": 0.071,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0063,
+        "4": 0.0,
+        "5": 0.0598,
+        "6": 0.1017,
+        "7": 0.0654,
+        "8": 0.0,
+        "9": 0.0089,
+        "10": 0.1972,
+        "11": 0.0539,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L685081",
+      "name": "Huntington Woods",
+      "coordinates": {
+        "latitude": 42.4822941,
+        "longitude": -83.1661606
+      },
+      "occurrence": {
+        "rate": 0.0234,
+        "lift": 19.24,
+        "detection_count": 3,
+        "total_checklists": 128,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0308,
+        "summer": 0.0,
+        "fall": 0.0455,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0465,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "11": 0.1,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L623139",
+      "name": "Red Oaks Nature Center (Friendship Woods)",
+      "coordinates": {
+        "latitude": 42.5152589,
+        "longitude": -83.0938911
+      },
+      "occurrence": {
+        "rate": 0.0004,
+        "lift": 0.3,
+        "detection_count": 2,
+        "total_checklists": 5501,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0005,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0008,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-09T23:56:21.524316Z",
+    "data_version": "Dec-2025"
+  }
+}

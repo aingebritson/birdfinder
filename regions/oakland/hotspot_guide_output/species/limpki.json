@@ -1,0 +1,91 @@
+{
+  "species": {
+    "common_name": "Limpkin",
+    "code": "limpki",
+    "scientific_name": "Aramus guarauna"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0009,
+    "total_detections": 71,
+    "total_checklists_with_species": 71,
+    "total_checklists_countywide": 78826,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 71,
+    "highest_occurrence_rate": 0.8235
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L25674372",
+      "name": "stakeout Limpkin (2023), White Lake",
+      "coordinates": {
+        "latitude": 42.648319,
+        "longitude": -83.4528896
+      },
+      "occurrence": {
+        "rate": 0.8235,
+        "lift": 914.3,
+        "detection_count": 70,
+        "total_checklists": 85,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "summer": 0.8333
+      },
+      "monthly": {
+        "7": 0.8333
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L1616865",
+      "name": "Rose Oaks County Park",
+      "coordinates": {
+        "latitude": 42.7486145,
+        "longitude": -83.6452745
+      },
+      "occurrence": {
+        "rate": 0.0018,
+        "lift": 1.97,
+        "detection_count": 1,
+        "total_checklists": 565,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0066,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0323,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-09T23:56:21.526825Z",
+    "data_version": "Dec-2025"
+  }
+}

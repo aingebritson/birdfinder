@@ -3,15 +3,22 @@
 Build enriched hotspots JSON by merging base data with manual content files.
 
 This script:
-1. Loads the base hotspots data from washtenaw_hotspots.json
+1. Loads the base hotspots data from <region>_hotspots.json
 2. For each hotspot, checks if a matching content/{locId}.md file exists
 3. If it exists, parses the YAML frontmatter and markdown body
 4. Merges the manual content into the base hotspot data
-5. Outputs to washtenaw_hotspots_enriched.json
+5. Outputs to <region>/data/<region>_hotspots_enriched.json
+
+Usage:
+    python3 scripts/build_enriched_hotspots.py <region_name>
+
+Example:
+    python3 scripts/build_enriched_hotspots.py washtenaw
+    python3 scripts/build_enriched_hotspots.py oakland
 """
 
 import json
-import os
+import sys
 from pathlib import Path
 import frontmatter
 
@@ -70,15 +77,16 @@ def enrich_hotspot(hotspot, content_data):
     return enriched
 
 
-def build_enriched_hotspots(base_dir='regions/washtenaw/hotspots', output_dir='washtenaw/data'):
-    """Main function to build enriched hotspots JSON."""
-    base_dir = Path(base_dir)
-    output_dir = Path(output_dir)
+def build_enriched_hotspots(region_name):
+    """Main function to build enriched hotspots JSON for a region."""
+    project_root = Path(__file__).parent.parent
+    base_dir = project_root / 'regions' / region_name / 'hotspots'
+    output_dir = project_root / region_name / 'data'
 
     # Paths
-    base_json_path = base_dir / 'washtenaw_hotspots.json'
+    base_json_path = base_dir / f'{region_name}_hotspots.json'
     content_dir = base_dir / 'content'
-    output_path = output_dir / 'washtenaw_hotspots_enriched.json'
+    output_path = output_dir / f'{region_name}_hotspots_enriched.json'
 
     # Load base data
     print(f"Loading base data from {base_json_path}...")
@@ -104,6 +112,7 @@ def build_enriched_hotspots(base_dir='regions/washtenaw/hotspots', output_dir='w
         enriched_hotspots.append(enriched)
 
     # Write output
+    output_dir.mkdir(parents=True, exist_ok=True)
     print(f"\nWriting enriched data to {output_path}...")
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(enriched_hotspots, f, indent=2, ensure_ascii=False)
@@ -113,4 +122,9 @@ def build_enriched_hotspots(base_dir='regions/washtenaw/hotspots', output_dir='w
 
 
 if __name__ == '__main__':
-    build_enriched_hotspots()
+    if len(sys.argv) != 2:
+        print("Usage: python3 build_enriched_hotspots.py <region_name>")
+        print("Example: python3 build_enriched_hotspots.py washtenaw")
+        sys.exit(1)
+
+    build_enriched_hotspots(sys.argv[1])

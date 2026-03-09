@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "White-winged Scoter",
+    "code": "whisco",
+    "scientific_name": "Melanitta deglandi"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0007,
+    "total_detections": 53,
+    "total_checklists_with_species": 53,
+    "total_checklists_countywide": 78826,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 53,
+    "highest_occurrence_rate": 0.0258
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L621263",
+      "name": "Walled Lake",
+      "coordinates": {
+        "latitude": 42.5156385,
+        "longitude": -83.4796143
+      },
+      "occurrence": {
+        "rate": 0.0258,
+        "lift": 38.4,
+        "detection_count": 49,
+        "total_checklists": 1898,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.4,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0014,
+        "summer": 0.0,
+        "fall": 0.0443,
+        "winter": 0.0366
+      },
+      "monthly": {
+        "1": 0.1157,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0167,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0771,
+        "12": 0.007
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L389737",
+      "name": "American Center Marsh",
+      "coordinates": {
+        "latitude": 42.4876453,
+        "longitude": -83.3025777
+      },
+      "occurrence": {
+        "rate": 0.0012,
+        "lift": 1.74,
+        "detection_count": 4,
+        "total_checklists": 3428,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 0.2,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0217
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0494
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-09T23:56:21.512468Z",
+    "data_version": "Dec-2025"
+  }
+}

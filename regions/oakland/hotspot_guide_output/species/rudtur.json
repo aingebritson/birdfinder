@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Ruddy Turnstone",
+    "code": "rudtur",
+    "scientific_name": "Arenaria interpres"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 10,
+    "total_checklists_with_species": 10,
+    "total_checklists_countywide": 78826,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 10,
+    "highest_occurrence_rate": 0.0077
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L897271",
+      "name": "Pontiac Lake SRA",
+      "coordinates": {
+        "latitude": 42.669026,
+        "longitude": -83.4400892
+      },
+      "occurrence": {
+        "rate": 0.0077,
+        "lift": 60.52,
+        "detection_count": 4,
+        "total_checklists": 521,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0204,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0417,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L389645",
+      "name": "Kensington Metropark--general (Oakland Co. only)",
+      "coordinates": {
+        "latitude": 42.528441,
+        "longitude": -83.6706485
+      },
+      "occurrence": {
+        "rate": 0.0007,
+        "lift": 5.3,
+        "detection_count": 6,
+        "total_checklists": 8920,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.7,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0017,
+        "summer": 0.0,
+        "fall": 0.0004,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0061,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0018,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-09T23:56:21.524814Z",
+    "data_version": "Dec-2025"
+  }
+}

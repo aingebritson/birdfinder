@@ -1,0 +1,104 @@
+{
+  "species": {
+    "common_name": "Yellow-crowned Night Heron",
+    "code": "yelher",
+    "scientific_name": "Nyctanassa violacea"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0007,
+    "total_detections": 52,
+    "total_checklists_with_species": 52,
+    "total_checklists_countywide": 78826,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 52,
+    "highest_occurrence_rate": 0.0312
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L685081",
+      "name": "Huntington Woods",
+      "coordinates": {
+        "latitude": 42.4822941,
+        "longitude": -83.1661606
+      },
+      "occurrence": {
+        "rate": 0.0312,
+        "lift": 47.37,
+        "detection_count": 4,
+        "total_checklists": 128,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0615,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.125,
+        "5": 0.0698,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L301020",
+      "name": "Detroit Zoo",
+      "coordinates": {
+        "latitude": 42.4763714,
+        "longitude": -83.1535819
+      },
+      "occurrence": {
+        "rate": 0.0222,
+        "lift": 33.59,
+        "detection_count": 48,
+        "total_checklists": 2166,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0622,
+        "summer": 0.0133,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0226,
+        "5": 0.1296,
+        "6": 0.0254,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-09T23:56:21.522795Z",
+    "data_version": "Dec-2025"
+  }
+}

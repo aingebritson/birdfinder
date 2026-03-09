@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Wilson's Phalarope",
+    "code": "wilpha",
+    "scientific_name": "Phalaropus tricolor"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0003,
+    "total_detections": 22,
+    "total_checklists_with_species": 22,
+    "total_checklists_countywide": 78826,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 22,
+    "highest_occurrence_rate": 0.0431
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L9068269",
+      "name": "South Hill Rd. wetlands",
+      "coordinates": {
+        "latitude": 42.5005629,
+        "longitude": -83.5956826
+      },
+      "occurrence": {
+        "rate": 0.0431,
+        "lift": 154.56,
+        "detection_count": 22,
+        "total_checklists": 510,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0647,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0921,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-09T23:56:21.526635Z",
+    "data_version": "Dec-2025"
+  }
+}

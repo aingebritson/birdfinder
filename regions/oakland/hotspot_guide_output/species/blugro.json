@@ -1,0 +1,102 @@
+{
+  "species": {
+    "common_name": "Blue Grosbeak",
+    "code": "blugro",
+    "scientific_name": "Passerina caerulea"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 6,
+    "total_checklists_with_species": 6,
+    "total_checklists_countywide": 78826,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 6,
+    "highest_occurrence_rate": 0.0746
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L9025485",
+      "name": "Cabot Dr. wetlands",
+      "coordinates": {
+        "latitude": 42.499748,
+        "longitude": -83.439779
+      },
+      "occurrence": {
+        "rate": 0.0746,
+        "lift": 980.42,
+        "detection_count": 5,
+        "total_checklists": 67,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.1034,
+        "summer": 0.1667,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "4": 0.0,
+        "5": 0.3,
+        "6": 0.1429,
+        "7": 0.2,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L276900",
+      "name": "Robert H. Long Park",
+      "coordinates": {
+        "latitude": 42.5271345,
+        "longitude": -83.4507015
+      },
+      "occurrence": {
+        "rate": 0.0001,
+        "lift": 1.55,
+        "detection_count": 1,
+        "total_checklists": 8455,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0008,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0019,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-09T23:56:21.525276Z",
+    "data_version": "Dec-2025"
+  }
+}
