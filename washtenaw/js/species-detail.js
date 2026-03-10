@@ -514,6 +514,15 @@ function renderHotspots() {
         .filter(h => h.detection_count >= 25)
         .slice(0, 10);
 
+    if (filteredHotspots.length === 0) {
+        container.innerHTML = `
+            <div class="empty-state">
+                <p>No hotspot data available - this species is rarely recorded in the county</p>
+            </div>
+        `;
+        return;
+    }
+
     const hotspotsHtml = filteredHotspots.map(hotspot => {
         const occurrencePercent = (hotspot.occurrence_rate * 100).toFixed(1);
         const liftText = hotspot.lift ? `${hotspot.lift.toFixed(1)}× county average` : '';
