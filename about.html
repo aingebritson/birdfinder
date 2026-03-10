@@ -406,9 +406,10 @@
         <div class="def-block">
             <p><strong>What counts as a valley?</strong>
             A valley is a run of 4 or more consecutive weeks where detection frequency
-            falls below both 15% of the species' annual peak frequency and below 0.5%
-            in absolute terms. Both conditions must hold: a species with a very high
-            peak that dips to 10% of that peak is not considered absent.</p>
+            falls below the valley threshold, defined as whichever is higher: 15% of the
+            species' annual peak frequency, or 0.5% in absolute terms. For most detectable
+            species the peak-relative threshold dominates — a species with a high peak
+            that dips to 10% of that peak is considered to have a valley.</p>
         </div>
 
         <p>The number and seasonal placement of valleys determines the classification:</p>
@@ -472,7 +473,7 @@
         <div class="threshold-list">
             <div class="threshold-row">
                 <span class="threshold-key">Valley threshold (presence/absence boundary)</span>
-                <span class="threshold-val">&lt; 15% of peak, or &lt; 0.5% absolute</span>
+                <span class="threshold-val">max(15% of peak, 0.5% absolute)</span>
             </div>
             <div class="threshold-row">
                 <span class="threshold-key">Minimum valley length</span>
