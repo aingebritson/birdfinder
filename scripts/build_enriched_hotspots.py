@@ -113,7 +113,14 @@ def build_enriched_hotspots(region_name):
 
     # Write output
     output_dir.mkdir(parents=True, exist_ok=True)
-    print(f"\nWriting enriched data to {output_path}...")
+
+    # Copy base hotspots to app data dir (needed by hotspots.html)
+    base_dest = output_dir / f'{region_name}_hotspots.json'
+    import shutil
+    shutil.copy(base_json_path, base_dest)
+    print(f"\nCopied base hotspots to {base_dest}")
+
+    print(f"Writing enriched data to {output_path}...")
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(enriched_hotspots, f, indent=2, ensure_ascii=False)
 
