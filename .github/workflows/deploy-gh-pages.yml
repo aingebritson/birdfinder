@@ -7,6 +7,9 @@ on:
     paths:
       - 'washtenaw/**'
       - 'oakland/**'
+      - 'kent/**'
+      - 'wayne/**'
+      - 'ottawa/**'
       - 'index.html'
       - 'about.html'
 
@@ -47,6 +50,15 @@ jobs:
 
           # Copy oakland app into oakland/ subdirectory
           git checkout main -- oakland/
+
+          # Copy kent app into kent/ subdirectory
+          git checkout main -- kent/
+
+          # Copy wayne app into wayne/ subdirectory
+          git checkout main -- wayne/
+
+          # Copy ottawa app into ottawa/ subdirectory
+          git checkout main -- ottawa/
 
           # Stage all changes
           git add -A
