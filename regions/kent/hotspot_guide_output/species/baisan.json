@@ -1,0 +1,100 @@
+{
+  "species": {
+    "common_name": "Baird's Sandpiper",
+    "code": "baisan",
+    "scientific_name": "Calidris bairdii"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0007,
+    "total_detections": 49,
+    "total_checklists_with_species": 49,
+    "total_checklists_countywide": 74705,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 49,
+    "highest_occurrence_rate": 0.089
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L874307",
+      "name": "Kent City Sewage Ponds (limited access)",
+      "coordinates": {
+        "latitude": 43.2169364,
+        "longitude": -85.7449865
+      },
+      "occurrence": {
+        "rate": 0.089,
+        "lift": 135.75,
+        "detection_count": 13,
+        "total_checklists": 146,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.1646
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.2045,
+        "9": 0.1481,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L1159583",
+      "name": "Caledonia WWTP (private appt. only- call 616-889-7937)",
+      "coordinates": {
+        "latitude": 42.8064027,
+        "longitude": -85.5076303
+      },
+      "occurrence": {
+        "rate": 0.0266,
+        "lift": 40.51,
+        "detection_count": 36,
+        "total_checklists": 1355,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.1,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0628,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0773,
+        "9": 0.0722,
+        "10": 0.053,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-19T23:40:33.741408Z",
+    "data_version": "Dec-2025"
+  }
+}

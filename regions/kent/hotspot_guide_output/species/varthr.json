@@ -1,0 +1,53 @@
+{
+  "species": {
+    "common_name": "Varied Thrush",
+    "code": "varthr",
+    "scientific_name": "Ixoreus naevius"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0002,
+    "total_detections": 15,
+    "total_checklists_with_species": 15,
+    "total_checklists_countywide": 74705,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 15,
+    "highest_occurrence_rate": 0.4167
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L13773763",
+      "name": "stakeout Varied Thrush (undisclosed, no access; 2021), Lowell",
+      "coordinates": {
+        "latitude": 42.933586,
+        "longitude": -85.341817
+      },
+      "occurrence": {
+        "rate": 0.4167,
+        "lift": 2075.14,
+        "detection_count": 15,
+        "total_checklists": 36,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.375,
+        "winter": 0.4286
+      },
+      "monthly": {
+        "2": 0.4286,
+        "3": 0.375
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-19T23:40:33.750854Z",
+    "data_version": "Dec-2025"
+  }
+}

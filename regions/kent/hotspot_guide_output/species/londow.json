@@ -1,0 +1,97 @@
+{
+  "species": {
+    "common_name": "Long-billed Dowitcher",
+    "code": "londow",
+    "scientific_name": "Limnodromus scolopaceus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0006,
+    "total_detections": 42,
+    "total_checklists_with_species": 42,
+    "total_checklists_countywide": 74705,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 42,
+    "highest_occurrence_rate": 0.0473
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L4355136",
+      "name": "92nd and Patterson (flooded field)",
+      "coordinates": {
+        "latitude": 42.795136,
+        "longitude": -85.5434832
+      },
+      "occurrence": {
+        "rate": 0.0473,
+        "lift": 84.07,
+        "detection_count": 19,
+        "total_checklists": 402,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0487,
+        "summer": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0931,
+        "5": 0.0,
+        "6": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L1159583",
+      "name": "Caledonia WWTP (private appt. only- call 616-889-7937)",
+      "coordinates": {
+        "latitude": 42.8064027,
+        "longitude": -85.5076303
+      },
+      "occurrence": {
+        "rate": 0.017,
+        "lift": 30.19,
+        "detection_count": 23,
+        "total_checklists": 1355,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0071,
+        "summer": 0.0141,
+        "fall": 0.0297,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0169,
+        "6": 0.0,
+        "7": 0.019,
+        "8": 0.0,
+        "9": 0.0825,
+        "10": 0.0066,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-19T23:40:33.741294Z",
+    "data_version": "Dec-2025"
+  }
+}

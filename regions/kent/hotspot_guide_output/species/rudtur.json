@@ -1,0 +1,104 @@
+{
+  "species": {
+    "common_name": "Ruddy Turnstone",
+    "code": "rudtur",
+    "scientific_name": "Arenaria interpres"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0002,
+    "total_detections": 16,
+    "total_checklists_with_species": 16,
+    "total_checklists_countywide": 74705,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 16,
+    "highest_occurrence_rate": 0.0056
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L2708499",
+      "name": "Byron Lakes",
+      "coordinates": {
+        "latitude": 42.8395619,
+        "longitude": -85.7122527
+      },
+      "occurrence": {
+        "rate": 0.0056,
+        "lift": 25.98,
+        "detection_count": 7,
+        "total_checklists": 1258,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0016,
+        "summer": 0.0455,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0079,
+        "6": 0.0789,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L350111",
+      "name": "Reeds Lake",
+      "coordinates": {
+        "latitude": 42.9538729,
+        "longitude": -85.6082752
+      },
+      "occurrence": {
+        "rate": 0.0013,
+        "lift": 6.05,
+        "detection_count": 9,
+        "total_checklists": 6951,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.6,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0025,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0069,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-19T23:40:33.749660Z",
+    "data_version": "Dec-2025"
+  }
+}

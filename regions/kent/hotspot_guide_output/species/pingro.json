@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Pine Grosbeak",
+    "code": "pingro",
+    "scientific_name": "Pinicola enucleator"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0,
+    "total_detections": 2,
+    "total_checklists_with_species": 2,
+    "total_checklists_countywide": 74705,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 2,
+    "highest_occurrence_rate": 0.001
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L485669",
+      "name": "Blandford Nature Center",
+      "coordinates": {
+        "latitude": 42.9954863,
+        "longitude": -85.7390481
+      },
+      "occurrence": {
+        "rate": 0.001,
+        "lift": 35.92,
+        "detection_count": 1,
+        "total_checklists": 1040,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0056
+      },
+      "monthly": {
+        "1": 0.0152,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L350111",
+      "name": "Reeds Lake",
+      "coordinates": {
+        "latitude": 42.9538729,
+        "longitude": -85.6082752
+      },
+      "occurrence": {
+        "rate": 0.0001,
+        "lift": 5.37,
+        "detection_count": 1,
+        "total_checklists": 6951,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0003,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0013,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-19T23:40:33.527444Z",
+    "data_version": "Dec-2025"
+  }
+}

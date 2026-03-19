@@ -1,0 +1,618 @@
+{
+  "species": {
+    "common_name": "Semipalmated Plover",
+    "code": "semplo",
+    "scientific_name": "Charadrius semipalmatus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0028,
+    "total_detections": 210,
+    "total_checklists_with_species": 210,
+    "total_checklists_countywide": 74705,
+    "hotspots_detected": 16
+  },
+  "summary": {
+    "total_hotspots_detected": 16,
+    "total_detections": 210,
+    "highest_occurrence_rate": 0.2143
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L12220782",
+      "name": "White Pine Trail--Belmont to Rockford",
+      "coordinates": {
+        "latitude": 43.1012181,
+        "longitude": -85.5861443
+      },
+      "occurrence": {
+        "rate": 0.2143,
+        "lift": 76.23,
+        "detection_count": 3,
+        "total_checklists": 14,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.4286
+      },
+      "monthly": {
+        "5": 0.6
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L4355136",
+      "name": "92nd and Patterson (flooded field)",
+      "coordinates": {
+        "latitude": 42.795136,
+        "longitude": -85.5434832
+      },
+      "occurrence": {
+        "rate": 0.0896,
+        "lift": 31.86,
+        "detection_count": 36,
+        "total_checklists": 402,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.6,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.0923,
+        "summer": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0245,
+        "5": 0.2026,
+        "6": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L1159583",
+      "name": "Caledonia WWTP (private appt. only- call 616-889-7937)",
+      "coordinates": {
+        "latitude": 42.8064027,
+        "longitude": -85.5076303
+      },
+      "occurrence": {
+        "rate": 0.0723,
+        "lift": 25.73,
+        "detection_count": 98,
+        "total_checklists": 1355,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.9,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.0582,
+        "summer": 0.0352,
+        "fall": 0.1047,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1392,
+        "6": 0.0,
+        "7": 0.0476,
+        "8": 0.1768,
+        "9": 0.1443,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 4,
+      "locality_id": "L874307",
+      "name": "Kent City Sewage Ponds (limited access)",
+      "coordinates": {
+        "latitude": 43.2169364,
+        "longitude": -85.7449865
+      },
+      "occurrence": {
+        "rate": 0.0685,
+        "lift": 24.37,
+        "detection_count": 10,
+        "total_checklists": 146,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.1266
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.2273,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 5,
+      "locality_id": "L874308",
+      "name": "Casnovia Sewage Ponds (limited access)",
+      "coordinates": {
+        "latitude": 43.2364616,
+        "longitude": -85.7816577
+      },
+      "occurrence": {
+        "rate": 0.0364,
+        "lift": 12.94,
+        "detection_count": 6,
+        "total_checklists": 165,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0147,
+        "summer": 0.0952,
+        "fall": 0.0417
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.025,
+        "6": 0.25,
+        "7": 0.0,
+        "8": 0.0645,
+        "9": 0.0333,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 6,
+      "locality_id": "L902559",
+      "name": "Rogue River Park",
+      "coordinates": {
+        "latitude": 43.0818344,
+        "longitude": -85.5994391
+      },
+      "occurrence": {
+        "rate": 0.0293,
+        "lift": 10.43,
+        "detection_count": 21,
+        "total_checklists": 716,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 4.0,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.0747,
+        "summer": 0.0138,
+        "fall": 0.0045,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.2069,
+        "6": 0.0,
+        "7": 0.0183,
+        "8": 0.0104,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 7,
+      "locality_id": "L905773",
+      "name": "13 Mile Rd & Berrigan Ave (flooded field)",
+      "coordinates": {
+        "latitude": 43.1604272,
+        "longitude": -85.4803598
+      },
+      "occurrence": {
+        "rate": 0.019,
+        "lift": 6.75,
+        "detection_count": 3,
+        "total_checklists": 158,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0163,
+        "summer": 0.0455,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0714,
+        "6": 0.0,
+        "7": 0.1,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    {
+      "rank": 8,
+      "locality_id": "L2751857",
+      "name": "MDOT wetland (92nd west of Clyde Park)",
+      "coordinates": {
+        "latitude": 42.7985334,
+        "longitude": -85.69174
+      },
+      "occurrence": {
+        "rate": 0.0143,
+        "lift": 5.08,
+        "detection_count": 2,
+        "total_checklists": 140,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0571,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.1,
+        "9": 0.1,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 9,
+      "locality_id": "L3850038",
+      "name": "Grand Isle Park",
+      "coordinates": {
+        "latitude": 43.0610181,
+        "longitude": -85.6014669
+      },
+      "occurrence": {
+        "rate": 0.013,
+        "lift": 4.62,
+        "detection_count": 1,
+        "total_checklists": 77,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.027,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0625,
+        "6": 0.0,
+        "7": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 10,
+      "locality_id": "L1006734",
+      "name": "84th and Wilson (celery flats)",
+      "coordinates": {
+        "latitude": 42.8101238,
+        "longitude": -85.7645831
+      },
+      "occurrence": {
+        "rate": 0.0097,
+        "lift": 3.45,
+        "detection_count": 1,
+        "total_checklists": 103,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0303
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "9": 0.0714
+      }
+    },
+    {
+      "rank": 11,
+      "locality_id": "L612515",
+      "name": "Lincoln Lake",
+      "coordinates": {
+        "latitude": 43.2422604,
+        "longitude": -85.3650541
+      },
+      "occurrence": {
+        "rate": 0.0058,
+        "lift": 2.07,
+        "detection_count": 2,
+        "total_checklists": 343,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0168,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0392,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 12,
+      "locality_id": "L1143505",
+      "name": "Millennium Park",
+      "coordinates": {
+        "latitude": 42.9410461,
+        "longitude": -85.7443321
+      },
+      "occurrence": {
+        "rate": 0.0035,
+        "lift": 1.25,
+        "detection_count": 19,
+        "total_checklists": 5399,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.4,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0053,
+        "summer": 0.0,
+        "fall": 0.0051,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.013,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0118,
+        "9": 0.0051,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 13,
+      "locality_id": "L2708499",
+      "name": "Byron Lakes",
+      "coordinates": {
+        "latitude": 42.8395619,
+        "longitude": -85.7122527
+      },
+      "occurrence": {
+        "rate": 0.0024,
+        "lift": 0.85,
+        "detection_count": 3,
+        "total_checklists": 1258,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.3,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.0016,
+        "summer": 0.0,
+        "fall": 0.0056,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0079,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.026,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 14,
+      "locality_id": "L986779",
+      "name": "Frederik Meijer Gardens & Sculpture Park",
+      "coordinates": {
+        "latitude": 42.9796761,
+        "longitude": -85.5852985
+      },
+      "occurrence": {
+        "rate": 0.0022,
+        "lift": 0.79,
+        "detection_count": 2,
+        "total_checklists": 900,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0075,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0233,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 15,
+      "locality_id": "L611966",
+      "name": "Versluis Park",
+      "coordinates": {
+        "latitude": 43.06006,
+        "longitude": -85.57819
+      },
+      "occurrence": {
+        "rate": 0.0009,
+        "lift": 0.32,
+        "detection_count": 1,
+        "total_checklists": 1125,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0081,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.25,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 16,
+      "locality_id": "L350111",
+      "name": "Reeds Lake",
+      "coordinates": {
+        "latitude": 42.9538729,
+        "longitude": -85.6082752
+      },
+      "occurrence": {
+        "rate": 0.0003,
+        "lift": 0.1,
+        "detection_count": 2,
+        "total_checklists": 6951,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 6.5,
+        "max_count": 11
+      },
+      "seasonal": {
+        "spring": 0.0005,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0015,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-19T23:40:33.681691Z",
+    "data_version": "Dec-2025"
+  }
+}

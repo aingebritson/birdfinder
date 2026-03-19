@@ -1,0 +1,55 @@
+{
+  "species": {
+    "common_name": "Slaty-backed Gull",
+    "code": "slagul",
+    "scientific_name": "Larus schistisagus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0,
+    "total_detections": 3,
+    "total_checklists_with_species": 3,
+    "total_checklists_countywide": 74705,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 3,
+    "highest_occurrence_rate": 0.0326
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L9392055",
+      "name": "Division St. fluddle",
+      "coordinates": {
+        "latitude": 42.7703272,
+        "longitude": -85.6599722
+      },
+      "occurrence": {
+        "rate": 0.0326,
+        "lift": 812.01,
+        "detection_count": 3,
+        "total_checklists": 92,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0417,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0484,
+        "4": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-19T23:40:33.751130Z",
+    "data_version": "Dec-2025"
+  }
+}

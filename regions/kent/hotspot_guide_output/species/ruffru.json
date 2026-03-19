@@ -1,0 +1,90 @@
+{
+  "species": {
+    "common_name": "Ruff",
+    "code": "ruffru",
+    "scientific_name": "Calidris pugnax"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0017,
+    "total_detections": 128,
+    "total_checklists_with_species": 128,
+    "total_checklists_countywide": 74705,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 128,
+    "highest_occurrence_rate": 0.3159
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L4355136",
+      "name": "92nd and Patterson (flooded field)",
+      "coordinates": {
+        "latitude": 42.795136,
+        "longitude": -85.5434832
+      },
+      "occurrence": {
+        "rate": 0.3159,
+        "lift": 184.38,
+        "detection_count": 127,
+        "total_checklists": 402,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.3256,
+        "summer": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.3186,
+        "5": 0.4052,
+        "6": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L2230648",
+      "name": "Paul Henry Thornapple Trail--76th St. SE to 84th St. SE",
+      "coordinates": {
+        "latitude": 42.8200844,
+        "longitude": -85.5542192
+      },
+      "occurrence": {
+        "rate": 0.013,
+        "lift": 7.58,
+        "detection_count": 1,
+        "total_checklists": 77,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.02,
+        "summer": 0.0,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0286,
+        "6": 0.0,
+        "7": 0.0,
+        "9": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-19T23:40:33.750743Z",
+    "data_version": "Dec-2025"
+  }
+}

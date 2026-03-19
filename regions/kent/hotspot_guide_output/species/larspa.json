@@ -1,0 +1,52 @@
+{
+  "species": {
+    "common_name": "Lark Sparrow",
+    "code": "larspa",
+    "scientific_name": "Chondestes grammacus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 4,
+    "total_checklists_with_species": 4,
+    "total_checklists_countywide": 74705,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 4,
+    "highest_occurrence_rate": 0.1667
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L612045",
+      "name": "Cook Valley Blvd Wetland",
+      "coordinates": {
+        "latitude": 42.9438735,
+        "longitude": -85.5730999
+      },
+      "occurrence": {
+        "rate": 0.1667,
+        "lift": 3112.71,
+        "detection_count": 4,
+        "total_checklists": 24,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.2222
+      },
+      "monthly": {
+        "3": 0.0,
+        "5": 0.3333
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-19T23:40:33.750944Z",
+    "data_version": "Dec-2025"
+  }
+}

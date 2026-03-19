@@ -1,0 +1,963 @@
+{
+  "species": {
+    "common_name": "Bonaparte's Gull",
+    "code": "bongul",
+    "scientific_name": "Chroicocephalus philadelphia"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0106,
+    "total_detections": 792,
+    "total_checklists_with_species": 792,
+    "total_checklists_countywide": 74705,
+    "hotspots_detected": 25
+  },
+  "summary": {
+    "total_hotspots_detected": 25,
+    "total_detections": 792,
+    "highest_occurrence_rate": 0.2861
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L4355136",
+      "name": "92nd and Patterson (flooded field)",
+      "coordinates": {
+        "latitude": 42.795136,
+        "longitude": -85.5434832
+      },
+      "occurrence": {
+        "rate": 0.2861,
+        "lift": 26.98,
+        "detection_count": 115,
+        "total_checklists": 402,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 8.1,
+        "max_count": 79
+      },
+      "seasonal": {
+        "spring": 0.2949,
+        "summer": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.5392,
+        "5": 0.0327,
+        "6": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L350111",
+      "name": "Reeds Lake",
+      "coordinates": {
+        "latitude": 42.9538729,
+        "longitude": -85.6082752
+      },
+      "occurrence": {
+        "rate": 0.0573,
+        "lift": 5.4,
+        "detection_count": 398,
+        "total_checklists": 6951,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 8.7,
+        "max_count": 200
+      },
+      "seasonal": {
+        "spring": 0.0997,
+        "summer": 0.0,
+        "fall": 0.0162,
+        "winter": 0.0029
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0279,
+        "4": 0.127,
+        "5": 0.1103,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0169,
+        "9": 0.0051,
+        "10": 0.0148,
+        "11": 0.0241,
+        "12": 0.0061
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L1159583",
+      "name": "Caledonia WWTP (private appt. only- call 616-889-7937)",
+      "coordinates": {
+        "latitude": 42.8064027,
+        "longitude": -85.5076303
+      },
+      "occurrence": {
+        "rate": 0.0517,
+        "lift": 4.87,
+        "detection_count": 70,
+        "total_checklists": 1355,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 7.5,
+        "max_count": 36
+      },
+      "seasonal": {
+        "spring": 0.1023,
+        "summer": 0.0,
+        "fall": 0.0209,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.2049,
+        "5": 0.0338,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0103,
+        "10": 0.0265,
+        "11": 0.1277,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 4,
+      "locality_id": "L874307",
+      "name": "Kent City Sewage Ponds (limited access)",
+      "coordinates": {
+        "latitude": 43.2169364,
+        "longitude": -85.7449865
+      },
+      "occurrence": {
+        "rate": 0.0479,
+        "lift": 4.52,
+        "detection_count": 7,
+        "total_checklists": 146,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 6.4,
+        "max_count": 13
+      },
+      "seasonal": {
+        "spring": 0.0943,
+        "summer": 0.0,
+        "fall": 0.0253
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.2381,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.1667
+      }
+    },
+    {
+      "rank": 5,
+      "locality_id": "L2708499",
+      "name": "Byron Lakes",
+      "coordinates": {
+        "latitude": 42.8395619,
+        "longitude": -85.7122527
+      },
+      "occurrence": {
+        "rate": 0.0429,
+        "lift": 4.05,
+        "detection_count": 54,
+        "total_checklists": 1258,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.9,
+        "max_count": 32
+      },
+      "seasonal": {
+        "spring": 0.0788,
+        "summer": 0.0,
+        "fall": 0.014,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.016,
+        "4": 0.1331,
+        "5": 0.0397,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.026,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0273,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 6,
+      "locality_id": "L612515",
+      "name": "Lincoln Lake",
+      "coordinates": {
+        "latitude": 43.2422604,
+        "longitude": -85.3650541
+      },
+      "occurrence": {
+        "rate": 0.035,
+        "lift": 3.3,
+        "detection_count": 12,
+        "total_checklists": 343,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 7.5,
+        "max_count": 24
+      },
+      "seasonal": {
+        "spring": 0.1008,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.2157,
+        "5": 0.0556,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 7,
+      "locality_id": "L9392055",
+      "name": "Division St. fluddle",
+      "coordinates": {
+        "latitude": 42.7703272,
+        "longitude": -85.6599722
+      },
+      "occurrence": {
+        "rate": 0.0326,
+        "lift": 3.08,
+        "detection_count": 3,
+        "total_checklists": 92,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 15.3,
+        "max_count": 22
+      },
+      "seasonal": {
+        "spring": 0.0417,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0161,
+        "4": 0.2,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 8,
+      "locality_id": "L2145894",
+      "name": "Camp Lake",
+      "coordinates": {
+        "latitude": 43.1710443,
+        "longitude": -85.6652069
+      },
+      "occurrence": {
+        "rate": 0.0308,
+        "lift": 2.9,
+        "detection_count": 2,
+        "total_checklists": 65,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0625,
+        "summer": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.2,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 9,
+      "locality_id": "L612514",
+      "name": "Wabasis Lake Park",
+      "coordinates": {
+        "latitude": 43.134946,
+        "longitude": -85.3908684
+      },
+      "occurrence": {
+        "rate": 0.0259,
+        "lift": 2.44,
+        "detection_count": 8,
+        "total_checklists": 309,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 7.6,
+        "max_count": 32
+      },
+      "seasonal": {
+        "spring": 0.0625,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0244,
+        "5": 0.1373,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 10,
+      "locality_id": "L717752",
+      "name": "Hodenpyl Woods",
+      "coordinates": {
+        "latitude": 42.9581971,
+        "longitude": -85.609417
+      },
+      "occurrence": {
+        "rate": 0.0235,
+        "lift": 2.21,
+        "detection_count": 38,
+        "total_checklists": 1620,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 9.0,
+        "max_count": 45
+      },
+      "seasonal": {
+        "spring": 0.0398,
+        "summer": 0.0,
+        "fall": 0.005,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0083,
+        "4": 0.0446,
+        "5": 0.0447,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.009,
+        "11": 0.0133,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 11,
+      "locality_id": "L613091",
+      "name": "Pratt Lake",
+      "coordinates": {
+        "latitude": 42.88517,
+        "longitude": -85.3193
+      },
+      "occurrence": {
+        "rate": 0.0213,
+        "lift": 2.01,
+        "detection_count": 1,
+        "total_checklists": 47,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 6.0,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.04,
+        "summer": 0.0,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0833,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0
+      }
+    },
+    {
+      "rank": 12,
+      "locality_id": "L905773",
+      "name": "13 Mile Rd & Berrigan Ave (flooded field)",
+      "coordinates": {
+        "latitude": 43.1604272,
+        "longitude": -85.4803598
+      },
+      "occurrence": {
+        "rate": 0.019,
+        "lift": 1.79,
+        "detection_count": 3,
+        "total_checklists": 158,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 8.0,
+        "max_count": 11
+      },
+      "seasonal": {
+        "spring": 0.0244,
+        "summer": 0.0,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0536,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    {
+      "rank": 13,
+      "locality_id": "L3850038",
+      "name": "Grand Isle Park",
+      "coordinates": {
+        "latitude": 43.0610181,
+        "longitude": -85.6014669
+      },
+      "occurrence": {
+        "rate": 0.013,
+        "lift": 1.22,
+        "detection_count": 1,
+        "total_checklists": 77,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 16.0,
+        "max_count": 16
+      },
+      "seasonal": {
+        "spring": 0.027,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0769,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 14,
+      "locality_id": "L1574235",
+      "name": "Reeds Lake--Reeds Lake Blvd. SE",
+      "coordinates": {
+        "latitude": 42.9463865,
+        "longitude": -85.5957535
+      },
+      "occurrence": {
+        "rate": 0.0121,
+        "lift": 1.14,
+        "detection_count": 17,
+        "total_checklists": 1401,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 11.5,
+        "max_count": 47
+      },
+      "seasonal": {
+        "spring": 0.0243,
+        "summer": 0.0,
+        "fall": 0.0045,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0056,
+        "4": 0.0295,
+        "5": 0.0359,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0125,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 15,
+      "locality_id": "L874308",
+      "name": "Casnovia Sewage Ponds (limited access)",
+      "coordinates": {
+        "latitude": 43.2364616,
+        "longitude": -85.7816577
+      },
+      "occurrence": {
+        "rate": 0.0121,
+        "lift": 1.14,
+        "detection_count": 2,
+        "total_checklists": 165,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0294,
+        "summer": 0.0,
+        "fall": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.05,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 16,
+      "locality_id": "L611966",
+      "name": "Versluis Park",
+      "coordinates": {
+        "latitude": 43.06006,
+        "longitude": -85.57819
+      },
+      "occurrence": {
+        "rate": 0.008,
+        "lift": 0.75,
+        "detection_count": 9,
+        "total_checklists": 1125,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 35.6,
+        "max_count": 125
+      },
+      "seasonal": {
+        "spring": 0.0413,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.1667,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 17,
+      "locality_id": "L2751857",
+      "name": "MDOT wetland (92nd west of Clyde Park)",
+      "coordinates": {
+        "latitude": 42.7985334,
+        "longitude": -85.69174
+      },
+      "occurrence": {
+        "rate": 0.0071,
+        "lift": 0.67,
+        "detection_count": 1,
+        "total_checklists": 140,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 46.0,
+        "max_count": 46
+      },
+      "seasonal": {
+        "spring": 0.0125,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0625,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 18,
+      "locality_id": "L1143505",
+      "name": "Millennium Park",
+      "coordinates": {
+        "latitude": 42.9410461,
+        "longitude": -85.7443321
+      },
+      "occurrence": {
+        "rate": 0.0069,
+        "lift": 0.65,
+        "detection_count": 37,
+        "total_checklists": 5399,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.4,
+        "max_count": 35
+      },
+      "seasonal": {
+        "spring": 0.0124,
+        "summer": 0.0,
+        "fall": 0.0065,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.02,
+        "5": 0.0152,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0024,
+        "9": 0.0,
+        "10": 0.0133,
+        "11": 0.0153,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 19,
+      "locality_id": "L1051503",
+      "name": "South Kent Recycling and Waste Center (from 108th St.)",
+      "coordinates": {
+        "latitude": 42.7682429,
+        "longitude": -85.6810313
+      },
+      "occurrence": {
+        "rate": 0.0064,
+        "lift": 0.6,
+        "detection_count": 2,
+        "total_checklists": 314,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.0,
+        "max_count": 9
+      },
+      "seasonal": {
+        "spring": 0.0179,
+        "summer": 0.0,
+        "fall": 0.0143,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0455,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0208,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 20,
+      "locality_id": "L3549409",
+      "name": "92nd St. flooded field",
+      "coordinates": {
+        "latitude": 42.7988724,
+        "longitude": -85.6060722
+      },
+      "occurrence": {
+        "rate": 0.0045,
+        "lift": 0.42,
+        "detection_count": 1,
+        "total_checklists": 224,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0048,
+        "summer": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0078,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0
+      }
+    },
+    {
+      "rank": 21,
+      "locality_id": "L874547",
+      "name": "Wetland east of Hotel Ave.",
+      "coordinates": {
+        "latitude": 42.9091974,
+        "longitude": -85.5359674
+      },
+      "occurrence": {
+        "rate": 0.0018,
+        "lift": 0.17,
+        "detection_count": 2,
+        "total_checklists": 1099,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 13.5,
+        "max_count": 26
+      },
+      "seasonal": {
+        "spring": 0.0036,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0079,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 22,
+      "locality_id": "L3064680",
+      "name": "Cornerstone University Campus",
+      "coordinates": {
+        "latitude": 42.9818268,
+        "longitude": -85.5951905
+      },
+      "occurrence": {
+        "rate": 0.0015,
+        "lift": 0.14,
+        "detection_count": 1,
+        "total_checklists": 675,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0024,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0045,
+        "5": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 23,
+      "locality_id": "L29928681",
+      "name": "52nd St. SE, fields",
+      "coordinates": {
+        "latitude": 42.8695154,
+        "longitude": -85.5209579
+      },
+      "occurrence": {
+        "rate": 0.0011,
+        "lift": 0.1,
+        "detection_count": 1,
+        "total_checklists": 908,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0031,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0145,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 24,
+      "locality_id": "L613092",
+      "name": "Huff Park",
+      "coordinates": {
+        "latitude": 43.0058,
+        "longitude": -85.63498
+      },
+      "occurrence": {
+        "rate": 0.001,
+        "lift": 0.1,
+        "detection_count": 4,
+        "total_checklists": 3898,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 25.0,
+        "max_count": 50
+      },
+      "seasonal": {
+        "spring": 0.0027,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0021,
+        "5": 0.0044,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 25,
+      "locality_id": "L611576",
+      "name": "Calvin University Ecosystem Preserve",
+      "coordinates": {
+        "latitude": 42.9326652,
+        "longitude": -85.5839306
+      },
+      "occurrence": {
+        "rate": 0.0004,
+        "lift": 0.04,
+        "detection_count": 3,
+        "total_checklists": 8038,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 6.7,
+        "max_count": 10
+      },
+      "seasonal": {
+        "spring": 0.0003,
+        "summer": 0.0,
+        "fall": 0.0007,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0008,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0023,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-19T23:40:33.732321Z",
+    "data_version": "Dec-2025"
+  }
+}
