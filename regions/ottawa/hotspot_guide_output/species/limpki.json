@@ -1,0 +1,58 @@
+{
+  "species": {
+    "common_name": "Limpkin",
+    "code": "limpki",
+    "scientific_name": "Aramus guarauna"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0014,
+    "total_detections": 94,
+    "total_checklists_with_species": 94,
+    "total_checklists_countywide": 65224,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 94,
+    "highest_occurrence_rate": 0.5697
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L20651596",
+      "name": "Grand Haven SGA\u2014Indian Channel (boat access only)",
+      "coordinates": {
+        "latitude": 43.039259,
+        "longitude": -86.154741
+      },
+      "occurrence": {
+        "rate": 0.5697,
+        "lift": 395.3,
+        "detection_count": 94,
+        "total_checklists": 165,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.6714
+      },
+      "monthly": {
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.7288,
+        "9": 0.1333,
+        "10": 1.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-20T23:53:55.559649Z",
+    "data_version": "Dec-2025"
+  }
+}

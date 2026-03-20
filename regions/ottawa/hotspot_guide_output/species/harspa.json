@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Harris's Sparrow",
+    "code": "harspa",
+    "scientific_name": "Zonotrichia querula"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0002,
+    "total_detections": 10,
+    "total_checklists_with_species": 10,
+    "total_checklists_countywide": 65224,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 10,
+    "highest_occurrence_rate": 0.0031
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L576751",
+      "name": "Harbor Island",
+      "coordinates": {
+        "latitude": 43.0728379,
+        "longitude": -86.2260246
+      },
+      "occurrence": {
+        "rate": 0.0031,
+        "lift": 20.28,
+        "detection_count": 9,
+        "total_checklists": 2894,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0058,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0142,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L2837007",
+      "name": "Mount Pisgah dune boardwalk/Lake Macatawa CG",
+      "coordinates": {
+        "latitude": 42.7776152,
+        "longitude": -86.203769
+      },
+      "occurrence": {
+        "rate": 0.0009,
+        "lift": 5.57,
+        "detection_count": 1,
+        "total_checklists": 1172,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0026,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0069,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-20T23:53:55.535126Z",
+    "data_version": "Dec-2025"
+  }
+}

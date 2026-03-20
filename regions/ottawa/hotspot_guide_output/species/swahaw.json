@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Swainson's Hawk",
+    "code": "swahaw",
+    "scientific_name": "Buteo swainsoni"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 4,
+    "total_checklists_with_species": 4,
+    "total_checklists_countywide": 65224,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 4,
+    "highest_occurrence_rate": 0.0063
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L1031654",
+      "name": "North Beach Park",
+      "coordinates": {
+        "latitude": 43.0827826,
+        "longitude": -86.2538552
+      },
+      "occurrence": {
+        "rate": 0.0063,
+        "lift": 102.55,
+        "detection_count": 2,
+        "total_checklists": 318,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0141,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0541,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L7776890",
+      "name": "Ottawa Sands County Park",
+      "coordinates": {
+        "latitude": 43.0777389,
+        "longitude": -86.2389993
+      },
+      "occurrence": {
+        "rate": 0.0014,
+        "lift": 23.24,
+        "detection_count": 2,
+        "total_checklists": 1403,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0045,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0139,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-20T23:53:55.557753Z",
+    "data_version": "Dec-2025"
+  }
+}

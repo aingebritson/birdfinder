@@ -1,0 +1,92 @@
+{
+  "species": {
+    "common_name": "Varied Thrush",
+    "code": "varthr",
+    "scientific_name": "Ixoreus naevius"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0013,
+    "total_detections": 85,
+    "total_checklists_with_species": 85,
+    "total_checklists_countywide": 65224,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 85,
+    "highest_occurrence_rate": 0.3158
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L2868920",
+      "name": "Hofma Park - Ferris St. entrance",
+      "coordinates": {
+        "latitude": 43.0092773,
+        "longitude": -86.1732817
+      },
+      "occurrence": {
+        "rate": 0.3158,
+        "lift": 242.32,
+        "detection_count": 78,
+        "total_checklists": 247,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.4171,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.5652,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L3406047",
+      "name": "CRC Conference Grounds",
+      "coordinates": {
+        "latitude": 42.9915586,
+        "longitude": -86.2215829
+      },
+      "occurrence": {
+        "rate": 0.2593,
+        "lift": 198.94,
+        "detection_count": 7,
+        "total_checklists": 27,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "fall": 0.0,
+        "winter": 0.5
+      },
+      "monthly": {
+        "1": 0.7,
+        "9": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-20T23:53:55.556494Z",
+    "data_version": "Dec-2025"
+  }
+}

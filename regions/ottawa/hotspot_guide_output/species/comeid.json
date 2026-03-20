@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Common Eider",
+    "code": "comeid",
+    "scientific_name": "Somateria mollissima"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0011,
+    "total_detections": 69,
+    "total_checklists_with_species": 69,
+    "total_checklists_countywide": 65224,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 69,
+    "highest_occurrence_rate": 0.027
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L1355060",
+      "name": "Grand Haven North Pier",
+      "coordinates": {
+        "latitude": 43.0589892,
+        "longitude": -86.2509279
+      },
+      "occurrence": {
+        "rate": 0.027,
+        "lift": 25.52,
+        "detection_count": 58,
+        "total_checklists": 2148,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.1401
+      },
+      "monthly": {
+        "1": 0.0966,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.2789
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L584484",
+      "name": "Grand Haven SP",
+      "coordinates": {
+        "latitude": 43.056015,
+        "longitude": -86.2476568
+      },
+      "occurrence": {
+        "rate": 0.0124,
+        "lift": 11.7,
+        "detection_count": 11,
+        "total_checklists": 889,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0326
+      },
+      "monthly": {
+        "1": 0.0333,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0896
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-20T23:53:55.553313Z",
+    "data_version": "Dec-2025"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Red Phalarope",
+    "code": "redpha",
+    "scientific_name": "Phalaropus fulicarius"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0007,
+    "total_detections": 44,
+    "total_checklists_with_species": 44,
+    "total_checklists_countywide": 65224,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 44,
+    "highest_occurrence_rate": 0.006
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L576379",
+      "name": "Holland SP",
+      "coordinates": {
+        "latitude": 42.7753544,
+        "longitude": -86.2095236
+      },
+      "occurrence": {
+        "rate": 0.006,
+        "lift": 8.83,
+        "detection_count": 43,
+        "total_checklists": 7216,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0147,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0299,
+        "10": 0.0325,
+        "11": 0.001,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L1396080",
+      "name": "Macatawa--South Breakwall",
+      "coordinates": {
+        "latitude": 42.7719849,
+        "longitude": -86.2134133
+      },
+      "occurrence": {
+        "rate": 0.0051,
+        "lift": 7.6,
+        "detection_count": 1,
+        "total_checklists": 195,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0128,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0556,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-20T23:53:55.540516Z",
+    "data_version": "Dec-2025"
+  }
+}

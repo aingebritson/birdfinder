@@ -1,0 +1,102 @@
+{
+  "species": {
+    "common_name": "Blue Grosbeak",
+    "code": "blugro",
+    "scientific_name": "Passerina caerulea"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0008,
+    "total_detections": 49,
+    "total_checklists_with_species": 49,
+    "total_checklists_countywide": 65224,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 49,
+    "highest_occurrence_rate": 0.1548
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L11739519",
+      "name": "136th Ave.--Polk to Pigeon River bridge",
+      "coordinates": {
+        "latitude": 42.9176473,
+        "longitude": -86.1213616
+      },
+      "occurrence": {
+        "rate": 0.1548,
+        "lift": 206.11,
+        "detection_count": 48,
+        "total_checklists": 310,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.6,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.384,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.427,
+        "7": 0.2778,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L2868920",
+      "name": "Hofma Park - Ferris St. entrance",
+      "coordinates": {
+        "latitude": 43.0092773,
+        "longitude": -86.1732817
+      },
+      "occurrence": {
+        "rate": 0.004,
+        "lift": 5.39,
+        "detection_count": 1,
+        "total_checklists": 247,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0053,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0435,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-20T23:53:55.558862Z",
+    "data_version": "Dec-2025"
+  }
+}

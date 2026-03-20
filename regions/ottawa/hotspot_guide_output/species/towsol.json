@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Townsend's Solitaire",
+    "code": "towsol",
+    "scientific_name": "Myadestes townsendi"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.001,
+    "total_detections": 64,
+    "total_checklists_with_species": 64,
+    "total_checklists_countywide": 65224,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 64,
+    "highest_occurrence_rate": 0.1783
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L776499",
+      "name": "Kitchel-Lindquist Dunes Preserve",
+      "coordinates": {
+        "latitude": 43.0663483,
+        "longitude": -86.2434483
+      },
+      "occurrence": {
+        "rate": 0.1783,
+        "lift": 181.68,
+        "detection_count": 64,
+        "total_checklists": 359,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.01,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.5339
+      },
+      "monthly": {
+        "1": 0.6702,
+        "2": 0.0,
+        "3": 0.04,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-20T23:53:55.533966Z",
+    "data_version": "Dec-2025"
+  }
+}

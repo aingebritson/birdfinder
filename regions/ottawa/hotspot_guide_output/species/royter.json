@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Royal Tern",
+    "code": "royter",
+    "scientific_name": "Thalasseus maximus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0006,
+    "total_detections": 40,
+    "total_checklists_with_species": 40,
+    "total_checklists_countywide": 65224,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 40,
+    "highest_occurrence_rate": 0.0186
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L1355060",
+      "name": "Grand Haven North Pier",
+      "coordinates": {
+        "latitude": 43.0589892,
+        "longitude": -86.2509279
+      },
+      "occurrence": {
+        "rate": 0.0186,
+        "lift": 30.36,
+        "detection_count": 40,
+        "total_checklists": 2148,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0622,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1342,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-20T23:53:55.559313Z",
+    "data_version": "Dec-2025"
+  }
+}

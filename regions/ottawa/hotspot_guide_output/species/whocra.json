@@ -1,0 +1,103 @@
+{
+  "species": {
+    "common_name": "Whooping Crane",
+    "code": "whocra",
+    "scientific_name": "Grus americana"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0002,
+    "total_detections": 12,
+    "total_checklists_with_species": 12,
+    "total_checklists_countywide": 65224,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 12,
+    "highest_occurrence_rate": 0.0217
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L2736338",
+      "name": "Grand Haven SGA--Bruce Bayou--129th St.",
+      "coordinates": {
+        "latitude": 43.04761,
+        "longitude": -86.108014
+      },
+      "occurrence": {
+        "rate": 0.0217,
+        "lift": 117.9,
+        "detection_count": 10,
+        "total_checklists": 461,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0392,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0909,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L1396704",
+      "name": "Grand Haven SGA--Bruce Bayou--Cypress St.",
+      "coordinates": {
+        "latitude": 43.0452456,
+        "longitude": -86.1242996
+      },
+      "occurrence": {
+        "rate": 0.0059,
+        "lift": 32.07,
+        "detection_count": 2,
+        "total_checklists": 339,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0089,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.037,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-20T23:53:55.546108Z",
+    "data_version": "Dec-2025"
+  }
+}

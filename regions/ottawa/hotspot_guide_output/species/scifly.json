@@ -1,0 +1,82 @@
+{
+  "species": {
+    "common_name": "Scissor-tailed Flycatcher",
+    "code": "scifly",
+    "scientific_name": "Tyrannus forficatus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0011,
+    "total_detections": 73,
+    "total_checklists_with_species": 73,
+    "total_checklists_countywide": 65224,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 73,
+    "highest_occurrence_rate": 0.8313
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L37208803",
+      "name": "stakeout Scissor-tailed Flycatcher, Holland (2024)",
+      "coordinates": {
+        "latitude": 42.8056608,
+        "longitude": -86.0686805
+      },
+      "occurrence": {
+        "rate": 0.8313,
+        "lift": 742.77,
+        "detection_count": 69,
+        "total_checklists": 83,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "fall": 0.8313
+      },
+      "monthly": {
+        "10": 0.8313
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L968090",
+      "name": "US Army Corps of Engineers Dredge Spoils Ponds (Holland)",
+      "coordinates": {
+        "latitude": 42.80406,
+        "longitude": -86.0725379
+      },
+      "occurrence": {
+        "rate": 0.1379,
+        "lift": 123.24,
+        "detection_count": 4,
+        "total_checklists": 29,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.4444
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.0,
+        "7": 0.0,
+        "10": 0.5714
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-20T23:53:55.560010Z",
+    "data_version": "Dec-2025"
+  }
+}
