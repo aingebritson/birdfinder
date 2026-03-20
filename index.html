@@ -664,12 +664,12 @@
 
             </div>
 
-            <!-- Ottawa County — coming soon -->
-            <div class="county-card county-card--inactive">
+            <!-- Ottawa County — available -->
+            <a href="ottawa/" class="county-card">
 
                 <div class="card-status">
-                    <span class="status-dot status-dot--inactive"></span>
-                    Coming soon
+                    <span class="status-dot"></span>
+                    Available now
                 </div>
 
                 <div class="card-county-name">Ottawa County</div>
@@ -677,23 +677,28 @@
 
                 <div class="card-stats">
                     <div class="stat-item">
-                        <span class="stat-value">—</span>
+                        <span class="stat-value" id="ottawa-species-count">—</span>
                         <span class="stat-label">Species</span>
                     </div>
                     <div class="stat-sep"></div>
                     <div class="stat-item">
-                        <span class="stat-value">—</span>
+                        <span class="stat-value" id="ottawa-hotspot-count">—</span>
                         <span class="stat-label">Hotspots</span>
                     </div>
                 </div>
 
-                <div class="card-pheno" aria-hidden="true"></div>
+                <div class="card-pheno" id="ottawa-sparkline" aria-hidden="true"></div>
 
                 <div class="card-cta">
-                    <span class="card-cta-text">In preparation</span>
+                    <span class="card-cta-text">Explore this county</span>
+                    <svg class="card-arrow" width="18" height="18" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
                 </div>
 
-            </div>
+            </a>
 
         </div>
 
@@ -726,6 +731,49 @@
             if (pct < 0.77)                return { color: '#C9A55C', opacity: 0.5  + norm * 0.4  }; // fall   → ochre
             return                                { color: '#7A9E8E', opacity: 0.45 + norm * 0.35 }; // late fall → sage
         }
+
+        // Ottawa — hotspot count
+        fetch('ottawa/data/hotspot_index.json')
+            .then(function (r) { return r.json(); })
+            .then(function (index) {
+                var el = document.getElementById('ottawa-hotspot-count');
+                if (el) el.textContent = index.total_hotspots || (Array.isArray(index.hotspots) ? index.hotspots.length : '—');
+            })
+            .catch(function () {});
+
+        fetch('ottawa/data/species_data.json')
+            .then(function (r) { return r.json(); })
+            .then(function (species) {
+                var countEl = document.getElementById('ottawa-species-count');
+                if (countEl) countEl.textContent = species.length;
+                var container = document.getElementById('ottawa-sparkline');
+                if (!container) return;
+                var weekCount = 52;
+                for (var s = 0; s < species.length; s++) {
+                    if (Array.isArray(species[s].weekly_frequency) && species[s].weekly_frequency.length > 0) {
+                        weekCount = species[s].weekly_frequency.length;
+                        break;
+                    }
+                }
+                var sums = new Array(weekCount).fill(0);
+                species.forEach(function (sp) {
+                    if (!Array.isArray(sp.weekly_frequency)) return;
+                    sp.weekly_frequency.forEach(function (v, i) {
+                        if (i < weekCount) sums[i] += v;
+                    });
+                });
+                var max = Math.max.apply(null, sums) || 1;
+                sums.forEach(function (val, i) {
+                    var norm = val / max;
+                    var pct  = Math.max(6, norm * 100).toFixed(1);
+                    var c    = barColor(i, weekCount, norm);
+                    var bar  = document.createElement('div');
+                    bar.className = 'pheno-bar';
+                    bar.style.cssText = 'height:' + pct + '%; background:' + c.color + '; opacity:' + c.opacity.toFixed(2) + ';';
+                    container.appendChild(bar);
+                });
+            })
+            .catch(function () {});
 
         // Kent — hotspot count
         fetch('kent/data/hotspot_index.json')
