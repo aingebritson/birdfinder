@@ -28,6 +28,10 @@ def generate_species_code(species_name: str, existing_codes: set = None) -> str:
     # Remove parentheses and their contents
     clean_name = re.sub(r'\([^)]*\)', '', species_name).strip()
 
+    # Treat hyphens as word separators, strip apostrophes and other non-alpha chars
+    clean_name = clean_name.replace('-', ' ')
+    clean_name = re.sub(r"[^a-zA-Z ]", '', clean_name)
+
     # Split into words
     words = clean_name.split()
 
