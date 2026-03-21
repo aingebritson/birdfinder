@@ -375,16 +375,22 @@
         <p>Flightcall draws on two distinct eBird data products, each suited to a different
         question.</p>
 
-        <p><strong>Species phenology</strong> is derived from the
+        <p><strong>Species phenology</strong> is derived primarily from the
         <strong>eBird barchart export</strong>, a summary of reporting frequency across a
         county or region for each of 48 calendar weeks (4 weeks per month, every month).
         Each value is the fraction of complete eBird checklists in which a given species
         was recorded. These are the same numbers that drive the familiar colored bars in
         the eBird species barchart tool.</p>
 
-        <p><strong>Hotspot rankings</strong> are derived from the
-        <strong>eBird Basic Dataset (EBD)</strong>, the full, checklist-level export for
-        the county. This gives individual observation and checklist records, which allows
+        <p><strong>Vagrant classification</strong> also draws on the
+        <strong>eBird Basic Dataset (EBD)</strong> to count how many distinct years
+        (within the last 10 complete calendar years) a species was recorded in the county.
+        Species recorded in 3 or fewer of those years are classified as vagrant regardless
+        of their barchart pattern. This corrects for species that accumulate enough
+        presence weeks in aggregate but appear only sporadically across years.</p>
+
+        <p><strong>Hotspot rankings</strong> are also derived from the
+        <strong>EBD</strong>. Individual observation and checklist records allow
         occurrence rates, counts, and seasonal breakdowns to be calculated per hotspot.</p>
 
         <p>Only <strong>complete checklists</strong>, those submitted with "All Species
@@ -441,8 +447,9 @@
             </div>
             <div class="pattern-card irregular">
                 <div class="pattern-name">Vagrant / Irregular</div>
-                <p>Fewer than 10 weeks of any detectable presence, or a peak frequency
-                below 0.5%, or a valley pattern that doesn't fit the above types.
+                <p>Fewer than 10 weeks of any detectable presence; or a peak frequency
+                below 0.5%; or recorded in 3 or fewer of the last 10 complete years;
+                or a valley pattern that doesn't fit the above types.
                 Timing is simplified to first appearance, peak, and last appearance.</p>
             </div>
         </div>
@@ -490,6 +497,10 @@
             <div class="threshold-row">
                 <span class="threshold-key">Vagrant threshold (weeks present)</span>
                 <span class="threshold-val">&lt; 10 weeks with any detection</span>
+            </div>
+            <div class="threshold-row">
+                <span class="threshold-key">Vagrant threshold (annual presence)</span>
+                <span class="threshold-val">≤ 3 of the last 10 complete years</span>
             </div>
         </div>
 

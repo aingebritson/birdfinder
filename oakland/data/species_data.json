@@ -126,7 +126,8 @@
     "code": "ameavo",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -190,7 +191,8 @@
     "code": "ameowl",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -504,10 +506,11 @@
   },
   {
     "name": "American Golden-Plover",
-    "code": "amegol",
+    "code": "ameplo",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -568,7 +571,7 @@
   },
   {
     "name": "American Goldfinch",
-    "code": "amgold",
+    "code": "amegol",
     "category": "resident",
     "flags": [
       "seasonal_variation"
@@ -632,7 +635,8 @@
     "code": "amegos",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -1715,7 +1719,8 @@
     "code": "belvir",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -1902,7 +1907,8 @@
     "category": "vagrant",
     "flags": [
       "low_peak_frequency",
-      "low_presence"
+      "low_presence",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -2093,7 +2099,8 @@
     "code": "blawoo",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -2218,10 +2225,11 @@
   },
   {
     "name": "Black-bellied Whistling-Duck",
-    "code": "blawhi",
+    "code": "bladuc",
     "category": "vagrant",
     "flags": [
-      "three_valleys_irregular"
+      "three_valleys_irregular",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -2529,7 +2537,7 @@
   },
   {
     "name": "Black-throated Green Warbler",
-    "code": "blagre",
+    "code": "blathr",
     "category": "two-passage-migrant",
     "flags": [
       "classic_bimodal"
@@ -2728,18 +2736,17 @@
   {
     "name": "Blue Grosbeak",
     "code": "blugro",
-    "category": "two-passage-migrant",
+    "category": "vagrant",
     "flags": [
       "classic_bimodal",
-      "low_presence"
+      "low_presence",
+      "low_annual_presence"
     ],
     "timing": {
-      "spring_arrival": "June 1-7",
-      "spring_peak": "June 1-7",
-      "spring_departure": "June 1-7",
-      "fall_arrival": "August 1-7",
-      "fall_peak": "August 8-14",
-      "fall_departure": "August 8-14"
+      "status": "irregular",
+      "first_appears": "May 22-31",
+      "peak": "August 8-14",
+      "last_appears": "September 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -3176,7 +3183,8 @@
     "code": "bohwax",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -3304,7 +3312,8 @@
     "code": "brebla",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -3624,7 +3633,8 @@
     "code": "budger",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -3688,7 +3698,8 @@
     "code": "bufsan",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -4578,11 +4589,77 @@
     ]
   },
   {
+    "name": "Chuck-will's-widow",
+    "code": "chuwid",
+    "category": "vagrant",
+    "flags": [
+      "low_peak_frequency",
+      "low_annual_presence"
+    ],
+    "timing": {
+      "status": "irregular",
+      "first_appears": "May 15-21",
+      "peak": "May 15-21",
+      "last_appears": "May 15-21"
+    },
+    "weekly_frequency": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0015,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
     "name": "Chukar",
     "code": "chukar",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -5710,7 +5787,8 @@
     "code": "eargre",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -6015,7 +6093,7 @@
   },
   {
     "name": "Eastern Screech-Owl",
-    "code": "easscr",
+    "code": "easowl",
     "category": "two-passage-migrant",
     "flags": [
       "classic_bimodal"
@@ -6203,7 +6281,7 @@
   },
   {
     "name": "Eastern Whip-poor-will",
-    "code": "easwhi",
+    "code": "easwil",
     "category": "vagrant",
     "flags": [
       "low_peak_frequency",
@@ -6268,7 +6346,7 @@
   },
   {
     "name": "Eastern Wood-Pewee",
-    "code": "easwoo",
+    "code": "easpew",
     "category": "single-season",
     "flags": [],
     "timing": {
@@ -6331,7 +6409,9 @@
     "name": "Eurasian Wigeon",
     "code": "eurwig",
     "category": "vagrant",
-    "flags": [],
+    "flags": [
+      "low_annual_presence"
+    ],
     "timing": {
       "status": "irregular",
       "first_appears": "January 8-14",
@@ -6394,7 +6474,8 @@
     "code": "eurgol",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -6769,7 +6850,8 @@
     "code": "fragul",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -7340,7 +7422,8 @@
     "code": "gragoo",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -7966,7 +8049,9 @@
     "name": "Green-tailed Towhee",
     "code": "gretow",
     "category": "vagrant",
-    "flags": [],
+    "flags": [
+      "low_annual_presence"
+    ],
     "timing": {
       "status": "irregular",
       "first_appears": "January 1-7",
@@ -8155,7 +8240,9 @@
     "name": "Harris's Sparrow",
     "code": "harspa",
     "category": "vagrant",
-    "flags": [],
+    "flags": [
+      "low_annual_presence"
+    ],
     "timing": {
       "status": "irregular",
       "first_appears": "January 8-14",
@@ -8719,7 +8806,8 @@
     "code": "hudwhi",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -8848,7 +8936,8 @@
     "code": "indpea",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -8973,7 +9062,8 @@
     "code": "kenwar",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -9098,7 +9188,8 @@
     "code": "kirwar",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -9226,7 +9317,8 @@
     "code": "larspa",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -9288,7 +9380,8 @@
     "code": "lecspa",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -9745,7 +9838,9 @@
     "name": "Limpkin",
     "code": "limpki",
     "category": "vagrant",
-    "flags": [],
+    "flags": [
+      "low_annual_presence"
+    ],
     "timing": {
       "status": "irregular",
       "first_appears": "July 1-7",
@@ -9873,7 +9968,9 @@
     "name": "Little Blue Heron",
     "code": "lither",
     "category": "vagrant",
-    "flags": [],
+    "flags": [
+      "low_annual_presence"
+    ],
     "timing": {
       "status": "irregular",
       "first_appears": "May 1-7",
@@ -9935,7 +10032,9 @@
     "name": "Long-billed Dowitcher",
     "code": "londow",
     "category": "vagrant",
-    "flags": [],
+    "flags": [
+      "low_annual_presence"
+    ],
     "timing": {
       "status": "irregular",
       "first_appears": "May 8-14",
@@ -9996,14 +10095,16 @@
   {
     "name": "Long-eared Owl",
     "code": "lonowl",
-    "category": "single-season",
+    "category": "vagrant",
     "flags": [
-      "overwintering"
+      "overwintering",
+      "low_annual_presence"
     ],
     "timing": {
-      "winter_arrival": "November 22-30",
-      "winter_peak": "December 22-31",
-      "winter_departure": "December 22-31"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "December 22-31",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0029776,
@@ -10561,7 +10662,8 @@
     "code": "musduc",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -11954,7 +12056,8 @@
     "code": "paibun",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -12406,7 +12509,8 @@
     "code": "pingro",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -12599,7 +12703,8 @@
     "code": "prawar",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -12850,7 +12955,8 @@
     "code": "redcro",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -12914,7 +13020,8 @@
     "code": "redjun",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -13351,7 +13458,9 @@
     "name": "Red-necked Phalarope",
     "code": "redpha",
     "category": "vagrant",
-    "flags": [],
+    "flags": [
+      "low_annual_presence"
+    ],
     "timing": {
       "status": "irregular",
       "first_appears": "September 1-7",
@@ -13534,7 +13643,8 @@
     "code": "redloo",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -14091,7 +14201,9 @@
     "name": "Ross's Goose",
     "code": "rosgoo",
     "category": "vagrant",
-    "flags": [],
+    "flags": [
+      "low_annual_presence"
+    ],
     "timing": {
       "status": "irregular",
       "first_appears": "January 15-21",
@@ -14411,7 +14523,8 @@
     "code": "rudshe",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -14473,7 +14586,8 @@
     "code": "rudtur",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -14600,7 +14714,9 @@
     "name": "Rufous Hummingbird",
     "code": "rufhum",
     "category": "vagrant",
-    "flags": [],
+    "flags": [
+      "low_annual_presence"
+    ],
     "timing": {
       "status": "irregular",
       "first_appears": "October 15-21",
@@ -14729,7 +14845,8 @@
     "code": "sander",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -14921,7 +15038,8 @@
     "code": "saypho",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -15372,7 +15490,8 @@
     "code": "shoowl",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -15558,7 +15677,8 @@
     "code": "snoegr",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -15620,15 +15740,17 @@
   {
     "name": "Snowy Owl",
     "code": "snoowl",
-    "category": "single-season",
+    "category": "vagrant",
     "flags": [
       "overwintering",
-      "low_presence"
+      "low_presence",
+      "low_annual_presence"
     ],
     "timing": {
-      "winter_arrival": "December 8-14",
-      "winter_peak": "December 22-31",
-      "winter_departure": "January 1-7"
+      "status": "irregular",
+      "first_appears": "January 1-7",
+      "peak": "December 22-31",
+      "last_appears": "December 22-31"
     },
     "weekly_frequency": [
       0.0096198,
@@ -15934,7 +16056,9 @@
     "name": "Stilt Sandpiper",
     "code": "stisan",
     "category": "vagrant",
-    "flags": [],
+    "flags": [
+      "low_annual_presence"
+    ],
     "timing": {
       "status": "irregular",
       "first_appears": "July 15-21",
@@ -16249,7 +16373,8 @@
     "code": "swagoo",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -16684,7 +16809,8 @@
     "code": "uplsan",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -16748,7 +16874,8 @@
     "code": "varthr",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -16992,10 +17119,11 @@
   },
   {
     "name": "Western Cattle-Egret",
-    "code": "wescat",
+    "code": "wesegr",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -17380,7 +17508,8 @@
     "code": "whicro",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -17695,7 +17824,8 @@
     "code": "wilpha",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -18080,7 +18210,8 @@
     "code": "worwar",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -18336,14 +18467,16 @@
   {
     "name": "Yellow-breasted Chat",
     "code": "yelcha",
-    "category": "single-season",
+    "category": "vagrant",
     "flags": [
-      "low_presence"
+      "low_presence",
+      "low_annual_presence"
     ],
     "timing": {
-      "arrival": "June 1-7",
+      "status": "irregular",
+      "first_appears": "May 22-31",
       "peak": "June 1-7",
-      "departure": "June 22-30"
+      "last_appears": "July 1-7"
     },
     "weekly_frequency": [
       0.0,
@@ -18401,7 +18534,8 @@
     "code": "yelher",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -18465,7 +18599,8 @@
     "code": "yelbla",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
@@ -18656,7 +18791,8 @@
     "code": "yewarb",
     "category": "vagrant",
     "flags": [
-      "low_peak_frequency"
+      "low_peak_frequency",
+      "low_annual_presence"
     ],
     "timing": {
       "status": "irregular",
