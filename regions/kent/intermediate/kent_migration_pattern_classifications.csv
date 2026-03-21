@@ -1,16 +1,16 @@
 species,category,pattern_type,peak_frequency,min_frequency,min_max_ratio,weeks_with_presence,num_valleys,valley_types,is_overwintering,edge_case_flags
 Snow Goose,two-passage-migrant,two-passage,0.006825,0.0,0.0,22,2,winter|summer,No,classic_bimodal
 Ross's Goose,vagrant,irregular,0.009825,0.0,0.0,8,1,winter,No,
-Graylag Goose,vagrant,irregular,0.008455,0.0,0.0,43,3,summer|summer|winter,No,three_valleys_irregular
+Graylag Goose,vagrant,irregular,0.008455,0.0,0.0,43,3,summer|summer|winter,No,three_valleys_irregular|low_annual_presence
 Greater White-fronted Goose,single-season,summer,0.006905,0.0,0.0,11,1,winter,No,low_presence
-Brant,vagrant,irregular,0.0015,0.0,0.0,1,1,winter,No,low_peak_frequency
+Brant,vagrant,irregular,0.0015,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
 Cackling Goose,single-season,summer,0.005996,0.0,0.0,19,1,winter,No,
 Canada Goose,resident,year-round,0.577238,0.090478,0.1567,48,0,,No,seasonal_variation|min_max_near_boundary
 Mute Swan,resident,year-round,0.216157,0.058019,0.2684,48,0,,No,seasonal_variation
-Black Swan,vagrant,irregular,0.004428,0.0,0.0,1,1,winter,No,low_peak_frequency
+Black Swan,vagrant,irregular,0.004428,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
 Trumpeter Swan,single-season,winter,0.015014,0.0,0.0,46,1,summer,No,overwintering
 Tundra Swan,two-passage-migrant,two-passage,0.036686,0.0,0.0,30,2,winter|summer,Yes,classic_bimodal
-Muscovy Duck,vagrant,irregular,0.000985,0.0,0.0,10,1,winter,No,low_peak_frequency|low_presence
+Muscovy Duck,vagrant,irregular,0.000985,0.0,0.0,10,1,winter,No,low_peak_frequency|low_presence|low_annual_presence
 Wood Duck,single-season,summer,0.160546,0.004036,0.0251,48,1,winter,No,
 Blue-winged Teal,two-passage-migrant,two-passage,0.08991,0.0,0.0,40,2,summer|winter,No,classic_bimodal
 Northern Shoveler,two-passage-migrant,two-passage,0.058192,0.0,0.0,42,2,winter|summer,No,classic_bimodal
@@ -25,28 +25,28 @@ Redhead,single-season,winter,0.050396,0.0,0.0,35,1,summer,Yes,overwintering
 Ring-necked Duck,two-passage-migrant,two-passage,0.066867,0.0,0.0,44,2,summer|winter,No,classic_bimodal
 Greater Scaup,two-passage-migrant,two-passage,0.024349,0.0,0.0,30,2,summer|winter,Yes,classic_bimodal
 Lesser Scaup,two-passage-migrant,two-passage,0.060036,0.0,0.0,37,2,winter|summer,Yes,classic_bimodal
-Harlequin Duck,vagrant,irregular,0.0015,0.0,0.0,8,1,winter,No,low_peak_frequency
+Harlequin Duck,vagrant,irregular,0.0015,0.0,0.0,8,1,winter,No,low_peak_frequency|low_annual_presence
 Surf Scoter,single-season,summer,0.027807,0.0,0.0,16,1,winter,Yes,
 White-winged Scoter,two-passage-migrant,two-passage,0.008478,0.0,0.0,23,2,summer|winter,No,classic_bimodal
 Black Scoter,vagrant,irregular,0.012115,0.0,0.0,7,1,summer,No,
 Long-tailed Duck,two-passage-migrant,two-passage,0.029669,0.0,0.0,21,2,winter|summer,Yes,classic_bimodal
 Bufflehead,two-passage-migrant,two-passage,0.185195,0.0,0.0,34,2,winter|summer,Yes,classic_bimodal
 Common Goldeneye,single-season,winter,0.120198,0.0,0.0,31,1,summer,Yes,overwintering
-Barrow's Goldeneye,vagrant,irregular,0.010193,0.0,0.0,2,1,winter,No,
+Barrow's Goldeneye,vagrant,irregular,0.010193,0.0,0.0,2,1,winter,No,low_annual_presence
 Hooded Merganser,single-season,winter,0.070215,0.000923,0.0131,48,2,summer|summer,No,overwintering|two_summer_valleys_merged
 Common Merganser,single-season,winter,0.101076,0.0,0.0,42,1,summer,Yes,overwintering
 Red-breasted Merganser,single-season,summer,0.095524,0.0,0.0,31,1,winter,Yes,
 Ruddy Duck,two-passage-migrant,two-passage,0.101898,0.0,0.0,44,2,winter|summer,No,classic_bimodal
-Helmeted Guineafowl,vagrant,irregular,0.0015,0.0,0.0,2,1,winter,No,low_peak_frequency
-Northern Bobwhite,vagrant,irregular,0.001821,0.0,0.0,9,1,winter,No,low_peak_frequency
+Helmeted Guineafowl,vagrant,irregular,0.0015,0.0,0.0,2,1,winter,No,low_peak_frequency|low_annual_presence
+Northern Bobwhite,vagrant,irregular,0.001821,0.0,0.0,9,1,winter,No,low_peak_frequency|low_annual_presence
 Wild Turkey,resident,year-round,0.088463,0.031872,0.3603,48,0,,No,seasonal_variation
 Ruffed Grouse,vagrant,irregular,0.001998,0.0,0.0,33,1,winter,No,low_peak_frequency
 Ring-necked Pheasant,vagrant,irregular,0.003364,0.0,0.0,45,1,winter,No,low_peak_frequency
-Silver Pheasant,vagrant,irregular,0.0015,0.0,0.0,1,1,winter,No,low_peak_frequency
-Indian Peafowl,vagrant,irregular,0.0015,0.0,0.0,8,1,winter,No,low_peak_frequency
-Chukar,vagrant,irregular,0.0015,0.0,0.0,3,1,winter,No,low_peak_frequency
+Silver Pheasant,vagrant,irregular,0.0015,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
+Indian Peafowl,vagrant,irregular,0.0015,0.0,0.0,8,1,winter,No,low_peak_frequency|low_annual_presence
+Chukar,vagrant,irregular,0.0015,0.0,0.0,3,1,winter,No,low_peak_frequency|low_annual_presence
 Rock Pigeon,resident,year-round,0.084166,0.044397,0.5275,48,0,,No,
-Eurasian Collared-Dove,vagrant,irregular,0.001836,0.0,0.0,3,1,winter,No,low_peak_frequency
+Eurasian Collared-Dove,vagrant,irregular,0.001836,0.0,0.0,3,1,winter,No,low_peak_frequency|low_annual_presence
 Mourning Dove,resident,year-round,0.567705,0.225806,0.3978,48,0,,No,seasonal_variation
 Yellow-billed Cuckoo,single-season,summer,0.049409,0.0,0.0,22,1,winter,No,
 Black-billed Cuckoo,single-season,summer,0.019647,0.0,0.0,22,1,winter,No,
@@ -54,94 +54,94 @@ Common Nighthawk,single-season,summer,0.027685,0.0,0.0,20,1,winter,No,
 Eastern Whip-poor-will,vagrant,irregular,0.002277,0.0,0.0,12,1,winter,No,low_peak_frequency|low_presence
 Chimney Swift,single-season,summer,0.108792,0.0,0.0,26,1,winter,No,
 Ruby-throated Hummingbird,single-season,summer,0.240969,0.0,0.0,31,1,winter,No,
-Rufous Hummingbird,vagrant,irregular,0.003511,0.0,0.0,5,1,winter,Yes,low_peak_frequency
+Rufous Hummingbird,vagrant,irregular,0.003511,0.0,0.0,5,1,winter,Yes,low_peak_frequency|low_annual_presence
 Virginia Rail,single-season,summer,0.0219,0.0,0.0,35,1,winter,No,
 Sora,two-passage-migrant,two-passage,0.040591,0.0,0.0,26,2,summer|winter,No,classic_bimodal
-Common Gallinule,vagrant,irregular,0.002987,0.0,0.0,10,1,winter,No,low_peak_frequency|low_presence
+Common Gallinule,vagrant,irregular,0.002987,0.0,0.0,10,1,winter,No,low_peak_frequency|low_presence|low_annual_presence
 American Coot,two-passage-migrant,two-passage,0.12872,0.0,0.0,47,2,winter|summer,No,classic_bimodal
-Yellow Rail,vagrant,irregular,0.001359,0.0,0.0,2,1,winter,No,low_peak_frequency
+Yellow Rail,vagrant,irregular,0.001359,0.0,0.0,2,1,winter,No,low_peak_frequency|low_annual_presence
 Sandhill Crane,single-season,summer,0.138165,0.0,0.0,47,1,winter,No,
-Whooping Crane,vagrant,irregular,0.0015,0.0,0.0,2,1,winter,No,low_peak_frequency
-Black-necked Stilt,vagrant,irregular,0.003538,0.0,0.0,1,1,winter,No,low_peak_frequency
+Whooping Crane,vagrant,irregular,0.0015,0.0,0.0,2,1,winter,No,low_peak_frequency|low_annual_presence
+Black-necked Stilt,vagrant,irregular,0.003538,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
 American Avocet,vagrant,irregular,0.007742,0.0,0.0,4,1,winter,No,
 Black-bellied Plover,vagrant,irregular,0.002987,0.0,0.0,7,1,winter,No,low_peak_frequency
 American Golden-Plover,vagrant,irregular,0.007982,0.0,0.0,9,2,summer|winter,No,
 Killdeer,single-season,summer,0.212296,0.0,0.0,45,1,winter,No,
 Semipalmated Plover,two-passage-migrant,two-passage,0.009992,0.0,0.0,19,2,summer|winter,No,classic_bimodal
 Upland Sandpiper,single-season,summer,0.013735,0.0,0.0,19,1,winter,No,
-Hudsonian Whimbrel,vagrant,irregular,0.002403,0.0,0.0,3,1,winter,No,low_peak_frequency
-Marbled Godwit,vagrant,irregular,0.001019,0.0,0.0,2,1,winter,No,low_peak_frequency
+Hudsonian Whimbrel,vagrant,irregular,0.002403,0.0,0.0,3,1,winter,No,low_peak_frequency|low_annual_presence
+Marbled Godwit,vagrant,irregular,0.001019,0.0,0.0,2,1,winter,No,low_peak_frequency|low_annual_presence
 Short-billed Dowitcher,vagrant,irregular,0.00869,0.0,0.0,9,2,summer|winter,No,
-Long-billed Dowitcher,vagrant,irregular,0.003303,0.0,0.0,7,1,winter,No,low_peak_frequency
+Long-billed Dowitcher,vagrant,irregular,0.003303,0.0,0.0,7,1,winter,No,low_peak_frequency|low_annual_presence
 American Woodcock,single-season,summer,0.027905,0.0,0.0,35,1,winter,No,
 Wilson's Snipe,two-passage-migrant,two-passage,0.024975,0.0,0.0,37,2,summer|winter,No,classic_bimodal
-Wilson's Phalarope,vagrant,irregular,0.003227,0.0,0.0,5,1,winter,No,low_peak_frequency
+Wilson's Phalarope,vagrant,irregular,0.003227,0.0,0.0,5,1,winter,No,low_peak_frequency|low_annual_presence
 Spotted Sandpiper,single-season,summer,0.05817,0.0,0.0,26,1,winter,No,
 Solitary Sandpiper,two-passage-migrant,two-passage,0.060853,0.0,0.0,23,2,summer|winter,No,classic_bimodal
 Lesser Yellowlegs,two-passage-migrant,two-passage,0.04266,0.0,0.0,27,2,summer|winter,No,classic_bimodal
 Willet,vagrant,irregular,0.012568,0.0,0.0,2,1,winter,No,
 Greater Yellowlegs,two-passage-migrant,two-passage,0.044497,0.0,0.0,26,2,summer|winter,No,classic_bimodal
-Ruddy Turnstone,vagrant,irregular,0.002009,0.0,0.0,2,1,winter,No,low_peak_frequency
-Ruff,vagrant,irregular,0.00985,0.0,0.0,2,1,winter,No,
+Ruddy Turnstone,vagrant,irregular,0.002009,0.0,0.0,2,1,winter,No,low_peak_frequency|low_annual_presence
+Ruff,vagrant,irregular,0.00985,0.0,0.0,2,1,winter,No,low_annual_presence
 Stilt Sandpiper,vagrant,irregular,0.017318,0.0,0.0,8,1,winter,No,
-Buff-breasted Sandpiper,vagrant,irregular,0.0015,0.0,0.0,2,1,winter,No,low_peak_frequency
-Sanderling,vagrant,irregular,0.005861,0.0,0.0,1,1,winter,No,
+Buff-breasted Sandpiper,vagrant,irregular,0.0015,0.0,0.0,2,1,winter,No,low_peak_frequency|low_annual_presence
+Sanderling,vagrant,irregular,0.005861,0.0,0.0,1,1,winter,No,low_annual_presence
 Dunlin,single-season,summer,0.006471,0.0,0.0,12,1,winter,No,low_presence
 Baird's Sandpiper,vagrant,irregular,0.007686,0.0,0.0,7,1,winter,No,
-White-rumped Sandpiper,vagrant,irregular,0.006588,0.0,0.0,8,1,winter,No,
+White-rumped Sandpiper,vagrant,irregular,0.006588,0.0,0.0,8,1,winter,No,low_annual_presence
 Least Sandpiper,two-passage-migrant,two-passage,0.040778,0.0,0.0,21,2,summer|winter,No,classic_bimodal
 Pectoral Sandpiper,two-passage-migrant,two-passage,0.018063,0.0,0.0,24,2,summer|winter,No,classic_bimodal
 Semipalmated Sandpiper,two-passage-migrant,two-passage,0.024597,0.0,0.0,18,2,summer|winter,No,classic_bimodal
 Bonaparte's Gull,two-passage-migrant,two-passage,0.037534,0.0,0.0,27,2,summer|winter,No,classic_bimodal
-Franklin's Gull,vagrant,irregular,0.002971,0.0,0.0,6,1,winter,No,low_peak_frequency
+Franklin's Gull,vagrant,irregular,0.002971,0.0,0.0,6,1,winter,No,low_peak_frequency|low_annual_presence
 Ring-billed Gull,single-season,summer,0.189121,0.015541,0.0822,48,1,winter,No,
 American Herring Gull,single-season,winter,0.099751,0.009605,0.0963,48,1,summer,No,overwintering
 Great Black-backed Gull,vagrant,irregular,0.003161,0.0,0.0,11,1,winter,Yes,low_peak_frequency|low_presence
 Glaucous Gull,single-season,winter,0.007736,0.0,0.0,19,1,summer,Yes,overwintering
 Lesser Black-backed Gull,two-passage-migrant,two-passage,0.009352,0.0,0.0,26,2,winter|summer,No,classic_bimodal
-Slaty-backed Gull,vagrant,irregular,0.001133,0.0,0.0,1,1,winter,No,low_peak_frequency
+Slaty-backed Gull,vagrant,irregular,0.001133,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
 Iceland Gull,single-season,summer,0.006727,0.0,0.0,21,1,winter,Yes,
 Caspian Tern,two-passage-migrant,two-passage,0.014164,0.0,0.0,24,2,summer|winter,No,classic_bimodal
 Black Tern,vagrant,irregular,0.010204,0.0,0.0,8,1,winter,No,
 Forster's Tern,single-season,summer,0.012972,0.0,0.0,16,1,winter,No,
-Arctic Tern,vagrant,irregular,0.000356,0.0,0.0,1,1,winter,No,low_peak_frequency
+Arctic Tern,vagrant,irregular,0.000356,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
 Common Tern,single-season,summer,0.007262,0.0,0.0,10,1,winter,No,low_presence
 Pied-billed Grebe,two-passage-migrant,two-passage,0.126101,0.00079,0.0063,48,2,summer|winter,No,classic_bimodal
 Horned Grebe,two-passage-migrant,two-passage,0.070415,0.0,0.0,35,2,winter|summer,No,classic_bimodal
 Red-necked Grebe,two-passage-migrant,two-passage,0.013002,0.0,0.0,26,2,winter|summer,No,classic_bimodal
-Eared Grebe,vagrant,irregular,0.002798,0.0,0.0,9,1,winter,No,low_peak_frequency
-Western Grebe,vagrant,irregular,0.0015,0.0,0.0,1,1,winter,No,low_peak_frequency
-Red-throated Loon,vagrant,irregular,0.004137,0.0,0.0,4,1,winter,No,low_peak_frequency
+Eared Grebe,vagrant,irregular,0.002798,0.0,0.0,9,1,winter,No,low_peak_frequency|low_annual_presence
+Western Grebe,vagrant,irregular,0.0015,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
+Red-throated Loon,vagrant,irregular,0.004137,0.0,0.0,4,1,winter,No,low_peak_frequency|low_annual_presence
 Common Loon,single-season,summer,0.126365,0.0,0.0,46,1,winter,No,
 Double-crested Cormorant,single-season,summer,0.058284,0.0,0.0,41,1,winter,No,
 American Bittern,single-season,summer,0.011703,0.0,0.0,12,1,winter,No,low_presence
 Least Bittern,single-season,summer,0.00592,0.0,0.0,17,1,winter,No,
 Black-crowned Night Heron,vagrant,irregular,0.015116,0.0,0.0,25,3,summer|mixed|winter,No,three_valleys_irregular
-Snowy Egret,vagrant,irregular,0.007802,0.0,0.0,7,1,winter,No,
+Snowy Egret,vagrant,irregular,0.007802,0.0,0.0,7,1,winter,No,low_annual_presence
 Green Heron,single-season,summer,0.137735,0.0,0.0,28,1,winter,No,
-Western Cattle-Egret,vagrant,irregular,0.000551,0.0,0.0,2,1,winter,No,low_peak_frequency
+Western Cattle-Egret,vagrant,irregular,0.000551,0.0,0.0,2,1,winter,No,low_peak_frequency|low_annual_presence
 Great Egret,two-passage-migrant,two-passage,0.130905,0.0,0.0,33,2,summer|winter,No,classic_bimodal
 Great Blue Heron,single-season,summer,0.244579,0.009739,0.0398,48,1,winter,No,
 American White Pelican,single-season,summer,0.009017,0.0,0.0,16,1,winter,No,
 Turkey Vulture,single-season,summer,0.200799,0.0,0.0,47,1,winter,No,
 Osprey,single-season,summer,0.070006,0.0,0.0,34,1,winter,No,
-Swallow-tailed Kite,vagrant,irregular,0.0015,0.0,0.0,2,1,winter,No,low_peak_frequency
-Golden Eagle,vagrant,irregular,0.001301,0.0,0.0,9,1,winter,No,low_peak_frequency
+Swallow-tailed Kite,vagrant,irregular,0.0015,0.0,0.0,2,1,winter,No,low_peak_frequency|low_annual_presence
+Golden Eagle,vagrant,irregular,0.001301,0.0,0.0,9,1,winter,No,low_peak_frequency|low_annual_presence
 Sharp-shinned Hawk,two-passage-migrant,two-passage,0.015059,0.0,0.0,42,2,summer|winter,No,classic_bimodal
 Cooper's Hawk,resident,year-round,0.077096,0.022346,0.2898,48,0,,No,seasonal_variation
-American Goshawk,vagrant,irregular,0.0015,0.0,0.0,4,1,winter,No,low_peak_frequency
+American Goshawk,vagrant,irregular,0.0015,0.0,0.0,4,1,winter,No,low_peak_frequency|low_annual_presence
 Northern Harrier,vagrant,irregular,0.008461,0.000303,0.0358,48,4,winter|summer|summer|winter,No,many_valleys
 Bald Eagle,resident,year-round,0.07102,0.018609,0.262,48,0,,No,seasonal_variation
 Broad-winged Hawk,single-season,summer,0.013247,0.0,0.0,25,1,winter,No,
 Red-shouldered Hawk,resident,year-round,0.038749,0.005794,0.1495,48,0,,No,seasonal_variation|min_max_near_boundary
 Red-tailed Hawk,resident,year-round,0.153171,0.059322,0.3873,48,0,,No,seasonal_variation
 Rough-legged Hawk,single-season,winter,0.021335,0.0,0.0,31,1,summer,Yes,overwintering
-Ferruginous Hawk,vagrant,irregular,0.000358,0.0,0.0,1,1,winter,No,low_peak_frequency
+Ferruginous Hawk,vagrant,irregular,0.000358,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
 Eastern Screech-Owl,two-passage-migrant,two-passage,0.016818,0.000443,0.0263,48,2,summer|winter,No,classic_bimodal
 Snowy Owl,single-season,winter,0.036327,0.0,0.0,22,1,summer,Yes,overwintering
 Great Horned Owl,resident,year-round,0.022222,0.000358,0.0161,48,0,,No,seasonal_variation|min_max_near_boundary
 Barred Owl,resident,year-round,0.029891,0.003741,0.1251,48,0,,No,seasonal_variation|min_max_near_boundary
-Long-eared Owl,single-season,summer,0.013267,0.0,0.0,20,1,winter,No,
+Long-eared Owl,vagrant,irregular,0.013267,0.0,0.0,20,1,winter,No,low_annual_presence
 Short-eared Owl,two-passage-migrant,two-passage,0.013267,0.0,0.0,26,2,winter|summer,Yes,classic_bimodal
 Northern Saw-whet Owl,single-season,winter,0.01808,0.0,0.0,24,1,summer,Yes,overwintering
 Belted Kingfisher,resident,year-round,0.185544,0.01637,0.0882,48,0,,No,seasonal_variation|min_max_near_boundary
@@ -155,7 +155,7 @@ Northern Flicker,resident,year-round,0.375564,0.057775,0.1538,48,0,,No,seasonal_
 American Kestrel,resident,year-round,0.037461,0.005266,0.1406,48,0,,No,seasonal_variation|min_max_near_boundary
 Merlin,single-season,winter,0.018343,0.000716,0.039,48,1,summer,No,overwintering
 Peregrine Falcon,vagrant,irregular,0.007558,0.000459,0.0607,48,3,winter|summer|summer,No,three_valleys_irregular
-Budgerigar,vagrant,irregular,0.0015,0.0,0.0,2,1,winter,No,low_peak_frequency
+Budgerigar,vagrant,irregular,0.0015,0.0,0.0,2,1,winter,No,low_peak_frequency|low_annual_presence
 Olive-sided Flycatcher,single-season,summer,0.016526,0.0,0.0,13,1,winter,No,low_presence
 Eastern Wood-Pewee,single-season,summer,0.371637,0.0,0.0,24,1,winter,No,
 Yellow-bellied Flycatcher,two-passage-migrant,two-passage,0.016062,0.0,0.0,12,2,summer|winter,No,classic_bimodal|low_presence
@@ -165,7 +165,7 @@ Willow Flycatcher,single-season,summer,0.100576,0.0,0.0,18,1,winter,No,
 Least Flycatcher,two-passage-migrant,two-passage,0.109756,0.0,0.0,23,2,summer|winter,No,classic_bimodal
 Eastern Phoebe,single-season,summer,0.178102,0.0,0.0,33,1,winter,No,
 Great Crested Flycatcher,single-season,summer,0.295602,0.0,0.0,22,1,winter,No,
-Western Kingbird,vagrant,irregular,0.0015,0.0,0.0,1,1,winter,No,low_peak_frequency
+Western Kingbird,vagrant,irregular,0.0015,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
 Eastern Kingbird,single-season,summer,0.236499,0.0,0.0,21,1,winter,No,
 White-eyed Vireo,vagrant,irregular,0.003538,0.0,0.0,11,1,winter,No,low_peak_frequency|low_presence
 Yellow-throated Vireo,single-season,summer,0.063713,0.0,0.0,24,1,winter,No,
@@ -173,11 +173,11 @@ Blue-headed Vireo,two-passage-migrant,two-passage,0.083185,0.0,0.0,19,2,summer|w
 Philadelphia Vireo,two-passage-migrant,two-passage,0.042381,0.0,0.0,14,2,summer|winter,No,classic_bimodal|low_presence
 Eastern Warbling Vireo,single-season,summer,0.309607,0.0,0.0,23,1,winter,No,
 Red-eyed Vireo,single-season,summer,0.264122,0.0,0.0,25,1,winter,No,
-Loggerhead Shrike,vagrant,irregular,0.004654,0.0,0.0,1,1,winter,No,low_peak_frequency
+Loggerhead Shrike,vagrant,irregular,0.004654,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
 Northern Shrike,single-season,winter,0.008368,0.0,0.0,20,1,summer,Yes,overwintering
 Blue Jay,resident,year-round,0.771867,0.329119,0.4264,48,0,,No,seasonal_variation
 American Crow,resident,year-round,0.410546,0.271751,0.6619,48,0,,No,
-Fish Crow,vagrant,irregular,0.000358,0.0,0.0,2,1,winter,No,low_peak_frequency
+Fish Crow,vagrant,irregular,0.000358,0.0,0.0,2,1,winter,No,low_peak_frequency|low_annual_presence
 Common Raven,single-season,winter,0.005185,0.0,0.0,43,1,summer,No,overwintering
 Black-capped Chickadee,resident,year-round,0.664471,0.364841,0.5491,48,0,,No,
 Tufted Titmouse,resident,year-round,0.425202,0.284608,0.6693,48,0,,No,
@@ -204,8 +204,8 @@ Gray Catbird,single-season,summer,0.451468,0.0,0.0,41,1,winter,No,
 Brown Thrasher,single-season,summer,0.076988,0.0,0.0,36,1,winter,No,
 Northern Mockingbird,vagrant,irregular,0.014416,0.000395,0.0274,48,3,winter|mixed|winter,No,three_valleys_irregular
 Eastern Bluebird,resident,year-round,0.193064,0.080969,0.4194,48,0,,No,seasonal_variation
-Townsend's Solitaire,vagrant,irregular,0.018722,0.0,0.0,2,1,winter,No,
-Varied Thrush,vagrant,irregular,0.001829,0.0,0.0,7,1,winter,No,low_peak_frequency
+Townsend's Solitaire,vagrant,irregular,0.018722,0.0,0.0,2,1,winter,No,low_annual_presence
+Varied Thrush,vagrant,irregular,0.001829,0.0,0.0,7,1,winter,No,low_peak_frequency|low_annual_presence
 Veery,single-season,summer,0.043554,0.0,0.0,22,1,winter,No,
 Gray-cheeked Thrush,two-passage-migrant,two-passage,0.024346,0.0,0.0,14,2,summer|winter,No,classic_bimodal|low_presence
 Swainson's Thrush,two-passage-migrant,two-passage,0.133082,0.0,0.0,18,2,summer|winter,No,classic_bimodal
@@ -217,7 +217,7 @@ Cedar Waxwing,single-season,summer,0.313657,0.024444,0.0779,48,1,winter,No,
 House Sparrow,resident,year-round,0.493634,0.257439,0.5215,48,0,,No,
 American Pipit,two-passage-migrant,two-passage,0.02583,0.0,0.0,20,2,summer|winter,No,classic_bimodal
 Evening Grosbeak,single-season,summer,0.005507,0.0,0.0,20,1,winter,No,
-Pine Grosbeak,vagrant,irregular,0.0015,0.0,0.0,6,1,winter,No,low_peak_frequency
+Pine Grosbeak,vagrant,irregular,0.0015,0.0,0.0,6,1,winter,No,low_peak_frequency|low_annual_presence
 House Finch,resident,year-round,0.390625,0.261046,0.6683,48,0,,No,
 Purple Finch,single-season,winter,0.044235,0.0,0.0,38,1,summer,Yes,overwintering
 Redpoll,single-season,winter,0.031477,0.0,0.0,28,1,summer,Yes,overwintering
@@ -231,16 +231,16 @@ Grasshopper Sparrow,single-season,summer,0.01728,0.0,0.0,18,1,winter,No,
 Chipping Sparrow,single-season,summer,0.235344,0.0,0.0,42,1,winter,No,
 Clay-colored Sparrow,vagrant,irregular,0.002864,0.0,0.0,9,1,winter,No,low_peak_frequency
 Field Sparrow,single-season,summer,0.12494,0.0,0.0,44,1,winter,No,
-Lark Sparrow,vagrant,irregular,0.002022,0.0,0.0,1,1,winter,No,low_peak_frequency
+Lark Sparrow,vagrant,irregular,0.002022,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
 American Tree Sparrow,single-season,winter,0.198582,0.0,0.0,30,1,summer,Yes,overwintering
 Fox Sparrow,two-passage-migrant,two-passage,0.046806,0.0,0.0,31,2,summer|winter,No,classic_bimodal
 Dark-eyed Junco,single-season,winter,0.534811,0.0,0.0,35,1,summer,Yes,overwintering
 White-crowned Sparrow,two-passage-migrant,two-passage,0.156235,0.0,0.0,34,2,summer|winter,Yes,classic_bimodal
-Harris's Sparrow,vagrant,irregular,0.003136,0.0,0.0,2,1,winter,No,low_peak_frequency
+Harris's Sparrow,vagrant,irregular,0.003136,0.0,0.0,2,1,winter,No,low_peak_frequency|low_annual_presence
 White-throated Sparrow,two-passage-migrant,two-passage,0.392,0.0,0.0,39,2,summer|winter,Yes,classic_bimodal
 Vesper Sparrow,single-season,summer,0.008102,0.0,0.0,30,1,winter,No,
-LeConte's Sparrow,vagrant,irregular,0.014644,0.0,0.0,4,1,winter,No,
-Nelson's Sparrow,vagrant,irregular,0.003294,0.0,0.0,3,1,winter,No,low_peak_frequency
+LeConte's Sparrow,vagrant,irregular,0.014644,0.0,0.0,4,1,winter,No,low_annual_presence
+Nelson's Sparrow,vagrant,irregular,0.003294,0.0,0.0,3,1,winter,No,low_peak_frequency|low_annual_presence
 Savannah Sparrow,single-season,summer,0.068232,0.0,0.0,29,1,winter,No,
 Henslow's Sparrow,single-season,summer,0.022596,0.0,0.0,17,1,winter,No,
 Song Sparrow,single-season,summer,0.5219,0.03319,0.0636,48,1,winter,No,
@@ -248,9 +248,9 @@ Lincoln's Sparrow,two-passage-migrant,two-passage,0.048347,0.0,0.0,17,2,summer|w
 Swamp Sparrow,single-season,summer,0.093666,0.0,0.0,46,1,winter,No,
 Eastern Towhee,single-season,summer,0.112471,0.0,0.0,46,1,winter,No,
 Yellow-breasted Chat,single-season,summer,0.014897,0.0,0.0,12,1,winter,No,low_presence
-Yellow-headed Blackbird,vagrant,irregular,0.0015,0.0,0.0,4,1,winter,No,low_peak_frequency
+Yellow-headed Blackbird,vagrant,irregular,0.0015,0.0,0.0,4,1,winter,No,low_peak_frequency|low_annual_presence
 Bobolink,single-season,summer,0.076207,0.0,0.0,23,1,winter,No,
-Western Meadowlark,vagrant,irregular,0.003544,0.0,0.0,3,1,winter,No,low_peak_frequency
+Western Meadowlark,vagrant,irregular,0.003544,0.0,0.0,3,1,winter,No,low_peak_frequency|low_annual_presence
 Eastern Meadowlark,two-passage-migrant,two-passage,0.078866,0.0,0.0,34,2,summer|winter,No,classic_bimodal
 Orchard Oriole,single-season,summer,0.02054,0.0,0.0,18,1,winter,No,
 Baltimore Oriole,single-season,summer,0.502987,0.0,0.0,27,1,winter,No,
@@ -272,7 +272,7 @@ Orange-crowned Warbler,two-passage-migrant,two-passage,0.041882,0.0,0.0,17,2,sum
 Nashville Warbler,two-passage-migrant,two-passage,0.191451,0.0,0.0,22,2,summer|winter,No,classic_bimodal
 Connecticut Warbler,vagrant,irregular,0.003733,0.0,0.0,12,1,winter,No,low_peak_frequency|low_presence
 Mourning Warbler,two-passage-migrant,two-passage,0.018915,0.0,0.0,18,2,summer|winter,No,classic_bimodal
-Kentucky Warbler,vagrant,irregular,0.020824,0.0,0.0,6,1,winter,No,
+Kentucky Warbler,vagrant,irregular,0.020824,0.0,0.0,6,1,winter,No,low_annual_presence
 Common Yellowthroat,single-season,summer,0.259084,0.0,0.0,30,1,winter,No,
 Hooded Warbler,single-season,summer,0.022556,0.0,0.0,21,1,winter,No,
 American Redstart,two-passage-migrant,two-passage,0.255102,0.0,0.0,26,2,summer|winter,No,classic_bimodal
@@ -290,16 +290,16 @@ Palm Warbler,two-passage-migrant,two-passage,0.154144,0.0,0.0,16,2,summer|winter
 Pine Warbler,two-passage-migrant,two-passage,0.017493,0.0,0.0,35,2,summer|winter,No,classic_bimodal
 Yellow-rumped Warbler,two-passage-migrant,two-passage,0.320471,0.0,0.0,42,2,summer|winter,Yes,classic_bimodal
 Yellow-throated Warbler,single-season,summer,0.01036,0.0,0.0,16,1,winter,No,
-Black-throated Gray Warbler,vagrant,irregular,0.001185,0.0,0.0,1,1,winter,No,low_peak_frequency
-Townsend's Warbler,vagrant,irregular,0.000472,0.0,0.0,1,1,winter,No,low_peak_frequency
+Black-throated Gray Warbler,vagrant,irregular,0.001185,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
+Townsend's Warbler,vagrant,irregular,0.000472,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
 Black-throated Green Warbler,two-passage-migrant,two-passage,0.135087,0.0,0.0,20,2,summer|winter,No,classic_bimodal
 Canada Warbler,two-passage-migrant,two-passage,0.031359,0.0,0.0,13,2,summer|winter,No,classic_bimodal|low_presence
 Wilson's Warbler,two-passage-migrant,two-passage,0.066544,0.0,0.0,14,2,summer|winter,No,classic_bimodal|low_presence
-Summer Tanager,vagrant,irregular,0.002971,0.0,0.0,3,1,winter,No,low_peak_frequency
+Summer Tanager,vagrant,irregular,0.002971,0.0,0.0,3,1,winter,No,low_peak_frequency|low_annual_presence
 Scarlet Tanager,two-passage-migrant,two-passage,0.120209,0.0,0.0,25,2,summer|winter,No,classic_bimodal
-Western Tanager,vagrant,irregular,0.000169,0.0,0.0,1,1,winter,No,low_peak_frequency
+Western Tanager,vagrant,irregular,0.000169,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
 Northern Cardinal,resident,year-round,0.716139,0.457856,0.6393,48,0,,No,
 Rose-breasted Grosbeak,single-season,summer,0.408978,0.0,0.0,33,1,winter,No,
 Indigo Bunting,single-season,summer,0.216789,0.0,0.0,26,1,winter,No,
-Painted Bunting,vagrant,irregular,0.001211,0.0,0.0,1,1,winter,No,low_peak_frequency
+Painted Bunting,vagrant,irregular,0.001211,0.0,0.0,1,1,winter,No,low_peak_frequency|low_annual_presence
 Dickcissel,single-season,summer,0.01778,0.0,0.0,13,1,winter,No,low_presence

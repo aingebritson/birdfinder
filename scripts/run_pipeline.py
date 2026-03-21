@@ -137,6 +137,7 @@ def main():
     # Define the pipeline steps
     scripts = [
         "parse_ebird_data.py",
+        "calculate_annual_presence.py",   # Optional: reads EBD, skips gracefully if absent
         "classify_migration_patterns.py",
         "calculate_arrival_departure.py",
         "merge_to_json.py"

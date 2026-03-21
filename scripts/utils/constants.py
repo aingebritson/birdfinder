@@ -116,6 +116,11 @@ RESIDENT_SEASONAL_VARIATION_THRESHOLD = 5.0
 OVERWINTERING_MIN_WEEKS = 8
 OVERWINTERING_FREQUENCY_THRESHOLD = 0.05  # 5% of peak
 
+# Annual presence threshold for vagrant classification
+# Species recorded in <= this many of the last 10 complete years are classified as vagrant
+# regardless of barchart pattern (requires EBD data via calculate_annual_presence.py)
+MAX_VAGRANT_ANNUAL_YEARS = 3
+
 
 # ==============================================================================
 # DATA VALIDATION CONSTANTS
@@ -192,6 +197,7 @@ FLAG_OVERWINTERING = 'overwintering'
 FLAG_THREE_VALLEYS_IRREGULAR = 'three_valleys_irregular'
 FLAG_CLOSE_VALLEYS = 'close_valleys'
 FLAG_WINTER_BREEDING = 'winter_breeding'
+FLAG_LOW_ANNUAL_PRESENCE = 'low_annual_presence'
 
 
 # ==============================================================================

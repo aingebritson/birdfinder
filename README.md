@@ -87,9 +87,10 @@ cp regions/[region_name]/[region_name]_species_data.json washtenaw/data/species_
 │   ├── run_pipeline.py         # Run species data pipeline
 │   ├── run_all.py              # Run pipeline for all regions
 │   ├── parse_ebird_data.py     # Step 1: Parse eBird barchart file
-│   ├── classify_migration_patterns.py  # Step 2: Classify species
-│   ├── calculate_arrival_departure.py  # Step 3: Calculate timing
-│   ├── merge_to_json.py        # Step 4: Merge to JSON
+│   ├── calculate_annual_presence.py    # Step 2: Annual presence from EBD (optional)
+│   ├── classify_migration_patterns.py  # Step 3: Classify species
+│   ├── calculate_arrival_departure.py  # Step 4: Calculate timing
+│   ├── merge_to_json.py        # Step 5: Merge to JSON
 │   ├── fetch_hotspots.py       # Fetch eBird hotspot data via API
 │   ├── build_enriched_hotspots.py      # Merge content with hotspot data
 │   ├── new_hotspot_content.py  # Scaffold new hotspot content files
@@ -208,10 +209,11 @@ Get a free eBird API key at: https://ebird.org/api/keygen
 python3 scripts/run_pipeline.py [region_name]
 
 # Or run steps individually:
-python3 scripts/parse_ebird_data.py [region_name]           # Parse eBird file
-python3 scripts/classify_migration_patterns.py [region_name] # Classify species
-python3 scripts/calculate_arrival_departure.py [region_name] # Calculate timing
-python3 scripts/merge_to_json.py [region_name]              # Generate final JSON
+python3 scripts/parse_ebird_data.py [region_name]            # Step 1: Parse eBird barchart
+python3 scripts/calculate_annual_presence.py [region_name]   # Step 2: Annual presence from EBD (optional)
+python3 scripts/classify_migration_patterns.py [region_name] # Step 3: Classify species
+python3 scripts/calculate_arrival_departure.py [region_name] # Step 4: Calculate timing
+python3 scripts/merge_to_json.py [region_name]               # Step 5: Generate final JSON
 ```
 
 ### Hotspot Data Pipeline
@@ -234,17 +236,23 @@ python3 scripts/build_enriched_hotspots.py
 - Filters out unidentified species (sp.) and hybrids
 - Outputs JSON and CSV formats
 
-**2. classify_migration_patterns.py**
+**2. calculate_annual_presence.py** *(optional — skips gracefully if EBD not present)*
+- Reads the eBird Basic Dataset (EBD) for the region
+- Counts distinct years in which each species was recorded (last 10 complete years)
+- Outputs `[region]_annual_presence.json` — used by the classify step
+
+**3. classify_migration_patterns.py**
 - Uses valley detection to classify species
 - Categories: Resident, Single-season, Two-passage Migrant, Vagrant
 - Valley = 4+ consecutive weeks below 15% of peak frequency
+- Species recorded in ≤ 3 of the last 10 years are reclassified as vagrant (requires step 2)
 
-**3. calculate_arrival_departure.py**
+**4. calculate_arrival_departure.py**
 - Calculates arrival, peak, and departure timing
 - Converts week numbers to date ranges
 - Threshold: 10% of peak frequency or 0.1% absolute
 
-**4. merge_to_json.py**
+**5. merge_to_json.py**
 - Merges all data into final JSON
 - Generates unique 6-letter species codes
 - Structures timing by category
@@ -257,6 +265,7 @@ python3 scripts/build_enriched_hotspots.py
 
 **Intermediate files** (in `regions/[region]/intermediate/`):
 - `[region]_ebird_data.json` - Parsed frequency data
+- `[region]_annual_presence.json` - Years recorded per species (last 10 complete years)
 - `[region]_migration_pattern_classifications.csv` - Species classifications
 - `[region]_migration_timing.csv` - Arrival/departure timing
 

@@ -39,6 +39,7 @@ from utils.constants import (
     RESIDENT_SEASONAL_VARIATION_THRESHOLD,
     OVERWINTERING_MIN_WEEKS,
     ARRIVAL_THRESHOLD_ABSOLUTE,
+    MAX_VAGRANT_ANNUAL_YEARS,
     # Categories
     CATEGORY_RESIDENT,
     CATEGORY_SINGLE_SEASON,
@@ -62,7 +63,8 @@ from utils.constants import (
     FLAG_OVERWINTERING,
     FLAG_THREE_VALLEYS_IRREGULAR,
     FLAG_CLOSE_VALLEYS,
-    FLAG_WINTER_BREEDING
+    FLAG_WINTER_BREEDING,
+    FLAG_LOW_ANNUAL_PRESENCE
 )
 
 
@@ -386,6 +388,16 @@ def main():
     sample_sizes = data['sample_sizes']
     species_data = data['species_data']
 
+    # Load annual presence data from EBD pre-processing step (optional)
+    annual_presence = {}
+    annual_presence_file = intermediate_path / f"{region_name}_annual_presence.json"
+    if annual_presence_file.exists():
+        with open(annual_presence_file, 'r') as f:
+            annual_presence = json.load(f)
+        print(f"Loaded annual presence data ({len(annual_presence)} species, threshold: ≤{MAX_VAGRANT_ANNUAL_YEARS} years → vagrant)")
+    else:
+        print("No annual presence file found — using barchart-only classification")
+
     print(f"Processing {len(species_data)} species...")
 
     # Load old classifications if they exist
@@ -404,6 +416,19 @@ def main():
     for species in species_data:
         metrics = calculate_metrics(species)
         category, pattern_type, flags = classify_species(metrics)
+
+        # Annual presence override: if EBD data is available and the species was
+        # recorded in <= MAX_VAGRANT_ANNUAL_YEARS of the last 10 complete years,
+        # reclassify as vagrant regardless of barchart pattern.
+        # Residents are excluded — a genuine year-round species may have thin
+        # recent records in a small county without being a vagrant.
+        if annual_presence and category != CATEGORY_RESIDENT:
+            years_present = annual_presence.get(metrics['species'], 0)
+            if years_present <= MAX_VAGRANT_ANNUAL_YEARS:
+                category = CATEGORY_VAGRANT
+                pattern_type = PATTERN_IRREGULAR
+                if FLAG_LOW_ANNUAL_PRESENCE not in flags:
+                    flags.append(FLAG_LOW_ANNUAL_PRESENCE)
 
         # Track changes
         old_category = old_classifications.get(metrics['species'])
