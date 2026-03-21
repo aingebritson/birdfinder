@@ -7,8 +7,8 @@ calendar years) in which the species was recorded on at least one complete check
 
 Output: regions/<region>/intermediate/<region>_annual_presence.json
     {
-        "American Robin": 10,
-        "Little Gull": 1,
+        "American Robin": {"years": 10, "last_year": 2025},
+        "Little Gull": {"years": 1, "last_year": 2022},
         ...
     }
 
@@ -135,8 +135,11 @@ def calculate_annual_presence(ebd_file: Path, start_year: int, end_year: int) ->
 
     print(f"  {rows_processed:,} rows total")
 
-    # Convert sets to counts
-    return {species: len(years) for species, years in species_years.items()}
+    # Convert sets to counts and last observed year
+    return {
+        species: {"years": len(years), "last_year": max(years)}
+        for species, years in species_years.items()
+    }
 
 
 def main():

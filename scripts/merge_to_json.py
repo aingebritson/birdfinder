@@ -10,6 +10,7 @@ import sys
 
 # Add parent directory to path to import utils
 sys.path.insert(0, str(Path(__file__).parent))
+from calculate_annual_presence import get_analysis_year_range
 from utils.validation import (
     ValidationError,
     validate_species_data_structure,
@@ -189,6 +190,16 @@ def main():
 
     print(f"  Loaded {len(timing_data)} species timing data")
 
+    # 4. Load annual presence data (optional — only present if EBD was processed)
+    annual_presence = {}
+    annual_presence_file = intermediate_path / f"{region_name}_annual_presence.json"
+    if annual_presence_file.exists():
+        with open(annual_presence_file, 'r') as f:
+            annual_presence = json.load(f)
+        print(f"  Loaded annual presence data ({len(annual_presence)} species)")
+
+    presence_start, presence_end = get_analysis_year_range()
+
     # Merge all data
     print("\nMerging data...")
     species_list = []
@@ -207,16 +218,26 @@ def main():
         code = generate_species_code(species_name, existing_codes)
         existing_codes.add(code)
 
+        timing = build_timing(
+            timing_info['pattern_type'],
+            timing_info['row'],
+            classification['flags']
+        )
+
+        # For vagrant species, inject annual presence stats if EBD data is available
+        if classification['category'] == 'vagrant' and species_name in annual_presence:
+            presence = annual_presence[species_name]
+            timing['years_present'] = presence['years']
+            timing['last_year_observed'] = presence['last_year']
+            timing['presence_window_start'] = presence_start
+            timing['presence_window_end'] = presence_end
+
         species_obj = {
             'name': species_name,
             'code': code,
             'category': classification['category'],
             'flags': classification['flags'],
-            'timing': build_timing(
-                timing_info['pattern_type'],
-                timing_info['row'],
-                classification['flags']
-            ),
+            'timing': timing,
             'weekly_frequency': frequency_data[species_name]
         }
 

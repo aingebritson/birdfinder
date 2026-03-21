@@ -423,7 +423,7 @@ def main():
         # Residents are excluded — a genuine year-round species may have thin
         # recent records in a small county without being a vagrant.
         if annual_presence and category != CATEGORY_RESIDENT:
-            years_present = annual_presence.get(metrics['species'], 0)
+            years_present = annual_presence.get(metrics['species'], {}).get('years', 0)
             if years_present <= MAX_VAGRANT_ANNUAL_YEARS:
                 category = CATEGORY_VAGRANT
                 pattern_type = PATTERN_IRREGULAR

@@ -156,29 +156,20 @@ function renderTimingInfo() {
 
     // Irregular visitor (vagrant or irregular presence)
     if (currentSpecies.category === 'vagrant' || timing.first_appears) {
-        const firstAppears = timing.first_appears || '';
-        const peak = timing.peak || '';
-        const lastAppears = timing.last_appears || '';
+        const hasPresenceData = timing.years_present !== undefined;
 
         container.innerHTML = `
             <div class="text-center py-8">
                 <div class="status-icon mb-2" style="color: var(--color-ink-muted);">${Icons.helpCircle(36)}</div>
                 <p class="text-lg font-medium" style="color: var(--color-ink);">Irregular Visitor</p>
                 <p class="text-sm mt-1" style="color: var(--color-ink-muted);">Rare or unpredictable occurrence</p>
-                ${firstAppears ? `
-                    <div class="mt-4 grid grid-cols-3 gap-3 max-w-xl mx-auto">
-                        <div class="text-center">
-                            <div class="text-xs" style="color: var(--color-ink-muted);">First appears</div>
-                            <div class="text-sm font-medium mt-1">${firstAppears}</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-xs" style="color: var(--color-ink-muted);">Peak</div>
-                            <div class="text-sm font-medium mt-1">${peak}</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-xs" style="color: var(--color-ink-muted);">Last appears</div>
-                            <div class="text-sm font-medium mt-1">${lastAppears}</div>
-                        </div>
+                ${hasPresenceData ? `
+                    <div class="mt-4 space-y-2">
+                        <p class="text-sm" style="color: var(--color-ink);">
+                            Recorded in <strong>${timing.years_present} of the last 10 years</strong>
+                            (${timing.presence_window_start}–${timing.presence_window_end})
+                        </p>
+                        <p class="text-sm" style="color: var(--color-ink-muted);">Last observed: ${timing.last_year_observed}</p>
                     </div>
                 ` : ''}
             </div>
