@@ -79,12 +79,17 @@ def find_ebd_file(ebd_dir: Path) -> Path:
 
 def calculate_annual_presence(ebd_file: Path, start_year: int, end_year: int) -> dict:
     """
-    Read the EBD file in chunks and return a dict mapping species name to the
-    number of distinct years (within [start_year, end_year]) in which it appeared
-    on at least one complete checklist.
+    Read the EBD file in chunks and return a dict mapping species name to:
+      - years: count of distinct years within [start_year, end_year]
+      - last_year: most recent year observed across all time (not window-limited)
+
+    Species seen outside the window (but not within it) are included so that
+    last_year can be reported even for species with years=0.
     """
-    # Track distinct years per species using sets
-    species_years: dict[str, set] = defaultdict(set)
+    # Track distinct years within the analysis window (for years_present count)
+    species_window_years: dict[str, set] = defaultdict(set)
+    # Track all-time last year regardless of window (for last_year_observed)
+    species_all_time_last: dict[str, int] = {}
 
     print(f"Reading EBD: {ebd_file.name}")
     print(f"Year window: {start_year}–{end_year}")
@@ -120,14 +125,19 @@ def calculate_annual_presence(ebd_file: Path, start_year: int, end_year: int) ->
             filtered['OBSERVATION DATE'], errors='coerce'
         ).dt.year
 
-        # Filter to window
+        # Accumulate all-time last year per species
+        for _, row in filtered.iterrows():
+            year = int(row['year'])
+            name = row['COMMON NAME']
+            if name not in species_all_time_last or year > species_all_time_last[name]:
+                species_all_time_last[name] = year
+
+        # Accumulate distinct years within the window
         in_window = filtered[
             (filtered['year'] >= start_year) & (filtered['year'] <= end_year)
         ]
-
-        # Accumulate distinct years per species
         for _, row in in_window.iterrows():
-            species_years[row['COMMON NAME']].add(int(row['year']))
+            species_window_years[row['COMMON NAME']].add(int(row['year']))
 
         rows_processed += len(chunk)
         if rows_processed % 500_000 == 0:
@@ -135,10 +145,14 @@ def calculate_annual_presence(ebd_file: Path, start_year: int, end_year: int) ->
 
     print(f"  {rows_processed:,} rows total")
 
-    # Convert sets to counts and last observed year
+    # Include all species seen at any point in time
+    all_species = set(species_window_years.keys()) | set(species_all_time_last.keys())
     return {
-        species: {"years": len(years), "last_year": max(years)}
-        for species, years in species_years.items()
+        species: {
+            "years": len(species_window_years.get(species, set())),
+            "last_year": species_all_time_last[species],
+        }
+        for species in all_species
     }
 
 
