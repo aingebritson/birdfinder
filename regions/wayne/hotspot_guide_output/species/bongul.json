@@ -1,0 +1,1631 @@
+{
+  "species": {
+    "common_name": "Bonaparte's Gull",
+    "code": "bongul",
+    "scientific_name": "Chroicocephalus philadelphia"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0636,
+    "total_detections": 3479,
+    "total_checklists_with_species": 3479,
+    "total_checklists_countywide": 54702,
+    "hotspots_detected": 44
+  },
+  "summary": {
+    "total_hotspots_detected": 44,
+    "total_detections": 3479,
+    "highest_occurrence_rate": 0.6667
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L21173435",
+      "name": "Celeron Island",
+      "coordinates": {
+        "latitude": 42.0796259,
+        "longitude": -83.1731661
+      },
+      "occurrence": {
+        "rate": 0.6667,
+        "lift": 10.48,
+        "detection_count": 8,
+        "total_checklists": 12,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 81.4,
+        "max_count": 300
+      },
+      "seasonal": {
+        "fall": 0.6667
+      },
+      "monthly": {
+        "9": 0.75
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L16762389",
+      "name": "Humbug Marina",
+      "coordinates": {
+        "latitude": 42.098433,
+        "longitude": -83.1886654
+      },
+      "occurrence": {
+        "rate": 0.559,
+        "lift": 8.79,
+        "detection_count": 109,
+        "total_checklists": 195,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 25.5,
+        "max_count": 200
+      },
+      "seasonal": {
+        "spring": 0.8182,
+        "fall": 0.8776,
+        "winter": 0.3871
+      },
+      "monthly": {
+        "1": 0.2388,
+        "2": 0.0,
+        "3": 0.75,
+        "4": 0.875,
+        "5": 0.8333,
+        "10": 0.4,
+        "11": 0.9762,
+        "12": 0.6667
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L27660400",
+      "name": "Sunrise Park",
+      "coordinates": {
+        "latitude": 42.1261464,
+        "longitude": -83.140943
+      },
+      "occurrence": {
+        "rate": 0.4419,
+        "lift": 6.95,
+        "detection_count": 19,
+        "total_checklists": 43,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 9.2,
+        "max_count": 33
+      },
+      "seasonal": {
+        "spring": 0.6364,
+        "fall": 0.5,
+        "winter": 0.3913
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.3333,
+        "4": 1.0,
+        "5": 0.3333,
+        "7": 0.0,
+        "11": 0.75,
+        "12": 0.6429
+      }
+    },
+    {
+      "rank": 4,
+      "locality_id": "L5069392",
+      "name": "Stony Island",
+      "coordinates": {
+        "latitude": 42.1244981,
+        "longitude": -83.1317854
+      },
+      "occurrence": {
+        "rate": 0.3333,
+        "lift": 5.24,
+        "detection_count": 9,
+        "total_checklists": 27,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 20.0,
+        "max_count": 160
+      },
+      "seasonal": {
+        "winter": 0.4091
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "12": 0.6429
+      }
+    },
+    {
+      "rank": 5,
+      "locality_id": "L13593980",
+      "name": "Detroit River IWR - Sugar Island Unit (Restricted Access)",
+      "coordinates": {
+        "latitude": 42.0910427,
+        "longitude": -83.144843
+      },
+      "occurrence": {
+        "rate": 0.3125,
+        "lift": 4.91,
+        "detection_count": 5,
+        "total_checklists": 16,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 9.6,
+        "max_count": 31
+      },
+      "seasonal": {
+        "spring": 0.8,
+        "fall": 0.1429
+      },
+      "monthly": {
+        "4": 1.0,
+        "9": 0.0
+      }
+    },
+    {
+      "rank": 6,
+      "locality_id": "L23114230",
+      "name": "Church Rd.--Detroit River overlook",
+      "coordinates": {
+        "latitude": 42.1507771,
+        "longitude": -83.1384747
+      },
+      "occurrence": {
+        "rate": 0.2424,
+        "lift": 3.81,
+        "detection_count": 8,
+        "total_checklists": 33,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 15.1,
+        "max_count": 60
+      },
+      "seasonal": {
+        "spring": 0.4,
+        "winter": 0.0556
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.2,
+        "4": 1.0,
+        "11": 1.0,
+        "12": 0.1429
+      }
+    },
+    {
+      "rank": 7,
+      "locality_id": "L492304",
+      "name": "Campau Rd. & Pte. Mouillee Headquarters (Wayne County)",
+      "coordinates": {
+        "latitude": 42.0435503,
+        "longitude": -83.2002901
+      },
+      "occurrence": {
+        "rate": 0.2291,
+        "lift": 3.6,
+        "detection_count": 499,
+        "total_checklists": 2178,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 32.0,
+        "max_count": 500
+      },
+      "seasonal": {
+        "spring": 0.2429,
+        "summer": 0.0136,
+        "fall": 0.2253,
+        "winter": 0.2632
+      },
+      "monthly": {
+        "1": 0.2885,
+        "2": 0.0162,
+        "3": 0.2154,
+        "4": 0.4444,
+        "5": 0.1208,
+        "6": 0.0141,
+        "7": 0.0132,
+        "8": 0.0545,
+        "9": 0.0913,
+        "10": 0.3047,
+        "11": 0.5038,
+        "12": 0.4632
+      }
+    },
+    {
+      "rank": 8,
+      "locality_id": "L1066374",
+      "name": "Riverfront Park and Harbin Rd. (Wayne Co.)",
+      "coordinates": {
+        "latitude": 42.0434765,
+        "longitude": -83.2128471
+      },
+      "occurrence": {
+        "rate": 0.2197,
+        "lift": 3.45,
+        "detection_count": 116,
+        "total_checklists": 528,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 45.7,
+        "max_count": 500
+      },
+      "seasonal": {
+        "spring": 0.2812,
+        "summer": 0.0,
+        "fall": 0.2517,
+        "winter": 0.1889
+      },
+      "monthly": {
+        "1": 0.1585,
+        "2": 0.0,
+        "3": 0.0986,
+        "4": 0.5806,
+        "5": 0.0741,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0426,
+        "10": 0.3143,
+        "11": 0.6154,
+        "12": 0.42
+      }
+    },
+    {
+      "rank": 9,
+      "locality_id": "L1003279",
+      "name": "Lake Erie Metropark--Detroit River Hawk Watch",
+      "coordinates": {
+        "latitude": 42.0796233,
+        "longitude": -83.1939483
+      },
+      "occurrence": {
+        "rate": 0.2106,
+        "lift": 3.31,
+        "detection_count": 239,
+        "total_checklists": 1135,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 13.1,
+        "max_count": 537
+      },
+      "seasonal": {
+        "spring": 0.2917,
+        "summer": 0.0,
+        "fall": 0.2167,
+        "winter": 0.0779
+      },
+      "monthly": {
+        "1": 0.1389,
+        "2": 0.0,
+        "3": 0.069,
+        "4": 0.6176,
+        "5": 0.1515,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.1067,
+        "10": 0.2167,
+        "11": 0.6861,
+        "12": 0.0588
+      }
+    },
+    {
+      "rank": 10,
+      "locality_id": "L4975469",
+      "name": "Detroit River IWR--Gibraltar Bay Unit",
+      "coordinates": {
+        "latitude": 42.0977091,
+        "longitude": -83.1536104
+      },
+      "occurrence": {
+        "rate": 0.1796,
+        "lift": 2.82,
+        "detection_count": 97,
+        "total_checklists": 540,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 6.2,
+        "max_count": 50
+      },
+      "seasonal": {
+        "spring": 0.3568,
+        "summer": 0.0,
+        "fall": 0.0426,
+        "winter": 0.1111
+      },
+      "monthly": {
+        "1": 0.0185,
+        "2": 0.0,
+        "3": 0.1667,
+        "4": 0.5682,
+        "5": 0.2211,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.1538,
+        "12": 0.2692
+      }
+    },
+    {
+      "rank": 11,
+      "locality_id": "L139835",
+      "name": "Lake Erie Metropark",
+      "coordinates": {
+        "latitude": 42.0691986,
+        "longitude": -83.1941986
+      },
+      "occurrence": {
+        "rate": 0.1743,
+        "lift": 2.74,
+        "detection_count": 1250,
+        "total_checklists": 7173,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 17.4,
+        "max_count": 650
+      },
+      "seasonal": {
+        "spring": 0.2593,
+        "summer": 0.003,
+        "fall": 0.1426,
+        "winter": 0.1657
+      },
+      "monthly": {
+        "1": 0.1224,
+        "2": 0.0059,
+        "3": 0.1815,
+        "4": 0.4431,
+        "5": 0.1633,
+        "6": 0.0,
+        "7": 0.0053,
+        "8": 0.0,
+        "9": 0.0415,
+        "10": 0.1061,
+        "11": 0.4396,
+        "12": 0.3536
+      }
+    },
+    {
+      "rank": 12,
+      "locality_id": "L2791434",
+      "name": "Grosse Ile Parkway",
+      "coordinates": {
+        "latitude": 42.1271611,
+        "longitude": -83.1744111
+      },
+      "occurrence": {
+        "rate": 0.1333,
+        "lift": 2.1,
+        "detection_count": 2,
+        "total_checklists": 15,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 6.0,
+        "max_count": 10
+      },
+      "seasonal": {
+        "spring": 0.2222
+      },
+      "monthly": {
+        "1": 0.0,
+        "4": 0.2857
+      }
+    },
+    {
+      "rank": 13,
+      "locality_id": "L454613",
+      "name": "Detroit River IWR--Refuge Gateway (Humbug Marsh)",
+      "coordinates": {
+        "latitude": 42.1155366,
+        "longitude": -83.1875275
+      },
+      "occurrence": {
+        "rate": 0.117,
+        "lift": 1.84,
+        "detection_count": 235,
+        "total_checklists": 2009,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 14.6,
+        "max_count": 200
+      },
+      "seasonal": {
+        "spring": 0.1653,
+        "summer": 0.0,
+        "fall": 0.119,
+        "winter": 0.1055
+      },
+      "monthly": {
+        "1": 0.1034,
+        "2": 0.0,
+        "3": 0.069,
+        "4": 0.2637,
+        "5": 0.1523,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0141,
+        "10": 0.1027,
+        "11": 0.3517,
+        "12": 0.2734
+      }
+    },
+    {
+      "rank": 14,
+      "locality_id": "L275577",
+      "name": "Belle Isle",
+      "coordinates": {
+        "latitude": 42.340086,
+        "longitude": -82.9775444
+      },
+      "occurrence": {
+        "rate": 0.1017,
+        "lift": 1.6,
+        "detection_count": 660,
+        "total_checklists": 6489,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 7.9,
+        "max_count": 267
+      },
+      "seasonal": {
+        "spring": 0.0727,
+        "summer": 0.0,
+        "fall": 0.2096,
+        "winter": 0.0431
+      },
+      "monthly": {
+        "1": 0.017,
+        "2": 0.0015,
+        "3": 0.0092,
+        "4": 0.1565,
+        "5": 0.0422,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0117,
+        "9": 0.0188,
+        "10": 0.1175,
+        "11": 0.4058,
+        "12": 0.124
+      }
+    },
+    {
+      "rank": 15,
+      "locality_id": "L21702827",
+      "name": "Erma Henderson Park",
+      "coordinates": {
+        "latitude": 42.3521003,
+        "longitude": -82.9869544
+      },
+      "occurrence": {
+        "rate": 0.0769,
+        "lift": 1.21,
+        "detection_count": 1,
+        "total_checklists": 13,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "11": 0.3333,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 16,
+      "locality_id": "L2697026",
+      "name": "Bishop Park",
+      "coordinates": {
+        "latitude": 42.2058877,
+        "longitude": -83.1463552
+      },
+      "occurrence": {
+        "rate": 0.0575,
+        "lift": 0.9,
+        "detection_count": 15,
+        "total_checklists": 261,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 18.9,
+        "max_count": 150
+      },
+      "seasonal": {
+        "spring": 0.2,
+        "fall": 0.3333,
+        "winter": 0.0235
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0588,
+        "4": 0.7143,
+        "5": 0.0909,
+        "7": 0.0,
+        "10": 0.3333,
+        "11": 0.4,
+        "12": 0.2632
+      }
+    },
+    {
+      "rank": 17,
+      "locality_id": "L508337",
+      "name": "Edison Lake Dam",
+      "coordinates": {
+        "latitude": 42.2148515,
+        "longitude": -83.4430075
+      },
+      "occurrence": {
+        "rate": 0.0566,
+        "lift": 0.89,
+        "detection_count": 12,
+        "total_checklists": 212,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 38.9,
+        "max_count": 83
+      },
+      "seasonal": {
+        "spring": 0.0588,
+        "summer": 0.0,
+        "fall": 0.4118,
+        "winter": 0.0149
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0732,
+        "4": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "11": 0.6364,
+        "12": 0.0667
+      }
+    },
+    {
+      "rank": 18,
+      "locality_id": "L18467771",
+      "name": "Riverview Boat Launch (restricted access)",
+      "coordinates": {
+        "latitude": 42.1744501,
+        "longitude": -83.1651904
+      },
+      "occurrence": {
+        "rate": 0.0536,
+        "lift": 0.84,
+        "detection_count": 3,
+        "total_checklists": 56,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 0.3,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0882,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.12,
+        "5": 0.0,
+        "8": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 19,
+      "locality_id": "L18467809",
+      "name": "Rotary Park",
+      "coordinates": {
+        "latitude": 42.1468205,
+        "longitude": -83.1733424
+      },
+      "occurrence": {
+        "rate": 0.0526,
+        "lift": 0.83,
+        "detection_count": 3,
+        "total_checklists": 57,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.4,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.027
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.3333,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "12": 0.0667
+      }
+    },
+    {
+      "rank": 20,
+      "locality_id": "L387457",
+      "name": "Belleville Lake--Van Buren Park",
+      "coordinates": {
+        "latitude": 42.2128989,
+        "longitude": -83.5254822
+      },
+      "occurrence": {
+        "rate": 0.0505,
+        "lift": 0.79,
+        "detection_count": 5,
+        "total_checklists": 99,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 4.4,
+        "max_count": 14
+      },
+      "seasonal": {
+        "spring": 0.0556,
+        "fall": 0.1,
+        "winter": 0.0323
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0769,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "11": 0.1429,
+        "12": 0.125
+      }
+    },
+    {
+      "rank": 21,
+      "locality_id": "L14848504",
+      "name": "Mathew C. Patterson Park",
+      "coordinates": {
+        "latitude": 42.3739789,
+        "longitude": -82.9203865
+      },
+      "occurrence": {
+        "rate": 0.0467,
+        "lift": 0.73,
+        "detection_count": 5,
+        "total_checklists": 107,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 55.2,
+        "max_count": 268
+      },
+      "seasonal": {
+        "spring": 0.0227,
+        "summer": 0.0,
+        "fall": 0.1429,
+        "winter": 0.05
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.2,
+        "3": 0.0,
+        "4": 0.0833,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "10": 0.125,
+        "11": 0.2,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 22,
+      "locality_id": "L17034920",
+      "name": "Wyandotte Boat Ramp",
+      "coordinates": {
+        "latitude": 42.226999,
+        "longitude": -83.146682
+      },
+      "occurrence": {
+        "rate": 0.0455,
+        "lift": 0.71,
+        "detection_count": 1,
+        "total_checklists": 22,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": null,
+        "max_count": null
+      },
+      "seasonal": {
+        "winter": 0.05
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "12": 0.25
+      }
+    },
+    {
+      "rank": 23,
+      "locality_id": "L9163174",
+      "name": "Riverfront-Lakewood East Park",
+      "coordinates": {
+        "latitude": 42.358096,
+        "longitude": -82.932258
+      },
+      "occurrence": {
+        "rate": 0.0417,
+        "lift": 0.66,
+        "detection_count": 4,
+        "total_checklists": 96,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 4.5,
+        "max_count": 13
+      },
+      "seasonal": {
+        "spring": 0.0976,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.3333,
+        "5": 0.04,
+        "9": 0.0,
+        "10": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 24,
+      "locality_id": "L10034456",
+      "name": "Ralph C. Wilson Centennial Park (formerly West Riverfront Park)",
+      "coordinates": {
+        "latitude": 42.3218318,
+        "longitude": -83.0631118
+      },
+      "occurrence": {
+        "rate": 0.0408,
+        "lift": 0.64,
+        "detection_count": 2,
+        "total_checklists": 49,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0952,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "10": 0.1818,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 25,
+      "locality_id": "L12590757",
+      "name": "Meyer Ellias Park",
+      "coordinates": {
+        "latitude": 42.1522766,
+        "longitude": -83.1740149
+      },
+      "occurrence": {
+        "rate": 0.036,
+        "lift": 0.57,
+        "detection_count": 5,
+        "total_checklists": 139,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.4,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0625,
+        "winter": 0.0385
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.1667,
+        "12": 0.1481
+      }
+    },
+    {
+      "rank": 26,
+      "locality_id": "L10097306",
+      "name": "Hart Plaza",
+      "coordinates": {
+        "latitude": 42.327173,
+        "longitude": -83.044044
+      },
+      "occurrence": {
+        "rate": 0.0339,
+        "lift": 0.53,
+        "detection_count": 2,
+        "total_checklists": 59,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 4.0,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0833,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.4,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 27,
+      "locality_id": "L2676444",
+      "name": "Dingell Park (formally Ecorse Park)",
+      "coordinates": {
+        "latitude": 42.2404704,
+        "longitude": -83.1446171
+      },
+      "occurrence": {
+        "rate": 0.0296,
+        "lift": 0.47,
+        "detection_count": 15,
+        "total_checklists": 507,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 11.3,
+        "max_count": 100
+      },
+      "seasonal": {
+        "spring": 0.0962,
+        "summer": 0.0,
+        "fall": 0.1739,
+        "winter": 0.0141
+      },
+      "monthly": {
+        "1": 0.0099,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.4,
+        "5": 0.3333,
+        "7": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.2857,
+        "12": 0.2
+      }
+    },
+    {
+      "rank": 28,
+      "locality_id": "L356877",
+      "name": "Crosswinds Marsh",
+      "coordinates": {
+        "latitude": 42.09504,
+        "longitude": -83.446
+      },
+      "occurrence": {
+        "rate": 0.0272,
+        "lift": 0.43,
+        "detection_count": 76,
+        "total_checklists": 2795,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 13.0,
+        "max_count": 45
+      },
+      "seasonal": {
+        "spring": 0.0556,
+        "summer": 0.0,
+        "fall": 0.0183,
+        "winter": 0.0076
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0051,
+        "3": 0.0074,
+        "4": 0.1383,
+        "5": 0.0101,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0182,
+        "10": 0.037,
+        "11": 0.0155,
+        "12": 0.0177
+      }
+    },
+    {
+      "rank": 29,
+      "locality_id": "L11976462",
+      "name": "Detroit Riverwalk",
+      "coordinates": {
+        "latitude": 42.3310029,
+        "longitude": -83.0315173
+      },
+      "occurrence": {
+        "rate": 0.0263,
+        "lift": 0.41,
+        "detection_count": 4,
+        "total_checklists": 152,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.8,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.0444,
+        "summer": 0.0,
+        "fall": 0.0263,
+        "winter": 0.0278
+      },
+      "monthly": {
+        "1": 0.0833,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0833,
+        "5": 0.0417,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0667,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 30,
+      "locality_id": "L5409915",
+      "name": "Grosse Ile Wildlife Sanctuary",
+      "coordinates": {
+        "latitude": 42.1638036,
+        "longitude": -83.1495678
+      },
+      "occurrence": {
+        "rate": 0.02,
+        "lift": 0.31,
+        "detection_count": 1,
+        "total_checklists": 50,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.05,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 31,
+      "locality_id": "L2487619",
+      "name": "Pier Park",
+      "coordinates": {
+        "latitude": 42.4068544,
+        "longitude": -82.8857088
+      },
+      "occurrence": {
+        "rate": 0.019,
+        "lift": 0.3,
+        "detection_count": 2,
+        "total_checklists": 105,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 17.0,
+        "max_count": 30
+      },
+      "seasonal": {
+        "spring": 0.027,
+        "summer": 0.0,
+        "fall": 0.0455,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.125,
+        "5": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.125,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 32,
+      "locality_id": "L1145147",
+      "name": "Elizabeth Park (Trenton)",
+      "coordinates": {
+        "latitude": 42.133622,
+        "longitude": -83.1780052
+      },
+      "occurrence": {
+        "rate": 0.0169,
+        "lift": 0.27,
+        "detection_count": 18,
+        "total_checklists": 1065,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.2,
+        "max_count": 7
+      },
+      "seasonal": {
+        "spring": 0.0448,
+        "summer": 0.0,
+        "fall": 0.0031,
+        "winter": 0.0097
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0141,
+        "4": 0.1064,
+        "5": 0.016,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0081,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0455
+      }
+    },
+    {
+      "rank": 33,
+      "locality_id": "L999164",
+      "name": "William Milliken SP",
+      "coordinates": {
+        "latitude": 42.3321857,
+        "longitude": -83.0259132
+      },
+      "occurrence": {
+        "rate": 0.0129,
+        "lift": 0.2,
+        "detection_count": 5,
+        "total_checklists": 389,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0296,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0128
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0385,
+        "3": 0.0,
+        "4": 0.0517,
+        "5": 0.0233,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 34,
+      "locality_id": "L4349776",
+      "name": "Gabriel Richard Park",
+      "coordinates": {
+        "latitude": 42.3471757,
+        "longitude": -82.9991905
+      },
+      "occurrence": {
+        "rate": 0.012,
+        "lift": 0.19,
+        "detection_count": 1,
+        "total_checklists": 83,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.05,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "10": 0.0,
+        "11": 0.1111,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 35,
+      "locality_id": "L8645847",
+      "name": "Belleville West Boating Access Site",
+      "coordinates": {
+        "latitude": 42.209487,
+        "longitude": -83.5397974
+      },
+      "occurrence": {
+        "rate": 0.0119,
+        "lift": 0.19,
+        "detection_count": 9,
+        "total_checklists": 758,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.2,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.005,
+        "summer": 0.0,
+        "fall": 0.0721,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0154,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0909,
+        "10": 0.0357,
+        "11": 0.0962,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 36,
+      "locality_id": "L1825571",
+      "name": "Westcroft Gardens",
+      "coordinates": {
+        "latitude": 42.1495714,
+        "longitude": -83.1644108
+      },
+      "occurrence": {
+        "rate": 0.0095,
+        "lift": 0.15,
+        "detection_count": 3,
+        "total_checklists": 317,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.3,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.0364,
+        "fall": 0.0,
+        "winter": 0.0051
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0556,
+        "4": 0.0833,
+        "5": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0149
+      }
+    },
+    {
+      "rank": 37,
+      "locality_id": "L818015",
+      "name": "Grace Lake (Visteon Pond)",
+      "coordinates": {
+        "latitude": 42.2386218,
+        "longitude": -83.4312057
+      },
+      "occurrence": {
+        "rate": 0.0087,
+        "lift": 0.14,
+        "detection_count": 13,
+        "total_checklists": 1499,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.8,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.024,
+        "summer": 0.0,
+        "fall": 0.0195,
+        "winter": 0.0038
+      },
+      "monthly": {
+        "1": 0.0025,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0333,
+        "5": 0.1765,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0225,
+        "12": 0.006
+      }
+    },
+    {
+      "rank": 38,
+      "locality_id": "L276899",
+      "name": "Rouge Plant (Dearborn)",
+      "coordinates": {
+        "latitude": 42.2957705,
+        "longitude": -83.1531916
+      },
+      "occurrence": {
+        "rate": 0.0072,
+        "lift": 0.11,
+        "detection_count": 1,
+        "total_checklists": 139,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 8.0,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "winter": 0.009
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "11": 0.0,
+        "12": 0.0714
+      }
+    },
+    {
+      "rank": 39,
+      "locality_id": "L139838",
+      "name": "Willow Metropark",
+      "coordinates": {
+        "latitude": 42.134201,
+        "longitude": -83.3716965
+      },
+      "occurrence": {
+        "rate": 0.0051,
+        "lift": 0.08,
+        "detection_count": 4,
+        "total_checklists": 779,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 16.8,
+        "max_count": 63
+      },
+      "seasonal": {
+        "spring": 0.0054,
+        "summer": 0.0,
+        "fall": 0.0109,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0156,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0444,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 40,
+      "locality_id": "L139837",
+      "name": "Oakwoods Metropark",
+      "coordinates": {
+        "latitude": 42.1063004,
+        "longitude": -83.3179016
+      },
+      "occurrence": {
+        "rate": 0.0033,
+        "lift": 0.05,
+        "detection_count": 6,
+        "total_checklists": 1816,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 9.5,
+        "max_count": 43
+      },
+      "seasonal": {
+        "spring": 0.0036,
+        "summer": 0.0,
+        "fall": 0.0114,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0123,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0357,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 41,
+      "locality_id": "L298485",
+      "name": "Newburgh Lake",
+      "coordinates": {
+        "latitude": 42.3659356,
+        "longitude": -83.4245812
+      },
+      "occurrence": {
+        "rate": 0.0022,
+        "lift": 0.03,
+        "detection_count": 1,
+        "total_checklists": 461,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0045,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.013,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 42,
+      "locality_id": "L426624",
+      "name": "Willow Run Airport (restricted access)",
+      "coordinates": {
+        "latitude": 42.232688,
+        "longitude": -83.5077989
+      },
+      "occurrence": {
+        "rate": 0.0016,
+        "lift": 0.03,
+        "detection_count": 4,
+        "total_checklists": 2426,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 4.5,
+        "max_count": 7
+      },
+      "seasonal": {
+        "spring": 0.0055,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0186,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 43,
+      "locality_id": "L1568738",
+      "name": "Nankin Lake",
+      "coordinates": {
+        "latitude": 42.3552038,
+        "longitude": -83.3738483
+      },
+      "occurrence": {
+        "rate": 0.0011,
+        "lift": 0.02,
+        "detection_count": 1,
+        "total_checklists": 911,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 28.0,
+        "max_count": 28
+      },
+      "seasonal": {
+        "spring": 0.0021,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0074,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 44,
+      "locality_id": "L298547",
+      "name": "Maybury SP",
+      "coordinates": {
+        "latitude": 42.4296,
+        "longitude": -83.5337186
+      },
+      "occurrence": {
+        "rate": 0.0007,
+        "lift": 0.01,
+        "detection_count": 1,
+        "total_checklists": 1408,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0015,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0051,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-23T23:26:21.040189Z",
+    "data_version": "Dec-2025"
+  }
+}

@@ -1,0 +1,642 @@
+{
+  "hotspot": {
+    "locality_id": "L10097299",
+    "name": "Cadillac Square Park",
+    "coordinates": {
+      "latitude": 42.3315549,
+      "longitude": -83.045482
+    }
+  },
+  "effort": {
+    "total_complete_checklists": 49,
+    "total_species_detected": 38,
+    "monthly_checklists": {
+      "1": 5,
+      "2": 3,
+      "3": 2,
+      "4": 2,
+      "5": 5,
+      "6": 3,
+      "7": 1,
+      "8": 3,
+      "9": 3,
+      "10": 6,
+      "11": 10,
+      "12": 6
+    }
+  },
+  "species": [
+    {
+      "rank": 1,
+      "common_name": "House Sparrow",
+      "code": "houspa",
+      "scientific_name": "Passer domesticus",
+      "occurrence_rate": 0.8571,
+      "lift": 2.84,
+      "detection_count": 42,
+      "average_count": 7.1,
+      "max_count": 30,
+      "seasonal": {
+        "spring": 0.7778,
+        "fall": 0.8636,
+        "winter": 0.9286
+      }
+    },
+    {
+      "rank": 2,
+      "common_name": "European Starling",
+      "code": "eursta",
+      "scientific_name": "Sturnus vulgaris",
+      "occurrence_rate": 0.7347,
+      "lift": 1.58,
+      "detection_count": 36,
+      "average_count": 5.7,
+      "max_count": 20,
+      "seasonal": {
+        "spring": 0.7778,
+        "fall": 0.7727,
+        "winter": 0.6429
+      }
+    },
+    {
+      "rank": 3,
+      "common_name": "White-throated Sparrow",
+      "code": "whspar",
+      "scientific_name": "Zonotrichia albicollis",
+      "occurrence_rate": 0.6531,
+      "lift": 3.17,
+      "detection_count": 32,
+      "average_count": 3.6,
+      "max_count": 12,
+      "seasonal": {
+        "spring": 0.5556,
+        "fall": 0.6818,
+        "winter": 0.8571
+      }
+    },
+    {
+      "rank": 4,
+      "common_name": "Common Grackle",
+      "code": "comgra",
+      "scientific_name": "Quiscalus quiscula",
+      "occurrence_rate": 0.2857,
+      "lift": 0.93,
+      "detection_count": 14,
+      "average_count": 4.2,
+      "max_count": 15,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.5,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 5,
+      "common_name": "Gray Catbird",
+      "code": "gracat",
+      "scientific_name": "Dumetella carolinensis",
+      "occurrence_rate": 0.2041,
+      "lift": 1.14,
+      "detection_count": 10,
+      "average_count": 1.1,
+      "max_count": 2,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.3182,
+        "winter": 0.1429
+      }
+    },
+    {
+      "rank": 6,
+      "common_name": "Ring-billed Gull",
+      "code": "ringul",
+      "scientific_name": "Larus delawarensis",
+      "occurrence_rate": 0.1837,
+      "lift": 0.37,
+      "detection_count": 9,
+      "average_count": 4.0,
+      "max_count": 15,
+      "seasonal": {
+        "spring": 0.2222,
+        "fall": 0.2727,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 7,
+      "common_name": "American Robin",
+      "code": "amerob",
+      "scientific_name": "Turdus migratorius",
+      "occurrence_rate": 0.1429,
+      "lift": 0.23,
+      "detection_count": 7,
+      "average_count": 4.6,
+      "max_count": 20,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.1818,
+        "winter": 0.0714
+      }
+    },
+    {
+      "rank": 8,
+      "common_name": "Song Sparrow",
+      "code": "sonspa",
+      "scientific_name": "Melospiza melodia",
+      "occurrence_rate": 0.1224,
+      "lift": 0.33,
+      "detection_count": 6,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.2222,
+        "fall": 0.0909,
+        "winter": 0.1429
+      }
+    },
+    {
+      "rank": 9,
+      "common_name": "Northern Cardinal",
+      "code": "norcar",
+      "scientific_name": "Cardinalis cardinalis",
+      "occurrence_rate": 0.0816,
+      "lift": 0.16,
+      "detection_count": 4,
+      "average_count": 3.2,
+      "max_count": 10,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0909,
+        "winter": 0.0714
+      }
+    },
+    {
+      "rank": 10,
+      "common_name": "Canada Goose",
+      "code": "cangoo",
+      "scientific_name": "Branta canadensis",
+      "occurrence_rate": 0.0816,
+      "lift": 0.13,
+      "detection_count": 4,
+      "average_count": 11.2,
+      "max_count": 20,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0909,
+        "winter": 0.0714
+      }
+    },
+    {
+      "rank": 11,
+      "common_name": "Lincoln's Sparrow",
+      "code": "linspa",
+      "scientific_name": "Melospiza lincolnii",
+      "occurrence_rate": 0.0816,
+      "lift": 6.09,
+      "detection_count": 4,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.1364,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 12,
+      "common_name": "Blue Jay",
+      "code": "blujay",
+      "scientific_name": "Cyanocitta cristata",
+      "occurrence_rate": 0.0612,
+      "lift": 0.12,
+      "detection_count": 3,
+      "average_count": 3.0,
+      "max_count": 4,
+      "seasonal": {
+        "spring": 0.2222,
+        "fall": 0.0455,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 13,
+      "common_name": "American Goldfinch",
+      "code": "amegol",
+      "scientific_name": "Spinus tristis",
+      "occurrence_rate": 0.0408,
+      "lift": 0.11,
+      "detection_count": 2,
+      "average_count": 1.5,
+      "max_count": 2,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0455,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 14,
+      "common_name": "Yellow-bellied Sapsucker",
+      "code": "yelsap",
+      "scientific_name": "Sphyrapicus varius",
+      "occurrence_rate": 0.0408,
+      "lift": 1.95,
+      "detection_count": 2,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0909,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 15,
+      "common_name": "Swamp Sparrow",
+      "code": "swaspa",
+      "scientific_name": "Melospiza georgiana",
+      "occurrence_rate": 0.0408,
+      "lift": 0.61,
+      "detection_count": 2,
+      "average_count": 1.5,
+      "max_count": 2,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0714
+      }
+    },
+    {
+      "rank": 16,
+      "common_name": "Common Yellowthroat",
+      "code": "comyel",
+      "scientific_name": "Geothlypis trichas",
+      "occurrence_rate": 0.0408,
+      "lift": 0.45,
+      "detection_count": 2,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0455,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 17,
+      "common_name": "House Finch",
+      "code": "houfin",
+      "scientific_name": "Haemorhous mexicanus",
+      "occurrence_rate": 0.0408,
+      "lift": 0.25,
+      "detection_count": 2,
+      "average_count": 3.5,
+      "max_count": 5,
+      "seasonal": {
+        "spring": 0.2222,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 18,
+      "common_name": "Black-capped Chickadee",
+      "code": "blachi",
+      "scientific_name": "Poecile atricapillus",
+      "occurrence_rate": 0.0204,
+      "lift": 0.05,
+      "detection_count": 1,
+      "average_count": 2.0,
+      "max_count": 2,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 19,
+      "common_name": "Tufted Titmouse",
+      "code": "tuftit",
+      "scientific_name": "Baeolophus bicolor",
+      "occurrence_rate": 0.0204,
+      "lift": 0.1,
+      "detection_count": 1,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 20,
+      "common_name": "American Crow",
+      "code": "amecro",
+      "scientific_name": "Corvus brachyrhynchos",
+      "occurrence_rate": 0.0204,
+      "lift": 0.1,
+      "detection_count": 1,
+      "average_count": 2.0,
+      "max_count": 2,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 21,
+      "common_name": "Killdeer",
+      "code": "killde",
+      "scientific_name": "Charadrius vociferus",
+      "occurrence_rate": 0.0204,
+      "lift": 0.08,
+      "detection_count": 1,
+      "average_count": 4.0,
+      "max_count": 4,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 22,
+      "common_name": "Mourning Dove",
+      "code": "moudov",
+      "scientific_name": "Zenaida macroura",
+      "occurrence_rate": 0.0204,
+      "lift": 0.05,
+      "detection_count": 1,
+      "average_count": 6.0,
+      "max_count": 6,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 23,
+      "common_name": "Northern Flicker",
+      "code": "norfli",
+      "scientific_name": "Colaptes auratus",
+      "occurrence_rate": 0.0204,
+      "lift": 0.08,
+      "detection_count": 1,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0455,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 24,
+      "common_name": "Brown-headed Cowbird",
+      "code": "brocow",
+      "scientific_name": "Molothrus ater",
+      "occurrence_rate": 0.0204,
+      "lift": 0.11,
+      "detection_count": 1,
+      "average_count": 10.0,
+      "max_count": 10,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 25,
+      "common_name": "Nashville Warbler",
+      "code": "naswar",
+      "scientific_name": "Leiothlypis ruficapilla",
+      "occurrence_rate": 0.0204,
+      "lift": 0.38,
+      "detection_count": 1,
+      "average_count": 2.0,
+      "max_count": 2,
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0455,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 26,
+      "common_name": "Carolina Wren",
+      "code": "carwre",
+      "scientific_name": "Thryothorus ludovicianus",
+      "occurrence_rate": 0.0204,
+      "lift": 0.13,
+      "detection_count": 1,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 27,
+      "common_name": "Double-crested Cormorant",
+      "code": "doucor",
+      "scientific_name": "Nannopterum auritum",
+      "occurrence_rate": 0.0204,
+      "lift": 0.13,
+      "detection_count": 1,
+      "average_count": 2.0,
+      "max_count": 2,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 28,
+      "common_name": "Ruby-crowned Kinglet",
+      "code": "rubkin",
+      "scientific_name": "Corthylio calendula",
+      "occurrence_rate": 0.0204,
+      "lift": 0.23,
+      "detection_count": 1,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0455,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 29,
+      "common_name": "Eastern Kingbird",
+      "code": "easkin",
+      "scientific_name": "Tyrannus tyrannus",
+      "occurrence_rate": 0.0204,
+      "lift": 0.19,
+      "detection_count": 1,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 30,
+      "common_name": "Ovenbird",
+      "code": "ovenbi",
+      "scientific_name": "Seiurus aurocapilla",
+      "occurrence_rate": 0.0204,
+      "lift": 0.82,
+      "detection_count": 1,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 31,
+      "common_name": "Tennessee Warbler",
+      "code": "tenwar",
+      "scientific_name": "Leiothlypis peregrina",
+      "occurrence_rate": 0.0204,
+      "lift": 0.62,
+      "detection_count": 1,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0455,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 32,
+      "common_name": "Tree Swallow",
+      "code": "treswa",
+      "scientific_name": "Tachycineta bicolor",
+      "occurrence_rate": 0.0204,
+      "lift": 0.09,
+      "detection_count": 1,
+      "average_count": 3.0,
+      "max_count": 3,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 33,
+      "common_name": "White-crowned Sparrow",
+      "code": "whispa",
+      "scientific_name": "Zonotrichia leucophrys",
+      "occurrence_rate": 0.0204,
+      "lift": 0.44,
+      "detection_count": 1,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 34,
+      "common_name": "Northern Rough-winged Swallow",
+      "code": "norswa",
+      "scientific_name": "Stelgidopteryx serripennis",
+      "occurrence_rate": 0.0204,
+      "lift": 0.25,
+      "detection_count": 1,
+      "average_count": 2.0,
+      "max_count": 2,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 35,
+      "common_name": "Hermit Thrush",
+      "code": "herthr",
+      "scientific_name": "Catharus guttatus",
+      "occurrence_rate": 0.0204,
+      "lift": 0.39,
+      "detection_count": 1,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0455,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 36,
+      "common_name": "Bay-breasted Warbler",
+      "code": "baywar",
+      "scientific_name": "Setophaga castanea",
+      "occurrence_rate": 0.0204,
+      "lift": 0.65,
+      "detection_count": 1,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0455,
+        "winter": 0.0
+      }
+    },
+    {
+      "rank": 37,
+      "common_name": "Peregrine Falcon",
+      "code": "perfal",
+      "scientific_name": "Falco peregrinus",
+      "occurrence_rate": 0.0204,
+      "lift": 0.9,
+      "detection_count": 1,
+      "average_count": 1.0,
+      "max_count": 1,
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0,
+        "winter": 0.0714
+      }
+    },
+    {
+      "rank": 38,
+      "common_name": "American White Pelican",
+      "code": "amepel",
+      "scientific_name": "Pelecanus erythrorhynchos",
+      "occurrence_rate": 0.0204,
+      "lift": 2.11,
+      "detection_count": 1,
+      "average_count": 2.0,
+      "max_count": 2,
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-23T23:26:21.213867Z",
+    "data_version": "Dec-2025"
+  }
+}

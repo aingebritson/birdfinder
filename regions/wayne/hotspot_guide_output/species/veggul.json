@@ -1,0 +1,60 @@
+{
+  "species": {
+    "common_name": "Vega Gull",
+    "code": "veggul",
+    "scientific_name": "Larus vegae"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0004,
+    "total_detections": 19,
+    "total_checklists_with_species": 20,
+    "total_checklists_countywide": 54702,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 19,
+    "highest_occurrence_rate": 0.131
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L21782533",
+      "name": "Pheasant Run Golf Club",
+      "coordinates": {
+        "latitude": 42.2946662,
+        "longitude": -83.4984604
+      },
+      "occurrence": {
+        "rate": 0.131,
+        "lift": 358.39,
+        "detection_count": 19,
+        "total_checklists": 145,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0,
+        "winter": 0.2346
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.38
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-23T23:26:21.142844Z",
+    "data_version": "Dec-2025"
+  }
+}

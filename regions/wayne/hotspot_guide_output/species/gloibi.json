@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Glossy Ibis",
+    "code": "gloibi",
+    "scientific_name": "Plegadis falcinellus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0,
+    "total_detections": 2,
+    "total_checklists_with_species": 2,
+    "total_checklists_countywide": 54702,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 2,
+    "highest_occurrence_rate": 0.0003
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L139835",
+      "name": "Lake Erie Metropark",
+      "coordinates": {
+        "latitude": 42.0691986,
+        "longitude": -83.1941986
+      },
+      "occurrence": {
+        "rate": 0.0003,
+        "lift": 7.63,
+        "detection_count": 2,
+        "total_checklists": 7173,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.001,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0031,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-23T23:26:21.116689Z",
+    "data_version": "Dec-2025"
+  }
+}

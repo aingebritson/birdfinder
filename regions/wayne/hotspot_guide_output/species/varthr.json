@@ -1,0 +1,53 @@
+{
+  "species": {
+    "common_name": "Varied Thrush",
+    "code": "varthr",
+    "scientific_name": "Ixoreus naevius"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0003,
+    "total_detections": 15,
+    "total_checklists_with_species": 15,
+    "total_checklists_countywide": 54702,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 15,
+    "highest_occurrence_rate": 0.6522
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L13734942",
+      "name": "Dearborn Hills Golf Course",
+      "coordinates": {
+        "latitude": 42.3020352,
+        "longitude": -83.278556
+      },
+      "occurrence": {
+        "rate": 0.6522,
+        "lift": 2378.35,
+        "detection_count": 15,
+        "total_checklists": 23,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.1667,
+        "winter": 0.8235
+      },
+      "monthly": {
+        "2": 0.8235,
+        "3": 0.2
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-23T23:26:21.141963Z",
+    "data_version": "Dec-2025"
+  }
+}

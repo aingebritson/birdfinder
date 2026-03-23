@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Pacific Loon",
+    "code": "pacloo",
+    "scientific_name": "Gavia pacifica"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.001,
+    "total_detections": 57,
+    "total_checklists_with_species": 57,
+    "total_checklists_countywide": 54702,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 57,
+    "highest_occurrence_rate": 0.0123
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L1003279",
+      "name": "Lake Erie Metropark--Detroit River Hawk Watch",
+      "coordinates": {
+        "latitude": 42.0796233,
+        "longitude": -83.1939483
+      },
+      "occurrence": {
+        "rate": 0.0123,
+        "lift": 11.84,
+        "detection_count": 14,
+        "total_checklists": 1135,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.1458,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.2059,
+        "5": 0.2121,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L139835",
+      "name": "Lake Erie Metropark",
+      "coordinates": {
+        "latitude": 42.0691986,
+        "longitude": -83.1941986
+      },
+      "occurrence": {
+        "rate": 0.006,
+        "lift": 5.75,
+        "detection_count": 43,
+        "total_checklists": 7173,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0208,
+        "summer": 0.0,
+        "fall": 0.0007,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0172,
+        "5": 0.038,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.003,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-23T23:26:21.141648Z",
+    "data_version": "Dec-2025"
+  }
+}

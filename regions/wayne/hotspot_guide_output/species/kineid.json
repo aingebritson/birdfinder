@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "King Eider",
+    "code": "kineid",
+    "scientific_name": "Somateria spectabilis"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.002,
+    "total_detections": 108,
+    "total_checklists_with_species": 108,
+    "total_checklists_countywide": 54702,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 108,
+    "highest_occurrence_rate": 0.0166
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L275577",
+      "name": "Belle Isle",
+      "coordinates": {
+        "latitude": 42.340086,
+        "longitude": -82.9775444
+      },
+      "occurrence": {
+        "rate": 0.0166,
+        "lift": 8.43,
+        "detection_count": 108,
+        "total_checklists": 6489,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0511,
+        "winter": 0.0013
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.1177,
+        "12": 0.0046
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-23T23:26:21.138818Z",
+    "data_version": "Dec-2025"
+  }
+}
