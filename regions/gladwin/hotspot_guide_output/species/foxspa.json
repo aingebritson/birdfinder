@@ -1,0 +1,116 @@
+{
+  "species": {
+    "common_name": "Fox Sparrow",
+    "code": "foxspa",
+    "scientific_name": "Passerella iliaca"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0039,
+    "total_detections": 6,
+    "total_checklists_with_species": 6,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 3
+  },
+  "summary": {
+    "total_hotspots_detected": 3,
+    "total_detections": 6,
+    "highest_occurrence_rate": 0.0714
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L36226687",
+      "name": "Gladwin SF--N Three Rivers Rd",
+      "coordinates": {
+        "latitude": 43.99606,
+        "longitude": -84.307466
+      },
+      "occurrence": {
+        "rate": 0.0714,
+        "lift": 18.25,
+        "detection_count": 1,
+        "total_checklists": 14,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "fall": 0.0769
+      },
+      "monthly": {
+        "8": 0.0,
+        "10": 0.25
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L3669118",
+      "name": "Gladwin SF--Eastman Rd. terminus",
+      "coordinates": {
+        "latitude": 43.9462685,
+        "longitude": -84.2418122
+      },
+      "occurrence": {
+        "rate": 0.0714,
+        "lift": 18.25,
+        "detection_count": 1,
+        "total_checklists": 14,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0
+      },
+      "monthly": {
+        "5": 0.0,
+        "7": 0.0
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L1137401",
+      "name": "Molasses River Flooding WMA",
+      "coordinates": {
+        "latitude": 43.9493273,
+        "longitude": -84.1872883
+      },
+      "occurrence": {
+        "rate": 0.0207,
+        "lift": 5.3,
+        "detection_count": 4,
+        "total_checklists": 193,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0215,
+        "summer": 0.0,
+        "fall": 0.0556,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.125,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.1818
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.724360Z",
+    "data_version": "Dec-2025"
+  }
+}

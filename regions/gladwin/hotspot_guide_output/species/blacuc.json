@@ -1,0 +1,129 @@
+{
+  "species": {
+    "common_name": "Black-billed Cuckoo",
+    "code": "blacuc",
+    "scientific_name": "Coccyzus erythropthalmus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.015,
+    "total_detections": 22,
+    "total_checklists_with_species": 23,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 4
+  },
+  "summary": {
+    "total_hotspots_detected": 3,
+    "total_detections": 22,
+    "highest_occurrence_rate": 0.098
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L3766087",
+      "name": "Bentley Marsh Flooding WMA",
+      "coordinates": {
+        "latitude": 43.9947596,
+        "longitude": -84.1838276
+      },
+      "occurrence": {
+        "rate": 0.098,
+        "lift": 6.53,
+        "detection_count": 5,
+        "total_checklists": 51,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 2.6,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.0909,
+        "summer": 0.2,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.125,
+        "6": 0.2,
+        "7": 0.2,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L3739472",
+      "name": "Gladwin SF--Katzer Rd. wetland",
+      "coordinates": {
+        "latitude": 43.8952058,
+        "longitude": -84.2308339
+      },
+      "occurrence": {
+        "rate": 0.0784,
+        "lift": 5.23,
+        "detection_count": 4,
+        "total_checklists": 51,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.1379,
+        "summer": 0.0,
+        "fall": 0.0
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.1818,
+        "6": 0.0,
+        "8": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L1137401",
+      "name": "Molasses River Flooding WMA",
+      "coordinates": {
+        "latitude": 43.9493273,
+        "longitude": -84.1872883
+      },
+      "occurrence": {
+        "rate": 0.0674,
+        "lift": 4.49,
+        "detection_count": 13,
+        "total_checklists": 193,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0753,
+        "summer": 0.1071,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1346,
+        "6": 0.0889,
+        "7": 0.1818,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.711855Z",
+    "data_version": "Dec-2025"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "species": {
+    "common_name": "Eastern Whip-poor-will",
+    "code": "easwil",
+    "scientific_name": "Antrostomus vociferus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0059,
+    "total_detections": 9,
+    "total_checklists_with_species": 9,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 9,
+    "highest_occurrence_rate": 0.0588
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L3766087",
+      "name": "Bentley Marsh Flooding WMA",
+      "coordinates": {
+        "latitude": 43.9947596,
+        "longitude": -84.1838276
+      },
+      "occurrence": {
+        "rate": 0.0588,
+        "lift": 10.02,
+        "detection_count": 3,
+        "total_checklists": 51,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.0455,
+        "summer": 0.1333,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0625,
+        "6": 0.2,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L1137401",
+      "name": "Molasses River Flooding WMA",
+      "coordinates": {
+        "latitude": 43.9493273,
+        "longitude": -84.1872883
+      },
+      "occurrence": {
+        "rate": 0.0311,
+        "lift": 5.3,
+        "detection_count": 6,
+        "total_checklists": 193,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0538,
+        "summer": 0.0179,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0962,
+        "6": 0.0222,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.726261Z",
+    "data_version": "Dec-2025"
+  }
+}

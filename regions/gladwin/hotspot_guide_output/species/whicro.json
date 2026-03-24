@@ -1,0 +1,57 @@
+{
+  "species": {
+    "common_name": "White-winged Crossbill",
+    "code": "whicro",
+    "scientific_name": "Loxia leucoptera"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0007,
+    "total_detections": 1,
+    "total_checklists_with_species": 1,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 1,
+    "highest_occurrence_rate": 0.0256
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L11059912",
+      "name": "Gladwin City Park",
+      "coordinates": {
+        "latitude": 43.97869,
+        "longitude": -84.49139
+      },
+      "occurrence": {
+        "rate": 0.0256,
+        "lift": 39.31,
+        "detection_count": 1,
+        "total_checklists": 39,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 5.0,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.0476,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.125,
+        "4": 0.0,
+        "5": 0.0,
+        "7": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.725744Z",
+    "data_version": "Dec-2025"
+  }
+}

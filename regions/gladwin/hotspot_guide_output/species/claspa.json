@@ -1,0 +1,59 @@
+{
+  "species": {
+    "common_name": "Clay-colored Sparrow",
+    "code": "claspa",
+    "scientific_name": "Spizella pallida"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0046,
+    "total_detections": 7,
+    "total_checklists_with_species": 7,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 7,
+    "highest_occurrence_rate": 0.1373
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L29093590",
+      "name": "North Gladwin plains--Shell Rd",
+      "coordinates": {
+        "latitude": 44.0473439,
+        "longitude": -84.4472295
+      },
+      "occurrence": {
+        "rate": 0.1373,
+        "lift": 30.06,
+        "detection_count": 7,
+        "total_checklists": 51,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 4.4,
+        "max_count": 11
+      },
+      "seasonal": {
+        "spring": 0.1667,
+        "fall": 0.125,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "5": 0.6667,
+        "6": 1.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.727582Z",
+    "data_version": "Dec-2025"
+  }
+}

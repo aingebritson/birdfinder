@@ -1,0 +1,62 @@
+{
+  "species": {
+    "common_name": "Least Bittern",
+    "code": "leabit",
+    "scientific_name": "Botaurus exilis"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0033,
+    "total_detections": 5,
+    "total_checklists_with_species": 5,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 5,
+    "highest_occurrence_rate": 0.0259
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L1137401",
+      "name": "Molasses River Flooding WMA",
+      "coordinates": {
+        "latitude": 43.9493273,
+        "longitude": -84.1872883
+      },
+      "occurrence": {
+        "rate": 0.0259,
+        "lift": 7.94,
+        "detection_count": 5,
+        "total_checklists": 193,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0323,
+        "summer": 0.0357,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0577,
+        "6": 0.0444,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.727739Z",
+    "data_version": "Dec-2025"
+  }
+}

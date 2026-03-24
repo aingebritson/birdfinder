@@ -1,0 +1,838 @@
+{
+  "species": {
+    "common_name": "Bald Eagle",
+    "code": "baleag",
+    "scientific_name": "Haliaeetus leucocephalus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.1213,
+    "total_detections": 179,
+    "total_checklists_with_species": 186,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 31
+  },
+  "summary": {
+    "total_hotspots_detected": 26,
+    "total_detections": 179,
+    "highest_occurrence_rate": 0.3667
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L10426888",
+      "name": "Billings Twp. fields",
+      "coordinates": {
+        "latitude": 43.857469,
+        "longitude": -84.347702
+      },
+      "occurrence": {
+        "rate": 0.3667,
+        "lift": 3.02,
+        "detection_count": 11,
+        "total_checklists": 30,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.7,
+        "winter": 0.2105
+      },
+      "monthly": {
+        "1": 0.3,
+        "2": 0.0,
+        "3": 0.75,
+        "12": 0.25
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L27826270",
+      "name": "Lake Lancer/Lake Lancelot",
+      "coordinates": {
+        "latitude": 44.113845,
+        "longitude": -84.444713
+      },
+      "occurrence": {
+        "rate": 0.2254,
+        "lift": 1.86,
+        "detection_count": 16,
+        "total_checklists": 71,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 2.8,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.1304,
+        "fall": 0.0909,
+        "winter": 0.4545
+      },
+      "monthly": {
+        "1": 0.2857,
+        "3": 0.125,
+        "4": 0.0,
+        "5": 0.3333,
+        "6": 0.25,
+        "10": 0.0,
+        "11": 0.1176,
+        "12": 0.5333
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L3128011",
+      "name": "Wixom Lake--Dundas Rd. access",
+      "coordinates": {
+        "latitude": 43.8330331,
+        "longitude": -84.3852621
+      },
+      "occurrence": {
+        "rate": 0.2,
+        "lift": 1.65,
+        "detection_count": 21,
+        "total_checklists": 105,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.1692,
+        "summer": 0.2857,
+        "fall": 0.2308,
+        "winter": 0.25
+      },
+      "monthly": {
+        "1": 0.2857,
+        "2": 0.0,
+        "3": 0.175,
+        "4": 0.1579,
+        "5": 0.1667,
+        "6": 0.5,
+        "7": 0.0,
+        "8": 0.6667,
+        "9": 0.0,
+        "10": 0.0,
+        "12": 0.3
+      }
+    },
+    {
+      "rank": 4,
+      "locality_id": "L10426947",
+      "name": "Billings Twp. boat launch",
+      "coordinates": {
+        "latitude": 43.8602658,
+        "longitude": -84.3275648
+      },
+      "occurrence": {
+        "rate": 0.2,
+        "lift": 1.65,
+        "detection_count": 6,
+        "total_checklists": 30,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.2,
+        "winter": 0.1667
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.4286,
+        "5": 0.3333
+      }
+    },
+    {
+      "rank": 5,
+      "locality_id": "L1137401",
+      "name": "Molasses River Flooding WMA",
+      "coordinates": {
+        "latitude": 43.9493273,
+        "longitude": -84.1872883
+      },
+      "occurrence": {
+        "rate": 0.1917,
+        "lift": 1.58,
+        "detection_count": 37,
+        "total_checklists": 193,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.1,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.3011,
+        "summer": 0.125,
+        "fall": 0.0556,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.25,
+        "4": 0.2,
+        "5": 0.3654,
+        "6": 0.0889,
+        "7": 0.2727,
+        "8": 0.0714,
+        "9": 0.1111,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 6,
+      "locality_id": "L3739472",
+      "name": "Gladwin SF--Katzer Rd. wetland",
+      "coordinates": {
+        "latitude": 43.8952058,
+        "longitude": -84.2308339
+      },
+      "occurrence": {
+        "rate": 0.1765,
+        "lift": 1.45,
+        "detection_count": 9,
+        "total_checklists": 51,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.1724,
+        "summer": 0.0,
+        "fall": 0.4
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.2273,
+        "6": 0.0,
+        "8": 0.0,
+        "10": 1.0
+      }
+    },
+    {
+      "rank": 7,
+      "locality_id": "L11060198",
+      "name": "Beaverton Cemetery",
+      "coordinates": {
+        "latitude": 43.88331,
+        "longitude": -84.50017
+      },
+      "occurrence": {
+        "rate": 0.1579,
+        "lift": 1.3,
+        "detection_count": 9,
+        "total_checklists": 57,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.1389,
+        "fall": 0.0,
+        "winter": 0.4286
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.1875,
+        "4": 0.1333,
+        "5": 0.0,
+        "7": 0.3333,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.6667
+      }
+    },
+    {
+      "rank": 8,
+      "locality_id": "L3766087",
+      "name": "Bentley Marsh Flooding WMA",
+      "coordinates": {
+        "latitude": 43.9947596,
+        "longitude": -84.1838276
+      },
+      "occurrence": {
+        "rate": 0.1569,
+        "lift": 1.29,
+        "detection_count": 8,
+        "total_checklists": 51,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.3182,
+        "summer": 0.0667,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.6667,
+        "4": 0.3333,
+        "5": 0.25,
+        "6": 0.0,
+        "7": 0.2,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 9,
+      "locality_id": "L11057538",
+      "name": "Wixom Lake--South",
+      "coordinates": {
+        "latitude": 43.81647,
+        "longitude": -84.386767
+      },
+      "occurrence": {
+        "rate": 0.1534,
+        "lift": 1.26,
+        "detection_count": 27,
+        "total_checklists": 176,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.125,
+        "summer": 0.2857,
+        "fall": 0.1429,
+        "winter": 0.1711
+      },
+      "monthly": {
+        "1": 0.1429,
+        "2": 0.1739,
+        "3": 0.1304,
+        "4": 0.0556,
+        "5": 0.25,
+        "6": 0.3333,
+        "8": 0.4,
+        "10": 0.0,
+        "11": 0.1667,
+        "12": 0.2222
+      }
+    },
+    {
+      "rank": 10,
+      "locality_id": "L11059488",
+      "name": "Pratt Lake boat access site",
+      "coordinates": {
+        "latitude": 44.024341,
+        "longitude": -84.553644
+      },
+      "occurrence": {
+        "rate": 0.12,
+        "lift": 0.99,
+        "detection_count": 6,
+        "total_checklists": 50,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.087,
+        "summer": 0.1111,
+        "fall": 0.1429
+      },
+      "monthly": {
+        "3": 0.0769,
+        "4": 0.1667,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.3333,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.2857,
+        "12": 0.3333
+      }
+    },
+    {
+      "rank": 11,
+      "locality_id": "L10427289",
+      "name": "Beaverton Dam",
+      "coordinates": {
+        "latitude": 43.884196,
+        "longitude": -84.483282
+      },
+      "occurrence": {
+        "rate": 0.1111,
+        "lift": 0.92,
+        "detection_count": 3,
+        "total_checklists": 27,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0,
+        "winter": 0.3333
+      },
+      "monthly": {
+        "2": 0.3333,
+        "3": 0.0,
+        "4": 0.0
+      }
+    },
+    {
+      "rank": 12,
+      "locality_id": "L11058596",
+      "name": "Butman Twp. Sewage Ponds (view from road)",
+      "coordinates": {
+        "latitude": 44.116766,
+        "longitude": -84.420838
+      },
+      "occurrence": {
+        "rate": 0.1026,
+        "lift": 0.85,
+        "detection_count": 4,
+        "total_checklists": 39,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.1579,
+        "fall": 0.0588
+      },
+      "monthly": {
+        "3": 0.0,
+        "5": 0.3333,
+        "8": 0.25,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 13,
+      "locality_id": "L29507560",
+      "name": "Trout Lake State Forest CG",
+      "coordinates": {
+        "latitude": 44.134134,
+        "longitude": -84.564177
+      },
+      "occurrence": {
+        "rate": 0.1,
+        "lift": 0.82,
+        "detection_count": 1,
+        "total_checklists": 10,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0
+      }
+    },
+    {
+      "rank": 14,
+      "locality_id": "L29093590",
+      "name": "North Gladwin plains--Shell Rd",
+      "coordinates": {
+        "latitude": 44.0473439,
+        "longitude": -84.4472295
+      },
+      "occurrence": {
+        "rate": 0.098,
+        "lift": 0.81,
+        "detection_count": 5,
+        "total_checklists": 51,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.6,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.125,
+        "winter": 0.1481
+      },
+      "monthly": {
+        "1": 0.2727,
+        "2": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "11": 0.0,
+        "12": 0.1
+      }
+    },
+    {
+      "rank": 15,
+      "locality_id": "L10427346",
+      "name": "Ross Lake Park",
+      "coordinates": {
+        "latitude": 43.886098,
+        "longitude": -84.49107
+      },
+      "occurrence": {
+        "rate": 0.0968,
+        "lift": 0.8,
+        "detection_count": 3,
+        "total_checklists": 31,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.1053,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0
+      }
+    },
+    {
+      "rank": 16,
+      "locality_id": "L26689714",
+      "name": "Wiggins Lake boat access site",
+      "coordinates": {
+        "latitude": 44.00272,
+        "longitude": -84.532957
+      },
+      "occurrence": {
+        "rate": 0.0833,
+        "lift": 0.69,
+        "detection_count": 2,
+        "total_checklists": 24,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0714,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.1429,
+        "5": 0.0,
+        "8": 0.0
+      }
+    },
+    {
+      "rank": 17,
+      "locality_id": "L36226687",
+      "name": "Gladwin SF--N Three Rivers Rd",
+      "coordinates": {
+        "latitude": 43.99606,
+        "longitude": -84.307466
+      },
+      "occurrence": {
+        "rate": 0.0714,
+        "lift": 0.59,
+        "detection_count": 1,
+        "total_checklists": 14,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "fall": 0.0769
+      },
+      "monthly": {
+        "8": 0.0,
+        "10": 0.25
+      }
+    },
+    {
+      "rank": 18,
+      "locality_id": "L3669118",
+      "name": "Gladwin SF--Eastman Rd. terminus",
+      "coordinates": {
+        "latitude": 43.9462685,
+        "longitude": -84.2418122
+      },
+      "occurrence": {
+        "rate": 0.0714,
+        "lift": 0.59,
+        "detection_count": 1,
+        "total_checklists": 14,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0
+      },
+      "monthly": {
+        "5": 0.0,
+        "7": 0.0
+      }
+    },
+    {
+      "rank": 19,
+      "locality_id": "L13262318",
+      "name": "Tobacco Township Cemetery",
+      "coordinates": {
+        "latitude": 43.8538403,
+        "longitude": -84.4359074
+      },
+      "occurrence": {
+        "rate": 0.0667,
+        "lift": 0.55,
+        "detection_count": 1,
+        "total_checklists": 15,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0
+      },
+      "monthly": {
+        "4": 0.0
+      }
+    },
+    {
+      "rank": 20,
+      "locality_id": "L10429688",
+      "name": "Butman Rd. -- bridge",
+      "coordinates": {
+        "latitude": 44.10821,
+        "longitude": -84.467811
+      },
+      "occurrence": {
+        "rate": 0.0625,
+        "lift": 0.52,
+        "detection_count": 2,
+        "total_checklists": 32,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "winter": 0.1818
+      },
+      "monthly": {
+        "1": 0.4,
+        "3": 0.0,
+        "4": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 21,
+      "locality_id": "L26334441",
+      "name": "Tittabawassee River at Highwood Rd.",
+      "coordinates": {
+        "latitude": 43.927813,
+        "longitude": -84.300179
+      },
+      "occurrence": {
+        "rate": 0.0625,
+        "lift": 0.52,
+        "detection_count": 1,
+        "total_checklists": 16,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "fall": 0.0
+      },
+      "monthly": {
+        "8": 0.0,
+        "9": 0.0,
+        "12": 0.3333
+      }
+    },
+    {
+      "rank": 22,
+      "locality_id": "L33470651",
+      "name": "Billings Township Cemetery",
+      "coordinates": {
+        "latitude": 43.872879,
+        "longitude": -84.320041
+      },
+      "occurrence": {
+        "rate": 0.0588,
+        "lift": 0.48,
+        "detection_count": 1,
+        "total_checklists": 17,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "4": 0.0
+      }
+    },
+    {
+      "rank": 23,
+      "locality_id": "L9453591",
+      "name": "George and Sue Lane Preserve",
+      "coordinates": {
+        "latitude": 44.0695977,
+        "longitude": -84.5660865
+      },
+      "occurrence": {
+        "rate": 0.0476,
+        "lift": 0.39,
+        "detection_count": 1,
+        "total_checklists": 21,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0
+      },
+      "monthly": {
+        "6": 0.0,
+        "7": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 24,
+      "locality_id": "L15962171",
+      "name": "Gladwin SF--Lame Duck Foot Access Area",
+      "coordinates": {
+        "latitude": 44.100467,
+        "longitude": -84.2018953
+      },
+      "occurrence": {
+        "rate": 0.0476,
+        "lift": 0.39,
+        "detection_count": 1,
+        "total_checklists": 21,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "fall": 0.0
+      },
+      "monthly": {
+        "7": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 25,
+      "locality_id": "L3701762",
+      "name": "Gladwin Co. RA",
+      "coordinates": {
+        "latitude": 44.0126094,
+        "longitude": -84.5498854
+      },
+      "occurrence": {
+        "rate": 0.037,
+        "lift": 0.31,
+        "detection_count": 1,
+        "total_checklists": 27,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0
+      }
+    },
+    {
+      "rank": 26,
+      "locality_id": "L10428216",
+      "name": "Gladwin City North Park",
+      "coordinates": {
+        "latitude": 43.986694,
+        "longitude": -84.501614
+      },
+      "occurrence": {
+        "rate": 0.0204,
+        "lift": 0.17,
+        "detection_count": 1,
+        "total_checklists": 49,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.1111,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "8": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.673090Z",
+    "data_version": "Dec-2025"
+  }
+}

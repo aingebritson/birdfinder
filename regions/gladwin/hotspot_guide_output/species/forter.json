@@ -1,0 +1,63 @@
+{
+  "species": {
+    "common_name": "Forster's Tern",
+    "code": "forter",
+    "scientific_name": "Sterna forsteri"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0013,
+    "total_detections": 2,
+    "total_checklists_with_species": 2,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 2,
+    "highest_occurrence_rate": 0.0114
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L11057538",
+      "name": "Wixom Lake--South",
+      "coordinates": {
+        "latitude": 43.81647,
+        "longitude": -84.386767
+      },
+      "occurrence": {
+        "rate": 0.0114,
+        "lift": 8.71,
+        "detection_count": 2,
+        "total_checklists": 176,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.5,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0139,
+        "summer": 0.0,
+        "fall": 0.0476,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.125,
+        "6": 0.0,
+        "8": 0.2,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.718146Z",
+    "data_version": "Dec-2025"
+  }
+}

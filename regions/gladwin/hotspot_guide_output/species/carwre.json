@@ -1,0 +1,125 @@
+{
+  "species": {
+    "common_name": "Carolina Wren",
+    "code": "carwre",
+    "scientific_name": "Thryothorus ludovicianus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0104,
+    "total_detections": 15,
+    "total_checklists_with_species": 16,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 4
+  },
+  "summary": {
+    "total_hotspots_detected": 3,
+    "total_detections": 15,
+    "highest_occurrence_rate": 0.2308
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L11059912",
+      "name": "Gladwin City Park",
+      "coordinates": {
+        "latitude": 43.97869,
+        "longitude": -84.49139
+      },
+      "occurrence": {
+        "rate": 0.2308,
+        "lift": 22.11,
+        "detection_count": 9,
+        "total_checklists": 39,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.2381,
+        "winter": 0.2727
+      },
+      "monthly": {
+        "1": 0.25,
+        "2": 0.3333,
+        "3": 0.25,
+        "4": 0.4,
+        "5": 0.125,
+        "7": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L10428216",
+      "name": "Gladwin City North Park",
+      "coordinates": {
+        "latitude": 43.986694,
+        "longitude": -84.501614
+      },
+      "occurrence": {
+        "rate": 0.0816,
+        "lift": 7.82,
+        "detection_count": 4,
+        "total_checklists": 49,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0,
+        "winter": 0.2105
+      },
+      "monthly": {
+        "1": 0.3333,
+        "2": 0.1111,
+        "3": 0.0,
+        "4": 0.0,
+        "8": 0.0
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L11059488",
+      "name": "Pratt Lake boat access site",
+      "coordinates": {
+        "latitude": 44.024341,
+        "longitude": -84.553644
+      },
+      "occurrence": {
+        "rate": 0.04,
+        "lift": 3.83,
+        "detection_count": 2,
+        "total_checklists": 50,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.2222,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.3333,
+        "7": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.724215Z",
+    "data_version": "Dec-2025"
+  }
+}

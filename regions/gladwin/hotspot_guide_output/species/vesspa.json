@@ -1,0 +1,147 @@
+{
+  "species": {
+    "common_name": "Vesper Sparrow",
+    "code": "vesspa",
+    "scientific_name": "Pooecetes gramineus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0039,
+    "total_detections": 6,
+    "total_checklists_with_species": 6,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 4
+  },
+  "summary": {
+    "total_hotspots_detected": 4,
+    "total_detections": 6,
+    "highest_occurrence_rate": 0.1429
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L9453591",
+      "name": "George and Sue Lane Preserve",
+      "coordinates": {
+        "latitude": 44.0695977,
+        "longitude": -84.5660865
+      },
+      "occurrence": {
+        "rate": 0.1429,
+        "lift": 36.5,
+        "detection_count": 3,
+        "total_checklists": 21,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.2,
+        "summer": 0.2857,
+        "fall": 0.0
+      },
+      "monthly": {
+        "6": 0.6667,
+        "7": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L14547561",
+      "name": "Grout Township Cemetery",
+      "coordinates": {
+        "latitude": 43.9663091,
+        "longitude": -84.5357211
+      },
+      "occurrence": {
+        "rate": 0.0909,
+        "lift": 23.23,
+        "detection_count": 1,
+        "total_checklists": 11,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.1111
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.3333
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L11058596",
+      "name": "Butman Twp. Sewage Ponds (view from road)",
+      "coordinates": {
+        "latitude": 44.116766,
+        "longitude": -84.420838
+      },
+      "occurrence": {
+        "rate": 0.0256,
+        "lift": 6.55,
+        "detection_count": 1,
+        "total_checklists": 39,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0526,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "5": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 4,
+      "locality_id": "L29093590",
+      "name": "North Gladwin plains--Shell Rd",
+      "coordinates": {
+        "latitude": 44.0473439,
+        "longitude": -84.4472295
+      },
+      "occurrence": {
+        "rate": 0.0196,
+        "lift": 5.01,
+        "detection_count": 1,
+        "total_checklists": 51,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "6": 0.3333,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.692773Z",
+    "data_version": "Dec-2025"
+  }
+}

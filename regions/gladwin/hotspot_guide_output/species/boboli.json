@@ -1,0 +1,94 @@
+{
+  "species": {
+    "common_name": "Bobolink",
+    "code": "boboli",
+    "scientific_name": "Dolichonyx oryzivorus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0091,
+    "total_detections": 12,
+    "total_checklists_with_species": 14,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 3
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 12,
+    "highest_occurrence_rate": 0.1765
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L3766087",
+      "name": "Bentley Marsh Flooding WMA",
+      "coordinates": {
+        "latitude": 43.9947596,
+        "longitude": -84.1838276
+      },
+      "occurrence": {
+        "rate": 0.1765,
+        "lift": 19.32,
+        "detection_count": 9,
+        "total_checklists": 51,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 4.9,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.1818,
+        "summer": 0.3333,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.25,
+        "6": 0.5,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L29093590",
+      "name": "North Gladwin plains--Shell Rd",
+      "coordinates": {
+        "latitude": 44.0473439,
+        "longitude": -84.4472295
+      },
+      "occurrence": {
+        "rate": 0.0588,
+        "lift": 6.44,
+        "detection_count": 3,
+        "total_checklists": 51,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 9.7,
+        "max_count": 14
+      },
+      "seasonal": {
+        "spring": 0.1667,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "5": 0.6667,
+        "6": 0.3333,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.692924Z",
+    "data_version": "Dec-2025"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "species": {
+    "common_name": "Least Sandpiper",
+    "code": "leasan",
+    "scientific_name": "Calidris minutilla"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0039,
+    "total_detections": 6,
+    "total_checklists_with_species": 6,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 6,
+    "highest_occurrence_rate": 0.1026
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L11058596",
+      "name": "Butman Twp. Sewage Ponds (view from road)",
+      "coordinates": {
+        "latitude": 44.116766,
+        "longitude": -84.420838
+      },
+      "occurrence": {
+        "rate": 0.1026,
+        "lift": 26.21,
+        "detection_count": 4,
+        "total_checklists": 39,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.1579,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "5": 0.5,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L1137401",
+      "name": "Molasses River Flooding WMA",
+      "coordinates": {
+        "latitude": 43.9493273,
+        "longitude": -84.1872883
+      },
+      "occurrence": {
+        "rate": 0.0104,
+        "lift": 2.65,
+        "detection_count": 2,
+        "total_checklists": 193,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0556,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.1429,
+        "9": 0.0,
+        "10": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.708305Z",
+    "data_version": "Dec-2025"
+  }
+}

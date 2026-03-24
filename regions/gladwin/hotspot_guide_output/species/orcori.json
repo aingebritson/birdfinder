@@ -1,0 +1,94 @@
+{
+  "species": {
+    "common_name": "Orchard Oriole",
+    "code": "orcori",
+    "scientific_name": "Icterus spurius"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0052,
+    "total_detections": 8,
+    "total_checklists_with_species": 8,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 8,
+    "highest_occurrence_rate": 0.0784
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L3739472",
+      "name": "Gladwin SF--Katzer Rd. wetland",
+      "coordinates": {
+        "latitude": 43.8952058,
+        "longitude": -84.2308339
+      },
+      "occurrence": {
+        "rate": 0.0784,
+        "lift": 15.03,
+        "detection_count": 4,
+        "total_checklists": 51,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.1379,
+        "summer": 0.0,
+        "fall": 0.0
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.1818,
+        "6": 0.0,
+        "8": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L1137401",
+      "name": "Molasses River Flooding WMA",
+      "coordinates": {
+        "latitude": 43.9493273,
+        "longitude": -84.1872883
+      },
+      "occurrence": {
+        "rate": 0.0207,
+        "lift": 3.97,
+        "detection_count": 4,
+        "total_checklists": 193,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.8,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0215,
+        "summer": 0.0357,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0385,
+        "6": 0.0444,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.726460Z",
+    "data_version": "Dec-2025"
+  }
+}

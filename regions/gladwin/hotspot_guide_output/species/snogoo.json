@@ -1,0 +1,102 @@
+{
+  "species": {
+    "common_name": "Snow Goose",
+    "code": "snogoo",
+    "scientific_name": "Anser caerulescens"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0033,
+    "total_detections": 5,
+    "total_checklists_with_species": 5,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 5,
+    "highest_occurrence_rate": 0.0381
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L3128011",
+      "name": "Wixom Lake--Dundas Rd. access",
+      "coordinates": {
+        "latitude": 43.8330331,
+        "longitude": -84.3852621
+      },
+      "occurrence": {
+        "rate": 0.0381,
+        "lift": 11.68,
+        "detection_count": 4,
+        "total_checklists": 105,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0615,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.1,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L11057538",
+      "name": "Wixom Lake--South",
+      "coordinates": {
+        "latitude": 43.81647,
+        "longitude": -84.386767
+      },
+      "occurrence": {
+        "rate": 0.0057,
+        "lift": 1.74,
+        "detection_count": 1,
+        "total_checklists": 176,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0132
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0435,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.719000Z",
+    "data_version": "Dec-2025"
+  }
+}

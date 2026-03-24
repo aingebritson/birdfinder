@@ -1,0 +1,96 @@
+{
+  "species": {
+    "common_name": "Short-eared Owl",
+    "code": "shoowl",
+    "scientific_name": "Asio flammeus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.002,
+    "total_detections": 3,
+    "total_checklists_with_species": 3,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 3,
+    "highest_occurrence_rate": 0.0392
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L29093590",
+      "name": "North Gladwin plains--Shell Rd",
+      "coordinates": {
+        "latitude": 44.0473439,
+        "longitude": -84.4472295
+      },
+      "occurrence": {
+        "rate": 0.0392,
+        "lift": 20.04,
+        "detection_count": 2,
+        "total_checklists": 51,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0,
+        "winter": 0.0741
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "11": 0.0,
+        "12": 0.2
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L1137401",
+      "name": "Molasses River Flooding WMA",
+      "coordinates": {
+        "latitude": 43.9493273,
+        "longitude": -84.1872883
+      },
+      "occurrence": {
+        "rate": 0.0052,
+        "lift": 2.65,
+        "detection_count": 1,
+        "total_checklists": 193,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0108,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0625,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.727323Z",
+    "data_version": "Dec-2025"
+  }
+}

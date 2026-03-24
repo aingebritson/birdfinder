@@ -1,0 +1,131 @@
+{
+  "species": {
+    "common_name": "Greater Scaup",
+    "code": "gresca",
+    "scientific_name": "Aythya marila"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0078,
+    "total_detections": 12,
+    "total_checklists_with_species": 12,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 3
+  },
+  "summary": {
+    "total_hotspots_detected": 3,
+    "total_detections": 12,
+    "highest_occurrence_rate": 0.0513
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L11058596",
+      "name": "Butman Twp. Sewage Ponds (view from road)",
+      "coordinates": {
+        "latitude": 44.116766,
+        "longitude": -84.420838
+      },
+      "occurrence": {
+        "rate": 0.0513,
+        "lift": 6.55,
+        "detection_count": 2,
+        "total_checklists": 39,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 2.5,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0526,
+        "fall": 0.0588
+      },
+      "monthly": {
+        "3": 0.0,
+        "5": 0.0,
+        "8": 0.0,
+        "10": 0.2,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L11057538",
+      "name": "Wixom Lake--South",
+      "coordinates": {
+        "latitude": 43.81647,
+        "longitude": -84.386767
+      },
+      "occurrence": {
+        "rate": 0.0511,
+        "lift": 6.53,
+        "detection_count": 9,
+        "total_checklists": 176,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.6,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0972,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0263
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.087,
+        "3": 0.087,
+        "4": 0.1667,
+        "5": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L1137401",
+      "name": "Molasses River Flooding WMA",
+      "coordinates": {
+        "latitude": 43.9493273,
+        "longitude": -84.1872883
+      },
+      "occurrence": {
+        "rate": 0.0052,
+        "lift": 0.66,
+        "detection_count": 1,
+        "total_checklists": 193,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0108,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0192,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.689315Z",
+    "data_version": "Dec-2025"
+  }
+}

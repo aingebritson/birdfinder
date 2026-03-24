@@ -1,0 +1,95 @@
+{
+  "species": {
+    "common_name": "Peregrine Falcon",
+    "code": "perfal",
+    "scientific_name": "Falco peregrinus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0013,
+    "total_detections": 2,
+    "total_checklists_with_species": 2,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 2,
+    "highest_occurrence_rate": 0.0256
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L11058596",
+      "name": "Butman Twp. Sewage Ponds (view from road)",
+      "coordinates": {
+        "latitude": 44.116766,
+        "longitude": -84.420838
+      },
+      "occurrence": {
+        "rate": 0.0256,
+        "lift": 19.65,
+        "detection_count": 1,
+        "total_checklists": 39,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0588
+      },
+      "monthly": {
+        "3": 0.0,
+        "5": 0.0,
+        "8": 0.25,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L3128011",
+      "name": "Wixom Lake--Dundas Rd. access",
+      "coordinates": {
+        "latitude": 43.8330331,
+        "longitude": -84.3852621
+      },
+      "occurrence": {
+        "rate": 0.0095,
+        "lift": 7.3,
+        "detection_count": 1,
+        "total_checklists": 105,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0154,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1667,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.723223Z",
+    "data_version": "Dec-2025"
+  }
+}

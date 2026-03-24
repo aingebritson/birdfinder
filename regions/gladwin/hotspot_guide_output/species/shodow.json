@@ -1,0 +1,91 @@
+{
+  "species": {
+    "common_name": "Short-billed Dowitcher",
+    "code": "shodow",
+    "scientific_name": "Limnodromus griseus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0033,
+    "total_detections": 5,
+    "total_checklists_with_species": 5,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 5,
+    "highest_occurrence_rate": 0.0588
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L3766087",
+      "name": "Bentley Marsh Flooding WMA",
+      "coordinates": {
+        "latitude": 43.9947596,
+        "longitude": -84.1838276
+      },
+      "occurrence": {
+        "rate": 0.0588,
+        "lift": 18.04,
+        "detection_count": 3,
+        "total_checklists": 51,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.1364,
+        "summer": 0.0,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1875,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L11058596",
+      "name": "Butman Twp. Sewage Ponds (view from road)",
+      "coordinates": {
+        "latitude": 44.116766,
+        "longitude": -84.420838
+      },
+      "occurrence": {
+        "rate": 0.0513,
+        "lift": 15.72,
+        "detection_count": 2,
+        "total_checklists": 39,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.1053,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "5": 0.3333,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.726561Z",
+    "data_version": "Dec-2025"
+  }
+}

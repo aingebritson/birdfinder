@@ -1,0 +1,98 @@
+{
+  "species": {
+    "common_name": "Long-tailed Duck",
+    "code": "londuc",
+    "scientific_name": "Clangula hyemalis"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0039,
+    "total_detections": 6,
+    "total_checklists_with_species": 6,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 6,
+    "highest_occurrence_rate": 0.0282
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L27826270",
+      "name": "Lake Lancer/Lake Lancelot",
+      "coordinates": {
+        "latitude": 44.113845,
+        "longitude": -84.444713
+      },
+      "occurrence": {
+        "rate": 0.0282,
+        "lift": 7.2,
+        "detection_count": 2,
+        "total_checklists": 71,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0909,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "10": 0.0,
+        "11": 0.1176,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L11057538",
+      "name": "Wixom Lake--South",
+      "coordinates": {
+        "latitude": 43.81647,
+        "longitude": -84.386767
+      },
+      "occurrence": {
+        "rate": 0.0227,
+        "lift": 5.81,
+        "detection_count": 4,
+        "total_checklists": 176,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0278,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0263
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.087,
+        "3": 0.0435,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.722043Z",
+    "data_version": "Dec-2025"
+  }
+}

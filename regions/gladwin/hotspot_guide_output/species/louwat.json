@@ -1,0 +1,57 @@
+{
+  "species": {
+    "common_name": "Louisiana Waterthrush",
+    "code": "louwat",
+    "scientific_name": "Parkesia motacilla"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0007,
+    "total_detections": 1,
+    "total_checklists_with_species": 1,
+    "total_checklists_countywide": 1533,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 1,
+    "highest_occurrence_rate": 0.0204
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L10428216",
+      "name": "Gladwin City North Park",
+      "coordinates": {
+        "latitude": 43.986694,
+        "longitude": -84.501614
+      },
+      "occurrence": {
+        "rate": 0.0204,
+        "lift": 31.29,
+        "detection_count": 1,
+        "total_checklists": 49,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0556,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.25,
+        "8": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-24T01:04:53.725853Z",
+    "data_version": "Dec-2025"
+  }
+}
