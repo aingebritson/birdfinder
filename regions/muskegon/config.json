@@ -1,0 +1,26 @@
+{
+  "region_id": "muskegon",
+  "display_name": "Muskegon County, Michigan",
+  "description": "Bird occurrence data for Muskegon County in Michigan.",
+  "ebird_region_code": "US-MI-121",
+  "timezone": "America/Detroit",
+  "paths": {
+    "input_pattern": "ebird_*.txt",
+    "output_file": "{region_id}_species_data.json",
+    "intermediate_dir": "intermediate",
+    "hotspots_dir": "hotspots"
+  },
+  "thresholds": {},
+  "seasonal_weeks": {},
+  "display_settings": {
+    "copyright_year": 2025,
+    "theme_name": "Kirtland's Warbler",
+    "about_text": "Flightcall helps you discover which birds are present in Muskegon County throughout the year, based on eBird observation data."
+  },
+  "hotspot_guide": {
+    "enabled": true,
+    "min_checklists_threshold": 10,
+    "high_confidence_min": 100,
+    "medium_confidence_min": 30
+  }
+}

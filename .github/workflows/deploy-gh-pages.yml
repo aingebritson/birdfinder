@@ -12,6 +12,10 @@ on:
       - 'wayne/**'
       - 'ottawa/**'
       - 'gladwin/**'
+      - 'macomb/**'
+      - 'berrien/**'
+      - 'allegan/**'
+      - 'muskegon/**'
       - 'index.html'
       - 'about.html'
 
@@ -64,6 +68,18 @@ jobs:
 
           # Copy gladwin app into gladwin/ subdirectory
           git checkout main -- gladwin/
+
+          # Copy macomb app into macomb/ subdirectory
+          git checkout main -- macomb/
+
+          # Copy berrien app into berrien/ subdirectory
+          git checkout main -- berrien/
+
+          # Copy allegan app into allegan/ subdirectory
+          git checkout main -- allegan/
+
+          # Copy muskegon app into muskegon/ subdirectory
+          git checkout main -- muskegon/
 
           # Stage all changes
           git add -A
