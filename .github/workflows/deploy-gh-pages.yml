@@ -11,6 +11,7 @@ on:
       - 'kent/**'
       - 'wayne/**'
       - 'ottawa/**'
+      - 'gladwin/**'
       - 'index.html'
       - 'about.html'
 
@@ -60,6 +61,9 @@ jobs:
 
           # Copy ottawa app into ottawa/ subdirectory
           git checkout main -- ottawa/
+
+          # Copy gladwin app into gladwin/ subdirectory
+          git checkout main -- gladwin/
 
           # Stage all changes
           git add -A
