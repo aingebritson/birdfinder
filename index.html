@@ -706,7 +706,8 @@
                     <path d="M 618.94 752.16 640.09 751.59 650.79 751.21 650.77 750.51 662.09 750.28 663.76 752.46 665.51 752.73 669.57 756.48 672.46 759.22 670.03 759.77 669.97 762.06 666.34 764.8 665.26 768.97 661.79 768.47 660.13 769.77 659.09 772.13 658.13 776.34 655.57 776.67 654.44 777.57 652.16 782.35 649.94 783.8 649.28 785.01 649.46 791.02 645.88 791.25 646.87 793.24 648.14 794.2 627.29 795.18 620.23 795.58 619.76 783.8 618.94 752.16 Z"
                           data-county="monroe" data-status="inactive" data-name="Monroe County"/>
                     <path d="M 677.93 653.93 684.99 653.59 688.53 653.14 704.9 652.6 710.28 652.28 711.62 675.42 713.8 677.72 711.93 678.23 708.97 680.58 708.97 681.46 706.1 681.69 704.25 683.46 703.7 685.22 704.46 687.08 706.55 687.88 707.04 691.53 702.57 692.32 701.25 693.81 699.07 697.75 698.42 700.48 698.29 703.45 699.61 706.51 694.38 706.66 680.51 707.31 678.41 664.58 677.93 653.93 Z"
-                          data-county="macomb" data-status="soon" data-name="Macomb County"/>
+                          data-county="macomb" data-status="live" data-name="Macomb County"
+                          tabindex="0" role="link" aria-label="Macomb County — available"/>
                     <path d="M 644.37 552.78 646.33 549.44 647.43 546 650.53 541.74 651.42 537.65 654.03 537 656.62 533.84 656.21 531.52 653.24 531.11 657.95 529.44 660.57 526.87 661.94 522.73 667.54 521.65 668.69 521.87 671.64 521.08 675 518.98 677.9 519.38 679.68 518.73 680.96 517.16 682.31 513.85 685.53 513.47 687.37 511.48 689.28 511.8 690.79 511.04 693.34 511.96 695.56 513.76 701 515.19 702.82 516.26 704.13 518.06 705.21 517.98 707.82 520.68 711.16 527.81 712.75 530.09 713.21 533.3 715.24 534.81 716.89 538.76 719.01 545.44 718.68 548.28 719.51 550.7 719.98 556.15 706.67 556.98 675.14 558.8 667.71 559.24 644.53 560.15 644.37 552.78 Z"
                           data-county="huron" data-status="inactive" data-name="Huron County"/>
                     <path d="M 503.28 354.87 503.2 358.59 507.52 358.76 509.47 361.74 509.78 364.23 511.09 366.24 514.44 366.34 514.41 364.02 534.23 364.4 534.04 374.98 533.95 385.5 523.44 385.23 513.06 384.95 492.08 384.83 492.27 374.23 478.08 373.8 478.39 370.08 479.64 366.19 482.2 364.3 483.46 362.37 484.71 361.98 485.49 360.48 488.05 360.89 489.66 359.67 494.1 355.34 495.02 355.55 499.71 353.99 503.28 354.87 Z M 478.43 304.93 480.91 302.33 481.58 304.8 479.91 305.93 478.43 304.93 Z M 466.69 301.97 467.89 301.36 467.27 298.6 469.76 299.35 473.52 302.73 473.25 305 469.89 305.35 468.91 304.67 468.84 302.59 466.69 301.97 Z M 458.34 325.86 459.09 323.12 460.42 321.36 459.98 318.32 460.47 316.2 463.28 312.67 463.31 310.71 464.19 309.78 463.73 306.97 465.77 307.87 468.92 307.46 469.67 308.55 468.3 309.7 469.54 310.96 469.9 314.33 468.84 316.41 470.14 319.94 470.36 323.68 469.94 325.33 466.93 327.22 465.69 329.2 463.94 329.52 461.98 328.63 458.85 328 458.34 325.86 Z M 452.45 309.22 454.1 308.16 456.46 309.07 456.3 312.02 454.09 314.39 452.64 314.17 453.57 311.51 452.45 309.22 Z"
@@ -1097,11 +1098,11 @@
             </a>
 
             <!-- Macomb County — coming soon -->
-            <div class="county-card county-card--inactive" data-card="macomb">
+            <a href="macomb/" class="county-card" data-card="macomb">
 
                 <div class="card-status">
-                    <span class="status-dot status-dot--inactive"></span>
-                    Coming soon
+                    <span class="status-dot"></span>
+                    Available now
                 </div>
 
                 <div class="card-county-name">Macomb County</div>
@@ -1109,23 +1110,29 @@
 
                 <div class="card-stats">
                     <div class="stat-item">
-                        <span class="stat-value">—</span>
+                        <span class="stat-value" id="macomb-species-count">—</span>
                         <span class="stat-label">Species</span>
                     </div>
                     <div class="stat-sep"></div>
                     <div class="stat-item">
-                        <span class="stat-value">—</span>
+                        <span class="stat-value" id="macomb-hotspot-count">—</span>
                         <span class="stat-label">Hotspots</span>
                     </div>
                 </div>
 
-                <div class="card-pheno" aria-hidden="true"></div>
+                <!-- Sparkline: populated dynamically from species_data.json -->
+                <div class="card-pheno" id="macomb-sparkline" aria-hidden="true"></div>
 
                 <div class="card-cta">
-                    <span class="card-cta-text">Coming soon</span>
+                    <span class="card-cta-text">Explore this county</span>
+                    <svg class="card-arrow" width="18" height="18" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
                 </div>
 
-            </div>
+            </a>
 
             <!-- Berrien County — coming soon -->
             <div class="county-card county-card--inactive" data-card="berrien">
@@ -1246,7 +1253,8 @@
             kent:      'kent/',
             wayne:     'wayne/',
             ottawa:    'ottawa/',
-            gladwin:   'gladwin/'
+            gladwin:   'gladwin/',
+            macomb:    'macomb/'
         };
 
         function showTip(e, name, status) {
@@ -1486,6 +1494,50 @@
                     var pct  = Math.max(6, norm * 100).toFixed(1);
                     var c    = barColor(i, weekCount, norm);
                     var bar  = document.createElement('div');
+                    bar.className = 'pheno-bar';
+                    bar.style.cssText = 'height:' + pct + '%; background:' + c.color + '; opacity:' + c.opacity.toFixed(2) + ';';
+                    container.appendChild(bar);
+                });
+            })
+            .catch(function () {});
+
+        // Macomb — hotspot count
+        fetch('macomb/data/hotspot_index.json')
+            .then(function (r) { return r.json(); })
+            .then(function (index) {
+                var el = document.getElementById('macomb-hotspot-count');
+                if (el) el.textContent = index.total_hotspots || (Array.isArray(index.hotspots) ? index.hotspots.length : '—');
+            })
+            .catch(function () {});
+
+        fetch('macomb/data/species_data.json')
+            .then(function (r) { return r.json(); })
+            .then(function (species) {
+                var countEl = document.getElementById('macomb-species-count');
+                if (countEl) countEl.textContent = species.length;
+                var container = document.getElementById('macomb-sparkline');
+                if (!container) return;
+                var weekCount = 52;
+                for (var s = 0; s < species.length; s++) {
+                    if (Array.isArray(species[s].weekly_frequency) && species[s].weekly_frequency.length > 0) {
+                        weekCount = species[s].weekly_frequency.length;
+                        break;
+                    }
+                }
+                var sums = new Array(weekCount).fill(0);
+                species.forEach(function (sp) {
+                    if (!Array.isArray(sp.weekly_frequency)) return;
+                    sp.weekly_frequency.forEach(function (v, i) {
+                        if (i < weekCount) sums[i] += v;
+                    });
+                });
+                var max = Math.max.apply(null, sums) || 1;
+                sums.forEach(function (val) {
+                    var pct = (val / max) * 100;
+                    var c = pct > 66 ? {color:'#4caf7d', opacity:0.9}
+                          : pct > 33 ? {color:'#4caf7d', opacity:0.55}
+                          :            {color:'#4caf7d', opacity:0.25};
+                    var bar = document.createElement('div');
                     bar.className = 'pheno-bar';
                     bar.style.cssText = 'height:' + pct + '%; background:' + c.color + '; opacity:' + c.opacity.toFixed(2) + ';';
                     container.appendChild(bar);
