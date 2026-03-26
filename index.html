@@ -1532,12 +1532,11 @@
                     });
                 });
                 var max = Math.max.apply(null, sums) || 1;
-                sums.forEach(function (val) {
-                    var pct = (val / max) * 100;
-                    var c = pct > 66 ? {color:'#4caf7d', opacity:0.9}
-                          : pct > 33 ? {color:'#4caf7d', opacity:0.55}
-                          :            {color:'#4caf7d', opacity:0.25};
-                    var bar = document.createElement('div');
+                sums.forEach(function (val, i) {
+                    var norm = val / max;
+                    var pct  = Math.max(6, norm * 100).toFixed(1);
+                    var c    = barColor(i, weekCount, norm);
+                    var bar  = document.createElement('div');
                     bar.className = 'pheno-bar';
                     bar.style.cssText = 'height:' + pct + '%; background:' + c.color + '; opacity:' + c.opacity.toFixed(2) + ';';
                     container.appendChild(bar);
