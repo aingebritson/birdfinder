@@ -1,0 +1,975 @@
+{
+  "species": {
+    "common_name": "Forster's Tern",
+    "code": "forter",
+    "scientific_name": "Sterna forsteri"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.1007,
+    "total_detections": 5313,
+    "total_checklists_with_species": 5314,
+    "total_checklists_countywide": 52763,
+    "hotspots_detected": 26
+  },
+  "summary": {
+    "total_hotspots_detected": 25,
+    "total_detections": 5313,
+    "highest_occurrence_rate": 0.3333
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L13120623",
+      "name": "Lake Front Park",
+      "coordinates": {
+        "latitude": 42.4586739,
+        "longitude": -82.8807306
+      },
+      "occurrence": {
+        "rate": 0.3333,
+        "lift": 3.31,
+        "detection_count": 6,
+        "total_checklists": 18,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.7,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.6
+      },
+      "monthly": {
+        "5": 0.75,
+        "6": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L19692422",
+      "name": "Lac Sainte Clair Park",
+      "coordinates": {
+        "latitude": 42.4955486,
+        "longitude": -82.886095
+      },
+      "occurrence": {
+        "rate": 0.2727,
+        "lift": 2.71,
+        "detection_count": 9,
+        "total_checklists": 33,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 3.8,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.4375,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.6667,
+        "5": 0.3333,
+        "6": 0.6667,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L384255",
+      "name": "Ford House",
+      "coordinates": {
+        "latitude": 42.4554221,
+        "longitude": -82.8723113
+      },
+      "occurrence": {
+        "rate": 0.2595,
+        "lift": 2.58,
+        "detection_count": 333,
+        "total_checklists": 1283,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.1,
+        "max_count": 16
+      },
+      "seasonal": {
+        "spring": 0.4558,
+        "summer": 0.0492,
+        "fall": 0.0137,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.5628,
+        "5": 0.5285,
+        "6": 0.0882,
+        "7": 0.0,
+        "8": 0.0429,
+        "9": 0.0182,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 4,
+      "locality_id": "L10976071",
+      "name": "Harrison Twp. Waterfront Park",
+      "coordinates": {
+        "latitude": 42.548269,
+        "longitude": -82.8518197
+      },
+      "occurrence": {
+        "rate": 0.2381,
+        "lift": 2.36,
+        "detection_count": 5,
+        "total_checklists": 21,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.6,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.3333,
+        "summer": 0.25
+      },
+      "monthly": {
+        "4": 0.75,
+        "5": 0.0,
+        "6": 0.4,
+        "7": 0.0
+      }
+    },
+    {
+      "rank": 5,
+      "locality_id": "L388494",
+      "name": "Lake St. Clair Metropark (Metro Beach Metropark)",
+      "coordinates": {
+        "latitude": 42.5796301,
+        "longitude": -82.8032684
+      },
+      "occurrence": {
+        "rate": 0.2068,
+        "lift": 2.05,
+        "detection_count": 3907,
+        "total_checklists": 18894,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.8,
+        "max_count": 87
+      },
+      "seasonal": {
+        "spring": 0.3975,
+        "summer": 0.4016,
+        "fall": 0.023,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0029,
+        "4": 0.5086,
+        "5": 0.5171,
+        "6": 0.4598,
+        "7": 0.3229,
+        "8": 0.0641,
+        "9": 0.0149,
+        "10": 0.0025,
+        "11": 0.0019,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 6,
+      "locality_id": "L22331675",
+      "name": "9-Mile Boat Launch and Pier",
+      "coordinates": {
+        "latitude": 42.4641271,
+        "longitude": -82.8773035
+      },
+      "occurrence": {
+        "rate": 0.1707,
+        "lift": 1.7,
+        "detection_count": 7,
+        "total_checklists": 41,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.4615,
+        "summer": 0.0833,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.7143,
+        "5": 0.3333,
+        "6": 0.25,
+        "7": 0.0,
+        "8": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 7,
+      "locality_id": "L324161",
+      "name": "Wetzel SP",
+      "coordinates": {
+        "latitude": 42.7397538,
+        "longitude": -82.8481499
+      },
+      "occurrence": {
+        "rate": 0.1474,
+        "lift": 1.46,
+        "detection_count": 291,
+        "total_checklists": 1974,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 16
+      },
+      "seasonal": {
+        "spring": 0.2745,
+        "summer": 0.1447,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.3486,
+        "5": 0.3252,
+        "6": 0.2077,
+        "7": 0.0157,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 8,
+      "locality_id": "L20905292",
+      "name": "Veterans Memorial Park",
+      "coordinates": {
+        "latitude": 42.5261515,
+        "longitude": -82.8711947
+      },
+      "occurrence": {
+        "rate": 0.1377,
+        "lift": 1.37,
+        "detection_count": 19,
+        "total_checklists": 138,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 6.1,
+        "max_count": 28
+      },
+      "seasonal": {
+        "spring": 0.2759,
+        "summer": 0.4783,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.7143,
+        "5": 0.6,
+        "6": 0.4167,
+        "7": 0.5455,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 9,
+      "locality_id": "L10976037",
+      "name": "Clinton River Spillway Fishing Spot and DNR Boat Launch",
+      "coordinates": {
+        "latitude": 42.561971,
+        "longitude": -82.8464091
+      },
+      "occurrence": {
+        "rate": 0.1261,
+        "lift": 1.25,
+        "detection_count": 28,
+        "total_checklists": 222,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.4,
+        "max_count": 7
+      },
+      "seasonal": {
+        "spring": 0.314,
+        "summer": 0.1,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.6897,
+        "5": 0.4667,
+        "6": 0.3333,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 10,
+      "locality_id": "L2465673",
+      "name": "Ruedisale Point Park",
+      "coordinates": {
+        "latitude": 42.684068,
+        "longitude": -82.7090639
+      },
+      "occurrence": {
+        "rate": 0.1034,
+        "lift": 1.03,
+        "detection_count": 49,
+        "total_checklists": 474,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.5,
+        "max_count": 30
+      },
+      "seasonal": {
+        "spring": 0.494,
+        "summer": 0.6667,
+        "fall": 0.0088,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.6522,
+        "5": 0.8966,
+        "7": 0.625,
+        "8": 0.0,
+        "9": 0.0833,
+        "10": 0.0,
+        "11": 0.0132,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 11,
+      "locality_id": "L678939",
+      "name": "Harley Ensign Memorial Boating Access Site",
+      "coordinates": {
+        "latitude": 42.592648,
+        "longitude": -82.7715111
+      },
+      "occurrence": {
+        "rate": 0.1026,
+        "lift": 1.02,
+        "detection_count": 498,
+        "total_checklists": 4854,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.0,
+        "max_count": 100
+      },
+      "seasonal": {
+        "spring": 0.2842,
+        "summer": 0.8098,
+        "fall": 0.0343,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0016,
+        "4": 0.5154,
+        "5": 0.8645,
+        "6": 0.8198,
+        "7": 0.7979,
+        "8": 0.1799,
+        "9": 0.0,
+        "10": 0.0145,
+        "11": 0.0026,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 12,
+      "locality_id": "L24681651",
+      "name": "Wahby Park and Blossom Heath Pier",
+      "coordinates": {
+        "latitude": 42.4743465,
+        "longitude": -82.8859816
+      },
+      "occurrence": {
+        "rate": 0.0855,
+        "lift": 0.85,
+        "detection_count": 10,
+        "total_checklists": 117,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.6,
+        "max_count": 7
+      },
+      "seasonal": {
+        "spring": 0.2333,
+        "summer": 0.1154,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.5,
+        "5": 0.2727,
+        "6": 0.3333,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 13,
+      "locality_id": "L5535905",
+      "name": "Selfridge Public Boat Launch",
+      "coordinates": {
+        "latitude": 42.6305798,
+        "longitude": -82.8199325
+      },
+      "occurrence": {
+        "rate": 0.0742,
+        "lift": 0.74,
+        "detection_count": 34,
+        "total_checklists": 458,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 6.1,
+        "max_count": 29
+      },
+      "seasonal": {
+        "spring": 0.2963,
+        "summer": 0.1333,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.5349,
+        "5": 0.5625,
+        "6": 0.2222,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 14,
+      "locality_id": "L21024085",
+      "name": "Tucker Park",
+      "coordinates": {
+        "latitude": 42.5644242,
+        "longitude": -82.8489283
+      },
+      "occurrence": {
+        "rate": 0.069,
+        "lift": 0.68,
+        "detection_count": 4,
+        "total_checklists": 58,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 7
+      },
+      "seasonal": {
+        "spring": 0.0909,
+        "summer": 0.2222,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.2222,
+        "5": 0.0,
+        "7": 0.1429,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 15,
+      "locality_id": "L1846994",
+      "name": "Brandenburg Park",
+      "coordinates": {
+        "latitude": 42.6660456,
+        "longitude": -82.7581935
+      },
+      "occurrence": {
+        "rate": 0.0339,
+        "lift": 0.34,
+        "detection_count": 14,
+        "total_checklists": 413,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 10.8,
+        "max_count": 44
+      },
+      "seasonal": {
+        "spring": 0.2778,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.4444,
+        "5": 1.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 16,
+      "locality_id": "L21368830",
+      "name": "Clinton River Spillway",
+      "coordinates": {
+        "latitude": 42.5779771,
+        "longitude": -82.8716281
+      },
+      "occurrence": {
+        "rate": 0.0339,
+        "lift": 0.34,
+        "detection_count": 4,
+        "total_checklists": 118,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0204,
+        "summer": 0.2,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0476,
+        "5": 0.0,
+        "6": 0.375,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 17,
+      "locality_id": "L8261297",
+      "name": "Salt River Nature Preserve",
+      "coordinates": {
+        "latitude": 42.6699188,
+        "longitude": -82.7751608
+      },
+      "occurrence": {
+        "rate": 0.0312,
+        "lift": 0.31,
+        "detection_count": 2,
+        "total_checklists": 64,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.2857,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "6": 0.3333,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 18,
+      "locality_id": "L1871511",
+      "name": "Walter and Mary Burke Park",
+      "coordinates": {
+        "latitude": 42.678625,
+        "longitude": -82.7336124
+      },
+      "occurrence": {
+        "rate": 0.0223,
+        "lift": 0.22,
+        "detection_count": 13,
+        "total_checklists": 584,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.9,
+        "max_count": 7
+      },
+      "seasonal": {
+        "spring": 0.1887,
+        "summer": 0.2727,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.375,
+        "5": 0.3333,
+        "6": 0.4,
+        "7": 0.1667,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 19,
+      "locality_id": "L1582233",
+      "name": "Stony Creek Metropark--south (Macomb Co.)",
+      "coordinates": {
+        "latitude": 42.7224105,
+        "longitude": -83.0819054
+      },
+      "occurrence": {
+        "rate": 0.0129,
+        "lift": 0.13,
+        "detection_count": 42,
+        "total_checklists": 3254,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.0154,
+        "summer": 0.0426,
+        "fall": 0.0136,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0314,
+        "5": 0.0135,
+        "6": 0.0079,
+        "7": 0.0826,
+        "8": 0.0645,
+        "9": 0.0508,
+        "10": 0.0032,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 20,
+      "locality_id": "L4413665",
+      "name": "29 Mile and Omo Rds. mitigated wetlands",
+      "coordinates": {
+        "latitude": 42.7610768,
+        "longitude": -82.8568697
+      },
+      "occurrence": {
+        "rate": 0.0083,
+        "lift": 0.08,
+        "detection_count": 10,
+        "total_checklists": 1207,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.4,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0142,
+        "summer": 0.0068,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0044,
+        "5": 0.0385,
+        "6": 0.0092,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 21,
+      "locality_id": "L991150",
+      "name": "Lakeside Island Park",
+      "coordinates": {
+        "latitude": 42.6191494,
+        "longitude": -82.980423
+      },
+      "occurrence": {
+        "rate": 0.0067,
+        "lift": 0.07,
+        "detection_count": 2,
+        "total_checklists": 300,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0104,
+        "summer": 0.0256,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0227,
+        "5": 0.0,
+        "6": 0.0526,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 22,
+      "locality_id": "L389646",
+      "name": "Stony Creek Metropark--north (Macomb Co.)",
+      "coordinates": {
+        "latitude": 42.7547183,
+        "longitude": -83.0723682
+      },
+      "occurrence": {
+        "rate": 0.0064,
+        "lift": 0.06,
+        "detection_count": 18,
+        "total_checklists": 2832,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0122,
+        "summer": 0.0025,
+        "fall": 0.0017,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0252,
+        "5": 0.01,
+        "6": 0.0,
+        "7": 0.007,
+        "8": 0.0109,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 23,
+      "locality_id": "L2795407",
+      "name": "Towne Center Blvd. ponds/fields",
+      "coordinates": {
+        "latitude": 42.6385008,
+        "longitude": -82.8414202
+      },
+      "occurrence": {
+        "rate": 0.0058,
+        "lift": 0.06,
+        "detection_count": 2,
+        "total_checklists": 344,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0055,
+        "summer": 0.0147,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0204,
+        "6": 0.0208,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 24,
+      "locality_id": "L1875060",
+      "name": "Teller Rd. at 28 Mile Rd.",
+      "coordinates": {
+        "latitude": 42.7463361,
+        "longitude": -82.9125385
+      },
+      "occurrence": {
+        "rate": 0.0033,
+        "lift": 0.03,
+        "detection_count": 5,
+        "total_checklists": 1497,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0019,
+        "summer": 0.0147,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0055,
+        "6": 0.0127,
+        "7": 0.0172,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 25,
+      "locality_id": "L995547",
+      "name": "Clinton River--Canal Park and Trails to Dam and Budd Park",
+      "coordinates": {
+        "latitude": 42.5891094,
+        "longitude": -82.9199123
+      },
+      "occurrence": {
+        "rate": 0.0027,
+        "lift": 0.03,
+        "detection_count": 1,
+        "total_checklists": 367,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0048,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0182,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-26T23:30:05.159054Z",
+    "data_version": "Dec-2025"
+  }
+}

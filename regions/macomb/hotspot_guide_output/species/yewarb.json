@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Yellow-throated Warbler",
+    "code": "yewarb",
+    "scientific_name": "Setophaga dominica"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0003,
+    "total_detections": 14,
+    "total_checklists_with_species": 14,
+    "total_checklists_countywide": 52763,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 14,
+    "highest_occurrence_rate": 0.0008
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L384255",
+      "name": "Ford House",
+      "coordinates": {
+        "latitude": 42.4554221,
+        "longitude": -82.8723113
+      },
+      "occurrence": {
+        "rate": 0.0008,
+        "lift": 2.94,
+        "detection_count": 1,
+        "total_checklists": 1283,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": null,
+        "max_count": null
+      },
+      "seasonal": {
+        "spring": 0.0014,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0026,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L388494",
+      "name": "Lake St. Clair Metropark (Metro Beach Metropark)",
+      "coordinates": {
+        "latitude": 42.5796301,
+        "longitude": -82.8032684
+      },
+      "occurrence": {
+        "rate": 0.0007,
+        "lift": 2.59,
+        "detection_count": 13,
+        "total_checklists": 18894,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0017,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0039,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-26T23:30:05.220255Z",
+    "data_version": "Dec-2025"
+  }
+}

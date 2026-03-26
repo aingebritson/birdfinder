@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Snowy Plover",
+    "code": "snoplo",
+    "scientific_name": "Anarhynchus nivosus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.001,
+    "total_detections": 51,
+    "total_checklists_with_species": 51,
+    "total_checklists_countywide": 52763,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 51,
+    "highest_occurrence_rate": 0.0138
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L1582233",
+      "name": "Stony Creek Metropark--south (Macomb Co.)",
+      "coordinates": {
+        "latitude": 42.7224105,
+        "longitude": -83.0819054
+      },
+      "occurrence": {
+        "rate": 0.0138,
+        "lift": 14.31,
+        "detection_count": 45,
+        "total_checklists": 3254,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.033,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0832,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L389646",
+      "name": "Stony Creek Metropark--north (Macomb Co.)",
+      "coordinates": {
+        "latitude": 42.7547183,
+        "longitude": -83.0723682
+      },
+      "occurrence": {
+        "rate": 0.0021,
+        "lift": 2.19,
+        "detection_count": 6,
+        "total_checklists": 2832,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0046,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0138,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-26T23:30:05.220059Z",
+    "data_version": "Dec-2025"
+  }
+}

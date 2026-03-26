@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Snowy Egret",
+    "code": "snoegr",
+    "scientific_name": "Egretta thula"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0004,
+    "total_detections": 20,
+    "total_checklists_with_species": 20,
+    "total_checklists_countywide": 52763,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 20,
+    "highest_occurrence_rate": 0.0014
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L4556183",
+      "name": "Joseph Delia Park",
+      "coordinates": {
+        "latitude": 42.5965339,
+        "longitude": -83.0765855
+      },
+      "occurrence": {
+        "rate": 0.0014,
+        "lift": 3.57,
+        "detection_count": 1,
+        "total_checklists": 739,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": null,
+        "max_count": null
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0047,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0152,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L388494",
+      "name": "Lake St. Clair Metropark (Metro Beach Metropark)",
+      "coordinates": {
+        "latitude": 42.5796301,
+        "longitude": -82.8032684
+      },
+      "occurrence": {
+        "rate": 0.001,
+        "lift": 2.65,
+        "detection_count": 19,
+        "total_checklists": 18894,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0014,
+        "summer": 0.0,
+        "fall": 0.0012,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0033,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0029,
+        "10": 0.0012,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-26T23:30:05.182962Z",
+    "data_version": "Dec-2025"
+  }
+}

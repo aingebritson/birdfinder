@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Ruffed Grouse",
+    "code": "rufgro",
+    "scientific_name": "Bonasa umbellus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 4,
+    "total_checklists_with_species": 4,
+    "total_checklists_countywide": 52763,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 4,
+    "highest_occurrence_rate": 0.0011
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L389646",
+      "name": "Stony Creek Metropark--north (Macomb Co.)",
+      "coordinates": {
+        "latitude": 42.7547183,
+        "longitude": -83.0723682
+      },
+      "occurrence": {
+        "rate": 0.0011,
+        "lift": 13.97,
+        "detection_count": 3,
+        "total_checklists": 2832,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 0.7,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0023,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0046,
+        "5": 0.002,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L324161",
+      "name": "Wetzel SP",
+      "coordinates": {
+        "latitude": 42.7397538,
+        "longitude": -82.8481499
+      },
+      "occurrence": {
+        "rate": 0.0005,
+        "lift": 6.68,
+        "detection_count": 1,
+        "total_checklists": 1974,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0029,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0137,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-26T23:30:05.161738Z",
+    "data_version": "Dec-2025"
+  }
+}

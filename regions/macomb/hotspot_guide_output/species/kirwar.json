@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Kirtland's Warbler",
+    "code": "kirwar",
+    "scientific_name": "Setophaga kirtlandii"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0004,
+    "total_detections": 19,
+    "total_checklists_with_species": 19,
+    "total_checklists_countywide": 52763,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 19,
+    "highest_occurrence_rate": 0.0409
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L985755",
+      "name": "Dodge Park",
+      "coordinates": {
+        "latitude": 42.5930335,
+        "longitude": -83.0121278
+      },
+      "occurrence": {
+        "rate": 0.0409,
+        "lift": 113.56,
+        "detection_count": 11,
+        "total_checklists": 269,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0696,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0924,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L5263638",
+      "name": "Sterling Heights Nature Center",
+      "coordinates": {
+        "latitude": 42.6077005,
+        "longitude": -83.0274796
+      },
+      "occurrence": {
+        "rate": 0.0078,
+        "lift": 21.53,
+        "detection_count": 8,
+        "total_checklists": 1032,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0123,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0186,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-26T23:30:05.219628Z",
+    "data_version": "Dec-2025"
+  }
+}

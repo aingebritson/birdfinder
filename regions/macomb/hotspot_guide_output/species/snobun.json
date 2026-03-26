@@ -1,0 +1,989 @@
+{
+  "species": {
+    "common_name": "Snow Bunting",
+    "code": "snobun",
+    "scientific_name": "Plectrophenax nivalis"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0086,
+    "total_detections": 453,
+    "total_checklists_with_species": 453,
+    "total_checklists_countywide": 52763,
+    "hotspots_detected": 25
+  },
+  "summary": {
+    "total_hotspots_detected": 25,
+    "total_detections": 453,
+    "highest_occurrence_rate": 0.102
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L39144627",
+      "name": "Ray Community Airport",
+      "coordinates": {
+        "latitude": 42.738811,
+        "longitude": -82.885718
+      },
+      "occurrence": {
+        "rate": 0.102,
+        "lift": 11.89,
+        "detection_count": 5,
+        "total_checklists": 49,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 39.6,
+        "max_count": 40
+      },
+      "seasonal": {
+        "winter": 0.102
+      },
+      "monthly": {
+        "1": 0.1111,
+        "2": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L10976071",
+      "name": "Harrison Twp. Waterfront Park",
+      "coordinates": {
+        "latitude": 42.548269,
+        "longitude": -82.8518197
+      },
+      "occurrence": {
+        "rate": 0.0952,
+        "lift": 11.09,
+        "detection_count": 2,
+        "total_checklists": 21,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L1870325",
+      "name": "Broughton Rd. fields",
+      "coordinates": {
+        "latitude": 42.7169273,
+        "longitude": -82.9195575
+      },
+      "occurrence": {
+        "rate": 0.069,
+        "lift": 8.04,
+        "detection_count": 39,
+        "total_checklists": 565,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 54.0,
+        "max_count": 400
+      },
+      "seasonal": {
+        "spring": 0.0408,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.37
+      },
+      "monthly": {
+        "1": 0.5333,
+        "2": 0.1667,
+        "3": 0.1333,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0625
+      }
+    },
+    {
+      "rank": 4,
+      "locality_id": "L4413665",
+      "name": "29 Mile and Omo Rds. mitigated wetlands",
+      "coordinates": {
+        "latitude": 42.7610768,
+        "longitude": -82.8568697
+      },
+      "occurrence": {
+        "rate": 0.0282,
+        "lift": 3.28,
+        "detection_count": 34,
+        "total_checklists": 1207,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 68.9,
+        "max_count": 400
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.1024
+      },
+      "monthly": {
+        "1": 0.0838,
+        "2": 0.1484,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 5,
+      "locality_id": "L678939",
+      "name": "Harley Ensign Memorial Boating Access Site",
+      "coordinates": {
+        "latitude": 42.592648,
+        "longitude": -82.7715111
+      },
+      "occurrence": {
+        "rate": 0.0247,
+        "lift": 2.88,
+        "detection_count": 120,
+        "total_checklists": 4854,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 6.4,
+        "max_count": 95
+      },
+      "seasonal": {
+        "spring": 0.0009,
+        "summer": 0.0,
+        "fall": 0.0556,
+        "winter": 0.0263
+      },
+      "monthly": {
+        "1": 0.0297,
+        "2": 0.0219,
+        "3": 0.0016,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0483,
+        "11": 0.0946,
+        "12": 0.0253
+      }
+    },
+    {
+      "rank": 6,
+      "locality_id": "L1875060",
+      "name": "Teller Rd. at 28 Mile Rd.",
+      "coordinates": {
+        "latitude": 42.7463361,
+        "longitude": -82.9125385
+      },
+      "occurrence": {
+        "rate": 0.0247,
+        "lift": 2.88,
+        "detection_count": 37,
+        "total_checklists": 1497,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 85.4,
+        "max_count": 450
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0061,
+        "winter": 0.0951
+      },
+      "monthly": {
+        "1": 0.1176,
+        "2": 0.0562,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0303,
+        "12": 0.069
+      }
+    },
+    {
+      "rank": 7,
+      "locality_id": "L2773860",
+      "name": "Romeo Area R/C Aircraft Club",
+      "coordinates": {
+        "latitude": 42.7714659,
+        "longitude": -82.9458327
+      },
+      "occurrence": {
+        "rate": 0.0217,
+        "lift": 2.53,
+        "detection_count": 1,
+        "total_checklists": 46,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 200.0,
+        "max_count": 200
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "winter": 0.0714
+      },
+      "monthly": {
+        "1": 0.125,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 8,
+      "locality_id": "L11364031",
+      "name": "Pine Tree Acres Landfill (restricted access)",
+      "coordinates": {
+        "latitude": 42.7499936,
+        "longitude": -82.7494326
+      },
+      "occurrence": {
+        "rate": 0.0167,
+        "lift": 1.94,
+        "detection_count": 2,
+        "total_checklists": 120,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 26.5,
+        "max_count": 50
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0263
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0625,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "12": 0.1667
+      }
+    },
+    {
+      "rank": 9,
+      "locality_id": "L2465673",
+      "name": "Ruedisale Point Park",
+      "coordinates": {
+        "latitude": 42.684068,
+        "longitude": -82.7090639
+      },
+      "occurrence": {
+        "rate": 0.0105,
+        "lift": 1.23,
+        "detection_count": 5,
+        "total_checklists": 474,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.0,
+        "max_count": 10
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0221,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.037,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 10,
+      "locality_id": "L9425491",
+      "name": "stakeout Vermilion Flycatcher, Ray Twp (2023)",
+      "coordinates": {
+        "latitude": 42.77465,
+        "longitude": -82.951636
+      },
+      "occurrence": {
+        "rate": 0.0102,
+        "lift": 1.18,
+        "detection_count": 2,
+        "total_checklists": 197,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 24.5,
+        "max_count": 48
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.1176
+      },
+      "monthly": {
+        "1": 0.2,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 11,
+      "locality_id": "L388494",
+      "name": "Lake St. Clair Metropark (Metro Beach Metropark)",
+      "coordinates": {
+        "latitude": 42.5796301,
+        "longitude": -82.8032684
+      },
+      "occurrence": {
+        "rate": 0.0084,
+        "lift": 0.97,
+        "detection_count": 158,
+        "total_checklists": 18894,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 8.6,
+        "max_count": 100
+      },
+      "seasonal": {
+        "spring": 0.0022,
+        "summer": 0.0,
+        "fall": 0.0079,
+        "winter": 0.0304
+      },
+      "monthly": {
+        "1": 0.0315,
+        "2": 0.0122,
+        "3": 0.0086,
+        "4": 0.0008,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.011,
+        "11": 0.0319,
+        "12": 0.0518
+      }
+    },
+    {
+      "rank": 12,
+      "locality_id": "L22903066",
+      "name": "Lincoln Memorial Park Cemetery",
+      "coordinates": {
+        "latitude": 42.5417945,
+        "longitude": -82.8965739
+      },
+      "occurrence": {
+        "rate": 0.0074,
+        "lift": 0.86,
+        "detection_count": 2,
+        "total_checklists": 272,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.0,
+        "max_count": 9
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0299
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0417,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.037
+      }
+    },
+    {
+      "rank": 13,
+      "locality_id": "L6643514",
+      "name": "Schoenherr and 28 Mile Rd. fields",
+      "coordinates": {
+        "latitude": 42.7413507,
+        "longitude": -82.9928141
+      },
+      "occurrence": {
+        "rate": 0.0063,
+        "lift": 0.73,
+        "detection_count": 2,
+        "total_checklists": 317,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.1176
+      },
+      "monthly": {
+        "1": 0.2857,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 14,
+      "locality_id": "L1298313",
+      "name": "Wilcox Warnes Nature Sanctuary",
+      "coordinates": {
+        "latitude": 42.7119337,
+        "longitude": -82.9967093
+      },
+      "occurrence": {
+        "rate": 0.0058,
+        "lift": 0.67,
+        "detection_count": 1,
+        "total_checklists": 173,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0106
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.05,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 15,
+      "locality_id": "L1582233",
+      "name": "Stony Creek Metropark--south (Macomb Co.)",
+      "coordinates": {
+        "latitude": 42.7224105,
+        "longitude": -83.0819054
+      },
+      "occurrence": {
+        "rate": 0.0055,
+        "lift": 0.64,
+        "detection_count": 18,
+        "total_checklists": 3254,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.4,
+        "max_count": 40
+      },
+      "seasonal": {
+        "spring": 0.0007,
+        "summer": 0.0,
+        "fall": 0.0074,
+        "winter": 0.013
+      },
+      "monthly": {
+        "1": 0.0055,
+        "2": 0.0109,
+        "3": 0.0019,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0032,
+        "11": 0.0161,
+        "12": 0.0291
+      }
+    },
+    {
+      "rank": 16,
+      "locality_id": "L1550747",
+      "name": "Wolcott Mill Metropark",
+      "coordinates": {
+        "latitude": 42.7587876,
+        "longitude": -82.9136123
+      },
+      "occurrence": {
+        "rate": 0.0051,
+        "lift": 0.59,
+        "detection_count": 2,
+        "total_checklists": 392,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 13.0,
+        "max_count": 14
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.008,
+        "winter": 0.0125
+      },
+      "monthly": {
+        "1": 0.0217,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0294,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 17,
+      "locality_id": "L1581925",
+      "name": "Inwood Rd. fields",
+      "coordinates": {
+        "latitude": 42.7669151,
+        "longitude": -83.0644881
+      },
+      "occurrence": {
+        "rate": 0.005,
+        "lift": 0.59,
+        "detection_count": 1,
+        "total_checklists": 199,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": null,
+        "max_count": null
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0172
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.1111
+      }
+    },
+    {
+      "rank": 18,
+      "locality_id": "L324161",
+      "name": "Wetzel SP",
+      "coordinates": {
+        "latitude": 42.7397538,
+        "longitude": -82.8481499
+      },
+      "occurrence": {
+        "rate": 0.0041,
+        "lift": 0.47,
+        "detection_count": 8,
+        "total_checklists": 1974,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.1,
+        "max_count": 10
+      },
+      "seasonal": {
+        "spring": 0.0012,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0179
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0112,
+        "3": 0.0068,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.069
+      }
+    },
+    {
+      "rank": 19,
+      "locality_id": "L1488051",
+      "name": "Stony Creek Metropark--Inwood Trails",
+      "coordinates": {
+        "latitude": 42.7678427,
+        "longitude": -83.0758972
+      },
+      "occurrence": {
+        "rate": 0.0026,
+        "lift": 0.31,
+        "detection_count": 2,
+        "total_checklists": 763,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0085
+      },
+      "monthly": {
+        "1": 0.019,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 20,
+      "locality_id": "L15008587",
+      "name": "Chesterfield Twp. SGA and surrounding area",
+      "coordinates": {
+        "latitude": 42.7046039,
+        "longitude": -82.7960364
+      },
+      "occurrence": {
+        "rate": 0.0026,
+        "lift": 0.3,
+        "detection_count": 1,
+        "total_checklists": 386,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0056,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0357,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 21,
+      "locality_id": "L389646",
+      "name": "Stony Creek Metropark--north (Macomb Co.)",
+      "coordinates": {
+        "latitude": 42.7547183,
+        "longitude": -83.0723682
+      },
+      "occurrence": {
+        "rate": 0.0025,
+        "lift": 0.29,
+        "detection_count": 7,
+        "total_checklists": 2832,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.1,
+        "max_count": 7
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0129
+      },
+      "monthly": {
+        "1": 0.0222,
+        "2": 0.0054,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 22,
+      "locality_id": "L6549206",
+      "name": "Wolcott Mill Metropark--North Branch Trails",
+      "coordinates": {
+        "latitude": 42.730166,
+        "longitude": -82.902239
+      },
+      "occurrence": {
+        "rate": 0.0023,
+        "lift": 0.27,
+        "detection_count": 1,
+        "total_checklists": 429,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0135
+      },
+      "monthly": {
+        "1": 0.0417,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 23,
+      "locality_id": "L5535905",
+      "name": "Selfridge Public Boat Launch",
+      "coordinates": {
+        "latitude": 42.6305798,
+        "longitude": -82.8199325
+      },
+      "occurrence": {
+        "rate": 0.0022,
+        "lift": 0.25,
+        "detection_count": 1,
+        "total_checklists": 458,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 14.0,
+        "max_count": 14
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0109,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0333,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 24,
+      "locality_id": "L10022070",
+      "name": "Foam Factory pond",
+      "coordinates": {
+        "latitude": 42.670892,
+        "longitude": -82.949865
+      },
+      "occurrence": {
+        "rate": 0.0019,
+        "lift": 0.22,
+        "detection_count": 1,
+        "total_checklists": 531,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0081,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.013,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 25,
+      "locality_id": "L1871511",
+      "name": "Walter and Mary Burke Park",
+      "coordinates": {
+        "latitude": 42.678625,
+        "longitude": -82.7336124
+      },
+      "occurrence": {
+        "rate": 0.0017,
+        "lift": 0.2,
+        "detection_count": 1,
+        "total_checklists": 584,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 6.0,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.003,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "9": 0.0,
+        "10": 0.0087,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-26T23:30:05.076525Z",
+    "data_version": "Dec-2025"
+  }
+}

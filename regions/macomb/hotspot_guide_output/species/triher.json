@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Tricolored Heron",
+    "code": "triher",
+    "scientific_name": "Egretta tricolor"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0019,
+    "total_detections": 100,
+    "total_checklists_with_species": 100,
+    "total_checklists_countywide": 52763,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 100,
+    "highest_occurrence_rate": 0.0053
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L388494",
+      "name": "Lake St. Clair Metropark (Metro Beach Metropark)",
+      "coordinates": {
+        "latitude": 42.5796301,
+        "longitude": -82.8032684
+      },
+      "occurrence": {
+        "rate": 0.0053,
+        "lift": 2.79,
+        "detection_count": 100,
+        "total_checklists": 18894,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0101,
+        "summer": 0.0127,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0235,
+        "6": 0.0221,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-03-26T23:30:05.209711Z",
+    "data_version": "Dec-2025"
+  }
+}
