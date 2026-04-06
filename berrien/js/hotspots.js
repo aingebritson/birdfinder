@@ -16,7 +16,7 @@ async function loadHotspots() {
     showLoadingUI(container, 'Loading hotspots data...');
 
     try {
-        const data = await fetchWithRetry('data/gladwin_hotspots.json', {
+        const data = await fetchWithRetry('data/berrien_hotspots.json', {
             autoRetry: true,
             timeoutMs: 10000,
             onProgress: (message) => {
