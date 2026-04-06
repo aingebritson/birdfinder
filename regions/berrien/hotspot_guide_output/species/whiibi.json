@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "White-faced Ibis",
+    "code": "whiibi",
+    "scientific_name": "Plegadis chihi"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0017,
+    "total_detections": 85,
+    "total_checklists_with_species": 85,
+    "total_checklists_countywide": 48868,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 85,
+    "highest_occurrence_rate": 0.0211
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L576880",
+      "name": "Three Oaks Sewage Ponds",
+      "coordinates": {
+        "latitude": 41.8029582,
+        "longitude": -86.6293806
+      },
+      "occurrence": {
+        "rate": 0.0211,
+        "lift": 12.11,
+        "detection_count": 84,
+        "total_checklists": 3987,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0364,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0769,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L584481",
+      "name": "Forest Lawn Landfill (restricted access)",
+      "coordinates": {
+        "latitude": 41.7714,
+        "longitude": -86.6517
+      },
+      "occurrence": {
+        "rate": 0.0012,
+        "lift": 0.71,
+        "detection_count": 1,
+        "total_checklists": 811,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0023,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0037,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-06T00:42:50.521324Z",
+    "data_version": "Dec-2025"
+  }
+}

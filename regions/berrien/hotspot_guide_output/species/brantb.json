@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Brant",
+    "code": "brantb",
+    "scientific_name": "Branta bernicla"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 4,
+    "total_checklists_with_species": 4,
+    "total_checklists_countywide": 48868,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 4,
+    "highest_occurrence_rate": 0.0009
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L576881",
+      "name": "New Buffalo beach and marina",
+      "coordinates": {
+        "latitude": 41.8007831,
+        "longitude": -86.7489052
+      },
+      "occurrence": {
+        "rate": 0.0009,
+        "lift": 11.14,
+        "detection_count": 4,
+        "total_checklists": 4388,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0011,
+        "winter": 0.0021
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0039,
+        "12": 0.0045
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-06T00:42:50.390602Z",
+    "data_version": "Dec-2025"
+  }
+}

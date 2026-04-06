@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Hammond's Flycatcher",
+    "code": "hamfly",
+    "scientific_name": "Empidonax hammondii"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.001,
+    "total_detections": 49,
+    "total_checklists_with_species": 49,
+    "total_checklists_countywide": 48868,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 49,
+    "highest_occurrence_rate": 0.0547
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L450402",
+      "name": "Warren Woods SP",
+      "coordinates": {
+        "latitude": 41.831666,
+        "longitude": -86.6249442
+      },
+      "occurrence": {
+        "rate": 0.0547,
+        "lift": 54.6,
+        "detection_count": 49,
+        "total_checklists": 895,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.297
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.3828
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-06T00:42:50.531576Z",
+    "data_version": "Dec-2025"
+  }
+}

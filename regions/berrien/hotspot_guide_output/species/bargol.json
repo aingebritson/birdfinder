@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Barrow's Goldeneye",
+    "code": "bargol",
+    "scientific_name": "Bucephala islandica"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0005,
+    "total_detections": 24,
+    "total_checklists_with_species": 24,
+    "total_checklists_countywide": 48868,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 24,
+    "highest_occurrence_rate": 0.0322
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L854394",
+      "name": "Silver Beach County Park",
+      "coordinates": {
+        "latitude": 42.1105126,
+        "longitude": -86.4883232
+      },
+      "occurrence": {
+        "rate": 0.0322,
+        "lift": 65.5,
+        "detection_count": 23,
+        "total_checklists": 715,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0852
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.1437,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L218838",
+      "name": "Tiscornia Park",
+      "coordinates": {
+        "latitude": 42.1151557,
+        "longitude": -86.4894291
+      },
+      "occurrence": {
+        "rate": 0.0002,
+        "lift": 0.36,
+        "detection_count": 1,
+        "total_checklists": 5613,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0007
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0017,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-06T00:42:50.530455Z",
+    "data_version": "Dec-2025"
+  }
+}
