@@ -16,7 +16,7 @@ async function loadHotspots() {
     showLoadingUI(container, 'Loading hotspots data...');
 
     try {
-        const data = await fetchWithRetry('data/ottawa_hotspots.json', {
+        const data = await fetchWithRetry(`data/${window.location.pathname.split('/').filter(Boolean)[0]}_hotspots.json`, {
             autoRetry: true,
             timeoutMs: 10000,
             onProgress: (message) => {
