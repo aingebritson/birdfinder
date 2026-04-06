@@ -57,7 +57,7 @@ async function init() {
 
     let loadError = null;
     try {
-        hotspotsData = await fetchWithRetry('data/washtenaw_hotspots_enriched.json', {
+        hotspotsData = await fetchWithRetry(`data/${window.location.pathname.split('/').filter(Boolean)[0]}_hotspots_enriched.json`, {
             autoRetry: true,
             timeoutMs: 10000,
             onProgress: (message) => {
