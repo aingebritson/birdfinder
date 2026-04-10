@@ -16,6 +16,10 @@ on:
       - 'berrien/**'
       - 'allegan/**'
       - 'muskegon/**'
+      - 'ingham/**'
+      - 'kalamazoo/**'
+      - 'chippewa/**'
+      - 'jackson/**'
       - 'index.html'
       - 'about.html'
 
@@ -80,6 +84,18 @@ jobs:
 
           # Copy muskegon app into muskegon/ subdirectory
           git checkout main -- muskegon/
+
+          # Copy ingham app into ingham/ subdirectory
+          git checkout main -- ingham/
+
+          # Copy kalamazoo app into kalamazoo/ subdirectory
+          git checkout main -- kalamazoo/
+
+          # Copy chippewa app into chippewa/ subdirectory
+          git checkout main -- chippewa/
+
+          # Copy jackson app into jackson/ subdirectory
+          git checkout main -- jackson/
 
           # Stage all changes
           git add -A
