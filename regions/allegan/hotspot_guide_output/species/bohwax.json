@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Bohemian Waxwing",
+    "code": "bohwax",
+    "scientific_name": "Bombycilla garrulus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 3,
+    "total_checklists_with_species": 3,
+    "total_checklists_countywide": 25712,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 3,
+    "highest_occurrence_rate": 0.0007
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L580151",
+      "name": "Outdoor Discovery Center",
+      "coordinates": {
+        "latitude": 42.7261686,
+        "longitude": -86.0971842
+      },
+      "occurrence": {
+        "rate": 0.0007,
+        "lift": 6.24,
+        "detection_count": 1,
+        "total_checklists": 1373,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0021
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.005,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L752711",
+      "name": "Allegan SGA--Farm Unit",
+      "coordinates": {
+        "latitude": 42.5499821,
+        "longitude": -86.1178436
+      },
+      "occurrence": {
+        "rate": 0.0006,
+        "lift": 5.3,
+        "detection_count": 2,
+        "total_checklists": 3232,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 32.0,
+        "max_count": 32
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0024
+      },
+      "monthly": {
+        "1": 0.0067,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:09:53.978289Z",
+    "data_version": "Dec-2025"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Blue Grosbeak",
+    "code": "blugro",
+    "scientific_name": "Passerina caerulea"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0017,
+    "total_detections": 43,
+    "total_checklists_with_species": 43,
+    "total_checklists_countywide": 25712,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 43,
+    "highest_occurrence_rate": 0.013
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L752711",
+      "name": "Allegan SGA--Farm Unit",
+      "coordinates": {
+        "latitude": 42.5499821,
+        "longitude": -86.1178436
+      },
+      "occurrence": {
+        "rate": 0.013,
+        "lift": 7.77,
+        "detection_count": 42,
+        "total_checklists": 3232,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0075,
+        "summer": 0.0485,
+        "fall": 0.0044,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0197,
+        "6": 0.0,
+        "7": 0.1382,
+        "8": 0.0253,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L5535026",
+      "name": "Rabbit River Preserve",
+      "coordinates": {
+        "latitude": 42.6747601,
+        "longitude": -85.9764563
+      },
+      "occurrence": {
+        "rate": 0.0021,
+        "lift": 1.24,
+        "detection_count": 1,
+        "total_checklists": 484,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.004,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0086,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:09:53.974752Z",
+    "data_version": "Dec-2025"
+  }
+}

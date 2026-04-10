@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Western Grebe",
+    "code": "wesgre",
+    "scientific_name": "Aechmophorus occidentalis"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0003,
+    "total_detections": 8,
+    "total_checklists_with_species": 8,
+    "total_checklists_countywide": 25712,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 8,
+    "highest_occurrence_rate": 0.0071
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L612516",
+      "name": "Douglas Beach Park",
+      "coordinates": {
+        "latitude": 42.645387,
+        "longitude": -86.2260246
+      },
+      "occurrence": {
+        "rate": 0.0071,
+        "lift": 22.71,
+        "detection_count": 6,
+        "total_checklists": 849,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0169,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0652,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L837997",
+      "name": "Kalamazoo River mouth",
+      "coordinates": {
+        "latitude": 42.6769931,
+        "longitude": -86.2148666
+      },
+      "occurrence": {
+        "rate": 0.0021,
+        "lift": 6.6,
+        "detection_count": 2,
+        "total_checklists": 974,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0213
+      },
+      "monthly": {
+        "1": 0.037,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0204
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:09:53.982472Z",
+    "data_version": "Dec-2025"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "species": {
+    "common_name": "Spotted Towhee",
+    "code": "spotow",
+    "scientific_name": "Pipilo maculatus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 2,
+    "total_checklists_with_species": 2,
+    "total_checklists_countywide": 25712,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 2,
+    "highest_occurrence_rate": 0.026
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L580289",
+      "name": "West Side County Park",
+      "coordinates": {
+        "latitude": 42.5743842,
+        "longitude": -86.230402
+      },
+      "occurrence": {
+        "rate": 0.026,
+        "lift": 333.92,
+        "detection_count": 2,
+        "total_checklists": 77,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.08,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "6": 0.1,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:09:53.986999Z",
+    "data_version": "Dec-2025"
+  }
+}

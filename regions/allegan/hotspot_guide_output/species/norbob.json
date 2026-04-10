@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Northern Bobwhite",
+    "code": "norbob",
+    "scientific_name": "Colinus virginianus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0006,
+    "total_detections": 15,
+    "total_checklists_with_species": 15,
+    "total_checklists_countywide": 25712,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 15,
+    "highest_occurrence_rate": 0.0043
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L752711",
+      "name": "Allegan SGA--Farm Unit",
+      "coordinates": {
+        "latitude": 42.5499821,
+        "longitude": -86.1178436
+      },
+      "occurrence": {
+        "rate": 0.0043,
+        "lift": 7.43,
+        "detection_count": 14,
+        "total_checklists": 3232,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0227,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0324,
+        "7": 0.0046,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L385489",
+      "name": "Allegan SGA (general)",
+      "coordinates": {
+        "latitude": 42.5500875,
+        "longitude": -86.074791
+      },
+      "occurrence": {
+        "rate": 0.0026,
+        "lift": 4.46,
+        "detection_count": 1,
+        "total_checklists": 384,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0061,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0128,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:09:53.956237Z",
+    "data_version": "Dec-2025"
+  }
+}

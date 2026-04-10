@@ -1,0 +1,92 @@
+{
+  "species": {
+    "common_name": "Kentucky Warbler",
+    "code": "kenwar",
+    "scientific_name": "Geothlypis formosa"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 2,
+    "total_checklists_with_species": 2,
+    "total_checklists_countywide": 25712,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 2,
+    "highest_occurrence_rate": 0.0145
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L1563763",
+      "name": "Allegan SGA--46th St (116th Ave to 118th Ave)",
+      "coordinates": {
+        "latitude": 42.5428956,
+        "longitude": -85.9949022
+      },
+      "occurrence": {
+        "rate": 0.0145,
+        "lift": 186.32,
+        "detection_count": 1,
+        "total_checklists": 69,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0303,
+        "summer": 0.0
+      },
+      "monthly": {
+        "5": 0.0312,
+        "6": 0.0,
+        "7": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L872592",
+      "name": "Allegan SGA--Swan Creek at 116th Ave",
+      "coordinates": {
+        "latitude": 42.52973,
+        "longitude": -85.97707
+      },
+      "occurrence": {
+        "rate": 0.0021,
+        "lift": 27.35,
+        "detection_count": 1,
+        "total_checklists": 470,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0039,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0049,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:09:53.984559Z",
+    "data_version": "Dec-2025"
+  }
+}

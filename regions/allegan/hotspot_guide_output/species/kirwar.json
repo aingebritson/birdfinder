@@ -1,0 +1,59 @@
+{
+  "species": {
+    "common_name": "Kirtland's Warbler",
+    "code": "kirwar",
+    "scientific_name": "Setophaga kirtlandii"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0002,
+    "total_detections": 5,
+    "total_checklists_with_species": 5,
+    "total_checklists_countywide": 25712,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 5,
+    "highest_occurrence_rate": 0.0143
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L36066888",
+      "name": "Kalamazoo River channel",
+      "coordinates": {
+        "latitude": 42.6729762,
+        "longitude": -86.1982661
+      },
+      "occurrence": {
+        "rate": 0.0143,
+        "lift": 73.67,
+        "detection_count": 5,
+        "total_checklists": 349,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0174
+      },
+      "monthly": {
+        "4": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0481,
+        "10": 0.0,
+        "11": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:09:53.987105Z",
+    "data_version": "Dec-2025"
+  }
+}

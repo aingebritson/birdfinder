@@ -1,0 +1,96 @@
+{
+  "species": {
+    "common_name": "Little Blue Heron",
+    "code": "lither",
+    "scientific_name": "Egretta caerulea"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0013,
+    "total_detections": 34,
+    "total_checklists_with_species": 34,
+    "total_checklists_countywide": 25712,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 34,
+    "highest_occurrence_rate": 0.2479
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L5817766",
+      "name": "River Bluff Park",
+      "coordinates": {
+        "latitude": 42.6496168,
+        "longitude": -86.1847401
+      },
+      "occurrence": {
+        "rate": 0.2479,
+        "lift": 187.5,
+        "detection_count": 30,
+        "total_checklists": 121,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.5357,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.6429,
+        "9": 0.375,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L1642156",
+      "name": "Kalamazoo River--Tyler Bayou",
+      "coordinates": {
+        "latitude": 42.6477887,
+        "longitude": -86.1812675
+      },
+      "occurrence": {
+        "rate": 0.0615,
+        "lift": 46.54,
+        "detection_count": 4,
+        "total_checklists": 65,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.1212
+      },
+      "monthly": {
+        "4": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0714,
+        "9": 0.25,
+        "10": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:09:53.989016Z",
+    "data_version": "Dec-2025"
+  }
+}

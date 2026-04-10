@@ -1,0 +1,62 @@
+{
+  "species": {
+    "common_name": "Smew",
+    "code": "smewsm",
+    "scientific_name": "Mergellus albellus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0026,
+    "total_detections": 67,
+    "total_checklists_with_species": 67,
+    "total_checklists_countywide": 25712,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 67,
+    "highest_occurrence_rate": 0.21
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L863548",
+      "name": "Lake Allegan",
+      "coordinates": {
+        "latitude": 42.5481484,
+        "longitude": -85.9081078
+      },
+      "occurrence": {
+        "rate": 0.21,
+        "lift": 80.6,
+        "detection_count": 67,
+        "total_checklists": 319,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.2638
+      },
+      "monthly": {
+        "1": 0.3128,
+        "2": 0.0667,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "7": 0.0,
+        "9": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:09:53.987468Z",
+    "data_version": "Dec-2025"
+  }
+}

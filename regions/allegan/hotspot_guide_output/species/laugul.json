@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Laughing Gull",
+    "code": "laugul",
+    "scientific_name": "Leucophaeus atricilla"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0004,
+    "total_detections": 10,
+    "total_checklists_with_species": 10,
+    "total_checklists_countywide": 25712,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 10,
+    "highest_occurrence_rate": 0.0091
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L577614",
+      "name": "Oval Beach",
+      "coordinates": {
+        "latitude": 42.6640086,
+        "longitude": -86.2162399
+      },
+      "occurrence": {
+        "rate": 0.0091,
+        "lift": 23.47,
+        "detection_count": 9,
+        "total_checklists": 986,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0057,
+        "summer": 0.0372,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0123,
+        "6": 0.1039,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L884423",
+      "name": "Saugatuck Harbor Natural Area",
+      "coordinates": {
+        "latitude": 42.6713295,
+        "longitude": -86.2098885
+      },
+      "occurrence": {
+        "rate": 0.0017,
+        "lift": 4.45,
+        "detection_count": 1,
+        "total_checklists": 578,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0053,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0185,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:09:53.983428Z",
+    "data_version": "Dec-2025"
+  }
+}

@@ -1,0 +1,3303 @@
+{
+  "species": {
+    "common_name": "Eastern Wood-Pewee",
+    "code": "easpew",
+    "scientific_name": "Contopus virens"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.095,
+    "total_detections": 2434,
+    "total_checklists_with_species": 2442,
+    "total_checklists_countywide": 25712,
+    "hotspots_detected": 98
+  },
+  "summary": {
+    "total_hotspots_detected": 93,
+    "total_detections": 2434,
+    "highest_occurrence_rate": 0.9
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L33541132",
+      "name": "Ravines Golf Club",
+      "coordinates": {
+        "latitude": 42.676441,
+        "longitude": -86.1504936
+      },
+      "occurrence": {
+        "rate": 0.9,
+        "lift": 9.48,
+        "detection_count": 9,
+        "total_checklists": 10,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.7,
+        "max_count": 2
+      },
+      "seasonal": {
+        "summer": 1.0
+      },
+      "monthly": {
+        "6": 1.0,
+        "7": 1.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L20514476",
+      "name": "Allegan Pine Plains",
+      "coordinates": {
+        "latitude": 42.6088019,
+        "longitude": -86.0375496
+      },
+      "occurrence": {
+        "rate": 0.7333,
+        "lift": 7.72,
+        "detection_count": 11,
+        "total_checklists": 15,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 7.0,
+        "max_count": 17
+      },
+      "seasonal": {
+        "spring": 0.8,
+        "summer": 0.8
+      },
+      "monthly": {
+        "5": 0.8,
+        "6": 1.0,
+        "8": 1.0
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L860180",
+      "name": "Allegan SGA--Swan Creek (116th Ave to Swan Creek Pond)",
+      "coordinates": {
+        "latitude": 42.5358927,
+        "longitude": -85.9807549
+      },
+      "occurrence": {
+        "rate": 0.7276,
+        "lift": 7.66,
+        "detection_count": 203,
+        "total_checklists": 279,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.3,
+        "max_count": 11
+      },
+      "seasonal": {
+        "spring": 0.5664,
+        "summer": 0.8428,
+        "fall": 1.0
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.6214,
+        "6": 0.854,
+        "7": 0.7727,
+        "8": 1.0
+      }
+    },
+    {
+      "rank": 4,
+      "locality_id": "L860182",
+      "name": "Allegan SGA--Swan Creek (112th Ave. to 116th Ave.)",
+      "coordinates": {
+        "latitude": 42.5176756,
+        "longitude": -85.9895096
+      },
+      "occurrence": {
+        "rate": 0.5556,
+        "lift": 5.85,
+        "detection_count": 10,
+        "total_checklists": 18,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.6667,
+        "summer": 0.6
+      },
+      "monthly": {
+        "5": 0.8,
+        "6": 0.6
+      }
+    },
+    {
+      "rank": 5,
+      "locality_id": "L1563763",
+      "name": "Allegan SGA--46th St (116th Ave to 118th Ave)",
+      "coordinates": {
+        "latitude": 42.5428956,
+        "longitude": -85.9949022
+      },
+      "occurrence": {
+        "rate": 0.5362,
+        "lift": 5.65,
+        "detection_count": 37,
+        "total_checklists": 69,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.8,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.4545,
+        "summer": 0.6364
+      },
+      "monthly": {
+        "5": 0.4688,
+        "6": 0.72,
+        "7": 0.375
+      }
+    },
+    {
+      "rank": 6,
+      "locality_id": "L1492775",
+      "name": "Allegan SGA--36th St. seasonal wetland",
+      "coordinates": {
+        "latitude": 42.6430038,
+        "longitude": -85.9012542
+      },
+      "occurrence": {
+        "rate": 0.5,
+        "lift": 5.26,
+        "detection_count": 5,
+        "total_checklists": 10,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.8,
+        "max_count": 3
+      },
+      "seasonal": {
+        "summer": 0.6667
+      },
+      "monthly": {
+        "4": 0.0,
+        "6": 0.6667,
+        "7": 0.6667
+      }
+    },
+    {
+      "rank": 7,
+      "locality_id": "L4864187",
+      "name": "stakeout Yellow X Prairie Warbler 41st St. (2014-2018)",
+      "coordinates": {
+        "latitude": 42.5773489,
+        "longitude": -85.952782
+      },
+      "occurrence": {
+        "rate": 0.4615,
+        "lift": 4.86,
+        "detection_count": 18,
+        "total_checklists": 39,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.1,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.2667,
+        "summer": 0.5455
+      },
+      "monthly": {
+        "5": 0.2667,
+        "6": 0.4737,
+        "7": 1.0
+      }
+    },
+    {
+      "rank": 8,
+      "locality_id": "L16189822",
+      "name": "Gilkey Trails",
+      "coordinates": {
+        "latitude": 42.4345489,
+        "longitude": -85.637462
+      },
+      "occurrence": {
+        "rate": 0.45,
+        "lift": 4.74,
+        "detection_count": 9,
+        "total_checklists": 20,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.375,
+        "summer": 0.8333,
+        "fall": 0.2
+      },
+      "monthly": {
+        "5": 0.5,
+        "6": 0.8
+      }
+    },
+    {
+      "rank": 9,
+      "locality_id": "L941433",
+      "name": "Saugatuck Dunes SP--Natural Area",
+      "coordinates": {
+        "latitude": 42.690385,
+        "longitude": -86.1996317
+      },
+      "occurrence": {
+        "rate": 0.4436,
+        "lift": 4.67,
+        "detection_count": 59,
+        "total_checklists": 133,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.2,
+        "max_count": 11
+      },
+      "seasonal": {
+        "spring": 0.3,
+        "summer": 0.5581,
+        "fall": 0.5227,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.48,
+        "6": 0.5789,
+        "7": 0.5417,
+        "8": 0.6364,
+        "9": 0.6,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 10,
+      "locality_id": "L872592",
+      "name": "Allegan SGA--Swan Creek at 116th Ave",
+      "coordinates": {
+        "latitude": 42.52973,
+        "longitude": -85.97707
+      },
+      "occurrence": {
+        "rate": 0.4277,
+        "lift": 4.5,
+        "detection_count": 201,
+        "total_checklists": 470,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.2,
+        "max_count": 11
+      },
+      "seasonal": {
+        "spring": 0.2209,
+        "summer": 0.7753,
+        "fall": 0.5455,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.278,
+        "6": 0.7862,
+        "7": 0.7273,
+        "8": 0.6667,
+        "9": 0.5,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 11,
+      "locality_id": "L711379",
+      "name": "Allegan SGA--Swan Creek (118th Ave. to Highbanks Unit)",
+      "coordinates": {
+        "latitude": 42.5653051,
+        "longitude": -85.9797592
+      },
+      "occurrence": {
+        "rate": 0.3603,
+        "lift": 3.79,
+        "detection_count": 49,
+        "total_checklists": 136,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.9,
+        "max_count": 10
+      },
+      "seasonal": {
+        "spring": 0.1744,
+        "summer": 0.8049,
+        "fall": 0.2
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.2727,
+        "6": 0.8333,
+        "7": 0.6,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 12,
+      "locality_id": "L11474337",
+      "name": "Rabbit River Nature Trail",
+      "coordinates": {
+        "latitude": 42.677987,
+        "longitude": -85.6359494
+      },
+      "occurrence": {
+        "rate": 0.3563,
+        "lift": 3.75,
+        "detection_count": 31,
+        "total_checklists": 87,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.1875,
+        "summer": 0.9167,
+        "fall": 0.4583
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.2812,
+        "6": 0.9,
+        "8": 0.875,
+        "9": 0.3333,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 13,
+      "locality_id": "L1572715",
+      "name": "Allegan SGA--Crooked Lake",
+      "coordinates": {
+        "latitude": 42.5217634,
+        "longitude": -86.023591
+      },
+      "occurrence": {
+        "rate": 0.3529,
+        "lift": 3.72,
+        "detection_count": 6,
+        "total_checklists": 17,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 1.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "6": 1.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 14,
+      "locality_id": "L860415",
+      "name": "Allegan SGA--Ely Lake CG",
+      "coordinates": {
+        "latitude": 42.5336923,
+        "longitude": -86.0367479
+      },
+      "occurrence": {
+        "rate": 0.3524,
+        "lift": 3.71,
+        "detection_count": 37,
+        "total_checklists": 105,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.8,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.377,
+        "summer": 0.5,
+        "fall": 0.2667,
+        "winter": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.46,
+        "6": 0.5714,
+        "7": 0.3333,
+        "8": 0.75,
+        "9": 0.25,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 15,
+      "locality_id": "L1286584",
+      "name": "Hope College Nature Preserve (restricted access)",
+      "coordinates": {
+        "latitude": 42.7459364,
+        "longitude": -86.2000823
+      },
+      "occurrence": {
+        "rate": 0.3409,
+        "lift": 3.59,
+        "detection_count": 15,
+        "total_checklists": 44,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 2.5,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.3913,
+        "summer": 0.8,
+        "fall": 0.1538
+      },
+      "monthly": {
+        "5": 0.45,
+        "6": 0.75,
+        "8": 0.6667,
+        "9": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 16,
+      "locality_id": "L6123520",
+      "name": "Allegan Mountain Bike Park",
+      "coordinates": {
+        "latitude": 42.521435,
+        "longitude": -85.828791
+      },
+      "occurrence": {
+        "rate": 0.3385,
+        "lift": 3.56,
+        "detection_count": 22,
+        "total_checklists": 65,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.32,
+        "summer": 0.5,
+        "fall": 0.3846,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "4": 0.0,
+        "5": 0.4706,
+        "7": 0.6667,
+        "8": 0.6,
+        "9": 0.4375,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 17,
+      "locality_id": "L23733757",
+      "name": "River Junction Preserve",
+      "coordinates": {
+        "latitude": 42.652343,
+        "longitude": -86.0789755
+      },
+      "occurrence": {
+        "rate": 0.3367,
+        "lift": 3.55,
+        "detection_count": 33,
+        "total_checklists": 98,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 2.6,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.2857,
+        "summer": 0.9231,
+        "fall": 0.0714
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.5263,
+        "6": 1.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 18,
+      "locality_id": "L752687",
+      "name": "Allegan SGA--Swan Creek Pond",
+      "coordinates": {
+        "latitude": 42.55095,
+        "longitude": -85.98399
+      },
+      "occurrence": {
+        "rate": 0.3348,
+        "lift": 3.53,
+        "detection_count": 76,
+        "total_checklists": 227,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.9,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.2029,
+        "summer": 0.6212,
+        "fall": 0.4667,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.3182,
+        "6": 0.6923,
+        "7": 0.5185,
+        "8": 0.75,
+        "9": 0.25
+      }
+    },
+    {
+      "rank": 19,
+      "locality_id": "L1555728",
+      "name": "Allegan SGA--Mud Lake",
+      "coordinates": {
+        "latitude": 42.5355438,
+        "longitude": -86.0309296
+      },
+      "occurrence": {
+        "rate": 0.3235,
+        "lift": 3.41,
+        "detection_count": 11,
+        "total_checklists": 34,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.7,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.3636,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "4": 0.0,
+        "5": 0.4444,
+        "6": 0.25
+      }
+    },
+    {
+      "rank": 20,
+      "locality_id": "L5817766",
+      "name": "River Bluff Park",
+      "coordinates": {
+        "latitude": 42.6496168,
+        "longitude": -86.1847401
+      },
+      "occurrence": {
+        "rate": 0.3223,
+        "lift": 3.39,
+        "detection_count": 39,
+        "total_checklists": 121,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.5,
+        "fall": 0.5893,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.1667,
+        "7": 0.8333,
+        "8": 0.7143,
+        "9": 0.375,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 21,
+      "locality_id": "L888548",
+      "name": "Mt. Baldhead Park",
+      "coordinates": {
+        "latitude": 42.6633538,
+        "longitude": -86.2094593
+      },
+      "occurrence": {
+        "rate": 0.319,
+        "lift": 3.36,
+        "detection_count": 67,
+        "total_checklists": 210,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.7,
+        "max_count": 7
+      },
+      "seasonal": {
+        "spring": 0.26,
+        "summer": 0.4932,
+        "fall": 0.2812,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.3421,
+        "6": 0.5789,
+        "7": 0.4,
+        "8": 0.5484,
+        "9": 0.0833,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 22,
+      "locality_id": "L1604759",
+      "name": "Miner Lake bog",
+      "coordinates": {
+        "latitude": 42.608676,
+        "longitude": -86.0614584
+      },
+      "occurrence": {
+        "rate": 0.3,
+        "lift": 3.16,
+        "detection_count": 3,
+        "total_checklists": 10,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.3333
+      },
+      "monthly": {
+        "5": 0.4
+      }
+    },
+    {
+      "rank": 23,
+      "locality_id": "L21272680",
+      "name": "Armintrout-Milbocker Nature Preserve",
+      "coordinates": {
+        "latitude": 42.5148477,
+        "longitude": -85.8485413
+      },
+      "occurrence": {
+        "rate": 0.2932,
+        "lift": 3.09,
+        "detection_count": 39,
+        "total_checklists": 133,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.9,
+        "max_count": 12
+      },
+      "seasonal": {
+        "spring": 0.3019,
+        "summer": 0.9375,
+        "fall": 0.2857,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.5926,
+        "6": 0.8889,
+        "7": 1.0,
+        "8": 0.6,
+        "9": 0.7143,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 24,
+      "locality_id": "L5535026",
+      "name": "Rabbit River Preserve",
+      "coordinates": {
+        "latitude": 42.6747601,
+        "longitude": -85.9764563
+      },
+      "occurrence": {
+        "rate": 0.2893,
+        "lift": 3.05,
+        "detection_count": 140,
+        "total_checklists": 484,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 9
+      },
+      "seasonal": {
+        "spring": 0.2063,
+        "summer": 0.8205,
+        "fall": 0.4409,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.4483,
+        "6": 0.92,
+        "7": 0.6429,
+        "8": 0.9,
+        "9": 0.6042,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 25,
+      "locality_id": "L1584601",
+      "name": "Allegan SGA--Pipeline Landing",
+      "coordinates": {
+        "latitude": 42.6111993,
+        "longitude": -86.0017664
+      },
+      "occurrence": {
+        "rate": 0.2885,
+        "lift": 3.04,
+        "detection_count": 15,
+        "total_checklists": 52,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.2571,
+        "summer": 0.5
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.2903,
+        "6": 0.6667,
+        "7": 0.0
+      }
+    },
+    {
+      "rank": 26,
+      "locality_id": "L7197705",
+      "name": "L. M. Wise Educational Preserve",
+      "coordinates": {
+        "latitude": 42.615864,
+        "longitude": -85.692885
+      },
+      "occurrence": {
+        "rate": 0.2667,
+        "lift": 2.81,
+        "detection_count": 8,
+        "total_checklists": 30,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.9,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.6,
+        "fall": 0.8333
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "7": 0.6667,
+        "9": 1.0
+      }
+    },
+    {
+      "rank": 27,
+      "locality_id": "L31316002",
+      "name": "Dune Pines Nature Preserve",
+      "coordinates": {
+        "latitude": 42.7511951,
+        "longitude": -86.1987625
+      },
+      "occurrence": {
+        "rate": 0.2667,
+        "lift": 2.81,
+        "detection_count": 4,
+        "total_checklists": 15,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "fall": 0.4444
+      },
+      "monthly": {
+        "1": 0.0,
+        "9": 0.8,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 28,
+      "locality_id": "L576753",
+      "name": "Saugatuck Dunes SP",
+      "coordinates": {
+        "latitude": 42.7015506,
+        "longitude": -86.1950397
+      },
+      "occurrence": {
+        "rate": 0.258,
+        "lift": 2.72,
+        "detection_count": 250,
+        "total_checklists": 969,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.4,
+        "max_count": 16
+      },
+      "seasonal": {
+        "spring": 0.1473,
+        "summer": 0.6514,
+        "fall": 0.2624,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.3407,
+        "6": 0.75,
+        "7": 0.5888,
+        "8": 0.5352,
+        "9": 0.4286,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 29,
+      "locality_id": "L860422",
+      "name": "Farview Twp. Park",
+      "coordinates": {
+        "latitude": 42.6985725,
+        "longitude": -86.1607032
+      },
+      "occurrence": {
+        "rate": 0.2558,
+        "lift": 2.69,
+        "detection_count": 11,
+        "total_checklists": 43,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 2.2,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.0769,
+        "summer": 0.9091,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.25,
+        "6": 0.8889
+      }
+    },
+    {
+      "rank": 30,
+      "locality_id": "L752686",
+      "name": "Allegan SGA--Allegan Dam",
+      "coordinates": {
+        "latitude": 42.56595,
+        "longitude": -85.95206
+      },
+      "occurrence": {
+        "rate": 0.2446,
+        "lift": 2.58,
+        "detection_count": 68,
+        "total_checklists": 278,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.4,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.1053,
+        "summer": 0.4352,
+        "fall": 0.2903,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1212,
+        "6": 0.4494,
+        "7": 0.3684,
+        "8": 0.5385,
+        "9": 0.3333,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 31,
+      "locality_id": "L577595",
+      "name": "Laketown Twp. Park",
+      "coordinates": {
+        "latitude": 42.7240648,
+        "longitude": -86.2057686
+      },
+      "occurrence": {
+        "rate": 0.2432,
+        "lift": 2.56,
+        "detection_count": 18,
+        "total_checklists": 74,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.7,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.3704,
+        "fall": 0.2286
+      },
+      "monthly": {
+        "4": 0.0,
+        "6": 0.375,
+        "7": 0.3684,
+        "8": 0.2,
+        "9": 0.25
+      }
+    },
+    {
+      "rank": 32,
+      "locality_id": "L1154629",
+      "name": "Allegan SGA--46th St. between 118th Ave. and 121st Ave.",
+      "coordinates": {
+        "latitude": 42.5567606,
+        "longitude": -85.995607
+      },
+      "occurrence": {
+        "rate": 0.24,
+        "lift": 2.53,
+        "detection_count": 24,
+        "total_checklists": 100,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.4,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.125,
+        "summer": 0.4545,
+        "fall": 0.3636,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "4": 0.0,
+        "5": 0.1515,
+        "6": 0.4483,
+        "7": 0.5,
+        "8": 1.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 33,
+      "locality_id": "L579717",
+      "name": "Kalamazoo River--Old New Richmond Bridge",
+      "coordinates": {
+        "latitude": 42.6515738,
+        "longitude": -86.1068916
+      },
+      "occurrence": {
+        "rate": 0.2376,
+        "lift": 2.5,
+        "detection_count": 43,
+        "total_checklists": 181,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.1364,
+        "summer": 0.3448,
+        "fall": 0.4,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.2093,
+        "6": 0.4,
+        "7": 0.2609,
+        "8": 0.7143,
+        "9": 0.3333,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 34,
+      "locality_id": "L1584607",
+      "name": "Allegan SGA--Hoffman Landing",
+      "coordinates": {
+        "latitude": 42.6177892,
+        "longitude": -86.0527534
+      },
+      "occurrence": {
+        "rate": 0.2368,
+        "lift": 2.49,
+        "detection_count": 9,
+        "total_checklists": 38,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 2.1,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.1667,
+        "summer": 0.4545
+      },
+      "monthly": {
+        "5": 0.2,
+        "6": 0.4545
+      }
+    },
+    {
+      "rank": 35,
+      "locality_id": "L860410",
+      "name": "Silver Creek County Park",
+      "coordinates": {
+        "latitude": 42.6650879,
+        "longitude": -85.9280033
+      },
+      "occurrence": {
+        "rate": 0.2353,
+        "lift": 2.48,
+        "detection_count": 4,
+        "total_checklists": 17,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.2,
+        "summer": 0.2,
+        "fall": 0.4
+      },
+      "monthly": {
+        "6": 0.2
+      }
+    },
+    {
+      "rank": 36,
+      "locality_id": "L1492705",
+      "name": "Allegan SGA--Goose Lake",
+      "coordinates": {
+        "latitude": 42.6445712,
+        "longitude": -85.9223959
+      },
+      "occurrence": {
+        "rate": 0.2308,
+        "lift": 2.43,
+        "detection_count": 3,
+        "total_checklists": 13,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.125
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.3333,
+        "6": 0.3333
+      }
+    },
+    {
+      "rank": 37,
+      "locality_id": "L576887",
+      "name": "Kelly Lake",
+      "coordinates": {
+        "latitude": 42.7492812,
+        "longitude": -86.1978722
+      },
+      "occurrence": {
+        "rate": 0.2222,
+        "lift": 2.34,
+        "detection_count": 14,
+        "total_checklists": 63,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.6,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.129,
+        "summer": 0.875,
+        "fall": 0.2,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.2857,
+        "7": 0.8333,
+        "8": 0.2,
+        "9": 0.3333,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 38,
+      "locality_id": "L6050464",
+      "name": "Casco Twp. Nature Preserve",
+      "coordinates": {
+        "latitude": 42.4743,
+        "longitude": -86.2472
+      },
+      "occurrence": {
+        "rate": 0.2143,
+        "lift": 2.26,
+        "detection_count": 12,
+        "total_checklists": 56,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.1765,
+        "summer": 0.4615,
+        "fall": 0.1875,
+        "winter": 0.0
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.3333,
+        "6": 0.2,
+        "7": 0.625,
+        "8": 0.6,
+        "9": 0.0,
+        "10": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 39,
+      "locality_id": "L2920536",
+      "name": "Sandy Pines",
+      "coordinates": {
+        "latitude": 42.6866262,
+        "longitude": -85.8196646
+      },
+      "occurrence": {
+        "rate": 0.2045,
+        "lift": 2.15,
+        "detection_count": 9,
+        "total_checklists": 44,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 0.2,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.1786,
+        "summer": 0.3636
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.2273,
+        "6": 0.4444
+      }
+    },
+    {
+      "rank": 40,
+      "locality_id": "L7190824",
+      "name": "Miner Lake",
+      "coordinates": {
+        "latitude": 42.5689483,
+        "longitude": -85.7937384
+      },
+      "occurrence": {
+        "rate": 0.193,
+        "lift": 2.03,
+        "detection_count": 11,
+        "total_checklists": 57,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.4,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.125,
+        "fall": 0.2941,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "4": 0.0,
+        "5": 0.2105,
+        "8": 0.7143,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 41,
+      "locality_id": "L385489",
+      "name": "Allegan SGA (general)",
+      "coordinates": {
+        "latitude": 42.5500875,
+        "longitude": -86.074791
+      },
+      "occurrence": {
+        "rate": 0.1875,
+        "lift": 1.97,
+        "detection_count": 72,
+        "total_checklists": 384,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.5,
+        "max_count": 14
+      },
+      "seasonal": {
+        "spring": 0.1758,
+        "summer": 0.494,
+        "fall": 0.0357,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.3718,
+        "6": 0.5741,
+        "7": 0.3448,
+        "8": 0.125,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 42,
+      "locality_id": "L837509",
+      "name": "Sanctuary Woods",
+      "coordinates": {
+        "latitude": 42.7662035,
+        "longitude": -86.1996907
+      },
+      "occurrence": {
+        "rate": 0.1857,
+        "lift": 1.96,
+        "detection_count": 39,
+        "total_checklists": 210,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.8,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.1238,
+        "summer": 0.5833,
+        "fall": 0.2609,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.25,
+        "6": 0.4615,
+        "7": 0.7273,
+        "8": 0.7333,
+        "9": 0.0667,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 43,
+      "locality_id": "L874715",
+      "name": "Alegan SGA--Round Lake",
+      "coordinates": {
+        "latitude": 42.5496659,
+        "longitude": -86.0126495
+      },
+      "occurrence": {
+        "rate": 0.1852,
+        "lift": 1.95,
+        "detection_count": 5,
+        "total_checklists": 27,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.1333,
+        "summer": 0.375
+      },
+      "monthly": {
+        "5": 0.1429,
+        "6": 0.5
+      }
+    },
+    {
+      "rank": 44,
+      "locality_id": "L52381314",
+      "name": "Tallmadge Woods Nature Preserve",
+      "coordinates": {
+        "latitude": 42.6694994,
+        "longitude": -86.2019491
+      },
+      "occurrence": {
+        "rate": 0.1818,
+        "lift": 1.91,
+        "detection_count": 2,
+        "total_checklists": 11,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0
+      }
+    },
+    {
+      "rank": 45,
+      "locality_id": "L837196",
+      "name": "Allegan SGA--Highbanks Unit",
+      "coordinates": {
+        "latitude": 42.5733729,
+        "longitude": -85.9724808
+      },
+      "occurrence": {
+        "rate": 0.1814,
+        "lift": 1.91,
+        "detection_count": 37,
+        "total_checklists": 204,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.8,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.0476,
+        "summer": 0.4255,
+        "fall": 0.2766,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0833,
+        "6": 0.4595,
+        "7": 0.3,
+        "8": 0.6429,
+        "9": 0.5,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 46,
+      "locality_id": "L36066888",
+      "name": "Kalamazoo River channel",
+      "coordinates": {
+        "latitude": 42.6729762,
+        "longitude": -86.1982661
+      },
+      "occurrence": {
+        "rate": 0.1805,
+        "lift": 1.9,
+        "detection_count": 63,
+        "total_checklists": 349,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.6,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.2041,
+        "fall": 0.1847
+      },
+      "monthly": {
+        "4": 0.0,
+        "6": 0.2609,
+        "7": 0.1538,
+        "8": 0.4776,
+        "9": 0.2019,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 47,
+      "locality_id": "L4511184",
+      "name": "Luella Collins Community Center",
+      "coordinates": {
+        "latitude": 42.613777,
+        "longitude": -85.586866
+      },
+      "occurrence": {
+        "rate": 0.175,
+        "lift": 1.84,
+        "detection_count": 7,
+        "total_checklists": 40,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.6,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.125,
+        "fall": 0.3,
+        "winter": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.2308,
+        "9": 0.3333,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 48,
+      "locality_id": "L752688",
+      "name": "Huyser Farm Nature Preserve",
+      "coordinates": {
+        "latitude": 42.7239,
+        "longitude": -86.1772
+      },
+      "occurrence": {
+        "rate": 0.1735,
+        "lift": 1.83,
+        "detection_count": 17,
+        "total_checklists": 98,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.4,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.1481,
+        "summer": 0.3333,
+        "fall": 0.1,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1905,
+        "6": 0.4615,
+        "7": 0.1818,
+        "8": 0.1667,
+        "9": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 49,
+      "locality_id": "L577568",
+      "name": "Goshorn Lake",
+      "coordinates": {
+        "latitude": 42.6843913,
+        "longitude": -86.1820793
+      },
+      "occurrence": {
+        "rate": 0.1622,
+        "lift": 1.71,
+        "detection_count": 6,
+        "total_checklists": 37,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "summer": 0.2609,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "5": 0.0,
+        "6": 0.2727,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 50,
+      "locality_id": "L2977854",
+      "name": "Wau-Ke-Na, William Erby Smith Preserve--North Tract",
+      "coordinates": {
+        "latitude": 42.5619531,
+        "longitude": -86.2300587
+      },
+      "occurrence": {
+        "rate": 0.1619,
+        "lift": 1.7,
+        "detection_count": 17,
+        "total_checklists": 105,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0909,
+        "summer": 0.3103,
+        "fall": 0.1463,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.3333,
+        "6": 0.25,
+        "7": 0.3846,
+        "8": 0.1,
+        "9": 0.5714,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 51,
+      "locality_id": "L924246",
+      "name": "Allegan SGA--M-89 Kalamazoo River Bridge & Boat Launch",
+      "coordinates": {
+        "latitude": 42.5939117,
+        "longitude": -85.9827805
+      },
+      "occurrence": {
+        "rate": 0.1566,
+        "lift": 1.65,
+        "detection_count": 44,
+        "total_checklists": 281,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.4,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.1053,
+        "summer": 0.4062,
+        "fall": 0.0952,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1322,
+        "6": 0.449,
+        "7": 0.2667,
+        "8": 0.2,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 52,
+      "locality_id": "L10032057",
+      "name": "Wau-Ke-Na, William Erby Smith Preserve--South Tract",
+      "coordinates": {
+        "latitude": 42.531092,
+        "longitude": -86.22853
+      },
+      "occurrence": {
+        "rate": 0.1194,
+        "lift": 1.26,
+        "detection_count": 24,
+        "total_checklists": 201,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0345,
+        "summer": 0.1818,
+        "fall": 0.2121,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1176,
+        "6": 0.1471,
+        "7": 0.3,
+        "8": 0.4375,
+        "9": 0.2692,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 53,
+      "locality_id": "L9167626",
+      "name": "Mildred A. Peterson Nature Preserve",
+      "coordinates": {
+        "latitude": 42.6614505,
+        "longitude": -86.1999714
+      },
+      "occurrence": {
+        "rate": 0.1193,
+        "lift": 1.26,
+        "detection_count": 29,
+        "total_checklists": 243,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.9,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.1008,
+        "summer": 0.3636,
+        "fall": 0.15,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.24,
+        "6": 0.5455,
+        "7": 0.1818,
+        "8": 0.3636,
+        "9": 0.1852,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 54,
+      "locality_id": "L863530",
+      "name": "114th Ave Road End",
+      "coordinates": {
+        "latitude": 42.518865,
+        "longitude": -86.2437487
+      },
+      "occurrence": {
+        "rate": 0.1053,
+        "lift": 1.11,
+        "detection_count": 2,
+        "total_checklists": 19,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.2857
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.0,
+        "7": 0.4
+      }
+    },
+    {
+      "rank": 55,
+      "locality_id": "L827032",
+      "name": "Kalamazoo River--Morrison Bayou",
+      "coordinates": {
+        "latitude": 42.6387576,
+        "longitude": -86.1470604
+      },
+      "occurrence": {
+        "rate": 0.0982,
+        "lift": 1.03,
+        "detection_count": 28,
+        "total_checklists": 285,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0413,
+        "summer": 0.3571,
+        "fall": 0.1067,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1351,
+        "6": 0.2778,
+        "7": 0.4167,
+        "8": 0.2857,
+        "9": 0.1667,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 56,
+      "locality_id": "L860413",
+      "name": "Bysterveld County Park",
+      "coordinates": {
+        "latitude": 42.7168542,
+        "longitude": -85.6754036
+      },
+      "occurrence": {
+        "rate": 0.0875,
+        "lift": 0.92,
+        "detection_count": 14,
+        "total_checklists": 160,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.3529,
+        "fall": 0.1481,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.4545,
+        "7": 0.1667,
+        "8": 0.8,
+        "9": 0.2353,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 57,
+      "locality_id": "L9212213",
+      "name": "Allegan SGA--Ottawa Marsh landing",
+      "coordinates": {
+        "latitude": 42.617517,
+        "longitude": -86.0346182
+      },
+      "occurrence": {
+        "rate": 0.087,
+        "lift": 0.92,
+        "detection_count": 2,
+        "total_checklists": 23,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0714
+      },
+      "monthly": {
+        "3": 0.0,
+        "5": 0.1111,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 58,
+      "locality_id": "L860418",
+      "name": "Littlejohn Lake County Park",
+      "coordinates": {
+        "latitude": 42.5111877,
+        "longitude": -85.8944006
+      },
+      "occurrence": {
+        "rate": 0.087,
+        "lift": 0.92,
+        "detection_count": 2,
+        "total_checklists": 23,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 0.5,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.2,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "6": 0.0
+      }
+    },
+    {
+      "rank": 59,
+      "locality_id": "L577569",
+      "name": "Gilligan Lake",
+      "coordinates": {
+        "latitude": 42.73327,
+        "longitude": -86.1981297
+      },
+      "occurrence": {
+        "rate": 0.0833,
+        "lift": 0.88,
+        "detection_count": 4,
+        "total_checklists": 48,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0769,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1053,
+        "6": 0.6667,
+        "9": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 60,
+      "locality_id": "L2201154",
+      "name": "Wolters Woods Park",
+      "coordinates": {
+        "latitude": 42.762342,
+        "longitude": -86.1637974
+      },
+      "occurrence": {
+        "rate": 0.0667,
+        "lift": 0.7,
+        "detection_count": 3,
+        "total_checklists": 45,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0667,
+        "summer": 0.125,
+        "fall": 0.1111,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1429,
+        "6": 0.2,
+        "7": 0.0,
+        "8": 0.25
+      }
+    },
+    {
+      "rank": 61,
+      "locality_id": "L3076334",
+      "name": "Hamilton High School Pond  and  Natural Area",
+      "coordinates": {
+        "latitude": 42.6827,
+        "longitude": -86.02616
+      },
+      "occurrence": {
+        "rate": 0.0625,
+        "lift": 0.66,
+        "detection_count": 1,
+        "total_checklists": 16,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "fall": 0.0
+      },
+      "monthly": {
+        "4": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 62,
+      "locality_id": "L5522370",
+      "name": "11th St. lake",
+      "coordinates": {
+        "latitude": 42.549413,
+        "longitude": -85.6562269
+      },
+      "occurrence": {
+        "rate": 0.0548,
+        "lift": 0.58,
+        "detection_count": 21,
+        "total_checklists": 383,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0092,
+        "summer": 0.2195,
+        "fall": 0.0952,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0541,
+        "6": 0.2917,
+        "7": 0.1176,
+        "8": 0.3333,
+        "9": 0.08,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 63,
+      "locality_id": "L752711",
+      "name": "Allegan SGA--Farm Unit",
+      "coordinates": {
+        "latitude": 42.5499821,
+        "longitude": -86.1178436
+      },
+      "occurrence": {
+        "rate": 0.0486,
+        "lift": 0.51,
+        "detection_count": 157,
+        "total_checklists": 3232,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.0332,
+        "summer": 0.157,
+        "fall": 0.0349,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0868,
+        "6": 0.1696,
+        "7": 0.1336,
+        "8": 0.1646,
+        "9": 0.0417,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 64,
+      "locality_id": "L612018",
+      "name": "Hopkins WTP",
+      "coordinates": {
+        "latitude": 42.6190547,
+        "longitude": -85.7667875
+      },
+      "occurrence": {
+        "rate": 0.0452,
+        "lift": 0.48,
+        "detection_count": 7,
+        "total_checklists": 155,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0156,
+        "summer": 0.087,
+        "fall": 0.0571,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0417,
+        "6": 0.1429,
+        "7": 0.0625,
+        "8": 0.1,
+        "9": 0.125,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 65,
+      "locality_id": "L4280539",
+      "name": "Pine Creek Impoundment",
+      "coordinates": {
+        "latitude": 42.4567347,
+        "longitude": -85.7331267
+      },
+      "occurrence": {
+        "rate": 0.041,
+        "lift": 0.43,
+        "detection_count": 8,
+        "total_checklists": 195,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.1,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0435,
+        "summer": 0.0556,
+        "fall": 0.093,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.3333,
+        "6": 0.0833,
+        "7": 0.0417,
+        "8": 0.15,
+        "9": 0.1667,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 66,
+      "locality_id": "L577614",
+      "name": "Oval Beach",
+      "coordinates": {
+        "latitude": 42.6640086,
+        "longitude": -86.2162399
+      },
+      "occurrence": {
+        "rate": 0.0385,
+        "lift": 0.41,
+        "detection_count": 38,
+        "total_checklists": 986,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.7,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.1136,
+        "summer": 0.0419,
+        "fall": 0.0217,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.2469,
+        "6": 0.0779,
+        "7": 0.0217,
+        "8": 0.0635,
+        "9": 0.011,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 67,
+      "locality_id": "L872591",
+      "name": "Allegan SGA--44th St. wetland",
+      "coordinates": {
+        "latitude": 42.51382,
+        "longitude": -85.97494
+      },
+      "occurrence": {
+        "rate": 0.0373,
+        "lift": 0.39,
+        "detection_count": 14,
+        "total_checklists": 375,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.6,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0333,
+        "summer": 0.0541,
+        "fall": 0.2727,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.066,
+        "6": 0.0656,
+        "7": 0.0,
+        "8": 0.4,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 68,
+      "locality_id": "L1217967",
+      "name": "Cottonwood Park",
+      "coordinates": {
+        "latitude": 42.7302748,
+        "longitude": -86.0797209
+      },
+      "occurrence": {
+        "rate": 0.0357,
+        "lift": 0.38,
+        "detection_count": 3,
+        "total_checklists": 84,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.6,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "7": 0.6667,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 69,
+      "locality_id": "L11143819",
+      "name": "Allegan SGA--122nd Ave. wetlands",
+      "coordinates": {
+        "latitude": 42.5786056,
+        "longitude": -86.089862
+      },
+      "occurrence": {
+        "rate": 0.0357,
+        "lift": 0.38,
+        "detection_count": 1,
+        "total_checklists": 28,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.0
+      }
+    },
+    {
+      "rank": 70,
+      "locality_id": "L884423",
+      "name": "Saugatuck Harbor Natural Area",
+      "coordinates": {
+        "latitude": 42.6713295,
+        "longitude": -86.2098885
+      },
+      "occurrence": {
+        "rate": 0.0346,
+        "lift": 0.36,
+        "detection_count": 20,
+        "total_checklists": 578,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.6,
+        "max_count": 11
+      },
+      "seasonal": {
+        "spring": 0.1613,
+        "summer": 0.0321,
+        "fall": 0.014,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.2326,
+        "6": 0.0741,
+        "7": 0.015,
+        "8": 0.0208,
+        "9": 0.0312,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 71,
+      "locality_id": "L580151",
+      "name": "Outdoor Discovery Center",
+      "coordinates": {
+        "latitude": 42.7261686,
+        "longitude": -86.0971842
+      },
+      "occurrence": {
+        "rate": 0.0306,
+        "lift": 0.32,
+        "detection_count": 42,
+        "total_checklists": 1373,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.1,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0292,
+        "summer": 0.1441,
+        "fall": 0.0396,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0829,
+        "6": 0.1562,
+        "7": 0.1296,
+        "8": 0.1489,
+        "9": 0.0323,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 72,
+      "locality_id": "L12599709",
+      "name": "118th Ave. marsh",
+      "coordinates": {
+        "latitude": 42.5520287,
+        "longitude": -85.6264109
+      },
+      "occurrence": {
+        "rate": 0.0267,
+        "lift": 0.28,
+        "detection_count": 2,
+        "total_checklists": 75,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.027
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.25,
+        "8": 0.125,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 73,
+      "locality_id": "L580289",
+      "name": "West Side County Park",
+      "coordinates": {
+        "latitude": 42.5743842,
+        "longitude": -86.230402
+      },
+      "occurrence": {
+        "rate": 0.026,
+        "lift": 0.27,
+        "detection_count": 2,
+        "total_checklists": 77,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0556,
+        "summer": 0.04,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "6": 0.05,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 74,
+      "locality_id": "L831748",
+      "name": "Kalamazoo River--Newport Harbor",
+      "coordinates": {
+        "latitude": 42.6403045,
+        "longitude": -86.1763287
+      },
+      "occurrence": {
+        "rate": 0.0243,
+        "lift": 0.26,
+        "detection_count": 14,
+        "total_checklists": 575,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 0.9,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0063,
+        "summer": 0.1286,
+        "fall": 0.0297,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0426,
+        "6": 0.0,
+        "7": 0.3214,
+        "8": 0.0741,
+        "9": 0.0833,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 75,
+      "locality_id": "L860183",
+      "name": "Fennville Sewage Ponds (restricted access)",
+      "coordinates": {
+        "latitude": 42.5883511,
+        "longitude": -86.1051235
+      },
+      "occurrence": {
+        "rate": 0.0176,
+        "lift": 0.19,
+        "detection_count": 12,
+        "total_checklists": 682,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0185,
+        "summer": 0.025,
+        "fall": 0.0169,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0519,
+        "6": 0.0714,
+        "7": 0.0,
+        "8": 0.0789,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 76,
+      "locality_id": "L576885",
+      "name": "Schultz Park",
+      "coordinates": {
+        "latitude": 42.6434298,
+        "longitude": -86.1905336
+      },
+      "occurrence": {
+        "rate": 0.0159,
+        "lift": 0.17,
+        "detection_count": 4,
+        "total_checklists": 251,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0089,
+        "summer": 0.1538,
+        "fall": 0.0127,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0909,
+        "6": 0.125,
+        "7": 0.2,
+        "8": 0.0714,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 77,
+      "locality_id": "L837178",
+      "name": "Allegan SGA--Swan Creek Marsh",
+      "coordinates": {
+        "latitude": 42.5869609,
+        "longitude": -85.982008
+      },
+      "occurrence": {
+        "rate": 0.0155,
+        "lift": 0.16,
+        "detection_count": 2,
+        "total_checklists": 129,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0625,
+        "fall": 0.04,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.25,
+        "8": 0.2,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 78,
+      "locality_id": "L3455802",
+      "name": "Otsego Municipal Park",
+      "coordinates": {
+        "latitude": 42.4624732,
+        "longitude": -85.6941533
+      },
+      "occurrence": {
+        "rate": 0.0125,
+        "lift": 0.13,
+        "detection_count": 4,
+        "total_checklists": 321,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0323,
+        "summer": 0.0312,
+        "fall": 0.0204,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1429,
+        "6": 0.1,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0769,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 79,
+      "locality_id": "L576888",
+      "name": "Hutchins Lake",
+      "coordinates": {
+        "latitude": 42.5826636,
+        "longitude": -86.1297226
+      },
+      "occurrence": {
+        "rate": 0.012,
+        "lift": 0.13,
+        "detection_count": 2,
+        "total_checklists": 167,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.1111,
+        "fall": 0.0294,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.1111,
+        "8": 0.1429,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 80,
+      "locality_id": "L863548",
+      "name": "Lake Allegan",
+      "coordinates": {
+        "latitude": 42.5481484,
+        "longitude": -85.9081078
+      },
+      "occurrence": {
+        "rate": 0.0094,
+        "lift": 0.1,
+        "detection_count": 3,
+        "total_checklists": 319,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": null,
+        "max_count": null
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.6,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "7": 0.6,
+        "9": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 81,
+      "locality_id": "L2871383",
+      "name": "Kalamazoo River--63rd St./Hacklander boat launch",
+      "coordinates": {
+        "latitude": 42.6358615,
+        "longitude": -86.1631558
+      },
+      "occurrence": {
+        "rate": 0.0082,
+        "lift": 0.09,
+        "detection_count": 3,
+        "total_checklists": 368,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0476,
+        "fall": 0.0141,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.1176,
+        "8": 0.0345,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 82,
+      "locality_id": "L3774462",
+      "name": "Brookside Park",
+      "coordinates": {
+        "latitude": 42.4559336,
+        "longitude": -85.686636
+      },
+      "occurrence": {
+        "rate": 0.0074,
+        "lift": 0.08,
+        "detection_count": 1,
+        "total_checklists": 136,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0312,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0909,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 83,
+      "locality_id": "L584454",
+      "name": "Kalamazoo Lake",
+      "coordinates": {
+        "latitude": 42.652,
+        "longitude": -86.2044
+      },
+      "occurrence": {
+        "rate": 0.0061,
+        "lift": 0.06,
+        "detection_count": 3,
+        "total_checklists": 491,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0182,
+        "fall": 0.008,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0435,
+        "7": 0.0,
+        "8": 0.0333,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 84,
+      "locality_id": "L5546016",
+      "name": "120th Ave. potholes (now drained)",
+      "coordinates": {
+        "latitude": 42.5653259,
+        "longitude": -85.775223
+      },
+      "occurrence": {
+        "rate": 0.006,
+        "lift": 0.06,
+        "detection_count": 2,
+        "total_checklists": 331,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0357,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0385,
+        "7": 0.0333,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 85,
+      "locality_id": "L837511",
+      "name": "West Michigan Regional Airport",
+      "coordinates": {
+        "latitude": 42.7448549,
+        "longitude": -86.1159629
+      },
+      "occurrence": {
+        "rate": 0.0055,
+        "lift": 0.06,
+        "detection_count": 1,
+        "total_checklists": 183,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0385,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.05,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 86,
+      "locality_id": "L3561724",
+      "name": "118th Ave. & 23rd St. fields",
+      "coordinates": {
+        "latitude": 42.5516308,
+        "longitude": -85.7662144
+      },
+      "occurrence": {
+        "rate": 0.005,
+        "lift": 0.05,
+        "detection_count": 3,
+        "total_checklists": 605,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.014,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0556,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 87,
+      "locality_id": "L886497",
+      "name": "62nd St & 128th Ave Field",
+      "coordinates": {
+        "latitude": 42.6212968,
+        "longitude": -86.1509228
+      },
+      "occurrence": {
+        "rate": 0.0047,
+        "lift": 0.05,
+        "detection_count": 1,
+        "total_checklists": 215,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 88,
+      "locality_id": "L612011",
+      "name": "Patterson Rd. Cattle Ponds (Allegan Co.)",
+      "coordinates": {
+        "latitude": 42.6446925,
+        "longitude": -85.5454302
+      },
+      "occurrence": {
+        "rate": 0.0043,
+        "lift": 0.05,
+        "detection_count": 1,
+        "total_checklists": 231,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0167,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "7": 0.0172,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 89,
+      "locality_id": "L837997",
+      "name": "Kalamazoo River mouth",
+      "coordinates": {
+        "latitude": 42.6769931,
+        "longitude": -86.2148666
+      },
+      "occurrence": {
+        "rate": 0.0031,
+        "lift": 0.03,
+        "detection_count": 3,
+        "total_checklists": 974,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.7,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0048,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0045,
+        "9": 0.0118,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 90,
+      "locality_id": "L826976",
+      "name": "Wade's Bayou Park",
+      "coordinates": {
+        "latitude": 42.6433667,
+        "longitude": -86.1974859
+      },
+      "occurrence": {
+        "rate": 0.003,
+        "lift": 0.03,
+        "detection_count": 4,
+        "total_checklists": 1324,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.003,
+        "summer": 0.0074,
+        "fall": 0.0033,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0175,
+        "6": 0.027,
+        "7": 0.0,
+        "8": 0.0171,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 91,
+      "locality_id": "L612516",
+      "name": "Douglas Beach Park",
+      "coordinates": {
+        "latitude": 42.645387,
+        "longitude": -86.2260246
+      },
+      "occurrence": {
+        "rate": 0.0024,
+        "lift": 0.02,
+        "detection_count": 2,
+        "total_checklists": 849,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.05,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.2857,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 92,
+      "locality_id": "L826991",
+      "name": "Lakeshore Dr. guardrail",
+      "coordinates": {
+        "latitude": 42.6382603,
+        "longitude": -86.228267
+      },
+      "occurrence": {
+        "rate": 0.002,
+        "lift": 0.02,
+        "detection_count": 1,
+        "total_checklists": 501,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.125,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "7": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 93,
+      "locality_id": "L1765623",
+      "name": "116th Ave and 8th St. wetland",
+      "coordinates": {
+        "latitude": 42.5359802,
+        "longitude": -85.6235128
+      },
+      "occurrence": {
+        "rate": 0.0019,
+        "lift": 0.02,
+        "detection_count": 2,
+        "total_checklists": 1069,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0119,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0351,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:09:53.902259Z",
+    "data_version": "Dec-2025"
+  }
+}
