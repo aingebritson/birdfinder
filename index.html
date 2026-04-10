@@ -805,7 +805,8 @@
                     <path d="M 187.56 143.1 189.33 139.8 189.63 138.05 191.68 134.92 195.35 133.41 197.47 130.79 200.21 129.28 202.6 128.71 205.4 125.33 208 123.17 211.7 120.84 213.03 120.77 215.25 119.54 218.3 118.93 223.9 114.15 241.5 115.02 241.04 125.46 246.94 125.73 245.87 127.34 245.4 130.69 246.2 132.23 244.08 132.28 242.06 132.97 240.52 137.71 236.06 140.18 235.62 142.77 234.26 147.02 231.08 151.02 227.44 152.62 226.89 156.37 218.49 156 217.97 166.49 207.43 165.95 206.65 181.54 204.62 218.1 178.55 216.71 179.79 195.76 180.49 185.26 190.89 185.94 191.51 175.59 185.81 175.3 187.56 143.1 Z"
                           data-county="houghton" data-status="inactive" data-name="Houghton County"/>
                     <path d="M 401.21 667.59 416.54 667.76 431.11 668.21 439.25 668.28 460.38 668.62 460.27 690.06 459.98 710.57 440.11 710.34 417.97 710.14 394.46 709.58 395.63 706.63 397.06 700.97 397.77 695.05 399.27 688.46 399.08 683.26 400.14 680.65 401.29 674.61 401.21 667.59 Z"
-                          data-county="allegan" data-status="soon" data-name="Allegan County"/>
+                          data-county="allegan" data-status="live" data-name="Allegan County"
+                          tabindex="0" role="link" aria-label="Allegan County — available"/>
                     <path d="M 460.13 583.94 478.04 584.18 502.19 584.67 523.25 584.83 523.27 595.35 523.16 605.87 524.07 605.88 523.8 626.84 502.7 626.52 481.65 626.48 481.91 605.27 459.8 604.97 460.13 583.94 Z"
                           data-county="montcalm" data-status="inactive" data-name="Montcalm County"/>
                     <path d="M 624.86 614.31 645.64 613.9 646.02 634.84 646.76 655.34 646.63 655.87 625.77 656.66 626.11 667.3 615.51 667.64 605.08 667.74 604.6 657.16 604.4 646.49 604.26 625.17 603.94 614.58 624.86 614.31 Z"
@@ -1172,12 +1173,12 @@
 
             </a>
 
-            <!-- Allegan County — coming soon -->
-            <div class="county-card county-card--inactive" data-card="allegan">
+            <!-- Allegan County -->
+            <a href="allegan/" class="county-card" data-card="allegan">
 
                 <div class="card-status">
-                    <span class="status-dot status-dot--inactive"></span>
-                    Coming soon
+                    <span class="status-dot"></span>
+                    Available now
                 </div>
 
                 <div class="card-county-name">Allegan County</div>
@@ -1185,23 +1186,29 @@
 
                 <div class="card-stats">
                     <div class="stat-item">
-                        <span class="stat-value">—</span>
+                        <span class="stat-value" id="allegan-species-count">—</span>
                         <span class="stat-label">Species</span>
                     </div>
                     <div class="stat-sep"></div>
                     <div class="stat-item">
-                        <span class="stat-value">—</span>
+                        <span class="stat-value" id="allegan-hotspot-count">—</span>
                         <span class="stat-label">Hotspots</span>
                     </div>
                 </div>
 
-                <div class="card-pheno" aria-hidden="true"></div>
+                <!-- Sparkline: populated dynamically from species_data.json -->
+                <div class="card-pheno" id="allegan-sparkline" aria-hidden="true"></div>
 
                 <div class="card-cta">
-                    <span class="card-cta-text">Coming soon</span>
+                    <span class="card-cta-text">Explore this county</span>
+                    <svg class="card-arrow" width="18" height="18" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
                 </div>
 
-            </div>
+            </a>
 
             <!-- Muskegon County — coming soon -->
             <div class="county-card county-card--inactive" data-card="muskegon">
@@ -1262,7 +1269,8 @@
             ottawa:    'ottawa/',
             gladwin:   'gladwin/',
             macomb:    'macomb/',
-            berrien:   'berrien/'
+            berrien:   'berrien/',
+            allegan:   'allegan/'
         };
 
         function showTip(e, name, status) {
@@ -1481,6 +1489,49 @@
                 var countEl = document.getElementById('wayne-species-count');
                 if (countEl) countEl.textContent = species.length;
                 var container = document.getElementById('wayne-sparkline');
+                if (!container) return;
+                var weekCount = 52;
+                for (var s = 0; s < species.length; s++) {
+                    if (Array.isArray(species[s].weekly_frequency) && species[s].weekly_frequency.length > 0) {
+                        weekCount = species[s].weekly_frequency.length;
+                        break;
+                    }
+                }
+                var sums = new Array(weekCount).fill(0);
+                species.forEach(function (sp) {
+                    if (!Array.isArray(sp.weekly_frequency)) return;
+                    sp.weekly_frequency.forEach(function (v, i) {
+                        if (i < weekCount) sums[i] += v;
+                    });
+                });
+                var max = Math.max.apply(null, sums) || 1;
+                sums.forEach(function (val, i) {
+                    var norm = val / max;
+                    var pct  = Math.max(6, norm * 100).toFixed(1);
+                    var c    = barColor(i, weekCount, norm);
+                    var bar  = document.createElement('div');
+                    bar.className = 'pheno-bar';
+                    bar.style.cssText = 'height:' + pct + '%; background:' + c.color + '; opacity:' + c.opacity.toFixed(2) + ';';
+                    container.appendChild(bar);
+                });
+            })
+            .catch(function () {});
+
+        // Allegan — hotspot count
+        fetch('allegan/data/hotspot_index.json')
+            .then(function (r) { return r.json(); })
+            .then(function (index) {
+                var el = document.getElementById('allegan-hotspot-count');
+                if (el) el.textContent = index.total_hotspots || (Array.isArray(index.hotspots) ? index.hotspots.length : '—');
+            })
+            .catch(function () {});
+
+        fetch('allegan/data/species_data.json')
+            .then(function (r) { return r.json(); })
+            .then(function (species) {
+                var countEl = document.getElementById('allegan-species-count');
+                if (countEl) countEl.textContent = species.length;
+                var container = document.getElementById('allegan-sparkline');
                 if (!container) return;
                 var weekCount = 52;
                 for (var s = 0; s < species.length; s++) {
