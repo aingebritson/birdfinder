@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Marbled Godwit",
+    "code": "margod",
+    "scientific_name": "Limosa fedoa"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0004,
+    "total_detections": 13,
+    "total_checklists_with_species": 13,
+    "total_checklists_countywide": 31584,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 13,
+    "highest_occurrence_rate": 0.0009
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L279820",
+      "name": "Muskegon Wastewater System",
+      "coordinates": {
+        "latitude": 43.2511023,
+        "longitude": -86.037524
+      },
+      "occurrence": {
+        "rate": 0.0009,
+        "lift": 2.21,
+        "detection_count": 13,
+        "total_checklists": 14264,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.4,
+        "max_count": 9
+      },
+      "seasonal": {
+        "spring": 0.0026,
+        "summer": 0.0012,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0055,
+        "5": 0.0013,
+        "6": 0.0013,
+        "7": 0.0011,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:20:44.512473Z",
+    "data_version": "Dec-2025"
+  }
+}

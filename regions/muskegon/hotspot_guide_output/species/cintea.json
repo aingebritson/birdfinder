@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Cinnamon Teal",
+    "code": "cintea",
+    "scientific_name": "Spatula cyanoptera"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0031,
+    "total_detections": 97,
+    "total_checklists_with_species": 97,
+    "total_checklists_countywide": 31584,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 97,
+    "highest_occurrence_rate": 0.0067
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L279820",
+      "name": "Muskegon Wastewater System",
+      "coordinates": {
+        "latitude": 43.2511023,
+        "longitude": -86.037524
+      },
+      "occurrence": {
+        "rate": 0.0067,
+        "lift": 2.17,
+        "detection_count": 95,
+        "total_checklists": 14264,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0223,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0579,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L5558141",
+      "name": "S. Swanson Rd. potholes",
+      "coordinates": {
+        "latitude": 43.1835681,
+        "longitude": -86.0081515
+      },
+      "occurrence": {
+        "rate": 0.0035,
+        "lift": 1.15,
+        "detection_count": 2,
+        "total_checklists": 568,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0046,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0105,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:20:44.585748Z",
+    "data_version": "Dec-2025"
+  }
+}

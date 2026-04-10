@@ -1,0 +1,902 @@
+{
+  "species": {
+    "common_name": "Peregrine Falcon",
+    "code": "perfal",
+    "scientific_name": "Falco peregrinus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0288,
+    "total_detections": 909,
+    "total_checklists_with_species": 910,
+    "total_checklists_countywide": 31584,
+    "hotspots_detected": 24
+  },
+  "summary": {
+    "total_hotspots_detected": 23,
+    "total_detections": 909,
+    "highest_occurrence_rate": 0.1154
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L5958044",
+      "name": "Veterans Memorial Park",
+      "coordinates": {
+        "latitude": 43.2610499,
+        "longitude": -86.2441134
+      },
+      "occurrence": {
+        "rate": 0.1154,
+        "lift": 4.0,
+        "detection_count": 3,
+        "total_checklists": 26,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.3333
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "8": 0.4
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L279820",
+      "name": "Muskegon Wastewater System",
+      "coordinates": {
+        "latitude": 43.2511023,
+        "longitude": -86.037524
+      },
+      "occurrence": {
+        "rate": 0.0578,
+        "lift": 2.01,
+        "detection_count": 825,
+        "total_checklists": 14264,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.1,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.018,
+        "summer": 0.01,
+        "fall": 0.121,
+        "winter": 0.0221
+      },
+      "monthly": {
+        "1": 0.0149,
+        "2": 0.0047,
+        "3": 0.018,
+        "4": 0.0225,
+        "5": 0.0132,
+        "6": 0.0037,
+        "7": 0.0155,
+        "8": 0.1229,
+        "9": 0.142,
+        "10": 0.1142,
+        "11": 0.1066,
+        "12": 0.0418
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L9000409",
+      "name": "Muskegon Lakeshore Trail--east section",
+      "coordinates": {
+        "latitude": 43.2501298,
+        "longitude": -86.2401591
+      },
+      "occurrence": {
+        "rate": 0.04,
+        "lift": 1.39,
+        "detection_count": 1,
+        "total_checklists": 25,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.1
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.0,
+        "8": 0.0,
+        "10": 0.25
+      }
+    },
+    {
+      "rank": 4,
+      "locality_id": "L1584498",
+      "name": "Muskegon SGA--Holton Duck Lake Rd.",
+      "coordinates": {
+        "latitude": 43.3028403,
+        "longitude": -86.078996
+      },
+      "occurrence": {
+        "rate": 0.0286,
+        "lift": 0.99,
+        "detection_count": 1,
+        "total_checklists": 35,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0
+      }
+    },
+    {
+      "rank": 5,
+      "locality_id": "L18188870",
+      "name": "Dune Harbor Park",
+      "coordinates": {
+        "latitude": 43.1924801,
+        "longitude": -86.3009497
+      },
+      "occurrence": {
+        "rate": 0.0227,
+        "lift": 0.79,
+        "detection_count": 15,
+        "total_checklists": 662,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0039,
+        "summer": 0.0,
+        "fall": 0.0571,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0093,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.026,
+        "9": 0.1325,
+        "10": 0.02,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 6,
+      "locality_id": "L752701",
+      "name": "Meinert Park",
+      "coordinates": {
+        "latitude": 43.4591,
+        "longitude": -86.45659
+      },
+      "occurrence": {
+        "rate": 0.0177,
+        "lift": 0.61,
+        "detection_count": 4,
+        "total_checklists": 226,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0254,
+        "summer": 0.0,
+        "fall": 0.0213,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.075,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0588,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 7,
+      "locality_id": "L2643139",
+      "name": "Muskegon State Park--Lake Michigan CG",
+      "coordinates": {
+        "latitude": 43.2609874,
+        "longitude": -86.3578498
+      },
+      "occurrence": {
+        "rate": 0.0169,
+        "lift": 0.59,
+        "detection_count": 1,
+        "total_checklists": 59,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0323,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.1111,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 8,
+      "locality_id": "L2146916",
+      "name": "Lions Park",
+      "coordinates": {
+        "latitude": 43.4111426,
+        "longitude": -86.3487732
+      },
+      "occurrence": {
+        "rate": 0.0147,
+        "lift": 0.51,
+        "detection_count": 3,
+        "total_checklists": 204,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.02,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0625,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 9,
+      "locality_id": "L891271",
+      "name": "Norman F. Kruse Park",
+      "coordinates": {
+        "latitude": 43.2054886,
+        "longitude": -86.320771
+      },
+      "occurrence": {
+        "rate": 0.0122,
+        "lift": 0.42,
+        "detection_count": 1,
+        "total_checklists": 82,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0294,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "5": 0.0333,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 10,
+      "locality_id": "L771842",
+      "name": "Muskegon SGA--Lane's Landing",
+      "coordinates": {
+        "latitude": 43.2849847,
+        "longitude": -86.080018
+      },
+      "occurrence": {
+        "rate": 0.0097,
+        "lift": 0.34,
+        "detection_count": 13,
+        "total_checklists": 1337,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 0.9,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0083,
+        "summer": 0.0,
+        "fall": 0.03,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.021,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0182,
+        "10": 0.0909,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 11,
+      "locality_id": "L3459138",
+      "name": "White River Light Station Museum",
+      "coordinates": {
+        "latitude": 43.3749059,
+        "longitude": -86.4243096
+      },
+      "occurrence": {
+        "rate": 0.0091,
+        "lift": 0.32,
+        "detection_count": 2,
+        "total_checklists": 219,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0253,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0833,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 12,
+      "locality_id": "L860214",
+      "name": "Pere Marquette Park",
+      "coordinates": {
+        "latitude": 43.2235227,
+        "longitude": -86.3392696
+      },
+      "occurrence": {
+        "rate": 0.0071,
+        "lift": 0.24,
+        "detection_count": 11,
+        "total_checklists": 1559,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0051,
+        "summer": 0.0,
+        "fall": 0.0188,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0145,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0463,
+        "11": 0.0181,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 13,
+      "locality_id": "L2748296",
+      "name": "Hidden Cove Park",
+      "coordinates": {
+        "latitude": 43.182675,
+        "longitude": -86.223115
+      },
+      "occurrence": {
+        "rate": 0.0057,
+        "lift": 0.2,
+        "detection_count": 1,
+        "total_checklists": 175,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0185
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0455,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 14,
+      "locality_id": "L1089382",
+      "name": "Muskegon Lake Nature Preserve",
+      "coordinates": {
+        "latitude": 43.2619874,
+        "longitude": -86.2505293
+      },
+      "occurrence": {
+        "rate": 0.0054,
+        "lift": 0.19,
+        "detection_count": 9,
+        "total_checklists": 1655,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0077,
+        "summer": 0.013,
+        "fall": 0.0017,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0088,
+        "4": 0.0049,
+        "5": 0.009,
+        "6": 0.0261,
+        "7": 0.0,
+        "8": 0.0055,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 15,
+      "locality_id": "L962638",
+      "name": "Medbery Park (White Lake channel)",
+      "coordinates": {
+        "latitude": 43.3761848,
+        "longitude": -86.4261281
+      },
+      "occurrence": {
+        "rate": 0.0042,
+        "lift": 0.15,
+        "detection_count": 1,
+        "total_checklists": 237,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0172,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0769,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 16,
+      "locality_id": "L15644028",
+      "name": "Meinert Park Pines CG",
+      "coordinates": {
+        "latitude": 43.460363,
+        "longitude": -86.450707
+      },
+      "occurrence": {
+        "rate": 0.0042,
+        "lift": 0.15,
+        "detection_count": 1,
+        "total_checklists": 239,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0093,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0345,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 17,
+      "locality_id": "L306571",
+      "name": "P. J. Hoffmaster SP (Muskegon Co.)",
+      "coordinates": {
+        "latitude": 43.12517,
+        "longitude": -86.2651
+      },
+      "occurrence": {
+        "rate": 0.0038,
+        "lift": 0.13,
+        "detection_count": 4,
+        "total_checklists": 1044,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 0.5,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0129,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.009,
+        "10": 0.039,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 18,
+      "locality_id": "L871485",
+      "name": "Muskegon SGA--Headquarters",
+      "coordinates": {
+        "latitude": 43.2927005,
+        "longitude": -86.0566753
+      },
+      "occurrence": {
+        "rate": 0.0037,
+        "lift": 0.13,
+        "detection_count": 2,
+        "total_checklists": 545,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0022,
+        "summer": 0.0,
+        "fall": 0.027,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0035,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0556,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 19,
+      "locality_id": "L5558141",
+      "name": "S. Swanson Rd. potholes",
+      "coordinates": {
+        "latitude": 43.1835681,
+        "longitude": -86.0081515
+      },
+      "occurrence": {
+        "rate": 0.0035,
+        "lift": 0.12,
+        "detection_count": 2,
+        "total_checklists": 568,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.05,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.1818,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 20,
+      "locality_id": "L771849",
+      "name": "Lake Harbor Park",
+      "coordinates": {
+        "latitude": 43.1668739,
+        "longitude": -86.2975817
+      },
+      "occurrence": {
+        "rate": 0.0032,
+        "lift": 0.11,
+        "detection_count": 1,
+        "total_checklists": 314,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.007,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0263,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 21,
+      "locality_id": "L576876",
+      "name": "Muskegon SP",
+      "coordinates": {
+        "latitude": 43.2360791,
+        "longitude": -86.3402653
+      },
+      "occurrence": {
+        "rate": 0.0031,
+        "lift": 0.11,
+        "detection_count": 3,
+        "total_checklists": 977,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0065,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0178,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 22,
+      "locality_id": "L1989224",
+      "name": "Black Lake Park",
+      "coordinates": {
+        "latitude": 43.1207352,
+        "longitude": -86.2369359
+      },
+      "occurrence": {
+        "rate": 0.0022,
+        "lift": 0.08,
+        "detection_count": 3,
+        "total_checklists": 1362,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.004,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0098,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 23,
+      "locality_id": "L2434554",
+      "name": "Muskegon Lake channel",
+      "coordinates": {
+        "latitude": 43.2297809,
+        "longitude": -86.3347292
+      },
+      "occurrence": {
+        "rate": 0.0015,
+        "lift": 0.05,
+        "detection_count": 2,
+        "total_checklists": 1341,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0028,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0014
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0028,
+        "3": 0.0,
+        "4": 0.0105,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:20:44.486902Z",
+    "data_version": "Dec-2025"
+  }
+}

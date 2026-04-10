@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Redpoll",
+    "code": "redpol",
+    "scientific_name": "Acanthis flammea"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0007,
+    "total_detections": 21,
+    "total_checklists_with_species": 21,
+    "total_checklists_countywide": 31584,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 21,
+    "highest_occurrence_rate": 0.0014
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L279820",
+      "name": "Muskegon Wastewater System",
+      "coordinates": {
+        "latitude": 43.2511023,
+        "longitude": -86.037524
+      },
+      "occurrence": {
+        "rate": 0.0014,
+        "lift": 2.11,
+        "detection_count": 20,
+        "total_checklists": 14264,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 10.0,
+        "max_count": 50
+      },
+      "seasonal": {
+        "spring": 0.0002,
+        "summer": 0.0,
+        "fall": 0.0013,
+        "winter": 0.0044
+      },
+      "monthly": {
+        "1": 0.0044,
+        "2": 0.0063,
+        "3": 0.0009,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0047,
+        "12": 0.0031
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L306571",
+      "name": "P. J. Hoffmaster SP (Muskegon Co.)",
+      "coordinates": {
+        "latitude": 43.12517,
+        "longitude": -86.2651
+      },
+      "occurrence": {
+        "rate": 0.001,
+        "lift": 1.44,
+        "detection_count": 1,
+        "total_checklists": 1044,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0086
+      },
+      "monthly": {
+        "1": 0.0192,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:20:44.517492Z",
+    "data_version": "Dec-2025"
+  }
+}

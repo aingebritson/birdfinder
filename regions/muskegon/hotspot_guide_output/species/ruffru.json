@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Ruff",
+    "code": "ruffru",
+    "scientific_name": "Calidris pugnax"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0039,
+    "total_detections": 123,
+    "total_checklists_with_species": 123,
+    "total_checklists_countywide": 31584,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 123,
+    "highest_occurrence_rate": 0.0229
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L5558141",
+      "name": "S. Swanson Rd. potholes",
+      "coordinates": {
+        "latitude": 43.1835681,
+        "longitude": -86.0081515
+      },
+      "occurrence": {
+        "rate": 0.0229,
+        "lift": 5.88,
+        "detection_count": 13,
+        "total_checklists": 568,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0297,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0722,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L279820",
+      "name": "Muskegon Wastewater System",
+      "coordinates": {
+        "latitude": 43.2511023,
+        "longitude": -86.037524
+      },
+      "occurrence": {
+        "rate": 0.0077,
+        "lift": 1.98,
+        "detection_count": 110,
+        "total_checklists": 14264,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0255,
+        "summer": 0.0006,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0664,
+        "5": 0.0,
+        "6": 0.0013,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:20:44.481388Z",
+    "data_version": "Dec-2025"
+  }
+}

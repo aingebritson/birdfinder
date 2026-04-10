@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Red-necked Phalarope",
+    "code": "rephal",
+    "scientific_name": "Phalaropus lobatus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0131,
+    "total_detections": 414,
+    "total_checklists_with_species": 414,
+    "total_checklists_countywide": 31584,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 414,
+    "highest_occurrence_rate": 0.029
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L279820",
+      "name": "Muskegon Wastewater System",
+      "coordinates": {
+        "latitude": 43.2511023,
+        "longitude": -86.037524
+      },
+      "occurrence": {
+        "rate": 0.029,
+        "lift": 2.21,
+        "detection_count": 413,
+        "total_checklists": 14264,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 6.3,
+        "max_count": 43
+      },
+      "seasonal": {
+        "spring": 0.0218,
+        "summer": 0.0287,
+        "fall": 0.049,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0615,
+        "6": 0.0288,
+        "7": 0.0287,
+        "8": 0.112,
+        "9": 0.0579,
+        "10": 0.0116,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L5558141",
+      "name": "S. Swanson Rd. potholes",
+      "coordinates": {
+        "latitude": 43.1835681,
+        "longitude": -86.0081515
+      },
+      "occurrence": {
+        "rate": 0.0018,
+        "lift": 0.13,
+        "detection_count": 1,
+        "total_checklists": 568,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0023,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0149,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:20:44.402563Z",
+    "data_version": "Dec-2025"
+  }
+}

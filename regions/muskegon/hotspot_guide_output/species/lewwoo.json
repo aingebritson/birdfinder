@@ -1,0 +1,51 @@
+{
+  "species": {
+    "common_name": "Lewis's Woodpecker",
+    "code": "lewwoo",
+    "scientific_name": "Melanerpes lewis"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0049,
+    "total_detections": 156,
+    "total_checklists_with_species": 156,
+    "total_checklists_countywide": 31584,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 156,
+    "highest_occurrence_rate": 0.8814
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L19108623",
+      "name": "stakeout Lewis's Woodpecker, 4860 Wilfred St. (2022)",
+      "coordinates": {
+        "latitude": 43.164205,
+        "longitude": -86.190748
+      },
+      "occurrence": {
+        "rate": 0.8814,
+        "lift": 178.44,
+        "detection_count": 156,
+        "total_checklists": 177,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.9017
+      },
+      "monthly": {
+        "5": 0.9017
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:20:44.585847Z",
+    "data_version": "Dec-2025"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Hudsonian Whimbrel",
+    "code": "hudwhi",
+    "scientific_name": "Numenius hudsonicus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0009,
+    "total_detections": 27,
+    "total_checklists_with_species": 27,
+    "total_checklists_countywide": 31584,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 27,
+    "highest_occurrence_rate": 0.0019
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L279820",
+      "name": "Muskegon Wastewater System",
+      "coordinates": {
+        "latitude": 43.2511023,
+        "longitude": -86.037524
+      },
+      "occurrence": {
+        "rate": 0.0019,
+        "lift": 2.21,
+        "detection_count": 27,
+        "total_checklists": 14264,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.1,
+        "max_count": 49
+      },
+      "seasonal": {
+        "spring": 0.0047,
+        "summer": 0.0012,
+        "fall": 0.0009,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0006,
+        "5": 0.0126,
+        "6": 0.0025,
+        "7": 0.0,
+        "8": 0.0024,
+        "9": 0.0008,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:20:44.517135Z",
+    "data_version": "Dec-2025"
+  }
+}

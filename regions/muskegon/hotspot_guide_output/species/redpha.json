@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Red Phalarope",
+    "code": "redpha",
+    "scientific_name": "Phalaropus fulicarius"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0058,
+    "total_detections": 184,
+    "total_checklists_with_species": 184,
+    "total_checklists_countywide": 31584,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 184,
+    "highest_occurrence_rate": 0.0137
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L3459138",
+      "name": "White River Light Station Museum",
+      "coordinates": {
+        "latitude": 43.3749059,
+        "longitude": -86.4243096
+      },
+      "occurrence": {
+        "rate": 0.0137,
+        "lift": 2.35,
+        "detection_count": 3,
+        "total_checklists": 219,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.038,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.125,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L279820",
+      "name": "Muskegon Wastewater System",
+      "coordinates": {
+        "latitude": 43.2511023,
+        "longitude": -86.037524
+      },
+      "occurrence": {
+        "rate": 0.0127,
+        "lift": 2.18,
+        "detection_count": 181,
+        "total_checklists": 14264,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0327,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0401,
+        "11": 0.0906,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-10T00:20:44.431886Z",
+    "data_version": "Dec-2025"
+  }
+}
