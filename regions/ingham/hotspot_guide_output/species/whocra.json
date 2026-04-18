@@ -1,0 +1,63 @@
+{
+  "species": {
+    "common_name": "Whooping Crane",
+    "code": "whocra",
+    "scientific_name": "Grus americana"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0,
+    "total_detections": 1,
+    "total_checklists_with_species": 1,
+    "total_checklists_countywide": 35309,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 1,
+    "highest_occurrence_rate": 0.004
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L4769052",
+      "name": "E. Dansville Rd. fields",
+      "coordinates": {
+        "latitude": 42.554731,
+        "longitude": -84.172519
+      },
+      "occurrence": {
+        "rate": 0.004,
+        "lift": 140.12,
+        "detection_count": 1,
+        "total_checklists": 252,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0256,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "6": 0.04,
+        "7": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-18T13:31:23.143627Z",
+    "data_version": "Dec-2025"
+  }
+}

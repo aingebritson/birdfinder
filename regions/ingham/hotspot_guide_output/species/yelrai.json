@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Yellow Rail",
+    "code": "yelrai",
+    "scientific_name": "Coturnicops noveboracensis"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0018,
+    "total_detections": 64,
+    "total_checklists_with_species": 64,
+    "total_checklists_countywide": 35309,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 64,
+    "highest_occurrence_rate": 0.0355
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L1166489",
+      "name": "Lake Lansing Park North",
+      "coordinates": {
+        "latitude": 42.7665328,
+        "longitude": -84.3889368
+      },
+      "occurrence": {
+        "rate": 0.0355,
+        "lift": 19.59,
+        "detection_count": 64,
+        "total_checklists": 1802,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.071,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.1289,
+        "5": 0.0515,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-18T13:31:23.143425Z",
+    "data_version": "Dec-2025"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "species": {
+    "common_name": "Brant",
+    "code": "brantb",
+    "scientific_name": "Branta bernicla"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0014,
+    "total_detections": 50,
+    "total_checklists_with_species": 50,
+    "total_checklists_countywide": 35309,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 50,
+    "highest_occurrence_rate": 0.0851
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L2977031",
+      "name": "Lake O' The Hills",
+      "coordinates": {
+        "latitude": 42.751414,
+        "longitude": -84.420486
+      },
+      "occurrence": {
+        "rate": 0.0851,
+        "lift": 60.13,
+        "detection_count": 47,
+        "total_checklists": 552,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.2541
+      },
+      "monthly": {
+        "1": 0.4234,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L11885115",
+      "name": "Power Line Dr. wetlands",
+      "coordinates": {
+        "latitude": 42.6898977,
+        "longitude": -84.4730621
+      },
+      "occurrence": {
+        "rate": 0.0096,
+        "lift": 6.75,
+        "detection_count": 3,
+        "total_checklists": 314,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0429
+      },
+      "monthly": {
+        "1": 0.1034,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-18T13:31:23.144533Z",
+    "data_version": "Dec-2025"
+  }
+}

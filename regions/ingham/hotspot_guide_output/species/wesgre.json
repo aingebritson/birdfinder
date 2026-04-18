@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Western Grebe",
+    "code": "wesgre",
+    "scientific_name": "Aechmophorus occidentalis"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0007,
+    "total_detections": 24,
+    "total_checklists_with_species": 24,
+    "total_checklists_countywide": 35309,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 24,
+    "highest_occurrence_rate": 0.0092
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L382865",
+      "name": "Lake Lansing",
+      "coordinates": {
+        "latitude": 42.7600697,
+        "longitude": -84.4004402
+      },
+      "occurrence": {
+        "rate": 0.0092,
+        "lift": 13.59,
+        "detection_count": 24,
+        "total_checklists": 2598,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0256,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0031,
+        "11": 0.0424,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-18T13:31:23.136015Z",
+    "data_version": "Dec-2025"
+  }
+}

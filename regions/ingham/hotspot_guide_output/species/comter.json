@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Common Tern",
+    "code": "comter",
+    "scientific_name": "Sterna hirundo"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0004,
+    "total_detections": 14,
+    "total_checklists_with_species": 14,
+    "total_checklists_countywide": 35309,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 14,
+    "highest_occurrence_rate": 0.005
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L382865",
+      "name": "Lake Lansing",
+      "coordinates": {
+        "latitude": 42.7600697,
+        "longitude": -84.4004402
+      },
+      "occurrence": {
+        "rate": 0.005,
+        "lift": 12.62,
+        "detection_count": 13,
+        "total_checklists": 2598,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 8.7,
+        "max_count": 47
+      },
+      "seasonal": {
+        "spring": 0.0097,
+        "summer": 0.0,
+        "fall": 0.0011,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0574,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0031,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L792618",
+      "name": "MSU--Inland Lakes Research and Study Area (restricted access)",
+      "coordinates": {
+        "latitude": 42.6805425,
+        "longitude": -84.4852066
+      },
+      "occurrence": {
+        "rate": 0.0007,
+        "lift": 1.77,
+        "detection_count": 1,
+        "total_checklists": 1421,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0023,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0081,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-18T13:31:23.139794Z",
+    "data_version": "Dec-2025"
+  }
+}

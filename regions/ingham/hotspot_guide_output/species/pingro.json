@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Pine Grosbeak",
+    "code": "pingro",
+    "scientific_name": "Pinicola enucleator"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0007,
+    "total_detections": 25,
+    "total_checklists_with_species": 25,
+    "total_checklists_countywide": 35309,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 25,
+    "highest_occurrence_rate": 0.0041
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L509590",
+      "name": "Fenner Nature Center",
+      "coordinates": {
+        "latitude": 42.7094222,
+        "longitude": -84.5194056
+      },
+      "occurrence": {
+        "rate": 0.0041,
+        "lift": 5.79,
+        "detection_count": 25,
+        "total_checklists": 6094,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.3,
+        "max_count": 15
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0028,
+        "winter": 0.0167
+      },
+      "monthly": {
+        "1": 0.0198,
+        "2": 0.0134,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0152,
+        "12": 0.0171
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-18T13:31:23.012008Z",
+    "data_version": "Dec-2025"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "species": {
+    "common_name": "Yellow-headed Blackbird",
+    "code": "yelbla",
+    "scientific_name": "Xanthocephalus xanthocephalus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 3,
+    "total_checklists_with_species": 3,
+    "total_checklists_countywide": 35309,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 3,
+    "highest_occurrence_rate": 0.1765
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L11225430",
+      "name": "Edgar Rd. wetland",
+      "coordinates": {
+        "latitude": 42.586736,
+        "longitude": -84.503317
+      },
+      "occurrence": {
+        "rate": 0.1765,
+        "lift": 2077.0,
+        "detection_count": 3,
+        "total_checklists": 17,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.375,
+        "fall": 0.0
+      },
+      "monthly": {
+        "4": 0.4286,
+        "6": 0.0,
+        "10": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-18T13:31:23.144241Z",
+    "data_version": "Dec-2025"
+  }
+}

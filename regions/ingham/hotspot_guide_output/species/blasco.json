@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Black Scoter",
+    "code": "blasco",
+    "scientific_name": "Melanitta americana"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.001,
+    "total_detections": 35,
+    "total_checklists_with_species": 35,
+    "total_checklists_countywide": 35309,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 35,
+    "highest_occurrence_rate": 0.0131
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L382865",
+      "name": "Lake Lansing",
+      "coordinates": {
+        "latitude": 42.7600697,
+        "longitude": -84.4004402
+      },
+      "occurrence": {
+        "rate": 0.0131,
+        "lift": 13.2,
+        "detection_count": 34,
+        "total_checklists": 2598,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.3,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0032,
+        "summer": 0.0,
+        "fall": 0.032,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0076,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0341,
+        "11": 0.0351,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L2977031",
+      "name": "Lake O' The Hills",
+      "coordinates": {
+        "latitude": 42.751414,
+        "longitude": -84.420486
+      },
+      "occurrence": {
+        "rate": 0.0018,
+        "lift": 1.83,
+        "detection_count": 1,
+        "total_checklists": 552,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0053,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0233,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-18T13:31:23.124896Z",
+    "data_version": "Dec-2025"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Great Black-backed Gull",
+    "code": "gregul",
+    "scientific_name": "Larus marinus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0009,
+    "total_detections": 33,
+    "total_checklists_with_species": 33,
+    "total_checklists_countywide": 35309,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 33,
+    "highest_occurrence_rate": 0.0127
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L382865",
+      "name": "Lake Lansing",
+      "coordinates": {
+        "latitude": 42.7600697,
+        "longitude": -84.4004402
+      },
+      "occurrence": {
+        "rate": 0.0127,
+        "lift": 13.59,
+        "detection_count": 33,
+        "total_checklists": 2598,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.1,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0073,
+        "summer": 0.0,
+        "fall": 0.0043,
+        "winter": 0.0519
+      },
+      "monthly": {
+        "1": 0.0745,
+        "2": 0.0,
+        "3": 0.0179,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0074,
+        "12": 0.058
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-18T13:31:23.140036Z",
+    "data_version": "Dec-2025"
+  }
+}
