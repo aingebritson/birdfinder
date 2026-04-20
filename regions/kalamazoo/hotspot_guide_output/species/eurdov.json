@@ -1,0 +1,64 @@
+{
+  "species": {
+    "common_name": "Eurasian Collared-Dove",
+    "code": "eurdov",
+    "scientific_name": "Streptopelia decaocto"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0003,
+    "total_detections": 10,
+    "total_checklists_with_species": 10,
+    "total_checklists_countywide": 33643,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 10,
+    "highest_occurrence_rate": 0.0317
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L6541209",
+      "name": "W W Ave. marsh",
+      "coordinates": {
+        "latitude": 42.11407,
+        "longitude": -85.610075
+      },
+      "occurrence": {
+        "rate": 0.0317,
+        "lift": 106.8,
+        "detection_count": 10,
+        "total_checklists": 315,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.4,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0462,
+        "summer": 0.0,
+        "fall": 0.0164,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0667,
+        "5": 0.0435,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "10": 0.0312,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-20T23:52:20.530645Z",
+    "data_version": "Dec-2025"
+  }
+}

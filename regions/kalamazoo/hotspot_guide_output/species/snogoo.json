@@ -1,0 +1,467 @@
+{
+  "species": {
+    "common_name": "Snow Goose",
+    "code": "snogoo",
+    "scientific_name": "Anser caerulescens"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.005,
+    "total_detections": 169,
+    "total_checklists_with_species": 169,
+    "total_checklists_countywide": 33643,
+    "hotspots_detected": 12
+  },
+  "summary": {
+    "total_hotspots_detected": 12,
+    "total_detections": 169,
+    "highest_occurrence_rate": 0.2069
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L33670877",
+      "name": "Upjohn pond",
+      "coordinates": {
+        "latitude": 42.2053603,
+        "longitude": -85.5489609
+      },
+      "occurrence": {
+        "rate": 0.2069,
+        "lift": 41.19,
+        "detection_count": 6,
+        "total_checklists": 29,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 3
+      },
+      "seasonal": {
+        "fall": 0.4286,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "6": 0.0,
+        "10": 0.0,
+        "11": 0.6
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L4374581",
+      "name": "Orchard Lake",
+      "coordinates": {
+        "latitude": 42.3853031,
+        "longitude": -85.4588699
+      },
+      "occurrence": {
+        "rate": 0.1588,
+        "lift": 31.62,
+        "detection_count": 54,
+        "total_checklists": 340,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.9,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.125,
+        "fall": 0.159,
+        "winter": 0.2097
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.3226,
+        "5": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.3188,
+        "11": 0.0804,
+        "12": 0.25
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L12594109",
+      "name": "Grassy Lake",
+      "coordinates": {
+        "latitude": 42.3952057,
+        "longitude": -85.4358298
+      },
+      "occurrence": {
+        "rate": 0.0811,
+        "lift": 16.14,
+        "detection_count": 9,
+        "total_checklists": 111,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0,
+        "winter": 0.1837
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.3214
+      }
+    },
+    {
+      "rank": 4,
+      "locality_id": "L8143079",
+      "name": "Gilmore Farms",
+      "coordinates": {
+        "latitude": 42.3945479,
+        "longitude": -85.4749674
+      },
+      "occurrence": {
+        "rate": 0.0746,
+        "lift": 14.86,
+        "detection_count": 5,
+        "total_checklists": 67,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 2.2,
+        "max_count": 7
+      },
+      "seasonal": {
+        "fall": 0.0,
+        "winter": 0.1852
+      },
+      "monthly": {
+        "1": 0.25,
+        "2": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.1667
+      }
+    },
+    {
+      "rank": 5,
+      "locality_id": "L12524167",
+      "name": "TU Ave. fields",
+      "coordinates": {
+        "latitude": 42.1497987,
+        "longitude": -85.696908
+      },
+      "occurrence": {
+        "rate": 0.0546,
+        "lift": 10.87,
+        "detection_count": 26,
+        "total_checklists": 476,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.3,
+        "max_count": 7
+      },
+      "seasonal": {
+        "spring": 0.0617,
+        "summer": 0.0,
+        "fall": 0.0147,
+        "winter": 0.0627
+      },
+      "monthly": {
+        "1": 0.0077,
+        "2": 0.0984,
+        "3": 0.098,
+        "4": 0.0,
+        "5": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0227,
+        "12": 0.1045
+      }
+    },
+    {
+      "rank": 6,
+      "locality_id": "L10320021",
+      "name": "Miller Lake",
+      "coordinates": {
+        "latitude": 42.4033464,
+        "longitude": -85.4333513
+      },
+      "occurrence": {
+        "rate": 0.0317,
+        "lift": 6.32,
+        "detection_count": 2,
+        "total_checklists": 63,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0,
+        "winter": 0.0476
+      },
+      "monthly": {
+        "1": 0.1667,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "10": 0.0,
+        "12": 0.037
+      }
+    },
+    {
+      "rank": 7,
+      "locality_id": "L4162960",
+      "name": "Gull Lake Yacht Club",
+      "coordinates": {
+        "latitude": 42.402542,
+        "longitude": -85.425436
+      },
+      "occurrence": {
+        "rate": 0.0176,
+        "lift": 3.51,
+        "detection_count": 19,
+        "total_checklists": 1077,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0033,
+        "winter": 0.0299
+      },
+      "monthly": {
+        "1": 0.0567,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "9": 0.0417,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0087
+      }
+    },
+    {
+      "rank": 8,
+      "locality_id": "L470613",
+      "name": "Kellogg Bird Sanctuary",
+      "coordinates": {
+        "latitude": 42.3957628,
+        "longitude": -85.3832531
+      },
+      "occurrence": {
+        "rate": 0.0154,
+        "lift": 3.07,
+        "detection_count": 40,
+        "total_checklists": 2594,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0152,
+        "summer": 0.003,
+        "fall": 0.0293,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0245,
+        "5": 0.0243,
+        "6": 0.0056,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0164,
+        "11": 0.0729,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 9,
+      "locality_id": "L7808811",
+      "name": "W W Ave and S 2nd St. pond",
+      "coordinates": {
+        "latitude": 42.112325,
+        "longitude": -85.744895
+      },
+      "occurrence": {
+        "rate": 0.0096,
+        "lift": 1.91,
+        "detection_count": 1,
+        "total_checklists": 104,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0256,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0476,
+        "4": 0.0,
+        "5": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 10,
+      "locality_id": "L15703633",
+      "name": "Stafford Farms pond",
+      "coordinates": {
+        "latitude": 42.3872617,
+        "longitude": -85.4267856
+      },
+      "occurrence": {
+        "rate": 0.0087,
+        "lift": 1.73,
+        "detection_count": 4,
+        "total_checklists": 459,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.5,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0041,
+        "summer": 0.0,
+        "fall": 0.0244,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0122,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.1071,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 11,
+      "locality_id": "L2756534",
+      "name": "Justin's Marsh",
+      "coordinates": {
+        "latitude": 42.1553549,
+        "longitude": -85.6240404
+      },
+      "occurrence": {
+        "rate": 0.0071,
+        "lift": 1.41,
+        "detection_count": 2,
+        "total_checklists": 282,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0263,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "10": 0.125,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 12,
+      "locality_id": "L612988",
+      "name": "Kellogg Farm",
+      "coordinates": {
+        "latitude": 42.4130015,
+        "longitude": -85.3798199
+      },
+      "occurrence": {
+        "rate": 0.0018,
+        "lift": 0.37,
+        "detection_count": 1,
+        "total_checklists": 545,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0085,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0588,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-20T23:52:20.515292Z",
+    "data_version": "Dec-2025"
+  }
+}

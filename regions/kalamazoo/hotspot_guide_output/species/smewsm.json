@@ -1,0 +1,62 @@
+{
+  "species": {
+    "common_name": "Smew",
+    "code": "smewsm",
+    "scientific_name": "Mergellus albellus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0006,
+    "total_detections": 19,
+    "total_checklists_with_species": 19,
+    "total_checklists_countywide": 33643,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 19,
+    "highest_occurrence_rate": 0.0477
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L9141874",
+      "name": "Sherman Lake",
+      "coordinates": {
+        "latitude": 42.3504773,
+        "longitude": -85.3897555
+      },
+      "occurrence": {
+        "rate": 0.0477,
+        "lift": 84.53,
+        "detection_count": 19,
+        "total_checklists": 398,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0,
+        "winter": 0.0621
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.1845
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-20T23:52:20.530412Z",
+    "data_version": "Dec-2025"
+  }
+}

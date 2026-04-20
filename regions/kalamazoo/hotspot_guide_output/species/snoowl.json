@@ -1,0 +1,136 @@
+{
+  "species": {
+    "common_name": "Snowy Owl",
+    "code": "snoowl",
+    "scientific_name": "Bubo scandiacus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 5,
+    "total_checklists_with_species": 5,
+    "total_checklists_countywide": 33643,
+    "hotspots_detected": 3
+  },
+  "summary": {
+    "total_hotspots_detected": 3,
+    "total_detections": 5,
+    "highest_occurrence_rate": 0.0299
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L8143079",
+      "name": "Gilmore Farms",
+      "coordinates": {
+        "latitude": 42.3945479,
+        "longitude": -85.4749674
+      },
+      "occurrence": {
+        "rate": 0.0299,
+        "lift": 200.85,
+        "detection_count": 2,
+        "total_checklists": 67,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "fall": 0.0,
+        "winter": 0.0741
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.1667
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L12524167",
+      "name": "TU Ave. fields",
+      "coordinates": {
+        "latitude": 42.1497987,
+        "longitude": -85.696908
+      },
+      "occurrence": {
+        "rate": 0.0021,
+        "lift": 14.14,
+        "detection_count": 1,
+        "total_checklists": 476,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0031
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0149
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L4007013",
+      "name": "W.K. Kellogg Biological Station--Gull Lake",
+      "coordinates": {
+        "latitude": 42.4048812,
+        "longitude": -85.4001806
+      },
+      "occurrence": {
+        "rate": 0.0015,
+        "lift": 10.29,
+        "detection_count": 2,
+        "total_checklists": 1308,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0037,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.002
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0141,
+        "3": 0.0104,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-20T23:52:20.526809Z",
+    "data_version": "Dec-2025"
+  }
+}

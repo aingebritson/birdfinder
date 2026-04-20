@@ -1,0 +1,145 @@
+{
+  "species": {
+    "common_name": "Red Crossbill",
+    "code": "redcro",
+    "scientific_name": "Loxia curvirostra"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0019,
+    "total_detections": 63,
+    "total_checklists_with_species": 63,
+    "total_checklists_countywide": 33643,
+    "hotspots_detected": 3
+  },
+  "summary": {
+    "total_hotspots_detected": 3,
+    "total_detections": 63,
+    "highest_occurrence_rate": 0.1443
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L1308915",
+      "name": "Kellogg Experimental Forest",
+      "coordinates": {
+        "latitude": 42.363142,
+        "longitude": -85.3518391
+      },
+      "occurrence": {
+        "rate": 0.1443,
+        "lift": 77.06,
+        "detection_count": 57,
+        "total_checklists": 395,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.7,
+        "max_count": 30
+      },
+      "seasonal": {
+        "spring": 0.0292,
+        "summer": 0.0,
+        "fall": 0.1566,
+        "winter": 0.303
+      },
+      "monthly": {
+        "1": 0.1538,
+        "2": 0.3793,
+        "3": 0.16,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.3095,
+        "12": 0.3594
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L4838841",
+      "name": "Scotts Mill County Park",
+      "coordinates": {
+        "latitude": 42.195834,
+        "longitude": -85.4214921
+      },
+      "occurrence": {
+        "rate": 0.0053,
+        "lift": 2.84,
+        "detection_count": 1,
+        "total_checklists": 188,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0111,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.1,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L886087",
+      "name": "Kleinstuck Preserve",
+      "coordinates": {
+        "latitude": 42.2681633,
+        "longitude": -85.6025076
+      },
+      "occurrence": {
+        "rate": 0.0008,
+        "lift": 0.41,
+        "detection_count": 5,
+        "total_checklists": 6493,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.8,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.0007,
+        "summer": 0.0079,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0004,
+        "5": 0.0011,
+        "6": 0.0119,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-20T23:52:20.419637Z",
+    "data_version": "Dec-2025"
+  }
+}

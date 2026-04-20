@@ -1,0 +1,64 @@
+{
+  "species": {
+    "common_name": "Blue Grosbeak",
+    "code": "blugro",
+    "scientific_name": "Passerina caerulea"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0005,
+    "total_detections": 17,
+    "total_checklists_with_species": 17,
+    "total_checklists_countywide": 33643,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 17,
+    "highest_occurrence_rate": 0.1735
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L3004590",
+      "name": "Kalamazoo River Valley Trail--Mills St. to King Hwy.",
+      "coordinates": {
+        "latitude": 42.2891256,
+        "longitude": -85.556674
+      },
+      "occurrence": {
+        "rate": 0.1735,
+        "lift": 343.3,
+        "detection_count": 17,
+        "total_checklists": 98,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.9,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.2,
+        "fall": 0.5,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.3077,
+        "8": 0.7222,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-20T23:52:20.524941Z",
+    "data_version": "Dec-2025"
+  }
+}

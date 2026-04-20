@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "American Avocet",
+    "code": "ameavo",
+    "scientific_name": "Recurvirostra americana"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0,
+    "total_detections": 1,
+    "total_checklists_with_species": 1,
+    "total_checklists_countywide": 33643,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 1,
+    "highest_occurrence_rate": 0.0013
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L1525609",
+      "name": "River Oaks County Park",
+      "coordinates": {
+        "latitude": 42.28175,
+        "longitude": -85.44865
+      },
+      "occurrence": {
+        "rate": 0.0013,
+        "lift": 44.04,
+        "detection_count": 1,
+        "total_checklists": 764,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0111,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.02,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-20T23:52:20.531338Z",
+    "data_version": "Dec-2025"
+  }
+}

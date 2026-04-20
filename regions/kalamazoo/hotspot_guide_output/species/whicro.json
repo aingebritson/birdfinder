@@ -1,0 +1,145 @@
+{
+  "species": {
+    "common_name": "White-winged Crossbill",
+    "code": "whicro",
+    "scientific_name": "Loxia leucoptera"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0003,
+    "total_detections": 10,
+    "total_checklists_with_species": 10,
+    "total_checklists_countywide": 33643,
+    "hotspots_detected": 3
+  },
+  "summary": {
+    "total_hotspots_detected": 3,
+    "total_detections": 10,
+    "highest_occurrence_rate": 0.0025
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L1308915",
+      "name": "Kellogg Experimental Forest",
+      "coordinates": {
+        "latitude": 42.363142,
+        "longitude": -85.3518391
+      },
+      "occurrence": {
+        "rate": 0.0025,
+        "lift": 8.52,
+        "detection_count": 1,
+        "total_checklists": 395,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.0,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.012,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0238,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L13011026",
+      "name": "Oswalt Family Farm",
+      "coordinates": {
+        "latitude": 42.0933788,
+        "longitude": -85.4252197
+      },
+      "occurrence": {
+        "rate": 0.0016,
+        "lift": 5.23,
+        "detection_count": 1,
+        "total_checklists": 643,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0037
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0141,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L886087",
+      "name": "Kleinstuck Preserve",
+      "coordinates": {
+        "latitude": 42.2681633,
+        "longitude": -85.6025076
+      },
+      "occurrence": {
+        "rate": 0.0012,
+        "lift": 4.15,
+        "detection_count": 8,
+        "total_checklists": 6493,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.6,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.0005,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0195
+      },
+      "monthly": {
+        "1": 0.013,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0013,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.044
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-20T23:52:20.515636Z",
+    "data_version": "Dec-2025"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "species": {
+    "common_name": "Stilt Sandpiper",
+    "code": "stisan",
+    "scientific_name": "Calidris himantopus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0004,
+    "total_detections": 14,
+    "total_checklists_with_species": 14,
+    "total_checklists_countywide": 33643,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 14,
+    "highest_occurrence_rate": 0.0541
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L34496482",
+      "name": "S 10th Street fluddle",
+      "coordinates": {
+        "latitude": 42.1630602,
+        "longitude": -85.6680829
+      },
+      "occurrence": {
+        "rate": 0.0541,
+        "lift": 129.9,
+        "detection_count": 2,
+        "total_checklists": 37,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "summer": 0.0,
+        "fall": 0.069
+      },
+      "monthly": {
+        "7": 0.0,
+        "8": 0.1818,
+        "9": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L15703633",
+      "name": "Stafford Farms pond",
+      "coordinates": {
+        "latitude": 42.3872617,
+        "longitude": -85.4267856
+      },
+      "occurrence": {
+        "rate": 0.0261,
+        "lift": 62.83,
+        "detection_count": 12,
+        "total_checklists": 459,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.4,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0333,
+        "fall": 0.0813,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0435,
+        "8": 0.0612,
+        "9": 0.25,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-20T23:52:20.530827Z",
+    "data_version": "Dec-2025"
+  }
+}

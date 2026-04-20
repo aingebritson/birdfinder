@@ -1,0 +1,1326 @@
+{
+  "species": {
+    "common_name": "Lesser Scaup",
+    "code": "lessca",
+    "scientific_name": "Aythya affinis"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0439,
+    "total_detections": 1478,
+    "total_checklists_with_species": 1478,
+    "total_checklists_countywide": 33643,
+    "hotspots_detected": 35
+  },
+  "summary": {
+    "total_hotspots_detected": 35,
+    "total_detections": 1478,
+    "highest_occurrence_rate": 0.6316
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L11002154",
+      "name": "Sunset Lake Park",
+      "coordinates": {
+        "latitude": 42.1245325,
+        "longitude": -85.5357477
+      },
+      "occurrence": {
+        "rate": 0.6316,
+        "lift": 14.38,
+        "detection_count": 12,
+        "total_checklists": 19,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 52.8,
+        "max_count": 250
+      },
+      "seasonal": {
+        "spring": 0.75
+      },
+      "monthly": {
+        "3": 0.9,
+        "4": 0.5
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L470613",
+      "name": "Kellogg Bird Sanctuary",
+      "coordinates": {
+        "latitude": 42.3957628,
+        "longitude": -85.3832531
+      },
+      "occurrence": {
+        "rate": 0.318,
+        "lift": 7.24,
+        "detection_count": 825,
+        "total_checklists": 2594,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 19.4,
+        "max_count": 316
+      },
+      "seasonal": {
+        "spring": 0.4883,
+        "summer": 0.003,
+        "fall": 0.3871,
+        "winter": 0.1188
+      },
+      "monthly": {
+        "1": 0.039,
+        "2": 0.0311,
+        "3": 0.4154,
+        "4": 0.7832,
+        "5": 0.2429,
+        "6": 0.0056,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.024,
+        "10": 0.5033,
+        "11": 0.6458,
+        "12": 0.2857
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L7245723",
+      "name": "West Lake",
+      "coordinates": {
+        "latitude": 42.185162,
+        "longitude": -85.563684
+      },
+      "occurrence": {
+        "rate": 0.297,
+        "lift": 6.76,
+        "detection_count": 30,
+        "total_checklists": 101,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 58.1,
+        "max_count": 400
+      },
+      "seasonal": {
+        "spring": 0.4915,
+        "fall": 0.0,
+        "winter": 0.05
+      },
+      "monthly": {
+        "1": 0.25,
+        "3": 0.4839,
+        "4": 0.5,
+        "6": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 4,
+      "locality_id": "L1335558",
+      "name": "Morrow Lake--Plaza Ave. access",
+      "coordinates": {
+        "latitude": 42.2827536,
+        "longitude": -85.4665701
+      },
+      "occurrence": {
+        "rate": 0.1965,
+        "lift": 4.47,
+        "detection_count": 101,
+        "total_checklists": 514,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 19.2,
+        "max_count": 140
+      },
+      "seasonal": {
+        "spring": 0.5027,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0972
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.1818,
+        "3": 0.5109,
+        "4": 0.5875,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0667
+      }
+    },
+    {
+      "rank": 5,
+      "locality_id": "L1544629",
+      "name": "Austin Lake",
+      "coordinates": {
+        "latitude": 42.1819779,
+        "longitude": -85.5558157
+      },
+      "occurrence": {
+        "rate": 0.1532,
+        "lift": 3.49,
+        "detection_count": 19,
+        "total_checklists": 124,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 22.5,
+        "max_count": 150
+      },
+      "seasonal": {
+        "spring": 0.25,
+        "fall": 0.0,
+        "winter": 0.05
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.1111,
+        "3": 0.1613,
+        "4": 0.3514,
+        "5": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 6,
+      "locality_id": "L4506772",
+      "name": "Barton Lake",
+      "coordinates": {
+        "latitude": 42.0972034,
+        "longitude": -85.5694842
+      },
+      "occurrence": {
+        "rate": 0.129,
+        "lift": 2.94,
+        "detection_count": 4,
+        "total_checklists": 31,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 76.0,
+        "max_count": 150
+      },
+      "seasonal": {
+        "spring": 0.2857,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.5,
+        "4": 0.0
+      }
+    },
+    {
+      "rank": 7,
+      "locality_id": "L1525609",
+      "name": "River Oaks County Park",
+      "coordinates": {
+        "latitude": 42.28175,
+        "longitude": -85.44865
+      },
+      "occurrence": {
+        "rate": 0.1283,
+        "lift": 2.92,
+        "detection_count": 98,
+        "total_checklists": 764,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 14.5,
+        "max_count": 200
+      },
+      "seasonal": {
+        "spring": 0.2774,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0737
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.12,
+        "3": 0.4177,
+        "4": 0.2119,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0526
+      }
+    },
+    {
+      "rank": 8,
+      "locality_id": "L8205004",
+      "name": "Three Lakes",
+      "coordinates": {
+        "latitude": 42.3538056,
+        "longitude": -85.4293877
+      },
+      "occurrence": {
+        "rate": 0.1235,
+        "lift": 2.81,
+        "detection_count": 10,
+        "total_checklists": 81,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 103.5,
+        "max_count": 800
+      },
+      "seasonal": {
+        "spring": 0.1556,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.1364
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.4286,
+        "3": 0.3333,
+        "4": 0.2,
+        "5": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 9,
+      "locality_id": "L9141874",
+      "name": "Sherman Lake",
+      "coordinates": {
+        "latitude": 42.3504773,
+        "longitude": -85.3897555
+      },
+      "occurrence": {
+        "rate": 0.1206,
+        "lift": 2.75,
+        "detection_count": 48,
+        "total_checklists": 398,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 7.6,
+        "max_count": 16
+      },
+      "seasonal": {
+        "spring": 0.02,
+        "fall": 0.0,
+        "winter": 0.1536
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0526,
+        "5": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.4563
+      }
+    },
+    {
+      "rank": 10,
+      "locality_id": "L4162960",
+      "name": "Gull Lake Yacht Club",
+      "coordinates": {
+        "latitude": 42.402542,
+        "longitude": -85.425436
+      },
+      "occurrence": {
+        "rate": 0.1049,
+        "lift": 2.39,
+        "detection_count": 113,
+        "total_checklists": 1077,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.4,
+        "max_count": 85
+      },
+      "seasonal": {
+        "spring": 0.0881,
+        "summer": 0.0,
+        "fall": 0.0358,
+        "winter": 0.1462
+      },
+      "monthly": {
+        "1": 0.1844,
+        "2": 0.2697,
+        "3": 0.0824,
+        "4": 0.1321,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "9": 0.0,
+        "10": 0.0172,
+        "11": 0.0545,
+        "12": 0.0519
+      }
+    },
+    {
+      "rank": 11,
+      "locality_id": "L33670877",
+      "name": "Upjohn pond",
+      "coordinates": {
+        "latitude": 42.2053603,
+        "longitude": -85.5489609
+      },
+      "occurrence": {
+        "rate": 0.1034,
+        "lift": 2.35,
+        "detection_count": 3,
+        "total_checklists": 29,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 0.7,
+        "max_count": 2
+      },
+      "seasonal": {
+        "fall": 0.1429,
+        "winter": 0.0909
+      },
+      "monthly": {
+        "1": 0.1667,
+        "2": 0.0,
+        "6": 0.0,
+        "10": 0.0,
+        "11": 0.2
+      }
+    },
+    {
+      "rank": 12,
+      "locality_id": "L10320021",
+      "name": "Miller Lake",
+      "coordinates": {
+        "latitude": 42.4033464,
+        "longitude": -85.4333513
+      },
+      "occurrence": {
+        "rate": 0.0952,
+        "lift": 2.17,
+        "detection_count": 6,
+        "total_checklists": 63,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 31.7,
+        "max_count": 74
+      },
+      "seasonal": {
+        "spring": 0.3333,
+        "fall": 0.2222,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.75,
+        "5": 0.3333,
+        "10": 0.2,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 13,
+      "locality_id": "L2756534",
+      "name": "Justin's Marsh",
+      "coordinates": {
+        "latitude": 42.1553549,
+        "longitude": -85.6240404
+      },
+      "occurrence": {
+        "rate": 0.0816,
+        "lift": 1.86,
+        "detection_count": 23,
+        "total_checklists": 282,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 15.0,
+        "max_count": 100
+      },
+      "seasonal": {
+        "spring": 0.1594,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0172
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.037,
+        "3": 0.1667,
+        "4": 0.1489,
+        "5": 0.1538,
+        "6": 0.0,
+        "7": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 14,
+      "locality_id": "L974597",
+      "name": "Robert Morris Park",
+      "coordinates": {
+        "latitude": 42.3206367,
+        "longitude": -85.4648995
+      },
+      "occurrence": {
+        "rate": 0.0645,
+        "lift": 1.47,
+        "detection_count": 2,
+        "total_checklists": 31,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 27.5,
+        "max_count": 54
+      },
+      "seasonal": {
+        "fall": 0.0,
+        "winter": 0.0625
+      },
+      "monthly": {
+        "1": 0.25,
+        "2": 0.0,
+        "3": 0.3333,
+        "8": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 15,
+      "locality_id": "L2146393",
+      "name": "West Lake Nature Preserve",
+      "coordinates": {
+        "latitude": 42.1884014,
+        "longitude": -85.5854273
+      },
+      "occurrence": {
+        "rate": 0.0539,
+        "lift": 1.23,
+        "detection_count": 26,
+        "total_checklists": 482,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 38.3,
+        "max_count": 225
+      },
+      "seasonal": {
+        "spring": 0.0833,
+        "summer": 0.0,
+        "fall": 0.0515,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0889,
+        "4": 0.1589,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0769,
+        "11": 0.1034,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 16,
+      "locality_id": "L12594109",
+      "name": "Grassy Lake",
+      "coordinates": {
+        "latitude": 42.3952057,
+        "longitude": -85.4358298
+      },
+      "occurrence": {
+        "rate": 0.045,
+        "lift": 1.03,
+        "detection_count": 5,
+        "total_checklists": 111,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.6,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0435,
+        "fall": 0.0256,
+        "winter": 0.0612
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.3,
+        "3": 0.0526,
+        "4": 0.0,
+        "9": 0.0,
+        "10": 0.0667,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 17,
+      "locality_id": "L4374581",
+      "name": "Orchard Lake",
+      "coordinates": {
+        "latitude": 42.3853031,
+        "longitude": -85.4588699
+      },
+      "occurrence": {
+        "rate": 0.0441,
+        "lift": 1.0,
+        "detection_count": 15,
+        "total_checklists": 340,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 4.3,
+        "max_count": 10
+      },
+      "seasonal": {
+        "spring": 0.1375,
+        "fall": 0.0205,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.075,
+        "4": 0.2581,
+        "5": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.029,
+        "11": 0.0179,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 18,
+      "locality_id": "L9035520",
+      "name": "Gull Lake Ministries",
+      "coordinates": {
+        "latitude": 42.3919942,
+        "longitude": -85.3912454
+      },
+      "occurrence": {
+        "rate": 0.0357,
+        "lift": 0.81,
+        "detection_count": 4,
+        "total_checklists": 112,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.0,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.0741,
+        "fall": 0.0,
+        "winter": 0.0444
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.1111,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0625
+      }
+    },
+    {
+      "rank": 19,
+      "locality_id": "L2234885",
+      "name": "Prairie View County Park",
+      "coordinates": {
+        "latitude": 42.1498661,
+        "longitude": -85.5828604
+      },
+      "occurrence": {
+        "rate": 0.0351,
+        "lift": 0.8,
+        "detection_count": 12,
+        "total_checklists": 342,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 349.2,
+        "max_count": 1200
+      },
+      "seasonal": {
+        "spring": 0.0629,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0263
+      },
+      "monthly": {
+        "1": 0.1111,
+        "2": 0.0,
+        "3": 0.2439,
+        "4": 0.0196,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 20,
+      "locality_id": "L2063937",
+      "name": "Spring Valley Park",
+      "coordinates": {
+        "latitude": 42.3158927,
+        "longitude": -85.5559552
+      },
+      "occurrence": {
+        "rate": 0.0325,
+        "lift": 0.74,
+        "detection_count": 5,
+        "total_checklists": 154,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.08,
+        "summer": 0.0,
+        "fall": 0.0196,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0909,
+        "4": 0.15,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0625,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 21,
+      "locality_id": "L1533275",
+      "name": "Cold Brook County Park",
+      "coordinates": {
+        "latitude": 42.2560056,
+        "longitude": -85.3534931
+      },
+      "occurrence": {
+        "rate": 0.0319,
+        "lift": 0.73,
+        "detection_count": 11,
+        "total_checklists": 345,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 10.7,
+        "max_count": 50
+      },
+      "seasonal": {
+        "spring": 0.0943,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0175
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.04,
+        "3": 0.0909,
+        "4": 0.1724,
+        "5": 0.0303,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 22,
+      "locality_id": "L28040191",
+      "name": "34th St wetland",
+      "coordinates": {
+        "latitude": 42.393716,
+        "longitude": -85.4299249
+      },
+      "occurrence": {
+        "rate": 0.0283,
+        "lift": 0.64,
+        "detection_count": 3,
+        "total_checklists": 106,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 6.3,
+        "max_count": 8
+      },
+      "seasonal": {
+        "spring": 0.0408,
+        "summer": 0.0,
+        "fall": 0.0333,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.1429,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0909,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 23,
+      "locality_id": "L4007013",
+      "name": "W.K. Kellogg Biological Station--Gull Lake",
+      "coordinates": {
+        "latitude": 42.4048812,
+        "longitude": -85.4001806
+      },
+      "occurrence": {
+        "rate": 0.026,
+        "lift": 0.59,
+        "detection_count": 34,
+        "total_checklists": 1308,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 7.2,
+        "max_count": 100
+      },
+      "seasonal": {
+        "spring": 0.0632,
+        "summer": 0.0,
+        "fall": 0.0104,
+        "winter": 0.024
+      },
+      "monthly": {
+        "1": 0.05,
+        "2": 0.0141,
+        "3": 0.0312,
+        "4": 0.117,
+        "5": 0.038,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0056,
+        "11": 0.0207,
+        "12": 0.0139
+      }
+    },
+    {
+      "rank": 24,
+      "locality_id": "L2115359",
+      "name": "Al Sabo Preserve",
+      "coordinates": {
+        "latitude": 42.2248946,
+        "longitude": -85.6670523
+      },
+      "occurrence": {
+        "rate": 0.0226,
+        "lift": 0.51,
+        "detection_count": 19,
+        "total_checklists": 840,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.5,
+        "max_count": 11
+      },
+      "seasonal": {
+        "spring": 0.0562,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.1455,
+        "4": 0.0268,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 25,
+      "locality_id": "L15703633",
+      "name": "Stafford Farms pond",
+      "coordinates": {
+        "latitude": 42.3872617,
+        "longitude": -85.4267856
+      },
+      "occurrence": {
+        "rate": 0.0174,
+        "lift": 0.4,
+        "detection_count": 8,
+        "total_checklists": 459,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.4,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0325,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0732,
+        "5": 0.0222,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 26,
+      "locality_id": "L1541983",
+      "name": "McLinden Trails",
+      "coordinates": {
+        "latitude": 42.3183586,
+        "longitude": -85.4849952
+      },
+      "occurrence": {
+        "rate": 0.0154,
+        "lift": 0.35,
+        "detection_count": 2,
+        "total_checklists": 130,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 14.0,
+        "max_count": 26
+      },
+      "seasonal": {
+        "spring": 0.0417,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.1111,
+        "4": 0.0769,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 27,
+      "locality_id": "L807738",
+      "name": "Gourdneck SGA--Southeast Unit",
+      "coordinates": {
+        "latitude": 42.1494053,
+        "longitude": -85.5986023
+      },
+      "occurrence": {
+        "rate": 0.0096,
+        "lift": 0.22,
+        "detection_count": 1,
+        "total_checklists": 104,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.025,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.125,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 28,
+      "locality_id": "L7808811",
+      "name": "W W Ave and S 2nd St. pond",
+      "coordinates": {
+        "latitude": 42.112325,
+        "longitude": -85.744895
+      },
+      "occurrence": {
+        "rate": 0.0096,
+        "lift": 0.22,
+        "detection_count": 1,
+        "total_checklists": 104,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0256,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0476,
+        "4": 0.0,
+        "5": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 29,
+      "locality_id": "L951764",
+      "name": "Asylum Lake Preserve",
+      "coordinates": {
+        "latitude": 42.2646063,
+        "longitude": -85.6394577
+      },
+      "occurrence": {
+        "rate": 0.0092,
+        "lift": 0.21,
+        "detection_count": 15,
+        "total_checklists": 1638,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.7,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0187,
+        "summer": 0.0,
+        "fall": 0.002,
+        "winter": 0.0048
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0167,
+        "3": 0.0078,
+        "4": 0.0417,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0087,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 30,
+      "locality_id": "L10113812",
+      "name": "Buffalo Pond/AB Ave. E. wetland",
+      "coordinates": {
+        "latitude": 42.4125736,
+        "longitude": -85.4857651
+      },
+      "occurrence": {
+        "rate": 0.0088,
+        "lift": 0.2,
+        "detection_count": 1,
+        "total_checklists": 113,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 6.0,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.0213,
+        "summer": 0.0,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0556,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 31,
+      "locality_id": "L25139345",
+      "name": "S 47th St.-fields",
+      "coordinates": {
+        "latitude": 42.2318745,
+        "longitude": -85.3112473
+      },
+      "occurrence": {
+        "rate": 0.0066,
+        "lift": 0.15,
+        "detection_count": 1,
+        "total_checklists": 151,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0125,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0256,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 32,
+      "locality_id": "L12524167",
+      "name": "TU Ave. fields",
+      "coordinates": {
+        "latitude": 42.1497987,
+        "longitude": -85.696908
+      },
+      "occurrence": {
+        "rate": 0.0042,
+        "lift": 0.1,
+        "detection_count": 2,
+        "total_checklists": 476,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 10.0,
+        "max_count": 10
+      },
+      "seasonal": {
+        "spring": 0.0247,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0392,
+        "4": 0.0,
+        "5": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 33,
+      "locality_id": "L10102345",
+      "name": "E. AB Ave. & N. 30th St. farm pond",
+      "coordinates": {
+        "latitude": 42.4126915,
+        "longitude": -85.4772881
+      },
+      "occurrence": {
+        "rate": 0.0041,
+        "lift": 0.09,
+        "detection_count": 1,
+        "total_checklists": 245,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.0,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.0099,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0213,
+        "5": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 34,
+      "locality_id": "L1287966",
+      "name": "Fort Custer SRA",
+      "coordinates": {
+        "latitude": 42.326697,
+        "longitude": -85.3473759
+      },
+      "occurrence": {
+        "rate": 0.0038,
+        "lift": 0.09,
+        "detection_count": 11,
+        "total_checklists": 2893,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 6.9,
+        "max_count": 24
+      },
+      "seasonal": {
+        "spring": 0.0095,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0022
+      },
+      "monthly": {
+        "1": 0.0061,
+        "2": 0.0,
+        "3": 0.0112,
+        "4": 0.0328,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 35,
+      "locality_id": "L886087",
+      "name": "Kleinstuck Preserve",
+      "coordinates": {
+        "latitude": 42.2681633,
+        "longitude": -85.6025076
+      },
+      "occurrence": {
+        "rate": 0.0011,
+        "lift": 0.02,
+        "detection_count": 7,
+        "total_checklists": 6493,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0012,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0016,
+        "4": 0.0025,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-20T23:52:20.355576Z",
+    "data_version": "Dec-2025"
+  }
+}

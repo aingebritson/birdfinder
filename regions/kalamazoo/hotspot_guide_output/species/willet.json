@@ -1,0 +1,132 @@
+{
+  "species": {
+    "common_name": "Willet",
+    "code": "willet",
+    "scientific_name": "Tringa semipalmata"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 3,
+    "total_checklists_with_species": 3,
+    "total_checklists_countywide": 33643,
+    "hotspots_detected": 3
+  },
+  "summary": {
+    "total_hotspots_detected": 3,
+    "total_detections": 3,
+    "highest_occurrence_rate": 0.0149
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L8143079",
+      "name": "Gilmore Farms",
+      "coordinates": {
+        "latitude": 42.3945479,
+        "longitude": -85.4749674
+      },
+      "occurrence": {
+        "rate": 0.0149,
+        "lift": 167.38,
+        "detection_count": 1,
+        "total_checklists": 67,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L10102345",
+      "name": "E. AB Ave. & N. 30th St. farm pond",
+      "coordinates": {
+        "latitude": 42.4126915,
+        "longitude": -85.4772881
+      },
+      "occurrence": {
+        "rate": 0.0041,
+        "lift": 45.77,
+        "detection_count": 1,
+        "total_checklists": 245,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 4.0,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0099,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0213,
+        "5": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L1287966",
+      "name": "Fort Custer SRA",
+      "coordinates": {
+        "latitude": 42.326697,
+        "longitude": -85.3473759
+      },
+      "occurrence": {
+        "rate": 0.0003,
+        "lift": 3.88,
+        "detection_count": 1,
+        "total_checklists": 2893,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 6.0,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.0009,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0016,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-20T23:52:20.529011Z",
+    "data_version": "Dec-2025"
+  }
+}

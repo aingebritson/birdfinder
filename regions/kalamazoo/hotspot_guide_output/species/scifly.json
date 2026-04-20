@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Scissor-tailed Flycatcher",
+    "code": "scifly",
+    "scientific_name": "Tyrannus forficatus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0003,
+    "total_detections": 10,
+    "total_checklists_with_species": 10,
+    "total_checklists_countywide": 33643,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 10,
+    "highest_occurrence_rate": 0.0183
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L612988",
+      "name": "Kellogg Farm",
+      "coordinates": {
+        "latitude": 42.4130015,
+        "longitude": -85.3798199
+      },
+      "occurrence": {
+        "rate": 0.0183,
+        "lift": 61.73,
+        "detection_count": 10,
+        "total_checklists": 545,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0431,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.073,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-20T23:52:20.527856Z",
+    "data_version": "Dec-2025"
+  }
+}

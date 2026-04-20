@@ -1,0 +1,93 @@
+{
+  "species": {
+    "common_name": "Baird's Sandpiper",
+    "code": "baisan",
+    "scientific_name": "Calidris bairdii"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0002,
+    "total_detections": 8,
+    "total_checklists_with_species": 8,
+    "total_checklists_countywide": 33643,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 8,
+    "highest_occurrence_rate": 0.0431
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L7848099",
+      "name": "pond north of Dollar General (US 131)",
+      "coordinates": {
+        "latitude": 42.1266499,
+        "longitude": -85.6382921
+      },
+      "occurrence": {
+        "rate": 0.0431,
+        "lift": 181.27,
+        "detection_count": 5,
+        "total_checklists": 116,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0847
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.1389,
+        "11": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L10102345",
+      "name": "E. AB Ave. & N. 30th St. farm pond",
+      "coordinates": {
+        "latitude": 42.4126915,
+        "longitude": -85.4772881
+      },
+      "occurrence": {
+        "rate": 0.0122,
+        "lift": 51.49,
+        "detection_count": 3,
+        "total_checklists": 245,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.7,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0231,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "9": 0.0,
+        "10": 0.0337,
+        "11": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-20T23:52:20.528060Z",
+    "data_version": "Dec-2025"
+  }
+}
