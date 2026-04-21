@@ -1,0 +1,59 @@
+{
+  "species": {
+    "common_name": "Egyptian Goose",
+    "code": "egygoo",
+    "scientific_name": "Alopochen aegyptiaca"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0,
+    "total_detections": 1,
+    "total_checklists_with_species": 1,
+    "total_checklists_countywide": 27162,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 1,
+    "highest_occurrence_rate": 0.0056
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L2702785",
+      "name": "Springbrook Rd. pond/Mercedes Lake",
+      "coordinates": {
+        "latitude": 42.1617493,
+        "longitude": -84.4523764
+      },
+      "occurrence": {
+        "rate": 0.0056,
+        "lift": 151.74,
+        "detection_count": 1,
+        "total_checklists": 179,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0,
+        "winter": 0.0074
+      },
+      "monthly": {
+        "1": 0.0143,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "9": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-21T00:33:00.536320Z",
+    "data_version": "Dec-2025"
+  }
+}

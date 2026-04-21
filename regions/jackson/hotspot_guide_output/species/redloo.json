@@ -1,0 +1,59 @@
+{
+  "species": {
+    "common_name": "Red-throated Loon",
+    "code": "redloo",
+    "scientific_name": "Gavia stellata"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0,
+    "total_detections": 1,
+    "total_checklists_with_species": 1,
+    "total_checklists_countywide": 27162,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 1,
+    "highest_occurrence_rate": 0.008
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L4044337",
+      "name": "Lake Columbia (west)",
+      "coordinates": {
+        "latitude": 42.0901019,
+        "longitude": -84.3100691
+      },
+      "occurrence": {
+        "rate": 0.008,
+        "lift": 217.3,
+        "detection_count": 1,
+        "total_checklists": 125,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "fall": 0.0323,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "7": 0.0,
+        "11": 0.0385,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-21T00:33:00.536231Z",
+    "data_version": "Dec-2025"
+  }
+}

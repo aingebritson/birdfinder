@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Red Crossbill",
+    "code": "redcro",
+    "scientific_name": "Loxia curvirostra"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0037,
+    "total_detections": 100,
+    "total_checklists_with_species": 100,
+    "total_checklists_countywide": 27162,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 100,
+    "highest_occurrence_rate": 0.0854
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L1395463",
+      "name": "MacCready Reserve",
+      "coordinates": {
+        "latitude": 42.1277181,
+        "longitude": -84.4021648
+      },
+      "occurrence": {
+        "rate": 0.0854,
+        "lift": 23.19,
+        "detection_count": 97,
+        "total_checklists": 1136,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.9,
+        "max_count": 18
+      },
+      "seasonal": {
+        "spring": 0.0607,
+        "summer": 0.0,
+        "fall": 0.0144,
+        "winter": 0.1473
+      },
+      "monthly": {
+        "1": 0.121,
+        "2": 0.2458,
+        "3": 0.0909,
+        "4": 0.0818,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0811,
+        "12": 0.1091
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L269759",
+      "name": "Haehnle Sanctuary",
+      "coordinates": {
+        "latitude": 42.3236329,
+        "longitude": -84.2880564
+      },
+      "occurrence": {
+        "rate": 0.0011,
+        "lift": 0.29,
+        "detection_count": 3,
+        "total_checklists": 2765,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0074
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0213
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-21T00:33:00.533428Z",
+    "data_version": "Dec-2025"
+  }
+}

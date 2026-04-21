@@ -1,0 +1,88 @@
+{
+  "species": {
+    "common_name": "Blue Grosbeak",
+    "code": "blugro",
+    "scientific_name": "Passerina caerulea"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0021,
+    "total_detections": 56,
+    "total_checklists_with_species": 56,
+    "total_checklists_countywide": 27162,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 56,
+    "highest_occurrence_rate": 0.383
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L2275063",
+      "name": "Waterloo RA--Green Rd.",
+      "coordinates": {
+        "latitude": 42.3237304,
+        "longitude": -84.146508
+      },
+      "occurrence": {
+        "rate": 0.383,
+        "lift": 185.76,
+        "detection_count": 54,
+        "total_checklists": 141,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.1,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.3556,
+        "summer": 0.3333,
+        "fall": 0.64,
+        "winter": 0.0
+      },
+      "monthly": {
+        "4": 0.0,
+        "5": 0.4,
+        "6": 0.3469,
+        "7": 0.2941,
+        "8": 0.75,
+        "10": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L47780324",
+      "name": "Waterloo RA--Buck Lake",
+      "coordinates": {
+        "latitude": 42.3256986,
+        "longitude": -84.1334047
+      },
+      "occurrence": {
+        "rate": 0.1176,
+        "lift": 57.06,
+        "detection_count": 2,
+        "total_checklists": 17,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.5,
+        "max_count": 2
+      },
+      "seasonal": {
+        "summer": 0.0833
+      },
+      "monthly": {
+        "6": 0.1429,
+        "7": 0.0,
+        "8": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-21T00:33:00.536813Z",
+    "data_version": "Dec-2025"
+  }
+}

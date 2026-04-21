@@ -1,0 +1,126 @@
+{
+  "species": {
+    "common_name": "Short-billed Dowitcher",
+    "code": "shodow",
+    "scientific_name": "Limnodromus griseus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 3,
+    "total_checklists_with_species": 3,
+    "total_checklists_countywide": 27162,
+    "hotspots_detected": 3
+  },
+  "summary": {
+    "total_hotspots_detected": 3,
+    "total_detections": 3,
+    "highest_occurrence_rate": 0.0455
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L40883996",
+      "name": "Waterloo and Parks Rd. fluddle",
+      "coordinates": {
+        "latitude": 42.387528,
+        "longitude": -84.191423
+      },
+      "occurrence": {
+        "rate": 0.0455,
+        "lift": 411.55,
+        "detection_count": 1,
+        "total_checklists": 22,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.2
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.0,
+        "7": 0.25
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L311891",
+      "name": "Hawkins Rd.",
+      "coordinates": {
+        "latitude": 42.3274978,
+        "longitude": -84.3424863
+      },
+      "occurrence": {
+        "rate": 0.0169,
+        "lift": 153.46,
+        "detection_count": 1,
+        "total_checklists": 59,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0588,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L11615347",
+      "name": "Mike Levine Lakelands Trail SP--Hawkins Rd.",
+      "coordinates": {
+        "latitude": 42.3214838,
+        "longitude": -84.3393605
+      },
+      "occurrence": {
+        "rate": 0.0037,
+        "lift": 33.41,
+        "detection_count": 1,
+        "total_checklists": 271,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.0,
+        "max_count": 5
+      },
+      "seasonal": {
+        "spring": 0.0098,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0222,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-21T00:33:00.536413Z",
+    "data_version": "Dec-2025"
+  }
+}

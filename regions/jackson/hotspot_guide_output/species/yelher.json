@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Yellow-crowned Night Heron",
+    "code": "yelher",
+    "scientific_name": "Nyctanassa violacea"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0008,
+    "total_detections": 21,
+    "total_checklists_with_species": 21,
+    "total_checklists_countywide": 27162,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 21,
+    "highest_occurrence_rate": 0.043
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L2769584",
+      "name": "Wooster Rd. bridge (Portage River)",
+      "coordinates": {
+        "latitude": 42.3316233,
+        "longitude": -84.3065472
+      },
+      "occurrence": {
+        "rate": 0.043,
+        "lift": 55.56,
+        "detection_count": 18,
+        "total_checklists": 419,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.3214,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.383,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L269759",
+      "name": "Haehnle Sanctuary",
+      "coordinates": {
+        "latitude": 42.3236329,
+        "longitude": -84.2880564
+      },
+      "occurrence": {
+        "rate": 0.0011,
+        "lift": 1.4,
+        "detection_count": 3,
+        "total_checklists": 2765,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0127,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0291,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-21T00:33:00.535811Z",
+    "data_version": "Dec-2025"
+  }
+}

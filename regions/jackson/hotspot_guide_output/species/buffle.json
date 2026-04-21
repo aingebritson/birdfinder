@@ -1,0 +1,1778 @@
+{
+  "species": {
+    "common_name": "Bufflehead",
+    "code": "buffle",
+    "scientific_name": "Bucephala albeola"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.1496,
+    "total_detections": 4064,
+    "total_checklists_with_species": 4064,
+    "total_checklists_countywide": 27162,
+    "hotspots_detected": 48
+  },
+  "summary": {
+    "total_hotspots_detected": 48,
+    "total_detections": 4064,
+    "highest_occurrence_rate": 0.7647
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L56200340",
+      "name": "Wamplers Lake (Jackson Co.)",
+      "coordinates": {
+        "latitude": 42.0752996,
+        "longitude": -84.1522859
+      },
+      "occurrence": {
+        "rate": 0.7647,
+        "lift": 5.11,
+        "detection_count": 52,
+        "total_checklists": 68,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 28.3,
+        "max_count": 120
+      },
+      "seasonal": {
+        "spring": 0.8605,
+        "fall": 0.3636,
+        "winter": 0.7857
+      },
+      "monthly": {
+        "1": 1.0,
+        "2": 0.4,
+        "3": 0.8824,
+        "4": 1.0,
+        "11": 0.3636,
+        "12": 1.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L4044340",
+      "name": "Lake Columbia (east)",
+      "coordinates": {
+        "latitude": 42.0875382,
+        "longitude": -84.2906928
+      },
+      "occurrence": {
+        "rate": 0.6585,
+        "lift": 4.4,
+        "detection_count": 27,
+        "total_checklists": 41,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 9.3,
+        "max_count": 50
+      },
+      "seasonal": {
+        "spring": 0.8095,
+        "fall": 0.875,
+        "winter": 0.25
+      },
+      "monthly": {
+        "1": 0.1,
+        "3": 0.875,
+        "4": 0.75,
+        "11": 1.0
+      }
+    },
+    {
+      "rank": 3,
+      "locality_id": "L10199035",
+      "name": "Round Lake County Park",
+      "coordinates": {
+        "latitude": 42.0850884,
+        "longitude": -84.4695432
+      },
+      "occurrence": {
+        "rate": 0.631,
+        "lift": 4.22,
+        "detection_count": 53,
+        "total_checklists": 84,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 25.2,
+        "max_count": 52
+      },
+      "seasonal": {
+        "spring": 0.75,
+        "fall": 0.4286,
+        "winter": 0.7273
+      },
+      "monthly": {
+        "3": 1.0,
+        "4": 1.0,
+        "5": 0.0,
+        "6": 0.0,
+        "11": 0.5,
+        "12": 0.7778
+      }
+    },
+    {
+      "rank": 4,
+      "locality_id": "L4044337",
+      "name": "Lake Columbia (west)",
+      "coordinates": {
+        "latitude": 42.0901019,
+        "longitude": -84.3100691
+      },
+      "occurrence": {
+        "rate": 0.616,
+        "lift": 4.12,
+        "detection_count": 77,
+        "total_checklists": 125,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 17.3,
+        "max_count": 100
+      },
+      "seasonal": {
+        "spring": 0.5,
+        "fall": 0.7097,
+        "winter": 0.6557
+      },
+      "monthly": {
+        "1": 0.3,
+        "2": 0.6,
+        "3": 0.4737,
+        "4": 0.6667,
+        "7": 0.0,
+        "11": 0.8462,
+        "12": 0.9615
+      }
+    },
+    {
+      "rank": 5,
+      "locality_id": "L3546231",
+      "name": "Gilletts Lake",
+      "coordinates": {
+        "latitude": 42.263824,
+        "longitude": -84.3130088
+      },
+      "occurrence": {
+        "rate": 0.6072,
+        "lift": 4.06,
+        "detection_count": 507,
+        "total_checklists": 835,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 13.4,
+        "max_count": 60
+      },
+      "seasonal": {
+        "spring": 0.7995,
+        "summer": 0.0,
+        "fall": 0.477,
+        "winter": 0.4343
+      },
+      "monthly": {
+        "1": 0.1579,
+        "2": 0.3438,
+        "3": 0.8457,
+        "4": 0.8933,
+        "5": 0.25,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.1739,
+        "11": 0.6711,
+        "12": 0.6055
+      }
+    },
+    {
+      "rank": 6,
+      "locality_id": "L2390432",
+      "name": "Grass Lake",
+      "coordinates": {
+        "latitude": 42.2611762,
+        "longitude": -84.2156982
+      },
+      "occurrence": {
+        "rate": 0.4412,
+        "lift": 2.95,
+        "detection_count": 240,
+        "total_checklists": 544,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 13.5,
+        "max_count": 63
+      },
+      "seasonal": {
+        "spring": 0.7059,
+        "summer": 0.0,
+        "fall": 0.1111,
+        "winter": 0.2037
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.4667,
+        "3": 0.7386,
+        "4": 0.783,
+        "5": 0.2667,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.1892,
+        "12": 0.0303
+      }
+    },
+    {
+      "rank": 7,
+      "locality_id": "L1929552",
+      "name": "Clark Lake",
+      "coordinates": {
+        "latitude": 42.1198879,
+        "longitude": -84.3239307
+      },
+      "occurrence": {
+        "rate": 0.4338,
+        "lift": 2.9,
+        "detection_count": 141,
+        "total_checklists": 325,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 7.9,
+        "max_count": 36
+      },
+      "seasonal": {
+        "spring": 0.8073,
+        "summer": 0.0,
+        "fall": 0.4808,
+        "winter": 0.1842
+      },
+      "monthly": {
+        "1": 0.1176,
+        "2": 0.2037,
+        "3": 0.8132,
+        "4": 0.8235,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.625,
+        "12": 0.3
+      }
+    },
+    {
+      "rank": 8,
+      "locality_id": "L2764214",
+      "name": "Portage Lake Park",
+      "coordinates": {
+        "latitude": 42.3362028,
+        "longitude": -84.2273122
+      },
+      "occurrence": {
+        "rate": 0.4071,
+        "lift": 2.72,
+        "detection_count": 114,
+        "total_checklists": 280,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 11.6,
+        "max_count": 45
+      },
+      "seasonal": {
+        "spring": 0.5548,
+        "summer": 0.0,
+        "fall": 0.2029,
+        "winter": 0.2979
+      },
+      "monthly": {
+        "1": 0.25,
+        "2": 0.2308,
+        "3": 0.6471,
+        "4": 0.8065,
+        "5": 0.0714,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0667,
+        "11": 0.6,
+        "12": 0.3636
+      }
+    },
+    {
+      "rank": 9,
+      "locality_id": "L2982725",
+      "name": "Little Wolf Lake County Park",
+      "coordinates": {
+        "latitude": 42.1906272,
+        "longitude": -84.2205262
+      },
+      "occurrence": {
+        "rate": 0.3688,
+        "lift": 2.47,
+        "detection_count": 142,
+        "total_checklists": 385,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.7,
+        "max_count": 25
+      },
+      "seasonal": {
+        "spring": 0.6108,
+        "summer": 0.0,
+        "fall": 0.0426,
+        "winter": 0.25
+      },
+      "monthly": {
+        "1": 0.1667,
+        "2": 0.1364,
+        "3": 0.6939,
+        "4": 0.5844,
+        "5": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0833,
+        "12": 0.381
+      }
+    },
+    {
+      "rank": 10,
+      "locality_id": "L3546007",
+      "name": "Cutler Rd. and Dunn Rd. wetland",
+      "coordinates": {
+        "latitude": 42.3398231,
+        "longitude": -84.2580879
+      },
+      "occurrence": {
+        "rate": 0.3456,
+        "lift": 2.31,
+        "detection_count": 423,
+        "total_checklists": 1224,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 7.6,
+        "max_count": 52
+      },
+      "seasonal": {
+        "spring": 0.4778,
+        "summer": 0.0,
+        "fall": 0.0556,
+        "winter": 0.2056
+      },
+      "monthly": {
+        "1": 0.0882,
+        "2": 0.2245,
+        "3": 0.6569,
+        "4": 0.7349,
+        "5": 0.0118,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0865,
+        "11": 0.1351,
+        "12": 0.3333
+      }
+    },
+    {
+      "rank": 11,
+      "locality_id": "L3131941",
+      "name": "Vineyard Lake County Park",
+      "coordinates": {
+        "latitude": 42.0908662,
+        "longitude": -84.2089391
+      },
+      "occurrence": {
+        "rate": 0.33,
+        "lift": 2.21,
+        "detection_count": 33,
+        "total_checklists": 100,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 7.2,
+        "max_count": 20
+      },
+      "seasonal": {
+        "spring": 0.7179,
+        "fall": 0.1538,
+        "winter": 0.0323
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0833,
+        "3": 0.8065,
+        "4": 0.6,
+        "5": 0.0,
+        "6": 0.0,
+        "10": 0.0,
+        "11": 0.1905,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 12,
+      "locality_id": "L213224",
+      "name": "Watkins Lake",
+      "coordinates": {
+        "latitude": 42.1232335,
+        "longitude": -84.1381818
+      },
+      "occurrence": {
+        "rate": 0.288,
+        "lift": 1.92,
+        "detection_count": 804,
+        "total_checklists": 2792,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 9.2,
+        "max_count": 100
+      },
+      "seasonal": {
+        "spring": 0.6804,
+        "summer": 0.0,
+        "fall": 0.1553,
+        "winter": 0.1029
+      },
+      "monthly": {
+        "1": 0.03,
+        "2": 0.3071,
+        "3": 0.7906,
+        "4": 0.7584,
+        "5": 0.0278,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0763,
+        "11": 0.339,
+        "12": 0.0612
+      }
+    },
+    {
+      "rank": 13,
+      "locality_id": "L1813254",
+      "name": "Norvell Lake (west)",
+      "coordinates": {
+        "latitude": 42.1515947,
+        "longitude": -84.2049965
+      },
+      "occurrence": {
+        "rate": 0.2671,
+        "lift": 1.79,
+        "detection_count": 156,
+        "total_checklists": 584,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 7.0,
+        "max_count": 50
+      },
+      "seasonal": {
+        "spring": 0.4282,
+        "summer": 0.0,
+        "fall": 0.0204,
+        "winter": 0.0407
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0484,
+        "3": 0.4279,
+        "4": 0.5,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.037,
+        "12": 0.0952
+      }
+    },
+    {
+      "rank": 14,
+      "locality_id": "L1036071",
+      "name": "Waterloo RA--Portage Lake Unit",
+      "coordinates": {
+        "latitude": 42.3338671,
+        "longitude": -84.2358685
+      },
+      "occurrence": {
+        "rate": 0.2618,
+        "lift": 1.75,
+        "detection_count": 550,
+        "total_checklists": 2101,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 10.1,
+        "max_count": 55
+      },
+      "seasonal": {
+        "spring": 0.3201,
+        "summer": 0.0,
+        "fall": 0.1514,
+        "winter": 0.2022
+      },
+      "monthly": {
+        "1": 0.0241,
+        "2": 0.1129,
+        "3": 0.6285,
+        "4": 0.5839,
+        "5": 0.0523,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.4569,
+        "12": 0.3689
+      }
+    },
+    {
+      "rank": 15,
+      "locality_id": "L4800920",
+      "name": "Watkins Lake SP",
+      "coordinates": {
+        "latitude": 42.1322,
+        "longitude": -84.142127
+      },
+      "occurrence": {
+        "rate": 0.2537,
+        "lift": 1.7,
+        "detection_count": 254,
+        "total_checklists": 1001,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 8.4,
+        "max_count": 50
+      },
+      "seasonal": {
+        "spring": 0.7044,
+        "summer": 0.0,
+        "fall": 0.0833,
+        "winter": 0.1415
+      },
+      "monthly": {
+        "1": 0.0125,
+        "2": 0.3662,
+        "3": 0.8201,
+        "4": 0.79,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0364,
+        "11": 0.2155,
+        "12": 0.0492
+      }
+    },
+    {
+      "rank": 16,
+      "locality_id": "L2207542",
+      "name": "Falling Waters Trail--Lime Lake vicinity",
+      "coordinates": {
+        "latitude": 42.1904046,
+        "longitude": -84.5426488
+      },
+      "occurrence": {
+        "rate": 0.2424,
+        "lift": 1.62,
+        "detection_count": 72,
+        "total_checklists": 297,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 10.1,
+        "max_count": 26
+      },
+      "seasonal": {
+        "spring": 0.4192,
+        "summer": 0.0,
+        "fall": 0.0227,
+        "winter": 0.0278
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0625,
+        "3": 0.5333,
+        "4": 0.697,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0556,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 17,
+      "locality_id": "L1337786",
+      "name": "Clear Lake County Park",
+      "coordinates": {
+        "latitude": 42.3322033,
+        "longitude": -84.1522345
+      },
+      "occurrence": {
+        "rate": 0.2286,
+        "lift": 1.53,
+        "detection_count": 8,
+        "total_checklists": 35,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 10.1,
+        "max_count": 17
+      },
+      "seasonal": {
+        "spring": 0.3529,
+        "summer": 0.0,
+        "fall": 0.3333,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.125,
+        "4": 0.8333,
+        "5": 0.0,
+        "6": 0.0,
+        "11": 0.5
+      }
+    },
+    {
+      "rank": 18,
+      "locality_id": "L2714220",
+      "name": "Ackerson Lake",
+      "coordinates": {
+        "latitude": 42.1883696,
+        "longitude": -84.3487787
+      },
+      "occurrence": {
+        "rate": 0.2184,
+        "lift": 1.46,
+        "detection_count": 19,
+        "total_checklists": 87,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 5.6,
+        "max_count": 20
+      },
+      "seasonal": {
+        "spring": 0.375,
+        "summer": 0.0,
+        "fall": 0.2,
+        "winter": 0.1071
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0833,
+        "3": 0.5455,
+        "4": 0.5455,
+        "5": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.6667,
+        "12": 0.1667
+      }
+    },
+    {
+      "rank": 19,
+      "locality_id": "L28342002",
+      "name": "Crispell Lake",
+      "coordinates": {
+        "latitude": 42.112728,
+        "longitude": -84.442791
+      },
+      "occurrence": {
+        "rate": 0.1905,
+        "lift": 1.27,
+        "detection_count": 16,
+        "total_checklists": 84,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 10.4,
+        "max_count": 50
+      },
+      "seasonal": {
+        "spring": 0.3784,
+        "summer": 0.0,
+        "fall": 0.0556,
+        "winter": 0.1
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.2941,
+        "4": 0.5625,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "11": 0.3333,
+        "12": 0.25
+      }
+    },
+    {
+      "rank": 20,
+      "locality_id": "L4406478",
+      "name": "Pleasant Lake",
+      "coordinates": {
+        "latitude": 42.3935563,
+        "longitude": -84.3481576
+      },
+      "occurrence": {
+        "rate": 0.1807,
+        "lift": 1.21,
+        "detection_count": 15,
+        "total_checklists": 83,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 9.1,
+        "max_count": 22
+      },
+      "seasonal": {
+        "spring": 0.4643,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.125
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.5455,
+        "4": 0.6364,
+        "5": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.2222
+      }
+    },
+    {
+      "rank": 21,
+      "locality_id": "L2769584",
+      "name": "Wooster Rd. bridge (Portage River)",
+      "coordinates": {
+        "latitude": 42.3316233,
+        "longitude": -84.3065472
+      },
+      "occurrence": {
+        "rate": 0.1575,
+        "lift": 1.05,
+        "detection_count": 66,
+        "total_checklists": 419,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.9,
+        "max_count": 36
+      },
+      "seasonal": {
+        "spring": 0.2629,
+        "summer": 0.0,
+        "fall": 0.0149,
+        "winter": 0.0625
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.1379,
+        "3": 0.4022,
+        "4": 0.3077,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.125,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 22,
+      "locality_id": "L4063484",
+      "name": "Wolf Lake",
+      "coordinates": {
+        "latitude": 42.197622,
+        "longitude": -84.2440224
+      },
+      "occurrence": {
+        "rate": 0.1522,
+        "lift": 1.02,
+        "detection_count": 7,
+        "total_checklists": 46,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 7.3,
+        "max_count": 21
+      },
+      "seasonal": {
+        "summer": 0.0,
+        "winter": 0.25
+      },
+      "monthly": {
+        "1": 0.1429,
+        "4": 0.3333,
+        "6": 0.0,
+        "7": 0.0,
+        "12": 0.3077
+      }
+    },
+    {
+      "rank": 23,
+      "locality_id": "L2819867",
+      "name": "Swains Lake",
+      "coordinates": {
+        "latitude": 42.1540187,
+        "longitude": -84.6501946
+      },
+      "occurrence": {
+        "rate": 0.1379,
+        "lift": 0.92,
+        "detection_count": 4,
+        "total_checklists": 29,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.8,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.1875,
+        "winter": 0.0
+      },
+      "monthly": {
+        "3": 0.2857,
+        "4": 0.2,
+        "5": 0.0,
+        "7": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 24,
+      "locality_id": "L11254724",
+      "name": "Center Lake public access",
+      "coordinates": {
+        "latitude": 42.2170343,
+        "longitude": -84.3037381
+      },
+      "occurrence": {
+        "rate": 0.1333,
+        "lift": 0.89,
+        "detection_count": 2,
+        "total_checklists": 15,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 7.5,
+        "max_count": 12
+      },
+      "seasonal": {
+        "spring": 0.25
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.6667,
+        "4": 0.0
+      }
+    },
+    {
+      "rank": 25,
+      "locality_id": "L4020862",
+      "name": "Center Lake--5th St. boat launch",
+      "coordinates": {
+        "latitude": 42.228649,
+        "longitude": -84.3264207
+      },
+      "occurrence": {
+        "rate": 0.1211,
+        "lift": 0.81,
+        "detection_count": 62,
+        "total_checklists": 512,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 4.9,
+        "max_count": 20
+      },
+      "seasonal": {
+        "spring": 0.0826,
+        "summer": 0.0,
+        "fall": 0.1869,
+        "winter": 0.1221
+      },
+      "monthly": {
+        "1": 0.0244,
+        "2": 0.0,
+        "3": 0.0737,
+        "4": 0.25,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "10": 0.25,
+        "11": 0.1881,
+        "12": 0.3222
+      }
+    },
+    {
+      "rank": 26,
+      "locality_id": "L1841416",
+      "name": "Vandercook Lake",
+      "coordinates": {
+        "latitude": 42.1901847,
+        "longitude": -84.4032149
+      },
+      "occurrence": {
+        "rate": 0.0962,
+        "lift": 0.64,
+        "detection_count": 10,
+        "total_checklists": 104,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 7.7,
+        "max_count": 30
+      },
+      "seasonal": {
+        "spring": 0.1395,
+        "summer": 0.0,
+        "fall": 0.1034,
+        "winter": 0.0385
+      },
+      "monthly": {
+        "1": 0.0,
+        "3": 0.08,
+        "4": 0.2222,
+        "6": 0.0,
+        "7": 0.0,
+        "10": 0.0,
+        "11": 0.1667,
+        "12": 0.0588
+      }
+    },
+    {
+      "rank": 27,
+      "locality_id": "L3784774",
+      "name": "Falling Waters Trail (west end)",
+      "coordinates": {
+        "latitude": 42.1813876,
+        "longitude": -84.6033016
+      },
+      "occurrence": {
+        "rate": 0.0811,
+        "lift": 0.54,
+        "detection_count": 3,
+        "total_checklists": 37,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 7.3,
+        "max_count": 16
+      },
+      "seasonal": {
+        "spring": 0.2143,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.6667,
+        "4": 0.1429,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 28,
+      "locality_id": "L2795249",
+      "name": "Batteese Lake",
+      "coordinates": {
+        "latitude": 42.3981545,
+        "longitude": -84.3210125
+      },
+      "occurrence": {
+        "rate": 0.0784,
+        "lift": 0.52,
+        "detection_count": 12,
+        "total_checklists": 153,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 5.4,
+        "max_count": 25
+      },
+      "seasonal": {
+        "spring": 0.193,
+        "summer": 0.0,
+        "fall": 0.027,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.3333,
+        "4": 0.3333,
+        "5": 0.037,
+        "6": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.2,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 29,
+      "locality_id": "L4882510",
+      "name": "Stony Lake",
+      "coordinates": {
+        "latitude": 42.1577006,
+        "longitude": -84.2799425
+      },
+      "occurrence": {
+        "rate": 0.0755,
+        "lift": 0.5,
+        "detection_count": 4,
+        "total_checklists": 53,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.1212,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.3333,
+        "4": 0.25,
+        "5": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 30,
+      "locality_id": "L860168",
+      "name": "Waterloo RA (Jackson Co.)",
+      "coordinates": {
+        "latitude": 42.3738906,
+        "longitude": -84.1818466
+      },
+      "occurrence": {
+        "rate": 0.0612,
+        "lift": 0.41,
+        "detection_count": 3,
+        "total_checklists": 49,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 4.0,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.0909,
+        "summer": 0.0,
+        "fall": 0.1111
+      },
+      "monthly": {
+        "4": 0.3333,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "10": 0.3333
+      }
+    },
+    {
+      "rank": 31,
+      "locality_id": "L3497209",
+      "name": "Concord Millpond",
+      "coordinates": {
+        "latitude": 42.1804441,
+        "longitude": -84.633007
+      },
+      "occurrence": {
+        "rate": 0.0605,
+        "lift": 0.4,
+        "detection_count": 13,
+        "total_checklists": 215,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.9,
+        "max_count": 7
+      },
+      "seasonal": {
+        "spring": 0.16,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0196
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.04,
+        "3": 0.225,
+        "4": 0.375,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 32,
+      "locality_id": "L269759",
+      "name": "Haehnle Sanctuary",
+      "coordinates": {
+        "latitude": 42.3236329,
+        "longitude": -84.2880564
+      },
+      "occurrence": {
+        "rate": 0.0423,
+        "lift": 0.28,
+        "detection_count": 117,
+        "total_checklists": 2765,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 4.5,
+        "max_count": 25
+      },
+      "seasonal": {
+        "spring": 0.1261,
+        "summer": 0.0,
+        "fall": 0.017,
+        "winter": 0.0074
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.018,
+        "3": 0.1707,
+        "4": 0.2186,
+        "5": 0.0038,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0544,
+        "12": 0.0071
+      }
+    },
+    {
+      "rank": 33,
+      "locality_id": "L9438038",
+      "name": "Schlee WPA",
+      "coordinates": {
+        "latitude": 42.2328639,
+        "longitude": -84.2375028
+      },
+      "occurrence": {
+        "rate": 0.04,
+        "lift": 0.27,
+        "detection_count": 1,
+        "total_checklists": 25,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.1667,
+        "summer": 0.0,
+        "fall": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0
+      }
+    },
+    {
+      "rank": 34,
+      "locality_id": "L1864259",
+      "name": "Fay Lake",
+      "coordinates": {
+        "latitude": 42.124916,
+        "longitude": -84.173187
+      },
+      "occurrence": {
+        "rate": 0.04,
+        "lift": 0.27,
+        "detection_count": 1,
+        "total_checklists": 25,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0714,
+        "winter": 0.0
+      },
+      "monthly": {
+        "3": 0.0,
+        "4": 0.1667,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 35,
+      "locality_id": "L2587690",
+      "name": "Mud Lake",
+      "coordinates": {
+        "latitude": 42.1127348,
+        "longitude": -84.4576163
+      },
+      "occurrence": {
+        "rate": 0.0345,
+        "lift": 0.23,
+        "detection_count": 1,
+        "total_checklists": 29,
+        "confidence": "low"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.1111,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "4": 0.25,
+        "5": 0.0,
+        "10": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 36,
+      "locality_id": "L2702819",
+      "name": "Brown Lake",
+      "coordinates": {
+        "latitude": 42.1881549,
+        "longitude": -84.4177008
+      },
+      "occurrence": {
+        "rate": 0.029,
+        "lift": 0.19,
+        "detection_count": 2,
+        "total_checklists": 69,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.1111,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.1667,
+        "4": 0.0
+      }
+    },
+    {
+      "rank": 37,
+      "locality_id": "L2435978",
+      "name": "Vineyard Lake",
+      "coordinates": {
+        "latitude": 42.0815345,
+        "longitude": -84.2096901
+      },
+      "occurrence": {
+        "rate": 0.0238,
+        "lift": 0.16,
+        "detection_count": 1,
+        "total_checklists": 42,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    {
+      "rank": 38,
+      "locality_id": "L3067506",
+      "name": "Waterloo RA--N. Moeckel Rd.",
+      "coordinates": {
+        "latitude": 42.3672831,
+        "longitude": -84.2028193
+      },
+      "occurrence": {
+        "rate": 0.0213,
+        "lift": 0.14,
+        "detection_count": 1,
+        "total_checklists": 47,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0435,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.2,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "9": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 39,
+      "locality_id": "L2695895",
+      "name": "Leoni Millpond",
+      "coordinates": {
+        "latitude": 42.2440229,
+        "longitude": -84.2642677
+      },
+      "occurrence": {
+        "rate": 0.0175,
+        "lift": 0.12,
+        "detection_count": 4,
+        "total_checklists": 228,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.2,
+        "max_count": 6
+      },
+      "seasonal": {
+        "spring": 0.0303,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0282,
+        "4": 0.0408,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 40,
+      "locality_id": "L3079600",
+      "name": "Waterloo RA--Baldwin Flooding",
+      "coordinates": {
+        "latitude": 42.3278392,
+        "longitude": -84.1768169
+      },
+      "occurrence": {
+        "rate": 0.0169,
+        "lift": 0.11,
+        "detection_count": 3,
+        "total_checklists": 178,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0297,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.1538,
+        "4": 0.0625,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 41,
+      "locality_id": "L6789537",
+      "name": "Watkins Lake SP--Fay Lake Rd. Trail",
+      "coordinates": {
+        "latitude": 42.1242197,
+        "longitude": -84.1642319
+      },
+      "occurrence": {
+        "rate": 0.0151,
+        "lift": 0.1,
+        "detection_count": 5,
+        "total_checklists": 331,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 8.6,
+        "max_count": 21
+      },
+      "seasonal": {
+        "spring": 0.0833,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.1515,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 42,
+      "locality_id": "L2275063",
+      "name": "Waterloo RA--Green Rd.",
+      "coordinates": {
+        "latitude": 42.3237304,
+        "longitude": -84.146508
+      },
+      "occurrence": {
+        "rate": 0.0142,
+        "lift": 0.09,
+        "detection_count": 2,
+        "total_checklists": 141,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 2.0,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0444,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "4": 0.4,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 43,
+      "locality_id": "L4477149",
+      "name": "Cascades Falls area",
+      "coordinates": {
+        "latitude": 42.22829,
+        "longitude": -84.432574
+      },
+      "occurrence": {
+        "rate": 0.0137,
+        "lift": 0.09,
+        "detection_count": 1,
+        "total_checklists": 73,
+        "confidence": "medium"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0588,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "3": 0.25,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      }
+    },
+    {
+      "rank": 44,
+      "locality_id": "L1395463",
+      "name": "MacCready Reserve",
+      "coordinates": {
+        "latitude": 42.1277181,
+        "longitude": -84.4021648
+      },
+      "occurrence": {
+        "rate": 0.0106,
+        "lift": 0.07,
+        "detection_count": 12,
+        "total_checklists": 1136,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.9,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0383,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.1667,
+        "4": 0.0063,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 45,
+      "locality_id": "L1926841",
+      "name": "Lefglen Nature Sanctuary",
+      "coordinates": {
+        "latitude": 42.1863218,
+        "longitude": -84.2185242
+      },
+      "occurrence": {
+        "rate": 0.0093,
+        "lift": 0.06,
+        "detection_count": 2,
+        "total_checklists": 215,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 10.0,
+        "max_count": 10
+      },
+      "seasonal": {
+        "spring": 0.0274,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0741,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 46,
+      "locality_id": "L19613669",
+      "name": "Mike Levine Lakelands Trail -- west of Dalton Rd.",
+      "coordinates": {
+        "latitude": 42.307884,
+        "longitude": -84.3593496
+      },
+      "occurrence": {
+        "rate": 0.0082,
+        "lift": 0.05,
+        "detection_count": 4,
+        "total_checklists": 487,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.5,
+        "max_count": 4
+      },
+      "seasonal": {
+        "spring": 0.0323,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0857,
+        "4": 0.0217,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 47,
+      "locality_id": "L11615347",
+      "name": "Mike Levine Lakelands Trail SP--Hawkins Rd.",
+      "coordinates": {
+        "latitude": 42.3214838,
+        "longitude": -84.3393605
+      },
+      "occurrence": {
+        "rate": 0.0074,
+        "lift": 0.05,
+        "detection_count": 2,
+        "total_checklists": 271,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 3
+      },
+      "seasonal": {
+        "spring": 0.0196,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0345,
+        "4": 0.0357,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 48,
+      "locality_id": "L4049291",
+      "name": "Dalton Rd. area",
+      "coordinates": {
+        "latitude": 42.3129573,
+        "longitude": -84.3585634
+      },
+      "occurrence": {
+        "rate": 0.0072,
+        "lift": 0.05,
+        "detection_count": 16,
+        "total_checklists": 2219,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 3.0,
+        "max_count": 12
+      },
+      "seasonal": {
+        "spring": 0.0429,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0507,
+        "4": 0.1098,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-21T00:33:00.458983Z",
+    "data_version": "Dec-2025"
+  }
+}

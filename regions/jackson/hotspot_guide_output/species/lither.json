@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Little Blue Heron",
+    "code": "lither",
+    "scientific_name": "Egretta caerulea"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0001,
+    "total_detections": 3,
+    "total_checklists_with_species": 3,
+    "total_checklists_countywide": 27162,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 3,
+    "highest_occurrence_rate": 0.002
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L4800920",
+      "name": "Watkins Lake SP",
+      "coordinates": {
+        "latitude": 42.1322,
+        "longitude": -84.142127
+      },
+      "occurrence": {
+        "rate": 0.002,
+        "lift": 18.09,
+        "detection_count": 2,
+        "total_checklists": 1001,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.014,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0364,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L213224",
+      "name": "Watkins Lake",
+      "coordinates": {
+        "latitude": 42.1232335,
+        "longitude": -84.1381818
+      },
+      "occurrence": {
+        "rate": 0.0004,
+        "lift": 3.24,
+        "detection_count": 1,
+        "total_checklists": 2792,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0053,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0103,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-21T00:33:00.490996Z",
+    "data_version": "Dec-2025"
+  }
+}

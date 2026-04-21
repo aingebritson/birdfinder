@@ -1,0 +1,65 @@
+{
+  "species": {
+    "common_name": "Mississippi Kite",
+    "code": "miskit",
+    "scientific_name": "Ictinia mississippiensis"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0002,
+    "total_detections": 6,
+    "total_checklists_with_species": 6,
+    "total_checklists_countywide": 27162,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 6,
+    "highest_occurrence_rate": 0.0022
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L269759",
+      "name": "Haehnle Sanctuary",
+      "coordinates": {
+        "latitude": 42.3236329,
+        "longitude": -84.2880564
+      },
+      "occurrence": {
+        "rate": 0.0022,
+        "lift": 9.82,
+        "detection_count": 6,
+        "total_checklists": 2765,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0084,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0229,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-21T00:33:00.517128Z",
+    "data_version": "Dec-2025"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "species": {
+    "common_name": "Glaucous Gull",
+    "code": "glagul",
+    "scientific_name": "Larus hyperboreus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0005,
+    "total_detections": 14,
+    "total_checklists_with_species": 14,
+    "total_checklists_countywide": 27162,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 14,
+    "highest_occurrence_rate": 0.0156
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L3546231",
+      "name": "Gilletts Lake",
+      "coordinates": {
+        "latitude": 42.263824,
+        "longitude": -84.3130088
+      },
+      "occurrence": {
+        "rate": 0.0156,
+        "lift": 30.21,
+        "detection_count": 13,
+        "total_checklists": 835,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.2,
+        "max_count": 2
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0209,
+        "winter": 0.0404
+      },
+      "monthly": {
+        "1": 0.0526,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0329,
+        "12": 0.0459
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L4049291",
+      "name": "Dalton Rd. area",
+      "coordinates": {
+        "latitude": 42.3129573,
+        "longitude": -84.3585634
+      },
+      "occurrence": {
+        "rate": 0.0005,
+        "lift": 0.87,
+        "detection_count": 1,
+        "total_checklists": 2219,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.0,
+        "summer": 0.0,
+        "fall": 0.0,
+        "winter": 0.0007
+      },
+      "monthly": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0032
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-21T00:33:00.530214Z",
+    "data_version": "Dec-2025"
+  }
+}

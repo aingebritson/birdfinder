@@ -1,0 +1,63 @@
+{
+  "species": {
+    "common_name": "Harlequin Duck",
+    "code": "harduc",
+    "scientific_name": "Histrionicus histrionicus"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0109,
+    "total_detections": 295,
+    "total_checklists_with_species": 295,
+    "total_checklists_countywide": 27162,
+    "hotspots_detected": 1
+  },
+  "summary": {
+    "total_hotspots_detected": 1,
+    "total_detections": 295,
+    "highest_occurrence_rate": 0.5762
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L4020862",
+      "name": "Center Lake--5th St. boat launch",
+      "coordinates": {
+        "latitude": 42.228649,
+        "longitude": -84.3264207
+      },
+      "occurrence": {
+        "rate": 0.5762,
+        "lift": 53.05,
+        "detection_count": 295,
+        "total_checklists": 512,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.7273,
+        "summer": 0.1364,
+        "fall": 0.6636,
+        "winter": 0.5076
+      },
+      "monthly": {
+        "1": 0.4797,
+        "2": 0.4286,
+        "3": 0.7579,
+        "4": 0.5,
+        "5": 0.7143,
+        "6": 0.3,
+        "7": 0.0,
+        "10": 0.0,
+        "11": 0.703,
+        "12": 0.5889
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-21T00:33:00.535444Z",
+    "data_version": "Dec-2025"
+  }
+}

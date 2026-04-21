@@ -1,0 +1,91 @@
+{
+  "species": {
+    "common_name": "Chuck-will's-widow",
+    "code": "chuwid",
+    "scientific_name": "Antrostomus carolinensis"
+  },
+  "baseline": {
+    "county_occurrence_rate": 0.0063,
+    "total_detections": 171,
+    "total_checklists_with_species": 171,
+    "total_checklists_countywide": 27162,
+    "hotspots_detected": 2
+  },
+  "summary": {
+    "total_hotspots_detected": 2,
+    "total_detections": 171,
+    "highest_occurrence_rate": 0.7647
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "locality_id": "L4658028",
+      "name": "stakeout Chuck-will's-widow (2015-2020)",
+      "coordinates": {
+        "latitude": 42.1872516,
+        "longitude": -84.1503865
+      },
+      "occurrence": {
+        "rate": 0.7647,
+        "lift": 121.47,
+        "detection_count": 117,
+        "total_checklists": 153,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.7976,
+        "summer": 0.8065,
+        "fall": 0.0
+      },
+      "monthly": {
+        "5": 0.8072,
+        "6": 0.8611,
+        "7": 0.7308,
+        "8": 0.0
+      }
+    },
+    {
+      "rank": 2,
+      "locality_id": "L1138208",
+      "name": "Sharonville SGA (Jackson Co.)",
+      "coordinates": {
+        "latitude": 42.1812147,
+        "longitude": -84.1568184
+      },
+      "occurrence": {
+        "rate": 0.2784,
+        "lift": 44.21,
+        "detection_count": 54,
+        "total_checklists": 194,
+        "confidence": "high"
+      },
+      "abundance": {
+        "average_count": 1.0,
+        "max_count": 1
+      },
+      "seasonal": {
+        "spring": 0.4062,
+        "summer": 0.1972,
+        "fall": 0.05,
+        "winter": 0.0
+      },
+      "monthly": {
+        "2": 0.0,
+        "4": 0.0,
+        "5": 0.4875,
+        "6": 0.2051,
+        "7": 0.1875,
+        "8": 0.0667,
+        "12": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-04-21T00:33:00.533664Z",
+    "data_version": "Dec-2025"
+  }
+}
